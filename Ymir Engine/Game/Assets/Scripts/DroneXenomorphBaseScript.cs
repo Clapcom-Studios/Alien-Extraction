@@ -22,7 +22,7 @@ public enum DroneState
 
 public class DroneXenomorphBaseScript : Enemy
 {
-    public GameObject thisReference = null;
+  
 
     protected Vector3 targetPosition = null;
     
@@ -63,7 +63,7 @@ public class DroneXenomorphBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-
+        healthBar = InternalCalls.GetHealtBarObject(gameObject);
         knockBackSpeed = 200;
         knockBackTimer = 0.5f;
 
@@ -185,6 +185,9 @@ public class DroneXenomorphBaseScript : Enemy
         Animation.SetResetToZero(gameObject, "Death", false);
 
         Animation.PlayAnimation(gameObject, "Combat_Idle");
+
+        
+        SetColor();
     }
 
     public void Update()
@@ -514,4 +517,6 @@ public class DroneXenomorphBaseScript : Enemy
             Animation.ResumeAnimation(gameObject);
         }
     }
+
+
 }

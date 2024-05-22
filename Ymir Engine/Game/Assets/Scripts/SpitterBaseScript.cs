@@ -66,6 +66,7 @@ public class SpitterBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
+        healthBar = InternalCalls.GetHealtBarObject(gameObject);
 
         //Agent
         agent.stoppingDistance = 2f;
@@ -161,6 +162,7 @@ public class SpitterBaseScript : Enemy
             agent.speed = 1800f;
         }
 
+        SetColor();
 
         //Animations
         Animation.SetLoop(gameObject, "Idle_Spiter", true);

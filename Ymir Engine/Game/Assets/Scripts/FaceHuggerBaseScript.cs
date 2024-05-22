@@ -61,6 +61,7 @@ public class FaceHuggerBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
+        healthBar = InternalCalls.GetHealtBarObject(gameObject);
         knockBackSpeed = 200;
         knockBackTimer = 0.2f;
         stopedDuration = 1f;
@@ -142,6 +143,8 @@ public class FaceHuggerBaseScript : Enemy
             armor = 0.2f; //0.2f
             agent.speed = 1800f;
         }
+
+        SetColor();
 
         // Animations
 

@@ -318,9 +318,34 @@ MonoObject* FindEnemyGameObject(MonoObject* obj) {
 
 	GameObject* child = gameObjectVec[1];
 
+	gameObjectVec.clear();
+
 	if(child != nullptr) return External->moduleMono->GoToCSGO(child);
 
 	assert("The object you searched for doesn't exist. :/");
+
+	return nullptr;
+}
+
+MonoObject* FindHealthBarObject(MonoObject* obj) {
+
+	std::vector<GameObject*> gameObjectVec;
+
+	GameObject* GO = External->moduleMono->GameObject_From_CSGO(obj);
+	GameObject* parent = GO->mParent;
+	parent->CollectChilds(gameObjectVec);
+
+	GameObject* go = gameObjectVec[2];
+	gameObjectVec.clear();
+	go->CollectChilds(gameObjectVec);
+	GameObject* child = gameObjectVec[1];
+
+	gameObjectVec.clear();
+
+	if (child != nullptr) return External->moduleMono->GoToCSGO(child);
+
+	assert("The object you searched for doesn't exist. :/");
+
 
 	return nullptr;
 }
@@ -1638,6 +1663,21 @@ void SpawnItemCS(MonoString* name, MonoObject* pos)
 	}
 
 	//TODO pocho: Hacer un switch con todos los prefabs en relación al nombre
+
+}
+
+void SetColorMaterial(MonoObject* go, MonoObject* vec) {
+
+	GameObject* gameObject = External->moduleMono->GameObject_From_CSGO(go);
+	float3 vector = External->moduleMono->UnboxVector(vec);
+
+	CMaterial* mat = (CMaterial*)gameObject->GetComponent(ComponentType::MATERIAL);
+
+	if (mat != nullptr ) {
+		mat->shader.SetUniformValue("color", &vector);
+	}
+
+
 
 }
 

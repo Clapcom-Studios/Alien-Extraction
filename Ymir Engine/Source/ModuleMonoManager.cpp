@@ -63,6 +63,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.InternalCalls::GetChildrenByName", FindChildrenWithName);
 	mono_add_internal_call("YmirEngine.InternalCalls::GetGameObjectByUID", FindObjectWithUID);	
 	mono_add_internal_call("YmirEngine.InternalCalls::GetEnemyGameObject", FindEnemyGameObject);
+	mono_add_internal_call("YmirEngine.InternalCalls::GetHealtBarObject", FindHealthBarObject);
 	mono_add_internal_call("YmirEngine.GameObject::get_parent", CS_GetParent);
 	mono_add_internal_call("YmirEngine.InternalCalls::CS_GetChild", CS_GetChild);
 	mono_add_internal_call("YmirEngine.InternalCalls::CS_GetChildrenSize", CS_GetChildrenSize);
@@ -85,6 +86,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 
 	mono_add_internal_call("YmirEngine.InternalCalls::SpawnItem", SpawnItemCS);
 	mono_add_internal_call("YmirEngine.InternalCalls::GetCurrentMap", GetCurrentMapCS);
+	mono_add_internal_call("YmirEngine.InternalCalls::SetColor", SetColorMaterial);
 
 #pragma region GameObject
 
