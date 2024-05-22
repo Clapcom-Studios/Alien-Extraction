@@ -54,7 +54,7 @@ public class DroneXenomorphBaseScript : Enemy
 
     private float outOfRangeTimer;
 
-    private Auto_Aim playerAim; 
+    //private Auto_Aim playerAim; 
 
 	public void Start()
 	{
@@ -92,7 +92,7 @@ public class DroneXenomorphBaseScript : Enemy
         tailDone = false;
 
         //Player Aim
-        playerAim = InternalCalls.GetGameObjectByName("AimSensor").GetComponent<Auto_Aim>();
+        //playerAim = InternalCalls.GetGameObjectByName("AimSensor").GetComponent<Auto_Aim>();
 
 		//Time
 		timeCounter = 0f;
@@ -421,10 +421,10 @@ public class DroneXenomorphBaseScript : Enemy
             droneState = DroneState.KNOCKBACK;
         }
 
-        if (other.Tag == "Aim")
-        {
-            playerAim.AddEnemy(gameObject);
-        }
+        //if (other.Tag == "Aim")
+        //{
+        //    playerAim.AddEnemy(gameObject);
+        //}
     }
 
     public new void IsReached(Vector3 position, Vector3 destintion)
