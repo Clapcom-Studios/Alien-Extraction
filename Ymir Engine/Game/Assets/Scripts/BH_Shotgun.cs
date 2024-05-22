@@ -19,7 +19,7 @@ public class BH_Shotgun : YmirComponent
 
     public void Update()
     {
-        gameObject.SetPosition(player.currentWeapon.gameObject.transform.globalPosition + player.currentWeapon.offset + (player.currentWeapon.gameObject.transform.GetForward() * player.currentWeapon.range));
+        gameObject.SetPosition(player.currentWeapon.gameObject.transform.globalPosition + player.currentWeapon.offset + (player.currentWeapon.gameObject.transform.GetForward() * player.currentWeapon.range * 0.5f));
         gameObject.SetRotation(playerObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f)); // <- -90 Degree Quat
 
         InternalCalls.Destroy(gameObject);

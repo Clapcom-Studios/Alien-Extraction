@@ -9,7 +9,7 @@ using YmirEngine;
 public class Shotgun : Weapon
 {
     public int ammoInChamber;
-    public int dispersion;
+    public float dispersion;
     public Shotgun() : base(WEAPON_TYPE.SHOTGUN) { }
 
     public override void Start()
@@ -28,8 +28,8 @@ public class Shotgun : Weapon
                 ammoInChamber = 2;
                 fireRate = 1.3f;
                 damage = 110; //55
-                range = 10.5f;
-                dispersion = 100;
+                range = 21f; //10.5
+                dispersion = range * 0.5f; //100º
 
                 break;
             case UPGRADE.LVL_1:
@@ -39,8 +39,8 @@ public class Shotgun : Weapon
                 ammoInChamber = 2;
                 fireRate = 1.2f;
                 damage = 140; //70
-                range = 10.5f;
-                dispersion = 100;
+                range = 21f; //10.5
+                dispersion = range * 0.5f; //100º;
 
                 break;
             case UPGRADE.LVL_2:
@@ -50,8 +50,8 @@ public class Shotgun : Weapon
                 ammoInChamber = 2;
                 fireRate = 1.2f;
                 damage = 150; //75
-                range = 21f;
-                dispersion = 80;
+                range = 42f; //21f
+                dispersion = range * 0.35f; //80º
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
@@ -61,8 +61,8 @@ public class Shotgun : Weapon
                 ammoInChamber = 2;
                 fireRate = 0.7f;
                 damage = 160; //80
-                range = 21f;
-                dispersion = 80;
+                range = 42f;
+                dispersion = range * 0.35f; //80º
 
                 break;
             case UPGRADE.LVL_3_BETA:
@@ -72,8 +72,8 @@ public class Shotgun : Weapon
                 ammoInChamber = 4;
                 fireRate = 1.3f;
                 damage = 320; //80
-                range = 21f;
-                dispersion = 80;
+                range = 42f;
+                dispersion = range * 0.35f; //80º
 
                 break;
             default:
@@ -94,9 +94,10 @@ public class Shotgun : Weapon
 
         Quaternion rot = gameObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f); // <- -90º Degree Quat
 
-
-        InternalCalls.CreateShotgunSensor(gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range), rot, 70, 15, gameObject.transform.GetRight());
-
+        //Estos numeros estan hardcpded, canviarlos cuando cuadre
+        InternalCalls.CreateShotgunSensor(gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f), rot, range, dispersion, gameObject.transform.GetRight());
+        Debug.Log("Position cone origin is:" + (gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f)));
+        Debug.Log("Foward offset would have been:" +  (gameObject.transform.GetForward() * range * 0.5f));
         switch (_upgrade)
         {
             case UPGRADE.LVL_0:
