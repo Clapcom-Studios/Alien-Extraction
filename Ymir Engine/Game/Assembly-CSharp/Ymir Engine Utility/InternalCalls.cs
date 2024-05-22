@@ -124,6 +124,9 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern void Destroy(object go);
 
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void SetColor(object go, object color);
+
         /// <summary>
         /// Retrieves a game object by its name.
         /// </summary>
@@ -149,7 +152,10 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern GameObject LoadScene(string name);
 
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern GameObject GetHealtBarObject(object go);
 
+        
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern GameObject GetEnemyGameObject(object go);
 
