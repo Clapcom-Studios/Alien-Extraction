@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -134.35786437988281,
-        158.93260192871094,
-        6.3548722267150879
+        -41.641334533691406,
+        66.367424011230469,
+        30.611948013305664
     ],
     "Editor Camera Right (X)": [
-        0.12786166369915009,
-        -2.3990869522094727e-06,
-        0.99180245399475098
+        0.39921602606773376,
+        8.4936618804931641e-07,
+        0.91685652732849121
     ],
     "Editor Camera Up (Y)": [
-        0.71643733978271484,
-        0.69152122735977173,
-        -0.092360340058803558
+        0.41894376277923584,
+        0.88950079679489136,
+        -0.18241657316684723
     ],
     "Editor Camera Front (Z)": [
-        0.68583863973617554,
-        -0.72236663103103638,
-        -0.088419027626514435
+        0.81554317474365234,
+        -0.45693525671958923,
+        -0.35510194301605225
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1217617426,
+            "UID": 1309046316,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -45,7 +45,11 @@
                 1676754095,
                 1781007999,
                 728169813,
-                1806365249
+                1806365249,
+                476878880,
+                1735169941,
+                1252582930,
+                1042309213
             ]
         },
         {
@@ -55,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2661,7 +2665,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5614,9 +5618,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        -1.195124626159668,
                         0,
-                        0,
-                        0
+                        -4.8595085144042969
                     ],
                     "Rotation": [
                         -0,
@@ -5687,19 +5691,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        16.094207763671875,
                         0,
-                        0,
-                        0
+                        -2.2471938133239746
                     ],
                     "Rotation": [
                         -0,
-                        0,
+                        4.8566780090332031,
                         -0
                     ],
                     "Scale": [
+                        0.99999755620956421,
                         1,
-                        1,
-                        1
+                        0.99999755620956421
                     ]
                 },
                 {
@@ -5754,9 +5758,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        5.6323943138122559,
                         0,
-                        0,
-                        0
+                        -1.3741092681884766
                     ],
                     "Rotation": [
                         -0,
@@ -7148,7 +7152,6 @@
             "Children UID": [
                 1960868445,
                 2047193686,
-                809328372,
                 528756781
             ]
         },
@@ -7299,241 +7302,6 @@
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_H.png",
                     "Height_UID": 1883836463,
                     "Ambient_ID": 1793,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_A.png",
-                    "Ambient_UID": 637287171
-                }
-            ]
-        },
-        {
-            "Name": "Closed_Door1",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 809328372,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 320002616,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1742917124,
-                1090063333
-            ]
-        },
-        {
-            "Name": "Door_LowPoly",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1742917124,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 809328372,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1918458006,
-                    "Vertex Count": 479,
-                    "Index Count": 1476
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 1895,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
-                    "Diffuse_UID": 32280259,
-                    "Specular_ID": 1923,
-                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_S.png",
-                    "Specular_UID": 698316530,
-                    "Normal_ID": 1916,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
-                    "Normal_UID": 186426588,
-                    "Height_ID": 1909,
-                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_H.png",
-                    "Height_UID": 944159270,
-                    "Ambient_ID": 1888,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
-                    "Ambient_UID": 568521047,
-                    "Emissive_ID": 1902,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
-                    "Emissive_UID": 1531561959
-                }
-            ]
-        },
-        {
-            "Name": "Border_LowPoly (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1090063333,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 809328372,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 2003629347,
-                    "Vertex Count": 10,
-                    "Index Count": 16
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 1816,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_D.png",
-                    "Diffuse_UID": 732529737,
-                    "Specular_ID": 1873,
-                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_S.png",
-                    "Specular_UID": 1167448914,
-                    "Normal_ID": 1854,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_N.png",
-                    "Normal_UID": 1201943206,
-                    "Height_ID": 1835,
-                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_H.png",
-                    "Height_UID": 1883836463,
-                    "Ambient_ID": 1797,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_A.png",
-                    "Ambient_UID": 637287171
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 2003629347,
-                    "Vertex Count": 1453,
-                    "Index Count": 3960
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 1820,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_D.png",
-                    "Diffuse_UID": 732529737,
-                    "Specular_ID": 1877,
-                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_S.png",
-                    "Specular_UID": 1167448914,
-                    "Normal_ID": 1858,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_N.png",
-                    "Normal_UID": 1201943206,
-                    "Height_ID": 1839,
-                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_H.png",
-                    "Height_UID": 1883836463,
-                    "Ambient_ID": 1801,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_A.png",
                     "Ambient_UID": 637287171
                 }
@@ -9250,9 +9018,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        -1.1858468055725098,
                         0,
-                        0,
-                        0
+                        -1.1458883285522461
                     ],
                     "Rotation": [
                         -0,
@@ -9329,9 +9097,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        2.4839653968811035,
                         0,
-                        0,
-                        0
+                        -0.067051887512207031
                     ],
                     "Rotation": [
                         -0,
@@ -10773,7 +10541,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13442,9 +13210,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
-                        0,
-                        0
+                        -0.21822261810302734,
+                        -1.693670392036438,
+                        8.9597463607788086
                     ],
                     "Rotation": [
                         -0,
@@ -13452,9 +13220,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        1.1499999761581421,
+                        1.1499999761581421,
+                        1.1499999761581421
                     ]
                 },
                 {
@@ -13508,7 +13276,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13545,7 +13313,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13572,8 +13340,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1911,
-                    "Height": 1053,
+                    "Width": 678,
+                    "Height": 754,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -15572,7 +15340,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -23132,7 +22900,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24994,7 +24762,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53787,7 +53555,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57803,7 +57571,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -58548,7 +58316,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71010,7 +70778,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71551,7 +71319,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71828,6 +71596,8 @@
                     "UID": 0,
                     "sceneName": "BASE_FINAL\/LVL_BASE_COLLIDERS",
                     "isNewGame": true,
+                    "isContinueGame": true,
+                    "showLoadScene": true,
                     "time": 0
                 }
             ],
@@ -71904,7 +71674,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72017,7 +71787,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72811,7 +72581,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1217617426,
+            "Parent UID": 1309046316,
             "Components": [
                 {
                     "Type": "Transform",
@@ -85723,19 +85493,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -48.306838989257812,
+                        118.4044189453125,
                         111.0653076171875,
-                        129.53561401367188
+                        -58.234092712402344
                     ],
                     "Rotation": [
-                        120.00009918212891,
-                        25.000034332275391,
-                        -142
+                        59.999912261962891,
+                        -25.000009536743164,
+                        37.999988555908203
                     ],
                     "Scale": [
-                        1.0000004768371582,
-                        1,
-                        1.0000005960464478
+                        1.0000245571136475,
+                        0.99999994039535522,
+                        1.0000251531600952
                     ]
                 },
                 {
@@ -85747,19 +85517,19 @@
                     "Type": "Camera",
                     "Active": 1,
                     "Right": [
-                        0.71418023109436035,
-                        -0.019421130418777466,
-                        0.69969254732131958
+                        -0.7141803503036499,
+                        -0.019421100616455078,
+                        -0.6996922492980957
                     ],
                     "Up": [
-                        0.55797863006591797,
-                        0.61933755874633789,
-                        -0.5523412823677063
+                        -0.55797863006591797,
+                        0.61933720111846924,
+                        0.55234163999557495
                     ],
                     "Front": [
-                        0.4226188063621521,
-                        -0.78488463163375854,
-                        -0.4531552791595459
+                        -0.42261838912963867,
+                        -0.78488487005233765,
+                        0.4531550407409668
                     ],
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
@@ -85787,6 +85557,1030 @@
                     "Bank Name": "BaseMusic",
                     "Event Name": "B_Music",
                     "Event ID": 2462702937
+                }
+            ]
+        },
+        {
+            "Name": "Prop_Mother_Room xd",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 476878880,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1309046316,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        5.4622149467468262,
+                        3.6228213310241699,
+                        -13.792604446411133
+                    ],
+                    "Rotation": [
+                        -0,
+                        1.7983094453811646,
+                        -0
+                    ],
+                    "Scale": [
+                        0.83199989795684814,
+                        0.83199995756149292,
+                        0.83199989795684814
+                    ]
+                }
+            ],
+            "Children UID": [
+                1769964466
+            ]
+        },
+        {
+            "Name": "Mother (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1769964466,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 476878880,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1764539538
+            ]
+        },
+        {
+            "Name": "Mother_Walls",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1764539538,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1769964466,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -1.5241883993148804,
+                        0,
+                        17.120271682739258
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1.2409369945526123,
+                        1.2409369945526123,
+                        1.2409369945526123
+                    ]
+                }
+            ],
+            "Children UID": [
+                562439479,
+                1870437290,
+                394035823,
+                279921922,
+                1469278616
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 562439479,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -4.9815444946289062,
+                        12.185610771179199,
+                        -97.994651794433594
+                    ],
+                    "Rotation": [
+                        -0,
+                        83.027931213378906,
+                        -0
+                    ],
+                    "Scale": [
+                        32.445697784423828,
+                        10.194721221923828,
+                        1.3102699518203735
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 805775704,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1666,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 1668,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 1670,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 1672,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 1674,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 1676,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall5",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1870437290,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        12.954998016357422,
+                        12.185610771179199,
+                        -122.79237365722656
+                    ],
+                    "Rotation": [
+                        -0,
+                        29.632410049438477,
+                        -0
+                    ],
+                    "Scale": [
+                        37.865474700927734,
+                        10.194721221923828,
+                        1.3102700710296631
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 622635273,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1666,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 1668,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 1670,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 1672,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 1674,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 1676,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 394035823,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        44.067466735839844,
+                        12.185610771179199,
+                        -120.97889709472656
+                    ],
+                    "Rotation": [
+                        0,
+                        -36.028007507324219,
+                        0
+                    ],
+                    "Scale": [
+                        37.865474700927734,
+                        10.194721221923828,
+                        1.3102700710296631
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 113166405,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1666,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 1668,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 1670,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 1672,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 1674,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 1676,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall7",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 279921922,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        57.276866912841797,
+                        12.185610771179199,
+                        -91.655326843261719
+                    ],
+                    "Rotation": [
+                        180,
+                        -82.532630920410156,
+                        180
+                    ],
+                    "Scale": [
+                        37.865478515625,
+                        10.194721221923828,
+                        1.3102700710296631
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1971005937,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1666,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 1668,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 1670,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 1672,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 1674,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 1676,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall8",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1469278616,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        39.005882263183594,
+                        12.185610771179199,
+                        -65.55548095703125
+                    ],
+                    "Rotation": [
+                        -180,
+                        -27.589302062988281,
+                        -180
+                    ],
+                    "Scale": [
+                        37.865474700927734,
+                        10.194721221923828,
+                        1.3102699518203735
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1847324251,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1666,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 1668,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 1670,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 1672,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 1674,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 1676,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "Closed_Door2 (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1735169941,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
+            "Parent UID": 1309046316,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        156.80867004394531,
+                        0,
+                        -123.50099945068359
+                    ],
+                    "Rotation": [
+                        180,
+                        -89.980216979980469,
+                        180
+                    ],
+                    "Scale": [
+                        0.99997800588607788,
+                        1,
+                        0.99997800588607788
+                    ]
+                }
+            ],
+            "Children UID": [
+                1870597184,
+                1425239293
+            ]
+        },
+        {
+            "Name": "Door_LowPoly (2)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1870597184,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
+            "Parent UID": 1735169941,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 404756378,
+                    "Vertex Count": 479,
+                    "Index Count": 1476
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1891,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 32280259,
+                    "Specular_ID": 1919,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_S.png",
+                    "Specular_UID": 698316530,
+                    "Normal_ID": 1912,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
+                    "Normal_UID": 186426588,
+                    "Height_ID": 1905,
+                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_H.png",
+                    "Height_UID": 944159270,
+                    "Ambient_ID": 1884,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
+                    "Ambient_UID": 568521047,
+                    "Emissive_ID": 1898,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
+                    "Emissive_UID": 1531561959
+                }
+            ]
+        },
+        {
+            "Name": "Border_LowPoly (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1425239293,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
+            "Parent UID": 1735169941,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        -0.00016734043310862035,
+                        0
+                    ],
+                    "Scale": [
+                        0.99999743700027466,
+                        1,
+                        0.99999743700027466
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2044442592,
+                    "Vertex Count": 1463,
+                    "Index Count": 3984
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1824,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_D.png",
+                    "Diffuse_UID": 732529737,
+                    "Specular_ID": 1881,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_S.png",
+                    "Specular_UID": 1167448914,
+                    "Normal_ID": 1862,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_N.png",
+                    "Normal_UID": 1201943206,
+                    "Height_ID": 1843,
+                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_H.png",
+                    "Height_UID": 1883836463,
+                    "Ambient_ID": 1805,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_A.png",
+                    "Ambient_UID": 637287171
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Door_Cutted_Base",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1252582930,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1309046316,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        23,
+                        1
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                281380023
+            ]
+        },
+        {
+            "Name": "LowPoly",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 281380023,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/PROP_Door_Cutted_Base.fbx",
+            "Parent UID": 1252582930,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1433317012
+            ]
+        },
+        {
+            "Name": "Door_Cutted",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1433317012,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/PROP_Door_Cutted_Base.fbx",
+            "Parent UID": 281380023,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 323569768,
+                    "Vertex Count": 214,
+                    "Index Count": 630
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 0.20000000298023224,
+                            "specularLight": 0.69999998807907104,
+                            "normalIntensity": 0.40000000596046448,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1678,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 488589419,
+                    "Specular_ID": 1688,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_S.png",
+                    "Specular_UID": 962229159,
+                    "Normal_ID": 1686,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_N.png",
+                    "Normal_UID": 454970767,
+                    "Height_ID": 1684,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_H.png",
+                    "Height_UID": 2020353068,
+                    "Ambient_ID": 1680,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_A.png",
+                    "Ambient_UID": 137170475,
+                    "Emissive_ID": 1682,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_E.png",
+                    "Emissive_UID": 402267230
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Door_Cutted_Base (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1042309213,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1309046316,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        43,
+                        23,
+                        1
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                152664915
+            ]
+        },
+        {
+            "Name": "LowPoly (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 152664915,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/PROP_Door_Cutted_Base.fbx",
+            "Parent UID": 1042309213,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                322439802
+            ]
+        },
+        {
+            "Name": "Door_Cutted (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 322439802,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/PROP_Door_Cutted_Base.fbx",
+            "Parent UID": 152664915,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 323569768,
+                    "Vertex Count": 214,
+                    "Index Count": 630
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                118.4044189453125,
+                                111.0653076171875,
+                                -58.234092712402344
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": false,
+                            "ambient": 0.10000000149011612,
+                            "specularLight": 0.69999998807907104,
+                            "normalIntensity": 0.40000000596046448,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1678,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 488589419,
+                    "Specular_ID": 1688,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_S.png",
+                    "Specular_UID": 962229159,
+                    "Normal_ID": 1686,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_N.png",
+                    "Normal_UID": 454970767,
+                    "Height_ID": 1684,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_H.png",
+                    "Height_UID": 2020353068,
+                    "Ambient_ID": 1680,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_A.png",
+                    "Ambient_UID": 137170475,
+                    "Emissive_ID": 1682,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_E.png",
+                    "Emissive_UID": 402267230
                 }
             ]
         }
