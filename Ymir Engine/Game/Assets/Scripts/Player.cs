@@ -106,7 +106,7 @@ public class Player : YmirComponent
     private float hitCD = 3f;
     private float hitCDTimer;
     private float hitDurationTimer;
-    private float hitDuration = 1.5f;
+    private float hitDuration = 0.5f;
 
     public bool vulnerable = true;
 
