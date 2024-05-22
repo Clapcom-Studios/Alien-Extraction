@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_BOSS_COLLDIERS.nav",
     "Editor Camera Position": [
-        -270.5771484375,
-        174.81207275390625,
-        130.77084350585938
+        -23.869379043579102,
+        163.81782531738281,
+        54.126686096191406
     ],
     "Editor Camera Right (X)": [
-        0.78843212127685547,
-        -5.2154064178466797e-07,
-        0.61513638496398926
+        0.52226710319519043,
+        -3.5762786865234375e-07,
+        -0.85279834270477295
     ],
     "Editor Camera Up (Y)": [
-        0.42227938771247864,
-        0.72714757919311523,
-        -0.54124295711517334
+        -0.56359285116195679,
+        0.75049614906311035,
+        -0.34515342116355896
     ],
     "Editor Camera Front (Z)": [
-        0.44728967547416687,
-        -0.68649053573608398,
-        -0.57330030202865601
+        -0.64001119136810303,
+        -0.66088920831680298,
+        -0.39195263385772705
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 870554449,
+            "UID": 1186236563,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -52,7 +52,7 @@
             "UID": 172333081,
             "Active": false,
             "Element_Type": "Model",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -845,7 +845,7 @@
             "UID": 1349128443,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1486,7 +1486,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        14.605808258056641,
+                        14.605810165405273,
                         -0
                     ],
                     "Scale": [
@@ -1669,7 +1669,7 @@
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1699,7 +1699,7 @@
             "UID": 660882132,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1736,7 +1736,7 @@
             "UID": 1978513889,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2321,7 +2321,7 @@
             "UID": 155676397,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2413,21 +2413,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1535,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Floor\/TEX_PROP_QueenFloor_D.png",
-                    "Diffuse_UID": 861398792,
+                    "Diffuse_ID": 893,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Floor\/TEX_PROP_QueenFloor_D.png",
+                    "Diffuse_UID": 1122175913,
                     "Specular_ID": 1541,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Floor\/TEX_PROP_QueenFloor_S.png",
                     "Specular_UID": 1631627956,
-                    "Normal_ID": 1539,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Floor\/TEX_PROP_QueenFloor_N.png",
-                    "Normal_UID": 740981432,
-                    "Height_ID": 1537,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Floor\/TEX_PROP_QueenFloor_H.png",
-                    "Height_UID": 1936324183,
-                    "Ambient_ID": 1533,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Floor\/TEX_PROP_QueenFloor_A.png",
-                    "Ambient_UID": 787286465
+                    "Normal_ID": 899,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Floor\/TEX_PROP_QueenFloor_N.png",
+                    "Normal_UID": 1541331193,
+                    "Height_ID": 896,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Floor\/TEX_PROP_QueenFloor_H.png",
+                    "Height_UID": 1451086690,
+                    "Ambient_ID": 890,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Floor\/TEX_PROP_QueenFloor_A.png",
+                    "Ambient_UID": 782022738
                 }
             ]
         },
@@ -2650,21 +2650,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 917,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 998,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 971,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 944,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 890,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -2726,21 +2726,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 921,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 1002,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 975,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 948,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 894,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -2802,21 +2802,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 925,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 1006,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 979,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 952,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 898,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -2878,21 +2878,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 929,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 1010,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 983,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 956,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 902,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -2916,7 +2916,7 @@
                     ],
                     "Rotation": [
                         -90.000068664550781,
-                        2.732075699896086e-05,
+                        1.878302100521978e-05,
                         135
                     ],
                     "Scale": [
@@ -2954,21 +2954,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 933,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 1014,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 987,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 960,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 906,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -3030,21 +3030,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 937,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 1018,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 991,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 964,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 910,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -3106,21 +3106,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1555,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
-                    "Diffuse_UID": 1278886722,
-                    "Specular_ID": 1561,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
-                    "Specular_UID": 914127854,
-                    "Normal_ID": 1559,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
-                    "Normal_UID": 97481632,
-                    "Height_ID": 1557,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
-                    "Height_UID": 5904249,
-                    "Ambient_ID": 1553,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
-                    "Ambient_UID": 1771961047
+                    "Diffuse_ID": 941,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_D.png",
+                    "Diffuse_UID": 442692956,
+                    "Specular_ID": 1022,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_S.png",
+                    "Specular_UID": 1349084291,
+                    "Normal_ID": 995,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_N.png",
+                    "Normal_UID": 2144440090,
+                    "Height_ID": 968,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_H.png",
+                    "Height_UID": 832195274,
+                    "Ambient_ID": 914,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen LateralWall\/TEX_PROP_QueenLateralWall_A.png",
+                    "Ambient_UID": 1043025833
                 }
             ]
         },
@@ -3231,15 +3231,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1088,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1278,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1214,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1151,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1025,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3301,15 +3307,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1092,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1282,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1218,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1155,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1029,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3371,15 +3383,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1096,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1286,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1222,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1159,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1033,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3441,15 +3459,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1100,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1290,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1226,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1163,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1037,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3511,15 +3535,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1104,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1294,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1230,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1167,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1041,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3581,15 +3611,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1108,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1298,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1234,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1171,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1045,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3651,15 +3687,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1112,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1302,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1238,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1175,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1049,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3721,15 +3763,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1116,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1306,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1242,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1179,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1053,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3791,15 +3839,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1120,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1310,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1246,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1183,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1057,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3861,15 +3915,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1124,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1314,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1250,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1187,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1061,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -3931,15 +3991,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1128,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1318,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1254,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1191,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1065,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -4001,15 +4067,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1132,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1322,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1258,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1195,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1069,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -4071,15 +4143,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1136,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1326,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1262,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1199,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1073,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -4141,15 +4219,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1140,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1330,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1266,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1203,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1077,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -4172,9 +4256,9 @@
                         32.063220977783203
                     ],
                     "Rotation": [
-                        -90.000083923339844,
-                        2.0490568203967996e-05,
-                        133.62309265136719
+                        -90.0001220703125,
+                        2.2198115402716212e-05,
+                        133.62310791015625
                     ],
                     "Scale": [
                         99.999992370605469,
@@ -4211,15 +4295,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1144,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1334,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1270,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1207,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1081,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -4281,15 +4371,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1565,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
-                    "Diffuse_UID": 1314265580,
-                    "Height_ID": 1567,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
-                    "Height_UID": 1781270097,
-                    "Ambient_ID": 1563,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
-                    "Ambient_UID": 2066385805
+                    "Diffuse_ID": 1148,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_D.png",
+                    "Diffuse_UID": 1880145196,
+                    "Specular_ID": 1338,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_S.png",
+                    "Specular_UID": 436710636,
+                    "Normal_ID": 1274,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_N.png",
+                    "Normal_UID": 1508677600,
+                    "Height_ID": 1211,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_H.png",
+                    "Height_UID": 2125388070,
+                    "Ambient_ID": 1085,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn1\/TEX_PROP_QueenColumn1_A.png",
+                    "Ambient_UID": 617235652
                 }
             ]
         },
@@ -5732,9 +5828,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_D.png",
+                    "Diffuse_UID": 725591922,
+                    "Specular_ID": 946,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_S.png",
+                    "Specular_UID": 1527279916,
+                    "Normal_ID": 922,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_N.png",
+                    "Normal_UID": 441699059,
+                    "Height_ID": 898,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_H.png",
+                    "Height_UID": 1251061190,
+                    "Ambient_ID": 892,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_A.png",
+                    "Ambient_UID": 686379724
                 }
             ]
         },
@@ -5796,9 +5904,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_D.png",
+                    "Diffuse_UID": 725591922,
+                    "Specular_ID": 950,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_S.png",
+                    "Specular_UID": 1527279916,
+                    "Normal_ID": 926,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_N.png",
+                    "Normal_UID": 441699059,
+                    "Height_ID": 902,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_H.png",
+                    "Height_UID": 1251061190,
+                    "Ambient_ID": 892,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_A.png",
+                    "Ambient_UID": 686379724
                 }
             ]
         },
@@ -5860,9 +5980,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_D.png",
+                    "Diffuse_UID": 725591922,
+                    "Specular_ID": 954,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_S.png",
+                    "Specular_UID": 1527279916,
+                    "Normal_ID": 930,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_N.png",
+                    "Normal_UID": 441699059,
+                    "Height_ID": 906,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_H.png",
+                    "Height_UID": 1251061190,
+                    "Ambient_ID": 892,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_A.png",
+                    "Ambient_UID": 686379724
                 }
             ]
         },
@@ -5924,9 +6056,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_D.png",
+                    "Diffuse_UID": 725591922,
+                    "Specular_ID": 958,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_S.png",
+                    "Specular_UID": 1527279916,
+                    "Normal_ID": 934,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_N.png",
+                    "Normal_UID": 441699059,
+                    "Height_ID": 910,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_H.png",
+                    "Height_UID": 1251061190,
+                    "Ambient_ID": 892,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_A.png",
+                    "Ambient_UID": 686379724
                 }
             ]
         },
@@ -5988,9 +6132,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_D.png",
+                    "Diffuse_UID": 725591922,
+                    "Specular_ID": 962,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_S.png",
+                    "Specular_UID": 1527279916,
+                    "Normal_ID": 938,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_N.png",
+                    "Normal_UID": 441699059,
+                    "Height_ID": 914,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_H.png",
+                    "Height_UID": 1251061190,
+                    "Ambient_ID": 892,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_A.png",
+                    "Ambient_UID": 686379724
                 }
             ]
         },
@@ -6052,9 +6208,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_D.png",
+                    "Diffuse_UID": 725591922,
+                    "Specular_ID": 966,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_S.png",
+                    "Specular_UID": 1527279916,
+                    "Normal_ID": 942,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_N.png",
+                    "Normal_UID": 441699059,
+                    "Height_ID": 918,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_H.png",
+                    "Height_UID": 1251061190,
+                    "Ambient_ID": 892,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/QueenColumn2\/TEX_PROP_QueenColumn2_A.png",
+                    "Ambient_UID": 686379724
                 }
             ]
         },
@@ -6171,9 +6339,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6235,9 +6415,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1297,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1561,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1473,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1385,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1209,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6299,9 +6491,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1301,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1565,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1477,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1389,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1213,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6363,9 +6567,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1305,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1569,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1481,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1393,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1217,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6427,9 +6643,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1309,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1573,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1485,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1221,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6491,9 +6719,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1313,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1577,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1489,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1401,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1225,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6555,9 +6795,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1317,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1581,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1493,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1405,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1229,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6619,9 +6871,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1321,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1585,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1497,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1409,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1233,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6683,9 +6947,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1325,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1589,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1501,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1413,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1237,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6747,9 +7023,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1329,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1593,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1505,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1417,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1241,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6811,9 +7099,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1333,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1597,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1509,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1421,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1245,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6875,9 +7175,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1337,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1601,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1513,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1425,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1249,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -6939,9 +7251,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1341,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1605,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1517,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1429,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1253,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7003,9 +7327,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1345,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1609,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1521,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1433,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1257,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7067,9 +7403,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1349,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1613,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1525,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1437,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1261,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7131,9 +7479,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1353,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1617,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1529,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1441,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1265,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7195,9 +7555,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1357,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1621,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1533,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1445,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1269,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7259,9 +7631,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1361,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1625,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1537,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1449,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1273,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7323,9 +7707,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1365,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1629,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1541,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1453,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1277,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7387,9 +7783,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1369,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1633,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1545,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1457,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1281,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7451,9 +7859,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1373,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1637,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1549,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1461,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1285,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7515,9 +7935,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
+                    "Diffuse_ID": 1377,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1641,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1553,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1465,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1289,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -7624,21 +8056,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1017,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1158,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1111,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1064,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 970,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -7700,21 +8132,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1021,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1162,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1115,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1068,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 974,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -7776,21 +8208,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1025,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1166,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1119,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1072,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 978,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -7852,21 +8284,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1029,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1170,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1123,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1076,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 982,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -7928,21 +8360,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1033,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1174,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1127,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1080,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 986,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8004,21 +8436,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1037,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1178,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1131,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1084,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 990,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8080,21 +8512,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1041,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1182,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1135,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1088,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 994,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8156,21 +8588,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1045,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1186,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1139,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1092,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 998,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8232,21 +8664,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1049,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1190,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1143,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1096,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 1002,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8308,21 +8740,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1053,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1194,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1147,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1100,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 1006,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8384,21 +8816,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1057,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1198,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1151,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1104,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 1010,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8460,21 +8892,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1581,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_D.png",
-                    "Diffuse_UID": 1679984046,
-                    "Specular_ID": 1587,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_S.png",
-                    "Specular_UID": 353345215,
-                    "Normal_ID": 1585,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_N.png",
-                    "Normal_UID": 570975392,
-                    "Height_ID": 1583,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_H.png",
-                    "Height_UID": 1964374022,
-                    "Ambient_ID": 1579,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/OLD\/Floor Curve\/TEX_PROP_FloorCurve_A.png",
-                    "Ambient_UID": 782936036
+                    "Diffuse_ID": 1061,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_D.png",
+                    "Diffuse_UID": 941449927,
+                    "Specular_ID": 1202,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_S.png",
+                    "Specular_UID": 51362411,
+                    "Normal_ID": 1155,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_N.png",
+                    "Normal_UID": 528097261,
+                    "Height_ID": 1108,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_H.png",
+                    "Height_UID": 908746849,
+                    "Ambient_ID": 1014,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Floor Curve Decorations\/TEX_PROP_QueenFloorDecoration_A.png",
+                    "Ambient_UID": 2129489021
                 }
             ]
         },
@@ -8579,21 +9011,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -8655,21 +9087,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -8731,21 +9163,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -8807,21 +9239,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -8883,21 +9315,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -8959,21 +9391,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -9035,21 +9467,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -9111,21 +9543,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -9187,21 +9619,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -9263,21 +9695,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
-                    "Diffuse_UID": 2088888605,
-                    "Specular_ID": 1675,
-                    "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
-                    "Specular_UID": 1746114204,
-                    "Normal_ID": 1673,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
-                    "Normal_UID": 1073790567,
-                    "Height_ID": 1671,
-                    "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
-                    "Height_UID": 1598737942,
-                    "Ambient_ID": 1669,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/HATCHERY\/Queen Chamber\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
-                    "Ambient_UID": 221946907
+                    "Diffuse_ID": 1293,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_D.png",
+                    "Diffuse_UID": 1493869193,
+                    "Specular_ID": 1557,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_S.png",
+                    "Specular_UID": 635272879,
+                    "Normal_ID": 1469,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_N.png",
+                    "Normal_UID": 626730876,
+                    "Height_ID": 1381,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_H.png",
+                    "Height_UID": 1262421555,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/QUEEN CHAMBER\/Queen Beam\/TEX_PROP_QueenBeam_A.png",
+                    "Ambient_UID": 509556075
                 }
             ]
         },
@@ -9288,7 +9720,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9315,8 +9747,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1940,
-                    "Height": 1026,
+                    "Width": 290,
+                    "Height": 471,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -11315,7 +11747,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18875,7 +19307,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19416,7 +19848,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19769,7 +20201,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20563,7 +20995,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20676,7 +21108,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 1186236563,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20721,9 +21153,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.10000000149011612,
@@ -33629,7 +34061,7 @@
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
                     "Far Plane": 1000,
-                    "Frustum Culling": 1,
+                    "Frustum Culling": 0,
                     "Draw Bounding Boxes": 0,
                     "Game Camera": true
                 },
