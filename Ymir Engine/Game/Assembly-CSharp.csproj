@@ -1,172 +1,173 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{211AF5C7-01CE-436B-AC2F-0424775D7953}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Assembly_CSharp</RootNamespace>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>ScriptsAssembly-Output\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>ScriptsAssembly-Output\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Animation.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Audio.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Globals.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Item.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Mathf.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\PathFinding.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Transform.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\YmirComponent.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\GameObject.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\InternalCalls.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Particles.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Quaternion.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Time.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Vector3.cs" />
-    <Compile Include="Assembly-CSharp\Ymir Engine Utility\Vector2.cs" />
-    <Compile Include="Assets\Scripts\AcidicPuddle.cs" />
-    <Compile Include="Assets\Scripts\AcidicSpit.cs" />
-    <Compile Include="Assets\Scripts\Alien_Head_Trap.cs" />
-    <Compile Include="Assets\Scripts\BaseTeleporter.cs" />
-    <Compile Include="Assets\Scripts\BH_Bullet.cs" />
-    <Compile Include="Assets\Scripts\BH_Plane.cs" />
-    <Compile Include="Assets\Scripts\BH_Tail.cs" />
-    <Compile Include="Assets\Scripts\Button.cs" />
-    <Compile Include="Assets\Scripts\Button_Exit.cs" />
-    <Compile Include="Assets\Scripts\Button_GoToScene.cs" />
-    <Compile Include="Assets\Scripts\Button_Navigation.cs" />
-    <Compile Include="Assets\Scripts\Caius.cs" />
-    <Compile Include="Assets\Scripts\Door.cs" />
-    <Compile Include="Assets\Scripts\Electric_trap.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Flesh_Door.cs" />
-    <Compile Include="Assets\Scripts\Health.cs" />
-    <Compile Include="Assets\Scripts\Inventory_Chest.cs" />
-    <Compile Include="Assets\Scripts\Key.cs" />
-    <Compile Include="Assets\Scripts\Level_Selection_Canvas.cs" />
-    <Compile Include="Assets\Scripts\Loot_Chest.cs" />
-    <Compile Include="Assets\Scripts\OpenMenu_OnCollision.cs" />
-    <Compile Include="Assets\Scripts\PickUp.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\SceneManager.cs" />
-    <Compile Include="Assets\Scripts\SelectLvl.cs" />
-    <Compile Include="Assets\Scripts\SelectWeapon.cs" />
-    <Compile Include="Assets\Scripts\SpawnSensor.cs" />
-    <Compile Include="Assets\Scripts\SpitterAcidExplosion.cs" />
-    <Compile Include="Assets\Scripts\Teleport_OnCollision.cs" />
-    <Compile Include="Assets\Scripts\TestCrash.cs" />
-    <Compile Include="Assets\Scripts\TestScript.cs" />
-    <Compile Include="Assets\Scripts\Tp_Beacon.cs" />
-    <Compile Include="Assets\Scripts\Tp_Lvl2_Part2.cs" />
-    <Compile Include="Assets\Scripts\Basic_Movment.cs" />
-    <Compile Include="Assets\Scripts\CameraRot.cs" />
-    <Compile Include="Assets\Scripts\Core.cs" />
-    <Compile Include="Assets\Scripts\DraggingPrueba.cs" />
-    <Compile Include="Assets\Scripts\FaceHuggerAttack.cs" />
-    <Compile Include="Assets\Scripts\FaceHuggerBaseScript.cs" />
-    <Compile Include="Assets\Scripts\main.cs" />
-    <Compile Include="Assets\Scripts\Prueba.cs" />
-    <Compile Include="Assets\Scripts\PruebaPathFinding.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphAttack.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphBaseScript.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\Test_Anim.cs" />
-    <Compile Include="Assets\Scripts\Enemy_Test.cs" />
-    <Compile Include="Assets\Scripts\Tp_To_Lvl1.cs" />
-    <Compile Include="Assets\Scripts\UI_Animation.cs" />
-    <Compile Include="Assets\Scripts\UI_Bullets.cs" />
-    <Compile Include="Assets\Scripts\UI_Inventory.cs" />
-    <Compile Include="Assets\Scripts\UI_Inventory_Grid.cs" />
-    <Compile Include="Assets\Scripts\UI_Item_Button.cs" />
-    <Compile Include="Assets\Scripts\UI_Stash.cs" />
-    <Compile Include="Assets\Scripts\UI_Upgrade_Button.cs" />
-    <Compile Include="Assets\Scripts\UI_Upgrade_Navigation.cs" />
-    <Compile Include="Assets\Scripts\UI_Upgrade_Station.cs" />
-    <Compile Include="Assets\Scripts\Tp_To_Lvl2_Part1.cs" />
-    <Compile Include="Assets\Scripts\Tp_To_Lvl3.cs" />
-    <Compile Include="Assets\Scripts\Tp_To_Lvl3_Part1.cs" />
-    <Compile Include="Assets\Scripts\DroneXenomorphBaseScript.cs" />
-    <Compile Include="Assets\Scripts\Door_Horizontal.cs" />
-    <Compile Include="Assets\Scripts\Script_Npc.cs" />
-    <Compile Include="Assets\Scripts\DroneXenomorphAttack.cs" />
-    <Compile Include="Assets\Scripts\BH_Shotgun.cs" />
-    <Compile Include="Assets\Scripts\Alien_Trap.cs" />
-    <Compile Include="Assets\Scripts\Open_Chest_RotationY.cs" />
-    <Compile Include="Assets\Scripts\Sensor_Alien_Trap.cs" />
-    <Compile Include="Assets\Scripts\UI_Start.cs" />
-    <Compile Include="Assets\Scripts\Health_Bar_Test.cs" />
-    <Compile Include="Assets\Scripts\Camera.cs" />
-    <Compile Include="Assets\Scripts\SpitterAcidSpit.cs" />
-    <Compile Include="Assets\Scripts\SpitterBaseScript.cs" />
-    <Compile Include="Assets\Scripts\Item_World.cs" />
-    <Compile Include="Assets\Scripts\TextPopUp.cs" />
-    <Compile Include="Assets\Scripts\UI_Crafting.cs" />
-    <Compile Include="Assets\Scripts\UI_Crafting_Recipe.cs" />
-    <Compile Include="Assets\Scripts\Weapon.cs" />
-    <Compile Include="Assets\Scripts\SMG.cs" />
-    <Compile Include="Assets\Scripts\Shotgun.cs" />
-    <Compile Include="Assets\Scripts\Plasma.cs" />
-    <Compile Include="Assets\Scripts\DroneXenomorphTailAttack.cs" />
-    <Compile Include="Assets\Scripts\DroneXenomorphClawAttack.cs" />
-    <Compile Include="Assets\Scripts\FaceHuggerTailAttack.cs" />
-    <Compile Include="Assets\Scripts\SpitterAcidShrapnel.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphClawAttack.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphTailAttack.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphSpitAttack.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphPuddle.cs" />
-    <Compile Include="Assets\Scripts\QueenXenomorphShrapnelAttack.cs" />
-    <Compile Include="Assets\Scripts\TriggerTutorialUI.cs" />
-    <Compile Include="Assets\Scripts\UI_Cutscenes.cs" />
-    <Compile Include="Assets\Scripts\MainMenuCamera.cs" />
-    <Compile Include="Assets\Scripts\UI_ToggleMenu.cs" />
-    <Compile Include="Assets\Scripts\BackZoneDoor.cs" />
-    <Compile Include="Assets\Scripts\BackZoneDoor_Sensor.cs" />
-    <Compile Include="Assets\Scripts\Auto_Aim.cs" />
-    <Compile Include="Assets\Scripts\Iscariot.cs" />
-    <Compile Include="Assets\Scripts\ExplosionDelete.cs" />
-    <Compile Include="Assets\Scripts\BakerHouse.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Scripts\Enemies\" />
-    <Folder Include="Assets\Scripts\NPC\" />
-    <Folder Include="Assets\Scripts\Player\" />
-    <Folder Include="Assets\Scripts\Tests\" />
-    <Folder Include="Assets\Scripts\Ui\" />
-    <Folder Include="Assets\Scripts\World\" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{211AF5C7-01CE-436B-AC2F-0424775D7953}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Assembly_CSharp</RootNamespace>
+		<AssemblyName>Assembly-CSharp</AssemblyName>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<Deterministic>true</Deterministic>
+		<TargetFrameworkProfile />
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>ScriptsAssembly-Output\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>ScriptsAssembly-Output\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<PropertyGroup>
+		<StartupObject />
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Animation.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Audio.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Globals.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Item.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Mathf.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\PathFinding.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Transform.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\YmirComponent.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\GameObject.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\InternalCalls.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Particles.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Quaternion.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Time.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Vector3.cs" />
+		<Compile Include="Assembly-CSharp\Ymir Engine Utility\Vector2.cs" />
+		<Compile Include="Assets\Scripts\AcidicPuddle.cs" />
+		<Compile Include="Assets\Scripts\AcidicSpit.cs" />
+		<Compile Include="Assets\Scripts\Alien_Head_Trap.cs" />
+		<Compile Include="Assets\Scripts\BaseTeleporter.cs" />
+		<Compile Include="Assets\Scripts\BH_Bullet.cs" />
+		<Compile Include="Assets\Scripts\BH_Plane.cs" />
+		<Compile Include="Assets\Scripts\BH_Tail.cs" />
+		<Compile Include="Assets\Scripts\Button.cs" />
+		<Compile Include="Assets\Scripts\Button_Exit.cs" />
+		<Compile Include="Assets\Scripts\Button_GoToScene.cs" />
+		<Compile Include="Assets\Scripts\Button_Navigation.cs" />
+		<Compile Include="Assets\Scripts\Caius.cs" />
+		<Compile Include="Assets\Scripts\Door.cs" />
+		<Compile Include="Assets\Scripts\Electric_trap.cs" />
+		<Compile Include="Assets\Scripts\Enemy.cs" />
+		<Compile Include="Assets\Scripts\Flesh_Door.cs" />
+		<Compile Include="Assets\Scripts\Health.cs" />
+		<Compile Include="Assets\Scripts\Inventory_Chest.cs" />
+		<Compile Include="Assets\Scripts\Key.cs" />
+		<Compile Include="Assets\Scripts\Level_Selection_Canvas.cs" />
+		<Compile Include="Assets\Scripts\Loot_Chest.cs" />
+		<Compile Include="Assets\Scripts\OpenMenu_OnCollision.cs" />
+		<Compile Include="Assets\Scripts\PickUp.cs" />
+		<Compile Include="Assets\Scripts\Player.cs" />
+		<Compile Include="Assets\Scripts\PlayerMovement.cs" />
+		<Compile Include="Assets\Scripts\SceneManager.cs" />
+		<Compile Include="Assets\Scripts\SelectLvl.cs" />
+		<Compile Include="Assets\Scripts\SelectWeapon.cs" />
+		<Compile Include="Assets\Scripts\SpawnSensor.cs" />
+		<Compile Include="Assets\Scripts\SpitterAcidExplosion.cs" />
+		<Compile Include="Assets\Scripts\Teleport_OnCollision.cs" />
+		<Compile Include="Assets\Scripts\TestCrash.cs" />
+		<Compile Include="Assets\Scripts\TestScript.cs" />
+		<Compile Include="Assets\Scripts\Tp_Beacon.cs" />
+		<Compile Include="Assets\Scripts\Tp_Lvl2_Part2.cs" />
+		<Compile Include="Assets\Scripts\Basic_Movment.cs" />
+		<Compile Include="Assets\Scripts\CameraRot.cs" />
+		<Compile Include="Assets\Scripts\Core.cs" />
+		<Compile Include="Assets\Scripts\DraggingPrueba.cs" />
+		<Compile Include="Assets\Scripts\FaceHuggerAttack.cs" />
+		<Compile Include="Assets\Scripts\FaceHuggerBaseScript.cs" />
+		<Compile Include="Assets\Scripts\main.cs" />
+		<Compile Include="Assets\Scripts\Prueba.cs" />
+		<Compile Include="Assets\Scripts\PruebaPathFinding.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphAttack.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphBaseScript.cs" />
+		<Compile Include="Assets\Scripts\Spawner.cs" />
+		<Compile Include="Assets\Scripts\Test_Anim.cs" />
+		<Compile Include="Assets\Scripts\Enemy_Test.cs" />
+		<Compile Include="Assets\Scripts\Tp_To_Lvl1.cs" />
+		<Compile Include="Assets\Scripts\UI_Animation.cs" />
+		<Compile Include="Assets\Scripts\UI_Bullets.cs" />
+		<Compile Include="Assets\Scripts\UI_Inventory.cs" />
+		<Compile Include="Assets\Scripts\UI_Inventory_Grid.cs" />
+		<Compile Include="Assets\Scripts\UI_Item_Button.cs" />
+		<Compile Include="Assets\Scripts\UI_Stash.cs" />
+		<Compile Include="Assets\Scripts\UI_Upgrade_Button.cs" />
+		<Compile Include="Assets\Scripts\UI_Upgrade_Navigation.cs" />
+		<Compile Include="Assets\Scripts\UI_Upgrade_Station.cs" />
+		<Compile Include="Assets\Scripts\Tp_To_Lvl2_Part1.cs" />
+		<Compile Include="Assets\Scripts\Tp_To_Lvl3.cs" />
+		<Compile Include="Assets\Scripts\Tp_To_Lvl3_Part1.cs" />
+		<Compile Include="Assets\Scripts\DroneXenomorphBaseScript.cs" />
+		<Compile Include="Assets\Scripts\Door_Horizontal.cs" />
+		<Compile Include="Assets\Scripts\Script_Npc.cs" />
+		<Compile Include="Assets\Scripts\DroneXenomorphAttack.cs" />
+		<Compile Include="Assets\Scripts\BH_Shotgun.cs" />
+		<Compile Include="Assets\Scripts\Alien_Trap.cs" />
+		<Compile Include="Assets\Scripts\Open_Chest_RotationY.cs" />
+		<Compile Include="Assets\Scripts\Sensor_Alien_Trap.cs" />
+		<Compile Include="Assets\Scripts\UI_Start.cs" />
+		<Compile Include="Assets\Scripts\Health_Bar_Test.cs" />
+		<Compile Include="Assets\Scripts\Camera.cs" />
+		<Compile Include="Assets\Scripts\SpitterAcidSpit.cs" />
+		<Compile Include="Assets\Scripts\SpitterBaseScript.cs" />
+		<Compile Include="Assets\Scripts\Item_World.cs" />
+		<Compile Include="Assets\Scripts\TextPopUp.cs" />
+		<Compile Include="Assets\Scripts\UI_Crafting.cs" />
+		<Compile Include="Assets\Scripts\UI_Crafting_Recipe.cs" />
+		<Compile Include="Assets\Scripts\Weapon.cs" />
+		<Compile Include="Assets\Scripts\SMG.cs" />
+		<Compile Include="Assets\Scripts\Shotgun.cs" />
+		<Compile Include="Assets\Scripts\Plasma.cs" />
+		<Compile Include="Assets\Scripts\DroneXenomorphTailAttack.cs" />
+		<Compile Include="Assets\Scripts\DroneXenomorphClawAttack.cs" />
+		<Compile Include="Assets\Scripts\FaceHuggerTailAttack.cs" />
+		<Compile Include="Assets\Scripts\SpitterAcidShrapnel.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphClawAttack.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphTailAttack.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphSpitAttack.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphPuddle.cs" />
+		<Compile Include="Assets\Scripts\QueenXenomorphShrapnelAttack.cs" />
+		<Compile Include="Assets\Scripts\TriggerTutorialUI.cs" />
+		<Compile Include="Assets\Scripts\UI_Cutscenes.cs" />
+		<Compile Include="Assets\Scripts\MainMenuCamera.cs" />
+		<Compile Include="Assets\Scripts\UI_ToggleMenu.cs" />
+		<Compile Include="Assets\Scripts\BackZoneDoor.cs" />
+		<Compile Include="Assets\Scripts\BackZoneDoor_Sensor.cs" />
+		<Compile Include="Assets\Scripts\Auto_Aim.cs" />
+		<Compile Include="Assets\Scripts\Iscariot.cs" />
+		<Compile Include="Assets\Scripts\ExplosionDelete.cs" />
+		<Compile Include="Assets\Scripts\BakerHouse.cs" />
+		<Compile Include="Assets\Scripts\UI_Crafting_Grid.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Assets\Scripts\Enemies\" />
+		<Folder Include="Assets\Scripts\NPC\" />
+		<Folder Include="Assets\Scripts\Player\" />
+		<Folder Include="Assets\Scripts\Tests\" />
+		<Folder Include="Assets\Scripts\Ui\" />
+		<Folder Include="Assets\Scripts\World\" />
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

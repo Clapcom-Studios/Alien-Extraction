@@ -25,6 +25,7 @@ public class UI_Cutscenes : YmirComponent
     private float finishTimer = 2f;
 
     // Loading scene
+    private GameObject loadScene_togo;
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
@@ -32,6 +33,7 @@ public class UI_Cutscenes : YmirComponent
     {
         button = InternalCalls.GetGameObjectByName("Button_A");
         img = InternalCalls.GetGameObjectByName("CutsceneImg");
+        loadScene_togo = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
         currentFrame = 0; 
         
         hasFinished = false;
@@ -41,6 +43,10 @@ public class UI_Cutscenes : YmirComponent
         if (loadSceneImg != null)
         {
             loadSceneImg.SetActive(false);
+        }
+        if (loadScene_togo != null)
+        {
+            loadScene_togo.SetActive(false);
         }
 
         loadScene = false;
@@ -52,6 +58,12 @@ public class UI_Cutscenes : YmirComponent
         {
             if (introScene)
             {
+                button.SetActive(false);
+                if (loadScene_togo != null)
+                {
+                    loadScene_togo.SetActive(true);
+                }
+
                 InternalCalls.LoadScene("Assets/BASE_FINAL/LVL_BASE_COLLIDERS");
             }
             if (winScene1)

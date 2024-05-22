@@ -188,6 +188,8 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.UI::SwitchPosition", SwitchPosition);
 	mono_add_internal_call("YmirEngine.UI::NavigateGridHorizontal", NavigateGridHorizontal);
 	mono_add_internal_call("YmirEngine.UI::NavigateGridVertical", NavigateGridVertical);
+	mono_add_internal_call("YmirEngine.UI::NavigateCraftingHorizontal", NavigateCraftingHorizontal);
+	mono_add_internal_call("YmirEngine.UI::NavigateCraftingVertical", NavigateCraftingVertical);
 	mono_add_internal_call("YmirEngine.UI::CompareStringToName", CompareStringToName);
 	mono_add_internal_call("YmirEngine.UI::SetActiveAllUI", SetActiveAllUI);
 	mono_add_internal_call("YmirEngine.UI::SetFirstFocused", SetFirstFocused);

@@ -1,31 +1,31 @@
 {
-    "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_BOSS_COLLDIERS.nav",
+    "NavMesh": "Assets\/LVL3_BlockOut\/BOSS_CAMERA.nav",
     "Editor Camera Position": [
-        -270.5771484375,
-        174.81207275390625,
-        130.77084350585938
+        -263.56439208984375,
+        466.9730224609375,
+        234.50796508789062
     ],
     "Editor Camera Right (X)": [
-        0.78843212127685547,
-        -5.2154064178466797e-07,
-        0.61513638496398926
+        0.65043818950653076,
+        -5.8114528656005859e-07,
+        0.75848388671875
     ],
     "Editor Camera Up (Y)": [
-        0.42227938771247864,
-        0.72714757919311523,
-        -0.54124295711517334
+        0.53773248195648193,
+        0.70467495918273926,
+        -0.46113216876983643
     ],
     "Editor Camera Front (Z)": [
-        0.44728967547416687,
-        -0.68649053573608398,
-        -0.57330030202865601
+        0.53535902500152588,
+        -0.70895814895629883,
+        -0.45909789204597473
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 870554449,
+            "UID": 186092550,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -52,7 +52,7 @@
             "UID": 172333081,
             "Active": false,
             "Element_Type": "Model",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -845,7 +845,7 @@
             "UID": 1349128443,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -857,8 +857,8 @@
                     ],
                     "Rotation": [
                         -0,
-                        0,
-                        -0
+                        -90,
+                        0
                     ],
                     "Scale": [
                         1,
@@ -1669,7 +1669,7 @@
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1677,7 +1677,7 @@
                     "Translation": [
                         -105.25926971435547,
                         14.360359191894531,
-                        -63.976722717285156
+                        -64.17376708984375
                     ],
                     "Rotation": [
                         -0,
@@ -1699,7 +1699,7 @@
             "UID": 660882132,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1736,15 +1736,15 @@
             "UID": 1978513889,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -145.79103088378906,
+                        177.80967712402344,
                         0,
-                        -146.04046630859375
+                        -165.32466125488281
                     ],
                     "Rotation": [
                         -0,
@@ -2321,7 +2321,7 @@
             "UID": 155676397,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2333,13 +2333,13 @@
                     ],
                     "Rotation": [
                         -0,
-                        0,
-                        -0
+                        -90,
+                        0
                     ],
                     "Scale": [
+                        1.0000001192092896,
                         1,
-                        1,
-                        1
+                        1.0000001192092896
                     ]
                 }
             ],
@@ -2447,17 +2447,17 @@
                     "Translation": [
                         0.90744775533676147,
                         -19.190919876098633,
-                        0.44474205374717712
+                        0.4669797420501709
                     ],
                     "Rotation": [
-                        -90.000076293945312,
-                        2.0490568203967996e-05,
+                        -90.0001220703125,
+                        1.878302100521978e-05,
                         -45.000011444091797
                     ],
                     "Scale": [
-                        100,
-                        100,
-                        100
+                        99.999992370605469,
+                        99.999992370605469,
+                        99.991935729980469
                     ]
                 },
                 {
@@ -2916,7 +2916,7 @@
                     ],
                     "Rotation": [
                         -90.000068664550781,
-                        2.732075699896086e-05,
+                        1.878302100521978e-05,
                         135
                     ],
                     "Scale": [
@@ -4172,9 +4172,9 @@
                         32.063220977783203
                     ],
                     "Rotation": [
-                        -90.000083923339844,
-                        2.0490568203967996e-05,
-                        133.62309265136719
+                        -90.000129699707031,
+                        2.2198115402716212e-05,
+                        133.62310791015625
                     ],
                     "Scale": [
                         99.999992370605469,
@@ -9288,7 +9288,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9315,8 +9315,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1940,
-                    "Height": 1026,
+                    "Width": 566,
+                    "Height": 637,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -9329,7 +9329,9 @@
             ],
             "Children UID": [
                 1378669993,
+                823303942,
                 807770031,
+                1883355782,
                 175461015
             ]
         },
@@ -9444,6 +9446,135 @@
                         90
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Icons\/Inventory.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Dpad_Up",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 823303942,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1398847280,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1749,
+                    "Position Y": 123,
+                    "Width": 27,
+                    "Height": 29,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1749,
+                        123,
+                        27,
+                        29
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Up_unpressed.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ],
+            "Children UID": [
+                1504559421
+            ]
+        },
+        {
+            "Name": "Map Icon",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1504559421,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 823303942,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1779,
+                    "Position Y": 94,
+                    "Width": 100,
+                    "Height": 100,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1779,
+                        94,
+                        100,
+                        100
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Icons\/Map.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -9645,6 +9776,326 @@
                         -0.98000001907348633,
                         0,
                         -0.98000001907348633,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Items",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1883355782,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1398847280,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1677,
+                    "Position Y": 856,
+                    "Width": 177,
+                    "Height": 185,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1677,
+                        856,
+                        177,
+                        185
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Consumibles.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ],
+            "Children UID": [
+                1810944020,
+                118355006,
+                1749880555,
+                1388662483
+            ]
+        },
+        {
+            "Name": "Switch Items",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1810944020,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1883355782,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1732,
+                    "Position Y": 1010,
+                    "Width": 21,
+                    "Height": 19,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1732,
+                        1010,
+                        21,
+                        19
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/RotateConsumable.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Use Item",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 118355006,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1883355782,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1686,
+                    "Position Y": 964,
+                    "Width": 58,
+                    "Height": 52,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1686,
+                        964,
+                        58,
+                        52
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Bumper_unpressed.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Dpad_Down",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1749880555,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1883355782,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1756,
+                    "Position Y": 995,
+                    "Width": 27,
+                    "Height": 29,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1756,
+                        995,
+                        27,
+                        29
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Down_unpressed.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Gp Text (5)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1388662483,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1883355782,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1708,
+                    "Position Y": 993,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1708,
+                        993,
+                        200,
+                        50
+                    ],
+                    "Text": "RB",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 8,
+                    "Line Spacing": 1,
+                    "Color": [
+                        -1,
+                        -1,
+                        -1,
                         0
                     ]
                 },
@@ -11315,7 +11766,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11342,8 +11793,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 429,
-                    "Height": 490,
+                    "Width": 2024,
+                    "Height": 1116,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -11754,8 +12205,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        775,
-                        312,
+                        1147,
+                        387,
                         300,
                         50
                     ],
@@ -11800,7 +12251,7 @@
                     "UID": 0,
                     "currentSlot": 0,
                     "enumItem": "NONE",
-                    "enumSlot": "ARMOR",
+                    "enumSlot": "NONE",
                     "enumRarity": "",
                     "menuName": "Inventory Menu",
                     "updateStats": false,
@@ -13856,8 +14307,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        1147,
-                        387,
+                        775,
+                        312,
                         300,
                         50
                     ],
@@ -13901,8 +14352,8 @@
                     "Active": 1,
                     "UID": 0,
                     "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "NONE",
+                    "enumItem": "ARMOR",
+                    "enumSlot": "ARMOR",
                     "enumRarity": "",
                     "menuName": "Inventory Menu",
                     "updateStats": false,
@@ -13915,7 +14366,7 @@
                     "fireRate": 0,
                     "reloadSpeed": 0,
                     "damageMultiplier": 0,
-                    "isEquipped": false
+                    "isEquipped": true
                 }
             ]
         },
@@ -18875,7 +19326,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19416,7 +19867,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19769,7 +20220,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20563,7 +21014,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20676,15 +21127,15 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 870554449,
+            "Parent UID": 186092550,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -146.9202880859375,
-                        3.5153112411499023,
-                        19.038047790527344
+                        47.535945892333984,
+                        3.5153234004974365,
+                        -47.556648254394531
                     ],
                     "Rotation": [
                         -0,
@@ -20826,7 +21277,6 @@
                     "UID": 0,
                     "saveName": "Player",
                     "currentState": -1,
-                    "reloading": true,
                     "movementSpeed": 3000,
                     "deathAnimFinish": false,
                     "godMode": false,
@@ -21268,8 +21718,7 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0,
-                    "reloading": true
+                    "reloadTimer": 0
                 },
                 {
                     "Type": "Audio source",
@@ -21921,7 +22370,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -22685,7 +23133,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -23268,8 +23715,7 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0,
-                    "reloading": true
+                    "reloadTimer": 0
                 },
                 {
                     "Type": "Audio source",
@@ -23921,7 +24367,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -24689,7 +25134,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -27380,7 +27824,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -27964,7 +28407,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -28551,7 +28993,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -29135,7 +29576,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -29903,7 +30343,6 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -30671,7 +31110,6 @@
                     "currentAmmo": 28,
                     "fireRateTimer": -0.016000032424926758,
                     "reloadTimer": 0,
-                    "reloading": true,
                     "ammoInChamber": 2,
                     "dispersion": 80
                 },
@@ -31438,8 +31876,7 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0,
-                    "reloading": true
+                    "reloadTimer": 0
                 },
                 {
                     "Type": "Audio source",
@@ -32090,8 +32527,7 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0,
-                    "reloading": true
+                    "reloadTimer": 0
                 },
                 {
                     "Type": "Audio source",
@@ -32742,8 +33178,7 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0,
-                    "reloading": true
+                    "reloadTimer": 0
                 },
                 {
                     "Type": "Audio source",
@@ -33588,19 +34023,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -48.306838989257812,
-                        111.0653076171875,
-                        129.53561401367188
+                        -94.476577758789062,
+                        176.59010314941406,
+                        96.298599243164062
                     ],
                     "Rotation": [
-                        120.00009918212891,
-                        25.000034332275391,
+                        120.00011444091797,
+                        25.000043869018555,
                         -142
                     ],
                     "Scale": [
-                        1.0000004768371582,
-                        1,
-                        1.0000005960464478
+                        1.0000824928283691,
+                        0.99999982118606567,
+                        1.0000691413879395
                     ]
                 },
                 {
@@ -33612,18 +34047,18 @@
                     "Type": "Camera",
                     "Active": 1,
                     "Right": [
-                        0.71418023109436035,
-                        -0.019421130418777466,
-                        0.69969254732131958
+                        0.71417999267578125,
+                        -0.019421219825744629,
+                        0.69969260692596436
                     ],
                     "Up": [
                         0.55797863006591797,
-                        0.61933755874633789,
-                        -0.5523412823677063
+                        0.61933779716491699,
+                        -0.55234092473983765
                     ],
                     "Front": [
-                        0.4226188063621521,
-                        -0.78488463163375854,
+                        0.42261892557144165,
+                        -0.78488439321517944,
                         -0.4531552791595459
                     ],
                     "FOV": 60.000003814697266,

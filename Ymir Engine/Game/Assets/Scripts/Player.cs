@@ -349,6 +349,8 @@ public class Player : YmirComponent
             weaponType = WEAPON_TYPE.NONE;
             SetWeapon();
 
+            currentResinVessels = maxResinVessels;
+
             LoadLvlInfo();
             LoadItems();
         }
@@ -795,7 +797,7 @@ public class Player : YmirComponent
                     Debug.Log("Resin used");
 
                     currentResinVessels--;
-                    csHealth.TakeDmg(-resinHealing);
+                    csHealth.Heal(-resinHealing);
 
                     if (resinText != null)
                     {

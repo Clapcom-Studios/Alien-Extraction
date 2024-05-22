@@ -201,7 +201,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                 if (timePassed >= 1.2f)
                 {
                     Debug.Log("[ERROR] DEATH");
-
+                    timePassed = 0;
                     InternalCalls.Destroy(gameObject); 
                     InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
                 }
@@ -443,6 +443,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                 timePassed += Time.deltaTime;
                 if (timePassed >= 0.5)
                 {
+                    timePassed = 0;
                     tailColdown = false;
                 }
             }

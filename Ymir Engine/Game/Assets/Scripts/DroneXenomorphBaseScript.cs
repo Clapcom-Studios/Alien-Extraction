@@ -54,6 +54,8 @@ public class DroneXenomorphBaseScript : Enemy
 
     private float outOfRangeTimer;
 
+    private Auto_Aim playerAim; 
+
 	public void Start()
 	{
 		//MAIN STUFF
@@ -88,6 +90,9 @@ public class DroneXenomorphBaseScript : Enemy
         tailCooldownTime = 0f;
         tailRange = 30f;
         tailDone = false;
+
+        //Player Aim
+        playerAim = InternalCalls.GetGameObjectByName("AimSensor").GetComponent<Auto_Aim>();
 
 		//Time
 		timeCounter = 0f;
@@ -414,6 +419,11 @@ public class DroneXenomorphBaseScript : Enemy
             life -= 80;
 
             droneState = DroneState.KNOCKBACK;
+        }
+
+        if (other.Tag == "Aim")
+        {
+            playerAim.AddEnemy(gameObject);
         }
     }
 

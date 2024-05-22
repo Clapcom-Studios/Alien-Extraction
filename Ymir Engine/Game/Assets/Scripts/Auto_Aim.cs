@@ -11,19 +11,29 @@ using YmirEngine;
 
 public class Auto_Aim : YmirComponent
 {
-	List<GameObject> enemies;
-	GameObject target;
+	public List<GameObject> enemies;
+    public GameObject target;
 
-	float angle;
+	private GameObject playerObject;
+    private Player player;
+
+    private float angle;
 	public void Start()
 	{
         enemies = new List<GameObject>();
 		target = null;
+
+        playerObject = InternalCalls.GetGameObjectByName("Player");
+        player = playerObject.GetComponent<Player>();
+
     }
 
     public void Update()
 	{
-		target = null;
+        gameObject.SetPosition(player.gameObject.transform.globalPosition + (player.currentWeapon.gameObject.transform.GetForward() * 75f));
+        gameObject.SetRotation(playerObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f)); // <- -90 Degree Quat
+
+        target = null;
 
 		SetTarget();
 
@@ -32,16 +42,19 @@ public class Auto_Aim : YmirComponent
 			float cross = gameObject.transform.globalPosition.magnitude * target.transform.globalPosition.magnitude;
 
 			angle = (float)Math.Atan2(cross, Vector3.Dot(gameObject.transform.globalPosition, target.transform.globalPosition));
-			Debug.Log("Angle: " + angle);		
+			//Debug.Log("Angle: " + angle);		
         }
 	}
 
 	public void OnCollisionEnter(GameObject other)
 	{
-		if (other.Tag == "Enemy")
-		{
-			if (!enemies.Contains(other)) {  enemies.Add(other); }
-		}
+  //      Debug.Log("Object Detected - " + other.Name);
+
+  //      if (other.Tag == "Enemy")
+		//{
+		//	Debug.Log("Enemy Detected - " + other.Name);
+		//	if (!enemies.Contains(other)) {  enemies.Add(other); }
+		//}
 	}
 
 	private void SetTarget()
@@ -57,5 +70,12 @@ public class Auto_Aim : YmirComponent
 				target = enemies[i];
             }
         }
+
+		Debug.Log("Selected Target name: " + target.Name);
 	}
+
+	public void AddEnemy(GameObject enemy)
+	{
+        if (!enemies.Contains(enemy)) { enemies.Add(enemy); }
+    }
 }

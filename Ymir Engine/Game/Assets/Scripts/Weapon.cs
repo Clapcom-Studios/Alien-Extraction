@@ -88,7 +88,6 @@ public abstract class Weapon : YmirComponent
         if (fireRateTimer > 0) fireRateTimer -= Time.deltaTime;
         if (reloadTimer > 0 && reloading)
         {
-            Debug.Log("Reload-- Timer: " + reloadTimer + " Bool: " + reloading);
             reloadTimer -= Time.deltaTime;
             if (reloadTimer <= 0 )
             {
@@ -98,9 +97,6 @@ public abstract class Weapon : YmirComponent
                 player.csBullets.UseBullets();
             }
         }
-
-        Debug.Log("CurrentAmmo:" + currentAmmo);
-
     }
     public bool ShootAvailable()
     {

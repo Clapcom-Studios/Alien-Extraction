@@ -1,0 +1,504 @@
+{
+    "Prefab": [
+        {
+            "Name": "Prop_Mother_Room xd",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 476878880,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 2050361530,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1769964466
+            ]
+        },
+        {
+            "Name": "Mother",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1769964466,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 476878880,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1764539538
+            ]
+        },
+        {
+            "Name": "Mother_Walls",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1764539538,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1769964466,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0.22498093545436859,
+                        0,
+                        15.01710319519043
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1.2409369945526123,
+                        1.2409369945526123,
+                        1.2409369945526123
+                    ]
+                }
+            ],
+            "Children UID": [
+                562439479,
+                1870437290,
+                394035823,
+                279921922,
+                1469278616
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 562439479,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -4.9815444946289062,
+                        12.185610771179199,
+                        -97.994651794433594
+                    ],
+                    "Rotation": [
+                        -0,
+                        83.027931213378906,
+                        -0
+                    ],
+                    "Scale": [
+                        32.445697784423828,
+                        10.194721221923828,
+                        1.3102699518203735
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 805775704,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 171,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 271,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 251,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 231,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 211,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 191,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall5",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1870437290,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        12.954998016357422,
+                        12.185610771179199,
+                        -122.79237365722656
+                    ],
+                    "Rotation": [
+                        -0,
+                        29.632410049438477,
+                        -0
+                    ],
+                    "Scale": [
+                        37.865474700927734,
+                        10.194721221923828,
+                        1.3102700710296631
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 622635273,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 175,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 275,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 255,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 235,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 215,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 195,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 394035823,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        44.067466735839844,
+                        12.185610771179199,
+                        -120.97889709472656
+                    ],
+                    "Rotation": [
+                        0,
+                        -36.028007507324219,
+                        0
+                    ],
+                    "Scale": [
+                        37.865474700927734,
+                        10.194721221923828,
+                        1.3102700710296631
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 113166405,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 179,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 279,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 259,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 239,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 219,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 199,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall7",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 279921922,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        57.276866912841797,
+                        12.185610771179199,
+                        -91.655326843261719
+                    ],
+                    "Rotation": [
+                        -180,
+                        -82.532630920410156,
+                        -180
+                    ],
+                    "Scale": [
+                        37.865478515625,
+                        10.194721221923828,
+                        1.3102700710296631
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1971005937,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 183,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 283,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 263,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 243,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 223,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 203,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        },
+        {
+            "Name": "PROP_Base_MotherWall8",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1469278616,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Prop_Mother_Room xd.fbx",
+            "Parent UID": 1764539538,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        39.005882263183594,
+                        12.185610771179199,
+                        -65.55548095703125
+                    ],
+                    "Rotation": [
+                        180,
+                        -27.589302062988281,
+                        180
+                    ],
+                    "Scale": [
+                        37.865474700927734,
+                        10.194721221923828,
+                        1.3102699518203735
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1847324251,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 187,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_D.png",
+                    "Diffuse_UID": 621507572,
+                    "Specular_ID": 287,
+                    "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_S.png",
+                    "Specular_UID": 1395565566,
+                    "Normal_ID": 267,
+                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_N.png",
+                    "Normal_UID": 566778242,
+                    "Height_ID": 247,
+                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_H.png",
+                    "Height_UID": 1280303705,
+                    "Ambient_ID": 227,
+                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_A.png",
+                    "Ambient_UID": 1217803801,
+                    "Emissive_ID": 207,
+                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Mother Walls\/Textures\/PROP_Base_Mother_Wall_E.png",
+                    "Emissive_UID": 1987846585
+                }
+            ]
+        }
+    ]
+}

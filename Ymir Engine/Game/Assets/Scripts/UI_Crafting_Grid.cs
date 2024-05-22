@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -6,8 +6,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using YmirEngine;
 
-
-public class UI_Inventory_Grid : YmirComponent
+public class UI_Crafting_Grid : YmirComponent
 {
     public int rows;
     public int cols;
@@ -25,17 +24,13 @@ public class UI_Inventory_Grid : YmirComponent
     public bool navigateY = false;
     public bool bounceX = false;
     public bool bounceY = false;
-    public bool empty = false;
-    public int childX = 0;
-    public int childY = 0;
 
     private float _time;
     private float _timer;
 
     private GameObject audioSource;
-
     public void Start()
-    {
+	{
         audioSource = InternalCalls.GetGameObjectByName("UI Audio");
         leftGrid = InternalCalls.GetGameObjectByName(leftGridName);
         rightGrid = InternalCalls.GetGameObjectByName(rightGridName);
@@ -45,8 +40,8 @@ public class UI_Inventory_Grid : YmirComponent
         _time = 0.1f;
     }
 
-    public void Update()
-    {
+	public void Update()
+	{
         if (!_canTab)
         {
             if (_time > _timer)
@@ -70,7 +65,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridHorizontal(gameObject, rows, cols, true, navigateX, leftGrid, rightGrid, bounceX, childX, empty);
+            UI.NavigateCraftingVertical(gameObject, rows, cols, true, navigateY, downGrid, upGrid, bounceY);
         }
 
         else if ((Input.GetLeftAxisX() < 0 || Input.GetGamepadButton(GamePadButton.DPAD_LEFT) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.A) == KeyState.KEY_DOWN) && _canTab)
@@ -80,8 +75,8 @@ public class UI_Inventory_Grid : YmirComponent
                 Audio.PlayAudio(audioSource, "UI_MoveHover");
             }
 
+            UI.NavigateCraftingVertical(gameObject, rows, cols, false, navigateY, downGrid, upGrid, bounceY);
             _canTab = false;
-            UI.NavigateGridHorizontal(gameObject, rows, cols, false, navigateX, leftGrid, rightGrid, bounceX, childX, empty);
         }
 
         else if ((Input.GetLeftAxisY() > 0 || Input.GetGamepadButton(GamePadButton.DPAD_DOWN) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.S) == KeyState.KEY_DOWN) && _canTab)
@@ -92,7 +87,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridVertical(gameObject, rows, cols, true, navigateY, downGrid, upGrid, bounceY, childY, empty);
+            UI.NavigateCraftingHorizontal(gameObject, rows, cols, true, navigateX, leftGrid, rightGrid, bounceX);
         }
 
         else if ((Input.GetLeftAxisY() < 0 || Input.GetGamepadButton(GamePadButton.DPAD_UP) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.W) == KeyState.KEY_DOWN) && _canTab)
@@ -103,7 +98,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridVertical(gameObject, rows, cols, false, navigateY, downGrid, upGrid, bounceY, childY, empty);
+            UI.NavigateCraftingHorizontal(gameObject, rows, cols, false, navigateX, leftGrid, rightGrid, bounceX);
         }
 
         return;

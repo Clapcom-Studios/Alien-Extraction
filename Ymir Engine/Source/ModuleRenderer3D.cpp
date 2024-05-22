@@ -250,6 +250,10 @@ bool ModuleRenderer3D::Init()
 	lightingShader->LoadShader("Assets/Shaders/Lighting Shader.glsl");
 	delete lightingShader;
 
+	Shader* specularShader = new Shader;
+	specularShader->LoadShader("Assets/Shaders/SpecularLight.glsl");
+	delete specularShader;
+
 	outlineShader = new Shader;
 	outlineShader->LoadShader("Assets/Shaders/OutlineShader.glsl");
 

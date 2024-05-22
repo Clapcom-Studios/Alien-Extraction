@@ -368,6 +368,19 @@ namespace YmirEngine
         public static extern void NavigateGridVertical(object go, int rows, int columns, bool isDown, bool navigate, object gridDown, object gridUp, bool bounce, int childNumber, bool isEmpty);
 
         /// <summary>
+        /// Navigate in x axis with gamepad for crafting.
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+
+        public static extern void NavigateCraftingHorizontal(object go, int rows, int columns, bool isRight, bool navigateGrids, object gridLeft, object gridRight, bool bounce);
+       
+        /// <summary>
+        /// Navigate in y axis with gamepad for crafting.
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void NavigateCraftingVertical(object go, int rows, int columns, bool isDown, bool navigate, object gridDown, object gridUp, bool bounce);
+        
+        /// <summary>
         /// Unlock upgrades.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]

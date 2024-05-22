@@ -23,6 +23,44 @@ public class SelectLvl : YmirComponent
         }
 
         locked = InternalCalls.GetChildrenByName(this.gameObject, "Lock");
+
+        int lastLvl = Globals.GetPlayerScript().lastUnlockedLvl;
+
+        switch (lvl)
+        {
+            case 1:
+                {
+                    isLocked = true;
+                    break;
+                }
+            case 2:
+                {
+                    if (lvl <= lastLvl)
+                    {
+                        isLocked = false;
+                    }
+                    else
+                    {
+                        isLocked = true;
+                    }
+                    break;
+                }
+            case 3:
+                {
+                    if (lvl < lastLvl)
+                    {
+                        isLocked = false;
+                    }
+                    else
+                    {
+                        isLocked = true;
+                    }
+                    break;
+                }
+            default:
+                break;
+        }
+
         locked.SetActive(isLocked);
     }
 

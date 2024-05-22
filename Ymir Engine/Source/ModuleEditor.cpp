@@ -325,7 +325,7 @@ void ModuleEditor::DrawEditor()
 
 				App->scene->mRootNode = App->scene->CreateGameObject("Scene", nullptr); // Recreate scene
 				App->scene->mRootNode->UID = deletedSceneUID;
-				
+
 				LOG("Scene cleared successfully");
 
 			}
@@ -1046,7 +1046,7 @@ void ModuleEditor::DrawEditor()
 
 		if (ImGui::Begin("Navigation", &showNavMesh), true)
 		{
-			
+
 			DrawBakingTab();;
 		}
 		ImGui::End();
@@ -1451,15 +1451,15 @@ void ModuleEditor::DrawEditor()
 			{
 				if (ImGui::IsWindowHovered())
 				{
-					if (!ImGuizmo::IsUsing() && !App->input->GetKey(SDL_SCANCODE_LALT) == KEY_DOWN)	
+					if (!ImGuizmo::IsUsing() && !App->input->GetKey(SDL_SCANCODE_LALT) == KEY_DOWN)
 					{
 
 
 						App->camera->mousePickingRay.Transform(App->pathFinding->matrizglobal.Inverted());
 
 						if (External->input->GetMouseButton(SDL_BUTTON_LEFT) == KEY_DOWN)
-								External->pathFinding->CheckNavMeshIntersection(App->camera->mousePickingRay, SDL_BUTTON_LEFT);
-	
+							External->pathFinding->CheckNavMeshIntersection(App->camera->mousePickingRay, SDL_BUTTON_LEFT);
+
 					}
 				}
 			}
@@ -3012,6 +3012,54 @@ void ModuleEditor::CreateHierarchyTree(GameObject* node)
 
 				GameObject* empty = App->scene->CreateGameObject("Empty", node);
 				empty->UID = Random::Generate();
+
+			}
+
+			if (ImGui::MenuItem("Move Up")) {
+
+				if (node != App->scene->mRootNode && node->selected) {
+
+					auto it = std::find(node->mParent->mChildren.begin(), node->mParent->mChildren.end(), node);
+
+					if (it != node->mParent->mChildren.end())
+					{
+						int index = it - node->mParent->mChildren.begin();
+
+						if (index > 0)
+						{
+							node->SwapChildren(node->mParent->mChildren[index - 1]);
+						}
+						/*else
+						{
+							node->SwapChildren(node->mParent->mChildren[node->mParent->mChildren.size() - 1]);
+						}*/
+					}
+
+				}
+
+			}
+
+			if (ImGui::MenuItem("Move Down")) {
+
+				if (node != App->scene->mRootNode && node->selected) {
+
+					auto it = std::find(node->mParent->mChildren.begin(), node->mParent->mChildren.end(), node);
+
+					if (it != node->mParent->mChildren.end())
+					{
+						int index = it - node->mParent->mChildren.begin();
+
+						if (index < node->mParent->mChildren.size() - 1)
+						{
+							node->SwapChildren(node->mParent->mChildren[index + 1]);
+						}
+						/*else
+						{
+							node->SwapChildren(node->mParent->mChildren[0]);
+						}*/
+					}
+
+				}
 
 			}
 

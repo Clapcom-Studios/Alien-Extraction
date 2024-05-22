@@ -75,15 +75,13 @@ public class Health : YmirComponent
                 Debug.Log("Take debug dmg");
 
                 TakeDmg(debugDmg);
-                Particles.PlayParticlesTrigger(particlesDamage);
             }
 
             if (Input.GetKey(YmirKeyCode.F6) == KeyState.KEY_DOWN)
             {
                 Debug.Log("Get debug health");
 
-                TakeDmg(-debugDmg);
-                Particles.PlayParticlesTrigger(particlesHealth);
+                Heal(-debugDmg);
             }
         }
 
@@ -97,7 +95,7 @@ public class Health : YmirComponent
 
     public void TakeDmg(float dmg)
     {
-        if (player != null && !player.godMode)
+        if (player != null && !player.godMode && dmg > 0)
         {
             player.TakeDMG();
 
@@ -117,7 +115,31 @@ public class Health : YmirComponent
             {
                 UI.SliderEdit(healthBar, currentHealth);
             }
+        }
+    }
 
+    public void Heal(float dmg)
+    {
+        if (player != null && !player.godMode && dmg < 0)
+        {
+            Particles.PlayParticlesTrigger(particlesHealth);
+
+            currentHealth -= (dmg + armor); // reduce damage with amount of armor
+
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+
+            else if (currentHealth <= 0)
+            {
+                currentHealth = 0;
+                //DeathScreen();
+            }
+            if (healthBar != null)
+            {
+                UI.SliderEdit(healthBar, currentHealth);
+            }
         }
     }
 

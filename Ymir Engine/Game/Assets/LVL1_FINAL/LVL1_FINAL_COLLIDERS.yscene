@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL1_FINAL\/LVL1_FINAL_COLLIDERS.nav",
     "Editor Camera Position": [
-        31.406406402587891,
-        263.3992919921875,
-        -47.878757476806641
+        565.46514892578125,
+        313.3646240234375,
+        -59.644275665283203
     ],
     "Editor Camera Right (X)": [
-        0.59208619594573975,
-        -2.9802322387695312e-07,
-        0.64997768402099609
+        -0.87100934982299805,
+        -4.2840838432312012e-07,
+        0.11867771297693253
     ],
     "Editor Camera Up (Y)": [
-        0.3638947606086731,
-        0.73920130729675293,
-        -0.33148345351219177
+        0.072370775043964386,
+        0.70796060562133789,
+        0.53115212917327881
     ],
     "Editor Camera Front (Z)": [
-        0.60917073488235474,
-        -0.54872423410415649,
-        -0.55491405725479126
+        0.10654687881469727,
+        -0.59757167100906372,
+        0.78197550773620605
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 807589668,
+            "UID": 2039968012,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -68,7 +68,7 @@
             "UID": 265396639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -61901,7 +61901,7 @@
             "UID": 493464378,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -61966,7 +61966,7 @@
             "UID": 1161519485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -62141,7 +62141,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        2.5000591278076172,
+                        2.50006103515625,
                         -0
                     ],
                     "Scale": [
@@ -62756,7 +62756,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        31.327005386352539,
+                        31.327001571655273,
                         -0
                     ],
                     "Scale": [
@@ -66254,11 +66254,11 @@
                         5,
                         11.800000190734863
                     ],
-                    "Physics Type": 0,
-                    "Mass": 1,
+                    "Physics Type": 2,
+                    "Mass": 0,
                     "Friction": 0,
                     "Angular Friction": 0,
-                    "UseGravity": true,
+                    "UseGravity": false,
                     "IsSensor": false,
                     "LockX": false,
                     "LockY": false,
@@ -66284,7 +66284,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -66446,7 +66446,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -66508,7 +66508,7 @@
                     "Active": 1,
                     "UID": 0,
                     "spawnRange": 0,
-                    "itemPath": "Assets\/Prefabs\/Items\/Common Items\/grenade_common"
+                    "itemPath": "Assets\/Prefabs\/Items\/Rare Items\/tailtip_rare"
                 }
             ],
             "Children UID": [
@@ -66764,7 +66764,7 @@
             "UID": 1545695842,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67082,7 +67082,7 @@
             "UID": 142531611,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67144,7 +67144,7 @@
                     "Active": 1,
                     "UID": 0,
                     "spawnRange": 0,
-                    "itemPath": "Assets\/Prefabs\/Items\/Rare Items\/grenade_rare"
+                    "itemPath": "Assets\/Prefabs\/Items\/Rare Items\/claw_rare"
                 }
             ],
             "Children UID": [
@@ -67400,7 +67400,7 @@
             "UID": 1768177679,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67491,7 +67491,7 @@
                     ],
                     "Rotation": [
                         180,
-                        -42.3360595703125,
+                        -42.336067199707031,
                         180
                     ],
                     "Scale": [
@@ -67718,7 +67718,7 @@
             "UID": 2061990119,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67815,7 +67815,7 @@
             "UID": 1570706478,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67852,7 +67852,7 @@
             "UID": 227903904,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69104,9 +69104,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        687.3828125,
-                        10,
-                        290.53131103515625
+                        702.24859619140625,
+                        10.000030517578125,
+                        309.56036376953125
                     ],
                     "Rotation": [
                         -0,
@@ -69141,11 +69141,11 @@
                     ],
                     "Type": "Physics",
                     "Active": true,
-                    "Collider Type": 4,
+                    "Collider Type": 0,
                     "Size": [
-                        100,
-                        5,
-                        1.25
+                        400,
+                        10,
+                        400
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -69163,7 +69163,7 @@
                     ],
                     "Offset Rotation": [
                         0,
-                        0,
+                        0.40000000596046448,
                         0,
                         1
                     ]
@@ -69302,9 +69302,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1.24755859375,
-                        10.000019073486328,
-                        -3.700714111328125
+                        -11.62152099609375,
+                        10.000080108642578,
+                        15.233993530273438
                     ],
                     "Rotation": [
                         -0,
@@ -69333,11 +69333,11 @@
                     ],
                     "Type": "Physics",
                     "Active": true,
-                    "Collider Type": 4,
+                    "Collider Type": 0,
                     "Size": [
-                        100,
-                        5,
-                        1.25
+                        400,
+                        10,
+                        200
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -69355,7 +69355,7 @@
                     ],
                     "Offset Rotation": [
                         0,
-                        0,
+                        0.40000000596046448,
                         0,
                         1
                     ]
@@ -69665,7 +69665,7 @@
             "UID": 900338210,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70681,7 +70681,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70708,8 +70708,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 459,
-                    "Height": 646,
+                    "Width": 678,
+                    "Height": 624,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -70986,7 +70986,7 @@
             "UID": 147559574,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71167,7 +71167,7 @@
             "UID": 813229651,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71348,7 +71348,7 @@
             "UID": 367980240,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71529,7 +71529,7 @@
             "UID": 1932512867,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74518,7 +74518,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74844,7 +74844,7 @@
             "UID": 981719170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75170,7 +75170,7 @@
             "UID": 523345040,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75496,7 +75496,7 @@
             "UID": 1085187284,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75822,7 +75822,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75849,8 +75849,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 459,
-                    "Height": 646,
+                    "Width": 678,
+                    "Height": 624,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -75863,9 +75863,7 @@
             ],
             "Children UID": [
                 1378669993,
-                823303942,
                 807770031,
-                1883355782,
                 175461015
             ]
         },
@@ -75980,135 +75978,6 @@
                         90
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Icons\/Inventory.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Dpad_Up",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 823303942,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1398847280,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1749,
-                    "Position Y": 123,
-                    "Width": 27,
-                    "Height": 29,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1749,
-                        123,
-                        27,
-                        29
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Up_unpressed.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ],
-            "Children UID": [
-                1504559421
-            ]
-        },
-        {
-            "Name": "Map Icon",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1504559421,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 823303942,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1779,
-                    "Position Y": 94,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1779,
-                        94,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Icons\/Map.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -76310,326 +76179,6 @@
                         -0.98000001907348633,
                         0,
                         -0.98000001907348633,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "Items",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1883355782,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1398847280,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1677,
-                    "Position Y": 856,
-                    "Width": 177,
-                    "Height": 185,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1677,
-                        856,
-                        177,
-                        185
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Consumibles.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ],
-            "Children UID": [
-                1810944020,
-                118355006,
-                1749880555,
-                1388662483
-            ]
-        },
-        {
-            "Name": "Switch Items",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1810944020,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1883355782,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1732,
-                    "Position Y": 1010,
-                    "Width": 21,
-                    "Height": 19,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1732,
-                        1010,
-                        21,
-                        19
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/RotateConsumable.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Use Item",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 118355006,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1883355782,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1686,
-                    "Position Y": 964,
-                    "Width": 58,
-                    "Height": 52,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1686,
-                        964,
-                        58,
-                        52
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Bumper_unpressed.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Dpad_Down",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1749880555,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1883355782,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1756,
-                    "Position Y": 995,
-                    "Width": 27,
-                    "Height": 29,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1756,
-                        995,
-                        27,
-                        29
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Down_unpressed.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Gp Text (5)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1388662483,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1883355782,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1708,
-                    "Position Y": 993,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1708,
-                        993,
-                        200,
-                        50
-                    ],
-                    "Text": "RB",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 8,
-                    "Line Spacing": 1,
-                    "Color": [
-                        -1,
-                        -1,
-                        -1,
                         0
                     ]
                 },
@@ -78300,7 +77849,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -78327,8 +77876,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 2024,
-                    "Height": 1116,
+                    "Width": 429,
+                    "Height": 490,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -78739,8 +78288,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        1147,
-                        387,
+                        775,
+                        312,
                         300,
                         50
                     ],
@@ -78785,7 +78334,7 @@
                     "UID": 0,
                     "currentSlot": 0,
                     "enumItem": "NONE",
-                    "enumSlot": "NONE",
+                    "enumSlot": "ARMOR",
                     "enumRarity": "",
                     "menuName": "Inventory Menu",
                     "updateStats": false,
@@ -80841,8 +80390,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        775,
-                        312,
+                        1147,
+                        387,
                         300,
                         50
                     ],
@@ -80886,8 +80435,8 @@
                     "Active": 1,
                     "UID": 0,
                     "currentSlot": 0,
-                    "enumItem": "ARMOR",
-                    "enumSlot": "ARMOR",
+                    "enumItem": "NONE",
+                    "enumSlot": "NONE",
                     "enumRarity": "",
                     "menuName": "Inventory Menu",
                     "updateStats": false,
@@ -80900,7 +80449,7 @@
                     "fireRate": 0,
                     "reloadSpeed": 0,
                     "damageMultiplier": 0,
-                    "isEquipped": true
+                    "isEquipped": false
                 }
             ]
         },
@@ -85860,7 +85409,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86401,7 +85950,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86754,7 +86303,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -87428,7 +86977,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88222,7 +87771,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88335,7 +87884,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 807589668,
+            "Parent UID": 2039968012,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88485,6 +88034,7 @@
                     "UID": 0,
                     "saveName": "Player",
                     "currentState": -1,
+                    "reloading": true,
                     "movementSpeed": 3000,
                     "deathAnimFinish": false,
                     "godMode": false,
@@ -88926,7 +88476,8 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0
+                    "reloadTimer": 0,
+                    "reloading": true
                 },
                 {
                     "Type": "Audio source",
@@ -89578,6 +89129,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -90341,6 +89893,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -90923,7 +90476,8 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0
+                    "reloadTimer": 0,
+                    "reloading": true
                 },
                 {
                     "Type": "Audio source",
@@ -91575,6 +91129,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -92342,6 +91897,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -95032,6 +94588,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -95615,6 +95172,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -96201,6 +95759,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "damageEscalation": 0,
                     "currentDamage": 0
                 },
@@ -96784,6 +96343,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -97551,6 +97111,7 @@
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "ammoInChamber": 0,
                     "dispersion": 0
                 },
@@ -98318,6 +97879,7 @@
                     "currentAmmo": 28,
                     "fireRateTimer": -0.016000032424926758,
                     "reloadTimer": 0,
+                    "reloading": true,
                     "ammoInChamber": 2,
                     "dispersion": 80
                 },
@@ -99084,7 +98646,8 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0
+                    "reloadTimer": 0,
+                    "reloading": true
                 },
                 {
                     "Type": "Audio source",
@@ -99735,7 +99298,8 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0
+                    "reloadTimer": 0,
+                    "reloading": true
                 },
                 {
                     "Type": "Audio source",
@@ -100386,7 +99950,8 @@
                     "range": 0,
                     "currentAmmo": 0,
                     "fireRateTimer": 0,
-                    "reloadTimer": 0
+                    "reloadTimer": 0,
+                    "reloading": true
                 },
                 {
                     "Type": "Audio source",
@@ -101272,7 +100837,7 @@
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
                     "Far Plane": 1000,
-                    "Frustum Culling": 1,
+                    "Frustum Culling": 0,
                     "Draw Bounding Boxes": 0,
                     "Game Camera": true
                 },
