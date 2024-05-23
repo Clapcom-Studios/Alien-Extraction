@@ -63,10 +63,11 @@ public class Plasma : Weapon
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3B");
-                ammo = 200;
+                ammo = 300;
                 fireRate = 0.02f;
                 damage = 4f;
                 damageEscalation = 0.01f;
+                reloadTime = 2f;
 
                 break;
             default:

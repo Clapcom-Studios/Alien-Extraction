@@ -25,7 +25,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgDefault");
                 ammo = 35;
                 fireRate = 0.06f;
-                damage = 15;
+                damage = 5;
 
                 break;
             case UPGRADE.LVL_1:
@@ -33,7 +33,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL1");
                 ammo = 35;
                 fireRate = 0.05f;
-                damage = 30;
+                damage = 10;
 
                 break;
             case UPGRADE.LVL_2:
@@ -41,7 +41,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL2");
                 ammo = 40;
                 fireRate = 0.05f;
-                damage = 40;
+                damage = 12;
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
@@ -49,7 +49,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3A");
                 ammo = 110;
                 fireRate = 0.04f;
-                damage = 50;
+                damage = 15;
 
                 break;
             case UPGRADE.LVL_3_BETA:
@@ -57,7 +57,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3B");
                 ammo = 40;
                 fireRate = 0.02f;
-                damage = 40;
+                damage = 13;
 
                 break;
             default:
@@ -97,7 +97,7 @@ public class SMG : Weapon
                 {
                     GameObject FaceHuggerDamageParticles = InternalCalls.GetChildrenByName(aux.gameObject, "ParticlesDamageFaceHugger");
                     if(FaceHuggerDamageParticles != null) Particles.PlayParticlesTrigger(FaceHuggerDamageParticles);
-                    aux.TakeDmg(damage*3);
+                    aux.TakeDmg(damage/**3*/);
                 }
 
                 DroneXenomorphBaseScript aux2 = target.GetComponent<DroneXenomorphBaseScript>();

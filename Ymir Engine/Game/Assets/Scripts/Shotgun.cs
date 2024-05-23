@@ -88,9 +88,7 @@ public class Shotgun : Weapon
         currentAmmo -= ammoInChamber;
         fireRateTimer = fireRate;
 
-        Audio.PlayAudio(gameObject, "W_FSADShot");
-        Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
-        Particles.PlayParticlesTrigger(particlesGO);
+       
 
         Quaternion rot = gameObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f); // <- -90º Degree Quat
 
@@ -98,26 +96,32 @@ public class Shotgun : Weapon
         InternalCalls.CreateShotgunSensor(gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f), rot, range, dispersion, gameObject.transform.GetRight());
         Debug.Log("Position cone origin is:" + (gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f)));
         Debug.Log("Foward offset would have been:" +  (gameObject.transform.GetForward() * range * 0.5f));
+
+        float angleOfShootgun = 0;
         switch (_upgrade)
         {
             case UPGRADE.LVL_0:
-
+                angleOfShootgun = 0.872665f; //100º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_1:
-
+                angleOfShootgun = 0.872665f; //100º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_2:
-
+                angleOfShootgun = 0.698132f; //80º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_3_ALPHA:
-
+                angleOfShootgun = 0.698132f; //80º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_3_BETA:
-
+                angleOfShootgun = 0.698132f; //80º a radianes / 2 porque es a cada lado
                 break;
             default:
                 break;
         }
+        
+        Audio.PlayAudio(gameObject, "W_FSADShot");
+        Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward(), angleOfShootgun);
+        Particles.PlayParticlesTrigger(particlesGO);
     }
     public override void Reload()
     {
