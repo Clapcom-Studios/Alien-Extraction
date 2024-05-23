@@ -216,13 +216,16 @@ public class SpitterBaseScript : Enemy
                     //Animation.PlayAnimation(gameObject, "Drone_Walk");
                     timeCounter = 0f;
                     agent.CalculateRandomPath(gameObject.transform.globalPosition, wanderRange);
-                    targetPosition = agent.GetPointAt(agent.GetPathSize() - 1);
-                    if (walkAni == false)
+                    if (agent.GetPathSize() > 0)
                     {
-                        Animation.PlayAnimation(gameObject, "Move_Spiter");
-                        walkAni = true;
+                        targetPosition = agent.GetPointAt(agent.GetPathSize() - 1);
+                        if (walkAni == false)
+                        {
+                            Animation.PlayAnimation(gameObject, "Move_Spiter");
+                            walkAni = true;
+                        }
+                        xenoState = XenoState.MOVE;
                     }
-                    xenoState = XenoState.MOVE;
                 }
 
                 //Check if player in radius and if so go to cry state
@@ -439,7 +442,6 @@ public class SpitterBaseScript : Enemy
 
                 break;
         }
-
         //If the enemy isn't paused
         if (xenoState != XenoState.PAUSED)
         {
@@ -479,6 +481,7 @@ public class SpitterBaseScript : Enemy
                     walkAni = false;
                     xenoState = XenoState.IDLE;
                     player.GetComponent<Player>().SetExplorationAudioState();
+
                 }
             }
             else
@@ -505,11 +508,9 @@ public class SpitterBaseScript : Enemy
         Vector3 roundedPosition = new Vector3(Mathf.Round(position.x),
                                       0,
                                       Mathf.Round(position.z));
-
         Vector3 roundedDestination = new Vector3(Mathf.Round(destintion.x),
                                                  0,
                                                  Mathf.Round(destintion.z));
-
         if ((roundedPosition.x == roundedDestination.x) && (roundedPosition.y == roundedDestination.y) && (roundedPosition.z == roundedDestination.z))
         {
             gameObject.SetVelocity(new Vector3(0, 0, 0));
