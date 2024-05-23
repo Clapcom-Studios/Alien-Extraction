@@ -7,7 +7,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 95556909,
+            "Parent UID": 64685814,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34,8 +34,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 429,
-                    "Height": 490,
+                    "Width": 1878,
+                    "Height": 1017,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -104,7 +104,7 @@
                         1920,
                         1080
                     ],
-                    "Path": "Assets\/UI\/InventoryFondo.png",
+                    "Path": "Assets\/UI\/Inventory.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -155,9 +155,7 @@
             "Children UID": [
                 1507391557,
                 1930308732,
-                1798550782,
-                22751298,
-                620987363,
+                1276584313,
                 1709228430
             ]
         },
@@ -200,8 +198,8 @@
                     "rightGridName": "Grid Chip 2",
                     "downGridName": "Grid Chip 2",
                     "upGridName": "",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -544,12 +542,12 @@
                     "UID": 0,
                     "rows": 1,
                     "cols": 1,
-                    "leftGridName": "Grid Consumable 1",
+                    "leftGridName": "",
                     "rightGridName": "Grid Chip 2",
-                    "downGridName": "Grid Consumable 1",
+                    "downGridName": "",
                     "upGridName": "Grid Armor",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -861,7 +859,7 @@
             "Name": "Grid Chip 2",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1798550782,
+            "UID": 1276584313,
             "Active": false,
             "Element_Type": "None",
             "Parent UID": 1927575898,
@@ -896,8 +894,8 @@
                     "rightGridName": "Inventory",
                     "downGridName": "",
                     "upGridName": "Grid Armor",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -906,17 +904,17 @@
                 }
             ],
             "Children UID": [
-                699661163
+                703083963
             ]
         },
         {
             "Name": "Chip2 Slot",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 699661163,
+            "UID": 703083963,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1798550782,
+            "Parent UID": 1276584313,
             "Components": [
                 {
                     "Type": "Transform",
@@ -939,19 +937,19 @@
                 }
             ],
             "Children UID": [
-                1601787038,
-                1912095096,
-                1909444103
+                1466358899,
+                1298690555,
+                1485350774
             ]
         },
         {
             "Name": "Image Background (17)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1601787038,
+            "UID": 1466358899,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 699661163,
+            "Parent UID": 703083963,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1011,10 +1009,10 @@
             "Name": "Image Item (17)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1912095096,
+            "UID": 1298690555,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 699661163,
+            "Parent UID": 703083963,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1071,13 +1069,13 @@
             ]
         },
         {
-            "Name": "Chip2 (1)",
+            "Name": "Chip2",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1909444103,
+            "UID": 1485350774,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 699661163,
+            "Parent UID": 703083963,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1107,7 +1105,7 @@
                     "Width": 100,
                     "Height": 100,
                     "UI Type": 1,
-                    "UI State": 2,
+                    "UI State": 1,
                     "Drag Limits": [
                         885,
                         457,
@@ -1124,7 +1122,7 @@
                         0,
                         0,
                         0,
-                        0.20000000298023224
+                        0
                     ]
                 },
                 {
@@ -1140,7 +1138,7 @@
                     "Width": 300,
                     "Height": 50,
                     "UI Type": 3,
-                    "UI State": 2,
+                    "UI State": 1,
                     "Drag Limits": [
                         885,
                         457,
@@ -1149,7 +1147,7 @@
                     ],
                     "Is interactable": true,
                     "Text": 4294967295,
-                    "Image": 1909444103,
+                    "Image": 1485350774,
                     "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
                     "Focused": "Assets\/UI\/Items Slots\/onHover.png",
                     "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
@@ -1206,702 +1204,6 @@
             ]
         },
         {
-            "Name": "Grid Consumable 1",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 22751298,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1927575898,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 1,
-                    "leftGridName": "",
-                    "rightGridName": "Grid Chip 1",
-                    "downGridName": "Grid Consumable 2",
-                    "upGridName": "Grid Chip 1",
-                    "naviagteX": true,
-                    "naviagteY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                }
-            ],
-            "Children UID": [
-                79679239
-            ]
-        },
-        {
-            "Name": "Consumable 1 Slot",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 79679239,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 22751298,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        528,
-                        613,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                96740588,
-                1570510110,
-                674213253
-            ]
-        },
-        {
-            "Name": "Image Background (18)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 96740588,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 79679239,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        613,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (18)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1570510110,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 79679239,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        613,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Consumable 1",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 674213253,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 79679239,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        613,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        613,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 674213253,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "CONSUMABLE",
-                    "enumRarity": "",
-                    "menuName": "Inventory Menu",
-                    "updateStats": false,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": false
-                }
-            ]
-        },
-        {
-            "Name": "Grid Consumable 2",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 620987363,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1927575898,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 1,
-                    "leftGridName": "",
-                    "rightGridName": "Grid Chip 1",
-                    "downGridName": " ",
-                    "upGridName": "Grid Consumable 1",
-                    "naviagteX": true,
-                    "naviagteY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                }
-            ],
-            "Children UID": [
-                547938725
-            ]
-        },
-        {
-            "Name": "Consumable 2 Slot",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 547938725,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 620987363,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        528,
-                        734,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                2044384401,
-                1902455410,
-                691207892
-            ]
-        },
-        {
-            "Name": "Image Background (19)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 2044384401,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 547938725,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        734,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (19)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1902455410,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 547938725,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        734,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Consumable 2",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 691207892,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 547938725,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        734,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        528,
-                        734,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 691207892,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "CONSUMABLE",
-                    "enumRarity": "",
-                    "menuName": "Inventory Menu",
-                    "updateStats": false,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": false
-                }
-            ]
-        },
-        {
             "Name": "Grid Save",
             "Static": false,
             "Tag": "Untagged",
@@ -1940,8 +1242,8 @@
                     "rightGridName": "",
                     "downGridName": "Inventory",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -2288,8 +1590,8 @@
                     "rightGridName": "",
                     "downGridName": " ",
                     "upGridName": "Grid Save",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": true,
                     "empty": true,
@@ -2587,28 +1889,28 @@
                         1
                     ]
                 },
-              {
-                "Type": "Script",
-                "ScriptName": "UI_Item_Button.cs",
-                "Active": 1,
-                "UID": 0,
-                "currentSlot": 0,
-                "enumItem": "NONE",
-                "enumSlot": "NONE",
-                "enumRarity": "",
-                "menuName": "Inventory Menu",
-                "updateStats": false,
-                "name": "",
-                "itemType": 0,
-                "itemRarity": 0,
-                "HP": 0,
-                "armor": 0,
-                "speed": 0,
-                "fireRate": 0,
-                "reloadSpeed": 0,
-                "damageMultiplier": 0,
-                "isEquipped": false
-              }
+                {
+                    "Type": "Script",
+                    "ScriptName": "UI_Item_Button.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "currentSlot": 0,
+                    "enumItem": "NONE",
+                    "enumSlot": "NONE",
+                    "enumRarity": "",
+                    "menuName": "Inventory Menu",
+                    "updateStats": false,
+                    "name": "",
+                    "itemType": 0,
+                    "itemRarity": 0,
+                    "HP": 0,
+                    "armor": 0,
+                    "speed": 0,
+                    "fireRate": 0,
+                    "reloadSpeed": 0,
+                    "damageMultiplier": 0,
+                    "isEquipped": false
+                }
             ]
         },
         {
