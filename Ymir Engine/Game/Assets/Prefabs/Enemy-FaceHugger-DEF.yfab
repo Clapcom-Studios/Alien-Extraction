@@ -1,47 +1,13 @@
 {
     "Prefab": [
         {
-            "Name": "FaceHugger",
+            "Name": "Enemy-FaceHugger",
             "Static": false,
-            "Tag": "Enemy",
-            "UID": 460275566,
+            "Tag": "Untagged",
+            "UID": 1655101801,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1679860540,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        26.741914749145508,
-                        0.62205958366394043,
-                        13.291851043701172
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        0.66134387254714966,
-                        0.66134387254714966,
-                        0.66134387254714966
-                    ]
-                }
-            ],
-            "Children UID": [
-                1853857838,
-                1953913454
-            ]
-        },
-        {
-            "Name": "Facehugger",
-            "Static": false,
-            "Tag": "Enemy",
-            "UID": 1853857838,
-            "Active": true,
-            "Element_Type": "Model",
-            "Parent UID": 460275566,
+            "Parent UID": 1214258882,
             "Components": [
                 {
                     "Type": "Transform",
@@ -61,6 +27,40 @@
                         1,
                         1
                     ]
+                }
+            ],
+            "Children UID": [
+                625374565,
+                1953913454
+            ]
+        },
+        {
+            "Name": "FaceHugger",
+            "Static": false,
+            "Tag": "Enemy",
+            "UID": 625374565,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1655101801,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.66100001335144043,
+                        0.66100001335144043,
+                        0.66100001335144043
+                    ]
                 },
                 {
                     "Type": "Animation",
@@ -77,14 +77,14 @@
                         ".\/Assets\/DeathFrame_Facehugger.yanim"
                     ],
                     "UIDs": [
-                        1853857838,
-                        780861031,
-                        438586734,
-                        358317851,
-                        82897825,
-                        390919258,
-                        1633324219,
-                        1665239069
+                        1873164605,
+                        671369949,
+                        345627684,
+                        1910274629,
+                        1137396546,
+                        1972644788,
+                        169216554,
+                        1971409332
                     ]
                 },
                 {
@@ -103,7 +103,7 @@
                     "detectionRadius": 60,
                     "xSpeed": 0,
                     "ySpeed": 0,
-                    "paused": true,
+                    "paused": false,
                     "keys": "",
                     "path": "",
                     "numFields": 0,
@@ -123,9 +123,9 @@
                 {
                     "Type": "NavMesh",
                     "Active": 1,
-                    "Speed": 1500,
-                    "Angular Speed": 10,
-                    "Stopping Distance": 2
+                    "Speed": 0,
+                    "Angular Speed": 0,
+                    "Stopping Distance": 0
                 },
                 {
                     "Type": "Audio source",
@@ -154,9 +154,9 @@
                     "Angular Friction": 0,
                     "UseGravity": true,
                     "IsSensor": false,
-                    "LockX": false,
+                    "LockX": true,
                     "LockY": false,
-                    "LockZ": false,
+                    "LockZ": true,
                     "Offset": [
                         0,
                         8.1999998092651367,
@@ -171,20 +171,20 @@
                 }
             ],
             "Children UID": [
-                190361980,
+                1120193553,
                 744143457,
                 294606393
             ]
         },
         {
-            "Name": "Facehugger_Mesh ",
+            "Name": "Facehugger_Mesh",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 190361980,
+            "UID": 1120193553,
             "Active": true,
             "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/FBX\/ANIM_CHAR_Facehugger.fbx",
-            "Parent UID": 1853857838,
+            "Origin_Path": "Assets\/FBX\/FACEHUGGERBETA1.fbx",
+            "Parent UID": 625374565,
             "Components": [
                 {
                     "Type": "Transform",
@@ -195,9 +195,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -208,7 +208,7 @@
                 {
                     "Type": "Mesh",
                     "Active": 1,
-                    "UID": 1891356455,
+                    "UID": 1533436469,
                     "Vertex Count": 5688,
                     "Index Count": 8340
                 },
@@ -220,8 +220,8 @@
                         {
                             "lightDir": [
                                 0,
-                                16.196561813354492,
-                                -3.8318030834197998
+                                16,
+                                -3
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -240,10 +240,10 @@
                             ]
                         }
                     ],
-                    "Diffuse_ID": 279,
+                    "Diffuse_ID": 25,
                     "Diffuse_Path": "Assets\/Textures\/Textures Facehugger\/TEX_CHAR_Facehugger_D.png",
                     "Diffuse_UID": 1823043176,
-                    "Normal_ID": 281,
+                    "Normal_ID": 23,
                     "Normal_Path": "Assets\/Textures\/Textures Facehugger\/TEX_CHAR_Facehugger_N.png",
                     "Normal_UID": 122283368
                 }
@@ -256,14 +256,14 @@
             "UID": 744143457,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853857838,
+            "Parent UID": 625374565,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        0.62205958366394043,
                         0
                     ],
                     "Rotation": [
@@ -272,9 +272,9 @@
                         -3.0779071240501221e-13
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        0.66134387254714966,
+                        0.66134387254714966,
+                        0.66134387254714966
                     ]
                 },
                 {
@@ -530,14 +530,14 @@
             "UID": 294606393,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853857838,
+            "Parent UID": 625374565,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        0.62205958366394043,
                         0
                     ],
                     "Rotation": [
@@ -546,9 +546,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        0.66134387254714966,
+                        0.66134387254714966,
+                        0.66134387254714966
                     ]
                 },
                 {
@@ -776,14 +776,14 @@
             "UID": 1953913454,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 460275566,
+            "Parent UID": 1655101801,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
                         0,
-                        8.0934524536132812,
+                        5.9746150970458984,
                         0
                     ],
                     "Rotation": [
@@ -792,9 +792,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        0.66134387254714966,
+                        0.66134387254714966,
+                        0.66134387254714966
                     ]
                 },
                 {
