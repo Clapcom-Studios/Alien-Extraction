@@ -887,7 +887,7 @@ public class Player : YmirComponent
 
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_DASH:
@@ -954,7 +954,7 @@ public class Player : YmirComponent
 
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_DASH:
@@ -1013,7 +1013,7 @@ public class Player : YmirComponent
                     {
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_DASH_END:
@@ -1038,7 +1038,7 @@ public class Player : YmirComponent
                     {
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_JUMP_END:
@@ -1069,7 +1069,7 @@ public class Player : YmirComponent
 
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_DASH:
@@ -1114,7 +1114,7 @@ public class Player : YmirComponent
 
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_SHOOT_END:
@@ -1139,13 +1139,13 @@ public class Player : YmirComponent
                     {
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
-                            //case INPUT.I_IDLE:
-                            //    currentState = STATE.IDLE;
-                            //    //StartIdle(); //Trigger de la animacion //Arreglar esto
-                            //    break;
+                        case INPUT.I_IDLE:
+                            currentState = STATE.IDLE;
+                            //StartIdle(); //Trigger de la animacion //Arreglar esto
+                            break;
                     }
                     break;
 
@@ -1184,7 +1184,7 @@ public class Player : YmirComponent
                     {
                         case INPUT.I_STOP:
                             currentState = STATE.STOP;
-                            StopPlayer();
+                            StartIdle();
                             break;
 
                         case INPUT.I_ACID_END:
@@ -1649,7 +1649,17 @@ public class Player : YmirComponent
 
     public void PlayerStopState(bool stop)
     {
-        currentState = (stop) ? STATE.STOP : STATE.IDLE;
+        //currentState = (stop) ? STATE.STOP : STATE.IDLE;
+        switch (stop)
+        {
+            case true:
+                inputsList.Add(INPUT.I_STOP);
+                break; 
+                
+            case false:
+                inputsList.Add(INPUT.I_IDLE);
+                break;
+        }
     }
 
     public void ToggleMenu(bool open)

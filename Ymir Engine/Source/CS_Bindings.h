@@ -327,7 +327,7 @@ MonoObject* FindEnemyGameObject(MonoObject* obj) {
 	return nullptr;
 }
 
-MonoObject* FindHealthBarObject(MonoObject* obj) {
+MonoObject* FindHealthBarObject(MonoObject* obj, int childNum) {
 
 	std::vector<GameObject*> gameObjectVec;
 
@@ -338,7 +338,7 @@ MonoObject* FindHealthBarObject(MonoObject* obj) {
 	GameObject* go = gameObjectVec[2];
 	gameObjectVec.clear();
 	go->CollectChilds(gameObjectVec);
-	GameObject* child = gameObjectVec[1];
+	GameObject* child = gameObjectVec[childNum];
 
 	gameObjectVec.clear();
 
