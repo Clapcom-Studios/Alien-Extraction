@@ -1366,6 +1366,8 @@ public class Player : YmirComponent
             Animation.PlayAnimation(gameObject, idleAnim);
             Particles.RestartParticles(currentWeapon.particlesGO);
 
+            StopPlayer();
+
             if (currentWeapon.Type == WEAPON_TYPE.PLASMA)
             {
                 Plasma plasma = (Plasma)currentWeapon;
