@@ -2,17 +2,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	60316943	LV1_Beacon			\Default Work Unit\Level1\MapInteractionLV1\LV1_Beacon	
 	346664603	LV1_OpenDoor			\Default Work Unit\Level1\MapInteractionLV1\LV1_OpenDoor	
 	1939003214	LV1_GrabKey			\Default Work Unit\Level1\MapInteractionLV1\LV1_GrabKey	
+	1988943920	LV1_GrabResin			\Default Work Unit\Level1\MapInteractionLV1\LV1_GrabResin	
 	2450396122	LV1_OpenChest			\Default Work Unit\Level1\MapInteractionLV1\LV1_OpenChest	
 	2518039338	LV1_CollectItem			\Default Work Unit\Level1\MapInteractionLV1\LV1_CollectItem	
 	2671563405	LV1_CloseDoor			\Default Work Unit\Level1\MapInteractionLV1\LV1_CloseDoor	
 	3616258525	LV1_UseKey			\Default Work Unit\Level1\MapInteractionLV1\LV1_UseKey	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	44773720	SFX_Interaction_DoorClose	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\DoorClose_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_DoorClose		154614
-	62041791	SFX_Interaction_UseKey	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\UseKey_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_UseKey		119872
-	222614412	SFX_Interaction_GrabKey	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\GrabKey_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_GrabKey		92850
-	428149977	SFX_Interaction_ItemPickup	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\ItemPickup_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_ItemPickup		101440
-	898287355	SFX_Interaction_OpenChest	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_OpenChest		364096
-	959939147	SFX_Interaction_Beacon	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\SFX_Interaction_Beacon_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_Beacon		130372
-	1040922353	SFX_Interaction_DoorOpen	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\DoorOpen_10C4C929.wem		\Actor-Mixer Hierarchy\Reworked Work Unit\Interactive\LV1\SFX_Interaction_DoorOpen		186688
+	44773720	SFX_Interaction_DoorClose	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\DoorClose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_DoorClose		154614
+	62041791	SFX_Interaction_UseKey	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\UseKey_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_UseKey		119872
+	222614412	SFX_Interaction_GrabKey	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\GrabKey_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_GrabKey		92850
+	428149977	SFX_Interaction_ItemPickup	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\ItemPickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_ItemPickup		101440
+	601297124	SFX_Interaction_ResinPickUp	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\resinPickUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level2\MapInteractionLV2\SFX_Interaction_ResinPickUp		57540
+	898287355	SFX_Interaction_OpenChest	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\OpenChest_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_OpenChest		364096
+	959939147	SFX_Interaction_Beacon	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\SFX_Interaction_Beacon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_Beacon		130372
+	1040922353	SFX_Interaction_DoorOpen	C:\Users\Mario\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\DoorOpen_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1\MapInteractionLV1\SFX_Interaction_DoorOpen		186688
 
