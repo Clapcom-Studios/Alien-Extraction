@@ -69,7 +69,7 @@ public class DroneXenomorphBaseScript : Enemy
 
         //AGENT
         aggro = false;
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 800f;
         agent.angularSpeed = 10f;
         Debug.Log("AngularSpeed" + agent.angularSpeed);
