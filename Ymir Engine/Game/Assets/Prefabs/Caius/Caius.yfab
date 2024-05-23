@@ -1,0 +1,705 @@
+{
+    "Prefab": [
+        {
+            "Name": "Npc_Placeholder",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1086457827,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1950834715,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        92.156044006347656,
+                        4.4847474098205566,
+                        -20.907581329345703
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1.1699994802474976,
+                        1.1699999570846558,
+                        1.1699994802474976
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        11.300000190734863,
+                        21.799999237060547,
+                        10.399999618530273
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0.10000000149011612,
+                        -2.9000000953674316
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Caius.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "dialogue_": 0
+                }
+            ],
+            "Children UID": [
+                1691427243,
+                1522841663
+            ]
+        },
+        {
+            "Name": "CHAR_Caius_Engine_Fix",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1691427243,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1086457827,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -0.00032806396484375,
+                        -3.9277191162109375,
+                        3.814697265625e-05
+                    ],
+                    "Rotation": [
+                        -0,
+                        27.294008255004883,
+                        -0
+                    ],
+                    "Scale": [
+                        0.099999986588954926,
+                        0.10000000149011612,
+                        0.10000002384185791
+                    ]
+                },
+                {
+                    "Type": "Animation",
+                    "Active": 1,
+                    "NumPaths": 2,
+                    "Paths": [
+                        ".\/Assets\/Caius_Clean.yanim",
+                        ".\/Assets\/Caius_Idle.yanim"
+                    ],
+                    "UIDs": [
+                        496433198,
+                        361959013
+                    ]
+                }
+            ],
+            "Children UID": [
+                941943737,
+                1839703468,
+                1607902011,
+                1878093907,
+                1374477559,
+                2111875496
+            ]
+        },
+        {
+            "Name": "Belt",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 941943737,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Dialogue\/CHAR_Caius_Engine_Fix.fbx",
+            "Parent UID": 1691427243,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1684826868,
+                    "Vertex Count": 107,
+                    "Index Count": 252
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/AnimationShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": false,
+                            "transparency": 1,
+                            "setColor": false,
+                            "weaponColor": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    ],
+                    "Diffuse_ID": 1393,
+                    "Diffuse_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_D.png",
+                    "Diffuse_UID": 1939267774,
+                    "Specular_ID": 1401,
+                    "Specular_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_S.png",
+                    "Specular_UID": 122696277,
+                    "Normal_ID": 1399,
+                    "Normal_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_N.png",
+                    "Normal_UID": 1463677626,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_H.png",
+                    "Height_UID": 1553197246,
+                    "Emissive_ID": 1395,
+                    "Emissive_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_E.png",
+                    "Emissive_UID": 505838131
+                }
+            ]
+        },
+        {
+            "Name": "Boxes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1839703468,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Dialogue\/CHAR_Caius_Engine_Fix.fbx",
+            "Parent UID": 1691427243,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 993854924,
+                    "Vertex Count": 69,
+                    "Index Count": 108
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/AnimationShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": false,
+                            "transparency": 1,
+                            "setColor": false,
+                            "weaponColor": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    ],
+                    "Diffuse_ID": 1393,
+                    "Diffuse_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_D.png",
+                    "Diffuse_UID": 1939267774,
+                    "Specular_ID": 1401,
+                    "Specular_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_S.png",
+                    "Specular_UID": 122696277,
+                    "Normal_ID": 1399,
+                    "Normal_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_N.png",
+                    "Normal_UID": 1463677626,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_H.png",
+                    "Height_UID": 1553197246,
+                    "Emissive_ID": 1395,
+                    "Emissive_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_E.png",
+                    "Emissive_UID": 505838131
+                }
+            ]
+        },
+        {
+            "Name": "Clothes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1607902011,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Dialogue\/CHAR_Caius_Engine_Fix.fbx",
+            "Parent UID": 1691427243,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 471698816,
+                    "Vertex Count": 940,
+                    "Index Count": 3192
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/AnimationShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": false,
+                            "transparency": 1,
+                            "setColor": false,
+                            "weaponColor": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    ],
+                    "Diffuse_ID": 1393,
+                    "Diffuse_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_D.png",
+                    "Diffuse_UID": 1939267774,
+                    "Specular_ID": 1401,
+                    "Specular_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_S.png",
+                    "Specular_UID": 122696277,
+                    "Normal_ID": 1399,
+                    "Normal_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_N.png",
+                    "Normal_UID": 1463677626,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_H.png",
+                    "Height_UID": 1553197246,
+                    "Emissive_ID": 1395,
+                    "Emissive_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_E.png",
+                    "Emissive_UID": 505838131
+                }
+            ]
+        },
+        {
+            "Name": "Skin",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1878093907,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Dialogue\/CHAR_Caius_Engine_Fix.fbx",
+            "Parent UID": 1691427243,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 245385632,
+                    "Vertex Count": 1788,
+                    "Index Count": 5604
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/AnimationShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": false,
+                            "transparency": 1,
+                            "setColor": false,
+                            "weaponColor": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    ],
+                    "Diffuse_ID": 1393,
+                    "Diffuse_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_D.png",
+                    "Diffuse_UID": 1939267774,
+                    "Specular_ID": 1401,
+                    "Specular_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_S.png",
+                    "Specular_UID": 122696277,
+                    "Normal_ID": 1399,
+                    "Normal_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_N.png",
+                    "Normal_UID": 1463677626,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_H.png",
+                    "Height_UID": 1553197246,
+                    "Emissive_ID": 1395,
+                    "Emissive_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_E.png",
+                    "Emissive_UID": 505838131
+                }
+            ]
+        },
+        {
+            "Name": "Head",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1374477559,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Dialogue\/CHAR_Caius_Engine_Fix.fbx",
+            "Parent UID": 1691427243,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 918208881,
+                    "Vertex Count": 398,
+                    "Index Count": 1899
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/AnimationShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": false,
+                            "transparency": 1,
+                            "setColor": false,
+                            "weaponColor": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    ],
+                    "Diffuse_ID": 1393,
+                    "Diffuse_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_D.png",
+                    "Diffuse_UID": 1939267774,
+                    "Specular_ID": 1401,
+                    "Specular_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_S.png",
+                    "Specular_UID": 122696277,
+                    "Normal_ID": 1399,
+                    "Normal_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_N.png",
+                    "Normal_UID": 1463677626,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_H.png",
+                    "Height_UID": 1553197246,
+                    "Emissive_ID": 1395,
+                    "Emissive_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_E.png",
+                    "Emissive_UID": 505838131
+                }
+            ]
+        },
+        {
+            "Name": "Eyes (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2111875496,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Dialogue\/CHAR_Caius_Engine_Fix.fbx",
+            "Parent UID": 1691427243,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 636027298,
+                    "Vertex Count": 1214,
+                    "Index Count": 4032
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/AnimationShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": false,
+                            "transparency": 1,
+                            "setColor": false,
+                            "weaponColor": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    ],
+                    "Diffuse_ID": 1393,
+                    "Diffuse_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_D.png",
+                    "Diffuse_UID": 1939267774,
+                    "Specular_ID": 1401,
+                    "Specular_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_S.png",
+                    "Specular_UID": 122696277,
+                    "Normal_ID": 1399,
+                    "Normal_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_N.png",
+                    "Normal_UID": 1463677626,
+                    "Height_ID": 1397,
+                    "Height_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_H.png",
+                    "Height_UID": 1553197246,
+                    "Emissive_ID": 1395,
+                    "Emissive_Path": "Assets\/Dialogue\/Caius_Textures\/TEX_CHAR_Caius_E.png",
+                    "Emissive_UID": 505838131
+                }
+            ]
+        },
+        {
+            "Name": "Pop-Up",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1522841663,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1086457827,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        20.895999908447266,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        6.4102587699890137,
+                        6.4102563858032227,
+                        6.4102597236633301
+                    ]
+                }
+            ],
+            "Children UID": [
+                1520000699
+            ]
+        },
+        {
+            "Name": "Cube (2)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1520000699,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Primitives\/Cube.fbx",
+            "Parent UID": 1522841663,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1728623793,
+                    "Vertex Count": 24,
+                    "Index Count": 36
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 656,
+                    "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
+                    "Diffuse_UID": 962411016
+                }
+            ]
+        }
+    ]
+}
