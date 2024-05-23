@@ -17,7 +17,7 @@ public class Shotgun : Weapon
         playerObject = InternalCalls.GetGameObjectByName("Player");
         player = playerObject.GetComponent<Player>();
 
-        reloadTime = 2.5f;
+        reloadTime = 0.918f;
 
         switch (_upgrade)
         {

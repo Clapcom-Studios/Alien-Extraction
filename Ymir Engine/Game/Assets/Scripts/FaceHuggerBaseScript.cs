@@ -61,7 +61,7 @@ public class FaceHuggerBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-        healthBar = InternalCalls.GetHealtBarObject(gameObject);
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,5);
         knockBackSpeed = 200;
         knockBackTimer = 0.2f;
         stopedDuration = 1f;
@@ -106,7 +106,7 @@ public class FaceHuggerBaseScript : Enemy
 
         cumTimer = cumDuration2;
 
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 1500f;
         agent.angularSpeed = 10f;
 

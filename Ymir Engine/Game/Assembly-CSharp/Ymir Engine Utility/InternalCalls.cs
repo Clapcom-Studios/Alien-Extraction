@@ -153,7 +153,7 @@ namespace YmirEngine
         public static extern GameObject LoadScene(string name);
 
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern GameObject GetHealtBarObject(object go);
+        public static extern GameObject GetHealtBarObject(object go, int numChild);
 
         
         [MethodImplAttribute(MethodImplOptions.InternalCall)]

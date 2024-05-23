@@ -7,7 +7,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1332298426,
+            "Parent UID": 1872441970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34,8 +34,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1877,
-                    "Height": 1076,
+                    "Width": 1669,
+                    "Height": 988,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -49,7 +49,7 @@
             "Children UID": [
                 815848601,
                 1225803009,
-                572532483
+                854003353
             ]
         },
         {
@@ -293,8 +293,8 @@
                     "rightGridName": "",
                     "downGridName": "Grid Raid",
                     "upGridName": "",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -355,7 +355,7 @@
                         447,
                         114
                     ],
-                    "Path": "Assets\/Lava.png",
+                    "Path": "Assets\/UI\/Teleport Buttons\/BotonUnselected.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -396,7 +396,7 @@
                     "Pressed": "Assets\/UI\/Teleport Buttons\/BotonPressed.png",
                     "Selected": "Assets\/UI\/Teleport Buttons\/BotonHover.png",
                     "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/Lava.png",
+                    "Disabled": "Assets\/UI\/Teleport Buttons\/BotonUnselected.png",
                     "Focused color": [
                         0,
                         1,
@@ -437,7 +437,7 @@
             ]
         },
         {
-            "Name": "Text (1)",
+            "Name": "Text (24)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1389414915,
@@ -605,7 +605,7 @@
                         447,
                         114
                     ],
-                    "Path": "Assets\/Lava.png",
+                    "Path": "Assets\/UI\/Teleport Buttons\/BotonUnselected.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -646,7 +646,7 @@
                     "Pressed": "Assets\/UI\/Teleport Buttons\/BotonPressed.png",
                     "Selected": "Assets\/UI\/Teleport Buttons\/BotonHover.png",
                     "Release": "Assets\/penguin.png",
-                    "Disabled": "Assets\/Lava.png",
+                    "Disabled": "Assets\/UI\/Teleport Buttons\/BotonUnselected.png",
                     "Focused color": [
                         0,
                         1,
@@ -855,7 +855,7 @@
                         447,
                         114
                     ],
-                    "Path": "Assets\/Lava.png",
+                    "Path": "Assets\/UI\/Teleport Buttons\/BotonUnselected.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -896,7 +896,7 @@
                     "Pressed": "Assets\/UI\/Teleport Buttons\/BotonPressed.png",
                     "Selected": "Assets\/UI\/Teleport Buttons\/BotonHover.png",
                     "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/Lava.png",
+                    "Disabled": "Assets\/UI\/Teleport Buttons\/BotonUnselected.png",
                     "Focused color": [
                         0,
                         1,
@@ -1584,8 +1584,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": "Grid",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -1788,7 +1788,7 @@
             "Name": "TeleportAnim",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 572532483,
+            "UID": 854003353,
             "Active": false,
             "Element_Type": "None",
             "Parent UID": 365492027,

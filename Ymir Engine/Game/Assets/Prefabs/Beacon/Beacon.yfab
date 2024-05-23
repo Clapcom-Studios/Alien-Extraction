@@ -1,21 +1,21 @@
 {
     "Prefab": [
         {
-            "Name": "PROP_Beacon",
+            "Name": "Beacon",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1237068732,
+            "UID": 700466739,
             "Active": true,
-            "Element_Type": "Model",
-            "Parent UID": 669089984,
+            "Element_Type": "None",
+            "Parent UID": 955609810,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -27.979991912841797,
-                        3.6057915687561035,
-                        0
+                        141.46807861328125,
+                        4.4847474098205566,
+                        -20.907581329345703
                     ],
                     "Rotation": [
                         -0,
@@ -23,9 +23,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        1.1699994802474976,
+                        1.1699999570846558,
+                        1.1699994802474976
                     ]
                 },
                 {
@@ -38,9 +38,9 @@
                     "Active": true,
                     "Collider Type": 0,
                     "Size": [
-                        6.3000001907348633,
-                        12.199999809265137,
-                        5
+                        11.300000190734863,
+                        21.799999237060547,
+                        10.399999618530273
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -52,9 +52,9 @@
                     "LockY": false,
                     "LockZ": false,
                     "Offset": [
-                        3.2999999523162842,
-                        5.1999998092651367,
-                        0.30000001192092896
+                        0,
+                        0.10000000149011612,
+                        -2.9000000953674316
                     ],
                     "Offset Rotation": [
                         0,
@@ -65,10 +65,44 @@
                 },
                 {
                     "Type": "Script",
-                    "ScriptName": "OpenMenu_OnCollision.cs",
+                    "ScriptName": "Show_Beacon.cs",
                     "Active": 1,
                     "UID": 0,
                     "goName": "Image_Go_Base"
+                }
+            ],
+            "Children UID": [
+                1237068732,
+                1699814696
+            ]
+        },
+        {
+            "Name": "PROP_Beacon",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1237068732,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 700466739,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -3.16943359375,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.85470122098922729,
+                        0.85470086336135864,
+                        0.85470122098922729
+                    ]
                 }
             ],
             "Children UID": [
@@ -127,9 +161,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -337,9 +371,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -416,9 +450,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -495,9 +529,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -574,9 +608,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -653,9 +687,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -774,9 +808,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -58.784080505371094,
-                                111.64328002929688,
-                                63.155529022216797
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -813,7 +847,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1225145048,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1237068732,
             "Components": [
@@ -842,8 +876,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1524,
-                    "Height": 841,
+                    "Width": 678,
+                    "Height": 560,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -858,7 +892,7 @@
                     "ScriptName": "OpenMenu_OnCollision.cs",
                     "Active": 1,
                     "UID": 0,
-                    "goName": "Image_Go_Base"
+                    "goName": ""
                 }
             ],
             "Children UID": [
@@ -869,11 +903,11 @@
             ]
         },
         {
-            "Name": "Image (1)",
+            "Name": "Image (2)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 278230482,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1225145048,
             "Components": [
@@ -907,8 +941,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        -27.979991912841797,
-                        3.6057915687561035,
+                        137.75984191894531,
+                        4.4847474098205566,
                         1920,
                         1080
                     ],
@@ -932,11 +966,11 @@
             ]
         },
         {
-            "Name": "Image",
+            "Name": "Image (3)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1769519281,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1225145048,
             "Components": [
@@ -970,8 +1004,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        516,
-                        327,
+                        681.7398681640625,
+                        327.87896728515625,
                         868,
                         336
                     ],
@@ -995,11 +1029,11 @@
             ]
         },
         {
-            "Name": "Grid",
+            "Name": "Grid (3)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1621892092,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1225145048,
             "Components": [
@@ -1033,8 +1067,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": false,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": true,
                     "bounceY": false,
                     "empty": false,
@@ -1052,7 +1086,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1656679832,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1621892092,
             "Components": [
@@ -1086,8 +1120,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        616.02001953125,
-                        534.00579833984375,
+                        781.75982666015625,
+                        534.884765625,
                         300,
                         50
                     ],
@@ -1164,7 +1198,8 @@
                     "Active": 1,
                     "UID": 0,
                     "sceneName": "BASE_FINAL\/LVL_BASE_COLLIDERS",
-                    "time": 5
+                    "time": 5,
+                    "saveGame": true
                 }
             ],
             "Children UID": [
@@ -1172,11 +1207,11 @@
             ]
         },
         {
-            "Name": "Text (3)",
+            "Name": "Text (24)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1333584116,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1656679832,
             "Components": [
@@ -1210,8 +1245,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        729.02001953125,
-                        568.00579833984375,
+                        894.75982666015625,
+                        568.884765625,
                         300,
                         50
                     ],
@@ -1238,7 +1273,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 683157146,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1621892092,
             "Components": [
@@ -1272,8 +1307,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        978.02001953125,
-                        534.00579833984375,
+                        1143.7598876953125,
+                        534.884765625,
                         300,
                         50
                     ],
@@ -1358,11 +1393,11 @@
             ]
         },
         {
-            "Name": "Text (4)",
+            "Name": "Text (25)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1594104480,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 683157146,
             "Components": [
@@ -1396,8 +1431,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        1105,
-                        570,
+                        1270.7398681640625,
+                        570.87896728515625,
                         200,
                         50
                     ],
@@ -1420,11 +1455,11 @@
             ]
         },
         {
-            "Name": "Text (5)",
+            "Name": "Text (26)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1031375599,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1225145048,
             "Components": [
@@ -1458,8 +1493,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        576.02001953125,
-                        462.00579833984375,
+                        741.75982666015625,
+                        462.884765625,
                         300,
                         50
                     ],
@@ -1478,6 +1513,88 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Pop-Up (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1699814696,
+            "Active": false,
+            "Element_Type": "Model",
+            "Parent UID": 700466739,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        20.895999908447266,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        6.4102587699890137,
+                        6.4102559089660645,
+                        6.4102597236633301
+                    ]
+                }
+            ],
+            "Children UID": [
+                1487599237
+            ]
+        },
+        {
+            "Name": "Cube (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1487599237,
+            "Active": false,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Primitives\/Cube.fbx",
+            "Parent UID": 1699814696,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1728623793,
+                    "Vertex Count": 24,
+                    "Index Count": 36
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 656,
+                    "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
+                    "Diffuse_UID": 962411016
                 }
             ]
         }

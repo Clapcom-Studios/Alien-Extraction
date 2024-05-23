@@ -17,7 +17,7 @@ public class Button_Navigation : YmirComponent
     private bool loadScene = false;
     public bool showLoadScene = true;
 
-    public float time = 10;
+    public float time = 2;
 
     public void Start()
     {
@@ -28,7 +28,7 @@ public class Button_Navigation : YmirComponent
             loadSceneImg.SetActive(false);
         }
 
-        time = 10;
+        time = 2;
         loadScene = false;
 
         if (!SaveLoad.GameFileExists(Globals.saveGameDir, Globals.saveGamesInfoFile))

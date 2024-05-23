@@ -63,13 +63,13 @@ public class DroneXenomorphBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-        healthBar = InternalCalls.GetHealtBarObject(gameObject);
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,5);
         knockBackSpeed = 200;
         knockBackTimer = 0.5f;
 
         //AGENT
         aggro = false;
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 800f;
         agent.angularSpeed = 10f;
         Debug.Log("AngularSpeed" + agent.angularSpeed);
