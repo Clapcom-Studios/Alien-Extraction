@@ -54,6 +54,8 @@ public class DroneXenomorphBaseScript : Enemy
 
     private float outOfRangeTimer;
 
+    public GameObject particlesGO = null;
+
     //private Auto_Aim playerAim; 
 
 	public void Start()
@@ -477,6 +479,11 @@ public class DroneXenomorphBaseScript : Enemy
                 droneState = DroneState.CLAW;
                 LookAt(player.transform.globalPosition);
                 Animation.PlayAnimation(gameObject, "Claw_Attack");
+
+                //PARTICLES
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesClawSwipe_Drone");
+                Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
+                Particles.PlayParticlesTrigger(particlesGO);
             }
         }
         else if (CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, tailRange) && tailCooldownTime >= tailCooldown)
@@ -491,6 +498,12 @@ public class DroneXenomorphBaseScript : Enemy
                 droneState = DroneState.TAIL;
                 LookAt(player.transform.globalPosition);
                 Animation.PlayAnimation(gameObject, "Drone_Tail_Attack");
+
+                //PARTICLES
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesTailAttack_Drone");
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 33);
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 0);
+                Particles.PlayParticlesTrigger(particlesGO);
             }
         }
     }

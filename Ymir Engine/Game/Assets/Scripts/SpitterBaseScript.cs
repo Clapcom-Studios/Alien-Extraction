@@ -59,6 +59,8 @@ public class SpitterBaseScript : Enemy
     private bool acidDone = false;
     private bool explosionDone = false;
 
+    public GameObject particlesGO = null;
+
     public void Start()
     {
         //Base stuff
@@ -330,6 +332,11 @@ public class SpitterBaseScript : Enemy
                     //ANIMATION DURATION HERE!!!
                     timeLimit = 0.8f;
                     Animation.PlayAnimation(gameObject, "Atack_1_Spiter");
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    Particles.PlayParticlesTrigger(particlesGO);
+
                     walkAni = false;
                     Audio.PlayAudio(gameObject, "XS_Spit");
                     acidDone = false;
@@ -345,6 +352,11 @@ public class SpitterBaseScript : Enemy
                     timeLimit = 0.8f;
                     Animation.PlayAnimation(gameObject, "Atack_2_Spiter");
                     walkAni = false;
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack2_Spitter");
+                    Particles.PlayParticlesTrigger(particlesGO);
+
                     Audio.PlayAudio(gameObject, "XS_Rebound");
                     explosionDone = false;
                     xenoState = XenoState.ACID_REBOUND;
