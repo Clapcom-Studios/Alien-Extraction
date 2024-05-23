@@ -109,6 +109,8 @@ public class QueenXenomorphBaseScript : YmirComponent
 
     public bool paused = false;
 
+    public GameObject particlesGO = null;
+
     public void Start()
     {
         //Temporary until we know for sure

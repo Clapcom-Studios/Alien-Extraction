@@ -549,6 +549,7 @@ public class Player : YmirComponent
 
             if (acidicTimer <= 0)
             {
+                EndAcidicSpit();
                 inputsList.Add(INPUT.I_ACID_END);
             }
         }
@@ -592,6 +593,7 @@ public class Player : YmirComponent
 
             if (predatoryTimer <= 0)
             {
+                EndPredRush();
                 inputsList.Add(INPUT.I_PRED_END);
             }
         }
@@ -635,6 +637,7 @@ public class Player : YmirComponent
 
             if (swipeTimer <= 0)
             {
+                EndTailSwipe();
                 inputsList.Add(INPUT.I_SWIPE_END);
             }
         }
@@ -739,7 +742,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Acidic Spit (Skill 1) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0)
+                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0 && hasDashed == false)
                 {
                     hasAcidic = true;
                     inputsList.Add(INPUT.I_ACID);
@@ -754,7 +757,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Predatory Rush (Skill 2) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && hasPred == false && predatoryCDTimer <= 0)
+                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && hasPred == false && predatoryCDTimer <= 0 && hasDashed == false)
                 {
                     hasPred = true;
                     inputsList.Add(INPUT.I_PRED);
@@ -769,7 +772,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Swipe (Skill 3) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && hasSwipe == false && swipeCDTimer <= 0)
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && hasSwipe == false && swipeCDTimer <= 0 && hasDashed == false)
                 {
                     hasSwipe = true;
                     inputsList.Add(INPUT.I_SWIPE);
@@ -899,21 +902,26 @@ public class Player : YmirComponent
                             StartAcidicSpit();
                             break;
 
-                        case INPUT.I_ACID_END:
-                            EndAcidicSpit();
-                            break;
-
                         case INPUT.I_PRED:
                             StartPredRush();
-                            break;
-
-                        case INPUT.I_PRED_END:
-                            EndPredRush();
                             break;
 
                         case INPUT.I_SWIPE:
                             currentState = STATE.TAILSWIPE;
                             StartTailSwipe();
+                            break;
+
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
+                            break;
+
+                        case INPUT.I_PRED_END:
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
                             break;
 
                         case INPUT.I_JUMP:
@@ -966,21 +974,26 @@ public class Player : YmirComponent
                             StartAcidicSpit();
                             break;
 
-                        case INPUT.I_ACID_END:
-                            EndAcidicSpit();
-                            break;
-
                         case INPUT.I_PRED:
                             StartPredRush();
-                            break;
-
-                        case INPUT.I_PRED_END:
-                            EndPredRush();
                             break;
 
                         case INPUT.I_SWIPE:
                             currentState = STATE.TAILSWIPE;
                             StartTailSwipe();
+                            break;
+
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
+                            break;
+
+                        case INPUT.I_PRED_END:
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
                             break;
 
                         case INPUT.I_JUMP:
@@ -1011,18 +1024,27 @@ public class Player : YmirComponent
                     //Debug.Log("DASH");
                     switch (input)
                     {
-                        case INPUT.I_STOP:
-                            currentState = STATE.STOP;
-                            StartIdle();
-                            break;
+                        //case INPUT.I_STOP:
+                        //    currentState = STATE.STOP;
+                        //    StartIdle();
+                        //    break;
 
                         case INPUT.I_DASH_END:
                             currentState = STATE.IDLE;
                             EndDash();
                             break;
 
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
+                            break;
+
                         case INPUT.I_PRED_END:
-                            EndPredRush();
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
                             break;
 
                         case INPUT.I_DEAD:
@@ -1077,8 +1099,17 @@ public class Player : YmirComponent
                             StartDash();
                             break;
 
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
+                            break;
+
                         case INPUT.I_PRED_END:
-                            EndPredRush();
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
                             break;
 
                         case INPUT.I_JUMP:
@@ -1122,9 +1153,19 @@ public class Player : YmirComponent
                             EndShooting();
                             break;
 
-                        case INPUT.I_PRED_END:
-                            EndPredRush();
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
                             break;
+
+                        case INPUT.I_PRED_END:
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
+                            break;
+
 
                         case INPUT.I_DEAD:
                             currentState = STATE.DEAD;
@@ -1146,6 +1187,19 @@ public class Player : YmirComponent
                             currentState = STATE.IDLE;
                             //StartIdle(); //Trigger de la animacion //Arreglar esto
                             break;
+
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
+                            break;
+
+                        case INPUT.I_PRED_END:
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
+                            break;
                     }
                     break;
 
@@ -1158,18 +1212,27 @@ public class Player : YmirComponent
                         //    StopPlayer();
                         //    break;
 
+                        case INPUT.I_DASH:
+                            currentState = STATE.DASH;
+                            StartDash();
+                            break;
+
                         case INPUT.I_HIT:
                             currentState = STATE.HIT;
                             StartHit();
                             break;
 
+                        case INPUT.I_ACID_END:
+                            //EndAcidicSpit();
+                            break;
+
                         case INPUT.I_PRED_END:
-                            EndPredRush();
+                            //EndPredRush();
                             break;
 
                         case INPUT.I_SWIPE_END:
                             currentState = STATE.IDLE;
-                            EndTailSwipe();
+                            //EndTailSwipe();
                             break;
 
                         case INPUT.I_DEAD:
@@ -1188,11 +1251,16 @@ public class Player : YmirComponent
                             break;
 
                         case INPUT.I_ACID_END:
-                            EndAcidicSpit();
+                            //EndAcidicSpit();
                             break;
 
                         case INPUT.I_PRED_END:
-                            EndPredRush();
+                            //EndPredRush();
+                            break;
+
+                        case INPUT.I_SWIPE_END:
+                            currentState = STATE.IDLE;
+                            //EndTailSwipe();
                             break;
 
                         case INPUT.I_DEAD:
@@ -1297,6 +1365,8 @@ public class Player : YmirComponent
         {
             Animation.PlayAnimation(gameObject, idleAnim);
             Particles.RestartParticles(currentWeapon.particlesGO);
+
+            StopPlayer();
 
             if (currentWeapon.Type == WEAPON_TYPE.PLASMA)
             {
@@ -1875,7 +1945,7 @@ public class Player : YmirComponent
         //Trigger del sonido
         Audio.PlayAudio(gameObject, "P_AcidSpit");
 
-        Animation.PlayAnimation(gameObject, "Raisen_Spit");
+        //Animation.PlayAnimation(gameObject, "Raisen_Spit");
 
         GameObject acidicParticles = GetParticles(gameObject, "ParticlesAcidic");
         //Particles.ParticlesSetDirection(acidicParticles, gameObject.transform.GetForward().normalized, 0, gameObject.transform.GetForward().normalized);
@@ -1902,7 +1972,7 @@ public class Player : YmirComponent
 
     private void EndAcidicSpit()
     {
-        Animation.PlayAnimation(gameObject, idleAnim);
+        //Animation.PlayAnimation(gameObject, idleAnim);
         acidicCDTimer = acidicCD;
     }
 

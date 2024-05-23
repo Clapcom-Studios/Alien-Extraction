@@ -70,7 +70,7 @@
                                 {
                                     "Type": 1,
                                     "SpawnMode": 2,
-                                    "StartMode": 1,
+                                    "StartMode": 3,
                                     "NumParticles": 104,
                                     "SpawnRatio": 0.90600001811981201,
                                     "NumParticlesToStop": 100,
@@ -120,16 +120,16 @@
                                 },
                                 {
                                     "Type": 4,
-                                    "Progressive": false,
+                                    "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 31,
+                                    "Size1": 30,
                                     "Size2": 1,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
                                 {
                                     "Type": 5,
-                                    "Progressive": false,
+                                    "Progressive": true,
                                     "Loop": false,
                                     "Color1": [
                                         0.028976401314139366,
@@ -139,8 +139,8 @@
                                     ],
                                     "Color2": [
                                         0,
-                                        0,
-                                        0,
+                                        0.29646015167236328,
+                                        0.036729555577039719,
                                         0
                                     ],
                                     "TimeStart": 0,
@@ -184,7 +184,7 @@
                                 {
                                     "Type": 1,
                                     "SpawnMode": 2,
-                                    "StartMode": 1,
+                                    "StartMode": 3,
                                     "NumParticles": 115,
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,

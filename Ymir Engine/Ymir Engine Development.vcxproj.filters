@@ -672,9 +672,6 @@
     <ClInclude Include="Source\External\PhysFS\include\physfs.h">
       <Filter>Externals\PhysFS</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Icon.h">
-      <Filter>Externals\Icon</Filter>
-    </ClInclude>
     <ClInclude Include="Source\External\ImGuizmo\include\ImCurveEdit.h">
       <Filter>Externals\ImGuizmo</Filter>
     </ClInclude>
@@ -1232,6 +1229,9 @@
     </ClInclude>
     <ClInclude Include="Source\Tracy.h">
       <Filter>Sources\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Icon.h">
+      <Filter>Externals\Icon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1836,13 +1836,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Source\Icon.rc">
+    <Image Include="Game\Assets\Icon\Alien_Extraction_Logo.ico">
       <Filter>Externals\Icon</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
+    </Image>
     <Image Include="Game\Assets\Icon\YmirEngineIcon.ico">
       <Filter>Externals\Icon</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\Icon.rc">
+      <Filter>Externals\Icon</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
