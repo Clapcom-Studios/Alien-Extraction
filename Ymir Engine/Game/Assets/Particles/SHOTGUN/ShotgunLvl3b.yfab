@@ -1,21 +1,21 @@
 {
     "Prefab": [
         {
-            "Name": "ParticlesSmgDefault",
+            "Name": "ParticlesShotgunLVL3B",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 2002221929,
-            "Active": true,
+            "UID": 727482716,
+            "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1248383492,
+            "Parent UID": 2076370481,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -40.770648956298828,
-                        142.37722778320312,
-                        94.848014831542969
+                        -40.116001129150391,
+                        133.0260009765625,
+                        129.58500671386719
                     ],
                     "Rotation": [
                         -0,
@@ -31,8 +31,8 @@
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
-                    "ShowEmitters": true,
-                    "NumEmitters": 5,
+                    "ShowEmitters": false,
+                    "NumEmitters": 6,
                     "Emitters": [
                         {
                             "ModulesSize": 6,
@@ -48,7 +48,7 @@
                                         0,
                                         1.6000000238418579
                                     ],
-                                    "DistanceLimit": 0,
+                                    "DistanceLimit": 51.935001373291016,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
                                     "BaseShape": 1,
@@ -70,7 +70,7 @@
                                 {
                                     "Type": 1,
                                     "SpawnMode": 1,
-                                    "StartMode": 2,
+                                    "StartMode": 3,
                                     "NumParticles": 13,
                                     "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 10,
@@ -83,8 +83,8 @@
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 57.797000885009766,
-                                    "Size2": 61.669998168945312,
+                                    "Size1": 60,
+                                    "Size2": 61.169998168945312,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
@@ -104,9 +104,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        1,
-                                        0.57742255926132202,
-                                        0.19911503791809082,
+                                        0.13712899386882782,
+                                        0.72647678852081299,
+                                        0.91150444746017456,
                                         1
                                     ],
                                     "Color2": [
@@ -120,7 +120,7 @@
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_02.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_05.png"
                                 }
                             ]
                         },
@@ -160,7 +160,7 @@
                                 {
                                     "Type": 1,
                                     "SpawnMode": 1,
-                                    "StartMode": 2,
+                                    "StartMode": 3,
                                     "NumParticles": 5,
                                     "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 10,
@@ -171,7 +171,7 @@
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_02.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_05.png"
                                 },
                                 {
                                     "Type": 3,
@@ -188,8 +188,8 @@
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 25.08799934387207,
-                                    "Size2": 31.742000579833984,
+                                    "Size1": 25.58799934387207,
+                                    "Size2": 32.742000579833984,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
@@ -198,9 +198,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        0.96902656555175781,
-                                        0.9271358847618103,
-                                        0.76321566104888916,
+                                        0.72549021244049072,
+                                        0.93440920114517212,
+                                        1,
                                         1
                                     ],
                                     "Color2": [
@@ -250,7 +250,7 @@
                                 {
                                     "Type": 1,
                                     "SpawnMode": 2,
-                                    "StartMode": 2,
+                                    "StartMode": 3,
                                     "NumParticles": 15,
                                     "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 200,
@@ -268,9 +268,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        0.96017700433731079,
-                                        0.67258977890014648,
-                                        0.42060849070549011,
+                                        0.10149582475423813,
+                                        0.39277642965316772,
+                                        0.84955751895904541,
                                         1
                                     ],
                                     "Color2": [
@@ -287,9 +287,9 @@
                                     "Random": false,
                                     "UseShapeBase": true,
                                     "Direction1": [
-                                        0.10000000149011612,
-                                        1,
-                                        1
+                                        -0.70593863725662231,
+                                        0,
+                                        0.70827299356460571
                                     ],
                                     "Direction2": [
                                         -1.5,
@@ -368,7 +368,7 @@
                                 {
                                     "Type": 1,
                                     "SpawnMode": 1,
-                                    "StartMode": 2,
+                                    "StartMode": 3,
                                     "NumParticles": 5,
                                     "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 10,
@@ -381,8 +381,8 @@
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 64.916999816894531,
-                                    "Size2": 68.384002685546875,
+                                    "Size1": 65,
+                                    "Size2": 68.884002685546875,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
@@ -399,16 +399,16 @@
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_05.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_flash_8.png"
                                 },
                                 {
                                     "Type": 5,
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
+                                        0.1194690465927124,
+                                        0.69610011577606201,
                                         1,
-                                        0.58823531866073608,
-                                        0.22745098173618317,
                                         1
                                     ],
                                     "Color2": [
@@ -423,8 +423,8 @@
                             ]
                         },
                         {
-                            "ModulesSize": 7,
-                            "EmitterUID": 1536200499,
+                            "ModulesSize": 6,
+                            "EmitterUID": 1745327671,
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -436,10 +436,10 @@
                                         0,
                                         0
                                     ],
-                                    "DistanceLimit": 30.798000335693359,
+                                    "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
-                                    "BaseShape": 0,
+                                    "BaseShape": 1,
                                     "PositiveBoxPoints": [
                                         1,
                                         1,
@@ -451,58 +451,21 @@
                                         -1
                                     ],
                                     "RadiusHollow": 0,
-                                    "RadiusBase": 2,
-                                    "RadiusTop": 4,
-                                    "Heigth": 3
+                                    "RadiusBase": 1.3999999761581421,
+                                    "RadiusTop": 2.6493611335754395,
+                                    "Heigth": 2.4000000953674316
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 1,
-                                    "StartMode": 2,
-                                    "NumParticles": 5,
-                                    "SpawnRatio": 0.05000000074505806,
-                                    "NumParticlesToStop": 100,
+                                    "SpawnMode": 2,
+                                    "StartMode": 3,
+                                    "NumParticles": 21,
+                                    "SpawnRatio": 0.019999999552965164,
+                                    "NumParticlesToStop": 20,
                                     "PointingUID": 0,
-                                    "ConditionForSpawn": 1,
-                                    "SubemitterMaxLifetime": 0,
-                                    "SubemitterMinLifetime": 1
-                                },
-                                {
-                                    "Type": 4,
-                                    "Progressive": false,
-                                    "Loop": false,
-                                    "Size1": 10,
-                                    "Size2": 1,
-                                    "TimeStart": 0,
-                                    "TimeStop": 1
-                                },
-                                {
-                                    "Type": 2,
-                                    "Random": false,
-                                    "UseShapeBase": false,
-                                    "Direction1": [
-                                        0,
-                                        0,
-                                        2
-                                    ],
-                                    "Direction2": [
-                                        0,
-                                        0,
-                                        0
-                                    ],
-                                    "NormalizedBaseDirection": true,
-                                    "Accelerates": false,
-                                    "Speed1": 463.39999389648438,
-                                    "Speed2": 0,
-                                    "ChangeSpeedMode": 0,
-                                    "NewDirection": [
-                                        0,
-                                        0,
-                                        0
-                                    ],
-                                    "ChangeSpeed1": 0,
-                                    "ChangeSpeed2": 1,
-                                    "NormalizedChange": true
+                                    "ConditionForSpawn": 2,
+                                    "SubemitterMaxLifetime": 1,
+                                    "SubemitterMinLifetime": 0
                                 },
                                 {
                                     "Type": 3,
@@ -516,13 +479,155 @@
                                     ]
                                 },
                                 {
+                                    "Type": 2,
+                                    "Random": true,
+                                    "UseShapeBase": false,
+                                    "Direction1": [
+                                        -0.085511006414890289,
+                                        0.5,
+                                        0.99633723497390747
+                                    ],
+                                    "Direction2": [
+                                        -0.99604952335357666,
+                                        -0.5,
+                                        0.088799573481082916
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 1.6000000238418579,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.48672568798065186,
+                                        0.48672568798065186,
+                                        0.48672568798065186,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0.64159291982650757,
+                                        0.63307619094848633,
+                                        0.63307619094848633,
+                                        1
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 5,
+                                    "Size2": 0,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1555967858,
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 32.817001342773438,
+                                    "HasDistanceLimit": true,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        0.70099997520446777,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -0.60000002384185791,
+                                        -1.2999999523162842,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 2,
+                                    "RadiusTop": 4,
+                                    "Heigth": 3
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 2,
+                                    "StartMode": 3,
+                                    "NumParticles": 15,
+                                    "SpawnRatio": 0.019999999552965164,
+                                    "NumParticlesToStop": 27,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 2,
+                                    "SubemitterMaxLifetime": 1,
+                                    "SubemitterMinLifetime": 0
+                                },
+                                {
+                                    "Type": 3,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": true,
+                                    "UseShapeBase": false,
+                                    "Direction1": [
+                                        -0.085511006414890289,
+                                        0.5,
+                                        0.99633723497390747
+                                    ],
+                                    "Direction2": [
+                                        -0.99604952335357666,
+                                        -0.5,
+                                        0.088799573481082916
+                                    ],
+                                    "NormalizedBaseDirection": false,
+                                    "Accelerates": false,
+                                    "Speed1": 400,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
                                     "Type": 5,
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
+                                        0.12831860780715942,
+                                        0.74543821811676025,
                                         1,
-                                        0,
-                                        0,
                                         1
                                     ],
                                     "Color2": [
@@ -531,6 +636,15 @@
                                         0,
                                         0
                                     ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 10,
+                                    "Size2": 1,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
