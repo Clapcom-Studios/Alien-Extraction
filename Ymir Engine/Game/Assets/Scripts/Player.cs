@@ -742,7 +742,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Acidic Spit (Skill 1) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0)
+                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0 && hasDashed == false)
                 {
                     hasAcidic = true;
                     inputsList.Add(INPUT.I_ACID);
@@ -757,7 +757,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Predatory Rush (Skill 2) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && hasPred == false && predatoryCDTimer <= 0)
+                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && hasPred == false && predatoryCDTimer <= 0 && hasDashed == false)
                 {
                     hasPred = true;
                     inputsList.Add(INPUT.I_PRED);
@@ -772,7 +772,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Swipe (Skill 3) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && hasSwipe == false && swipeCDTimer <= 0)
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && hasSwipe == false && swipeCDTimer <= 0 && hasDashed == false)
                 {
                     hasSwipe = true;
                     inputsList.Add(INPUT.I_SWIPE);
@@ -1211,6 +1211,11 @@ public class Player : YmirComponent
                         //    currentState = STATE.STOP;
                         //    StopPlayer();
                         //    break;
+
+                        case INPUT.I_DASH:
+                            currentState = STATE.DASH;
+                            StartDash();
+                            break;
 
                         case INPUT.I_HIT:
                             currentState = STATE.HIT;
@@ -1938,7 +1943,7 @@ public class Player : YmirComponent
         //Trigger del sonido
         Audio.PlayAudio(gameObject, "P_AcidSpit");
 
-        Animation.PlayAnimation(gameObject, "Raisen_Spit");
+        //Animation.PlayAnimation(gameObject, "Raisen_Spit");
 
         GameObject acidicParticles = GetParticles(gameObject, "ParticlesAcidic");
         //Particles.ParticlesSetDirection(acidicParticles, gameObject.transform.GetForward().normalized, 0, gameObject.transform.GetForward().normalized);
@@ -1965,7 +1970,7 @@ public class Player : YmirComponent
 
     private void EndAcidicSpit()
     {
-        Animation.PlayAnimation(gameObject, idleAnim);
+        //Animation.PlayAnimation(gameObject, idleAnim);
         acidicCDTimer = acidicCD;
     }
 
