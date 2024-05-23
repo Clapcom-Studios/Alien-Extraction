@@ -63,7 +63,7 @@ public class DroneXenomorphBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-        healthBar = InternalCalls.GetHealtBarObject(gameObject);
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,5);
         knockBackSpeed = 200;
         knockBackTimer = 0.5f;
 
