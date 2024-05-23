@@ -20,7 +20,7 @@ public class Plasma : Weapon
         player = playerObject.GetComponent<Player>();
 
         range = 200;
-        reloadTime = 3f;
+        reloadTime = 3.162f;
 
         switch (_upgrade)
         {

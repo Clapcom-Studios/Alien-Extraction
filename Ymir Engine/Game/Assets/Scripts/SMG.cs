@@ -16,7 +16,7 @@ public class SMG : Weapon
         player = playerObject.GetComponent<Player>();
 
         range = 100;
-        reloadTime = 1.5f;
+        reloadTime = 1.056f;
 
         switch (_upgrade)
         {
