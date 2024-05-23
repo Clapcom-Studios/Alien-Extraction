@@ -106,7 +106,7 @@ public class FaceHuggerBaseScript : Enemy
 
         cumTimer = cumDuration2;
 
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 1500f;
         agent.angularSpeed = 10f;
 
