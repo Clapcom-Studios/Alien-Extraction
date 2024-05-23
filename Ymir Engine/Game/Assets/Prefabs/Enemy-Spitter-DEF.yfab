@@ -1,13 +1,13 @@
 {
     "Prefab": [
         {
-            "Name": "SpitterBase",
+            "Name": "Enemy-Spitter",
             "Static": false,
-            "Tag": "Enemy",
-            "UID": 2076073244,
+            "Tag": "Untagged",
+            "UID": 1387339074,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 840566402,
+            "Parent UID": 298677539,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30,7 +30,7 @@
                 }
             ],
             "Children UID": [
-                1033895836,
+                1106399201,
                 1618763415
             ]
         },
@@ -38,18 +38,18 @@
             "Name": "Spitter",
             "Static": false,
             "Tag": "Enemy",
-            "UID": 1033895836,
+            "UID": 1106399201,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2076073244,
+            "Parent UID": 1387339074,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -3.7229788303375244,
                         0,
-                        4.1574397087097168
+                        0,
+                        0
                     ],
                     "Rotation": [
                         -0,
@@ -78,23 +78,16 @@
                         ".\/Assets\/Death Frame.yanim"
                     ],
                     "UIDs": [
-                        1342299794,
-                        1571966991,
-                        266733214,
-                        1510984331,
-                        2093631467,
-                        977130169,
-                        726392753,
-                        1419511057,
-                        1643135538
+                        757526731,
+                        242500234,
+                        529130524,
+                        943509673,
+                        1700017731,
+                        720951533,
+                        1914954681,
+                        1589855234,
+                        1506931593
                     ]
-                },
-                {
-                    "Type": "Audio source",
-                    "Active": 1,
-                    "Bank Name": "XenoSpitter",
-                    "Event Name": "",
-                    "Event ID": 0
                 },
                 {
                     "Type": "NavMesh",
@@ -102,6 +95,13 @@
                     "Speed": 0,
                     "Angular Speed": 0,
                     "Stopping Distance": 0
+                },
+                {
+                    "Type": "Audio source",
+                    "Active": 1,
+                    "Bank Name": "XenoSpitter",
+                    "Event Name": "",
+                    "Event ID": 0
                 },
                 {
                     "Type": "Script",
@@ -156,7 +156,7 @@
                     "Offset": [
                         0,
                         11,
-                        3
+                        0
                     ],
                     "Offset Rotation": [
                         0,
@@ -167,7 +167,7 @@
                 }
             ],
             "Children UID": [
-                293647936,
+                1523874422,
                 1018190275,
                 1262917136,
                 368663829,
@@ -178,11 +178,11 @@
             "Name": "New_Mesh",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 293647936,
+            "UID": 1523874422,
             "Active": true,
             "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/FBX\/ANIM_CHAR_Spiter.fbx",
-            "Parent UID": 1033895836,
+            "Origin_Path": "Assets\/FBX\/SPITTERBETA.fbx",
+            "Parent UID": 1106399201,
             "Components": [
                 {
                     "Type": "Transform",
@@ -193,8 +193,8 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
-                        -5.0089561227650847e-06,
+                        180,
+                        0,
                         -180
                     ],
                     "Scale": [
@@ -206,7 +206,7 @@
                 {
                     "Type": "Mesh",
                     "Active": 1,
-                    "UID": 941606219,
+                    "UID": 747527209,
                     "Vertex Count": 6042,
                     "Index Count": 23748
                 },
@@ -218,8 +218,8 @@
                         {
                             "lightDir": [
                                 0,
-                                16.196561813354492,
-                                -3.8318030834197998
+                                16,
+                                -3
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -238,19 +238,19 @@
                             ]
                         }
                     ],
-                    "Diffuse_ID": 1389,
+                    "Diffuse_ID": 23,
                     "Diffuse_Path": "Assets\/Textures\/Texturas Spitter\/TEX_CHAR_Spitter_D.png",
                     "Diffuse_UID": 1151748710,
-                    "Specular_ID": 1397,
+                    "Specular_ID": 31,
                     "Specular_Path": "Assets\/Textures\/Texturas Spitter\/TEX_CHAR_Spitter_S.png",
                     "Specular_UID": 1575987277,
-                    "Normal_ID": 1395,
+                    "Normal_ID": 29,
                     "Normal_Path": "Assets\/Textures\/Texturas Spitter\/TEX_CHAR_Spitter_N.png",
                     "Normal_UID": 1982506325,
-                    "Height_ID": 1393,
+                    "Height_ID": 27,
                     "Height_Path": "Assets\/Textures\/Texturas Spitter\/TEX_CHAR_Spitter_H.png",
                     "Height_UID": 1425461899,
-                    "Emissive_ID": 1391,
+                    "Emissive_ID": 25,
                     "Emissive_Path": "Assets\/Textures\/Texturas Spitter\/TEX_CHAR_Spitter_E.png",
                     "Emissive_UID": 1823291994
                 }
@@ -263,15 +263,15 @@
             "UID": 1018190275,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1033895836,
+            "Parent UID": 1106399201,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        34.565677642822266,
                         0,
-                        -82.673171997070312
+                        0,
+                        0
                     ],
                     "Rotation": [
                         -0,
@@ -279,9 +279,9 @@
                         -0
                     ],
                     "Scale": [
-                        10,
-                        10,
-                        10
+                        1,
+                        1,
+                        1
                     ]
                 },
                 {
@@ -651,15 +651,15 @@
             "UID": 1262917136,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1033895836,
+            "Parent UID": 1106399201,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        37.229789733886719,
+                        2.384185791015625e-07,
                         0,
-                        -76.211029052734375
+                        0
                     ],
                     "Rotation": [
                         -0,
@@ -667,9 +667,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
                     ]
                 },
                 {
@@ -925,15 +925,15 @@
             "UID": 368663829,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1033895836,
+            "Parent UID": 1106399201,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        37.229789733886719,
+                        2.384185791015625e-07,
                         0,
-                        -41.574398040771484
+                        0
                     ],
                     "Rotation": [
                         -0,
@@ -941,9 +941,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
                     ]
                 },
                 {
@@ -1077,15 +1077,15 @@
             "UID": 861165025,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1033895836,
+            "Parent UID": 1106399201,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        37.229789733886719,
+                        2.384185791015625e-07,
                         0,
-                        -41.574398040771484
+                        0
                     ],
                     "Rotation": [
                         -0,
@@ -1093,9 +1093,9 @@
                         -0
                     ],
                     "Scale": [
-                        2.4983999729156494,
-                        2.4983999729156494,
-                        2.4983999729156494
+                        0.24984000623226166,
+                        0.24984000623226166,
+                        0.24984000623226166
                     ]
                 },
                 {
@@ -1933,13 +1933,13 @@
             "UID": 1618763415,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2076073244,
+            "Parent UID": 1387339074,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -3.2209739685058594,
+                        0,
                         26.318145751953125,
                         0
                     ],

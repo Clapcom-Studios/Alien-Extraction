@@ -181,7 +181,7 @@ public class SpitterBaseScript : Enemy
         Animation.AddBlendOption(gameObject, "", "Move_Spiter", 10f);
         Animation.AddBlendOption(gameObject, "", "Cry_Spiter", 10f);
         Animation.AddBlendOption(gameObject, "", "Atack_1_Spiter", 10f);
-        Animation.AddBlendOption(gameObject, "", "Atack_1_Spiter", 10f);
+        Animation.AddBlendOption(gameObject, "", "Atack_2_Spiter", 10f);
 
         Animation.PlayAnimation(gameObject, "Idle_Spiter");
     }
