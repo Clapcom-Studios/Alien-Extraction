@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        163.11216735839844,
-        144.44560241699219,
-        -169.1129150390625
+        -14.543981552124023,
+        294.1622314453125,
+        407.75323486328125
     ],
     "Editor Camera Right (X)": [
-        -0.50521385669708252,
-        5.8114528656005859e-07,
-        -0.85559123754501343
+        0.99603807926177979,
+        3.7252902984619141e-09,
+        0.047085139900445938
     ],
     "Editor Camera Up (Y)": [
-        -0.44169065356254578,
-        0.85191208124160767,
-        0.26081234216690063
+        0.035257872194051743,
+        0.66089379787445068,
+        -0.74584436416625977
     ],
     "Editor Camera Front (Z)": [
-        -0.73709386587142944,
-        -0.5154106616973877,
-        0.43524259328842163
+        0.031296402215957642,
+        -0.74881267547607422,
+        -0.66204339265823364
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1196109027,
+            "UID": 1463228480,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -50,7 +50,6 @@
                 1714005665,
                 1259328255,
                 1570294117,
-                586686728,
                 977801764,
                 1225145048,
                 1398847280,
@@ -65,7 +64,8 @@
                 332055288,
                 2076073244,
                 460275566,
-                700466739
+                700466739,
+                1260795295
             ]
         },
         {
@@ -75,7 +75,7 @@
             "UID": 1281640994,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -25680,7 +25680,7 @@
             "UID": 128304438,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -29144,7 +29144,7 @@
             "UID": 1654859733,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30325,7 +30325,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30660,7 +30660,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30671,7 +30671,7 @@
                         -52.581008911132812
                     ],
                     "Rotation": [
-                        1.3512562624384827e-08,
+                        1.3512567953455346e-08,
                         90,
                         0
                     ],
@@ -31006,7 +31006,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31383,7 +31383,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31760,7 +31760,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31771,9 +31771,9 @@
                         376.10519409179688
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.09000030905008316,
@@ -32095,7 +32095,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32472,7 +32472,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32563,7 +32563,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303475946577237e-09,
+                        3.8303498151037729e-09,
                         90,
                         0
                     ],
@@ -32642,7 +32642,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7867000678961631e-06,
+                        1.7867006363303517e-06,
                         90,
                         0
                     ],
@@ -32721,7 +32721,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303498151037729e-09,
+                        3.830352479639032e-09,
                         90,
                         0
                     ],
@@ -32849,7 +32849,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32940,7 +32940,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.830346706479304e-09,
+                        3.8303493710145631e-09,
                         90,
                         0
                     ],
@@ -33019,7 +33019,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7866998405224876e-06,
+                        1.786700522643514e-06,
                         90,
                         0
                     ],
@@ -33098,7 +33098,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303493710145631e-09,
+                        3.8303515914606123e-09,
                         90,
                         0
                     ],
@@ -33225,7 +33225,7 @@
             "UID": 270068987,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33372,7 +33372,7 @@
             "UID": 1459164758,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33519,7 +33519,7 @@
             "UID": 982585116,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33762,7 +33762,7 @@
             "UID": 1922542640,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34080,7 +34080,7 @@
             "UID": 82626634,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34398,7 +34398,7 @@
             "UID": 2007148406,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34425,8 +34425,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 433,
-                    "Height": 421,
+                    "Width": 678,
+                    "Height": 706,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -34511,7 +34511,7 @@
             "UID": 1714005665,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35227,7 +35227,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35666,7 +35666,7 @@
             "UID": 1570294117,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36099,110 +36099,13 @@
             ]
         },
         {
-            "Name": "NavMesh_LVL2_Part1",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 586686728,
-            "Active": true,
-            "Element_Type": "Model",
-            "Parent UID": 1196109027,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1051101988
-            ]
-        },
-        {
-            "Name": "NavMesh_LVL2_Part1 (1)",
-            "Static": true,
-            "Tag": "Untagged",
-            "UID": 1051101988,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/NavMesh_LVL2_Part1.fbx",
-            "Parent UID": 586686728,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1237368966,
-                    "Vertex Count": 348,
-                    "Index Count": 1323
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                -224.43099975585938,
-                                112.50956726074219,
-                                326.9771728515625
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 0
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
-            ]
-        },
-        {
             "Name": "Enemies",
             "Static": false,
             "Tag": "Untagged",
             "UID": 977801764,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -38489,9 +38392,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -5.0089561227650847e-06,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -39510,9 +39413,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -39947,7 +39850,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -40621,7 +40524,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -40648,8 +40551,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 433,
-                    "Height": 421,
+                    "Width": 678,
+                    "Height": 706,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -42648,7 +42551,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -50208,7 +50111,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -50749,7 +50652,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -51102,7 +51005,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -51896,7 +51799,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52009,7 +51912,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52054,9 +51957,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.10000000149011612,
@@ -64962,7 +64865,7 @@
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
                     "Far Plane": 1000,
-                    "Frustum Culling": 1,
+                    "Frustum Culling": 0,
                     "Draw Bounding Boxes": 0,
                     "Game Camera": true
                 },
@@ -64995,7 +64898,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -65340,7 +65243,7 @@
             "UID": 1965195139,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67014,7 +66917,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67193,7 +67096,7 @@
                     ],
                     "Rotation": [
                         0,
-                        -0.00047849194379523396,
+                        -2.5439390594073075e-09,
                         0
                     ],
                     "Scale": [
@@ -67635,7 +67538,7 @@
             "UID": 2076073244,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67819,9 +67722,9 @@
                         0
                     ],
                     "Rotation": [
-                        0.00095698382938280702,
-                        -2.6403768060845323e-11,
-                        0.00095698382938280702
+                        5.0878781188146149e-09,
+                        -1.4037555427023359e-16,
+                        5.0878781188146149e-09
                     ],
                     "Scale": [
                         1,
@@ -68653,7 +68556,7 @@
             "UID": 460275566,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68840,9 +68743,9 @@
                         0
                     ],
                     "Rotation": [
-                        0.00095698382938280702,
+                        5.0878781188146149e-09,
                         0,
-                        0.00095698382938280702
+                        5.0878781188146149e-09
                     ],
                     "Scale": [
                         1,
@@ -68912,9 +68815,9 @@
                         0
                     ],
                     "Rotation": [
-                        1.6363930010450253e-18,
-                        -3.3031377957152601e-26,
-                        -1.6363930010450253e-18
+                        8.7000092912151046e-24,
+                        -1.7561386016185876e-31,
+                        -8.7000092912151046e-24
                     ],
                     "Scale": [
                         1,
@@ -69277,7 +69180,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70190,6 +70093,100 @@
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
                     "Diffuse_UID": 962411016
+                }
+            ]
+        },
+        {
+            "Name": "Rework_NavMesh_LVL2_Part1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1260795295,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1463228480,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1441493929
+            ]
+        },
+        {
+            "Name": "NavMesh_LVL2_Part1",
+            "Static": true,
+            "Tag": "Untagged",
+            "UID": 1441493929,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/Rework_NavMesh_LVL2_Part1.fbx",
+            "Parent UID": 1260795295,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2037197539,
+                    "Vertex Count": 367,
+                    "Index Count": 1341
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 0.80000001192092896
+                        }
+                    ]
                 }
             ]
         }

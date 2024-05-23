@@ -62,7 +62,7 @@ public class FaceHuggerBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-        healthBar = InternalCalls.GetHealtBarObject(gameObject,5);
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,6);
         knockBackSpeed = 200;
         knockBackTimer = 0.2f;
         stopedDuration = 1f;
@@ -230,6 +230,10 @@ public class FaceHuggerBaseScript : Enemy
                 case WanderState.CHASING:
 
                     LookAt(agent.GetDestination());
+                    if (agent.GetPathSize() == 0)
+                    {
+                        wanderState = WanderState.CHASING;
+                    }
                     //Debug.Log("[ERROR] Current State: CHASING");
                     agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
 

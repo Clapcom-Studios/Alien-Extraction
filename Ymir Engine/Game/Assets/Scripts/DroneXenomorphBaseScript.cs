@@ -65,7 +65,7 @@ public class DroneXenomorphBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-        healthBar = InternalCalls.GetHealtBarObject(gameObject,5);
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,7);
         knockBackSpeed = 200;
         knockBackTimer = 0.5f;
 
@@ -304,6 +304,10 @@ public class DroneXenomorphBaseScript : Enemy
                 //Move either to player or to a destination, perform attack when possible
 
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
+                if (agent.GetPathSize() == 0)
+                {
+                    droneState = DroneState.IDLE_NO_AGGRO;
+                }
                 LookAt(agent.GetDestination());
 
                 MoveToCalculatedPos(agent.speed);
