@@ -133,6 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Icon.h" />
     <ClInclude Include="Source\AreaLight.h" />
     <ClInclude Include="Source\AudioBank.h" />
     <ClInclude Include="Source\CAudioListener.h" />
@@ -265,7 +266,6 @@
     <ClInclude Include="Source\External\Wwise\low_level_IO\Win32\stdafx.h" />
     <ClInclude Include="Source\FrameBuffer.h" />
     <ClInclude Include="Source\G_UI.h" />
-    <ClInclude Include="Source\Icon.h" />
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\CMaterial.h" />
     <ClInclude Include="Source\CMesh.h" />
@@ -705,6 +705,7 @@
     <ResourceCompile Include="Source\Icon.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Game\Assets\Icon\Alien_Extraction_Logo.ico" />
     <Image Include="Game\Assets\Icon\YmirEngineIcon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
