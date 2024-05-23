@@ -60,8 +60,8 @@ public class Enemy : YmirComponent
     public bool paused = false;
 
     //Drop items
-    public string keys;
-    public string path;
+    protected string keys = " ";
+    protected string path = " ";
     public int numFields;
     public int spawnRange;
     protected int level;
