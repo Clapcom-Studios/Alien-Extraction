@@ -232,7 +232,7 @@ public class FaceHuggerBaseScript : Enemy
                     LookAt(agent.GetDestination());
                     if (agent.GetPathSize() == 0)
                     {
-                        wanderState = WanderState.CHASING;
+                        wanderState = WanderState.REACHED;
                     }
                     //Debug.Log("[ERROR] Current State: CHASING");
                     agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
