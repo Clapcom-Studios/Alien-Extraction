@@ -49,6 +49,7 @@ public class FaceHuggerBaseScript : Enemy
     private bool walkPlaying = false;
     private bool attackDone = false;
 
+    public GameObject particlesGO = null;
 
     //Audio
     private float CryTimer = 10f;
@@ -106,7 +107,7 @@ public class FaceHuggerBaseScript : Enemy
 
         cumTimer = cumDuration2;
 
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 1500f;
         agent.angularSpeed = 10f;
 
@@ -299,6 +300,12 @@ public class FaceHuggerBaseScript : Enemy
                                 gameObject.SetVelocity(gameObject.transform.GetForward() * 0);
                                 Audio.PlayAudio(gameObject, "FH_Tail");
                                 Animation.PlayAnimation(gameObject, "TailAttack_Facehugger");
+
+                                //PARTICLES
+                                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesTailAttack");
+                                Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
+                                Particles.PlayParticlesTrigger(particlesGO);
+
                                 walkPlaying = false;
                                 wanderState = WanderState.ATTACK;
                             }
