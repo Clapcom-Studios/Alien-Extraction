@@ -68,7 +68,7 @@ public class SpitterBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-        healthBar = InternalCalls.GetHealtBarObject(gameObject,6);
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,8);
 
         //Agent
         agent.stoppingDistance = 2f;

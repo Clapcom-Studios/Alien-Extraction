@@ -1,6 +1,40 @@
 {
     "Prefab": [
         {
+            "Name": "SpitterBase",
+            "Static": false,
+            "Tag": "Enemy",
+            "UID": 2076073244,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 840566402,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1033895836,
+                1618763415
+            ]
+        },
+        {
             "Name": "Spitter",
             "Static": false,
             "Tag": "Enemy",
@@ -134,8 +168,8 @@
             ],
             "Children UID": [
                 293647936,
-                1676692547,
-                864143691,
+                1018190275,
+                1262917136,
                 368663829,
                 861165025
             ]
@@ -226,7 +260,7 @@
             "Name": "ParticlesAttack1_Spitter",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1676692547,
+            "UID": 1018190275,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1033895836,
@@ -235,9 +269,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -2.6641120910644531,
+                        34.565677642822266,
                         0,
-                        -41.098770141601562
+                        -82.673171997070312
                     ],
                     "Rotation": [
                         -0,
@@ -611,10 +645,10 @@
             ]
         },
         {
-            "Name": "ParticlesDamageSpitter",
+            "Name": "ParticlesDamageSpitter ",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 864143691,
+            "UID": 1262917136,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1033895836,
@@ -623,9 +657,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        37.229789733886719,
                         0,
-                        0,
-                        -34.636627197265625
+                        -76.211029052734375
                     ],
                     "Rotation": [
                         -0,
@@ -897,9 +931,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        37.229789733886719,
                         0,
-                        0,
-                        0
+                        -41.574398040771484
                     ],
                     "Rotation": [
                         -0,
@@ -1049,9 +1083,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        37.229789733886719,
                         0,
-                        0,
-                        0
+                        -41.574398040771484
                     ],
                     "Rotation": [
                         -0,
@@ -1889,6 +1923,108 @@
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "Name": "Health_Bar_Plane ",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1618763415,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 2076073244,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -3.2209739685058594,
+                        26.318145751953125,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        0.99999940395355225
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Health_Bar_Test.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "HP": 500,
+                    "initialHP": 500
+                }
+            ],
+            "Children UID": [
+                658733598
+            ]
+        },
+        {
+            "Name": "pPlane1 ",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 658733598,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Prefabs\/Health_Bar_Plane.fbx",
+            "Parent UID": 1618763415,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -7,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        15,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1712041820,
+                    "Vertex Count": 121,
+                    "Index Count": 600
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/ColorShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                16.196561813354492,
+                                -3.8318030834197998
+                            ],
+                            "color": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "light": false
+                        }
+                    ],
+                    "Diffuse_ID": 0,
+                    "Diffuse_Path": "Checker Image",
+                    "Diffuse_UID": 0
                 }
             ]
         }
