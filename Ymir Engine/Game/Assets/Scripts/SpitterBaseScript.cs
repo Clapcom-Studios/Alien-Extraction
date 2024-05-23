@@ -304,6 +304,10 @@ public class SpitterBaseScript : Enemy
             case XenoState.MOVE_AGGRO:
 
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
+                if (agent.GetPathSize() == 0)
+                {
+                    xenoState = XenoState.IDLE;
+                }
                 LookAt(agent.GetDestination());
 
                 MoveToCalculatedPos(agent.speed);

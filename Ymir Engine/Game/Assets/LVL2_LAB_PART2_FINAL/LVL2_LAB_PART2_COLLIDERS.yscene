@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART2_FINAL\/LVL2_LAB_PART2_COLLIDERS.nav",
     "Editor Camera Position": [
-        -71.587318420410156,
-        97.969009399414062,
-        23.56477165222168
+        -155.31700134277344,
+        382.2276611328125,
+        -106.70048522949219
     ],
     "Editor Camera Right (X)": [
-        -0.69203048944473267,
-        1.5348196029663086e-06,
-        0.72190147638320923
+        -0.98495256900787354,
+        1.646578311920166e-06,
+        0.17296776175498962
     ],
     "Editor Camera Up (Y)": [
-        0.42035120725631714,
-        0.81299227476119995,
-        0.40295609831809998
+        0.099846065044403076,
+        0.8165774941444397,
+        0.56855851411819458
     ],
     "Editor Camera Front (Z)": [
-        0.5868803858757019,
-        -0.58230412006378174,
-        0.56259757280349731
+        0.1412358433008194,
+        -0.5772661566734314,
+        0.80426287651062012
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1196109027,
+            "UID": 1463228480,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -35,7 +35,6 @@
                 1406784881,
                 505858485,
                 2107836948,
-                1493897338,
                 511732336,
                 232432059,
                 165934810,
@@ -57,7 +56,8 @@
                 728169813,
                 1781007999,
                 1806365249,
-                1225145048
+                1225145048,
+                346797426
             ]
         },
         {
@@ -67,7 +67,7 @@
             "UID": 456674892,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -10246,7 +10246,7 @@
             "UID": 1462968092,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11427,7 +11427,7 @@
             "UID": 1406784881,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11688,7 +11688,7 @@
             "UID": 505858485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13401,7 +13401,7 @@
             "UID": 2107836948,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14036,110 +14036,13 @@
             ]
         },
         {
-            "Name": "NavMesh_LVL2_Part2",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1493897338,
-            "Active": true,
-            "Element_Type": "Model",
-            "Parent UID": 1196109027,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1104471209
-            ]
-        },
-        {
-            "Name": "NavMesh_LVL2_Part2 (1)",
-            "Static": true,
-            "Tag": "Untagged",
-            "UID": 1104471209,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/NavMesh_LVL2_Part2.fbx",
-            "Parent UID": 1493897338,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        -4.8351936340332031,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1315332172,
-                    "Vertex Count": 199,
-                    "Index Count": 894
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 0
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
-            ]
-        },
-        {
             "Name": "UI Audio",
             "Static": false,
             "Tag": "Untagged",
             "UID": 511732336,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14177,7 +14080,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14623,7 +14526,7 @@
             "UID": 165934810,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14884,7 +14787,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14975,7 +14878,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303040739151584e-09,
+                        3.8303058502719978e-09,
                         90,
                         0
                     ],
@@ -15054,7 +14957,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.786689495020255e-06,
+                        1.7866899497676059e-06,
                         90,
                         0
                     ],
@@ -15133,7 +15036,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303067384504175e-09,
+                        3.830308070718047e-09,
                         90,
                         0
                     ],
@@ -15260,7 +15163,7 @@
             "UID": 982585116,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15503,7 +15406,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15593,7 +15496,7 @@
                         0
                     ],
                     "Rotation": [
-                        -1.0017976819653995e-05,
+                        -1.0017981367127504e-05,
                         90,
                         0
                     ],
@@ -15836,7 +15739,7 @@
             "UID": 1423819104,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16056,7 +15959,7 @@
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16124,73 +16027,6 @@
                         1
                     ]
                 }
-            ],
-            "Children UID": [
-                196321920
-            ]
-        },
-        {
-            "Name": "1981179967 (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 196321920,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 1484304711,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -16200,7 +16036,7 @@
             "UID": 1459372103,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16268,73 +16104,6 @@
                         1
                     ]
                 }
-            ],
-            "Children UID": [
-                66498529
-            ]
-        },
-        {
-            "Name": "1981179967 (2)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 66498529,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 1459372103,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -16344,7 +16113,7 @@
             "UID": 1393792402,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16412,73 +16181,6 @@
                         1
                     ]
                 }
-            ],
-            "Children UID": [
-                895704760
-            ]
-        },
-        {
-            "Name": "1981179967 (3)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 895704760,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 1393792402,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -16488,7 +16190,7 @@
             "UID": 1799577663,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16556,73 +16258,6 @@
                         1
                     ]
                 }
-            ],
-            "Children UID": [
-                945662707
-            ]
-        },
-        {
-            "Name": "1981179967 (4)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 945662707,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 1799577663,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -16632,7 +16267,7 @@
             "UID": 1224520343,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16700,73 +16335,6 @@
                         1
                     ]
                 }
-            ],
-            "Children UID": [
-                1650969895
-            ]
-        },
-        {
-            "Name": "1981179967 (5)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1650969895,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 1224520343,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -16776,7 +16344,7 @@
             "UID": 778851339,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16844,73 +16412,6 @@
                         1
                     ]
                 }
-            ],
-            "Children UID": [
-                34171274
-            ]
-        },
-        {
-            "Name": "1981179967 (6)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 34171274,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 778851339,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -16920,7 +16421,7 @@
             "UID": 208637195,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16988,73 +16489,6 @@
                     "spawner5": 1224520343,
                     "spawner6": 778851339
                 }
-            ],
-            "Children UID": [
-                1103778917
-            ]
-        },
-        {
-            "Name": "1981179967",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1103778917,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "",
-            "Parent UID": 208637195,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1728623793,
-                    "Vertex Count": 24,
-                    "Index Count": 36
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
             ]
         },
         {
@@ -17064,7 +16498,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17091,8 +16525,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 433,
-                    "Height": 421,
+                    "Width": 678,
+                    "Height": 706,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -19091,7 +18525,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26651,7 +26085,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27192,7 +26626,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27545,7 +26979,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -28339,7 +27773,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -28452,7 +27886,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41438,7 +40872,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1463228480,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42102,6 +41536,100 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Rework_NavMesh_LVL2_Part2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 346797426,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1463228480,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                2073094162
+            ]
+        },
+        {
+            "Name": "NavMesh_LVL2_Part2",
+            "Static": true,
+            "Tag": "Untagged",
+            "UID": 2073094162,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Rework_NavMesh_LVL2_Part2.fbx",
+            "Parent UID": 346797426,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1181136275,
+                    "Vertex Count": 201,
+                    "Index Count": 894
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 0
+                        }
+                    ]
                 }
             ]
         }

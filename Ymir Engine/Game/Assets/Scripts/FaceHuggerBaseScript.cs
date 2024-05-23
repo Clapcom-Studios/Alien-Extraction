@@ -230,6 +230,10 @@ public class FaceHuggerBaseScript : Enemy
                 case WanderState.CHASING:
 
                     LookAt(agent.GetDestination());
+                    if (agent.GetPathSize() == 0)
+                    {
+                        wanderState = WanderState.CHASING;
+                    }
                     //Debug.Log("[ERROR] Current State: CHASING");
                     agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
 
