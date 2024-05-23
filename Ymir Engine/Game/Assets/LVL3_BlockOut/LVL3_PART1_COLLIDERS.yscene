@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        177.66899108886719,
-        56.214187622070312,
-        775.80596923828125
+        160.59843444824219,
+        216.32893371582031,
+        784.516845703125
     ],
     "Editor Camera Right (X)": [
-        0.47659552097320557,
-        -2.384185791015625e-07,
-        -0.87912088632583618
+        0.85007333755493164,
+        -1.1920928955078125e-07,
+        -0.42439991235733032
     ],
     "Editor Camera Up (Y)": [
-        -0.11836216598749161,
-        0.99089449644088745,
-        -0.06416764110326767
+        -0.19085174798965454,
+        0.84871530532836914,
+        -0.38227644562721252
     ],
     "Editor Camera Front (Z)": [
-        -0.87111693620681763,
-        -0.1346367746591568,
-        -0.47225630283355713
+        -0.39894089102745056,
+        -0.44962993264198303,
+        -0.79907882213592529
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1196109027,
+            "UID": 1970340105,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -65,7 +65,7 @@
             "UID": 215325978,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -917,9 +917,9 @@
                         97.790382385253906
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         89.980216979980469,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999469518661499,
@@ -1177,9 +1177,9 @@
                         149.70846557617188
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         83.883010864257812,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999475479125977,
@@ -4420,7 +4420,7 @@
             "UID": 148987747,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4492,7 +4492,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4503,9 +4503,9 @@
                         108.52375793457031
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         6.1106042861938477,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.050000697374343872,
@@ -4843,7 +4843,7 @@
             "UID": 12745639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4854,9 +4854,9 @@
                         292.640625
                     ],
                     "Rotation": [
-                        180,
-                        -1.3964695930480957,
-                        180
+                        -180,
+                        -1.3964706659317017,
+                        -180
                     ],
                     "Scale": [
                         0.050005152821540833,
@@ -5194,7 +5194,7 @@
             "UID": 259210497,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5205,9 +5205,9 @@
                         751.5816650390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -89.295562744140625,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.050000187009572983,
@@ -5545,7 +5545,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5923,7 +5923,7 @@
             "UID": 466712987,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6305,7 +6305,7 @@
             "UID": 2063663470,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6366,11 +6366,168 @@
                     "ScriptName": "Electric_trap.cs",
                     "Active": 1,
                     "UID": 0,
-                    "damage": 220
+                    "damage": 180
                 }
             ],
             "Children UID": [
+                44291725,
                 1899531165
+            ]
+        },
+        {
+            "Name": "Particle System (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 44291725,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 2063663470,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -0.0587615966796875,
+                        0.061054855585098267,
+                        -0.13715362548828125
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1467228564,
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0.10000000149011612,
+                                    "HasDistanceLimit": true,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 10.800000190734863,
+                                    "RadiusTop": 4,
+                                    "Heigth": 1.4099999666213989
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 0,
+                                    "StartMode": 0,
+                                    "NumParticles": 69,
+                                    "SpawnRatio": 0.20000000298023224,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 2.2000000476837158,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 3,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": true,
+                                    "Size1": 4,
+                                    "Size2": 10,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": true,
+                                    "Color1": [
+                                        0.022025980055332184,
+                                        0.3752608597278595,
+                                        0.99557524919509888,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0.069895841181278229,
+                                        0.90639024972915649,
+                                        0.92920351028442383,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/rayos_PROVISIONAL.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -6378,7 +6535,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1899531165,
-            "Active": true,
+            "Active": false,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Primitives\/Cylinder.fbx",
             "Parent UID": 2063663470,
@@ -6387,8 +6544,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -0.05358123779296875,
-                        1.4703800843562931e-08,
+                        -0.053585052490234375,
+                        1.4704710338264704e-08,
                         -0.0091800689697265625
                     ],
                     "Rotation": [
@@ -6441,7 +6598,7 @@
             "UID": 1372245636,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6502,11 +6659,168 @@
                     "ScriptName": "Electric_trap.cs",
                     "Active": 1,
                     "UID": 0,
-                    "damage": 220
+                    "damage": 180
                 }
             ],
             "Children UID": [
+                1376265734,
                 1293742380
+            ]
+        },
+        {
+            "Name": "Particle System (2)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1376265734,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1372245636,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0.16582107543945312,
+                        0,
+                        0.000301361083984375
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1467228564,
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0.10000000149011612,
+                                    "HasDistanceLimit": true,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 10,
+                                    "RadiusTop": 4,
+                                    "Heigth": 1.4099999666213989
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 0,
+                                    "StartMode": 0,
+                                    "NumParticles": 69,
+                                    "SpawnRatio": 0.20000000298023224,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 2.2000000476837158,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 3,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": true,
+                                    "Size1": 4,
+                                    "Size2": 10,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": true,
+                                    "Color1": [
+                                        0.022025980055332184,
+                                        0.3752608597278595,
+                                        0.99557524919509888,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0.069895841181278229,
+                                        0.90639024972915649,
+                                        0.92920351028442383,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/rayos_PROVISIONAL.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -6514,7 +6828,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1293742380,
-            "Active": true,
+            "Active": false,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Primitives\/Cylinder.fbx",
             "Parent UID": 1372245636,
@@ -6577,7 +6891,7 @@
             "UID": 1630598529,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6614,7 +6928,7 @@
             "UID": 811451292,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6711,7 +7025,7 @@
             "UID": 560363617,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -8721,7 +9035,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -8797,7 +9111,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -8873,7 +9187,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -9101,7 +9415,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         76.759788513183594,
@@ -9937,7 +10251,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -10013,7 +10327,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -10089,7 +10403,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -10165,7 +10479,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -11001,7 +11315,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -16709,7 +17023,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.9027823805809021,
+                        0.90278273820877075,
                         -0
                     ],
                     "Scale": [
@@ -17104,7 +17418,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278249979019165,
+                        0.90278279781341553,
                         -0
                     ],
                     "Scale": [
@@ -17866,8 +18180,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 433,
-                    "Height": 421,
+                    "Width": 498,
+                    "Height": 488,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -29033,9 +29347,9 @@
                         405.129150390625
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.034247130155563354,
@@ -30143,7 +30457,7 @@
             "UID": 1288139189,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30813,7 +31127,7 @@
             "UID": 419286066,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39289,7 +39603,7 @@
             "UID": 1747926452,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41084,7 +41398,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41829,7 +42143,7 @@
             "UID": 1086457827,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42038,8 +42352,8 @@
                     ],
                     "Rotation": [
                         -2.2451992034912109,
-                        0.18273286521434784,
-                        0.43568360805511475
+                        0.18273289501667023,
+                        0.43568369746208191
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -42071,7 +42385,7 @@
                         3.0423920154571533
                     ],
                     "Rotation": [
-                        2.0803313255310059,
+                        2.0803334712982178,
                         0,
                         -0
                     ],
@@ -42766,7 +43080,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42793,8 +43107,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 433,
-                    "Height": 421,
+                    "Width": 498,
+                    "Height": 488,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -44793,7 +45107,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52353,7 +52667,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52894,7 +53208,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53247,7 +53561,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53259,7 +53573,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        5.8874888471394105e-13,
+                        3.1301285724927773e-18,
                         -0
                     ],
                     "Scale": [
@@ -53313,14 +53627,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        374.77410888671875,
-                        -36.0579833984375,
-                        -5801.3564453125
+                        47.682121276855469,
+                        -46.875373840332031,
+                        -8019.61962890625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53376,14 +53690,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        353.99090576171875,
-                        -39.663772583007812,
-                        -5782.623046875
+                        26.898918151855469,
+                        -50.481163024902344,
+                        -8000.88623046875
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53492,14 +53806,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        374.77410888671875,
-                        -36.0579833984375,
-                        -5801.3564453125
+                        47.682121276855469,
+                        -46.875373840332031,
+                        -8019.61962890625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53617,14 +53931,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        374.77410888671875,
-                        -36.0579833984375,
-                        -5801.3564453125
+                        47.682121276855469,
+                        -46.875373840332031,
+                        -8019.61962890625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53679,14 +53993,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        374.77410888671875,
-                        -36.0579833984375,
-                        -5801.3564453125
+                        47.682121276855469,
+                        -46.875373840332031,
+                        -8019.61962890625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53803,14 +54117,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        353.99090576171875,
-                        -124.06375885009766,
-                        -5782.623046875
+                        26.898918151855469,
+                        -134.88116455078125,
+                        -8000.88623046875
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53865,14 +54179,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        374.77410888671875,
-                        48.342033386230469,
-                        -5801.3564453125
+                        47.682121276855469,
+                        37.524642944335938,
+                        -8019.61962890625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -53921,7 +54235,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54715,7 +55029,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54828,7 +55142,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
@@ -56426,7 +56740,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1196109027,
+            "Parent UID": 1970340105,
             "Components": [
                 {
                     "Type": "Transform",
