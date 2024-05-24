@@ -268,7 +268,10 @@ public class Iscariot : YmirComponent
                     return;
                 }
                 //ID 27
-                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_27)
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN ||
+                    Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN ||
+                    Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
+                    Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_27)
                 {
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
@@ -329,7 +332,10 @@ public class Iscariot : YmirComponent
                     return;
                 }
                 //ID 50
-                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_50)
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN ||
+                    Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN ||
+                    Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
+                    Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_50)
                 {
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
