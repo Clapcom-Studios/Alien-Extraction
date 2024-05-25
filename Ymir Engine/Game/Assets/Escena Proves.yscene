@@ -1,0 +1,208 @@
+{
+    "NavMesh": "",
+    "Editor Camera Position": [
+        -15.023963928222656,
+        18.556522369384766,
+        30.606502532958984
+    ],
+    "Editor Camera Right (X)": [
+        0.90769171714782715,
+        -2.905726432800293e-07,
+        0.41964823007583618
+    ],
+    "Editor Camera Up (Y)": [
+        0.12703299522399902,
+        0.95308405160903931,
+        -0.27476945519447327
+    ],
+    "Editor Camera Front (Z)": [
+        0.39995795488357544,
+        -0.30271413922309875,
+        -0.86510217189788818
+    ],
+    "Hierarchy": [
+        {
+            "Name": "Scene",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 333965358,
+            "Active": true,
+            "Element_Type": "None",
+            "Components": [],
+            "Children UID": [
+                188443536,
+                1501496028
+            ]
+        },
+        {
+            "Name": "Main Camera",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 188443536,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 333965358,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Camera",
+                    "Active": 1,
+                    "Right": [
+                        -1,
+                        0,
+                        0
+                    ],
+                    "Up": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "Front": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "FOV": 60.000003814697266,
+                    "Near Plane": 1,
+                    "Far Plane": 1000,
+                    "Frustum Culling": 1,
+                    "Draw Bounding Boxes": 1,
+                    "Game Camera": true
+                },
+                {
+                    "Type": "Audio listener",
+                    "Active": 1,
+                    "Default Listener": 1
+                },
+                {
+                    "Type": "Audio source",
+                    "Active": 1,
+                    "Bank Name": "UIMusic",
+                    "Event Name": "UI_Menu",
+                    "Event ID": 2511555531
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "MainMenuCamera.cs",
+                    "Active": 1,
+                    "UID": 0
+                }
+            ]
+        },
+        {
+            "Name": "PROP_MonitoringConsole",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1501496028,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 333965358,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                285820291
+            ]
+        },
+        {
+            "Name": "Console_LOW",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 285820291,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Proves\/PROP_MonitoringConsole.fbx",
+            "Parent UID": 1501496028,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1088496263,
+                    "Vertex Count": 1228,
+                    "Index Count": 2424
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 163,
+                    "Diffuse_Path": "Assets\/Proves\/TEX_PROP_MonitoringConsole_D.png",
+                    "Diffuse_UID": 1529857159
+                }
+            ]
+        }
+    ]
+}

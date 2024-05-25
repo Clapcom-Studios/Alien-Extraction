@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -67.225265502929688,
-        160.02249145507812,
-        126.21282196044922
+        -28.952888488769531,
+        105.50041961669922,
+        59.025684356689453
     ],
     "Editor Camera Right (X)": [
-        1.0000123977661133,
-        1.0668300092220306e-06,
-        -0.0060659619048237801
+        0.70268732309341431,
+        1.2516975402832031e-06,
+        0.71154493093490601
     ],
     "Editor Camera Up (Y)": [
-        -0.0036187286023050547,
-        0.80267822742462158,
-        -0.59642928838729858
+        0.42030036449432373,
+        0.8069038987159729,
+        -0.41506972908973694
     ],
     "Editor Camera Front (Z)": [
-        -0.0048681888729333878,
-        -0.59644502401351929,
-        -0.80265682935714722
+        0.57413393259048462,
+        -0.59070616960525513,
+        -0.5669858455657959
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 64685814,
+            "UID": 1893169018,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1903,24 +1903,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1681,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_D.png",
-                    "Diffuse_UID": 1694076536,
+                    "Diffuse_ID": 1854,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_D.png",
+                    "Diffuse_UID": 707087023,
                     "Specular_ID": 1693,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_S.png",
                     "Specular_UID": 2011323984,
-                    "Normal_ID": 1690,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_N.png",
-                    "Normal_UID": 2019713847,
-                    "Height_ID": 1687,
-                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_H.png",
-                    "Height_UID": 1697712935,
-                    "Ambient_ID": 1678,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_A.png",
-                    "Ambient_UID": 1818412992,
-                    "Emissive_ID": 1684,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_E.png",
-                    "Emissive_UID": 925074331
+                    "Normal_ID": 1863,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_N.png",
+                    "Normal_UID": 344065877,
+                    "Height_ID": 1860,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_H.png",
+                    "Height_UID": 875448135,
+                    "Ambient_ID": 1851,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_A.png",
+                    "Ambient_UID": 1036614019,
+                    "Emissive_ID": 1857,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Workbench Base\/TEX_PROP_BaseWorkbench_E.png",
+                    "Emissive_UID": 1599584332
                 },
                 {
                     "World gravity": [
@@ -2005,43 +2005,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1699,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_D.png",
-                    "Diffuse_UID": 443664365,
+                    "Diffuse_ID": 1907,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_D.png",
+                    "Diffuse_UID": 650517951,
                     "Specular_ID": 1711,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
                     "Specular_UID": 77663990,
-                    "Normal_ID": 1708,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_N.png",
-                    "Normal_UID": 1344084652,
+                    "Normal_ID": 1913,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_N.png",
+                    "Normal_UID": 2098994329,
                     "Height_ID": 1705,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
                     "Height_UID": 315706084,
-                    "Ambient_ID": 1696,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_A.png",
-                    "Ambient_UID": 252430655,
-                    "Emissive_ID": 1702,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_E.png",
-                    "Emissive_UID": 1215482511
+                    "Ambient_ID": 1903,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_A.png",
+                    "Ambient_UID": 882649465,
+                    "Emissive_ID": 1910,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_E.png",
+                    "Emissive_UID": 227594324
                 },
                 {
                     "World gravity": [
@@ -2554,43 +2560,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.69999998807907104,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1721,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 626209953,
+                    "Diffuse_ID": 1937,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_D.png",
+                    "Diffuse_UID": 540246658,
                     "Specular_ID": 1749,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_S.png",
                     "Specular_UID": 1841058624,
-                    "Normal_ID": 1742,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_N.png",
-                    "Normal_UID": 1737676252,
+                    "Normal_ID": 1951,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_N.png",
+                    "Normal_UID": 1658747309,
                     "Height_ID": 1735,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_H.png",
                     "Height_UID": 1192184231,
-                    "Ambient_ID": 1714,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1829817526,
-                    "Emissive_ID": 1728,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1333672642
+                    "Ambient_ID": 1930,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_A.png",
+                    "Ambient_UID": 1538381074,
+                    "Emissive_ID": 1944,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_E.png",
+                    "Emissive_UID": 1809288234
                 }
             ]
         },
@@ -2633,43 +2645,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.69999998807907104,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1725,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 626209953,
+                    "Diffuse_ID": 1941,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_D.png",
+                    "Diffuse_UID": 540246658,
                     "Specular_ID": 1753,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_S.png",
                     "Specular_UID": 1841058624,
-                    "Normal_ID": 1746,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_N.png",
-                    "Normal_UID": 1737676252,
+                    "Normal_ID": 1955,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_N.png",
+                    "Normal_UID": 1658747309,
                     "Height_ID": 1739,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_H.png",
                     "Height_UID": 1192184231,
-                    "Ambient_ID": 1718,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1829817526,
-                    "Emissive_ID": 1732,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Chest\/TEX_PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1333672642
+                    "Ambient_ID": 1934,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_A.png",
+                    "Ambient_UID": 1538381074,
+                    "Emissive_ID": 1948,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Chest\/TEX_PROP_Base_Chest_E.png",
+                    "Emissive_UID": 1809288234
                 }
             ]
         },
@@ -2712,43 +2730,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.69999998807907104,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1759,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_D.png",
-                    "Diffuse_UID": 826965209,
+                    "Diffuse_ID": 1894,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_D.png",
+                    "Diffuse_UID": 1837290886,
                     "Specular_ID": 1771,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_S.png",
                     "Specular_UID": 889514863,
-                    "Normal_ID": 1768,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_N.png",
-                    "Normal_UID": 171236227,
+                    "Normal_ID": 1900,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_N.png",
+                    "Normal_UID": 436669388,
                     "Height_ID": 1765,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_H.png",
                     "Height_UID": 1533583292,
-                    "Ambient_ID": 1756,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_A.png",
-                    "Ambient_UID": 1283100101,
-                    "Emissive_ID": 1762,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_E.png",
-                    "Emissive_UID": 1136655006
+                    "Ambient_ID": 1891,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_A.png",
+                    "Ambient_UID": 2132068447,
+                    "Emissive_ID": 1897,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Teleporter\/TEX_PROP_Base_Teleporter_E.png",
+                    "Emissive_UID": 1709628576
                 },
                 {
                     "World gravity": [
@@ -6457,43 +6481,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.30000001192092896,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1891,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
-                    "Diffuse_UID": 32280259,
+                    "Diffuse_ID": 1870,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 1593309495,
                     "Specular_ID": 1919,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_S.png",
                     "Specular_UID": 698316530,
-                    "Normal_ID": 1912,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
-                    "Normal_UID": 186426588,
+                    "Normal_ID": 1878,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
+                    "Normal_UID": 1653562620,
                     "Height_ID": 1905,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_H.png",
                     "Height_UID": 944159270,
-                    "Ambient_ID": 1884,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
-                    "Ambient_UID": 568521047,
-                    "Emissive_ID": 1898,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
-                    "Emissive_UID": 1531561959
+                    "Ambient_ID": 1866,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
+                    "Ambient_UID": 1731526299,
+                    "Emissive_ID": 1874,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
+                    "Emissive_UID": 277485431
                 }
             ]
         },
@@ -9617,7 +9647,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9907,21 +9937,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1650,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_D.png",
-                    "Diffuse_UID": 764865902,
+                    "Diffuse_ID": 1782,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
                     "Specular_ID": 1722,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_S.png",
                     "Specular_UID": 1855329303,
-                    "Normal_ID": 1698,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_N.png",
-                    "Normal_UID": 83183031,
+                    "Normal_ID": 1828,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
                     "Height_ID": 1674,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_H.png",
                     "Height_UID": 2136397777,
-                    "Ambient_ID": 1626,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_A.png",
-                    "Ambient_UID": 1101463851
+                    "Ambient_ID": 1805,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
                 }
             ]
         },
@@ -9983,21 +10013,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1654,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_D.png",
-                    "Diffuse_UID": 764865902,
+                    "Diffuse_ID": 1786,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
                     "Specular_ID": 1726,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_S.png",
                     "Specular_UID": 1855329303,
-                    "Normal_ID": 1702,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_N.png",
-                    "Normal_UID": 83183031,
+                    "Normal_ID": 1832,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
                     "Height_ID": 1678,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_H.png",
                     "Height_UID": 2136397777,
-                    "Ambient_ID": 1630,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_A.png",
-                    "Ambient_UID": 1101463851
+                    "Ambient_ID": 1809,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
                 }
             ]
         },
@@ -10094,21 +10124,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1658,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_D.png",
-                    "Diffuse_UID": 764865902,
+                    "Diffuse_ID": 1790,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
                     "Specular_ID": 1730,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_S.png",
                     "Specular_UID": 1855329303,
-                    "Normal_ID": 1706,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_N.png",
-                    "Normal_UID": 83183031,
+                    "Normal_ID": 1836,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
                     "Height_ID": 1682,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_H.png",
                     "Height_UID": 2136397777,
-                    "Ambient_ID": 1634,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_A.png",
-                    "Ambient_UID": 1101463851
+                    "Ambient_ID": 1813,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
                 }
             ]
         },
@@ -10170,21 +10200,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1662,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_D.png",
-                    "Diffuse_UID": 764865902,
+                    "Diffuse_ID": 1794,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
                     "Specular_ID": 1734,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_S.png",
                     "Specular_UID": 1855329303,
-                    "Normal_ID": 1710,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_N.png",
-                    "Normal_UID": 83183031,
+                    "Normal_ID": 1840,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
                     "Height_ID": 1686,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_H.png",
                     "Height_UID": 2136397777,
-                    "Ambient_ID": 1638,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_A.png",
-                    "Ambient_UID": 1101463851
+                    "Ambient_ID": 1817,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
                 }
             ]
         },
@@ -10281,21 +10311,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1666,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_D.png",
-                    "Diffuse_UID": 764865902,
+                    "Diffuse_ID": 1798,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
                     "Specular_ID": 1738,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_S.png",
                     "Specular_UID": 1855329303,
-                    "Normal_ID": 1714,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_N.png",
-                    "Normal_UID": 83183031,
+                    "Normal_ID": 1844,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
                     "Height_ID": 1690,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_H.png",
                     "Height_UID": 2136397777,
-                    "Ambient_ID": 1642,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_A.png",
-                    "Ambient_UID": 1101463851
+                    "Ambient_ID": 1821,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
                 }
             ]
         },
@@ -10357,21 +10387,21 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1670,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_D.png",
-                    "Diffuse_UID": 764865902,
+                    "Diffuse_ID": 1802,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
                     "Specular_ID": 1742,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_S.png",
                     "Specular_UID": 1855329303,
-                    "Normal_ID": 1718,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_N.png",
-                    "Normal_UID": 83183031,
+                    "Normal_ID": 1848,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
                     "Height_ID": 1694,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_H.png",
                     "Height_UID": 2136397777,
-                    "Ambient_ID": 1646,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Loading Cart\/Textures\/TEX_PROP_LoadingCart_Base_A.png",
-                    "Ambient_UID": 1101463851
+                    "Ambient_ID": 1825,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
                 }
             ]
         },
@@ -10448,43 +10478,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1870,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Chair\/Texturas\/PROP_Base_Mother_Chair_D.png",
-                    "Diffuse_UID": 2056506106,
+                    "Diffuse_ID": 1921,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Chair\/PROP_Base_Mother_Chair_D.png",
+                    "Diffuse_UID": 2142531869,
                     "Specular_ID": 1886,
                     "Specular_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Chair\/Texturas\/PROP_Base_Mother_Chair_S.png",
                     "Specular_UID": 2034291470,
-                    "Normal_ID": 1882,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Chair\/Texturas\/PROP_Base_Mother_Chair_N.png",
-                    "Normal_UID": 495134524,
+                    "Normal_ID": 1927,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Chair\/PROP_Base_Mother_Chair_N.png",
+                    "Normal_UID": 2004740089,
                     "Height_ID": 1878,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Chair\/Texturas\/PROP_Base_Mother_Chair_H.png",
                     "Height_UID": 1583342061,
-                    "Ambient_ID": 1866,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Chair\/Texturas\/PROP_Base_Mother_Chair_A.png",
-                    "Ambient_UID": 186266023,
-                    "Emissive_ID": 1874,
-                    "Emissive_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Chair\/Texturas\/PROP_Base_Mother_Chair_E.png",
-                    "Emissive_UID": 1350032348
+                    "Ambient_ID": 1917,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Chair\/PROP_Base_Mother_Chair_A.png",
+                    "Ambient_UID": 326256495,
+                    "Emissive_ID": 1924,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Chair\/PROP_Base_Mother_Chair_E.png",
+                    "Emissive_UID": 318155397
                 },
                 {
                     "World gravity": [
@@ -11214,40 +11250,46 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 0,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 2137,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
-                    "Diffuse_UID": 825055369,
+                    "Diffuse_ID": 1791,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
+                    "Diffuse_UID": 2041657060,
                     "Specular_ID": 2314,
                     "Specular_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
                     "Specular_UID": 1906614508,
-                    "Normal_ID": 2255,
-                    "Normal_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
-                    "Normal_UID": 1715894942,
+                    "Normal_ID": 1799,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
+                    "Normal_UID": 658864176,
                     "Height_ID": 2196,
                     "Height_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_H.png",
                     "Height_UID": 1788608790,
-                    "Ambient_ID": 2078,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
-                    "Ambient_UID": 1469134317
+                    "Ambient_ID": 1795,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
+                    "Ambient_UID": 798021761
                 }
             ]
         },
@@ -11366,40 +11408,46 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 0,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 2129,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
-                    "Diffuse_UID": 825055369,
-                    "Specular_ID": 2306,
-                    "Specular_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
-                    "Specular_UID": 1906614508,
-                    "Normal_ID": 2247,
-                    "Normal_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
-                    "Normal_UID": 1715894942,
+                    "Diffuse_ID": 1791,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
+                    "Diffuse_UID": 2041657060,
+                    "Specular_ID": 1803,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
+                    "Specular_UID": 1376749059,
+                    "Normal_ID": 1799,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
+                    "Normal_UID": 658864176,
                     "Height_ID": 2188,
                     "Height_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_H.png",
                     "Height_UID": 1788608790,
-                    "Ambient_ID": 2070,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
-                    "Ambient_UID": 1469134317
+                    "Ambient_ID": 1795,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
+                    "Ambient_UID": 798021761
                 }
             ]
         },
@@ -11670,40 +11718,46 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 0,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 2113,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
-                    "Diffuse_UID": 825055369,
-                    "Specular_ID": 2290,
-                    "Specular_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
-                    "Specular_UID": 1906614508,
-                    "Normal_ID": 2231,
-                    "Normal_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
-                    "Normal_UID": 1715894942,
+                    "Diffuse_ID": 1791,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
+                    "Diffuse_UID": 2041657060,
+                    "Specular_ID": 1803,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
+                    "Specular_UID": 1376749059,
+                    "Normal_ID": 1799,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
+                    "Normal_UID": 658864176,
                     "Height_ID": 2172,
                     "Height_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_H.png",
                     "Height_UID": 1788608790,
-                    "Ambient_ID": 2054,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
-                    "Ambient_UID": 1469134317
+                    "Ambient_ID": 1795,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
+                    "Ambient_UID": 798021761
                 }
             ]
         },
@@ -11746,40 +11800,46 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 0,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 2109,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
-                    "Diffuse_UID": 825055369,
-                    "Specular_ID": 2286,
-                    "Specular_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
-                    "Specular_UID": 1906614508,
-                    "Normal_ID": 2227,
-                    "Normal_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
-                    "Normal_UID": 1715894942,
+                    "Diffuse_ID": 1791,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
+                    "Diffuse_UID": 2041657060,
+                    "Specular_ID": 1803,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
+                    "Specular_UID": 1376749059,
+                    "Normal_ID": 1799,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
+                    "Normal_UID": 658864176,
                     "Height_ID": 2168,
                     "Height_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_H.png",
                     "Height_UID": 1788608790,
-                    "Ambient_ID": 2050,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
-                    "Ambient_UID": 1469134317
+                    "Ambient_ID": 1795,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
+                    "Ambient_UID": 798021761
                 }
             ]
         },
@@ -12202,40 +12262,46 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 0,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 2085,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
-                    "Diffuse_UID": 825055369,
+                    "Diffuse_ID": 1791,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_D.png",
+                    "Diffuse_UID": 2041657060,
                     "Specular_ID": 2262,
                     "Specular_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_S.png",
                     "Specular_UID": 1906614508,
-                    "Normal_ID": 2203,
-                    "Normal_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
-                    "Normal_UID": 1715894942,
+                    "Normal_ID": 1799,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_N.png",
+                    "Normal_UID": 658864176,
                     "Height_ID": 2144,
                     "Height_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_H.png",
                     "Height_UID": 1788608790,
-                    "Ambient_ID": 2026,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/Exteriors\/Rocks Textures\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
-                    "Ambient_UID": 1469134317
+                    "Ambient_ID": 1795,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Rocks\/Textures_Rock03\/TEX_PROP_Rock03_A.png",
+                    "Ambient_UID": 798021761
                 }
             ]
         },
@@ -12330,18 +12396,18 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 246,
-                    "Diffuse_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Floor\/Texturas\/PROP_Base_Mother_Floor_D.png",
-                    "Diffuse_UID": 267481871,
-                    "Normal_ID": 1386,
-                    "Normal_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Floor\/Texturas\/PROP_Base_Mother_Floor_N.png",
-                    "Normal_UID": 1199916897,
+                    "Diffuse_ID": 1885,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Floor\/PROP_Base_Mother_Floor_D.png",
+                    "Diffuse_UID": 265972167,
+                    "Normal_ID": 1888,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Floor\/PROP_Base_Mother_Floor_N.png",
+                    "Normal_UID": 1051735666,
                     "Height_ID": 1384,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Floor\/Texturas\/PROP_Base_Mother_Floor_H.png",
                     "Height_UID": 750816095,
-                    "Ambient_ID": 242,
-                    "Ambient_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/BASE\/Mother Room\/Floor\/Texturas\/PROP_Base_Mother_Floor_A.png",
-                    "Ambient_UID": 1826444982
+                    "Ambient_ID": 1882,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Mother Room\/Floor\/PROP_Base_Mother_Floor_A.png",
+                    "Ambient_UID": 549360553
                 }
             ]
         },
@@ -12352,7 +12418,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12389,7 +12455,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12546,7 +12612,7 @@
                             "enableEmissive": true,
                             "enableLighting": true,
                             "ambient": 0.5,
-                            "specularLight": 1,
+                            "specularLight": 0,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
@@ -12631,7 +12697,7 @@
                             "enableEmissive": true,
                             "enableLighting": true,
                             "ambient": 0.5,
-                            "specularLight": 1,
+                            "specularLight": 0,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
@@ -12716,7 +12782,7 @@
                             "enableEmissive": true,
                             "enableLighting": true,
                             "ambient": 0.5,
-                            "specularLight": 1,
+                            "specularLight": 0,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
@@ -12801,7 +12867,7 @@
                             "enableEmissive": true,
                             "enableLighting": true,
                             "ambient": 0.5,
-                            "specularLight": 1,
+                            "specularLight": 0,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
@@ -12886,7 +12952,7 @@
                             "enableEmissive": true,
                             "enableLighting": true,
                             "ambient": 0.5,
-                            "specularLight": 1,
+                            "specularLight": 0,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
@@ -12920,7 +12986,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12986,43 +13052,49 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
                     "Uniforms": [
                         {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
                             "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 0.30000001192092896,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1891,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
-                    "Diffuse_UID": 32280259,
-                    "Specular_ID": 1919,
-                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_S.png",
-                    "Specular_UID": 698316530,
-                    "Normal_ID": 1912,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
-                    "Normal_UID": 186426588,
+                    "Diffuse_ID": 1870,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 1593309495,
+                    "Specular_ID": 291,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_S.png",
+                    "Specular_UID": 1858085065,
+                    "Normal_ID": 283,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
+                    "Normal_UID": 1653562620,
                     "Height_ID": 1905,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_H.png",
                     "Height_UID": 944159270,
-                    "Ambient_ID": 1884,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
-                    "Ambient_UID": 568521047,
-                    "Emissive_ID": 1898,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
-                    "Emissive_UID": 1531561959
+                    "Ambient_ID": 1866,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
+                    "Ambient_UID": 1731526299,
+                    "Emissive_ID": 1874,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
+                    "Emissive_UID": 277485431
                 }
             ]
         },
@@ -13109,7 +13181,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13261,7 +13333,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13413,7 +13485,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13440,8 +13512,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1878,
-                    "Height": 1017,
+                    "Width": 1456,
+                    "Height": 652,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -15440,7 +15512,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15631,8 +15703,8 @@
                     "rightGridName": "Grid Chip 2",
                     "downGridName": "Grid Chip 2",
                     "upGridName": "",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -15979,8 +16051,8 @@
                     "rightGridName": "Grid Chip 2",
                     "downGridName": "",
                     "upGridName": "Grid Armor",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -16327,8 +16399,8 @@
                     "rightGridName": "Inventory",
                     "downGridName": "",
                     "upGridName": "Grid Armor",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -16675,8 +16747,8 @@
                     "rightGridName": "",
                     "downGridName": "Inventory",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -17023,8 +17095,8 @@
                     "rightGridName": "",
                     "downGridName": " ",
                     "upGridName": "Grid Save",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": true,
                     "empty": true,
@@ -22302,7 +22374,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22588,8 +22660,8 @@
                     "rightGridName": "",
                     "downGridName": "Grid Raid",
                     "upGridName": "",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -23879,8 +23951,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": "Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -24164,7 +24236,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24323,8 +24395,8 @@
                     "rightGridName": "Inventory Grid",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": true,
                     "bounceY": true,
                     "empty": true,
@@ -45774,8 +45846,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": "Save Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": true,
                     "empty": true,
@@ -52245,8 +52317,8 @@
                     "rightGridName": " ",
                     "downGridName": "Inventory Grid",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -52957,7 +53029,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53333,8 +53405,8 @@
                     "rightGridName": "Shotgun Upgrade",
                     "downGridName": "Sub Upgrade 3",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -54017,8 +54089,8 @@
                     "rightGridName": "Sub Upgrade 4",
                     "downGridName": " ",
                     "upGridName": "Sub Upgrade",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -54258,8 +54330,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": "Sub Upgrade",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -54516,8 +54588,8 @@
                     "rightGridName": "Plasma Upgrade",
                     "downGridName": "Shotgun Upgrade 3",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -55200,8 +55272,8 @@
                     "rightGridName": "Shotgun Upgrade 4",
                     "downGridName": " ",
                     "upGridName": "Shotgun Upgrade",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -55441,8 +55513,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": "Shotgun Upgrade",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -55699,8 +55771,8 @@
                     "rightGridName": "Sub Upgrade",
                     "downGridName": "Plasma Upgrade 3",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -56383,8 +56455,8 @@
                     "rightGridName": "Plasma Upgrade 4",
                     "downGridName": " ",
                     "upGridName": "Plasma Upgrade",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -56624,8 +56696,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": "Plasma Upgrade",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -56973,7 +57045,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57718,7 +57790,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57914,8 +57986,8 @@
                     "rightGridName": "Inventory Craft",
                     "downGridName": "Grenade Grid",
                     "upGridName": "Resin Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -59160,8 +59232,8 @@
                     "rightGridName": "Inventory Craft",
                     "downGridName": "Baker Grid",
                     "upGridName": "Armor Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -60109,8 +60181,8 @@
                     "rightGridName": "Inventory Craft",
                     "downGridName": "Offensive Grid",
                     "upGridName": "Grenade Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -61058,8 +61130,8 @@
                     "rightGridName": "Inventory Craft",
                     "downGridName": "Defensive Grid",
                     "upGridName": "Baker Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -62304,8 +62376,8 @@
                     "rightGridName": "Inventory Craft",
                     "downGridName": "Resin Grid",
                     "upGridName": "Offensive Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -63550,8 +63622,8 @@
                     "rightGridName": "Inventory Craft",
                     "downGridName": "Armor Grid",
                     "upGridName": "Defensive Grid",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -65093,8 +65165,8 @@
                     "rightGridName": "",
                     "downGridName": " ",
                     "upGridName": "Grid Craft",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": true,
                     "empty": true,
@@ -69599,8 +69671,8 @@
                     "rightGridName": " ",
                     "downGridName": "Inventory Craft",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -70180,7 +70252,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70326,8 +70398,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -70721,7 +70793,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70867,8 +70939,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -71076,7 +71148,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71189,7 +71261,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71398,8 +71470,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "navigateX": true,
-                    "navigateY": true,
+                    "naviagteX": true,
+                    "naviagteY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -71983,7 +72055,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 64685814,
+            "Parent UID": 1893169018,
             "Components": [
                 {
                     "Type": "Transform",
