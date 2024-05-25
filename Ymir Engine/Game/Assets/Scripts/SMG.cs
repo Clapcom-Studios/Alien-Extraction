@@ -12,8 +12,11 @@ public class SMG : Weapon
 
     public override void Start()
     {
+        playerObject = InternalCalls.GetGameObjectByName("Player");
+        player = playerObject.GetComponent<Player>();
 
         range = 100;
+        reloadTime = 1.056f;
 
         switch (_upgrade)
         {
@@ -21,8 +24,8 @@ public class SMG : Weapon
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgDefault");
                 ammo = 35;
-                fireRate = 0.06f;
-                damage = 15;
+                fireRate = 0.07f;
+                damage = 5;
                 reloadTime = 1.8f;
 
                 break;
@@ -30,8 +33,8 @@ public class SMG : Weapon
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL1");
                 ammo = 35;
-                fireRate = 0.05f;
-                damage = 30;
+                fireRate = 0.06f;
+                damage = 9;
                 reloadTime = 1.6f;
 
                 break;
@@ -40,7 +43,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL2");
                 ammo = 40;
                 fireRate = 0.05f;
-                damage = 40;
+                damage = 11;
                 reloadTime = 1.5f;
 
                 break;
@@ -49,8 +52,8 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3A");
                 ammo = 110;
                 fireRate = 0.04f;
-                damage = 50;
-                reloadTime = 1.3f;
+                damage = 13;
+                reloadTime = 1.1f;
 
                 break;
             case UPGRADE.LVL_3_BETA:
@@ -58,7 +61,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3B");
                 ammo = 40;
                 fireRate = 0.02f;
-                damage = 40;
+                damage = 10;
                 reloadTime = 1.5f;
 
                 break;
@@ -99,7 +102,7 @@ public class SMG : Weapon
                 {
                     GameObject FaceHuggerDamageParticles = InternalCalls.GetChildrenByName(aux.gameObject, "ParticlesDamageFaceHugger");
                     if(FaceHuggerDamageParticles != null) Particles.PlayParticlesTrigger(FaceHuggerDamageParticles);
-                    aux.TakeDmg(damage*3);
+                    aux.TakeDmg(damage);
                 }
 
                 DroneXenomorphBaseScript aux2 = target.GetComponent<DroneXenomorphBaseScript>();
@@ -107,7 +110,7 @@ public class SMG : Weapon
                 {
                     GameObject DroneDamageParticles = InternalCalls.GetChildrenByName(aux2.gameObject, "ParticlesDamageDrone");
                     if(DroneDamageParticles != null) Particles.PlayParticlesTrigger(DroneDamageParticles);
-                    aux2.TakeDmg(damage*3);
+                    aux2.TakeDmg(damage);
                 }
 
                 QueenXenomorphBaseScript aux3 = target.GetComponent<QueenXenomorphBaseScript>();
@@ -115,7 +118,7 @@ public class SMG : Weapon
                 {
                     GameObject QueenDamageParticles = InternalCalls.GetChildrenByName(aux3.gameObject, "ParticlesDamageQueen");
                     if (QueenDamageParticles != null) Particles.PlayParticlesTrigger(QueenDamageParticles);
-                    aux3.TakeDmg(damage*3);
+                    aux3.TakeDmg(damage);
                 }
 
                 SpitterBaseScript aux4 = target.GetComponent<SpitterBaseScript>();
@@ -123,7 +126,7 @@ public class SMG : Weapon
                 {
                     GameObject SpitterDamageParticles = InternalCalls.GetChildrenByName(aux4.gameObject, "ParticlesDamageSpitter");
                     if (SpitterDamageParticles != null) Particles.PlayParticlesTrigger(SpitterDamageParticles);
-                    aux4.TakeDmg(damage*3);
+                    aux4.TakeDmg(damage);
                 }
 
                 Debug.Log("[ERROR] HIT ENEMY");
@@ -135,6 +138,13 @@ public class SMG : Weapon
     public override void Reload()
     {
         currentAmmo = ammo;
+
+        //Audio.PlayAudio(gameObject, "W_FirearmReload");
+    }
+    public override void StartReload()
+    {
+        reloading = true;
+        reloadTimer = reloadTime;
 
         Audio.PlayAudio(gameObject, "W_FirearmReload");
     }

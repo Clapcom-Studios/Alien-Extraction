@@ -58,7 +58,7 @@ void StopParticles(MonoObject* go) {
 
 //This function is needed to Shoot, it needs a GetForward vector of the game object who shoot
 //to set the direction of the bullet in that direccion
-void ParticleShoot(MonoObject* go, MonoObject* vector)
+void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 {
 	if (External == nullptr) return;
 
@@ -89,9 +89,9 @@ void ParticleShoot(MonoObject* go, MonoObject* vector)
 
 					if (base->currentShape == SpawnAreaShape::PAR_CONE)
 					{
-						float angulo = math::Atan2(-directionShoot.z, directionShoot.x);
-						pos->direction1 = { math::Cos(angulo + (5 / 9 * pi)),0.5, -math::Sin(angulo + (5 / 9 * pi)) };
-						pos->direction2 = { math::Cos(angulo - (5 / 9 * pi)),-0.5,-math::Sin(angulo - (5 / 9 * pi)) };
+						float anguloFowardPlayer = math::Atan2(-directionShoot.z, directionShoot.x);
+						pos->direction1 = { math::Cos(anguloFowardPlayer + angle),0.5, -math::Sin(anguloFowardPlayer + angle) };
+						pos->direction2 = { math::Cos(anguloFowardPlayer - angle),-0.5,-math::Sin(anguloFowardPlayer - angle) };
 					}
 					else
 					{

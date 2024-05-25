@@ -442,11 +442,11 @@ void Model::ProcessMesh(aiMesh* mesh, const aiScene* scene, GameObject* linkGO, 
 
 	// Process Texture Maps
 
-	/*
-	if (mesh->mMaterialIndex >= 0)
-	{
-		CMaterial* cmaterial = new CMaterial(linkGO);
+	CMaterial* cmaterial = new CMaterial(linkGO);
 
+	/*
+	if (mesh->mMaterialIndex > 0)
+	{
 		aiMaterial* material = scene->mMaterials[mesh->mMaterialIndex];
 
 		if (material->GetTextureCount(aiTextureType_DIFFUSE)) {
@@ -740,10 +740,10 @@ void Model::ProcessMesh(aiMesh* mesh, const aiScene* scene, GameObject* linkGO, 
 
 		}
 
-		linkGO->AddComponent(cmaterial);
-
 	}
 	*/
+	linkGO->AddComponent(cmaterial);
+	
 }
 
 void Model::GenerateModelMetaFile()

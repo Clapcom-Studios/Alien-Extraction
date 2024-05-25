@@ -10,12 +10,14 @@ public class Button_Navigation : YmirComponent
     public string sceneName = "BASE_FINAL/LVL_BASE_COLLIDERS";
 
     public bool isNewGame = true;
+    public bool isContinueGame = false;
 
     // Loading scene
     private GameObject loadSceneImg;
     private bool loadScene = false;
+    public bool showLoadScene = true;
 
-    public float time = 10;
+    public float time = 2;
 
     public void Start()
     {
@@ -26,7 +28,7 @@ public class Button_Navigation : YmirComponent
             loadSceneImg.SetActive(false);
         }
 
-        time = 10;
+        time = 2;
         loadScene = false;
 
         if (!SaveLoad.GameFileExists(Globals.saveGameDir, Globals.saveGamesInfoFile))
@@ -38,18 +40,64 @@ public class Button_Navigation : YmirComponent
 
     public void Update()
     {
-        time -= Time.deltaTime;
-
         if (loadScene)
         {
+            time -= Time.deltaTime;
             loadSceneImg.SetActive(true);
 
             if (time <= 0)
             {
-                InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
-                loadScene = false;
+                if (isNewGame)
+                {
+                    InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
+                }
+
+                else if (isContinueGame)
+                {
+                    string saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
+
+                    int currentLvl = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Current Lvl");
+
+                    switch (currentLvl)
+                    {
+                        case 0:
+                            {
+                                InternalCalls.LoadScene("Assets/BASE_FINAL/LVL_BASE_COLLIDERS.yscene");
+                                break;
+                            }
+                        case 1:
+                            {
+                                InternalCalls.LoadScene("Assets/LVL1_FINAL/LVL1_FINAL_COLLIDERS.yscene");
+                                break;
+                            }
+                        case 2:
+                            {
+                                InternalCalls.LoadScene("Assets/LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS.yscene");
+                                break;
+                            }
+                        case 3:
+                            {
+                                InternalCalls.LoadScene("Assets/LVL2_LAB_PART2_FINAL/LVL2_LAB_PART2_COLLIDERS.yscene");
+                                break;
+                            }
+                        case 4:
+                            {
+                                InternalCalls.LoadScene("Assets/LVL3_BlockOut/LVL3_PART1_COLLIDERS.yscene");
+                                break;
+                            }
+                        case 5:
+                            {
+                                InternalCalls.LoadScene("Assets/LVL3_BlockOut/LVL3_BOSS_COLLDIERS.yscene");
+                                break;
+                            }
+                        default:
+                            break;
+                    }
+
+                    loadScene = false;
+                }
+                return;
             }
-            return;
         }
     }
 
@@ -67,10 +115,17 @@ public class Button_Navigation : YmirComponent
 
         }
 
-        if (loadSceneImg != null)
+        if (showLoadScene)
         {
-            loadSceneImg.SetActive(true);
-            loadScene = true;
+            if (loadSceneImg != null)
+            {
+                loadSceneImg.SetActive(true);
+                loadScene = true;
+            }
+        }
+        else
+        {
+            InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
         }
     }
 
@@ -98,7 +153,7 @@ public class Button_Navigation : YmirComponent
         SaveLoad.SaveInt(Globals.saveGameDir, fileName, "Upgrade " + WEAPON_TYPE.SMG.ToString(), (int)UPGRADE.LVL_0);
         SaveLoad.SaveInt(Globals.saveGameDir, fileName, "Upgrade " + WEAPON_TYPE.SHOTGUN.ToString(), (int)UPGRADE.LVL_0);
         SaveLoad.SaveInt(Globals.saveGameDir, fileName, "Upgrade " + WEAPON_TYPE.PLASMA.ToString(), (int)UPGRADE.LVL_0);
-        
+
         // Others
         SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Iscariot dialogue", false);
 

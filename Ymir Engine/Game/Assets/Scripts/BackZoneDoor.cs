@@ -84,6 +84,9 @@ public class BackZoneDoor : YmirComponent
                     currentState = DoorState.WAITING;
                     timer = 0;
                 }
+
+                if (doorCollider != null) { doorCollider.SetColliderActive(false); }
+
                 break;
             case DoorState.WAITING:
                 timer += Time.deltaTime;
@@ -110,6 +113,9 @@ public class BackZoneDoor : YmirComponent
                 }
                 break;
             case DoorState.CLOSED:
+
+                if (doorCollider != null) { doorCollider.SetColliderActive(true); }
+
                 break;
 
         }
@@ -119,8 +125,6 @@ public class BackZoneDoor : YmirComponent
     {
         if (!doorSensor2.GetComponent<BackZoneDoor_Sensor>().active && unlockAfterOpen) doorSensor2.GetComponent<BackZoneDoor_Sensor>().active = true;
         if (!doorSensor1.GetComponent<BackZoneDoor_Sensor>().active && unlockAfterOpen) doorSensor1.GetComponent<BackZoneDoor_Sensor>().active = true;
-
-        if (doorCollider != null) { InternalCalls.Destroy(doorCollider); }
 
         if (currentState == DoorState.CLOSED)
         {

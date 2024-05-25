@@ -42,6 +42,7 @@ public abstract class Weapon : YmirComponent
     public int currentAmmo;
     protected float fireRateTimer;
     protected float reloadTimer;
+    protected bool reloading;
 
     public GameObject playerObject;
     protected Player player;
@@ -85,7 +86,17 @@ public abstract class Weapon : YmirComponent
     public void Update()
     {
         if (fireRateTimer > 0) fireRateTimer -= Time.deltaTime;
-        if (reloadTimer > 0) reloadTimer -= Time.deltaTime;
+        if (reloadTimer > 0 && reloading)
+        {
+            reloadTimer -= Time.deltaTime;
+            if (reloadTimer <= 0 )
+            {
+                Reload();
+                reloading = false;
+
+                player.csBullets.UseBullets();
+            }
+        }
     }
     public bool ShootAvailable()
     {
@@ -95,5 +106,14 @@ public abstract class Weapon : YmirComponent
     public bool ReloadAvailable()
     {
         return (reloadTimer <= 0 && currentAmmo < ammo) ? true : false;
+    }
+
+    public abstract void StartReload();
+    public void InterruptReload()
+    {
+        reloading = false;
+        reloadTimer = 0;
+
+        Audio.StopAudio(gameObject);
     }
 }

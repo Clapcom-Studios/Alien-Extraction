@@ -21,8 +21,8 @@ public class UI_Inventory_Grid : YmirComponent
     public string rightGridName = " ";
     public string downGridName = " ";
     public string upGridName = " ";
-    public bool naviagteX = false;
-    public bool naviagteY = false;
+    public bool navigateX = false;
+    public bool navigateY = false;
     public bool bounceX = false;
     public bool bounceY = false;
     public bool empty = false;
@@ -70,7 +70,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridHorizontal(gameObject, rows, cols, true, naviagteX, leftGrid, rightGrid, bounceX, childX, empty);
+            UI.NavigateGridHorizontal(gameObject, rows, cols, true, navigateX, leftGrid, rightGrid, bounceX, childX, empty);
         }
 
         else if ((Input.GetLeftAxisX() < 0 || Input.GetGamepadButton(GamePadButton.DPAD_LEFT) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.A) == KeyState.KEY_DOWN) && _canTab)
@@ -81,7 +81,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridHorizontal(gameObject, rows, cols, false, naviagteX, leftGrid, rightGrid, bounceX, childX, empty);
+            UI.NavigateGridHorizontal(gameObject, rows, cols, false, navigateX, leftGrid, rightGrid, bounceX, childX, empty);
         }
 
         else if ((Input.GetLeftAxisY() > 0 || Input.GetGamepadButton(GamePadButton.DPAD_DOWN) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.S) == KeyState.KEY_DOWN) && _canTab)
@@ -92,7 +92,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridVertical(gameObject, rows, cols, true, naviagteY, downGrid, upGrid, bounceY, childY, empty);
+            UI.NavigateGridVertical(gameObject, rows, cols, true, navigateY, downGrid, upGrid, bounceY, childY, empty);
         }
 
         else if ((Input.GetLeftAxisY() < 0 || Input.GetGamepadButton(GamePadButton.DPAD_UP) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.W) == KeyState.KEY_DOWN) && _canTab)
@@ -103,7 +103,7 @@ public class UI_Inventory_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateGridVertical(gameObject, rows, cols, false, naviagteY, downGrid, upGrid, bounceY, childY, empty);
+            UI.NavigateGridVertical(gameObject, rows, cols, false, navigateY, downGrid, upGrid, bounceY, childY, empty);
         }
 
         return;

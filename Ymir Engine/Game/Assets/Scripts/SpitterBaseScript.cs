@@ -59,6 +59,8 @@ public class SpitterBaseScript : Enemy
     private bool acidDone = false;
     private bool explosionDone = false;
 
+    public GameObject particlesGO = null;
+
     public void Start()
     {
         //Base stuff
@@ -66,6 +68,7 @@ public class SpitterBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,8);
 
         //Agent
         agent.stoppingDistance = 2f;
@@ -106,29 +109,29 @@ public class SpitterBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 60.0f;
-                rareProb = 25.0f;
-                epicProb = 15.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             case int i when (i == 2 || i == 3):
-                commonProb = 20.0f;
-                rareProb = 50.0f;
-                epicProb = 30.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 10.0f;
-                rareProb = 30.0f;
-                epicProb = 60.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             default:
-                commonProb = 60.0f;
-                rareProb = 25.0f;
-                epicProb = 15.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
         }
 
-        life = 450f;
-        armor = 0.15f;
+        life = 425f;
+        armor = 0.0f;
 
         rarity = random.Next(101);
 
@@ -150,17 +153,18 @@ public class SpitterBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 750; //1050
-            armor = 0.0f; //0.325f
+            life = 787.5f; //1050
+            armor = 0.1f; //0.325f
             agent.speed = 1700f;
         }
         else if (rarity == 2)
         {
             life = 1050; //1650
-            armor = 0.0f; // 0.45f
+            armor = 0.2f; // 0.45f
             agent.speed = 1800f;
         }
 
+        SetColor();
 
         //Animations
         Animation.SetLoop(gameObject, "Idle_Spiter", true);
@@ -177,7 +181,7 @@ public class SpitterBaseScript : Enemy
         Animation.AddBlendOption(gameObject, "", "Move_Spiter", 10f);
         Animation.AddBlendOption(gameObject, "", "Cry_Spiter", 10f);
         Animation.AddBlendOption(gameObject, "", "Atack_1_Spiter", 10f);
-        Animation.AddBlendOption(gameObject, "", "Atack_1_Spiter", 10f);
+        Animation.AddBlendOption(gameObject, "", "Atack_2_Spiter", 10f);
 
         Animation.PlayAnimation(gameObject, "Idle_Spiter");
     }
@@ -214,13 +218,16 @@ public class SpitterBaseScript : Enemy
                     //Animation.PlayAnimation(gameObject, "Drone_Walk");
                     timeCounter = 0f;
                     agent.CalculateRandomPath(gameObject.transform.globalPosition, wanderRange);
-                    targetPosition = agent.GetPointAt(agent.GetPathSize() - 1);
-                    if (walkAni == false)
+                    if (agent.GetPathSize() > 0)
                     {
-                        Animation.PlayAnimation(gameObject, "Move_Spiter");
-                        walkAni = true;
+                        targetPosition = agent.GetPointAt(agent.GetPathSize() - 1);
+                        if (walkAni == false)
+                        {
+                            Animation.PlayAnimation(gameObject, "Move_Spiter");
+                            walkAni = true;
+                        }
+                        xenoState = XenoState.MOVE;
                     }
-                    xenoState = XenoState.MOVE;
                 }
 
                 //Check if player in radius and if so go to cry state
@@ -297,6 +304,10 @@ public class SpitterBaseScript : Enemy
             case XenoState.MOVE_AGGRO:
 
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
+                if (agent.GetPathSize() == 0)
+                {
+                    xenoState = XenoState.IDLE;
+                }
                 LookAt(agent.GetDestination());
 
                 MoveToCalculatedPos(agent.speed);
@@ -328,6 +339,11 @@ public class SpitterBaseScript : Enemy
                     //ANIMATION DURATION HERE!!!
                     timeLimit = 0.8f;
                     Animation.PlayAnimation(gameObject, "Atack_1_Spiter");
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    Particles.PlayParticlesTrigger(particlesGO);
+
                     walkAni = false;
                     Audio.PlayAudio(gameObject, "XS_Spit");
                     acidDone = false;
@@ -343,6 +359,11 @@ public class SpitterBaseScript : Enemy
                     timeLimit = 0.8f;
                     Animation.PlayAnimation(gameObject, "Atack_2_Spiter");
                     walkAni = false;
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack2_Spitter");
+                    Particles.PlayParticlesTrigger(particlesGO);
+
                     Audio.PlayAudio(gameObject, "XS_Rebound");
                     explosionDone = false;
                     xenoState = XenoState.ACID_REBOUND;
@@ -437,7 +458,6 @@ public class SpitterBaseScript : Enemy
 
                 break;
         }
-
         //If the enemy isn't paused
         if (xenoState != XenoState.PAUSED)
         {
@@ -477,6 +497,7 @@ public class SpitterBaseScript : Enemy
                     walkAni = false;
                     xenoState = XenoState.IDLE;
                     player.GetComponent<Player>().SetExplorationAudioState();
+
                 }
             }
             else
@@ -503,11 +524,9 @@ public class SpitterBaseScript : Enemy
         Vector3 roundedPosition = new Vector3(Mathf.Round(position.x),
                                       0,
                                       Mathf.Round(position.z));
-
         Vector3 roundedDestination = new Vector3(Mathf.Round(destintion.x),
                                                  0,
                                                  Mathf.Round(destintion.z));
-
         if ((roundedPosition.x == roundedDestination.x) && (roundedPosition.y == roundedDestination.y) && (roundedPosition.z == roundedDestination.z))
         {
             gameObject.SetVelocity(new Vector3(0, 0, 0));

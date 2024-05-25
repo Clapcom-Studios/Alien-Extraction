@@ -506,7 +506,86 @@ void EmitterSpawner::Spawn(ParticleEmitter* emitter, Particle* particle)
 {
 	if(pointingEmitter != nullptr)
 	{
-		particle->position = positionParticleForSub; //Valor guardado de posicion;
+		EmitterBase* pointingBase = (EmitterBase*)emitter->modules.at(0);
+		
+
+		switch (pointingBase->currentShape)
+		{
+		case PAR_POINT:
+		{
+			//Asignar valores
+			particle->position = positionParticleForSub + pointingBase->emitterOrigin;
+
+			particle->initialPosition = particle->position;
+		}
+		break;
+		case PAR_CONE:
+		{
+			//Get random radius size
+			float randomLength = Random::GenerateRandomFloat(pointingBase->radiusHollow, pointingBase->baseRadius);
+			float randomAngle = Random::GenerateRandomFloat(0.0f, pi * 2);
+			float randomHeigth = Random::GenerateRandomFloat(0, pointingBase->heigth);
+
+			float baseTopDiference = pointingBase->topRadius - pointingBase->baseRadius;
+			float normalizedRefPos = randomLength / pointingBase->baseRadius;
+			float3 randPos = { cos(randomAngle) * ((1 - randomHeigth / pointingBase->heigth) * randomLength + (randomLength * (pointingBase->topRadius / pointingBase->baseRadius)) * randomHeigth / pointingBase->heigth), randomHeigth, -sin(randomAngle) * ((1 - randomHeigth / pointingBase->heigth) * randomLength + (randomLength * (pointingBase->topRadius / pointingBase->baseRadius)) * randomHeigth / pointingBase->heigth) };
+			
+			//Asignar valores
+			particle->position = positionParticleForSub + randPos; //Se inicializan desde 0,0,0 asi que no deberia haber problema en hacer += pero deberia ser lo mismo
+
+			particle->initialPosition = particle->position;
+		}
+		break;
+		case PAR_BOX:
+		{
+			//Get rotated point from the world
+			Quat nuwDirQuat = particle->directionRotation.Mul(Quat(pointingBase->emitterOrigin.x, pointingBase->emitterOrigin.y, pointingBase->emitterOrigin.z, 0));
+			float3 originModified = float3(nuwDirQuat.x, nuwDirQuat.y, nuwDirQuat.z);
+
+			//Get rotated positives point from the world
+			Quat nuwDirPositives = particle->directionRotation.Mul(Quat(pointingBase->boxPointsPositives.x, pointingBase->boxPointsPositives.y, pointingBase->boxPointsPositives.z, 0));
+			float3 positivesModified = float3(nuwDirPositives.x, nuwDirPositives.y, nuwDirPositives.z);
+
+			//Get rotated negatives point from the world
+			Quat nuwDirNegative = particle->directionRotation.Mul(Quat(pointingBase->boxPointsNegatives.x, pointingBase->boxPointsNegatives.y, pointingBase->boxPointsNegatives.z, 0));
+			float3 negativesModified = float3(nuwDirNegative.x, nuwDirNegative.y, nuwDirNegative.z);
+
+			//Random values
+			float3 randPos;
+			if (negativesModified.x < positivesModified.x) { randPos.x = Random::GenerateRandomFloat(negativesModified.x, positivesModified.x); }
+			else { randPos.x = Random::GenerateRandomFloat(positivesModified.x, negativesModified.x); }
+			if (negativesModified.y < positivesModified.y) { randPos.y = Random::GenerateRandomFloat(negativesModified.y, positivesModified.y); }
+			else { randPos.y = Random::GenerateRandomFloat(positivesModified.y, negativesModified.y); }
+			if (negativesModified.z < positivesModified.z) { randPos.z = Random::GenerateRandomFloat(negativesModified.z, positivesModified.z); }
+			else { randPos.z = Random::GenerateRandomFloat(positivesModified.z, negativesModified.z); }
+
+			//Asignar valores
+			particle->position = positionParticleForSub + originModified + randPos;
+
+			particle->initialPosition = particle->position;
+		}
+		break;
+		case PAR_SPHERE:
+		{
+			//Get random radius size
+			float randomLength = Random::GenerateRandomFloat(pointingBase->radiusHollow, pointingBase->baseRadius);
+
+			float3 randPos;
+			math::LCG lgc;
+			randPos = randPos.RandomSphere(lgc, pointingBase->emitterOrigin, randomLength);
+
+			//Asignar valores
+			particle->position = positionParticleForSub + randPos;
+
+			particle->initialPosition = particle->position;
+		}
+		break;
+		case PAR_SHAPE_ENUM_END:
+		{}
+		break;
+		default:
+			break;
+		}
 	}
 }
 

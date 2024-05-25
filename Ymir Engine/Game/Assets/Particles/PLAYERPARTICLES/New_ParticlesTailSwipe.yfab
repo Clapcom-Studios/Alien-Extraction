@@ -1,0 +1,132 @@
+{
+    "Prefab": [
+        {
+            "Name": "ParticlesTailSwipe",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1197001058,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 2086505483,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 6,
+                            "EmitterUID": 757673613,
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.5,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        10.399999618530273,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 0,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 28.209999084472656,
+                                    "RadiusTop": 25.878364562988281,
+                                    "Heigth": 3
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 3,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.49099999666213989,
+                                    "NumParticlesToStop": 1,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/circle_02.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 0,
+                                    "Size2": 1000,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.74500000476837158
+                                },
+                                {
+                                    "Type": 3,
+                                    "AligmentMode": 2,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.82743364572525024,
+                                        0.5272144079208374,
+                                        0.5272144079208374,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0.81960785388946533,
+                                        0.098039217293262482,
+                                        0.098039217293262482,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

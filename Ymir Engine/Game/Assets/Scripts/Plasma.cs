@@ -16,7 +16,11 @@ public class Plasma : Weapon
 
     public override void Start()
     {
+        playerObject = InternalCalls.GetGameObjectByName("Player");
+        player = playerObject.GetComponent<Player>();
+
         range = 200;
+        reloadTime = 3.162f;
 
         switch (_upgrade)
         {
@@ -27,7 +31,6 @@ public class Plasma : Weapon
                 fireRate = 0.03f;
                 damage = 2.4f;
                 damageEscalation = 0.006f;
-                reloadTime = 3f;
 
                 break;
             case UPGRADE.LVL_1:
@@ -37,7 +40,6 @@ public class Plasma : Weapon
                 fireRate = 0.03f;
                 damage = 3;
                 damageEscalation = 0.01f;
-                reloadTime = 2f;
 
                 break;
             case UPGRADE.LVL_2:
@@ -47,7 +49,6 @@ public class Plasma : Weapon
                 fireRate = 0.02f;
                 damage = 3.6f;
                 damageEscalation = 0.01f;
-                reloadTime = 2f;
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
@@ -57,13 +58,12 @@ public class Plasma : Weapon
                 fireRate = 0.015f;
                 damage = 5f;
                 damageEscalation = 0.015f;
-                reloadTime = 2f;
 
                 break;
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3B");
-                ammo = 200;
+                ammo = 300;
                 fireRate = 0.02f;
                 damage = 4f;
                 damageEscalation = 0.01f;
@@ -166,6 +166,14 @@ public class Plasma : Weapon
     {
         currentAmmo = ammo;
 
+        //Audio.PlayAudio(gameObject, "W_PlasmaReload");
+    }
+
+    public override void StartReload()
+    {
+        reloading = true;
+        reloadTimer = reloadTime;
+
         Audio.PlayAudio(gameObject, "W_PlasmaReload");
     }
 
@@ -173,5 +181,4 @@ public class Plasma : Weapon
     {
         currentDamage = damage;
     }
-
 }

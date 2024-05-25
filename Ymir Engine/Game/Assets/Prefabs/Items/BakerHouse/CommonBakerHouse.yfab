@@ -1,0 +1,245 @@
+{
+    "Prefab": [
+        {
+            "Name": "CommonBakerHouse",
+            "Static": false,
+            "Tag": "Baker",
+            "UID": 1285509392,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 2011453066,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.97789996862411499,
+                        0.97789996862411499,
+                        0.97789996862411499
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 1,
+                    "Size": [
+                        30,
+                        2.5,
+                        2.5
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        1.2000000476837158,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "BakerHouse.cs",
+                    "Active": 1,
+                    "UID": 0
+                }
+            ],
+            "Children UID": [
+                1876026081
+            ]
+        },
+        {
+            "Name": "Collider",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1876026081,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1285509392,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        3.5,
+                        3.0999999046325684,
+                        4.0999999046325684
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0.20000000298023224,
+                        1.5,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1853688484,
+                1840801444
+            ]
+        },
+        {
+            "Name": "Baker_house",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1853688484,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BakerHouse.fbx",
+            "Parent UID": 1876026081,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2085124685,
+                    "Vertex Count": 1641,
+                    "Index Count": 2751
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 587,
+                    "Diffuse_Path": "Assets\/Baker_house.png",
+                    "Diffuse_UID": 366441211
+                }
+            ]
+        },
+        {
+            "Name": "Chimney",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1840801444,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BakerHouse.fbx",
+            "Parent UID": 1876026081,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 541109108,
+                    "Vertex Count": 160,
+                    "Index Count": 324
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 587,
+                    "Diffuse_Path": "Assets\/Baker_house.png",
+                    "Diffuse_UID": 366441211
+                }
+            ]
+        }
+    ]
+}

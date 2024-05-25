@@ -318,9 +318,34 @@ MonoObject* FindEnemyGameObject(MonoObject* obj) {
 
 	GameObject* child = gameObjectVec[1];
 
+	gameObjectVec.clear();
+
 	if(child != nullptr) return External->moduleMono->GoToCSGO(child);
 
 	assert("The object you searched for doesn't exist. :/");
+
+	return nullptr;
+}
+
+MonoObject* FindHealthBarObject(MonoObject* obj, int childNum) {
+
+	std::vector<GameObject*> gameObjectVec;
+
+	GameObject* GO = External->moduleMono->GameObject_From_CSGO(obj);
+	GameObject* parent = GO->mParent;
+	parent->CollectChilds(gameObjectVec);
+
+	GameObject* go = gameObjectVec[2];
+	gameObjectVec.clear();
+	go->CollectChilds(gameObjectVec);
+	GameObject* child = gameObjectVec[childNum];
+
+	gameObjectVec.clear();
+
+	if (child != nullptr) return External->moduleMono->GoToCSGO(child);
+
+	assert("The object you searched for doesn't exist. :/");
+
 
 	return nullptr;
 }
@@ -529,6 +554,17 @@ bool RaycastTest(MonoObject* obj, MonoObject* origin, MonoObject* direction, flo
 	fdirection.setZ(pdirection.z);
 
 	return External->physics->RaycastTest(fOrigin, fdirection, rayLenght);
+}
+
+void SetColliderActive(MonoObject* obj, bool isActive)
+{
+	if (External == nullptr)
+		return;
+
+	GameObject* cpp_gameObject = External->moduleMono->GameObject_From_CSGO(obj);
+	CCollider* rigidbody = dynamic_cast<CCollider*>(cpp_gameObject->GetComponent(ComponentType::PHYSICS));
+
+	rigidbody->isActive = isActive;
 }
 
 MonoObject* SendPosition(MonoObject* obj) //Allows to send float3 as "objects" in C#, should find a way to move Vector3 as class
@@ -1627,6 +1663,21 @@ void SpawnItemCS(MonoString* name, MonoObject* pos)
 	}
 
 	//TODO pocho: Hacer un switch con todos los prefabs en relación al nombre
+
+}
+
+void SetColorMaterial(MonoObject* go, MonoObject* vec) {
+
+	GameObject* gameObject = External->moduleMono->GameObject_From_CSGO(go);
+	float3 vector = External->moduleMono->UnboxVector(vec);
+
+	CMaterial* mat = (CMaterial*)gameObject->GetComponent(ComponentType::MATERIAL);
+
+	if (mat != nullptr ) {
+		mat->shader.SetUniformValue("color", &vector);
+	}
+
+
 
 }
 

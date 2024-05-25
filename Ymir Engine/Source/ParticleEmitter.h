@@ -8,6 +8,7 @@
 #include <vector>
 
 #define MAXPARTICLES 300
+#define MAXGLOBALPARTICLES 5000
 
 class CParticleSystem;
 class EmitterSetting;

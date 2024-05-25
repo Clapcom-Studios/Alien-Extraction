@@ -60,8 +60,8 @@ public class Enemy : YmirComponent
     public bool paused = false;
 
     //Drop items
-    public string keys;
-    public string path;
+    protected string keys = " ";
+    protected string path = " ";
     public int numFields;
     public int spawnRange;
     protected int level;
@@ -71,12 +71,35 @@ public class Enemy : YmirComponent
 
     protected Vector3 itemPos = Vector3.zero;
     public Random random = new Random();
-
+    protected GameObject healthBar = null;
 
 
     public void TakeDmg(float dmg)
     {
         life -= (1 - armor) * dmg;
+    }
+
+    public void SetColor()
+    {
+        if (healthBar != null)
+        {
+            if (rarity == 0)
+            {
+                InternalCalls.SetColor(healthBar, new Vector3(0, 1, 0));
+            }
+            else if (rarity == 1)
+            {
+                InternalCalls.SetColor(healthBar, new Vector3(0, 0, 1));
+            }
+            else if (rarity == 2)
+            {
+                InternalCalls.SetColor(healthBar, new Vector3(0.502f, 0, 0.502f));
+            }
+        }
+        else
+        {
+            Debug.Log("[WARNING] No HelthBar found !!!");
+        }
     }
 
     public void LookAt(Vector3 pointToLook)

@@ -210,6 +210,13 @@ namespace YmirEngine
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public extern bool RaycastTest(object origin, object direction, float rayLenght);
+
+        /// <summary>
+        /// Set collider active/inactive
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern void SetColliderActive(bool isActive);
+
         /// Make the GO look at the camera
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]

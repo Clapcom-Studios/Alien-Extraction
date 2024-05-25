@@ -49,6 +49,7 @@ public class FaceHuggerBaseScript : Enemy
     private bool walkPlaying = false;
     private bool attackDone = false;
 
+    public GameObject particlesGO = null;
 
     //Audio
     private float CryTimer = 10f;
@@ -61,6 +62,7 @@ public class FaceHuggerBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,6);
         knockBackSpeed = 200;
         knockBackTimer = 0.2f;
         stopedDuration = 1f;
@@ -79,24 +81,24 @@ public class FaceHuggerBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 60.0f;
-                rareProb = 25.0f;
-                epicProb = 15.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             case int i when (i == 2 || i == 3):
-                commonProb = 20.0f;
-                rareProb = 50.0f;
-                epicProb = 30.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 10.0f;
-                rareProb = 30.0f;
-                epicProb = 60.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             default:
-                commonProb = 60.0f;
-                rareProb = 25.0f;
-                epicProb = 15.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
         }
 
@@ -105,7 +107,7 @@ public class FaceHuggerBaseScript : Enemy
 
         cumTimer = cumDuration2;
 
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 1500f;
         agent.angularSpeed = 10f;
 
@@ -132,16 +134,18 @@ public class FaceHuggerBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 250; //450
-            armor = 0.0f; //0.1f
+            life = 330; //450
+            armor = 0.1f; //0.1f
             agent.speed = 1650f;
         }
         else if (rarity == 2)
         {
-            life = 400; //600
-            armor = 0.0f; //0.2f
+            life = 440; //600
+            armor = 0.2f; //0.2f
             agent.speed = 1800f;
         }
+
+        SetColor();
 
         // Animations
 
@@ -226,6 +230,10 @@ public class FaceHuggerBaseScript : Enemy
                 case WanderState.CHASING:
 
                     LookAt(agent.GetDestination());
+                    if (agent.GetPathSize() == 0)
+                    {
+                        wanderState = WanderState.REACHED;
+                    }
                     //Debug.Log("[ERROR] Current State: CHASING");
                     agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
 
@@ -296,6 +304,12 @@ public class FaceHuggerBaseScript : Enemy
                                 gameObject.SetVelocity(gameObject.transform.GetForward() * 0);
                                 Audio.PlayAudio(gameObject, "FH_Tail");
                                 Animation.PlayAnimation(gameObject, "TailAttack_Facehugger");
+
+                                //PARTICLES
+                                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesTailAttack");
+                                Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
+                                Particles.PlayParticlesTrigger(particlesGO);
+
                                 walkPlaying = false;
                                 wanderState = WanderState.ATTACK;
                             }

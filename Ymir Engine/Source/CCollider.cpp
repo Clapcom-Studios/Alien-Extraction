@@ -118,13 +118,13 @@ CCollider::~CCollider()
 }
 
 void CCollider::Update()
-{	
-	if (isFirstTick)
+{		
+	if (isActive)
 	{
-		
+		if (!isSensor)
+			physBody->body->setCollisionFlags(physBody->body->getCollisionFlags() & ~btCollisionObject::CF_NO_CONTACT_RESPONSE);
+		physBody->body->setActivationState(ACTIVE_TAG);
 	}
-	
-	if (isActive)	physBody->body->setActivationState(ACTIVE_TAG);
 	else
 	{
 		physBody->body->setCollisionFlags(physBody->body->getCollisionFlags() | btCollisionObject::CF_NO_CONTACT_RESPONSE);

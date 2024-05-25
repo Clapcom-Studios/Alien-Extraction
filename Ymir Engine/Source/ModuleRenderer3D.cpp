@@ -250,6 +250,10 @@ bool ModuleRenderer3D::Init()
 	lightingShader->LoadShader("Assets/Shaders/Lighting Shader.glsl");
 	delete lightingShader;
 
+	Shader* specularShader = new Shader;
+	specularShader->LoadShader("Assets/Shaders/SpecularLight.glsl");
+	delete specularShader;
+
 	outlineShader = new Shader;
 	outlineShader->LoadShader("Assets/Shaders/OutlineShader.glsl");
 
@@ -776,8 +780,15 @@ void ModuleRenderer3D::DrawUIElements(bool isGame, bool isBuild)
 	glAlphaFunc(GL_GREATER, 0.0f);
 }
 
-void ModuleRenderer3D::DrawParticles(ParticleEmitter* emitter)
+void ModuleRenderer3D::DrawParticles(ParticleEmitter* emitter) //TODO ERIC: Posiblemente haya que reworkear un poco el sistema de particula y que sea una lista enorme de todas las particulas en el momento. Ya de paso aprovecho y que sea una pool.
 {
+	//Try fix Xavi transparencias particulas
+	//glDepthMask(GL_FALSE);
+
+	//Fix recomendado por BCN
+	glCullFace(GL_FALSE);
+	
+
 	for (int i = 0; i < emitter->listParticles.size(); i++)
 	{
 		Particle* par = emitter->listParticles.at(i);
@@ -824,6 +835,11 @@ void ModuleRenderer3D::DrawParticles(ParticleEmitter* emitter)
 
 		par = nullptr;
 	}
+
+	//Mas try fix de Xavi
+	//glDepthMask(GL_TRUE);
+	glCullFace(GL_TRUE); //Funciona mejor que el depthMask
+	
 }
 
 bool ModuleRenderer3D::DrawParticlesShapeDebug(CParticleSystem* pSystem)

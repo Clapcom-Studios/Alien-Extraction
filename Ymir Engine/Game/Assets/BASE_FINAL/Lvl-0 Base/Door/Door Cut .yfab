@@ -1,0 +1,141 @@
+{
+    "Prefab": [
+        {
+            "Name": "PROP_Door_Cutted_Base",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1252582930,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1309046316,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        23,
+                        1
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                281380023
+            ]
+        },
+        {
+            "Name": "LowPoly",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 281380023,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/PROP_Door_Cutted_Base.fbx",
+            "Parent UID": 1252582930,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1433317012
+            ]
+        },
+        {
+            "Name": "Door_Cutted",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1433317012,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/PROP_Door_Cutted_Base.fbx",
+            "Parent UID": 281380023,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 323569768,
+                    "Vertex Count": 214,
+                    "Index Count": 630
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                257.43499755859375,
+                                111.0653076171875,
+                                -42.196128845214844
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": false,
+                            "enableLighting": true,
+                            "ambient": 0.5,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1678,
+                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Door\/Textures\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 488589419
+                }
+            ]
+        }
+    ]
+}

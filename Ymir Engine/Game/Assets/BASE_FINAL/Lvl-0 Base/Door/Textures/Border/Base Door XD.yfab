@@ -1,0 +1,194 @@
+{
+    "Prefab": [
+        {
+            "Name": "Closed_Door2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 528756781,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
+            "Parent UID": 320002616,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1914866531,
+                1854941101
+            ]
+        },
+        {
+            "Name": "Door_LowPoly (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1914866531,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
+            "Parent UID": 528756781,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 404756378,
+                    "Vertex Count": 479,
+                    "Index Count": 1476
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1891,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_D.png",
+                    "Diffuse_UID": 32280259,
+                    "Specular_ID": 1919,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_S.png",
+                    "Specular_UID": 698316530,
+                    "Normal_ID": 1912,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_N.png",
+                    "Normal_UID": 186426588,
+                    "Height_ID": 1905,
+                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_H.png",
+                    "Height_UID": 944159270,
+                    "Ambient_ID": 1884,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_A.png",
+                    "Ambient_UID": 568521047,
+                    "Emissive_ID": 1898,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Door\/TEX_PROP_Door_Base_E.png",
+                    "Emissive_UID": 1531561959
+                }
+            ]
+        },
+        {
+            "Name": "Border_LowPoly (2)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1854941101,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
+            "Parent UID": 528756781,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        -0.00016734043310862035,
+                        0
+                    ],
+                    "Scale": [
+                        0.99999743700027466,
+                        1,
+                        0.99999743700027466
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2044442592,
+                    "Vertex Count": 1463,
+                    "Index Count": 3984
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                3.8318037986755371,
+                                16.196561813354492,
+                                4.5678652327296732e-07
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1824,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_D.png",
+                    "Diffuse_UID": 732529737,
+                    "Specular_ID": 1881,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_S.png",
+                    "Specular_UID": 1167448914,
+                    "Normal_ID": 1862,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_N.png",
+                    "Normal_UID": 1201943206,
+                    "Height_ID": 1843,
+                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_H.png",
+                    "Height_UID": 1883836463,
+                    "Ambient_ID": 1805,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Door_Alien\/Border\/TEX_PROP_Border_Base_A.png",
+                    "Ambient_UID": 637287171
+                }
+            ]
+        }
+    ]
+}

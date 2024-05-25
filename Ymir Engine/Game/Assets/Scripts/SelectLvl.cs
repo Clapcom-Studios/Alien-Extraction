@@ -14,6 +14,8 @@ public class SelectLvl : YmirComponent
     public GameObject locked;
     public bool isLocked = false;
 
+    private bool hasChanged = false;
+
     public void Start()
     {
         GameObject gameObject = InternalCalls.GetGameObjectByName("Background");
@@ -23,12 +25,56 @@ public class SelectLvl : YmirComponent
         }
 
         locked = InternalCalls.GetChildrenByName(this.gameObject, "Lock");
+
+        int lastLvl = Globals.GetPlayerScript().lastUnlockedLvl;
+
+        switch (lvl)
+        {
+            case 1:
+                {
+                    isLocked = false;
+                    break;
+                }
+            case 2:
+                {
+                    if (lvl <= lastLvl)
+                    {
+                        isLocked = false;
+                    }
+                    else
+                    {
+                        isLocked = true;
+                    }
+                    break;
+                }
+            case 3:
+                {
+                    if (lvl < lastLvl)
+                    {
+                        isLocked = false;
+                    }
+                    else
+                    {
+                        isLocked = true;
+                    }
+                    break;
+                }
+            default:
+                break;
+        }
+
         locked.SetActive(isLocked);
+        hasChanged = false;
     }
 
     public void Update()
     {
-        locked.SetActive(isLocked);
+        if (!hasChanged && isLocked)
+        {
+            //UI.SetUIState(gameObject, (int)UI_STATE.DISABLED);
+            hasChanged = false;
+        }
+
         return;
     }
 

@@ -15,7 +15,7 @@
 #include "Component.h"
 
 //
-int GetUIState(MonoObject* object, int uiState)
+int GetUIState(MonoObject* object)
 {
 	G_UI* go = (G_UI*)External->moduleMono->GameObject_From_CSGO(object);
 	return (int)((C_UI*)(go->GetComponent(ComponentType::UI)))->state;
@@ -866,6 +866,517 @@ void NavigateGridVertical(MonoObject* go, int rows, int columns, bool isDown, bo
 	}
 }
 
+void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRight, bool navigateGrids, MonoObject* gridLeft, MonoObject* gridRight, bool bounce)
+{
+	if (External->scene->canNav)
+	{
+		// Get UI elements to navigate
+		std::vector<C_UI*> listUI;
+		GameObject* gameObject = External->moduleMono->GameObject_From_CSGO(go);
+		External->scene->GetUINavigate(gameObject, listUI); bool isInGO = false;
+		int offset = 0;
+
+		for (auto i = 0; i < listUI.size(); i++)
+		{
+			if (listUI[i]->mOwner->UID == External->scene->focusedUIGO->UID)
+			{
+				offset = i;
+				break;
+			}
+		}
+
+		if (External->scene->focusedUIGO == nullptr)
+		{
+			External->scene->focusedUIGO = listUI[0]->mOwner;
+			External->scene->SetSelected(listUI[0]->mOwner);
+			External->scene->onHoverUI = offset;
+		}
+
+		else
+		{
+			for (auto i = 0; i < listUI.size(); i++)
+			{
+				if (External->scene->focusedUIGO != nullptr)
+				{
+					if (listUI[i]->mOwner->UID == External->scene->focusedUIGO->UID)
+					{
+						isInGO = true;
+						break;
+					}
+				}
+			}
+		}
+
+		if (isInGO)
+		{
+			if (isRight)
+			{
+				if (offset >= listUI.size())
+				{
+					if (navigateGrids)
+					{
+						bool isBlocked = false;
+
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridRight);
+
+						if (gridGo != nullptr)
+						{
+							std::vector<C_UI*> listUIGrid;
+							External->scene->GetUINavigate(gridGo, listUIGrid);
+
+							if (listUIGrid.size() != 0)
+							{
+								std::vector<Component*> listComponents = listUIGrid[0]->mOwner->GetAllComponentsByType(ComponentType::UI);
+
+								for (auto it = listComponents.begin(); it != listComponents.end(); ++it)
+								{
+									if (((C_UI*)(*it))->tabNav_)
+									{
+										if (((C_UI*)(*it))->state == UI_STATE::DISABLED)
+										{
+											isBlocked = true;
+											break;
+										}
+									}
+								}
+
+								if (!isBlocked)
+								{
+									if (listUI[offset]->state != UI_STATE::SELECTED)
+									{
+										listUI[offset]->SetState(UI_STATE::NORMAL);
+									}
+
+									SetUIState(External->moduleMono->GoToCSGO(listUIGrid[0]->mOwner), (int)UI_STATE::FOCUSED);
+
+									External->scene->canNav = false;
+								}
+							}
+						}
+
+						else if (bounce)
+						{
+							if (listUI[offset]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset]->SetState(UI_STATE::NORMAL);
+							}
+
+							External->scene->SetSelected(listUI[offset - (rows * (columns - 1))]->mOwner);
+
+							External->scene->focusedUIGO = listUI[offset - (rows * (columns - 1))]->mOwner;
+
+							if (listUI[offset - (rows * (columns - 1))]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset - (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
+							}
+
+							External->scene->onHoverUI -= (rows * (columns - 1));
+						}
+					}
+
+					else
+					{
+						if (listUI[offset]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset]->SetState(UI_STATE::NORMAL);
+						}
+
+						// Same as below, should make a function
+						External->scene->SetSelected(listUI[offset - (rows * (columns - 1))]->mOwner);
+
+						External->scene->focusedUIGO = listUI[offset - (rows * (columns - 1))]->mOwner;
+
+						if (listUI[offset - (rows * (columns - 1))]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset - (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
+						}
+
+						External->scene->onHoverUI -= (rows * (columns - 1));
+					}
+				}
+
+				else
+				{
+					External->scene->SetSelected(listUI[offset + rows]->mOwner);
+
+					External->scene->focusedUIGO = listUI[offset + rows]->mOwner;
+
+					if (listUI[offset]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset]->SetState(UI_STATE::NORMAL);
+					}
+
+					if (listUI[offset + rows]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset + rows]->SetState(UI_STATE::FOCUSED);
+					}
+
+					External->scene->onHoverUI += rows;
+				}
+			}
+
+			else
+			{
+				if (rows < offset)
+				{
+					if (navigateGrids)
+					{
+						bool isBlocked = false;
+
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridLeft);
+
+						if (gridGo != nullptr)
+						{
+							std::vector<C_UI*> listUIGrid;
+							External->scene->GetUINavigate(gridGo, listUIGrid);
+
+							if (listUIGrid.size() != 0)
+							{
+								std::vector<Component*> listComponents = listUIGrid[0]->mOwner->GetAllComponentsByType(ComponentType::UI);
+
+								for (auto it = listComponents.begin(); it != listComponents.end(); ++it)
+								{
+									if (((C_UI*)(*it))->tabNav_)
+									{
+										if (((C_UI*)(*it))->state == UI_STATE::DISABLED)
+										{
+											isBlocked = true;
+											break;
+										}
+									}
+								}
+
+								if (!isBlocked)
+								{
+									if (listUI[offset]->state != UI_STATE::SELECTED)
+									{
+										listUI[offset]->SetState(UI_STATE::NORMAL);
+									}
+
+									SetUIState(External->moduleMono->GoToCSGO(listUIGrid[0]->mOwner), (int)UI_STATE::FOCUSED);
+
+									External->scene->canNav = false;
+								}
+							}
+						}
+
+						else if (bounce)
+						{
+							if (listUI[offset]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset]->SetState(UI_STATE::NORMAL);
+							}
+
+							External->scene->SetSelected(listUI[offset + (rows * (columns - 1))]->mOwner);
+							External->scene->focusedUIGO = listUI[offset + (rows * (columns - 1))]->mOwner;
+
+							if (listUI[offset + (rows * (columns - 1))]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset + (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
+							}
+
+							External->scene->onHoverUI += (rows * (columns - 1));
+						}
+					}
+
+					else
+					{
+						if (listUI[offset]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset]->SetState(UI_STATE::NORMAL);
+						}
+
+						External->scene->SetSelected(listUI[offset + (rows * (columns - 1))]->mOwner);
+						External->scene->focusedUIGO = listUI[offset + (rows * (columns - 1))]->mOwner;
+
+						if (listUI[offset + (rows * (columns - 1))]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset + (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
+						}
+
+						External->scene->onHoverUI += (rows * (columns - 1));
+					}
+				}
+
+				else
+				{
+					External->scene->SetSelected(listUI[offset - rows]->mOwner);
+					External->scene->focusedUIGO = listUI[offset - rows]->mOwner;
+
+					if (listUI[offset]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset]->SetState(UI_STATE::NORMAL);
+					}
+
+					if (listUI[offset - rows]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset - rows]->SetState(UI_STATE::FOCUSED);
+					}
+
+					External->scene->onHoverUI -= rows;
+				}
+
+			}
+		}
+	}	
+}
+
+void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown, bool navigateGrids, MonoObject* gridDown, MonoObject* gridUp, bool bounce)
+{
+	if (External->scene->canNav)
+	{
+		// Get UI elements to navigate
+		std::vector<C_UI*> listUI;
+		GameObject* gameObject = External->moduleMono->GameObject_From_CSGO(go);
+		External->scene->GetUINavigate(gameObject, listUI); bool isInGO = false;
+		int offset = 0;
+
+		for (auto i = 0; i < listUI.size(); i++)
+		{
+			if (listUI[i]->mOwner->UID == External->scene->focusedUIGO->UID)
+			{
+				offset = i;
+				break;
+			}
+		}
+	
+
+		if (External->scene->focusedUIGO == nullptr)
+		{
+			External->scene->focusedUIGO = listUI[0]->mOwner;
+			External->scene->SetSelected(listUI[0]->mOwner);
+			External->scene->onHoverUI = offset;
+		}
+
+		else
+		{
+			for (auto i = 0; i < listUI.size(); i++)
+			{
+				if (External->scene->focusedUIGO != nullptr)
+				{
+					if (listUI[i]->mOwner->UID == External->scene->focusedUIGO->UID)
+					{
+						isInGO = true;
+						break;
+					}
+				}
+			}
+		}
+
+		if (isInGO)
+		{
+			if (isDown)
+			{
+				if ((offset + 1) % rows == 0 || offset == listUI.size() - 1)
+				{
+					if (navigateGrids)
+					{
+						bool isBlocked = false;
+
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridDown);
+
+						if (gridGo != nullptr)
+						{
+							std::vector<C_UI*> listUIGrid;
+							External->scene->GetUINavigate(gridGo, listUIGrid);
+
+							if (listUIGrid.size() != 0)
+							{
+								std::vector<Component*> listComponents = listUIGrid[0]->mOwner->GetAllComponentsByType(ComponentType::UI);
+
+								for (auto it = listComponents.begin(); it != listComponents.end(); ++it)
+								{
+									if (((C_UI*)(*it))->tabNav_)
+									{
+										if (((C_UI*)(*it))->state == UI_STATE::DISABLED)
+										{
+											isBlocked = true;
+											break;
+										}
+									}
+								}
+
+								if (!isBlocked)
+								{
+									if (listUI[offset]->state != UI_STATE::SELECTED)
+									{
+										listUI[offset]->SetState(UI_STATE::NORMAL);
+									}
+
+									SetUIState(External->moduleMono->GoToCSGO(listUIGrid[0]->mOwner), (int)UI_STATE::FOCUSED);
+
+									External->scene->canNav = false;
+								}
+							}
+						}
+
+						else if (bounce)
+						{
+							if (listUI[offset]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset]->SetState(UI_STATE::NORMAL);
+							}
+
+							External->scene->SetSelected(listUI[offset - rows + 1]->mOwner);
+
+							External->scene->focusedUIGO = listUI[offset - rows + 1]->mOwner;
+
+							if (listUI[offset - rows + 1]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset - rows + 1]->SetState(UI_STATE::FOCUSED);
+							}
+
+							External->scene->onHoverUI -= (rows - 1);
+						}
+					}
+
+					else
+					{
+						if (listUI[offset]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset]->SetState(UI_STATE::NORMAL);
+						}
+
+						// Same as below, should make a function
+						External->scene->SetSelected(listUI[offset - rows + 1]->mOwner);
+
+						External->scene->focusedUIGO = listUI[offset - rows + 1]->mOwner;
+
+						if (listUI[offset - rows + 1]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset - rows + 1]->SetState(UI_STATE::FOCUSED);
+						}
+
+						External->scene->onHoverUI -= (rows - 1);
+					}
+				}
+
+				else
+				{
+					External->scene->SetSelected(listUI[offset + 1]->mOwner);
+
+					External->scene->focusedUIGO = listUI[offset + 1]->mOwner;
+
+					if (listUI[offset]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset]->SetState(UI_STATE::NORMAL);
+					}
+
+					if (listUI[offset + 1]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset + 1]->SetState(UI_STATE::FOCUSED);
+					}
+
+					External->scene->onHoverUI += 1;
+				}
+			}
+
+			else
+			{
+				if ((offset) % rows == 0 || offset == 0)
+				{
+					if (navigateGrids)
+					{
+						bool isBlocked = false;
+
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridUp);
+
+						if (gridGo != nullptr)
+						{
+							std::vector<C_UI*> listUIGrid;
+							External->scene->GetUINavigate(gridGo, listUIGrid);
+
+							if (listUIGrid.size() != 0)
+							{
+								std::vector<Component*> listComponents = listUIGrid[0]->mOwner->GetAllComponentsByType(ComponentType::UI);
+
+								for (auto it = listComponents.begin(); it != listComponents.end(); ++it)
+								{
+									if (((C_UI*)(*it))->tabNav_)
+									{
+										if (((C_UI*)(*it))->state == UI_STATE::DISABLED)
+										{
+											isBlocked = true;
+											break;
+										}
+									}
+								}
+
+								if (!isBlocked)
+								{
+									if (listUI[offset]->state != UI_STATE::SELECTED)
+									{
+										listUI[offset]->SetState(UI_STATE::NORMAL);
+									}
+
+									SetUIState(External->moduleMono->GoToCSGO(listUIGrid[0]->mOwner), (int)UI_STATE::FOCUSED);
+
+									External->scene->canNav = false;
+								}
+							}
+						}
+
+						else if (bounce)
+						{
+							if (listUI[offset]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset]->SetState(UI_STATE::NORMAL);
+							}
+
+							External->scene->SetSelected(listUI[offset + rows - 1]->mOwner);
+							External->scene->focusedUIGO = listUI[offset + rows - 1]->mOwner;
+
+							if (listUI[offset + rows - 1]->state != UI_STATE::SELECTED)
+							{
+								listUI[offset + rows - 1]->SetState(UI_STATE::FOCUSED);
+							}
+
+							External->scene->onHoverUI += (rows - 1);
+						}
+					}
+
+					else
+					{
+						if (listUI[offset]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset]->SetState(UI_STATE::NORMAL);
+						}
+
+						External->scene->SetSelected(listUI[offset + rows - 1]->mOwner);
+						External->scene->focusedUIGO = listUI[offset + rows - 1]->mOwner;
+
+						if (listUI[offset + rows - 1]->state != UI_STATE::SELECTED)
+						{
+							listUI[offset + rows - 1]->SetState(UI_STATE::FOCUSED);
+						}
+
+						External->scene->onHoverUI += (rows - 1);
+					}
+				}
+
+				else
+				{
+					External->scene->SetSelected(listUI[offset - 1]->mOwner);
+					External->scene->focusedUIGO = listUI[offset - 1]->mOwner;
+
+					if (listUI[offset]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset]->SetState(UI_STATE::NORMAL);
+					}
+
+					if (listUI[offset - 1]->state != UI_STATE::SELECTED)
+					{
+						listUI[offset - 1]->SetState(UI_STATE::FOCUSED);
+					}
+
+					External->scene->onHoverUI -= 1;
+				}
+			}
+		}
+
+	}
+	
+}
 //
 void SetActiveAllUI(MonoObject* go, bool isActive)
 {

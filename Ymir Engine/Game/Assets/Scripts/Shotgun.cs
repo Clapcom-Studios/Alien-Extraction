@@ -9,71 +9,71 @@ using YmirEngine;
 public class Shotgun : Weapon
 {
     public int ammoInChamber;
-    public int dispersion;
+    public float dispersion;
     public Shotgun() : base(WEAPON_TYPE.SHOTGUN) { }
 
     public override void Start()
     {
+        playerObject = InternalCalls.GetGameObjectByName("Player");
+        player = playerObject.GetComponent<Player>();
+
+        reloadTime = 0.918f;
+
         switch (_upgrade)
         {
             case UPGRADE.LVL_0:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunDefault");
-                ammo = 16;
+                ammo = 4; //16
                 ammoInChamber = 2;
                 fireRate = 1.3f;
                 damage = 110; //55
-                reloadTime = 2.7f;
-                range = 10.5f;
-                dispersion = 100;
+                range = 21f; //10.5
+                dispersion = range * 0.5f; //100º
 
                 break;
             case UPGRADE.LVL_1:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL1");
-                ammo = 26;
+                ammo = 8; //26
                 ammoInChamber = 2;
                 fireRate = 1.2f;
                 damage = 140; //70
-                reloadTime = 2.6f;
-                range = 10.5f;
-                dispersion = 100;
+                range = 21f; //10.5
+                dispersion = range * 0.5f; //100º;
 
                 break;
             case UPGRADE.LVL_2:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL2");
-                ammo = 26;
+                ammo = 8; //26
                 ammoInChamber = 2;
                 fireRate = 1.2f;
                 damage = 150; //75
-                reloadTime = 2.5f;
-                range = 21f;
-                dispersion = 80;
+                range = 42f; //21f
+                dispersion = range * 0.35f; //80º
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL3A");
-                ammo = 28;
+                ammo = 12; //28
                 ammoInChamber = 2;
                 fireRate = 0.7f;
                 damage = 160; //80
-                reloadTime = 2.1f;
-                range = 21f;
-                dispersion = 80;
+                range = 42f;
+                dispersion = range * 0.35f; //80º
 
                 break;
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL3B");
-                ammo = 28;
+                ammo = 8; //28
                 ammoInChamber = 4;
                 fireRate = 1.3f;
                 damage = 320; //80
-                reloadTime = 2.5f;
-                range = 21f;
-                dispersion = 80;
+                range = 42f;
+                dispersion = range * 0.35f; //80º
 
                 break;
             default:
@@ -85,49 +85,55 @@ public class Shotgun : Weapon
 
     public override void Shoot()
     {
-        //currentAmmo=-ammoInChamber;
-        currentAmmo--;
-        currentAmmo--;
-        if(ammoInChamber == 4) 
-        {
-            currentAmmo--;
-            currentAmmo--;
-        }
+        currentAmmo -= ammoInChamber;
         fireRateTimer = fireRate;
 
-        Audio.PlayAudio(gameObject, "W_FSADShot");
-        Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
-        Particles.PlayParticlesTrigger(particlesGO);
+       
 
         Quaternion rot = gameObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f); // <- -90º Degree Quat
 
+        //Estos numeros estan hardcpded, canviarlos cuando cuadre
+        InternalCalls.CreateShotgunSensor(gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f), rot, range, dispersion, gameObject.transform.GetRight());
+        Debug.Log("Position cone origin is:" + (gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f)));
+        Debug.Log("Foward offset would have been:" +  (gameObject.transform.GetForward() * range * 0.5f));
 
-        InternalCalls.CreateShotgunSensor(gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range), rot, 70, 15, gameObject.transform.GetRight());
-
+        float angleOfShootgun = 0;
         switch (_upgrade)
         {
             case UPGRADE.LVL_0:
-
+                angleOfShootgun = 0.872665f; //100º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_1:
-
+                angleOfShootgun = 0.872665f; //100º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_2:
-
+                angleOfShootgun = 0.698132f; //80º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_3_ALPHA:
-
+                angleOfShootgun = 0.698132f; //80º a radianes / 2 porque es a cada lado
                 break;
             case UPGRADE.LVL_3_BETA:
-
+                angleOfShootgun = 0.698132f; //80º a radianes / 2 porque es a cada lado
                 break;
             default:
                 break;
         }
+        
+        Audio.PlayAudio(gameObject, "W_FSADShot");
+        Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward(), angleOfShootgun);
+        Particles.PlayParticlesTrigger(particlesGO);
     }
     public override void Reload()
     {
         currentAmmo = ammo;
+
+        //Audio.PlayAudio(gameObject, "W_FSADReload");
+    }
+
+    public override void StartReload()
+    {
+        reloading = true;
+        reloadTimer = reloadTime;
 
         Audio.PlayAudio(gameObject, "W_FSADReload");
     }

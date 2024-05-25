@@ -22,7 +22,7 @@ public enum DroneState
 
 public class DroneXenomorphBaseScript : Enemy
 {
-    public GameObject thisReference = null;
+  
 
     protected Vector3 targetPosition = null;
     
@@ -54,6 +54,10 @@ public class DroneXenomorphBaseScript : Enemy
 
     private float outOfRangeTimer;
 
+    public GameObject particlesGO = null;
+
+    //private Auto_Aim playerAim; 
+
 	public void Start()
 	{
 		//MAIN STUFF
@@ -61,13 +65,13 @@ public class DroneXenomorphBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
-
+        healthBar = InternalCalls.GetHealtBarObject(gameObject,7);
         knockBackSpeed = 200;
         knockBackTimer = 0.5f;
 
         //AGENT
         aggro = false;
-        agent.stoppingDistance = 2f;
+        agent.stoppingDistance = 3f;
         agent.speed = 800f;
         agent.angularSpeed = 10f;
         Debug.Log("AngularSpeed" + agent.angularSpeed);
@@ -89,6 +93,9 @@ public class DroneXenomorphBaseScript : Enemy
         tailRange = 30f;
         tailDone = false;
 
+        //Player Aim
+        //playerAim = InternalCalls.GetGameObjectByName("AimSensor").GetComponent<Auto_Aim>();
+
 		//Time
 		timeCounter = 0f;
 		timeLimit = 1f;
@@ -106,29 +113,29 @@ public class DroneXenomorphBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 60.0f;
-                rareProb = 25.0f;
-                epicProb = 15.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             case int i when (i == 2 || i == 3):
-                commonProb = 20.0f;
-                rareProb = 50.0f;
-                epicProb = 30.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 10.0f;
-                rareProb = 30.0f;
-                epicProb = 60.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
             default:
-                commonProb = 60.0f;
-                rareProb = 25.0f;
-                epicProb = 15.0f;
+                commonProb = 93.0f;
+                rareProb = 5.0f;
+                epicProb = 2.0f;
                 break;
         }
 
         life = 300f;
-        armor = 0.2f;
+        armor = 0.0f;
 
         rarity = random.Next(101);
 
@@ -150,14 +157,14 @@ public class DroneXenomorphBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 550; //750
-            armor = 0.0f; // 0.4f
+            life = 600; //750
+            armor = 0.1f; // 0.4f
             agent.speed = 880f;
         }
         else if (rarity == 2)
         {
             life = 800; //1200
-            armor = 0.0f; // 0.5f
+            armor = 0.2f; // 0.5f
             agent.speed = 960f;
         }
 
@@ -180,6 +187,9 @@ public class DroneXenomorphBaseScript : Enemy
         Animation.SetResetToZero(gameObject, "Death", false);
 
         Animation.PlayAnimation(gameObject, "Combat_Idle");
+
+        
+        SetColor();
     }
 
     public void Update()
@@ -294,6 +304,10 @@ public class DroneXenomorphBaseScript : Enemy
                 //Move either to player or to a destination, perform attack when possible
 
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
+                if (agent.GetPathSize() == 0)
+                {
+                    droneState = DroneState.IDLE_NO_AGGRO;
+                }
                 LookAt(agent.GetDestination());
 
                 MoveToCalculatedPos(agent.speed);
@@ -415,6 +429,11 @@ public class DroneXenomorphBaseScript : Enemy
 
             droneState = DroneState.KNOCKBACK;
         }
+
+        //if (other.Tag == "Aim")
+        //{
+        //    playerAim.AddEnemy(gameObject);
+        //}
     }
 
     public new void IsReached(Vector3 position, Vector3 destintion)
@@ -464,6 +483,11 @@ public class DroneXenomorphBaseScript : Enemy
                 droneState = DroneState.CLAW;
                 LookAt(player.transform.globalPosition);
                 Animation.PlayAnimation(gameObject, "Claw_Attack");
+
+                //PARTICLES
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesClawSwipe_Drone");
+                Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
+                Particles.PlayParticlesTrigger(particlesGO);
             }
         }
         else if (CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, tailRange) && tailCooldownTime >= tailCooldown)
@@ -478,6 +502,12 @@ public class DroneXenomorphBaseScript : Enemy
                 droneState = DroneState.TAIL;
                 LookAt(player.transform.globalPosition);
                 Animation.PlayAnimation(gameObject, "Drone_Tail_Attack");
+
+                //PARTICLES
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesTailAttack_Drone");
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 33);
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 0);
+                Particles.PlayParticlesTrigger(particlesGO);
             }
         }
     }
@@ -504,4 +534,6 @@ public class DroneXenomorphBaseScript : Enemy
             Animation.ResumeAnimation(gameObject);
         }
     }
+
+
 }
