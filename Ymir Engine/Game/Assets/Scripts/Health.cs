@@ -153,8 +153,11 @@ public class Health : YmirComponent
         if (deathCanvas != null) { deathCanvas.SetActive(true); UI.SetFirstFocused(deathCanvas); }
         if (player != null)
         {
+            currentHealth = maxHealth;
+            player.currentResinVessels = player.maxResinVessels;
+            player.currentLvl = 0;
             player.itemsList.Clear();
-            player.SaveItems();
+            player.SavePlayer();
             player.gameObject.SetActive(false);
         }
 
