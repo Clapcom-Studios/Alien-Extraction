@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 
 using YmirEngine;
 
-public class Workstation : YmirComponent
+public class Item_Stash : YmirComponent
 {
-    public string goName = "Upgrade Station";
+    public string goName = "Stash Canvas";
     private Player player = null;
 
     public GameObject popup;
@@ -23,7 +23,7 @@ public class Workstation : YmirComponent
             player = gameObject_.GetComponent<Player>();
         }
 
-        goName = "Upgrade Station";
+        goName = "Stash Canvas";
         popup = InternalCalls.CS_GetChild(gameObject, 1);
         popup.SetActive(false);
     }
