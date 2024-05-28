@@ -65,6 +65,11 @@ public class PickUp : YmirComponent
                     Debug.Log("Pick up " + gameObject.Name);
                     player.itemsList.Add(Globals.SearchItemInDictionary(gameObject.Name));
 
+                    if (gameObject.Name == "core_mythic")
+                    {
+                        player.numCores++;
+                    }
+
                     picked = true;
                     InternalCalls.Destroy(gameObject);
                 }

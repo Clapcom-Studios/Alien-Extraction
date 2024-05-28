@@ -123,6 +123,8 @@ public class Player : YmirComponent
     public float resinHealing = 400;
     public GameObject resinText = null;
 
+    public int numCores = 0;
+
     #endregion
 
     #region DEFINE SKILL VARS
@@ -1989,6 +1991,23 @@ public class Player : YmirComponent
     private GameObject GetParticles(GameObject go, string pName)
     {
         return InternalCalls.GetChildrenByName(go, pName);
+    }
+
+    #endregion
+
+    #region Items
+
+    public void UpdateAlienCore()
+    {
+        numCores = 0;
+
+        for (int i = 0; i < itemsList.Count; ++i)
+        {
+            if (itemsList[i].dictionaryName == "core_mythic")
+            {
+                ++numCores;
+            }
+        }
     }
 
     #endregion
