@@ -73,7 +73,7 @@ public class UI_Inventory : YmirComponent
         _textDamage = InternalCalls.GetGameObjectByName("Text Damage");
         _textRate = InternalCalls.GetGameObjectByName("Text Rate");
         _textResin = InternalCalls.GetGameObjectByName("Text Resin");
-
+        
         ResetMenuSlots();
 
         UpdateTextStats();

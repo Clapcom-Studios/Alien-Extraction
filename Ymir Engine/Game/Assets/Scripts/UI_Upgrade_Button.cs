@@ -74,12 +74,8 @@ public class UI_Upgrade_Button : YmirComponent
 
     public void OnClickButton()
     {
-        Debug.Log("aaa " + (upgrade.isUnlocked).ToString() + " aaaaaaaaaa " + (currentStation._player.numCores >= upgrade.cost).ToString());
-        Debug.Log("nnnnn " + (!upgrade.isUnlocked && currentStation._player.numCores >= upgrade.cost).ToString() +  " aa " + upgrade.cost.ToString());
-
         if (!upgrade.isUnlocked && currentStation._player.numCores >= upgrade.cost)
         {
-            Debug.Log("nnnnnwedwwwwwwwwww");
             Audio.PlayAudio(audioSource, "UI_WeaponUpgrade");
 
             switch (cost)
