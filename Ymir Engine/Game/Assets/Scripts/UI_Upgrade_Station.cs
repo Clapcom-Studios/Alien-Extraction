@@ -8,10 +8,9 @@ using YmirEngine;
 public class UI_Upgrade_Station : YmirComponent
 {
     private GameObject _focusedGO;
-    public int currentScore;// Put in player
 
     public GameObject description, cost, coins;
-    private Player _player = null;
+    public Player _player = null;
 
     public void Start()
     {
@@ -20,32 +19,17 @@ public class UI_Upgrade_Station : YmirComponent
         cost = InternalCalls.GetChildrenByName(gameObject, "Cost");        
         coins = InternalCalls.GetChildrenByName(gameObject, "Coins");
 
-        UI.TextEdit(coins, currentScore.ToString());
-        GetPlayerScript();
+        _player = Globals.GetPlayerScript();
+        UI.TextEdit(coins, _player.numCores.ToString());
     }
 
     public void Update()
     {
-        if (_player == null)
-        {
-            GetPlayerScript();
-        }
-
         return;
     }
 
     public void UpdateCoins()
     {
-        UI.TextEdit(coins, currentScore.ToString());
-    }
-
-    private void GetPlayerScript()
-    {
-        GameObject gameObject = InternalCalls.GetGameObjectByName("Player");
-
-        if (gameObject != null)
-        {
-            _player = gameObject.GetComponent<Player>();
-        }
+        UI.TextEdit(coins, _player.numCores.ToString());
     }
 }

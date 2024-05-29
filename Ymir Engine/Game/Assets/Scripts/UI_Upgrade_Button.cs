@@ -74,8 +74,12 @@ public class UI_Upgrade_Button : YmirComponent
 
     public void OnClickButton()
     {
-        if (!upgrade.isUnlocked && currentStation.currentScore >= upgrade.cost)
+        Debug.Log("aaa " + (upgrade.isUnlocked).ToString() + " aaaaaaaaaa " + (currentStation._player.numCores >= upgrade.cost).ToString());
+        Debug.Log("nnnnn " + (!upgrade.isUnlocked && currentStation._player.numCores >= upgrade.cost).ToString() +  " aa " + upgrade.cost.ToString());
+
+        if (!upgrade.isUnlocked && currentStation._player.numCores >= upgrade.cost)
         {
+            Debug.Log("nnnnnwedwwwwwwwwww");
             Audio.PlayAudio(audioSource, "UI_WeaponUpgrade");
 
             switch (cost)
@@ -84,7 +88,6 @@ public class UI_Upgrade_Button : YmirComponent
                     {
                         GameObject go2 = InternalCalls.GetChildrenByName(InternalCalls.GetGameObjectByName(stationName), "Upgrade 2");
                         UI.SetUIState(go2, (int)UI_STATE.NORMAL);
-                        currentStation.currentScore -= upgrade.cost;
 
                         upgrade.upgradeType = UPGRADE.LVL_1;
 
@@ -102,7 +105,6 @@ public class UI_Upgrade_Button : YmirComponent
 
                         upgrade.upgradeType = UPGRADE.LVL_2;
 
-                        currentStation.currentScore -= upgrade.cost;
                         upgrade.isUnlocked = true;
                     }
                     break;
@@ -130,14 +132,14 @@ public class UI_Upgrade_Button : YmirComponent
                             upgrade.upgradeType = UPGRADE.LVL_3_BETA;
                         }
 
-                        currentStation.currentScore -= upgrade.cost;
                         upgrade.isUnlocked = true;
                     }
                     break;
             }
 
-            SaveWeaponUpgrade();
+            currentStation._player.UseAlienCore(upgrade.cost);
             currentStation.UpdateCoins();
+            SaveWeaponUpgrade();
         }
 
         _setFocused = true;

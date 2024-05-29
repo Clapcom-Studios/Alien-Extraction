@@ -395,7 +395,7 @@ public class Player : YmirComponent
         movementVector = new Vector3(movementVector.x, gravity, movementVector.z);
 
         // Aim sensor Position
-        if (aimSensor != null) 
+        if (aimSensor != null)
             aimSensor.SetPosition(gameObject.transform.globalPosition);
 
         UpdateControllerInputs();
@@ -480,6 +480,12 @@ public class Player : YmirComponent
         if (Input.GetKey(YmirKeyCode.F8) == KeyState.KEY_DOWN)
         {
             SavePlayer();
+        }
+
+        if (Input.GetKey(YmirKeyCode.F9) == KeyState.KEY_DOWN)
+        {
+            numCores++;
+            UpdateAlienCore();
         }
     }
 
@@ -1726,8 +1732,8 @@ public class Player : YmirComponent
         {
             case true:
                 inputsList.Add(INPUT.I_STOP);
-                break; 
-                
+                break;
+
             case false:
                 inputsList.Add(INPUT.I_IDLE);
                 break;
@@ -1997,7 +2003,7 @@ public class Player : YmirComponent
 
     #region Items
 
-    public void UpdateAlienCore()
+    public void ReCountAlienCore()
     {
         numCores = 0;
 
@@ -2007,6 +2013,41 @@ public class Player : YmirComponent
             {
                 ++numCores;
             }
+        }
+    }
+    public void UseAlienCore(int cost)
+    {
+        numCores -= cost;
+
+        Debug.Log(cost.ToString());
+
+        for (int i = 0; i < cost; i++)
+        {
+            for (int j = 0; j < itemsList.Count; ++j)
+            {
+                if (itemsList[j].dictionaryName == "core_mythic")
+                {
+                    itemsList.Remove(itemsList[j]);
+                    break;
+                }
+            }
+        }
+    }
+
+    public void UpdateAlienCore()
+    {
+        int coresInList = 0;
+        for (int i = 0; i < itemsList.Count; ++i)
+        {
+            if (itemsList[i].dictionaryName == "core_mythic")
+            {
+                ++coresInList;
+            }
+        }
+
+        for (int i = 0; i < numCores - coresInList; ++i)
+        {
+            itemsList.Add(Globals.SearchItemInDictionary("core_mythic"));
         }
     }
 
