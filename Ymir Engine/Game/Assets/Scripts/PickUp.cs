@@ -46,6 +46,7 @@ public class PickUp : YmirComponent
 
                     picked = true;
                     _itemPickedPopUp?.SetActive(true);
+                    _itemPickedPopUp?.GetComponent<PickUpPopUp>().ResetTimer();
 
                     InternalCalls.Destroy(gameObject);
                 }
@@ -78,13 +79,15 @@ public class PickUp : YmirComponent
 
                     picked = true;
                     _itemPickedPopUp?.SetActive(true);
+                    _itemPickedPopUp?.GetComponent<PickUpPopUp>().ResetTimer();
 
                     InternalCalls.Destroy(gameObject);
                 }
                 else
                 {
                     // TODO: Feedback inventory full
-                    _inventoryFullPopUp?.SetActive(true);                
+                    _inventoryFullPopUp?.SetActive(true);
+                    _inventoryFullPopUp?.GetComponent<PickUpPopUp>().ResetTimer();
                 }
             }
         }

@@ -8,7 +8,7 @@ using YmirEngine;
 
 public class PickUpPopUp : YmirComponent
 {
-	public float popUpTime = 2;
+	public float popUpTime = 4;
 	private float _popupTimer = 0;
 
 	public void Start()
@@ -21,13 +21,21 @@ public class PickUpPopUp : YmirComponent
 		if (gameObject.IsActive())
 		{
 			_popupTimer += Time.deltaTime;
-			if (_popupTimer > popUpTime) EndPopUp();
+			if (_popupTimer > popUpTime)
+			{
+				EndPopUp();
+			}
 		}
+	}
+
+	public void ResetTimer() 
+	{ 
+		_popupTimer = 0; 
 	}
 
 	void EndPopUp()
 	{
-		_popupTimer = 0;
+		ResetTimer();
         gameObject.SetActive(false);
     }
 }
