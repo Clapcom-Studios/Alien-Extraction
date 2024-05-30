@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 819343133,
+            "UID": 1062516611,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -43,8 +43,8 @@
                 365492027,
                 2098616738,
                 869362369,
-                297696942,
                 369438965,
+                297696942,
                 1827062016,
                 1676754095,
                 1781007999,
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9949,7 +9949,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12720,7 +12720,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12757,7 +12757,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13129,9 +13129,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -82.532630920410156,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13214,9 +13214,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -27.589302062988281,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13288,7 +13288,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13299,9 +13299,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -89.980216979980469,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13483,7 +13483,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13635,7 +13635,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13787,7 +13787,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13814,8 +13814,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 723,
-                    "Height": 521,
+                    "Width": 1909,
+                    "Height": 1003,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -15814,7 +15814,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22676,7 +22676,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24538,7 +24538,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53331,7 +53331,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53373,8 +53373,7 @@
                     "Type": "Script",
                     "ScriptName": "UI_Upgrade_Station.cs",
                     "Active": 1,
-                    "UID": 0,
-                    "currentScore": 10
+                    "UID": 0
                 },
                 {
                     "Type": "Audio source",
@@ -57341,758 +57340,13 @@
             ]
         },
         {
-            "Name": "Npc_Dialogue",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 297696942,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 819343133,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 1004,
-                    "Height": 710,
-                    "UI Type": 0,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        0,
-                        0,
-                        576,
-                        891
-                    ]
-                }
-            ],
-            "Children UID": [
-                1739948149
-            ]
-        },
-        {
-            "Name": "Dialogue",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1739948149,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 297696942,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 1920,
-                    "Height": 1080,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        0,
-                        0,
-                        1920,
-                        1080
-                    ],
-                    "Path": "Assets\/Dialogue\/Dialogo.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ],
-            "Children UID": [
-                700964825,
-                1342986595,
-                1379074657,
-                300149188,
-                829122760,
-                1268995095,
-                663330962,
-                438435483,
-                1147536281,
-                2036120965
-            ]
-        },
-        {
-            "Name": "Name_Npc",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 700964825,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 487,
-                    "Position Y": 787,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        487,
-                        787,
-                        200,
-                        50
-                    ],
-                    "Text": "This is a text",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 25,
-                    "Line Spacing": 1,
-                    "Color": [
-                        2.0099999904632568,
-                        1.7200000286102295,
-                        1.4099999666213989,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "dialogue_Npc",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1342986595,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 421,
-                    "Position Y": 862,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        421,
-                        862,
-                        200,
-                        50
-                    ],
-                    "Text": "This is a text",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 16,
-                    "Line Spacing": 2,
-                    "Color": [
-                        2.0099999904632568,
-                        2.0099999904632568,
-                        2.0099999904632568,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "buttonY",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1379074657,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1360,
-                    "Position Y": 238,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1360,
-                        238,
-                        200,
-                        50
-                    ],
-                    "Text": "This is a text",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 13,
-                    "Line Spacing": 2,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "buttonB",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 300149188,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1360,
-                    "Position Y": 376,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1360,
-                        376,
-                        200,
-                        50
-                    ],
-                    "Text": "This is a text",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 13,
-                    "Line Spacing": 2,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "buttonA",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 829122760,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1360,
-                    "Position Y": 516,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1360,
-                        516,
-                        200,
-                        50
-                    ],
-                    "Text": "This is a text",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 13,
-                    "Line Spacing": 2,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "buttonX",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1268995095,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1360,
-                    "Position Y": 656,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1360,
-                        656,
-                        200,
-                        50
-                    ],
-                    "Text": "This is a text",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 13,
-                    "Line Spacing": 2,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "Y",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 663330962,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1780,
-                    "Position Y": 287,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1780,
-                        287,
-                        200,
-                        50
-                    ],
-                    "Text": "Y",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 20,
-                    "Line Spacing": 1,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "B",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 438435483,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1780,
-                    "Position Y": 427,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1780,
-                        427,
-                        200,
-                        50
-                    ],
-                    "Text": "B",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 20,
-                    "Line Spacing": 1,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "A",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1147536281,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1780,
-                    "Position Y": 566,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1780,
-                        566,
-                        200,
-                        50
-                    ],
-                    "Text": "A",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 20,
-                    "Line Spacing": 1,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
-            "Name": "X",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 2036120965,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1739948149,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 1780,
-                    "Position Y": 704,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1780,
-                        704,
-                        200,
-                        50
-                    ],
-                    "Text": "X",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 20,
-                    "Line Spacing": 1,
-                    "Color": [
-                        1,
-                        1,
-                        1,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
-                }
-            ]
-        },
-        {
             "Name": "Crafting Canvas",
             "Static": false,
             "Tag": "Untagged",
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -58119,8 +57373,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1877,
-                    "Height": 1010,
+                    "Width": 1786,
+                    "Height": 1040,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -58238,12 +57492,26 @@
                         1,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "UI_Crafting_Grid.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "rows": 4,
+                    "cols": 4,
+                    "leftGridName": " ",
+                    "rightGridName": "Inventory Craft",
+                    "downGridName": " ",
+                    "upGridName": " ",
+                    "navigateX": true,
+                    "navigateY": true,
+                    "bounceX": true,
+                    "bounceY": true
                 }
             ],
             "Children UID": [
                 764361758,
-                477118258,
-                1783776590,
                 895822179,
                 919940766,
                 1191969792
@@ -58279,25 +57547,6 @@
                 },
                 {
                     "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 4,
-                    "leftGridName": " ",
-                    "rightGridName": "Inventory Craft",
-                    "downGridName": "Grenade Grid",
-                    "upGridName": "Resin Grid",
-                    "navigateX": true,
-                    "navigateY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                },
-                {
-                    "Type": "Script",
                     "ScriptName": "UI_Crafting_Recipe.cs",
                     "Active": 1,
                     "UID": 0,
@@ -58324,8 +57573,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        413,
-                        166,
+                        314,
+                        260,
                         0
                     ],
                     "Rotation": [
@@ -58385,8 +57634,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        166,
+                        314,
+                        260,
                         100,
                         100
                     ],
@@ -58448,8 +57697,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        166,
+                        314,
+                        260,
                         100,
                         100
                     ],
@@ -58511,8 +57760,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        166,
+                        314,
+                        260,
                         100,
                         100
                     ],
@@ -58544,8 +57793,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        166,
+                        314,
+                        220,
                         300,
                         50
                     ],
@@ -58620,8 +57869,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        568,
-                        166,
+                        469,
+                        260,
                         0
                     ],
                     "Rotation": [
@@ -58681,8 +57930,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        166,
+                        469,
+                        260,
                         100,
                         100
                     ],
@@ -58744,8 +57993,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        166,
+                        469,
+                        260,
                         100,
                         100
                     ],
@@ -58807,8 +58056,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        166,
+                        469,
+                        260,
                         100,
                         100
                     ],
@@ -58840,8 +58089,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        166,
+                        469,
+                        220,
                         300,
                         50
                     ],
@@ -58916,8 +58165,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        726,
-                        166,
+                        627,
+                        260,
                         0
                     ],
                     "Rotation": [
@@ -58977,8 +58226,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        166,
+                        627,
+                        260,
                         100,
                         100
                     ],
@@ -59040,8 +58289,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        166,
+                        627,
+                        260,
                         100,
                         100
                     ],
@@ -59103,8 +58352,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        166,
+                        627,
+                        260,
                         100,
                         100
                     ],
@@ -59136,8 +58385,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        166,
+                        627,
+                        220,
                         300,
                         50
                     ],
@@ -59212,8 +58461,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        1006,
-                        166,
+                        996,
+                        260,
                         0
                     ],
                     "Rotation": [
@@ -59273,8 +58522,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        166,
+                        996,
+                        260,
                         100,
                         100
                     ],
@@ -59336,8 +58585,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        166,
+                        996,
+                        260,
                         100,
                         100
                     ],
@@ -59399,8 +58648,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        166,
+                        996,
+                        260,
                         100,
                         100
                     ],
@@ -59432,1912 +58681,14 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        166,
+                        996,
+                        223,
                         300,
                         50
                     ],
                     "Is interactable": true,
                     "Text": 4294967295,
                     "Image": 2103736165,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
-            "Name": "Grenade Grid",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 477118258,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1309247317,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 3,
-                    "leftGridName": " ",
-                    "rightGridName": "Inventory Craft",
-                    "downGridName": "Baker Grid",
-                    "upGridName": "Armor Grid",
-                    "navigateX": true,
-                    "navigateY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Crafting_Recipe.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "craftName": "grenade"
-                }
-            ],
-            "Children UID": [
-                883046283,
-                1792022099,
-                388383255
-            ]
-        },
-        {
-            "Name": "Alien Skin (3)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 883046283,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 477118258,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        568,
-                        302,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                22513458,
-                919902780,
-                1753942895
-            ]
-        },
-        {
-            "Name": "Image Background (91)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 22513458,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 883046283,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        302,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (91)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 919902780,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 883046283,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        302,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (85)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1753942895,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 883046283,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        302,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        302,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 1753942895,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
-            "Name": "Alien Acid Vesicle (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1792022099,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 477118258,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        726,
-                        302,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                867400171,
-                1937874478,
-                153903004
-            ]
-        },
-        {
-            "Name": "Image Background (92)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 867400171,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1792022099,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        302,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (92)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1937874478,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1792022099,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        302,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (86)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 153903004,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1792022099,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        302,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        302,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 153903004,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
-            "Name": "Grenade",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 388383255,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 477118258,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        1006,
-                        303,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                117885094,
-                1341504038,
-                1809997916
-            ]
-        },
-        {
-            "Name": "Image Background (93)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 117885094,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 388383255,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        303,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (93)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1341504038,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 388383255,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        303,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (87)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1809997916,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 388383255,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        303,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        303,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 1809997916,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
-            "Name": "Baker Grid",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1783776590,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1309247317,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 3,
-                    "leftGridName": " ",
-                    "rightGridName": "Inventory Craft",
-                    "downGridName": "Offensive Grid",
-                    "upGridName": "Grenade Grid",
-                    "navigateX": true,
-                    "navigateY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Crafting_Recipe.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "craftName": "bakerhouse"
-                }
-            ],
-            "Children UID": [
-                584613517,
-                1312694946,
-                1838336280
-            ]
-        },
-        {
-            "Name": "Alien Claw (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 584613517,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1783776590,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        568,
-                        439,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1457456203,
-                1566248593,
-                1219681845
-            ]
-        },
-        {
-            "Name": "Image Background (94)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1457456203,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 584613517,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        439,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (94)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1566248593,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 584613517,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        439,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (88)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1219681845,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 584613517,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        439,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        568,
-                        439,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 1219681845,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
-            "Name": "Alien Tail Tip (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1312694946,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1783776590,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        726,
-                        439,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1542524570,
-                1784766434,
-                1903393087
-            ]
-        },
-        {
-            "Name": "Image Background (95)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1542524570,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1312694946,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        439,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (95)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1784766434,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1312694946,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        439,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (89)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1903393087,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1312694946,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        439,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        726,
-                        439,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 1903393087,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
-            "Name": "Baker House",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1838336280,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1783776590,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        1006,
-                        438,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1903286632,
-                851187635,
-                722738141
-            ]
-        },
-        {
-            "Name": "Image Background (96)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1903286632,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1838336280,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        438,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (96)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 851187635,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1838336280,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        438,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (90)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 722738141,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1838336280,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        438,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        1006,
-                        438,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 722738141,
                     "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
                     "Focused": "Assets\/UI\/Items Slots\/onHover.png",
                     "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
@@ -61423,25 +58774,6 @@
                 },
                 {
                     "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 4,
-                    "leftGridName": " ",
-                    "rightGridName": "Inventory Craft",
-                    "downGridName": "Defensive Grid",
-                    "upGridName": "Baker Grid",
-                    "navigateX": true,
-                    "navigateY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                },
-                {
-                    "Type": "Script",
                     "ScriptName": "UI_Crafting_Recipe.cs",
                     "Active": 1,
                     "UID": 0,
@@ -61468,8 +58800,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        413,
-                        574,
+                        314,
+                        407,
                         0
                     ],
                     "Rotation": [
@@ -61529,8 +58861,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        574,
+                        314,
+                        407,
                         100,
                         100
                     ],
@@ -61592,8 +58924,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        574,
+                        314,
+                        407,
                         100,
                         100
                     ],
@@ -61655,8 +58987,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        574,
+                        314,
+                        407,
                         100,
                         100
                     ],
@@ -61688,8 +59020,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        574,
+                        314,
+                        492,
                         300,
                         50
                     ],
@@ -61764,8 +59096,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        568,
-                        574,
+                        469,
+                        407,
                         0
                     ],
                     "Rotation": [
@@ -61825,8 +59157,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        574,
+                        469,
+                        407,
                         100,
                         100
                     ],
@@ -61888,8 +59220,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        574,
+                        469,
+                        407,
                         100,
                         100
                     ],
@@ -61951,8 +59283,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        574,
+                        469,
+                        407,
                         100,
                         100
                     ],
@@ -61984,8 +59316,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        574,
+                        469,
+                        492,
                         300,
                         50
                     ],
@@ -62060,8 +59392,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        727,
-                        574,
+                        628,
+                        407,
                         0
                     ],
                     "Rotation": [
@@ -62121,8 +59453,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        574,
+                        628,
+                        407,
                         100,
                         100
                     ],
@@ -62184,8 +59516,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        574,
+                        628,
+                        407,
                         100,
                         100
                     ],
@@ -62247,8 +59579,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        574,
+                        628,
+                        407,
                         100,
                         100
                     ],
@@ -62280,8 +59612,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        574,
+                        628,
+                        492,
                         300,
                         50
                     ],
@@ -62356,8 +59688,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        1006,
-                        574,
+                        996,
+                        407,
                         0
                     ],
                     "Rotation": [
@@ -62417,8 +59749,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        574,
+                        996,
+                        407,
                         100,
                         100
                     ],
@@ -62480,8 +59812,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        574,
+                        996,
+                        407,
                         100,
                         100
                     ],
@@ -62543,8 +59875,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        574,
+                        996,
+                        407,
                         100,
                         100
                     ],
@@ -62576,8 +59908,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        574,
+                        996,
+                        494,
                         300,
                         50
                     ],
@@ -62669,25 +60001,6 @@
                 },
                 {
                     "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 4,
-                    "leftGridName": " ",
-                    "rightGridName": "Inventory Craft",
-                    "downGridName": "Resin Grid",
-                    "upGridName": "Offensive Grid",
-                    "navigateX": true,
-                    "navigateY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                },
-                {
-                    "Type": "Script",
                     "ScriptName": "UI_Crafting_Recipe.cs",
                     "Active": 1,
                     "UID": 0,
@@ -62714,8 +60027,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        413,
-                        714,
+                        315,
+                        561,
                         0
                     ],
                     "Rotation": [
@@ -62775,8 +60088,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        714,
+                        315,
+                        561,
                         100,
                         100
                     ],
@@ -62838,8 +60151,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        714,
+                        315,
+                        561,
                         100,
                         100
                     ],
@@ -62901,8 +60214,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        714,
+                        315,
+                        561,
                         100,
                         100
                     ],
@@ -62934,8 +60247,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        413,
-                        714,
+                        315,
+                        631,
                         300,
                         50
                     ],
@@ -63010,8 +60323,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        569,
-                        714,
+                        470,
+                        561,
                         0
                     ],
                     "Rotation": [
@@ -63071,8 +60384,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        569,
-                        714,
+                        470,
+                        561,
                         100,
                         100
                     ],
@@ -63134,8 +60447,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        569,
-                        714,
+                        470,
+                        561,
                         100,
                         100
                     ],
@@ -63197,8 +60510,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        569,
-                        714,
+                        470,
+                        561,
                         100,
                         100
                     ],
@@ -63230,8 +60543,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        569,
-                        714,
+                        470,
+                        632,
                         300,
                         50
                     ],
@@ -63306,8 +60619,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        727,
-                        714,
+                        628,
+                        561,
                         0
                     ],
                     "Rotation": [
@@ -63367,8 +60680,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        714,
+                        628,
+                        561,
                         100,
                         100
                     ],
@@ -63430,8 +60743,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        714,
+                        628,
+                        561,
                         100,
                         100
                     ],
@@ -63493,8 +60806,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        714,
+                        628,
+                        561,
                         100,
                         100
                     ],
@@ -63526,8 +60839,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        727,
-                        714,
+                        628,
+                        632,
                         300,
                         50
                     ],
@@ -63602,8 +60915,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        1006,
-                        711,
+                        996,
+                        561,
                         0
                     ],
                     "Rotation": [
@@ -63663,8 +60976,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        711,
+                        996,
+                        561,
                         100,
                         100
                     ],
@@ -63726,8 +61039,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        711,
+                        996,
+                        561,
                         100,
                         100
                     ],
@@ -63789,8 +61102,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        711,
+                        996,
+                        561,
                         100,
                         100
                     ],
@@ -63822,8 +61135,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        711,
+                        996,
+                        631,
                         300,
                         50
                     ],
@@ -63915,25 +61228,6 @@
                 },
                 {
                     "Type": "Script",
-                    "ScriptName": "UI_Inventory_Grid.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "rows": 1,
-                    "cols": 5,
-                    "leftGridName": " ",
-                    "rightGridName": "Inventory Craft",
-                    "downGridName": "Armor Grid",
-                    "upGridName": "Defensive Grid",
-                    "navigateX": true,
-                    "navigateY": true,
-                    "bounceX": false,
-                    "bounceY": false,
-                    "empty": true,
-                    "childX": 0,
-                    "childY": 0
-                },
-                {
-                    "Type": "Script",
                     "ScriptName": "UI_Crafting_Recipe.cs",
                     "Active": 1,
                     "UID": 0,
@@ -63942,7 +61236,6 @@
             ],
             "Children UID": [
                 1558854855,
-                1804950507,
                 1534675276,
                 1514810658,
                 838884383
@@ -63961,8 +61254,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        261,
-                        849,
+                        313,
+                        721,
                         0
                     ],
                     "Rotation": [
@@ -64022,8 +61315,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        261,
-                        849,
+                        313,
+                        721,
                         100,
                         100
                     ],
@@ -64085,8 +61378,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        261,
-                        849,
+                        313,
+                        721,
                         100,
                         100
                     ],
@@ -64148,8 +61441,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        261,
-                        849,
+                        313,
+                        721,
                         100,
                         100
                     ],
@@ -64181,8 +61474,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        261,
-                        849,
+                        313,
+                        767,
                         300,
                         50
                     ],
@@ -64245,302 +61538,6 @@
             ]
         },
         {
-            "Name": "Alien Skin",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1804950507,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1191969792,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        412,
-                        849,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                707428863,
-                1300448198,
-                1698285226
-            ]
-        },
-        {
-            "Name": "Image Background (106)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 707428863,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1804950507,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        412,
-                        849,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.5
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Image Item (106)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1300448198,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1804950507,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        412,
-                        849,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/New Buttons\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Item Button (100)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1698285226,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1804950507,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 100,
-                    "Height": 100,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        412,
-                        849,
-                        100,
-                        100
-                    ],
-                    "Path": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0.20000000298023224
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 0,
-                    "Position Y": 0,
-                    "Width": 300,
-                    "Height": 50,
-                    "UI Type": 3,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        412,
-                        849,
-                        300,
-                        50
-                    ],
-                    "Is interactable": true,
-                    "Text": 4294967295,
-                    "Image": 1698285226,
-                    "Normal": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Pressed": "Assets\/UI\/Items Slots\/onPressed.png",
-                    "Selected": "Assets\/UI\/Items Slots\/onHover.png",
-                    "Release": "Assets\/Baker_house.png",
-                    "Disabled": "Assets\/UI\/Items Slots\/Unselected.png",
-                    "Focused color": [
-                        0,
-                        1,
-                        0,
-                        1
-                    ],
-                    "Pressed color": [
-                        1,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Selected color": [
-                        0,
-                        0,
-                        1,
-                        1
-                    ],
-                    "Disabled color": [
-                        1,
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "UI_Item_Button.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "currentSlot": 0,
-                    "enumItem": "NONE",
-                    "enumSlot": "MATERIAL",
-                    "enumRarity": "",
-                    "menuName": "Crafting Canvas",
-                    "updateStats": true,
-                    "name": "",
-                    "itemType": 0,
-                    "itemRarity": 0,
-                    "HP": 0,
-                    "armor": 0,
-                    "speed": 0,
-                    "fireRate": 0,
-                    "reloadSpeed": 0,
-                    "damageMultiplier": 0,
-                    "isEquipped": true
-                }
-            ]
-        },
-        {
             "Name": "Alien Acid Vesicle",
             "Static": false,
             "Tag": "Untagged",
@@ -64553,8 +61550,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        568,
-                        849,
+                        469,
+                        721,
                         0
                     ],
                     "Rotation": [
@@ -64614,8 +61611,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        849,
+                        469,
+                        721,
                         100,
                         100
                     ],
@@ -64677,8 +61674,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        849,
+                        469,
+                        721,
                         100,
                         100
                     ],
@@ -64740,8 +61737,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        849,
+                        469,
+                        721,
                         100,
                         100
                     ],
@@ -64773,8 +61770,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        568,
-                        849,
+                        469,
+                        768,
                         300,
                         50
                     ],
@@ -64849,8 +61846,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        726,
-                        849,
+                        627,
+                        721,
                         0
                     ],
                     "Rotation": [
@@ -64910,8 +61907,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        849,
+                        627,
+                        721,
                         100,
                         100
                     ],
@@ -64973,8 +61970,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        849,
+                        627,
+                        721,
                         100,
                         100
                     ],
@@ -65036,8 +62033,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        849,
+                        627,
+                        721,
                         100,
                         100
                     ],
@@ -65069,8 +62066,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        726,
-                        849,
+                        627,
+                        768,
                         300,
                         50
                     ],
@@ -65145,8 +62142,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        1006,
-                        847,
+                        996,
+                        721,
                         0
                     ],
                     "Rotation": [
@@ -65206,8 +62203,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        847,
+                        996,
+                        721,
                         100,
                         100
                     ],
@@ -65269,8 +62266,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        847,
+                        996,
+                        721,
                         100,
                         100
                     ],
@@ -65332,8 +62329,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        847,
+                        996,
+                        721,
                         100,
                         100
                     ],
@@ -65365,8 +62362,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        1006,
-                        847,
+                        996,
+                        767,
                         300,
                         50
                     ],
@@ -70548,13 +67545,758 @@
             ]
         },
         {
+            "Name": "Npc_Dialogue",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 297696942,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1062516611,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1004,
+                    "Height": 710,
+                    "UI Type": 0,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        576,
+                        891
+                    ]
+                }
+            ],
+            "Children UID": [
+                1739948149
+            ]
+        },
+        {
+            "Name": "Dialogue",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1739948149,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 297696942,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/Dialogue\/Dialogo.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ],
+            "Children UID": [
+                700964825,
+                1342986595,
+                1379074657,
+                300149188,
+                829122760,
+                1268995095,
+                663330962,
+                438435483,
+                1147536281,
+                2036120965
+            ]
+        },
+        {
+            "Name": "Name_Npc",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 700964825,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 487,
+                    "Position Y": 787,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        487,
+                        787,
+                        200,
+                        50
+                    ],
+                    "Text": "This is a text",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 25,
+                    "Line Spacing": 1,
+                    "Color": [
+                        2.0099999904632568,
+                        1.7200000286102295,
+                        1.4099999666213989,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "dialogue_Npc",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1342986595,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 421,
+                    "Position Y": 862,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        421,
+                        862,
+                        200,
+                        50
+                    ],
+                    "Text": "This is a text",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 16,
+                    "Line Spacing": 2,
+                    "Color": [
+                        2.0099999904632568,
+                        2.0099999904632568,
+                        2.0099999904632568,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "buttonY",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1379074657,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1360,
+                    "Position Y": 238,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1360,
+                        238,
+                        200,
+                        50
+                    ],
+                    "Text": "This is a text",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 13,
+                    "Line Spacing": 2,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "buttonB",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 300149188,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1360,
+                    "Position Y": 376,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1360,
+                        376,
+                        200,
+                        50
+                    ],
+                    "Text": "This is a text",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 13,
+                    "Line Spacing": 2,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "buttonA",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 829122760,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1360,
+                    "Position Y": 516,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1360,
+                        516,
+                        200,
+                        50
+                    ],
+                    "Text": "This is a text",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 13,
+                    "Line Spacing": 2,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "buttonX",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1268995095,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1360,
+                    "Position Y": 656,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1360,
+                        656,
+                        200,
+                        50
+                    ],
+                    "Text": "This is a text",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 13,
+                    "Line Spacing": 2,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Y",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 663330962,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1780,
+                    "Position Y": 287,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1780,
+                        287,
+                        200,
+                        50
+                    ],
+                    "Text": "Y",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 20,
+                    "Line Spacing": 1,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "B",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 438435483,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1780,
+                    "Position Y": 427,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1780,
+                        427,
+                        200,
+                        50
+                    ],
+                    "Text": "B",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 20,
+                    "Line Spacing": 1,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "A",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1147536281,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1780,
+                    "Position Y": 566,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1780,
+                        566,
+                        200,
+                        50
+                    ],
+                    "Text": "A",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 20,
+                    "Line Spacing": 1,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "X",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2036120965,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1739948149,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 1780,
+                    "Position Y": 704,
+                    "Width": 200,
+                    "Height": 50,
+                    "UI Type": 2,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        1780,
+                        704,
+                        200,
+                        50
+                    ],
+                    "Text": "X",
+                    "Font name": "NK57 Monospace Se Bd.otf",
+                    "Font path": "Assets\\Fonts",
+                    "Font size": 20,
+                    "Line Spacing": 1,
+                    "Color": [
+                        1,
+                        1,
+                        1,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 2
+                }
+            ]
+        },
+        {
             "Name": "Death Canvas",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71095,7 +68837,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71450,7 +69192,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71563,7 +69305,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71590,8 +69332,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1878,
-                    "Height": 1017,
+                    "Width": 1909,
+                    "Height": 1003,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -71605,7 +69347,8 @@
             "Children UID": [
                 93749415,
                 1184541440,
-                259721126
+                259721126,
+                1628008163
             ]
         },
         {
@@ -71746,8 +69489,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        734,
-                        424,
+                        742,
+                        459,
                         0
                     ],
                     "Rotation": [
@@ -71826,8 +69569,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         424,
                         152
                     ],
@@ -71868,7 +69611,7 @@
                     "Text": 798937101,
                     "Image": 1256989267,
                     "Normal": "Assets\/UI\/Buttons\/Button_unpressed.png",
-                    "Focused": "Assets\/UI\/Buttons\/Button_pressed.png",
+                    "Focused": "Assets\/UI\/Buttons\/Button.png",
                     "Pressed": "Assets\/UI\/Buttons\/Button_pressed.png",
                     "Selected": "Assets\/UI\/Buttons\/Button.png",
                     "Release": "Assets\/penguin.png",
@@ -71950,8 +69693,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        889,
-                        501,
+                        897,
+                        536,
                         300,
                         50
                     ],
@@ -72012,8 +69755,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        553,
+                        742,
+                        588,
                         424,
                         152
                     ],
@@ -72054,7 +69797,7 @@
                     "Text": 1652380264,
                     "Image": 2072063440,
                     "Normal": "Assets\/UI\/Buttons\/Button_unpressed.png",
-                    "Focused": "Assets\/UI\/Buttons\/Button_pressed.png",
+                    "Focused": "Assets\/UI\/Buttons\/Button.png",
                     "Pressed": "Assets\/UI\/Buttons\/Button_pressed.png",
                     "Selected": "Assets\/UI\/Buttons\/Button.png",
                     "Release": "Assets\/penguin.png",
@@ -72137,8 +69880,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        869,
-                        626,
+                        877,
+                        661,
                         300,
                         50
                     ],
@@ -72199,8 +69942,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        685,
+                        742,
+                        720,
                         424,
                         152
                     ],
@@ -72241,7 +69984,7 @@
                     "Text": 151134588,
                     "Image": 983362550,
                     "Normal": "Assets\/UI\/Buttons\/Button_unpressed.png",
-                    "Focused": "Assets\/UI\/Buttons\/Button_pressed.png",
+                    "Focused": "Assets\/UI\/Buttons\/Button.png",
                     "Pressed": "Assets\/UI\/Buttons\/Button_pressed.png",
                     "Selected": "Assets\/UI\/Buttons\/Button.png",
                     "Release": "Assets\/penguin.png",
@@ -72321,8 +70064,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        900,
-                        761,
+                        908,
+                        796,
                         300,
                         50
                     ],
@@ -72351,13 +70094,91 @@
             ]
         },
         {
+            "Name": "PauseAnim",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1628008163,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 728169813,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/SpriteSheets\/PauseSpritesheet.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 3,
+                    "Columns": 4,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "UI_Animation.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "loop": false,
+                    "pingpongWIP": false,
+                    "backwards": false,
+                    "animState": true,
+                    "delay": 0.10000000149011612,
+                    "loopCount": 0,
+                    "totalFrames": 12,
+                    "currentIndex": 0,
+                    "disableOnFinish": true
+                }
+            ]
+        },
+        {
             "Name": "Prefab-Player",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 819343133,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72519,6 +70340,7 @@
                     "currentResinVessels": 0,
                     "maxResinVessels": 2,
                     "resinHealing": 400,
+                    "numCores": 0,
                     "dashDuration": 0.25,
                     "dashDistance": 400,
                     "swipeTimer": -0.022000163793563843,

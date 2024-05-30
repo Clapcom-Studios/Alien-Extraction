@@ -7,7 +7,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2105203336,
+            "Parent UID": 1062516611,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34,8 +34,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1927,
-                    "Height": 1111,
+                    "Width": 1909,
+                    "Height": 1003,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -49,7 +49,8 @@
             "Children UID": [
                 93749415,
                 1184541440,
-                259721126
+                259721126,
+                1628008163
             ]
         },
         {
@@ -190,8 +191,8 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        734,
-                        424,
+                        742,
+                        459,
                         0
                     ],
                     "Rotation": [
@@ -216,8 +217,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "naviagteX": false,
-                    "naviagteY": false,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -270,8 +271,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         424,
                         152
                     ],
@@ -312,7 +313,7 @@
                     "Text": 798937101,
                     "Image": 1256989267,
                     "Normal": "Assets\/UI\/Buttons\/Button_unpressed.png",
-                    "Focused": "Assets\/UI\/Buttons\/Button_pressed.png",
+                    "Focused": "Assets\/UI\/Buttons\/Button.png",
                     "Pressed": "Assets\/UI\/Buttons\/Button_pressed.png",
                     "Selected": "Assets\/UI\/Buttons\/Button.png",
                     "Release": "Assets\/penguin.png",
@@ -394,8 +395,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        889,
-                        501,
+                        897,
+                        536,
                         300,
                         50
                     ],
@@ -456,8 +457,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        553,
+                        742,
+                        588,
                         424,
                         152
                     ],
@@ -498,7 +499,7 @@
                     "Text": 1652380264,
                     "Image": 2072063440,
                     "Normal": "Assets\/UI\/Buttons\/Button_unpressed.png",
-                    "Focused": "Assets\/UI\/Buttons\/Button_pressed.png",
+                    "Focused": "Assets\/UI\/Buttons\/Button.png",
                     "Pressed": "Assets\/UI\/Buttons\/Button_pressed.png",
                     "Selected": "Assets\/UI\/Buttons\/Button.png",
                     "Release": "Assets\/penguin.png",
@@ -581,8 +582,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        869,
-                        626,
+                        877,
+                        661,
                         300,
                         50
                     ],
@@ -643,8 +644,8 @@
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        685,
+                        742,
+                        720,
                         424,
                         152
                     ],
@@ -685,7 +686,7 @@
                     "Text": 151134588,
                     "Image": 983362550,
                     "Normal": "Assets\/UI\/Buttons\/Button_unpressed.png",
-                    "Focused": "Assets\/UI\/Buttons\/Button_pressed.png",
+                    "Focused": "Assets\/UI\/Buttons\/Button.png",
                     "Pressed": "Assets\/UI\/Buttons\/Button_pressed.png",
                     "Selected": "Assets\/UI\/Buttons\/Button.png",
                     "Release": "Assets\/penguin.png",
@@ -765,8 +766,8 @@
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        900,
-                        761,
+                        908,
+                        796,
                         300,
                         50
                     ],
@@ -791,6 +792,84 @@
                     "ScriptName": "Button_Exit.cs",
                     "Active": 1,
                     "UID": 0
+                }
+            ]
+        },
+        {
+            "Name": "PauseAnim",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1628008163,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 728169813,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/SpriteSheets\/PauseSpritesheet.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 3,
+                    "Columns": 4,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "UI_Animation.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "loop": false,
+                    "pingpongWIP": false,
+                    "backwards": false,
+                    "animState": true,
+                    "delay": 0.10000000149011612,
+                    "loopCount": 0,
+                    "totalFrames": 12,
+                    "currentIndex": 0,
+                    "disableOnFinish": true
                 }
             ]
         }
