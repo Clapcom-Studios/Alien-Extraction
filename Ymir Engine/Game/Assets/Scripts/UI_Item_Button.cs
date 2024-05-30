@@ -74,8 +74,18 @@ public class UI_Item_Button : YmirComponent
                     _menuReference.GetComponent<UI_Inventory>().UpdateTextStats();
                 }
             }
-            else
+            else /*if (item.currentSlot != ITEM_SLOT.SAVE)*/
             {
+                if (item.currentSlot == ITEM_SLOT.SAVE)
+                {
+                    item.inSave = true;
+                }
+                else
+                {
+                    item.inSave = false;
+
+                }
+
                 if (item.isEquipped)
                 {
                     item.isEquipped = false;
@@ -253,6 +263,10 @@ public class UI_Item_Button : YmirComponent
             item.currentSlot == ITEM_SLOT.NONE || item.currentSlot == ITEM_SLOT.MATERIAL) && Equals(menuName, "Inventory Menu"))))
         {
             if (_item.isEquipped)
+            {
+                _item.currentSlot = _item.itemType;
+            }
+            else if (_item.inSave)
             {
                 _item.currentSlot = _item.itemType;
             }

@@ -132,6 +132,7 @@ public class Button_Navigation : YmirComponent
     public void SaveNewEmptyGame()
     {
         int i = 0;
+
         while (SaveLoad.GameFileExists(Globals.saveGameDir, "Player_" + i.ToString()))
         {
             i++;
@@ -166,5 +167,6 @@ public class Button_Navigation : YmirComponent
         SaveLoad.SaveFloat(Globals.saveGameDir, fileName, "Potties healing", 400);
 
         SaveLoad.SaveInt(Globals.saveGameDir, fileName, "Items num", 0);
+        SaveLoad.SaveString(Globals.saveGameDir, fileName, "Save Item", "NONE");
     }
 }

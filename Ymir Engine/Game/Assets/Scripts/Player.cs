@@ -485,6 +485,8 @@ public class Player : YmirComponent
         if (Input.GetKey(YmirKeyCode.F9) == KeyState.KEY_DOWN)
         {
             numCores++;
+            Debug.Log("Debug Add cores. Current: " + numCores.ToString());
+
             UpdateAlienCore();
         }
     }
@@ -2015,6 +2017,7 @@ public class Player : YmirComponent
             }
         }
     }
+
     public void UseAlienCore(int cost)
     {
         numCores -= cost;
@@ -2081,17 +2084,28 @@ public class Player : YmirComponent
 
         // Others
         SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Iscariot dialogue", hasTalkedIscariot);
+
+        Debug.Log("Player saved");
     }
 
     public void SaveItems()
     {
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Items num", itemsList.Count);
 
+        string saved = "NONE";
+
         for (int i = 0; i < itemsList.Count; i++)
         {
             SaveLoad.SaveString(Globals.saveGameDir, saveName, "Item " + i.ToString(), itemsList[i].dictionaryName);
             SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Item " + i.ToString() + " Equipped", itemsList[i].isEquipped);
+
+            if (itemsList[i].inSave)
+            {
+                saved = itemsList[i].dictionaryName;
+            }
         }
+
+        SaveLoad.SaveString(Globals.saveGameDir, saveName, "Save Item", saved);
     }
 
     private void SaveLvlInfo()
@@ -2151,6 +2165,8 @@ public class Player : YmirComponent
 
         Debug.Log("saveName " + saveName);
 
+        string saved = SaveLoad.LoadString(Globals.saveGameDir, saveName, "Save Item");
+
         for (int i = 0; i < SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Items num"); i++)
         {
             string name = SaveLoad.LoadString(Globals.saveGameDir, saveName, "Item " + i.ToString());
@@ -2158,6 +2174,12 @@ public class Player : YmirComponent
             Item item = Globals.SearchItemInDictionary(name);
             item.isEquipped = SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Item " + i.ToString() + " Equipped");
             item.inInventory = false;
+
+            if (saved == name)
+            {
+                item.inSave = true;
+            }
+
             //item.LogStats();
             itemsList.Add(item);
 
