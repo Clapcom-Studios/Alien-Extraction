@@ -10,10 +10,14 @@ public class PickUp : YmirComponent
 {
     private bool picked = false;
     private Player player = null;
+    private GameObject _itemPickedPopUp = new GameObject();
+    private GameObject _inventoryFullPopUp = new GameObject();
 
     public void Start()
     {
         picked = false;
+        _itemPickedPopUp = InternalCalls.GetGameObjectByName("ItemPicked");
+        _inventoryFullPopUp = InternalCalls.GetGameObjectByName("InventoryFull");
     }
 
     public void Update()
@@ -41,6 +45,8 @@ public class PickUp : YmirComponent
                     }
 
                     picked = true;
+                    _itemPickedPopUp?.SetActive(true);
+
                     InternalCalls.Destroy(gameObject);
                 }
             }
@@ -71,11 +77,14 @@ public class PickUp : YmirComponent
                     }
 
                     picked = true;
+                    _itemPickedPopUp?.SetActive(true);
+
                     InternalCalls.Destroy(gameObject);
                 }
                 else
                 {
                     // TODO: Feedback inventory full
+                    _inventoryFullPopUp?.SetActive(true);                
                 }
             }
         }
