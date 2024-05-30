@@ -18,8 +18,11 @@ public class PickUpPopUp : YmirComponent
 
 	public void Update()
 	{
-		_popupTimer += Time.deltaTime;
-		if (_popupTimer > popUpTime) EndPopUp();
+		if (gameObject.IsActive())
+		{
+			_popupTimer += Time.deltaTime;
+			if (_popupTimer > popUpTime) EndPopUp();
+		}
 	}
 
 	void EndPopUp()
