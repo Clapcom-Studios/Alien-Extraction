@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 323615574,
+            "UID": 484537005,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -43,7 +43,7 @@
             "UID": 188443536,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 323615574,
+            "Parent UID": 484537005,
             "Components": [
                 {
                     "Type": "Transform",
@@ -116,7 +116,7 @@
             "UID": 2047246996,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 323615574,
+            "Parent UID": 484537005,
             "Components": [
                 {
                     "Type": "Transform",
@@ -143,8 +143,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1940,
-                    "Height": 1026,
+                    "Width": 1903,
+                    "Height": 980,
                     "UI Type": 0,
                     "UI State": 5,
                     "Drag Limits": [
@@ -168,7 +168,7 @@
             ]
         },
         {
-            "Name": "Image",
+            "Name": "AnimationImg",
             "Static": false,
             "Tag": "Untagged",
             "UID": 902621313,
@@ -211,7 +211,7 @@
                         1920,
                         1080
                     ],
-                    "Path": "Assets\/UI\/Fondo.png",
+                    "Path": "Assets\/UI\/Main Menu SpriteSheets\/MainMenu.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -227,6 +227,19 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "UI_AnimationByFrames.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "imgPath": "Assets\\UI\\Main Menu SpriteSheets\\",
+                    "imgName": "MainMenu ",
+                    "currentFrame": 0,
+                    "maxFrames": 299,
+                    "delay": 0.10000001639127731,
+                    "isLoop": true,
+                    "hasFinished": false
                 }
             ]
         },
@@ -235,7 +248,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1666680866,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 2047246996,
             "Components": [
@@ -331,8 +344,8 @@
                     "rightGridName": "",
                     "downGridName": "",
                     "upGridName": "",
-                    "naviagteX": false,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": true,
                     "bounceY": true,
                     "empty": false,
@@ -1105,7 +1118,7 @@
             "UID": 648214567,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 323615574,
+            "Parent UID": 484537005,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1142,7 +1155,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 323615574,
+            "Parent UID": 484537005,
             "Components": [
                 {
                     "Type": "Transform",

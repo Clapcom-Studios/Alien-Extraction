@@ -8,7 +8,6 @@ using YmirEngine;
 public class UI_AnimationByFrames : YmirComponent
 {
     public GameObject img = null;
-    public GameObject button = null;
     public string imgPath = "Assets\\Cutscenes\\";
     public string imgName = "";
 
@@ -33,7 +32,7 @@ public class UI_AnimationByFrames : YmirComponent
 
     public void Update()
     {
-        if (img != null && !hasFinished && button != null)
+        if (img != null && !hasFinished)
         {
             timer += Time.deltaTime;
 
