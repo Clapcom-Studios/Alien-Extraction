@@ -358,4 +358,28 @@ public class UI_Item_Button : YmirComponent
         //item.inStash = false;
         //item.inCraft = false;
     }
+
+    public void OnClickButton()
+    {
+        // GDD: The resin vessel works differently than the other crafts: When selected, it disappears and the max number of Resin Vessels is upgraded by 1.
+        if (item.name.Contains("Resin Vessel"))
+        {
+            // Increase vessels max capacity by one and reset current vessels
+            player.maxResinVessels++;
+            player.currentResinVessels = player.maxResinVessels;
+
+            // Update UI
+            GameObject resinText = InternalCalls.GetGameObjectByName("Number Heals");
+
+            if (resinText != null)
+            {
+                UI.TextEdit(resinText, "x" + player.currentResinVessels.ToString());
+            }
+
+            // Delete vessel item
+            player.itemsList.Remove(item);
+            ResetSlot();
+            item = CreateItemBase();
+        }
+    }
 }

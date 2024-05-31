@@ -110,7 +110,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 //This function set the initial pos of a emitter in front of the player at X distance
 void ParticlesForward(MonoObject* go, MonoObject* vector, int emitter, float distance)
 {
-	if (External == nullptr) return;
+	if (External == nullptr) return;	
 
 	//Vector hacia el que mira el player
 	float3 newOrigin = External->moduleMono->UnboxVector(vector);
