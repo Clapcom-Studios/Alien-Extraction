@@ -79,9 +79,10 @@ public class UI_Stash : YmirComponent
                 SwitchItems();
             }
 
-            if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN)
+            if (Input.GetGamepadButton(GamePadButton.LEFTSHOULDER) == KeyState.KEY_DOWN)
             {
-                UI.SetFirstFocused(gameObject);
+                //UI.SetFirstFocused(gameObject);
+                StashInventory();
             }
 
             //Debug.Log(_cs_UI_Item_Button.item.itemType.ToString());
@@ -452,5 +453,22 @@ public class UI_Stash : YmirComponent
         {
             Debug.Log("Stash list item: " + stashItemsList[i].name);
         }
+    }
+
+    private void StashInventory()
+    {
+        for (int i = 0; i < player.itemsList.Count; i++)
+        {
+            stashItemsList.Add(player.itemsList[i]);   
+        }
+
+        for (int i = 0; i < stashItemsList.Count; i++)
+        {
+            player.itemsList.Remove(stashItemsList[i]);
+        }
+
+        SaveStashItems();
+        ResetMenuSlots();
+        SetSlots();
     }
 }
