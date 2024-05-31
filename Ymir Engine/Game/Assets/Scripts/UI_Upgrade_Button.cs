@@ -88,6 +88,31 @@ public class UI_Upgrade_Button : YmirComponent
                         upgrade.upgradeType = UPGRADE.LVL_1;
 
                         upgrade.isUnlocked = true;
+
+                        // Switch unlocked texture to current button
+                        switch (upgrade.type)
+                        {
+                            case WEAPON_TYPE.SMG:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.SHOTGUN:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.PLASMA:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     break;
                 case 2:
@@ -102,6 +127,31 @@ public class UI_Upgrade_Button : YmirComponent
                         upgrade.upgradeType = UPGRADE.LVL_2;
 
                         upgrade.isUnlocked = true;
+
+                        // Switch unlocked texture to current button
+                        switch (upgrade.type)
+                        {
+                            case WEAPON_TYPE.SMG:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.SHOTGUN:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.PLASMA:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     break;
                 case 4:
@@ -115,6 +165,31 @@ public class UI_Upgrade_Button : YmirComponent
                             UI.SetUIState(go4, (int)UI_STATE.DISABLED);
 
                             upgrade.upgradeType = UPGRADE.LVL_3_ALPHA;
+
+                            // Switch unlocked texture to current button
+                            switch (upgrade.type)
+                            {
+                                case WEAPON_TYPE.SMG:
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3AHover.png", (int)(UI_STATE.NORMAL));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3A.png", (int)(UI_STATE.FOCUSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3APressed.png", (int)(UI_STATE.PRESSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3A.png", (int)(UI_STATE.SELECTED));
+                                    break;
+                                case WEAPON_TYPE.SHOTGUN:
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3AHover.png", (int)(UI_STATE.NORMAL));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3A.png", (int)(UI_STATE.FOCUSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3APressed.png", (int)(UI_STATE.PRESSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3A.png", (int)(UI_STATE.SELECTED));
+                                    break;
+                                case WEAPON_TYPE.PLASMA:
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3AHover.png", (int)(UI_STATE.NORMAL));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3A.png", (int)(UI_STATE.FOCUSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3APressed.png", (int)(UI_STATE.PRESSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3A.png", (int)(UI_STATE.SELECTED));
+                                    break;
+                                default:
+                                    break;
+                            }
                         }
                         else
                         {
@@ -126,6 +201,32 @@ public class UI_Upgrade_Button : YmirComponent
                             goStation.GetComponent<UI_Inventory_Grid>().downGrid = InternalCalls.GetGameObjectByName(stationName + " 4");
 
                             upgrade.upgradeType = UPGRADE.LVL_3_BETA;
+
+                            // Switch unlocked texture to current button
+                            switch (upgrade.type)
+                            {
+                                case WEAPON_TYPE.SMG:
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3BHover.png", (int)(UI_STATE.NORMAL));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3B.png", (int)(UI_STATE.FOCUSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3BPressed.png", (int)(UI_STATE.PRESSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3B.png", (int)(UI_STATE.SELECTED));
+                                    break;
+                                case WEAPON_TYPE.SHOTGUN:
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3BHover.png", (int)(UI_STATE.NORMAL));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3B.png", (int)(UI_STATE.FOCUSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3BPressed.png", (int)(UI_STATE.PRESSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3B.png", (int)(UI_STATE.SELECTED));
+                                    break;
+                                case WEAPON_TYPE.PLASMA:
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3BHover.png", (int)(UI_STATE.NORMAL));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3B.png", (int)(UI_STATE.FOCUSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3BPressed.png", (int)(UI_STATE.PRESSED));
+                                    UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3B.png", (int)(UI_STATE.SELECTED));
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         }
 
                         upgrade.isUnlocked = true;
@@ -166,7 +267,7 @@ public class UI_Upgrade_Button : YmirComponent
 
     private void ManageStart()
     {
-        int num = (name.Contains("0") ? 0 : name.Contains("1") ? 1 : name.Contains("2") ? 2 : name.Contains("3") ? 3 : 4);
+        int num = name.Contains("0") ? 0 : name.Contains("1") ? 1 : name.Contains("2") ? 2 : name.Contains("3") ? 3 : 4;
 
         //if (num < 4)
         //{
@@ -217,6 +318,31 @@ public class UI_Upgrade_Button : YmirComponent
                     {
                         upgrade.isUnlocked = true;
                         UI.SetUIState(gameObject, (int)UI_STATE.NORMAL);
+
+                        // Switch unlocked texture to current button
+                        switch (upgrade.type)
+                        {
+                            case WEAPON_TYPE.SMG:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl0-1/SmgLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.SHOTGUN:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl0-1/ShotgunLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.PLASMA:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     else if ((int)upgrade.upgradeType == 0)
                     {
@@ -235,6 +361,31 @@ public class UI_Upgrade_Button : YmirComponent
                     {
                         upgrade.isUnlocked = true;
                         UI.SetUIState(gameObject, (int)UI_STATE.NORMAL);
+
+                        // Switch unlocked texture to current button
+                        switch (upgrade.type)
+                        {
+                            case WEAPON_TYPE.SMG:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl2/SmgLvl2.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.SHOTGUN:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl2/ShotgunLvl2.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.PLASMA:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Hover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0Pressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl0-2/LaserLvl0.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     else
                     {
@@ -249,6 +400,31 @@ public class UI_Upgrade_Button : YmirComponent
                     {
                         upgrade.isUnlocked = true;
                         UI.SetUIState(gameObject, (int)UI_STATE.NORMAL);
+
+                        // Switch unlocked texture to current button
+                        switch (upgrade.type)
+                        {
+                            case WEAPON_TYPE.SMG:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3AHover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3A.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3APressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3A/SmgLvl3A.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.SHOTGUN:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3AHover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3A.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3APressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3A/ShotgunLvl3A.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.PLASMA:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3AHover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3A.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3APressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3A/LaserLvl3A.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     else if ((int)upgrade.upgradeType == 2)
                     {
@@ -271,6 +447,31 @@ public class UI_Upgrade_Button : YmirComponent
                         GameObject goStation = InternalCalls.GetGameObjectByName(stationName);
                         Debug.Log(goStation.Name);
                         goStation.GetComponent<UI_Inventory_Grid>().downGrid = InternalCalls.GetGameObjectByName(stationName + " 4");
+
+                        // Switch unlocked texture to current button
+                        switch (upgrade.type)
+                        {
+                            case WEAPON_TYPE.SMG:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3BHover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3B.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3BPressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/SmgLvl3B/SmgLvl3B.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.SHOTGUN:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3BHover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3B.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3BPressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/ShotgunLvl3B/ShotgunLvl3B.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            case WEAPON_TYPE.PLASMA:
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3BHover.png", (int)(UI_STATE.NORMAL));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3B.png", (int)(UI_STATE.FOCUSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3BPressed.png", (int)(UI_STATE.PRESSED));
+                                UI.ChangeImageUI(gameObject, "Assets/UI/Upgrade Buttons/LaserLvl3B/LaserLvl3B.png", (int)(UI_STATE.SELECTED));
+                                break;
+                            default:
+                                break;
+                        }
                     }
                     else if ((int)upgrade.upgradeType == 2)
                     {
