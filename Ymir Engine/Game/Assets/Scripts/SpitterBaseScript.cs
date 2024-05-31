@@ -340,9 +340,9 @@ public class SpitterBaseScript : Enemy
                     timeLimit = 0.8f;
                     Animation.PlayAnimation(gameObject, "Atack_1_Spiter");
 
-                    //PARTICLES
-                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
-                    Particles.PlayParticlesTrigger(particlesGO);
+                    ////PARTICLES
+                    //particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    //Particles.PlayParticlesTrigger(particlesGO);
 
                     walkAni = false;
                     Audio.PlayAudio(gameObject, "XS_Spit");
@@ -360,9 +360,9 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Atack_2_Spiter");
                     walkAni = false;
 
-                    //PARTICLES
-                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack2_Spitter");
-                    Particles.PlayParticlesTrigger(particlesGO);
+                    ////PARTICLES
+                    //particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack2_Spitter");
+                    //Particles.PlayParticlesTrigger(particlesGO);
 
                     Audio.PlayAudio(gameObject, "XS_Rebound");
                     explosionDone = false;
@@ -409,8 +409,15 @@ public class SpitterBaseScript : Enemy
                 {
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 15;
-                    //InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation);
-                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterAcidSpit", pos);
+                    InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation);
+                    //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterAcidSpit", pos);
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 1, 80.0f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 2, 10.0f);
+                    Particles.PlayParticlesTrigger(particlesGO);
                     acidDone = true;
                 }
 
@@ -438,8 +445,16 @@ public class SpitterBaseScript : Enemy
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 15;
                     pos.z -= 10;
-                    //InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation);
-                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterExplosive", pos);
+                    InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation);
+                    //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterExplosive", pos);
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 1, 80.0f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 2, 10.0f);
+                    Particles.PlayParticlesTrigger(particlesGO);
+
                     explosionDone = true;
                     //GameObject particles = GetParticles(gameObject, "ParticlesAcidicEnemy");
                     //Particles.PlayParticlesTrigger(particles);

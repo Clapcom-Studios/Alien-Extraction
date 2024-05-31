@@ -61,5 +61,9 @@ public class SpitterAcidSpit : YmirComponent
             healthScript.TakeDmg(damage);
             destroyed = true;
         }
+        else if (other.Tag == "World")
+        {
+            destroyed = true;
+        }
     }
 }

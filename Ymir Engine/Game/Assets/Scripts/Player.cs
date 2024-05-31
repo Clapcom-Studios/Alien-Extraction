@@ -1408,33 +1408,44 @@ public class Player : YmirComponent
 
                             currentWeapon = w_SMG_0.GetComponent<SMG>();
                             w_SMG_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_1:
 
                             currentWeapon = w_SMG_1.GetComponent<SMG>();
                             w_SMG_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_2:
 
                             currentWeapon = w_SMG_2.GetComponent<SMG>();
                             w_SMG_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl2.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_ALPHA:
 
                             currentWeapon = w_SMG_3a.GetComponent<SMG>();
                             w_SMG_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3A.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
                             currentWeapon = w_SMG_3b.GetComponent<SMG>();
                             w_SMG_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3B.png", (int)UI_STATE.NORMAL);
                             break;
                         default:
                             break;
                     }
 
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+                    //UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                    //    "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+
                 }
                 break;
 
@@ -1446,33 +1457,43 @@ public class Player : YmirComponent
 
                             currentWeapon = w_Shotgun_0.GetComponent<Shotgun>();
                             w_Shotgun_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_1:
 
                             currentWeapon = w_Shotgun_1.GetComponent<Shotgun>();
                             w_Shotgun_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_2:
 
                             currentWeapon = w_Shotgun_2.GetComponent<Shotgun>();
                             w_Shotgun_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\Shotgunlvl2.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_ALPHA:
 
                             currentWeapon = w_Shotgun_3a.GetComponent<Shotgun>();
                             w_Shotgun_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3A.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
                             currentWeapon = w_Shotgun_3b.GetComponent<Shotgun>();
                             w_Shotgun_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3B.png", (int)UI_STATE.NORMAL);
                             break;
                         default:
                             break;
                     }
 
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
+                    //UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                    //    "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
                 }
                 break;
 
@@ -1484,33 +1505,43 @@ public class Player : YmirComponent
 
                             currentWeapon = w_Plasma_0.GetComponent<Plasma>();
                             w_Plasma_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_1:
 
                             currentWeapon = w_Plasma_1.GetComponent<Plasma>();
                             w_Plasma_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_2:
 
                             currentWeapon = w_Plasma_2.GetComponent<Plasma>();
                             w_Plasma_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_ALPHA:
 
                             currentWeapon = w_Plasma_3a.GetComponent<Plasma>();
                             w_Plasma_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3A.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
                             currentWeapon = w_Plasma_3b.GetComponent<Plasma>();
                             w_Plasma_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3B.png", (int)UI_STATE.NORMAL);
                             break;
                         default:
                             break;
                     }
 
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
+                    //UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                    //    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
 
                 }
                 break;
