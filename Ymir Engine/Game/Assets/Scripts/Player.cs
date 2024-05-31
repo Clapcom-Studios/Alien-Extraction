@@ -752,7 +752,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Acidic Spit (Skill 1) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0 && hasDashed == false)
+                if (Input.GetGamepadButton(GamePadButton.RIGHTSHOULDER) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0 && hasDashed == false)
                 {
                     hasAcidic = true;
                     inputsList.Add(INPUT.I_ACID);
@@ -797,7 +797,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Reload -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && currentWeapon.ReloadAvailable())
+                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && currentWeapon.ReloadAvailable())
                 {
                     inputsList.Add(INPUT.I_RELOAD);
                 }
