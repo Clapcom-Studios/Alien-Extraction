@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL1_FINAL\/LVL1_FINAL_COLLIDERS.nav",
     "Editor Camera Position": [
-        734.52435302734375,
-        29.482526779174805,
-        192.52227783203125
+        48.1142578125,
+        203.57453918457031,
+        94.633247375488281
     ],
     "Editor Camera Right (X)": [
-        -0.16979385912418365,
-        1.5273690223693848e-07,
-        0.93905353546142578
+        0.22380314767360687,
+        -2.9802322387695312e-08,
+        0.97463387250900269
     ],
     "Editor Camera Up (Y)": [
-        0.24077737331390381,
-        0.92441630363464355,
-        0.043535728007555008
+        0.43675243854522705,
+        0.89397382736206055,
+        -0.10029052942991257
     ],
     "Editor Camera Front (Z)": [
-        0.94932442903518677,
-        -0.25535023212432861,
-        0.17165102064609528
+        0.87129700183868408,
+        -0.44811919331550598,
+        -0.20007413625717163
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1483525145,
+            "UID": 521929210,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -69,7 +69,7 @@
             "UID": 265396639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18215,7 +18215,7 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        0.17170906066894531,
                         0
                     ],
                     "Rotation": [
@@ -18225,82 +18225,13 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.60000002384185791,
                         1
                     ]
                 }
             ],
             "Children UID": [
-                341520306,
-                329239072,
-                612811493
-            ]
-        },
-        {
-            "Name": "Column_R (6)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 341520306,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 995731159,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1264532886,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
+                329239072
             ]
         },
         {
@@ -18317,19 +18248,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
+                        3.256683349609375,
                         0,
-                        0,
-                        0
+                        -5.1258459091186523
                     ],
                     "Rotation": [
-                        -0,
                         0,
-                        -0
+                        -0.49301347136497498,
+                        0
                     ],
                     "Scale": [
+                        1.2500002384185791,
                         1,
-                        1,
-                        1
+                        1.2500002384185791
                     ]
                 },
                 {
@@ -18338,73 +18269,6 @@
                     "UID": 2122843413,
                     "Vertex Count": 32,
                     "Index Count": 48
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "Column_L (6)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 612811493,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 995731159,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1049431047,
-                    "Vertex Count": 20,
-                    "Index Count": 30
                 },
                 {
                     "Type": "Material",
@@ -24116,7 +23980,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -24183,7 +24047,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -24317,7 +24181,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -24554,7 +24418,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -24791,7 +24655,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -25028,7 +24892,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -25265,7 +25129,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -25502,7 +25366,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -25739,7 +25603,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -32475,7 +32339,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -32712,7 +32576,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -32779,7 +32643,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -32949,7 +32813,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -33083,7 +32947,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -34775,7 +34639,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -34842,7 +34706,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -34976,7 +34840,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -35213,7 +35077,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -36398,7 +36262,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 }
@@ -37996,7 +37860,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -38233,7 +38097,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -46765,7 +46629,7 @@
                     ],
                     "Scale": [
                         1,
-                        1,
+                        0.40000000596046448,
                         1
                     ]
                 },
@@ -62352,7 +62216,7 @@
             "UID": 493464378,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -62417,7 +62281,7 @@
             "UID": 1161519485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -63207,7 +63071,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        31.327001571655273,
+                        31.327005386352539,
                         -0
                     ],
                     "Scale": [
@@ -63532,7 +63396,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        27.591018676757812,
+                        27.591022491455078,
                         -0
                     ],
                     "Scale": [
@@ -66735,7 +66599,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -66897,7 +66761,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67215,7 +67079,7 @@
             "UID": 1545695842,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67385,7 +67249,7 @@
                     ],
                     "Rotation": [
                         180,
-                        -44.999736785888672,
+                        -44.999748229980469,
                         180
                     ],
                     "Scale": [
@@ -67533,7 +67397,7 @@
             "UID": 142531611,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67851,7 +67715,7 @@
             "UID": 1768177679,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68169,7 +68033,7 @@
             "UID": 1570706478,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68206,7 +68070,7 @@
             "UID": 227903904,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69458,9 +69322,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        702.24859619140625,
+                        702.280029296875,
                         10.000030517578125,
-                        309.56036376953125
+                        309.55999755859375
                     ],
                     "Rotation": [
                         -0,
@@ -70019,7 +69883,7 @@
             "UID": 900338210,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71035,7 +70899,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71062,8 +70926,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 992,
-                    "Height": 521,
+                    "Width": 1234,
+                    "Height": 630,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -71482,7 +71346,7 @@
             "UID": 147559574,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71663,7 +71527,7 @@
             "UID": 813229651,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71844,7 +71708,7 @@
             "UID": 367980240,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72025,7 +71889,7 @@
             "UID": 1932512867,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75014,7 +74878,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75340,7 +75204,7 @@
             "UID": 981719170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75666,7 +75530,7 @@
             "UID": 523345040,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75992,7 +75856,7 @@
             "UID": 1085187284,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76318,7 +76182,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76345,8 +76209,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 992,
-                    "Height": 521,
+                    "Width": 1234,
+                    "Height": 630,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -78345,7 +78209,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -85905,7 +85769,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86446,7 +86310,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86799,7 +86663,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -87473,7 +87337,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88267,7 +88131,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88380,7 +88244,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -101367,7 +101231,7 @@
             "UID": 1795821685,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
@@ -105436,7 +105300,7 @@
             "UID": 39169129,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1483525145,
+            "Parent UID": 521929210,
             "Components": [
                 {
                     "Type": "Transform",
