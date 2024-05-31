@@ -50,7 +50,7 @@ public class Loot_Chest : YmirComponent
 
             if (time > 0)
             {
-                InternalCalls.CS_GetChild(gameObject, 0).transform.localRotation = Quaternion.Euler(180f, velocity * (animationTime - time), 0f);// GetGameObjectByName("PROP_Base_Chest_Lid").transform.localRotation = Quaternion.Euler(180f, velocity * time, 0f);
+                InternalCalls.CS_GetChild(gameObject, 1).transform.localRotation = Quaternion.Euler(180f, velocity * (animationTime - time), 0f);// GetGameObjectByName("PROP_Base_Chest_Lid").transform.localRotation = Quaternion.Euler(180f, velocity * time, 0f);
                 time -= Time.deltaTime;
 
                 if (time <= 0 && !isOpened)
