@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        51.806922912597656,
-        117.63516998291016,
-        533.245849609375
+        130.19029235839844,
+        92.2269287109375,
+        768.0780029296875
     ],
     "Editor Camera Right (X)": [
-        0.94959503412246704,
-        1.0430812835693359e-07,
-        0.31347659230232239
+        0.34932929277420044,
+        7.4505805969238281e-08,
+        0.93700182437896729
     ],
     "Editor Camera Up (Y)": [
-        -0.077576763927936554,
-        0.96889501810073853,
-        0.23499812185764313
+        0.56922924518585205,
+        0.79431962966918945,
+        -0.21221785247325897
     ],
     "Editor Camera Front (Z)": [
-        0.30372598767280579,
-        0.24747106432914734,
-        -0.92005819082260132
+        0.74427729845046997,
+        -0.60750162601470947,
+        -0.27747845649719238
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 713087503,
+            "UID": 798501861,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -69,7 +69,7 @@
             "UID": 215325978,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -921,9 +921,9 @@
                         97.790382385253906
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         89.980216979980469,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999469518661499,
@@ -1181,9 +1181,9 @@
                         149.70846557617188
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         83.883010864257812,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999475479125977,
@@ -4424,7 +4424,7 @@
             "UID": 148987747,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4496,7 +4496,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4507,9 +4507,9 @@
                         108.52375793457031
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         6.1106042861938477,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.050000697374343872,
@@ -4625,30 +4625,30 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 1,
+                            "ambient": 0.5,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 356,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 1170378668,
+                    "Diffuse_ID": 1209,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_D.png",
+                    "Diffuse_UID": 1575053199,
                     "Specular_ID": 388,
                     "Specular_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_S.png",
                     "Specular_UID": 300545344,
-                    "Normal_ID": 380,
-                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_N.png",
-                    "Normal_UID": 1614848588,
-                    "Height_ID": 372,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_H.png",
-                    "Height_UID": 414377273,
-                    "Ambient_ID": 348,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1263068321,
-                    "Emissive_ID": 364,
-                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1409401328
+                    "Normal_ID": 1221,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_N.png",
+                    "Normal_UID": 915075666,
+                    "Height_ID": 1217,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_H.png",
+                    "Height_UID": 1309185175,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_A.png",
+                    "Ambient_UID": 2062810060,
+                    "Emissive_ID": 1213,
+                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_E.png",
+                    "Emissive_UID": 1636537448
                 }
             ]
         },
@@ -4710,30 +4710,30 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 1,
+                            "ambient": 0.5,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 360,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 1170378668,
+                    "Diffuse_ID": 1209,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_D.png",
+                    "Diffuse_UID": 1575053199,
                     "Specular_ID": 392,
                     "Specular_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_S.png",
                     "Specular_UID": 300545344,
-                    "Normal_ID": 384,
-                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_N.png",
-                    "Normal_UID": 1614848588,
-                    "Height_ID": 376,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_H.png",
-                    "Height_UID": 414377273,
-                    "Ambient_ID": 352,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1263068321,
-                    "Emissive_ID": 368,
-                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1409401328
+                    "Normal_ID": 1221,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_N.png",
+                    "Normal_UID": 915075666,
+                    "Height_ID": 1217,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_H.png",
+                    "Height_UID": 1309185175,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_A.png",
+                    "Ambient_UID": 2062810060,
+                    "Emissive_ID": 1213,
+                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_E.png",
+                    "Emissive_UID": 1636537448
                 }
             ]
         },
@@ -4809,30 +4809,9 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
                     "Uniforms": [
-                        {
-                            "numLights": 1,
-                            "transparency": 1,
-                            "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
-                            ],
-                            "numPointLights": 1,
-                            "map": 1,
-                            "enableDiffuse": true,
-                            "enableSpecular": true,
-                            "enableNormal": true,
-                            "enableAmbient": true,
-                            "enableHeight": true,
-                            "enableEmissive": true,
-                            "enableLighting": true,
-                            "ambient": 1,
-                            "specularLight": 1,
-                            "normalIntensity": 1,
-                            "emissive": 1
-                        }
+                        {}
                     ],
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
@@ -4847,7 +4826,7 @@
             "UID": 12745639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4858,9 +4837,9 @@
                         292.640625
                     ],
                     "Rotation": [
-                        180,
-                        -1.3964747190475464,
-                        180
+                        -180,
+                        -1.3964751958847046,
+                        -180
                     ],
                     "Scale": [
                         0.050005152821540833,
@@ -4976,30 +4955,30 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 1,
+                            "ambient": 0.5,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 356,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 1170378668,
+                    "Diffuse_ID": 1209,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_D.png",
+                    "Diffuse_UID": 1575053199,
                     "Specular_ID": 388,
                     "Specular_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_S.png",
                     "Specular_UID": 300545344,
-                    "Normal_ID": 380,
-                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_N.png",
-                    "Normal_UID": 1614848588,
-                    "Height_ID": 372,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_H.png",
-                    "Height_UID": 414377273,
-                    "Ambient_ID": 348,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1263068321,
-                    "Emissive_ID": 364,
-                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1409401328
+                    "Normal_ID": 1221,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_N.png",
+                    "Normal_UID": 915075666,
+                    "Height_ID": 1217,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_H.png",
+                    "Height_UID": 1309185175,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_A.png",
+                    "Ambient_UID": 2062810060,
+                    "Emissive_ID": 1213,
+                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_E.png",
+                    "Emissive_UID": 1636537448
                 }
             ]
         },
@@ -5061,30 +5040,30 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 1,
+                            "ambient": 0.5,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 360,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 1170378668,
+                    "Diffuse_ID": 1209,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_D.png",
+                    "Diffuse_UID": 1575053199,
                     "Specular_ID": 392,
                     "Specular_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_S.png",
                     "Specular_UID": 300545344,
-                    "Normal_ID": 384,
-                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_N.png",
-                    "Normal_UID": 1614848588,
-                    "Height_ID": 376,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_H.png",
-                    "Height_UID": 414377273,
-                    "Ambient_ID": 352,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1263068321,
-                    "Emissive_ID": 368,
-                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1409401328
+                    "Normal_ID": 1221,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_N.png",
+                    "Normal_UID": 915075666,
+                    "Height_ID": 1217,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_H.png",
+                    "Height_UID": 1309185175,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_A.png",
+                    "Ambient_UID": 2062810060,
+                    "Emissive_ID": 1213,
+                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_E.png",
+                    "Emissive_UID": 1636537448
                 }
             ]
         },
@@ -5160,30 +5139,9 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
                     "Uniforms": [
-                        {
-                            "numLights": 1,
-                            "transparency": 1,
-                            "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
-                            ],
-                            "numPointLights": 1,
-                            "map": 1,
-                            "enableDiffuse": true,
-                            "enableSpecular": true,
-                            "enableNormal": true,
-                            "enableAmbient": true,
-                            "enableHeight": true,
-                            "enableEmissive": true,
-                            "enableLighting": true,
-                            "ambient": 1,
-                            "specularLight": 1,
-                            "normalIntensity": 1,
-                            "emissive": 1
-                        }
+                        {}
                     ],
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
@@ -5198,25 +5156,25 @@
             "UID": 259210497,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
                         221.70700073242188,
-                        -0.52078628540039062,
+                        1.3687396049499512,
                         751.5816650390625
                     ],
                     "Rotation": [
-                        -180,
-                        -89.295562744140625,
-                        -180
+                        180,
+                        -89.295845031738281,
+                        180
                     ],
                     "Scale": [
-                        0.050000187009572983,
+                        0.050000861287117004,
                         0.05000000074505806,
-                        0.050000187009572983
+                        0.050000861287117004
                     ]
                 },
                 {
@@ -5327,30 +5285,30 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 1,
+                            "ambient": 0.5,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 356,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 1170378668,
+                    "Diffuse_ID": 1209,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_D.png",
+                    "Diffuse_UID": 1575053199,
                     "Specular_ID": 388,
                     "Specular_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_S.png",
                     "Specular_UID": 300545344,
-                    "Normal_ID": 380,
-                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_N.png",
-                    "Normal_UID": 1614848588,
-                    "Height_ID": 372,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_H.png",
-                    "Height_UID": 414377273,
-                    "Ambient_ID": 348,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1263068321,
-                    "Emissive_ID": 364,
-                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1409401328
+                    "Normal_ID": 1221,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_N.png",
+                    "Normal_UID": 915075666,
+                    "Height_ID": 1217,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_H.png",
+                    "Height_UID": 1309185175,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_A.png",
+                    "Ambient_UID": 2062810060,
+                    "Emissive_ID": 1213,
+                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_E.png",
+                    "Emissive_UID": 1636537448
                 }
             ]
         },
@@ -5412,30 +5370,30 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 1,
+                            "ambient": 0.5,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 360,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_D.png",
-                    "Diffuse_UID": 1170378668,
+                    "Diffuse_ID": 1209,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_D.png",
+                    "Diffuse_UID": 1575053199,
                     "Specular_ID": 392,
                     "Specular_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_S.png",
                     "Specular_UID": 300545344,
-                    "Normal_ID": 384,
-                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_N.png",
-                    "Normal_UID": 1614848588,
-                    "Height_ID": 376,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_H.png",
-                    "Height_UID": 414377273,
-                    "Ambient_ID": 352,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_A.png",
-                    "Ambient_UID": 1263068321,
-                    "Emissive_ID": 368,
-                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/PROP_Base_Chest_E.png",
-                    "Emissive_UID": 1409401328
+                    "Normal_ID": 1221,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_N.png",
+                    "Normal_UID": 915075666,
+                    "Height_ID": 1217,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_H.png",
+                    "Height_UID": 1309185175,
+                    "Ambient_ID": 1205,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_A.png",
+                    "Ambient_UID": 2062810060,
+                    "Emissive_ID": 1213,
+                    "Emissive_Path": "Assets\/Prefabs\/Meshes\/Loot_Chest\/Chest infected Textures\/TEX_PROP_InfectedChest_E.png",
+                    "Emissive_UID": 1636537448
                 }
             ]
         },
@@ -5511,30 +5469,9 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
                     "Uniforms": [
-                        {
-                            "numLights": 1,
-                            "transparency": 1,
-                            "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
-                            ],
-                            "numPointLights": 1,
-                            "map": 1,
-                            "enableDiffuse": true,
-                            "enableSpecular": true,
-                            "enableNormal": true,
-                            "enableAmbient": true,
-                            "enableHeight": true,
-                            "enableEmissive": true,
-                            "enableLighting": true,
-                            "ambient": 1,
-                            "specularLight": 1,
-                            "normalIntensity": 1,
-                            "emissive": 1
-                        }
+                        {}
                     ],
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
@@ -5549,7 +5486,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5927,7 +5864,7 @@
             "UID": 466712987,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6309,7 +6246,7 @@
             "UID": 2063663470,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6602,7 +6539,7 @@
             "UID": 1372245636,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6895,7 +6832,7 @@
             "UID": 1630598529,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6932,7 +6869,7 @@
             "UID": 811451292,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -7029,7 +6966,7 @@
             "UID": 560363617,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -8787,7 +8724,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -8851,7 +8788,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -8915,7 +8852,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -9107,7 +9044,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         76.759788513183594,
@@ -9811,7 +9748,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -9875,7 +9812,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -9939,7 +9876,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -10003,7 +9940,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -10707,7 +10644,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        180
+                        -180
                     ],
                     "Scale": [
                         100,
@@ -15410,7 +15347,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278410911560059,
+                        0.90278422832489014,
                         -0
                     ],
                     "Scale": [
@@ -15745,7 +15682,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278422832489014,
+                        0.90278434753417969,
                         -0
                     ],
                     "Scale": [
@@ -16387,8 +16324,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 855,
-                    "Height": 567,
+                    "Width": 992,
+                    "Height": 521,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -25109,9 +25046,9 @@
                         405.129150390625
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.034247130155563354,
@@ -25967,7 +25904,7 @@
             "UID": 1288139189,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26523,7 +26460,7 @@
             "UID": 419286066,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33433,7 +33370,7 @@
             "UID": 1747926452,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33858,9 +33795,9 @@
                         229.56985473632812
                     ],
                     "Rotation": [
-                        -1.6464707161556875e-16,
+                        -1.6464851421855704e-16,
                         89.332359313964844,
-                        1.5620022083753245e-16
+                        1.5620163697074114e-16
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -35228,7 +35165,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35973,7 +35910,7 @@
             "UID": 1086457827,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36183,7 +36120,7 @@
                     "Rotation": [
                         -2.2451992034912109,
                         0.18273289501667023,
-                        0.43568408489227295
+                        0.43568411469459534
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -36215,7 +36152,7 @@
                         3.0423920154571533
                     ],
                     "Rotation": [
-                        2.0803422927856445,
+                        2.0803427696228027,
                         0,
                         -0
                     ],
@@ -36910,7 +36847,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36937,8 +36874,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 855,
-                    "Height": 567,
+                    "Width": 992,
+                    "Height": 521,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -38937,7 +38874,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -46497,7 +46434,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -47038,7 +46975,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -47391,7 +47328,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -47403,7 +47340,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        4.3647644566789402e-41,
+                        7.6230636459270049e-43,
                         -0
                     ],
                     "Scale": [
@@ -47457,14 +47394,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1369.7152099609375,
-                        -93.750732421875,
-                        -17632.083984375
+                        -1478.7457275390625,
+                        -97.356529235839844,
+                        -18371.50390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -47520,14 +47457,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1390.4984130859375,
-                        -97.356521606445312,
-                        -17613.349609375
+                        -1499.5289306640625,
+                        -100.96231842041016,
+                        -18352.76953125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -47636,14 +47573,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1369.7152099609375,
-                        -93.750732421875,
-                        -17632.083984375
+                        -1478.7457275390625,
+                        -97.356529235839844,
+                        -18371.50390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -47761,14 +47698,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1369.7152099609375,
-                        -93.750732421875,
-                        -17632.083984375
+                        -1478.7457275390625,
+                        -97.356529235839844,
+                        -18371.50390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -47823,14 +47760,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1369.7152099609375,
-                        -93.750732421875,
-                        -17632.083984375
+                        -1478.7457275390625,
+                        -97.356529235839844,
+                        -18371.50390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -47947,14 +47884,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1390.4984130859375,
-                        -181.75662231445312,
-                        -17613.349609375
+                        -1499.5289306640625,
+                        -185.3624267578125,
+                        -18352.76953125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -48009,14 +47946,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1369.7152099609375,
-                        -9.350738525390625,
-                        -17632.083984375
+                        -1478.7457275390625,
+                        -12.956537246704102,
+                        -18371.50390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.030994415283203,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99999934434890747,
@@ -48065,7 +48002,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48859,7 +48796,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48972,7 +48909,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -50568,7 +50505,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -63555,7 +63492,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -63736,7 +63673,7 @@
                     ],
                     "Rotation": [
                         0,
-                        -7.7492813598326049e-13,
+                        -1.3525047713193981e-14,
                         0
                     ],
                     "Scale": [
@@ -64690,7 +64627,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -64878,9 +64815,9 @@
                         0
                     ],
                     "Rotation": [
-                        -1.549856271966521e-12,
+                        -2.7050095426387963e-14,
                         0,
-                        -1.549856271966521e-12
+                        -2.7050095426387963e-14
                     ],
                     "Scale": [
                         1,
@@ -64950,9 +64887,9 @@
                         0
                     ],
                     "Rotation": [
-                        2.6501743592301004e-27,
-                        -5.3495037469806362e-35,
-                        -2.6501743592301004e-27
+                        4.6254268037511722e-29,
+                        -9.3366449482467989e-37,
+                        -4.6254268037511722e-29
                     ],
                     "Scale": [
                         0.66134387254714966,
@@ -65561,7 +65498,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -65747,9 +65684,9 @@
                         0
                     ],
                     "Rotation": [
-                        1.549856271966521e-12,
+                        2.7050095426387963e-14,
                         0,
-                        -1.549856271966521e-12
+                        -2.7050095426387963e-14
                     ],
                     "Scale": [
                         1,
@@ -67589,7 +67526,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 713087503,
+            "Parent UID": 798501861,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67616,8 +67553,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 855,
-                    "Height": 567,
+                    "Width": 992,
+                    "Height": 521,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
