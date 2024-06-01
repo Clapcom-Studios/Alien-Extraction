@@ -106,7 +106,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 					EmitterRotation* rot = (EmitterRotation*)particleSystem->allEmitters.at(i)->modules.at(j);
 					if(rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT)
 					{
-						rot->freeWorldRotation = { 0,anguloFowardPlayer,0 };
+						rot->freeWorldRotation = { rot->freeWorldRotation.x,anguloFowardPlayer,rot->freeWorldRotation.z };
 					}
 				}
 			}
