@@ -30,34 +30,39 @@ public class Auto_Aim : YmirComponent
 
     public void Update()
 	{
-        gameObject.SetPosition(player.gameObject.transform.globalPosition + (player.currentWeapon.gameObject.transform.GetForward() * 75f));
+        gameObject.SetPosition(player.gameObject.transform.globalPosition + (player.currentWeapon.gameObject.transform.GetForward() * 90f));
         gameObject.SetRotation(playerObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f)); // <- -90 Degree Quat
 
         target = null;
-
-		SetTarget();
+        SetTarget();
 
         if (target != null)
 		{
-			float cross = gameObject.transform.globalPosition.magnitude * target.transform.globalPosition.magnitude;
+            Vector3 vec1 = Vector3.Normalize(gameObject.transform.globalPosition);
+            Vector3 vec2 = Vector3.Normalize(target.transform.globalPosition);
 
-			angle = (float)Math.Atan2(cross, Vector3.Dot(gameObject.transform.globalPosition, target.transform.globalPosition));
-			//Debug.Log("Angle: " + angle);		
+            vec1.y = 0f;
+            vec2.y = 0f;
+
+            angle = (float)Math.Acos(Vector3.Dot(vec1, vec2)) * 180f / 3.1415f;
+
+            //Debug.Log("Target Pos: " + target.transform.globalPosition);
+            Debug.Log("Angle: " + angle);
+
         }
-	}
 
-	public void OnCollisionEnter(GameObject other)
+        enemies.Clear();
+    }
+
+    public void OnCollisionStay(GameObject other)
 	{
-  //      Debug.Log("Object Detected - " + other.Name);
+        if (other.Tag == "Enemy")
+		{
+			if (!enemies.Contains(other)) { enemies.Add(other); }
+		}
+    }
 
-  //      if (other.Tag == "Enemy")
-		//{
-		//	Debug.Log("Enemy Detected - " + other.Name);
-		//	if (!enemies.Contains(other)) {  enemies.Add(other); }
-		//}
-	}
-
-	private void SetTarget()
+    private void SetTarget()
 	{
 		float shortestDistance = 0f;
 
@@ -70,8 +75,6 @@ public class Auto_Aim : YmirComponent
 				target = enemies[i];
             }
         }
-
-		Debug.Log("Selected Target name: " + target.Name);
 	}
 
 	public void AddEnemy(GameObject enemy)

@@ -26,7 +26,6 @@ public class SMG : Weapon
                 ammo = 35;
                 fireRate = 0.07f;
                 damage = 5;
-                reloadTime = 1.8f;
 
                 break;
             case UPGRADE.LVL_1:
@@ -35,7 +34,6 @@ public class SMG : Weapon
                 ammo = 35;
                 fireRate = 0.06f;
                 damage = 9;
-                reloadTime = 1.6f;
 
                 break;
             case UPGRADE.LVL_2:
@@ -44,7 +42,6 @@ public class SMG : Weapon
                 ammo = 40;
                 fireRate = 0.05f;
                 damage = 11;
-                reloadTime = 1.5f;
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
@@ -53,7 +50,6 @@ public class SMG : Weapon
                 ammo = 110;
                 fireRate = 0.04f;
                 damage = 13;
-                reloadTime = 1.1f;
 
                 break;
             case UPGRADE.LVL_3_BETA:
@@ -62,7 +58,6 @@ public class SMG : Weapon
                 ammo = 40;
                 fireRate = 0.02f;
                 damage = 10;
-                reloadTime = 1.5f;
 
                 break;
             default:
