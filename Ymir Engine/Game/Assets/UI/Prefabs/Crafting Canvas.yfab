@@ -7,7 +7,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 892612870,
+            "Parent UID": 540807010,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34,8 +34,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1786,
-                    "Height": 1040,
+                    "Width": 1934,
+                    "Height": 1112,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -167,7 +167,7 @@
                     "upGridName": " ",
                     "navigateX": true,
                     "navigateY": true,
-                    "bounceX": true,
+                    "bounceX": false,
                     "bounceY": true
                 }
             ],
@@ -455,7 +455,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         314,
-                        220,
+                        260,
                         300,
                         50
                     ],
@@ -751,7 +751,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         469,
-                        220,
+                        260,
                         300,
                         50
                     ],
@@ -1047,7 +1047,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         627,
-                        220,
+                        260,
                         300,
                         50
                     ],
@@ -1343,7 +1343,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         996,
-                        223,
+                        260,
                         300,
                         50
                     ],
@@ -1682,7 +1682,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         314,
-                        492,
+                        407,
                         300,
                         50
                     ],
@@ -1978,7 +1978,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         469,
-                        492,
+                        407,
                         300,
                         50
                     ],
@@ -2274,7 +2274,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         628,
-                        492,
+                        407,
                         300,
                         50
                     ],
@@ -2570,7 +2570,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         996,
-                        494,
+                        407,
                         300,
                         50
                     ],
@@ -2909,7 +2909,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         315,
-                        631,
+                        561,
                         300,
                         50
                     ],
@@ -3205,7 +3205,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         470,
-                        632,
+                        561,
                         300,
                         50
                     ],
@@ -3501,7 +3501,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         628,
-                        632,
+                        561,
                         300,
                         50
                     ],
@@ -3797,7 +3797,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         996,
-                        631,
+                        561,
                         300,
                         50
                     ],
@@ -4136,7 +4136,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         313,
-                        767,
+                        721,
                         300,
                         50
                     ],
@@ -4432,7 +4432,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         469,
-                        768,
+                        721,
                         300,
                         50
                     ],
@@ -4728,7 +4728,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         627,
-                        768,
+                        721,
                         300,
                         50
                     ],
@@ -5024,7 +5024,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         996,
-                        767,
+                        721,
                         300,
                         50
                     ],
@@ -5124,13 +5124,13 @@
                     "leftGridName": "Armor Grid",
                     "rightGridName": "",
                     "downGridName": " ",
-                    "upGridName": "Grid Craft",
+                    "upGridName": "Save Craft",
                     "navigateX": true,
                     "navigateY": true,
                     "bounceX": false,
                     "bounceY": true,
                     "empty": true,
-                    "childX": 0,
+                    "childX": 3,
                     "childY": 0
                 }
             ],
@@ -9593,7 +9593,7 @@
             ]
         },
         {
-            "Name": "Grid Craft",
+            "Name": "Save Craft",
             "Static": false,
             "Tag": "Untagged",
             "UID": 17448215,

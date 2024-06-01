@@ -83,7 +83,6 @@ public class UI_Item_Button : YmirComponent
                 else
                 {
                     item.inSave = false;
-
                 }
 
                 if (item.isEquipped)
@@ -257,16 +256,24 @@ public class UI_Item_Button : YmirComponent
         //Debug.Log("isEquipped: " + _item.isEquipped.ToString());
         //Debug.Log("Rarity: " + _item.itemRarity.ToString());
 
-        // is empty && (is not equipped and not inventory || is equipped and in inventory && can be placed)
-        if (item.itemType == ITEM_SLOT.NONE && ((!_item.isEquipped && !Equals(menuName, "Inventory Menu")) ||
+        if (item.currentSlot == ITEM_SLOT.SAVE)
+        {
+            Debug.Log("_item.inSave " + _item.inSave.ToString());
+        }
+
+        // is empty && ((is not equipped and not inventory || is equipped and in inventory && can be placed) && not in save) || item in save slot
+        if (item.itemType == ITEM_SLOT.NONE &&
+
+            /*{*/(((!_item.isEquipped && !Equals(menuName, "Inventory Menu")) ||
             ((_item.isEquipped && _item.itemType == item.currentSlot ||
-            item.currentSlot == ITEM_SLOT.NONE || item.currentSlot == ITEM_SLOT.MATERIAL) && Equals(menuName, "Inventory Menu"))))
+            item.currentSlot == ITEM_SLOT.NONE ||
+            item.currentSlot == ITEM_SLOT.MATERIAL) 
+            
+            && Equals(menuName, "Inventory Menu"))) && !_item.inSave) || /*}*/
+
+            item.currentSlot == ITEM_SLOT.SAVE && _item.inSave)
         {
             if (_item.isEquipped)
-            {
-                _item.currentSlot = _item.itemType;
-            }
-            else if (_item.inSave)
             {
                 _item.currentSlot = _item.itemType;
             }

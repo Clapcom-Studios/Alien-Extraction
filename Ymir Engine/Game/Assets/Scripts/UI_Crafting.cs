@@ -153,19 +153,40 @@ public class UI_Crafting : YmirComponent
 
     private void SetSlots()
     {
+        bool isInventory = false;
+
         for (int i = 0; i < player.itemsList.Count; i++)
         {
             GameObject inventory = InternalCalls.CS_GetChild(gameObject, 2);
+            GameObject save = InternalCalls.CS_GetChild(gameObject, 3);
 
             for (int inv = 0; inv < InternalCalls.CS_GetChildrenSize(inventory); inv++)
             {
                 GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(inventory, inv), 2);  // (Slot (Button)))
+                isInventory = true;
 
                 if (gameObject != null)
                 {
                     if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
                     {
+                        isInventory = false;
                         break;
+                    }
+                }
+            }
+
+            if (isInventory)
+            {
+                for (int s = 0; s < InternalCalls.CS_GetChildrenSize(save); s++)
+                {
+                    GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(save, s), 2);  // (Slot (Button)))
+
+                    if (gameObject != null)
+                    {
+                        if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
+                        {
+                            break;
+                        }
                     }
                 }
             }

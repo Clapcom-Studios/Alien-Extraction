@@ -256,6 +256,7 @@ public class UI_Upgrade_Button : YmirComponent
         string saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Upgrade " + upgrade.type.ToString(), (int)upgrade.upgradeType);
 
+        currentStation._player.SaveItems();
         Debug.Log("saved " + upgrade.type.ToString() + ": " + upgrade.upgradeType.ToString());
     }
 

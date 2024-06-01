@@ -73,7 +73,7 @@ public class UI_Inventory : YmirComponent
         _textDamage = InternalCalls.GetGameObjectByName("Text Damage");
         _textRate = InternalCalls.GetGameObjectByName("Text Rate");
         _textResin = InternalCalls.GetGameObjectByName("Text Resin");
-        
+
         ResetMenuSlots();
 
         UpdateTextStats();
@@ -300,8 +300,6 @@ public class UI_Inventory : YmirComponent
 
                         if (button != null)
                         {
-                            //button.GetComponent<UI_Item_Button>().ResetSlot();
-
                             if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
                             {
                                 //player.itemsList[i].inInventory = true;
