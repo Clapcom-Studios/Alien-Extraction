@@ -468,6 +468,7 @@ public class UI_Stash : YmirComponent
         }
 
         SaveStashItems();
+        player.SaveItems();
         ResetMenuSlots();
         SetSlots();
     }
