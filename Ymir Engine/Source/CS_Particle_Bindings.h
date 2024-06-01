@@ -98,6 +98,17 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 						pos->direction1 = directionShoot;
 					}
 				}
+
+				//Rotar los emitters que estan en modo free rotation para mirar en Y a donde toca
+				if (particleSystem->allEmitters.at(i)->modules.at(j)->type == EmitterType::PAR_ROTATION)
+				{
+					float anguloFowardPlayer = math::Atan2(-directionShoot.z, directionShoot.x);
+					EmitterRotation* rot = (EmitterRotation*)particleSystem->allEmitters.at(i)->modules.at(j);
+					if(rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT)
+					{
+						rot->freeWorldRotation = { 0,anguloFowardPlayer,0 };
+					}
+				}
 			}
 		}
 	}
@@ -110,7 +121,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 //This function set the initial pos of a emitter in front of the player at X distance
 void ParticlesForward(MonoObject* go, MonoObject* vector, int emitter, float distance)
 {
-	if (External == nullptr) return;
+	if (External == nullptr) return;	
 
 	//Vector hacia el que mira el player
 	float3 newOrigin = External->moduleMono->UnboxVector(vector);

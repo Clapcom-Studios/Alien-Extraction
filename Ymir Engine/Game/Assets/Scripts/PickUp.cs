@@ -10,10 +10,14 @@ public class PickUp : YmirComponent
 {
     private bool picked = false;
     private Player player = null;
+    private GameObject _itemPickedPopUp = new GameObject();
+    private GameObject _inventoryFullPopUp = new GameObject();
 
     public void Start()
     {
         picked = false;
+        _itemPickedPopUp = InternalCalls.GetGameObjectByName("ItemPicked");
+        _inventoryFullPopUp = InternalCalls.GetGameObjectByName("InventoryFull");
     }
 
     public void Update()
@@ -41,6 +45,9 @@ public class PickUp : YmirComponent
                     }
 
                     picked = true;
+                    _itemPickedPopUp?.SetActive(true);
+                    _itemPickedPopUp?.GetComponent<PickUpPopUp>().ResetTimer();
+
                     InternalCalls.Destroy(gameObject);
                 }
             }
@@ -65,12 +72,22 @@ public class PickUp : YmirComponent
                     Debug.Log("Pick up " + gameObject.Name);
                     player.itemsList.Add(Globals.SearchItemInDictionary(gameObject.Name));
 
+                    if (gameObject.Name == "core_mythic")
+                    {
+                        player.numCores++;
+                    }
+
                     picked = true;
+                    _itemPickedPopUp?.SetActive(true);
+                    _itemPickedPopUp?.GetComponent<PickUpPopUp>().ResetTimer();
+
                     InternalCalls.Destroy(gameObject);
                 }
                 else
                 {
                     // TODO: Feedback inventory full
+                    _inventoryFullPopUp?.SetActive(true);
+                    _inventoryFullPopUp?.GetComponent<PickUpPopUp>().ResetTimer();
                 }
             }
         }

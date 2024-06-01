@@ -866,7 +866,7 @@ void NavigateGridVertical(MonoObject* go, int rows, int columns, bool isDown, bo
 	}
 }
 
-void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRight, bool navigateGrids, MonoObject* gridLeft, MonoObject* gridRight, bool bounce)
+void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown, bool navigateGrids, MonoObject* gridDown, MonoObject* gridUp, bool bounce)
 {
 	if (External->scene->canNav)
 	{
@@ -909,15 +909,15 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 
 		if (isInGO)
 		{
-			if (isRight)
+			if (isDown)
 			{
-				if (offset >= listUI.size())
+				if (offset + columns >= listUI.size())
 				{
 					if (navigateGrids)
 					{
 						bool isBlocked = false;
 
-						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridRight);
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridDown);
 
 						if (gridGo != nullptr)
 						{
@@ -970,7 +970,7 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 								listUI[offset - (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
 							}
 
-							External->scene->onHoverUI -= (rows * (columns - 1));
+							SetUIState(External->moduleMono->GoToCSGO(listUI[offset - (rows * (columns - 1))]->mOwner), (int)UI_STATE::FOCUSED);
 						}
 					}
 
@@ -991,7 +991,7 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 							listUI[offset - (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
 						}
 
-						External->scene->onHoverUI -= (rows * (columns - 1));
+						SetUIState(External->moduleMono->GoToCSGO(listUI[offset - (rows * (columns - 1))]->mOwner), (int)UI_STATE::FOCUSED);
 					}
 				}
 
@@ -1011,19 +1011,20 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 						listUI[offset + rows]->SetState(UI_STATE::FOCUSED);
 					}
 
-					External->scene->onHoverUI += rows;
+					SetUIState(External->moduleMono->GoToCSGO(listUI[offset + rows]->mOwner), (int)UI_STATE::FOCUSED);
 				}
 			}
 
 			else
 			{
-				if (rows < offset)
+
+				if (offset - rows < 0)
 				{
 					if (navigateGrids)
 					{
 						bool isBlocked = false;
 
-						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridLeft);
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridUp);
 
 						if (gridGo != nullptr)
 						{
@@ -1075,7 +1076,8 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 								listUI[offset + (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
 							}
 
-							External->scene->onHoverUI += (rows * (columns - 1));
+							SetUIState(External->moduleMono->GoToCSGO(listUI[offset + (rows * (columns - 1))]->mOwner), (int)UI_STATE::FOCUSED);
+
 						}
 					}
 
@@ -1094,7 +1096,9 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 							listUI[offset + (rows * (columns - 1))]->SetState(UI_STATE::FOCUSED);
 						}
 
-						External->scene->onHoverUI += (rows * (columns - 1));
+						SetUIState(External->moduleMono->GoToCSGO(listUI[offset + (rows * (columns - 1))]->mOwner), (int)UI_STATE::FOCUSED);
+
+						//External->scene->onHoverUI += (rows * (columns - 1));
 					}
 				}
 
@@ -1113,15 +1117,14 @@ void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRi
 						listUI[offset - rows]->SetState(UI_STATE::FOCUSED);
 					}
 
-					External->scene->onHoverUI -= rows;
+					SetUIState(External->moduleMono->GoToCSGO(listUI[offset - rows]->mOwner), (int)UI_STATE::FOCUSED);
 				}
-
 			}
 		}
 	}	
 }
 
-void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown, bool navigateGrids, MonoObject* gridDown, MonoObject* gridUp, bool bounce)
+void NavigateCraftingHorizontal(MonoObject* go, int rows, int columns, bool isRight, bool navigateGrids, MonoObject* gridLeft, MonoObject* gridRight, bool bounce)
 {
 	if (External->scene->canNav)
 	{
@@ -1165,7 +1168,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 
 		if (isInGO)
 		{
-			if (isDown)
+			if (isRight)
 			{
 				if ((offset + 1) % rows == 0 || offset == listUI.size() - 1)
 				{
@@ -1173,7 +1176,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 					{
 						bool isBlocked = false;
 
-						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridDown);
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridRight);
 
 						if (gridGo != nullptr)
 						{
@@ -1226,7 +1229,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 								listUI[offset - rows + 1]->SetState(UI_STATE::FOCUSED);
 							}
 
-							External->scene->onHoverUI -= (rows - 1);
+							SetUIState(External->moduleMono->GoToCSGO(listUI[offset - rows + 1]->mOwner), (int)UI_STATE::FOCUSED);
 						}
 					}
 
@@ -1247,7 +1250,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 							listUI[offset - rows + 1]->SetState(UI_STATE::FOCUSED);
 						}
 
-						External->scene->onHoverUI -= (rows - 1);
+						SetUIState(External->moduleMono->GoToCSGO(listUI[offset - rows + 1]->mOwner), (int)UI_STATE::FOCUSED);
 					}
 				}
 
@@ -1267,7 +1270,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 						listUI[offset + 1]->SetState(UI_STATE::FOCUSED);
 					}
 
-					External->scene->onHoverUI += 1;
+					SetUIState(External->moduleMono->GoToCSGO(listUI[offset + 1]->mOwner), (int)UI_STATE::FOCUSED);
 				}
 			}
 
@@ -1279,7 +1282,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 					{
 						bool isBlocked = false;
 
-						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridUp);
+						GameObject* gridGo = External->moduleMono->GameObject_From_CSGO(gridLeft);
 
 						if (gridGo != nullptr)
 						{
@@ -1331,7 +1334,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 								listUI[offset + rows - 1]->SetState(UI_STATE::FOCUSED);
 							}
 
-							External->scene->onHoverUI += (rows - 1);
+							SetUIState(External->moduleMono->GoToCSGO(listUI[offset + rows - 1]->mOwner), (int)UI_STATE::FOCUSED);
 						}
 					}
 
@@ -1350,7 +1353,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 							listUI[offset + rows - 1]->SetState(UI_STATE::FOCUSED);
 						}
 
-						External->scene->onHoverUI += (rows - 1);
+						SetUIState(External->moduleMono->GoToCSGO(listUI[offset + rows - 1]->mOwner), (int)UI_STATE::FOCUSED);
 					}
 				}
 
@@ -1369,7 +1372,7 @@ void NavigateCraftingVertical(MonoObject* go, int rows, int columns, bool isDown
 						listUI[offset - 1]->SetState(UI_STATE::FOCUSED);
 					}
 
-					External->scene->onHoverUI -= 1;
+					SetUIState(External->moduleMono->GoToCSGO(listUI[offset - 1]->mOwner), (int)UI_STATE::FOCUSED);
 				}
 			}
 		}

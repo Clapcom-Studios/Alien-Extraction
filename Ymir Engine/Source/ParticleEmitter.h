@@ -32,7 +32,6 @@ public:
 	void Init(CParticleSystem* component);
 
 	void Update(float dt);
-	void DrawParticles();
 	void Reset();
 
 	void SpawnParticle(uint particlesToAdd = 1);

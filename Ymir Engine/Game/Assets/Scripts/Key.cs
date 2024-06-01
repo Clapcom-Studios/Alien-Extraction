@@ -11,6 +11,7 @@ public class Key : YmirComponent
 	public GameObject door1;
     public GameObject door2;
     public GameObject door3;
+    private GameObject _pickupPopUp = new GameObject();
 
     private List<GameObject> doorList = new List<GameObject>();
 
@@ -19,6 +20,8 @@ public class Key : YmirComponent
         doorList.Add(door1);
         doorList.Add(door2);
         doorList.Add(door3);
+
+        _pickupPopUp = InternalCalls.GetGameObjectByName("ItemPicked");
 	}
 
 	public void Update()
@@ -31,6 +34,7 @@ public class Key : YmirComponent
         if (other.Tag == "Player")
         {
             Audio.PlayEmbedAudio(gameObject);
+            _pickupPopUp?.SetActive(true);
 
             foreach (GameObject go in doorList)
             {

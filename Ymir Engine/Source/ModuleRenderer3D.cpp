@@ -780,6 +780,160 @@ void ModuleRenderer3D::DrawUIElements(bool isGame, bool isBuild)
 	glAlphaFunc(GL_GREATER, 0.0f);
 }
 
+void ModuleRenderer3D::DrawParticlesSystem(CParticleSystem* pSystem)
+{
+	//This list will contain ALL the particles of a Particle System, so all the emitters
+	std::vector<Particle*> listParticlesToPrint;
+
+	//Order all the list of emitters between them.
+	for (int i = 0; i < pSystem->allEmitters.size(); i++)
+	{
+		if(!pSystem->allEmitters.at(i)->listParticles.empty())
+		{
+			if(listParticlesToPrint.empty())
+			{
+				//We add the already ordered from furthest to closet particle to the list
+				for (uint j = 0; j < pSystem->allEmitters.at(i)->listParticles.size(); ++j)
+				{
+					listParticlesToPrint.push_back(pSystem->allEmitters.at(i)->listParticles.at(j));
+				}
+			}
+			else
+			{
+				int posToStartEmplacement = listParticlesToPrint.size();
+
+				//Distancia particula mas lejana (la primera) del emitter
+				float emitterToZ;
+#ifdef _STANDALONE
+					emitterToZ = (External->scene->gameCameraComponent->GetPos().z - pSystem->allEmitters.at(i)->listParticles.at(0)->position.z);
+#else
+					emitterToZ = (External->camera->editorCamera->GetPos().z - pSystem->allEmitters.at(i)->listParticles.at(0)->position.z);
+#endif // _STANDALONE
+
+				//Buscar la particula mas lejana en comparacion para empezar en ese punto
+				for (int k = 0; k < listParticlesToPrint.size(); k++) 
+				{
+					float printToZ; //Distancia desde la particula de la print list hasta la camara
+#ifdef _STANDALONE
+					printToZ = (External->scene->gameCameraComponent->GetPos().z - (listParticlesToPrint.at(k)->position.z));
+#else
+					printToZ = (External->camera->editorCamera->GetPos().z -(listParticlesToPrint.at(k)->position.z));
+#endif // _STANDALONE
+					if(emitterToZ* emitterToZ < printToZ * printToZ)
+					{
+						//Guardarse la posicion para a empezar a colocar desde ahi de manera mas optima.
+						posToStartEmplacement = k;
+						break;
+					}
+				}
+
+				//Add to the list starting to search from the pos to Start
+				for(int j = 0; j < pSystem->allEmitters.at(i)->listParticles.size();j++)
+				{
+#ifdef _STANDALONE
+					emitterToZ = (External->scene->gameCameraComponent->GetPos().z - pSystem->allEmitters.at(i)->listParticles.at(j)->position.z);
+#else
+					emitterToZ = (External->camera->editorCamera->GetPos().z - pSystem->allEmitters.at(i)->listParticles.at(j)->position.z);
+#endif // _STANDALONE
+
+					bool emplaced = false;
+					for (int k = posToStartEmplacement; k < listParticlesToPrint.size(); k++)
+					{
+						float printToZ; //Distancia desde la particula de la print list hasta la camara
+#ifdef _STANDALONE
+						printToZ = (External->scene->gameCameraComponent->GetPos().z - (listParticlesToPrint.at(k)->position.z));
+#else
+						printToZ = (External->camera->editorCamera->GetPos().z - (listParticlesToPrint.at(k)->position.z));
+#endif // _STANDALONE
+						if (emitterToZ * emitterToZ < printToZ * printToZ)
+						{
+							//Guardarse la posicion para a empezar a colocar desde ahi de manera mas optima.
+							listParticlesToPrint.emplace(listParticlesToPrint.begin() + k, pSystem->allEmitters.at(i)->listParticles.at(j));
+							emplaced = true;
+							posToStartEmplacement = k-1; //Como ya estan ordenados es asegurado que se ordenara despues de la particula que ya hay puesta
+							break;
+						}
+					}
+
+					//Si no ha sido colocado en ningun momento colocarlo al final de todo, como la particula mas cercana
+					if(!emplaced)
+					{
+						listParticlesToPrint.push_back(pSystem->allEmitters.at(i)->listParticles.at(j));
+					}
+				}
+
+			}
+		}
+	}
+
+	//Print en si de las particulas
+	glCullFace(GL_FALSE);
+
+
+	for (int i = 0; i < listParticlesToPrint.size(); i++)
+	{
+		Particle* par = listParticlesToPrint.at(i);
+
+		//Matrix transform de la particula
+		float4x4 m = float4x4::FromTRS(par->position, par->worldRotation, par->size).Transposed();
+
+		glPushMatrix();
+		glMultMatrixf(m.ptr());
+
+		//TODO TONI: ... this works, im sorry
+		glColor4f(par->color.r * 4, par->color.g * 4, par->color.b * 4, par->color.a * 4);
+
+		if (par->pTexture != nullptr)
+		{
+			par->pTexture->BindTexture(true, 0 /*par->pTexture->ID*/);
+		}
+
+		//Drawing to tris in direct mode
+		glBegin(GL_TRIANGLES);
+
+		glTexCoord2f(1.0f, 0.0f);
+		glVertex3f(.5f, -.5f, .0f);
+		glTexCoord2f(0.0f, 1.0f);
+		glVertex3f(-.5f, .5f, .0f);
+		glTexCoord2f(0.0f, 0.0f);
+		glVertex3f(-.5f, -.5f, .0f);
+
+		glTexCoord2f(1.0f, 0.0f);
+		glVertex3f(.5f, -.5f, .0f);
+		glTexCoord2f(1.0f, 1.0f);
+		glVertex3f(.5f, .5f, .0f);
+		glTexCoord2f(0.0f, 1.0f);
+		glVertex3f(-.5f, .5f, .0f);
+
+		if (par->pTexture != nullptr)
+		{
+			par->pTexture->BindTexture(false, 0/*par->pTexture->ID*/);
+		}
+
+		glEnd();
+		glPopMatrix();
+		//glBindTexture(GL_TEXTURE_2D, 0);
+
+		par = nullptr;
+	}
+
+	//Mas try fix de Xavi
+	//glDepthMask(GL_TRUE);
+	glCullFace(GL_TRUE); //Funciona mejor que el depthMask
+
+	//Borrar todo de la lista
+	if (!listParticlesToPrint.empty())
+	{
+		/*for (auto it = listParticlesToPrint.rbegin(); it != listParticlesToPrint.rend(); ++it)
+		{
+			delete (*it);
+			(*it) = nullptr;
+		}*/
+
+		listParticlesToPrint.clear();
+	}
+}
+
 void ModuleRenderer3D::DrawParticles(ParticleEmitter* emitter) //TODO ERIC: Posiblemente haya que reworkear un poco el sistema de particula y que sea una lista enorme de todas las particulas en el momento. Ya de paso aprovecho y que sea una pool.
 {
 	//Try fix Xavi transparencias particulas
@@ -1216,10 +1370,7 @@ void ModuleRenderer3D::DrawGameObjects(bool isGame)
 			{
 				DrawParticlesShapeDebug(particleComponent);
 			}
-			for (int i = 0; i < particleComponent->allEmitters.size(); i++)
-			{
-				DrawParticles(particleComponent->allEmitters.at(i));
-			}
+			DrawParticlesSystem(particleComponent);
 		}
 	}
 

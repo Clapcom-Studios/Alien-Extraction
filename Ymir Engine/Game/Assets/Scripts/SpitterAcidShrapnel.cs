@@ -50,5 +50,9 @@ public class SpitterAcidShrapnel : YmirComponent
             healthScript.TakeDmg(damage);
             destroyed = true;
         }
+        else if (other.Tag == "World")
+        {
+            destroyed = true;
+        }
     }
 }

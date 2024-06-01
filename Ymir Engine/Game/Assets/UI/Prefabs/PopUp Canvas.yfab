@@ -7,7 +7,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 528999137,
+            "Parent UID": 1834706479,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34,8 +34,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 633,
-                    "Height": 544,
+                    "Width": 791,
+                    "Height": 529,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -50,7 +50,9 @@
                 1536161671,
                 1254634614,
                 1666938166,
-                92552985
+                92552985,
+                1031765761,
+                447796636
             ]
         },
         {
@@ -302,6 +304,146 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "ItemPicked",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1031765761,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 728359170,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 15,
+                    "Position Y": 15,
+                    "Width": 640,
+                    "Height": 150,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        15,
+                        15,
+                        640,
+                        150
+                    ],
+                    "Path": "Assets\/UI\/ItemPicked.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "PickUpPopUp.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "popUpTime": 2
+                }
+            ]
+        },
+        {
+            "Name": "InventoryFull",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 447796636,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 728359170,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 15,
+                    "Position Y": 15,
+                    "Width": 640,
+                    "Height": 150,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        15,
+                        15,
+                        640,
+                        150
+                    ],
+                    "Path": "Assets\/UI\/InventoryFull.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "PickUpPopUp.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "popUpTime": 2
                 }
             ]
         }

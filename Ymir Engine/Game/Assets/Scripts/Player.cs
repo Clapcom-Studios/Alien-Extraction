@@ -123,6 +123,8 @@ public class Player : YmirComponent
     public float resinHealing = 400;
     public GameObject resinText = null;
 
+    public int numCores = 0;
+
     #endregion
 
     #region DEFINE SKILL VARS
@@ -393,7 +395,7 @@ public class Player : YmirComponent
         movementVector = new Vector3(movementVector.x, gravity, movementVector.z);
 
         // Aim sensor Position
-        if (aimSensor != null) 
+        if (aimSensor != null)
             aimSensor.SetPosition(gameObject.transform.globalPosition);
 
         UpdateControllerInputs();
@@ -478,6 +480,14 @@ public class Player : YmirComponent
         if (Input.GetKey(YmirKeyCode.F8) == KeyState.KEY_DOWN)
         {
             SavePlayer();
+        }
+
+        if (Input.GetKey(YmirKeyCode.F9) == KeyState.KEY_DOWN)
+        {
+            numCores++;
+            Debug.Log("Debug Add cores. Current: " + numCores.ToString());
+
+            UpdateAlienCore();
         }
     }
 
@@ -742,7 +752,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Acidic Spit (Skill 1) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0 && hasDashed == false)
+                if (Input.GetGamepadButton(GamePadButton.RIGHTSHOULDER) == KeyState.KEY_DOWN && hasAcidic == false && acidicCDTimer <= 0 && hasDashed == false)
                 {
                     hasAcidic = true;
                     inputsList.Add(INPUT.I_ACID);
@@ -787,7 +797,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Reload -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && currentWeapon.ReloadAvailable())
+                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && currentWeapon.ReloadAvailable())
                 {
                     inputsList.Add(INPUT.I_RELOAD);
                 }
@@ -1398,33 +1408,44 @@ public class Player : YmirComponent
 
                             currentWeapon = w_SMG_0.GetComponent<SMG>();
                             w_SMG_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_1:
 
                             currentWeapon = w_SMG_1.GetComponent<SMG>();
                             w_SMG_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_2:
 
                             currentWeapon = w_SMG_2.GetComponent<SMG>();
                             w_SMG_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl2.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_ALPHA:
 
                             currentWeapon = w_SMG_3a.GetComponent<SMG>();
                             w_SMG_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3A.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
                             currentWeapon = w_SMG_3b.GetComponent<SMG>();
                             w_SMG_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3B.png", (int)UI_STATE.NORMAL);
                             break;
                         default:
                             break;
                     }
 
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+                    //UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                    //    "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+
                 }
                 break;
 
@@ -1436,33 +1457,43 @@ public class Player : YmirComponent
 
                             currentWeapon = w_Shotgun_0.GetComponent<Shotgun>();
                             w_Shotgun_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_1:
 
                             currentWeapon = w_Shotgun_1.GetComponent<Shotgun>();
                             w_Shotgun_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_2:
 
                             currentWeapon = w_Shotgun_2.GetComponent<Shotgun>();
                             w_Shotgun_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\Shotgunlvl2.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_ALPHA:
 
                             currentWeapon = w_Shotgun_3a.GetComponent<Shotgun>();
                             w_Shotgun_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3A.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
                             currentWeapon = w_Shotgun_3b.GetComponent<Shotgun>();
                             w_Shotgun_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3B.png", (int)UI_STATE.NORMAL);
                             break;
                         default:
                             break;
                     }
 
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
+                    //UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                    //    "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
                 }
                 break;
 
@@ -1474,33 +1505,43 @@ public class Player : YmirComponent
 
                             currentWeapon = w_Plasma_0.GetComponent<Plasma>();
                             w_Plasma_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_1:
 
                             currentWeapon = w_Plasma_1.GetComponent<Plasma>();
                             w_Plasma_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_2:
 
                             currentWeapon = w_Plasma_2.GetComponent<Plasma>();
                             w_Plasma_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_ALPHA:
 
                             currentWeapon = w_Plasma_3a.GetComponent<Plasma>();
                             w_Plasma_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3A.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
                             currentWeapon = w_Plasma_3b.GetComponent<Plasma>();
                             w_Plasma_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+    "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3B.png", (int)UI_STATE.NORMAL);
                             break;
                         default:
                             break;
                     }
 
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
+                    //UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                    //    "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
 
                 }
                 break;
@@ -1724,8 +1765,8 @@ public class Player : YmirComponent
         {
             case true:
                 inputsList.Add(INPUT.I_STOP);
-                break; 
-                
+                break;
+
             case false:
                 inputsList.Add(INPUT.I_IDLE);
                 break;
@@ -1993,6 +2034,59 @@ public class Player : YmirComponent
 
     #endregion
 
+    #region Items
+
+    public void ReCountAlienCore()
+    {
+        numCores = 0;
+
+        for (int i = 0; i < itemsList.Count; ++i)
+        {
+            if (itemsList[i].dictionaryName == "core_mythic")
+            {
+                ++numCores;
+            }
+        }
+    }
+
+    public void UseAlienCore(int cost)
+    {
+        numCores -= cost;
+
+        Debug.Log(cost.ToString());
+
+        for (int i = 0; i < cost; i++)
+        {
+            for (int j = 0; j < itemsList.Count; ++j)
+            {
+                if (itemsList[j].dictionaryName == "core_mythic")
+                {
+                    itemsList.Remove(itemsList[j]);
+                    break;
+                }
+            }
+        }
+    }
+
+    public void UpdateAlienCore()
+    {
+        int coresInList = 0;
+        for (int i = 0; i < itemsList.Count; ++i)
+        {
+            if (itemsList[i].dictionaryName == "core_mythic")
+            {
+                ++coresInList;
+            }
+        }
+
+        for (int i = 0; i < numCores - coresInList; ++i)
+        {
+            itemsList.Add(Globals.SearchItemInDictionary("core_mythic"));
+        }
+    }
+
+    #endregion
+
     #region SaveLoad
 
     public void SavePlayer()
@@ -2021,17 +2115,28 @@ public class Player : YmirComponent
 
         // Others
         SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Iscariot dialogue", hasTalkedIscariot);
+
+        Debug.Log("Player saved");
     }
 
     public void SaveItems()
     {
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Items num", itemsList.Count);
 
+        string saved = "NONE";
+
         for (int i = 0; i < itemsList.Count; i++)
         {
             SaveLoad.SaveString(Globals.saveGameDir, saveName, "Item " + i.ToString(), itemsList[i].dictionaryName);
             SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Item " + i.ToString() + " Equipped", itemsList[i].isEquipped);
+
+            if (itemsList[i].inSave)
+            {
+                saved = itemsList[i].dictionaryName;
+            }
         }
+
+        SaveLoad.SaveString(Globals.saveGameDir, saveName, "Save Item", saved);
     }
 
     private void SaveLvlInfo()
@@ -2091,6 +2196,8 @@ public class Player : YmirComponent
 
         Debug.Log("saveName " + saveName);
 
+        string saved = SaveLoad.LoadString(Globals.saveGameDir, saveName, "Save Item");
+
         for (int i = 0; i < SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Items num"); i++)
         {
             string name = SaveLoad.LoadString(Globals.saveGameDir, saveName, "Item " + i.ToString());
@@ -2098,6 +2205,12 @@ public class Player : YmirComponent
             Item item = Globals.SearchItemInDictionary(name);
             item.isEquipped = SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Item " + i.ToString() + " Equipped");
             item.inInventory = false;
+
+            if (saved == name)
+            {
+                item.inSave = true;
+            }
+
             //item.LogStats();
             itemsList.Add(item);
 

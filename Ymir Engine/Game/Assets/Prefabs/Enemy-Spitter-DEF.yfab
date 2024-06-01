@@ -1,21 +1,21 @@
 {
     "Prefab": [
         {
-            "Name": "Enemy-Spitter",
+            "Name": "Enemy-Spitter (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1387339074,
+            "UID": 343048315,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 298677539,
+            "Parent UID": 1742288528,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
-                        0,
-                        0
+                        6.6070365905761719,
+                        7.3409275501035154e-05,
+                        351.25888061523438
                     ],
                     "Rotation": [
                         -0,
@@ -30,18 +30,18 @@
                 }
             ],
             "Children UID": [
-                1106399201,
-                1618763415
+                762551559,
+                1871269244
             ]
         },
         {
-            "Name": "Spitter",
+            "Name": "Enemy-Spitter (2)",
             "Static": false,
             "Tag": "Enemy",
-            "UID": 1106399201,
+            "UID": 762551559,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1387339074,
+            "Parent UID": 343048315,
             "Components": [
                 {
                     "Type": "Transform",
@@ -167,22 +167,22 @@
                 }
             ],
             "Children UID": [
-                1523874422,
-                1018190275,
-                1262917136,
-                368663829,
-                861165025
+                616734712,
+                550658197,
+                1332108554,
+                1573048876,
+                603626550
             ]
         },
         {
-            "Name": "New_Mesh",
+            "Name": "New_Mesh ",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1523874422,
+            "UID": 616734712,
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/FBX\/SPITTERBETA.fbx",
-            "Parent UID": 1106399201,
+            "Parent UID": 762551559,
             "Components": [
                 {
                     "Type": "Transform",
@@ -257,20 +257,20 @@
             ]
         },
         {
-            "Name": "ParticlesAttack1_Spitter",
+            "Name": "ParticlesAttack1_Spitter (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1018190275,
+            "UID": 550658197,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1106399201,
+            "Parent UID": 762551559,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        62.659461975097656,
                         0
                     ],
                     "Rotation": [
@@ -296,7 +296,7 @@
                             "Settings": [
                                 {
                                     "Type": 0,
-                                    "Lifetime": 0.5,
+                                    "Lifetime": 0.75,
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
@@ -328,7 +328,7 @@
                                     "SpawnMode": 2,
                                     "StartMode": 3,
                                     "NumParticles": 1,
-                                    "SpawnRatio": 0.20000000298023224,
+                                    "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 1,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 2,
@@ -359,7 +359,7 @@
                                         -2.4000000953674316,
                                         10.199999809265137
                                     ],
-                                    "ChangeSpeed1": 0.20000000298023224,
+                                    "ChangeSpeed1": 0.73600000143051147,
                                     "ChangeSpeed2": 1,
                                     "NormalizedChange": true
                                 },
@@ -378,7 +378,7 @@
                                     "Type": 4,
                                     "Progressive": false,
                                     "Loop": false,
-                                    "Size1": 5,
+                                    "Size1": 60,
                                     "Size2": 0,
                                     "TimeStart": 0.85100001096725464,
                                     "TimeStop": 1
@@ -388,9 +388,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        0.21967265009880066,
-                                        0.29203540086746216,
-                                        0,
+                                        0.61989110708236694,
+                                        0.8053097128868103,
+                                        0.057013101875782013,
                                         1
                                     ],
                                     "Color2": [
@@ -420,7 +420,7 @@
                                     "Position": [
                                         0,
                                         0,
-                                        62.400001525878906
+                                        60
                                     ],
                                     "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
@@ -468,7 +468,7 @@
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 21,
+                                    "Size1": 60,
                                     "Size2": 0,
                                     "TimeStart": 0,
                                     "TimeStop": 1
@@ -645,13 +645,13 @@
             ]
         },
         {
-            "Name": "ParticlesDamageSpitter ",
+            "Name": "ParticlesDamageSpitter",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1262917136,
+            "UID": 1332108554,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1106399201,
+            "Parent UID": 762551559,
             "Components": [
                 {
                     "Type": "Transform",
@@ -919,13 +919,13 @@
             ]
         },
         {
-            "Name": "ParticlesAttack2_Spitter",
+            "Name": "ParticlesAttack2_Spitter (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 368663829,
+            "UID": 1573048876,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1106399201,
+            "Parent UID": 762551559,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1071,13 +1071,13 @@
             ]
         },
         {
-            "Name": "ParticlesAcidSplit",
+            "Name": "ParticlesAcidSplit (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 861165025,
+            "UID": 603626550,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1106399201,
+            "Parent UID": 762551559,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1262,7 +1262,7 @@
                                     "NumParticles": 10,
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
-                                    "PointingUID": 503047905,
+                                    "PointingUID": 0,
                                     "ConditionForSpawn": 1,
                                     "SubemitterMaxLifetime": 0,
                                     "SubemitterMinLifetime": 1
@@ -1380,7 +1380,7 @@
                                     "NumParticles": 10,
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
-                                    "PointingUID": 503047905,
+                                    "PointingUID": 0,
                                     "ConditionForSpawn": 1,
                                     "SubemitterMaxLifetime": 0,
                                     "SubemitterMinLifetime": 1
@@ -1498,7 +1498,7 @@
                                     "NumParticles": 10,
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
-                                    "PointingUID": 503047905,
+                                    "PointingUID": 0,
                                     "ConditionForSpawn": 1,
                                     "SubemitterMaxLifetime": 0,
                                     "SubemitterMinLifetime": 1
@@ -1616,7 +1616,7 @@
                                     "NumParticles": 10,
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
-                                    "PointingUID": 503047905,
+                                    "PointingUID": 0,
                                     "ConditionForSpawn": 1,
                                     "SubemitterMaxLifetime": 0,
                                     "SubemitterMinLifetime": 1
@@ -1734,7 +1734,7 @@
                                     "NumParticles": 100,
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
-                                    "PointingUID": 503047905,
+                                    "PointingUID": 0,
                                     "ConditionForSpawn": 1,
                                     "SubemitterMaxLifetime": 0,
                                     "SubemitterMinLifetime": 1
@@ -1848,7 +1848,7 @@
                                     "NumParticles": 15,
                                     "SpawnRatio": 0.13400000333786011,
                                     "NumParticlesToStop": 100,
-                                    "PointingUID": 503047905,
+                                    "PointingUID": 0,
                                     "ConditionForSpawn": 2,
                                     "SubemitterMaxLifetime": 1,
                                     "SubemitterMinLifetime": 0
@@ -1927,13 +1927,13 @@
             ]
         },
         {
-            "Name": "Health_Bar_Plane ",
+            "Name": "Health_Bar_Plane (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1618763415,
+            "UID": 1871269244,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1387339074,
+            "Parent UID": 343048315,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1964,18 +1964,18 @@
                 }
             ],
             "Children UID": [
-                658733598
+                350205666
             ]
         },
         {
-            "Name": "pPlane1 ",
+            "Name": "pPlane1 (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 658733598,
+            "UID": 350205666,
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Health_Bar_Plane.fbx",
-            "Parent UID": 1618763415,
+            "Parent UID": 1871269244,
             "Components": [
                 {
                     "Type": "Transform",

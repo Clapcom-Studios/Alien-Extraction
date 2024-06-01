@@ -300,8 +300,6 @@ public class UI_Inventory : YmirComponent
 
                         if (button != null)
                         {
-                            //button.GetComponent<UI_Item_Button>().ResetSlot();
-
                             if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
                             {
                                 //player.itemsList[i].inInventory = true;

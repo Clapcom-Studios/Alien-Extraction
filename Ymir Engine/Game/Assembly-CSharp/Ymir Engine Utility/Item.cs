@@ -58,8 +58,6 @@ namespace YmirEngine
 
         // Menus management
         public bool inInventory = false;
-        //public bool inStash = false;
-        public bool inCraft = false;
 
         public string dictionaryName = "";
 
@@ -97,8 +95,6 @@ namespace YmirEngine
             inSave = other.inSave;
 
             inInventory = other.inInventory;
-            //inStash = other.inStash;
-            inCraft = other.inCraft;
             dictionaryName = other.dictionaryName;
         }
 

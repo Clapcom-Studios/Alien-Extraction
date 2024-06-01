@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART2_FINAL\/LVL2_LAB_PART2_COLLIDERS.nav",
     "Editor Camera Position": [
-        -70.993484497070312,
-        66.946395874023438,
-        58.464653015136719
+        66.905242919921875,
+        32.780498504638672,
+        561.7967529296875
     ],
     "Editor Camera Right (X)": [
-        0.69361692667007446,
-        1.0132789611816406e-06,
-        0.72034996747970581
+        0.12787544727325439,
+        1.1026859283447266e-06,
+        0.99180084466934204
     ],
     "Editor Camera Up (Y)": [
-        0.38488137722015381,
-        0.84529632329940796,
-        -0.37059915065765381
+        0.59218668937683105,
+        0.80218124389648438,
+        -0.076353050768375397
     ],
     "Editor Camera Front (Z)": [
-        0.60890758037567139,
-        -0.53430134057998657,
-        -0.58630955219268799
+        0.7955973744392395,
+        -0.59708797931671143,
+        -0.10257776081562042
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 2009713370,
+            "UID": 1483525145,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -60,7 +60,8 @@
                 346797426,
                 332055288,
                 1655101801,
-                1387339074
+                1387339074,
+                728359170
             ]
         },
         {
@@ -70,7 +71,7 @@
             "UID": 456674892,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -365,24 +366,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 2026,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
-                    "Diffuse_UID": 2109837965,
+                    "Diffuse_ID": 1048,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
+                    "Diffuse_UID": 202908895,
                     "Specular_ID": 2086,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_S.png",
                     "Specular_UID": 420480088,
-                    "Normal_ID": 2071,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
-                    "Normal_UID": 2112981208,
+                    "Normal_ID": 1078,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
+                    "Normal_UID": 257343466,
                     "Height_ID": 2056,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_H.png",
                     "Height_UID": 615607320,
-                    "Ambient_ID": 2011,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
-                    "Ambient_UID": 1048110659,
-                    "Emissive_ID": 2041,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
-                    "Emissive_UID": 22567076
+                    "Ambient_ID": 1033,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
+                    "Ambient_UID": 1896914861,
+                    "Emissive_ID": 1063,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
+                    "Emissive_UID": 1844643320
                 }
             ]
         },
@@ -444,24 +445,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 2030,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
-                    "Diffuse_UID": 2109837965,
+                    "Diffuse_ID": 1052,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
+                    "Diffuse_UID": 202908895,
                     "Specular_ID": 2090,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_S.png",
                     "Specular_UID": 420480088,
-                    "Normal_ID": 2075,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
-                    "Normal_UID": 2112981208,
+                    "Normal_ID": 1082,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
+                    "Normal_UID": 257343466,
                     "Height_ID": 2060,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_H.png",
                     "Height_UID": 615607320,
-                    "Ambient_ID": 2015,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
-                    "Ambient_UID": 1048110659,
-                    "Emissive_ID": 2045,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
-                    "Emissive_UID": 22567076
+                    "Ambient_ID": 1037,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
+                    "Ambient_UID": 1896914861,
+                    "Emissive_ID": 1067,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
+                    "Emissive_UID": 1844643320
                 }
             ]
         },
@@ -523,24 +524,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 2034,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
-                    "Diffuse_UID": 2109837965,
+                    "Diffuse_ID": 1056,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
+                    "Diffuse_UID": 202908895,
                     "Specular_ID": 2094,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_S.png",
                     "Specular_UID": 420480088,
-                    "Normal_ID": 2079,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
-                    "Normal_UID": 2112981208,
+                    "Normal_ID": 1086,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
+                    "Normal_UID": 257343466,
                     "Height_ID": 2064,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_H.png",
                     "Height_UID": 615607320,
-                    "Ambient_ID": 2019,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
-                    "Ambient_UID": 1048110659,
-                    "Emissive_ID": 2049,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
-                    "Emissive_UID": 22567076
+                    "Ambient_ID": 1041,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
+                    "Ambient_UID": 1896914861,
+                    "Emissive_ID": 1071,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
+                    "Emissive_UID": 1844643320
                 }
             ]
         },
@@ -602,24 +603,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 2038,
-                    "Diffuse_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
-                    "Diffuse_UID": 2109837965,
+                    "Diffuse_ID": 1060,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_D.png",
+                    "Diffuse_UID": 202908895,
                     "Specular_ID": 2098,
                     "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_S.png",
                     "Specular_UID": 420480088,
-                    "Normal_ID": 2083,
-                    "Normal_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
-                    "Normal_UID": 2112981208,
+                    "Normal_ID": 1090,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_N.png",
+                    "Normal_UID": 257343466,
                     "Height_ID": 2068,
                     "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_H.png",
                     "Height_UID": 615607320,
-                    "Ambient_ID": 2023,
-                    "Ambient_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
-                    "Ambient_UID": 1048110659,
-                    "Emissive_ID": 2053,
-                    "Emissive_Path": "Assets\/ARTE_BETA\/ResizedTextures\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
-                    "Emissive_UID": 22567076
+                    "Ambient_ID": 1045,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_A.png",
+                    "Ambient_UID": 1896914861,
+                    "Emissive_ID": 1075,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Door_Exit\/TEX_PROP_Door_Final_Lab2_E.png",
+                    "Emissive_UID": 1844643320
                 },
                 {
                     "World gravity": [
@@ -9825,9 +9826,9 @@
                         -2.7572669982910156
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -3.1641099452972412,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.85472190380096436,
@@ -10661,7 +10662,7 @@
             "UID": 1462968092,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -10749,9 +10750,9 @@
                         619.72198486328125
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -10863,9 +10864,9 @@
                         618.6265869140625
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -10977,9 +10978,9 @@
                         618.6087646484375
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -11842,7 +11843,7 @@
             "UID": 1406784881,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12115,7 +12116,7 @@
             "UID": 505858485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13828,7 +13829,7 @@
             "UID": 2107836948,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13962,7 +13963,7 @@
                     "Height_ID": 1148,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/RESIZED OLD TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
                     "Height_UID": 1739139600,
-                    "Ambient_ID": 2117,
+                    "Ambient_ID": 301,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
                     "Ambient_UID": 1685713740,
                     "Emissive_ID": 1146,
@@ -14076,7 +14077,7 @@
                     "Height_ID": 1148,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/RESIZED OLD TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
                     "Height_UID": 1739139600,
-                    "Ambient_ID": 2117,
+                    "Ambient_ID": 301,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
                     "Ambient_UID": 1685713740,
                     "Emissive_ID": 1146,
@@ -14190,7 +14191,7 @@
                     "Height_ID": 1148,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/RESIZED OLD TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
                     "Height_UID": 1739139600,
-                    "Ambient_ID": 2117,
+                    "Ambient_ID": 301,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
                     "Ambient_UID": 1685713740,
                     "Emissive_ID": 1146,
@@ -14304,7 +14305,7 @@
                     "Height_ID": 1148,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/RESIZED OLD TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
                     "Height_UID": 1739139600,
-                    "Ambient_ID": 2117,
+                    "Ambient_ID": 301,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
                     "Ambient_UID": 1685713740,
                     "Emissive_ID": 1146,
@@ -14418,7 +14419,7 @@
                     "Height_ID": 1148,
                     "Height_Path": "Assets\/Textures\/ALL_TEXTURES_ALPHA_3\/RESIZED OLD TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
                     "Height_UID": 1739139600,
-                    "Ambient_ID": 2117,
+                    "Ambient_ID": 301,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
                     "Ambient_UID": 1685713740,
                     "Emissive_ID": 1146,
@@ -14469,7 +14470,7 @@
             "UID": 511732336,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14507,7 +14508,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14953,7 +14954,7 @@
             "UID": 165934810,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15214,7 +15215,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15305,7 +15306,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303116234317258e-09,
+                        3.8303156202346145e-09,
                         90,
                         0
                     ],
@@ -15384,7 +15385,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7866913140096585e-06,
+                        1.786692337191198e-06,
                         90,
                         0
                     ],
@@ -15463,7 +15464,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303142879669849e-09,
+                        3.8303182847698736e-09,
                         90,
                         0
                     ],
@@ -15590,7 +15591,7 @@
             "UID": 982585116,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15833,7 +15834,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15923,14 +15924,14 @@
                         0
                     ],
                     "Rotation": [
-                        -1.0017995009548031e-05,
-                        90,
-                        0
+                        -2.4534532183650981e-09,
+                        -88.440658569335938,
+                        -1.002076987788314e-05
                     ],
                     "Scale": [
-                        1.0000007152557373,
+                        1.000002384185791,
                         1,
-                        1.0000007152557373
+                        1.000002384185791
                     ]
                 },
                 {
@@ -16003,13 +16004,13 @@
                     ],
                     "Rotation": [
                         0,
-                        90,
+                        -88.719459533691406,
                         0
                     ],
                     "Scale": [
+                        1.0000079870223999,
                         1,
-                        1,
-                        1
+                        1.0000079870223999
                     ]
                 },
                 {
@@ -16134,24 +16135,9 @@
                 {
                     "Type": "Material",
                     "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
                     "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
+                        {}
                     ],
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
@@ -16166,7 +16152,7 @@
             "UID": 1423819104,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16386,7 +16372,7 @@
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16463,7 +16449,7 @@
             "UID": 1459372103,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16540,7 +16526,7 @@
             "UID": 1393792402,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16617,7 +16603,7 @@
             "UID": 1799577663,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16694,7 +16680,7 @@
             "UID": 1224520343,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16771,7 +16757,7 @@
             "UID": 778851339,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16848,7 +16834,7 @@
             "UID": 208637195,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16925,7 +16911,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16952,8 +16938,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 929,
-                    "Height": 569,
+                    "Width": 992,
+                    "Height": 521,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -18952,7 +18938,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19145,8 +19131,8 @@
                     "rightGridName": "Grid Chip 2",
                     "downGridName": "Grid Chip 2",
                     "upGridName": "",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -19493,8 +19479,8 @@
                     "rightGridName": "Grid Chip 2",
                     "downGridName": "Grid Consumable 1",
                     "upGridName": "Grid Armor",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -19841,8 +19827,8 @@
                     "rightGridName": "Inventory",
                     "downGridName": "",
                     "upGridName": "Grid Armor",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -20189,8 +20175,8 @@
                     "rightGridName": "Grid Chip 1",
                     "downGridName": "Grid Consumable 2",
                     "upGridName": "Grid Chip 1",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -20537,8 +20523,8 @@
                     "rightGridName": "Grid Chip 1",
                     "downGridName": " ",
                     "upGridName": "Grid Consumable 1",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -20885,8 +20871,8 @@
                     "rightGridName": "",
                     "downGridName": "Inventory",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": true,
@@ -21233,8 +21219,8 @@
                     "rightGridName": "",
                     "downGridName": " ",
                     "upGridName": "Grid Save",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": true,
                     "empty": true,
@@ -26512,7 +26498,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26658,8 +26644,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -27053,7 +27039,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27199,8 +27185,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -27406,7 +27392,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27615,8 +27601,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": false,
                     "bounceY": false,
                     "empty": false,
@@ -28200,7 +28186,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -28313,7 +28299,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -28475,6 +28461,7 @@
                     "currentResinVessels": 0,
                     "maxResinVessels": 2,
                     "resinHealing": 400,
+                    "numCores": 0,
                     "dashDuration": 0.25,
                     "dashDistance": 400,
                     "swipeTimer": -0.022000163793563843,
@@ -41299,7 +41286,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41517,8 +41504,8 @@
                     "rightGridName": " ",
                     "downGridName": " ",
                     "upGridName": " ",
-                    "naviagteX": true,
-                    "naviagteY": true,
+                    "navigateX": true,
+                    "navigateY": true,
                     "bounceX": true,
                     "bounceY": false,
                     "empty": false,
@@ -41973,7 +41960,7 @@
             "UID": 346797426,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42067,7 +42054,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42248,7 +42235,7 @@
                     ],
                     "Rotation": [
                         0,
-                        -2.5439390594073075e-09,
+                        -4.1199653603127729e-18,
                         0
                     ],
                     "Scale": [
@@ -43202,7 +43189,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -43390,9 +43377,9 @@
                         0
                     ],
                     "Rotation": [
-                        -5.0878781188146149e-09,
+                        -8.2399307206255458e-18,
                         0,
-                        -5.0878781188146149e-09
+                        -8.2399307206255458e-18
                     ],
                     "Scale": [
                         1,
@@ -43462,9 +43449,9 @@
                         0
                     ],
                     "Rotation": [
-                        8.7000092912151046e-24,
-                        -1.7561386016185876e-31,
-                        -8.7000092912151046e-24
+                        1.4089855855252017e-32,
+                        -2.8441033891629352e-40,
+                        -1.4089855855252017e-32
                     ],
                     "Scale": [
                         0.66134387254714966,
@@ -44073,7 +44060,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2009713370,
+            "Parent UID": 1483525145,
             "Components": [
                 {
                     "Type": "Transform",
@@ -44259,9 +44246,9 @@
                         0
                     ],
                     "Rotation": [
-                        0.054831136018037796,
+                        8.8800224118390503e-11,
                         0,
-                        -0.054831136018037796
+                        -8.8800224118390503e-11
                     ],
                     "Scale": [
                         1,
@@ -46091,6 +46078,197 @@
                     "Diffuse_ID": 0,
                     "Diffuse_Path": "Checker Image",
                     "Diffuse_UID": 0
+                }
+            ]
+        },
+        {
+            "Name": "PopUpCanvas",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 728359170,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1483525145,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 992,
+                    "Height": 521,
+                    "UI Type": 0,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        696,
+                        591
+                    ]
+                }
+            ],
+            "Children UID": [
+                1031765761,
+                447796636
+            ]
+        },
+        {
+            "Name": "ItemPicked",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1031765761,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 728359170,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 15,
+                    "Position Y": 15,
+                    "Width": 640,
+                    "Height": 150,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        15,
+                        15,
+                        640,
+                        150
+                    ],
+                    "Path": "Assets\/UI\/ItemPicked.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "PickUpPopUp.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "popUpTime": 2
+                }
+            ]
+        },
+        {
+            "Name": "InventoryFull",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 447796636,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 728359170,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 15,
+                    "Position Y": 15,
+                    "Width": 640,
+                    "Height": 150,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        15,
+                        15,
+                        640,
+                        150
+                    ],
+                    "Path": "Assets\/UI\/InventoryFull.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "PickUpPopUp.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "popUpTime": 2
                 }
             ]
         }

@@ -4,7 +4,7 @@
             "Name": "ParticlesSmgDefault",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 530848902,
+            "UID": 148637159,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1248383492,
@@ -13,9 +13,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -40.892543792724609,
-                        133.94056701660156,
-                        113.01505279541016
+                        -40,
+                        134,
+                        113
                     ],
                     "Rotation": [
                         -0,
@@ -287,9 +287,9 @@
                                     "Random": false,
                                     "UseShapeBase": true,
                                     "Direction1": [
-                                        0.10000000149011612,
-                                        1,
-                                        1
+                                        -0.70681124925613403,
+                                        0,
+                                        0.70740216970443726
                                     ],
                                     "Direction2": [
                                         -1.5,
@@ -460,7 +460,7 @@
                                     "SpawnMode": 1,
                                     "StartMode": 2,
                                     "NumParticles": 5,
-                                    "SpawnRatio": 0.05000000074505806,
+                                    "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 100,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 1,
@@ -471,7 +471,7 @@
                                     "Type": 4,
                                     "Progressive": false,
                                     "Loop": false,
-                                    "Size1": 20,
+                                    "Size1": 25,
                                     "Size2": 1,
                                     "TimeStart": 0,
                                     "TimeStop": 1
@@ -481,9 +481,9 @@
                                     "Random": false,
                                     "UseShapeBase": false,
                                     "Direction1": [
+                                        -0.70681124925613403,
                                         0,
-                                        0,
-                                        2
+                                        0.70740216970443726
                                     ],
                                     "Direction2": [
                                         0,
@@ -492,7 +492,7 @@
                                     ],
                                     "NormalizedBaseDirection": true,
                                     "Accelerates": false,
-                                    "Speed1": 450,
+                                    "Speed1": 220.19999694824219,
                                     "Speed2": 0,
                                     "ChangeSpeedMode": 0,
                                     "NewDirection": [
@@ -521,7 +521,7 @@
                                     "Loop": false,
                                     "Color1": [
                                         1,
-                                        0,
+                                        0.42477875947952271,
                                         0,
                                         1
                                     ],
