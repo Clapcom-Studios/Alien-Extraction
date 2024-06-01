@@ -271,11 +271,12 @@ public class UI_Item_Button : YmirComponent
         if (item.itemType == ITEM_SLOT.NONE &&
 
             /*{*/(((!_item.isEquipped && !Equals(menuName, "Inventory Menu")) ||
+
             ((_item.isEquipped && _item.itemType == item.currentSlot ||
             item.currentSlot == ITEM_SLOT.NONE ||
-            item.currentSlot == ITEM_SLOT.MATERIAL)
-
-            && Equals(menuName, "Inventory Menu"))) && !_item.inSave) || /*}*/
+            item.currentSlot == ITEM_SLOT.MATERIAL) &&
+            Equals(menuName, "Inventory Menu"))) &&
+            !_item.inSave) || /*}*/
 
             item.currentSlot == ITEM_SLOT.SAVE && _item.inSave)
         {

@@ -299,10 +299,13 @@ public class UI_Stash : YmirComponent
 
                 if (gameObject != null)
                 {
-                    if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
+                    if (!player.itemsList[i].inSave)
                     {
-                        isInventory = false;
-                        break;
+                        if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
+                        {
+                            isInventory = false;
+                            break;
+                        }
                     }
                 }
             }
@@ -315,9 +318,12 @@ public class UI_Stash : YmirComponent
 
                     if (gameObject != null)
                     {
-                        if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
+                        if (player.itemsList[i].inSave)
                         {
-                            break;
+                            if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
+                            {
+                                break;
+                            }
                         }
                     }
                 }
