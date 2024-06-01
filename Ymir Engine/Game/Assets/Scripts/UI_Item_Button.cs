@@ -83,6 +83,7 @@ public class UI_Item_Button : YmirComponent
                 else
                 {
                     item.inSave = false;
+                    item.inInventory = false;
                 }
 
                 if (item.isEquipped)
