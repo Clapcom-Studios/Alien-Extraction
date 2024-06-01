@@ -155,21 +155,17 @@ public class UI_Crafting : YmirComponent
     {
         for (int i = 0; i < player.itemsList.Count; i++)
         {
-            if (!player.itemsList[i].inCraft)
+            GameObject inventory = InternalCalls.CS_GetChild(gameObject, 2);
+
+            for (int inv = 0; inv < InternalCalls.CS_GetChildrenSize(inventory); inv++)
             {
-                GameObject inventory = InternalCalls.CS_GetChild(gameObject, 2);
+                GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(inventory, inv), 2);  // (Slot (Button)))
 
-                for (int inv = 0; inv < InternalCalls.CS_GetChildrenSize(inventory); inv++)
+                if (gameObject != null)
                 {
-                    GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(inventory, inv), 2);  // (Slot (Button)))
-
-                    if (gameObject != null)
+                    if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
                     {
-                        if (button.GetComponent<UI_Item_Button>().SetItem(player.itemsList[i]))
-                        {
-                            player.itemsList[i].inCraft = true;
-                            break;
-                        }
+                        break;
                     }
                 }
             }
