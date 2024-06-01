@@ -3511,6 +3511,12 @@ void JsonFile::GetComponent(const JSON_Object* componentObject, G_UI* gameObject
 			//Get cuantos settings tiene el emitter
 			uint32_t UIDofEmitter = json_object_get_number(json_array_get_object(emittersArray, i), "EmitterUID");
 			pEmmiter->UID = UIDofEmitter;
+			const char* name = json_object_get_string(json_array_get_object(emittersArray, i), "Name");
+			if(name == nullptr)
+			{
+				name = "";
+			}
+			pEmmiter->name.assign(name);
 			for (int j = 0; j < numSettings; j++)
 			{
 				JSON_Object* modulo = json_array_get_object(settingsArray, j);
