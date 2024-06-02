@@ -104,9 +104,19 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 				{
 					float anguloFowardPlayer = math::Atan2(-directionShoot.z, directionShoot.x);
 					EmitterRotation* rot = (EmitterRotation*)particleSystem->allEmitters.at(i)->modules.at(j);
-					if(rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT)
+					if (rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT)
 					{
-						rot->freeWorldRotation = { rot->freeWorldRotation.x,anguloFowardPlayer,rot->freeWorldRotation.z };
+						LOG("Angle was %f", RadToDeg(anguloFowardPlayer));
+
+						rot->freeWorldRotation = { rot->freeWorldRotation.x,rot->freeWorldRotation.y,RadToDeg(anguloFowardPlayer ) +90.0f };
+						rot->WorldAlign();
+						
+						//rot->SetRotation(Quat::FromEulerXYZ(DegToRad(rot->freeWorldRotation.x), DegToRad(rot->freeWorldRotation.y), anguloFowardPlayer + DegToRad(-135.0f)));
+						Quat identidad = Quat::identity;
+						Quat rotacion = Quat::RotateAxisAngle({ 0.0f, 1.0f, 0.0f }, anguloFowardPlayer);
+						rot->SetRotation(identidad.Mul( rotacion));
+
+						LOG("Rotation was %f", rot->freeWorldRotation.z);
 					}
 				}
 			}

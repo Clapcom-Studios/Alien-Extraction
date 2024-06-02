@@ -1370,7 +1370,7 @@ void ModuleRenderer3D::DrawGameObjects(bool isGame)
 			{
 				DrawParticlesShapeDebug(particleComponent);
 			}
-			DrawParticlesSystem(particleComponent);
+			if (particleComponent->localPlay || TimeManager::gameTimer.GetState() != TimerState::STOPPED) { DrawParticlesSystem(particleComponent); } 
 		}
 	}
 

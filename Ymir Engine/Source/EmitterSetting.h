@@ -233,11 +233,12 @@ struct EmitterRotation : EmitterSetting
 	OrientationDirection orientationOfAxis;
 	OrientationDirection orientationFromWorld;
 	float3 freeWorldRotation;
+	void WorldAlign();
 	
 private:
 	void EditorCameraAlign();
 	void GameCameraAlign();
-	void WorldAlign();
+	
 	void AxisAlign(ParticleEmitter* emitter); //Necesitamos una fucking referencia porque esto reqquiere de hacer vectores y mierdas
 };
 
