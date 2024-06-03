@@ -32,6 +32,10 @@ public class Caius : YmirComponent
     //Popup
     private GameObject popup;
 
+    private bool retryDialogue;
+    private float retryTimer;
+    private const float retryDuration = 0.5f;
+
     public enum Dialogue_id
     {
         ID_0,
@@ -88,7 +92,7 @@ public class Caius : YmirComponent
         LoadDialogues(dialoguescsv);
         dialogue_ = Dialogue_id.ID_1;
     }
-    public void Update()
+    void Update()
     {
         popup.SetAsBillboard();
 
@@ -171,8 +175,8 @@ public class Caius : YmirComponent
                 Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN ||
                 Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
                 Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN) &&
-                (dialogue_ == Dialogue_id.ID_26 || dialogue_ == Dialogue_id.ID_24 || dialogue_ == Dialogue_id.ID_22 || 
-                dialogue_ == Dialogue_id.ID_20 || dialogue_ == Dialogue_id.ID_7 || dialogue_ == Dialogue_id.ID_9 || 
+                (dialogue_ == Dialogue_id.ID_26 || dialogue_ == Dialogue_id.ID_24 || dialogue_ == Dialogue_id.ID_22 ||
+                dialogue_ == Dialogue_id.ID_20 || dialogue_ == Dialogue_id.ID_7 || dialogue_ == Dialogue_id.ID_9 ||
                 dialogue_ == Dialogue_id.ID_14 || dialogue_ == Dialogue_id.ID_16))
             {
                 dialogue_ = Dialogue_id.ID_1;
@@ -180,9 +184,12 @@ public class Caius : YmirComponent
                 player.PlayerStopState(false);
                 active_Dialogue = false;
                 canvas_Caius.SetActive(false);
+
+                retryDialogue = true;
+                retryTimer = retryDuration;
+
                 return;
             }
-
 
             DialogueManager();
         }
@@ -190,7 +197,15 @@ public class Caius : YmirComponent
         {
             popup.SetActive(false);
         }
-        return;
+
+        if (retryDialogue)
+        {
+            retryTimer -= Time.deltaTime;
+            if (retryTimer <= 0)
+            {
+                retryDialogue = false;
+            }
+        }
     }
     public void DialogueManager()
     {
@@ -314,7 +329,7 @@ public class Caius : YmirComponent
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue)
+        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue)
         {
             canvas_Caius.SetActive(true);
             active_Dialogue = true;
