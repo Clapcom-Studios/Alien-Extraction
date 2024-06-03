@@ -39,10 +39,7 @@ public class PickUp : YmirComponent
                     Debug.Log("Pick up resin");
                     player.currentResinVessels++;
 
-                    if (player.resinText != null)
-                    {
-                        UI.TextEdit(player.resinText, "x" + player.currentResinVessels.ToString());
-                    }
+                    player.UpdateResin();
 
                     picked = true;
                     _itemPickedPopUp?.SetActive(true);

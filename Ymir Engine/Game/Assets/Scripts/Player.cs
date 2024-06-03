@@ -291,10 +291,7 @@ public class Player : YmirComponent
 
         resinText = InternalCalls.GetGameObjectByName("Number Heals");
 
-        if (resinText != null)
-        {
-            UI.TextEdit(resinText, "x" + currentResinVessels.ToString());
-        }
+        UpdateResin();
 
         hasTalkedIscariot = false;
 
@@ -812,10 +809,7 @@ public class Player : YmirComponent
                     currentResinVessels--;
                     csHealth.Heal(-resinHealing);
 
-                    if (resinText != null)
-                    {
-                        UI.TextEdit(resinText, "x" + currentResinVessels.ToString());
-                    }
+                    UpdateResin();
                 }
             }
 
@@ -2036,6 +2030,14 @@ public class Player : YmirComponent
 
     #region Items
 
+    public void UpdateResin()
+    {
+        if (resinText != null)
+        {
+            UI.TextEdit(resinText, currentResinVessels.ToString() + "/" + maxResinVessels.ToString());
+        }
+    }
+    
     public void ReCountAlienCore()
     {
         numCores = 0;

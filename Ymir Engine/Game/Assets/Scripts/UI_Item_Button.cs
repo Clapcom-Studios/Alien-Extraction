@@ -382,13 +382,7 @@ public class UI_Item_Button : YmirComponent
             player.maxResinVessels++;
             player.currentResinVessels = player.maxResinVessels;
 
-            // Update UI
-            GameObject resinText = InternalCalls.GetGameObjectByName("Number Heals");
-
-            if (resinText != null)
-            {
-                UI.TextEdit(resinText, "x" + player.currentResinVessels.ToString());
-            }
+            player.UpdateResin();
 
             // Delete vessel item
             player.itemsList.Remove(item);
