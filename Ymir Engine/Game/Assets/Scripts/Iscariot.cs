@@ -135,9 +135,9 @@ public class Iscariot : YmirComponent
         popup = InternalCalls.CS_GetChild(gameObject, 1);
 
         //Animation - WIP
-        //Animation.SetLoop(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle", true);
-        //Animation.SetSpeed(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle", 0.2f);
-        //Animation.PlayAnimation(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle");
+        Animation.SetLoop(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle", true);
+        Animation.SetSpeed(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle", 0.2f);
+        Animation.PlayAnimation(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle");
 
         LoadDialogues(dialoguescsv);
         dialogue_ = Dialogue_id.ID_1;
