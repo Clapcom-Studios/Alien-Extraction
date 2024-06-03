@@ -159,7 +159,7 @@ public class QueenXenomorphBaseScript : YmirComponent
         Animation.AddBlendOption(gameObject, "", "Boss_Claw", 10f);
         Animation.AddBlendOption(gameObject, "", "Boss_Tail_Attack", 10f);
         Animation.AddBlendOption(gameObject, "", "Boss_Spit", 10f);
-        //Animation.AddBlendOption(gameObject, "", "Boss_Die.002", 10f);
+        Animation.AddBlendOption(gameObject, "", "Boss_Die.002", 10f);
 
         Animation.PlayAnimation(gameObject, "Boss_IdleV2");
     }
@@ -206,7 +206,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                 timePassed += Time.deltaTime;
 
-                if (timePassed >= 1.2f)
+                if (timePassed >= 5f)
                 {
                     Debug.Log("[ERROR] DEATH");
                     timePassed = 0;
@@ -675,6 +675,7 @@ public class QueenXenomorphBaseScript : YmirComponent
             //Animation.PlayAnimation(gameObject, "Boss_Die.002");
             Debug.Log("[ERROR] DEATH");
             gameObject.SetVelocity(new Vector3(0, 0, 0));
+            Animation.PlayAnimation(gameObject, "Boss_Die.002");
             Audio.PlayAudio(gameObject, "QX_Death");
             queenState = QueenState.DEAD;
         }
