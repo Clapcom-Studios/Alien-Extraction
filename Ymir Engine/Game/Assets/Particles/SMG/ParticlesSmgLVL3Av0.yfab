@@ -1,21 +1,21 @@
 {
     "Prefab": [
         {
-            "Name": "ParticlesSmgDefault",
+            "Name": "ParticlesSmgLVL3A",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 530848902,
-            "Active": true,
+            "UID": 41256467,
+            "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1248383492,
+            "Parent UID": 189224086,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -40.892543792724609,
-                        133.94056701660156,
-                        113.01505279541016
+                        -40,
+                        133,
+                        113
                     ],
                     "Rotation": [
                         -0,
@@ -31,7 +31,7 @@
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
-                    "ShowEmitters": true,
+                    "ShowEmitters": false,
                     "NumEmitters": 3,
                     "Emitters": [
                         {
@@ -52,7 +52,7 @@
                                     "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
-                                    "BaseShape": 1,
+                                    "BaseShape": 0,
                                     "PositiveBoxPoints": [
                                         1,
                                         1,
@@ -84,8 +84,8 @@
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 57.797000885009766,
-                                    "Size2": 61.669998168945312,
+                                    "Size1": 75,
+                                    "Size2": 80,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
@@ -97,7 +97,7 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        0
+                                        -6.2776412963867188
                                     ]
                                 },
                                 {
@@ -106,8 +106,8 @@
                                     "Loop": false,
                                     "Color1": [
                                         1,
-                                        0.57742255926132202,
-                                        0.19911503791809082,
+                                        0.10619461536407471,
+                                        0,
                                         1
                                     ],
                                     "Color2": [
@@ -136,14 +136,14 @@
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
-                                        -0.40000000596046448,
-                                        0.5,
+                                        0,
+                                        0.10000000149011612,
                                         0.69999998807907104
                                     ],
                                     "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
-                                    "BaseShape": 1,
+                                    "BaseShape": 0,
                                     "PositiveBoxPoints": [
                                         1,
                                         1,
@@ -183,15 +183,15 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        0
+                                        -6.2776412963867188
                                     ]
                                 },
                                 {
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 25.08799934387207,
-                                    "Size2": 31.742000579833984,
+                                    "Size1": 36.5,
+                                    "Size2": 29.5,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
@@ -200,9 +200,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        0.96902656555175781,
-                                        0.9271358847618103,
-                                        0.76321566104888916,
+                                        1,
+                                        0.51170808076858521,
+                                        0.35840708017349243,
                                         1
                                     ],
                                     "Color2": [
@@ -255,7 +255,7 @@
                                     "SpawnMode": 1,
                                     "StartMode": 2,
                                     "NumParticles": 5,
-                                    "SpawnRatio": 0.05000000074505806,
+                                    "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 100,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 1,
@@ -266,7 +266,7 @@
                                     "Type": 4,
                                     "Progressive": false,
                                     "Loop": false,
-                                    "Size1": 17,
+                                    "Size1": 50.5,
                                     "Size2": 1,
                                     "TimeStart": 0,
                                     "TimeStop": 1
@@ -276,9 +276,9 @@
                                     "Random": false,
                                     "UseShapeBase": false,
                                     "Direction1": [
-                                        0,
-                                        0,
-                                        2
+                                        -0.10934662818908691,
+                                        -7.1054282046339491e-15,
+                                        0.99400371313095093
                                     ],
                                     "Direction2": [
                                         0,
@@ -287,7 +287,7 @@
                                     ],
                                     "NormalizedBaseDirection": true,
                                     "Accelerates": false,
-                                    "Speed1": 441,
+                                    "Speed1": 400.20001220703125,
                                     "Speed2": 0,
                                     "ChangeSpeedMode": 0,
                                     "NewDirection": [
@@ -301,13 +301,13 @@
                                 },
                                 {
                                     "Type": 3,
-                                    "AligmentMode": 1,
-                                    "WorldOrientation": 3,
+                                    "AligmentMode": 2,
+                                    "WorldOrientation": 0,
                                     "AxisOrientation": 3,
                                     "FreeRotation": [
+                                        -90,
                                         0,
-                                        0,
-                                        0
+                                        -6.2776412963867188
                                     ]
                                 },
                                 {
@@ -315,9 +315,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        1,
-                                        0.53097343444824219,
+                                        0.88495540618896484,
                                         0,
+                                        1,
                                         1
                                     ],
                                     "Color2": [
@@ -331,7 +331,7 @@
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/IMAGES\/magic_05.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/bullet.png"
                                 }
                             ]
                         }
