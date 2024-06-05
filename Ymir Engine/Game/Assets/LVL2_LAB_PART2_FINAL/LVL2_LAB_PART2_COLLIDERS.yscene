@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART2_FINAL\/LVL2_LAB_PART2_COLLIDERS.nav",
     "Editor Camera Position": [
-        66.905242919921875,
-        32.780498504638672,
-        561.7967529296875
+        -159.39956665039062,
+        31.247020721435547,
+        545.72747802734375
     ],
     "Editor Camera Right (X)": [
-        0.12787544727325439,
-        1.1026859283447266e-06,
-        0.99180084466934204
+        0.95591402053833008,
+        -4.9173831939697266e-07,
+        0.29370597004890442
     ],
     "Editor Camera Up (Y)": [
-        0.59218668937683105,
-        0.80218124389648438,
-        -0.076353050768375397
+        0.23263329267501831,
+        0.61043846607208252,
+        -0.75714206695556641
     ],
     "Editor Camera Front (Z)": [
-        0.7955973744392395,
-        -0.59708797931671143,
-        -0.10257776081562042
+        0.17928563058376312,
+        -0.79207545518875122,
+        -0.5835157036781311
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1105403430,
+            "UID": 1625940892,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -71,7 +71,7 @@
             "UID": 456674892,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9942,19 +9942,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
+                        -0.0001220703125,
                         2.4000000953674316,
-                        0
+                        0.000125885009765625
                     ],
                     "Rotation": [
-                        -0,
-                        0,
-                        -0
+                        -2.504072904586792,
+                        -0.97069936990737915,
+                        60.34320068359375
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        0.5545387864112854,
+                        1.86634361743927,
+                        0.99822813272476196
                     ]
                 },
                 {
@@ -9966,7 +9966,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 579029639,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -10663,7 +10663,7 @@
             "UID": 1462968092,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11844,7 +11844,7 @@
             "UID": 1406784881,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12117,7 +12117,7 @@
             "UID": 505858485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13830,7 +13830,7 @@
             "UID": 2107836948,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14471,7 +14471,7 @@
             "UID": 511732336,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14509,7 +14509,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14955,7 +14955,7 @@
             "UID": 165934810,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15023,7 +15023,8 @@
             "Children UID": [
                 1235571974,
                 947326569,
-                1744201128
+                1744201128,
+                768559559
             ]
         },
         {
@@ -15209,6 +15210,124 @@
             ]
         },
         {
+            "Name": "Particle System (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 768559559,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 165934810,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        15.324462890625,
+                        -51.389068603515625,
+                        230.056640625
+                    ],
+                    "Rotation": [
+                        -77.096794128417969,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        45.207752227783203,
+                        73.472030639648438,
+                        52.681797027587891
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 5,
+                            "EmitterUID": 579029639,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.10000000149011612,
+                                    "Lifetime2": 5,
+                                    "RandomLT": true,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 2,
+                                    "PositiveBoxPoints": [
+                                        1.9010000228881836,
+                                        1.5,
+                                        8.1000003814697266
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -3.2999999523162842
+                                    ],
+                                    "RadiusHollow": 0.20000000298023224,
+                                    "RadiusBase": 8.0100002288818359,
+                                    "RadiusTop": 7.6059885025024414,
+                                    "Heigth": 0.0099999997764825821
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 1,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.10300000011920929,
+                                    "NumParticlesToStop": 36,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0,
+                                        1,
+                                        0.07079625129699707,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 2.5,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/dirt_02.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "Door_LowPoly (4)",
             "Static": false,
             "Tag": "Untagged",
@@ -15216,7 +15335,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15307,7 +15426,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303165084130342e-09,
+                        3.8303182847698736e-09,
                         90,
                         0
                     ],
@@ -15386,7 +15505,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7866925645648735e-06,
+                        1.7866929056253866e-06,
                         90,
                         0
                     ],
@@ -15465,7 +15584,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303191729482933e-09,
+                        3.8303209493051327e-09,
                         90,
                         0
                     ],
@@ -15592,7 +15711,7 @@
             "UID": 982585116,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15836,7 +15955,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15926,9 +16045,9 @@
                         0
                     ],
                     "Rotation": [
-                        -2.4385677921401339e-09,
-                        -88.440536499023438,
-                        -1.0020748050010297e-05
+                        -2.4387600827679989e-09,
+                        -88.440780639648438,
+                        -1.0020790796261281e-05
                     ],
                     "Scale": [
                         1.000002384185791,
@@ -16154,7 +16273,7 @@
             "UID": 1423819104,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16374,7 +16493,7 @@
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16451,7 +16570,7 @@
             "UID": 1459372103,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16528,7 +16647,7 @@
             "UID": 1393792402,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16605,7 +16724,7 @@
             "UID": 1799577663,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16682,7 +16801,7 @@
             "UID": 1224520343,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16759,7 +16878,7 @@
             "UID": 778851339,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16836,7 +16955,7 @@
             "UID": 208637195,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16913,7 +17032,7 @@
             "UID": 346797426,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17007,7 +17126,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17188,7 +17307,7 @@
                     ],
                     "Rotation": [
                         0,
-                        -7.1906959283251014e-20,
+                        -2.1904113006376392e-23,
                         0
                     ],
                     "Scale": [
@@ -18148,7 +18267,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18336,9 +18455,9 @@
                         0
                     ],
                     "Rotation": [
-                        -1.4381391856650203e-19,
+                        -4.3808226012752784e-23,
                         0,
-                        -1.4381391856650203e-19
+                        -4.3808226012752784e-23
                     ],
                     "Scale": [
                         1,
@@ -18408,9 +18527,9 @@
                         0
                     ],
                     "Rotation": [
-                        2.4591438246473221e-34,
-                        -4.9633991606385021e-42,
-                        -2.4591438246473221e-34
+                        7.4909800552766763e-38,
+                        0,
+                        -7.4909800552766763e-38
                     ],
                     "Scale": [
                         0.66134387254714966,
@@ -19023,7 +19142,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19209,9 +19328,9 @@
                         0
                     ],
                     "Rotation": [
-                        1.549856271966521e-12,
+                        4.7211324197041194e-16,
                         0,
-                        -1.549856271966521e-12
+                        -4.7211324197041194e-16
                     ],
                     "Scale": [
                         1,
@@ -21064,7 +21183,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -21091,8 +21210,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1561,
-                    "Height": 932,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -21255,7 +21374,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -21282,8 +21401,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1561,
-                    "Height": 932,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -23282,7 +23401,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30842,7 +30961,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31383,7 +31502,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31736,7 +31855,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31849,7 +31968,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32659,7 +32778,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33333,7 +33452,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1105403430,
+            "Parent UID": 1625940892,
             "Components": [
                 {
                     "Type": "Transform",
