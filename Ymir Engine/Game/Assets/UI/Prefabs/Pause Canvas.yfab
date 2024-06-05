@@ -7,7 +7,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1062516611,
+            "Parent UID": 1169807795,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34,8 +34,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1909,
-                    "Height": 1003,
+                    "Width": 1561,
+                    "Height": 932,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -48,7 +48,6 @@
             ],
             "Children UID": [
                 93749415,
-                1184541440,
                 259721126,
                 1628008163
             ]
@@ -97,7 +96,7 @@
                         1920,
                         1080
                     ],
-                    "Path": "Assets\/UI\/Fondo.png",
+                    "Path": "Assets\/UI\/pause.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -113,68 +112,6 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Text",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1184541440,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 728169813,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 807,
-                    "Position Y": 253,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        807,
-                        253,
-                        200,
-                        50
-                    ],
-                    "Text": "Pause",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 50,
-                    "Line Spacing": 1,
-                    "Color": [
-                        -0.98000001907348633,
-                        0,
-                        -0.98000001907348633,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
                 }
             ]
         },
@@ -304,8 +241,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         300,
                         50
                     ],
@@ -490,8 +427,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         300,
                         50
                     ],
@@ -677,8 +614,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         300,
                         50
                     ],
