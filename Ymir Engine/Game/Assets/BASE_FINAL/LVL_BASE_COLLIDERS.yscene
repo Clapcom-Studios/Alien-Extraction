@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 540807010,
+            "UID": 1020541307,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -8521,6 +8521,7 @@
                     "ScriptName": "Caius.cs",
                     "Active": 1,
                     "UID": 0,
+                    "retryDuration": 0,
                     "dialogue_": 0
                 }
             ],
@@ -9949,7 +9950,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12720,7 +12721,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12757,7 +12758,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13129,9 +13130,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -82.532630920410156,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13214,9 +13215,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -27.589302062988281,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13288,7 +13289,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13299,9 +13300,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13483,7 +13484,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13635,7 +13636,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13787,7 +13788,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13814,8 +13815,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1934,
-                    "Height": 1112,
+                    "Width": 1561,
+                    "Height": 932,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -15814,7 +15815,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22676,7 +22677,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24538,7 +24539,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53331,7 +53332,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57346,7 +57347,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67551,7 +67552,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68296,7 +68297,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68837,7 +68838,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69192,7 +69193,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69305,7 +69306,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69332,8 +69333,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1909,
-                    "Height": 1003,
+                    "Width": 1561,
+                    "Height": 932,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -69346,7 +69347,6 @@
             ],
             "Children UID": [
                 93749415,
-                1184541440,
                 259721126,
                 1628008163
             ]
@@ -69395,7 +69395,7 @@
                         1920,
                         1080
                     ],
-                    "Path": "Assets\/UI\/Fondo.png",
+                    "Path": "Assets\/UI\/pause.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -69411,68 +69411,6 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Text",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1184541440,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 728169813,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 807,
-                    "Position Y": 253,
-                    "Width": 200,
-                    "Height": 50,
-                    "UI Type": 2,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        807,
-                        253,
-                        200,
-                        50
-                    ],
-                    "Text": "Pause",
-                    "Font name": "NK57 Monospace Se Bd.otf",
-                    "Font path": "Assets\\Fonts",
-                    "Font size": 50,
-                    "Line Spacing": 1,
-                    "Color": [
-                        -0.98000001907348633,
-                        0,
-                        -0.98000001907348633,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 2
                 }
             ]
         },
@@ -69602,8 +69540,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         300,
                         50
                     ],
@@ -69788,8 +69726,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         300,
                         50
                     ],
@@ -69975,8 +69913,8 @@
                     "UI Type": 3,
                     "UI State": 1,
                     "Drag Limits": [
-                        734,
-                        424,
+                        742,
+                        459,
                         300,
                         50
                     ],
@@ -70178,7 +70116,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 540807010,
+            "Parent UID": 1020541307,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70823,6 +70761,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -70913,6 +70852,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71003,6 +70943,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71121,6 +71062,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71211,6 +71153,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1536200499,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71477,6 +71420,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71567,6 +71511,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71657,6 +71602,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71775,6 +71721,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71865,6 +71812,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1745327671,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -71979,6 +71927,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1555967858,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -72241,6 +72190,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1928321852,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -72355,6 +72305,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1596560312,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -72445,6 +72396,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1520178609,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -72559,6 +72511,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1221815647,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -72823,6 +72776,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -72913,6 +72867,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73003,6 +72958,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73121,6 +73077,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73211,6 +73168,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 191098416,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73477,6 +73435,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73567,6 +73526,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73657,6 +73617,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73775,6 +73736,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73865,6 +73827,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1745327671,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -73979,6 +73942,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1555967858,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74245,6 +74209,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1928321852,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74359,6 +74324,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1596560312,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74449,6 +74415,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1520178609,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74563,6 +74530,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1221815647,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74719,6 +74687,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 534007599,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74837,6 +74806,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 775603339,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -74955,6 +74925,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 158881136,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75107,6 +75078,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 979443194,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75225,6 +75197,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 918907418,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75381,6 +75354,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1988356439,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75495,6 +75469,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 2025906805,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75647,6 +75622,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 457379785,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75737,6 +75713,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 428556872,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75893,6 +75870,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1915053663,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -75983,6 +75961,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 393596282,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76139,6 +76118,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 2002222269,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76291,6 +76271,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1461573130,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76381,6 +76362,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1382472225,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76537,6 +76519,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 243616431,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76627,6 +76610,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 950512175,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76936,6 +76920,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1928321852,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77050,6 +77035,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1596560312,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77140,6 +77126,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1520178609,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77254,6 +77241,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1221815647,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77520,6 +77508,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1928321852,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77634,6 +77623,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1596560312,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77724,6 +77714,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1520178609,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77838,6 +77829,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1221815647,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78107,6 +78099,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1928321852,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78221,6 +78214,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1596560312,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78311,6 +78305,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1520178609,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78425,6 +78420,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1221815647,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78691,6 +78687,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78781,6 +78778,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78871,6 +78869,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -78989,6 +78988,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79079,6 +79079,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1745327671,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79193,6 +79194,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1555967858,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79459,6 +79461,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79549,6 +79552,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79639,6 +79643,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79757,6 +79762,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79847,6 +79853,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1745327671,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -79961,6 +79968,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1555967858,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80227,6 +80235,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80317,6 +80326,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80407,6 +80417,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80525,6 +80536,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80615,6 +80627,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1745327671,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80729,6 +80742,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1555967858,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -80993,6 +81007,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81083,6 +81098,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81173,6 +81189,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81291,6 +81308,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81381,6 +81399,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1060108267,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81645,6 +81664,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81735,6 +81755,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81825,6 +81846,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -81943,6 +81965,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82033,6 +82056,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 2145915176,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82297,6 +82321,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1687690580,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82387,6 +82412,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 246346152,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82477,6 +82503,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1222824458,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82595,6 +82622,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 1237858247,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82685,6 +82713,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 909357245,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82841,6 +82870,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 847423971,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -82959,6 +82989,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1501988939,
+                            "Name": "",
                             "Settings": [
                                 {
                                     "Type": 0,
