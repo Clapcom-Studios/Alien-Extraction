@@ -54,8 +54,11 @@ public class SpitterAcidSpit : YmirComponent
 
     }
 
-    public void OnCollisionStay(GameObject other)
+    public void OnCollisionEnter(GameObject other)
     {
+        Debug.Log("[ERROR] :" + other.Name);
+        Debug.Log("[ERROR] :" + other.Tag);
+
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
             healthScript.TakeDmg(damage);
