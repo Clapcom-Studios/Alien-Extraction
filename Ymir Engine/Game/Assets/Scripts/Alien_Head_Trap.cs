@@ -67,6 +67,7 @@ public class Alien_Head_Trap : YmirComponent
 	{
 		if (other.Tag == "Player" && time <= 0)
 		{
+			Audio.PlayAudio(gameObject, "AlienHead_Shoot");
 			Particles.PlayParticles(particles);
 			time = animationTime;
 			startTime = Time.time;
