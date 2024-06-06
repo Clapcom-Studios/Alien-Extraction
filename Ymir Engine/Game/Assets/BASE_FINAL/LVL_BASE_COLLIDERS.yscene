@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -39.642097473144531,
-        156.67652893066406,
-        50.614608764648438
+        -85.058738708496094,
+        89.817131042480469,
+        36.498245239257812
     ],
     "Editor Camera Right (X)": [
-        0.57979190349578857,
-        -1.5199184417724609e-06,
-        0.81477987766265869
+        0.57063066959381104,
+        -1.6540288925170898e-06,
+        0.82122325897216797
     ],
     "Editor Camera Up (Y)": [
-        0.57162898778915405,
-        0.71259331703186035,
-        -0.40676599740982056
+        0.5407642126083374,
+        0.7525908350944519,
+        -0.37575092911720276
     ],
     "Editor Camera Front (Z)": [
-        0.58060431480407715,
-        -0.70158290863037109,
-        -0.41315543651580811
+        0.61804306507110596,
+        -0.6584935188293457,
+        -0.4294513463973999
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 784031853,
+            "UID": 588977135,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1776,7 +1776,6 @@
                 214361826,
                 1350016942,
                 1086457827,
-                1014762259,
                 571602517,
                 792192216
             ]
@@ -9156,124 +9155,6 @@
             ]
         },
         {
-            "Name": "Crafting Station",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1014762259,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 1950834715,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        40.575984954833984
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 523080762,
-                    "Vertex Count": 1867,
-                    "Index Count": 3315
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                3.8318037986755371,
-                                16.196561813354492,
-                                4.5678652327296732e-07
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 613,
-                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Fix Workstation Textures\/TEX_PROP_BaseWorkbench_D.png",
-                    "Diffuse_UID": 1751476291,
-                    "Normal_ID": 609,
-                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Fix Workstation Textures\/TEX_PROP_BaseWorkbench_N.png",
-                    "Normal_UID": 1332524953,
-                    "Height_ID": 605,
-                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Fix Workstation Textures\/TEX_PROP_BaseWorkbench_H.png",
-                    "Height_UID": 908672153,
-                    "Ambient_ID": 597,
-                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Fix Workstation Textures\/TEX_PROP_BaseWorkbench_A.png",
-                    "Ambient_UID": 1099055820,
-                    "Emissive_ID": 601,
-                    "Emissive_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Fix Workstation Textures\/TEX_PROP_BaseWorkbench_E.png",
-                    "Emissive_UID": 1366229549
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        17.299999237060547,
-                        14.399999618530273,
-                        17.600000381469727
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        170.10000610351562,
-                        7.6999998092651367,
-                        -17
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        -0.40000000596046448,
-                        0,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "OpenMenu_OnCollision.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "goName": "Crafting Canvas"
-                }
-            ]
-        },
-        {
             "Name": "Upgrade Weapon",
             "Static": false,
             "Tag": "Untagged",
@@ -9950,7 +9831,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12721,7 +12602,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12758,7 +12639,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13130,9 +13011,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -82.532630920410156,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13215,9 +13096,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -27.589302062988281,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13289,7 +13170,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13300,9 +13181,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13484,7 +13365,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13636,7 +13517,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13788,7 +13669,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13816,7 +13697,7 @@
                     "Position X": 0,
                     "Position Y": 0,
                     "Width": 1234,
-                    "Height": 605,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -15815,7 +15696,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22677,7 +22558,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24539,7 +24420,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53332,7 +53213,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57347,7 +57228,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67552,7 +67433,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68297,7 +68178,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68838,7 +68719,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69193,7 +69074,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69434,7 +69315,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70244,7 +70125,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 784031853,
+            "Parent UID": 588977135,
             "Components": [
                 {
                     "Type": "Transform",
