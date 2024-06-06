@@ -1666,8 +1666,8 @@ void SpawnItemCS(MonoString* name, MonoObject* pos)
 
 }
 
-void SetColorMaterial(MonoObject* go, MonoObject* vec) {
-
+void SetColorMaterial(MonoObject* go, MonoObject* vec) 
+{
 	GameObject* gameObject = External->moduleMono->GameObject_From_CSGO(go);
 	float3 vector = External->moduleMono->UnboxVector(vec);
 
@@ -1676,9 +1676,18 @@ void SetColorMaterial(MonoObject* go, MonoObject* vec) {
 	if (mat != nullptr ) {
 		mat->shader.SetUniformValue("color", &vector);
 	}
+}
 
+void SetPlayerHitBoolean(MonoObject* go, bool value)
+{
+	GameObject* gameObject = External->moduleMono->GameObject_From_CSGO(go);
 
+	CMaterial* mat = (CMaterial*)gameObject->GetComponent(ComponentType::MATERIAL);
 
+	if (mat != nullptr) 
+	{
+		mat->shader.SetUniformValue("playerHit", &value);
+	}
 }
 
 int GetCurrentMapCS()

@@ -87,6 +87,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.InternalCalls::SpawnItem", SpawnItemCS);
 	mono_add_internal_call("YmirEngine.InternalCalls::GetCurrentMap", GetCurrentMapCS);
 	mono_add_internal_call("YmirEngine.InternalCalls::SetColor", SetColorMaterial);
+	mono_add_internal_call("YmirEngine.InternalCalls::SetPlayerHitBoolean", SetPlayerHitBoolean);
 
 #pragma region GameObject
 
