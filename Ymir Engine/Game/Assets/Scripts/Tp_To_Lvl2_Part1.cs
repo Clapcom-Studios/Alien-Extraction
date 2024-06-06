@@ -51,6 +51,7 @@ public class Tp_To_Lvl2_Part1 : YmirComponent
             Audio.StopAllAudios();
             if (loadSceneLvL2_1 != null)
             {
+                finishTimer = 2f;
                 loadSceneLvL2_1.SetActive(true);
             }
 
