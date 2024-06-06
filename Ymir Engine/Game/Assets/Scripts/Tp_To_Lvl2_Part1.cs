@@ -8,12 +8,13 @@ using YmirEngine;
 
 public class Tp_To_Lvl2_Part1 : YmirComponent
 {
-    // Loading scene
     private GameObject loadSceneLvL2_1;
     private bool loadScene = false;
 
+    private float finishTimer = 2f;
+
     public void Start()
-	{
+    {
         loadSceneLvL2_1 = InternalCalls.GetGameObjectByName("Loading Scene Lvl2");
 
         if (loadSceneLvL2_1 != null)
@@ -23,20 +24,25 @@ public class Tp_To_Lvl2_Part1 : YmirComponent
 
         loadScene = false;
     }
-
-	public void Update()
-	{
+    public void Update()
+    {
         if (loadScene)
         {
-            InternalCalls.LoadScene("Assets/LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS.yscene");
-            loadScene = false;
+            if (finishTimer >= 0)
+            {
+                Debug.Log("asdfjasdf");
+                finishTimer -= Time.deltaTime;
+            }
 
-            return;
+            if (finishTimer <= 0)
+            {
+                InternalCalls.LoadScene("Assets/LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS.yscene");
+                loadScene = false;
+            }
         }
 
         return;
-	}
-
+    }
     public void OnCollisionEnter(GameObject other)
     {
         //TODO: Mostrat UI de que puede interactuar si pulsa el boton asignado
@@ -45,6 +51,7 @@ public class Tp_To_Lvl2_Part1 : YmirComponent
             Audio.StopAllAudios();
             if (loadSceneLvL2_1 != null)
             {
+                finishTimer = 2f;
                 loadSceneLvL2_1.SetActive(true);
             }
 

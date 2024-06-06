@@ -72,6 +72,8 @@
 
 	uniform bool setColor;
 	uniform vec3 weaponColor;
+	
+	uniform bool playerHit;
 
     vec4 DisplayNormalMap() {
 
@@ -122,7 +124,15 @@
         if (displayNormalMap) {
     
             FragColor = DisplayNormalMap();
-        } 
+        }
+		else if (playerHit) {
+			
+			vec4 mainTexture = texture(texture_diffuse1, TexCoords);
+    		mainTexture.a *= transparency;
+			
+			FragColor = mainTexture + vec4(1.0f,0.0f,0.0f,1.0f);
+
+		} 
         else if (bool(numLights)) {
             
             // Calculate the lighting intensity using Blinn-Phong
@@ -146,11 +156,11 @@
 			}
 		    
 
-            if (selected) {
+            //if (selected) {
 
-                FragColor = AddOutline(vec4(finalColor, transparency), vec4(1.0, 0.5, 0.0, transparency), 0.1);
+                //FragColor = AddOutline(vec4(finalColor, transparency), vec4(1.0, 0.5, 0.0, transparency), 0.1);
 
-            }
+            //}
 
         }
         else {
@@ -160,16 +170,17 @@
     		
             FragColor = mainTexture;
 
-            if (selected) {
+            //if (selected) {
 
-                FragColor = AddOutline(mainTexture, vec4(1.0, 0.5, 0.0, transparency), 0.2);
+                //FragColor = AddOutline(mainTexture, vec4(1.0, 0.5, 0.0, transparency), 0.2);
 
-            }
+            //}
 
         }
     }
 
 #endif
+
 
 
 
