@@ -155,8 +155,16 @@ public class Button_Navigation : YmirComponent
         SaveLoad.SaveInt(Globals.saveGameDir, fileName, "Upgrade " + WEAPON_TYPE.SHOTGUN.ToString(), (int)UPGRADE.LVL_0);
         SaveLoad.SaveInt(Globals.saveGameDir, fileName, "Upgrade " + WEAPON_TYPE.PLASMA.ToString(), (int)UPGRADE.LVL_0);
 
-        // Others
-        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Iscariot dialogue", false);
+        // Dialogue
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Caius intro dialogue", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Interacted Holo Screen", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Interacted Android Head", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Interacted Corpse", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Lvl 1 Completed", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Lvl 2 Completed", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Has dead", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "First Incursion", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Boss Figth", false);
 
         // Stats
         SaveLoad.SaveFloat(Globals.saveGameDir, fileName, "Health", 1200);

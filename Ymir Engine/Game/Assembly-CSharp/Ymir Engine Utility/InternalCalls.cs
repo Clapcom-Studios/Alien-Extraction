@@ -127,6 +127,9 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern void SetColor(object go, object color);
 
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void SetPlayerHitBoolean(object go, bool value);
+
         /// <summary>
         /// Retrieves a game object by its name.
         /// </summary>

@@ -486,6 +486,7 @@ public class Player : YmirComponent
 
             UpdateAlienCore();
         }
+
     }
 
     #region FSM
@@ -1328,6 +1329,7 @@ public class Player : YmirComponent
     #region IDLE
     private void StartIdle()
     {
+        SetHitShader(InternalCalls.CS_GetChild(gameObject, 2), false);
         StopPlayer();
         Animation.PlayAnimation(gameObject, idleAnim);
     }
@@ -1742,9 +1744,16 @@ public class Player : YmirComponent
         vulnerable = false;
         hitDurationTimer = hitDuration;
 
+        SetHitShader(InternalCalls.CS_GetChild(gameObject, 2), true);
+
         Animation.PlayAnimation(gameObject, "Raisen_Damage");
         GameObject damageParticles = GetParticles(gameObject, "ParticlesDamage");
         Particles.PlayParticlesTrigger(damageParticles);
+    }
+
+    private void SetHitShader(object go, bool value)
+    {
+        InternalCalls.SetPlayerHitBoolean(go, value);
     }
 
     public void TakeDMG()
