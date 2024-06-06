@@ -11,6 +11,7 @@ public class Button_GoToScene : YmirComponent
     public string sceneName = "BASE_FINAL/LVL_BASE_COLLIDERS";
 
     // Loading scene
+    private GameObject loadSceneBase;
     private GameObject loadSceneLvl1;
     private GameObject loadSceneLvl2;
     private GameObject loadSceneLvl3;
@@ -21,8 +22,10 @@ public class Button_GoToScene : YmirComponent
 
     public void Start()
     {
-        loadSceneLvl1 = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
-
+        loadSceneBase = InternalCalls.GetGameObjectByName("Loading Scene Base");
+        loadSceneLvl1 = InternalCalls.GetGameObjectByName("Loading Scene Lv1");
+        loadSceneLvl2 = InternalCalls.GetGameObjectByName("Loading Scene Lv2");
+        loadSceneLvl3 = InternalCalls.GetGameObjectByName("Loading Scene Lv3");
         if (loadSceneLvl1 != null)
         {
             loadSceneLvl1.SetActive(false);
@@ -38,8 +41,19 @@ public class Button_GoToScene : YmirComponent
 
         if (loadScene)
         {
-            if (sceneName == "LVL1_FINAL/LVL1_FINAL_COLLIDERS")
+            if (sceneName == "BASE_FINAL/LVL_BASE_COLLIDERS")
             {
+                loadSceneLvl1.SetActive(true);
+
+                if (time <= 0)
+                {
+                    InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
+                    loadScene = false;
+                }
+                return;
+            }
+                if (sceneName == "LVL1_FINAL/LVL1_FINAL_COLLIDERS")
+                {
                 loadSceneLvl1.SetActive(true);
 
                 if (time <= 0)
@@ -78,6 +92,14 @@ public class Button_GoToScene : YmirComponent
     {
         Debug.Log("Go to scene " + sceneName + ".yscene");
         Audio.PauseAllAudios();
+        if (sceneName == "BASE_FINAL/LVL_BASE_COLLIDERS")
+        {
+            if (loadSceneBase != null)
+            {
+                loadSceneBase.SetActive(true);
+                loadScene = true;
+            }
+        }
         if (sceneName == "LVL1_FINAL/LVL1_FINAL_COLLIDERS")
         {
             if (loadSceneLvl1 != null)
