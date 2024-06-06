@@ -6,27 +6,27 @@ using System.Runtime.InteropServices;
 
 using YmirEngine;
 
-public class Button_GoToScene : YmirComponent
+public class Go_Base : YmirComponent
 {
-    public string sceneName = "BASE_FINAL/LVL_BASE_COLLIDERS";
+    private string sceneName = "BASE_FINAL/LVL_BASE_COLLIDERS";
 
     // Loading scene
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
-    public float time = 10;
+    public float time = 5;
     public bool saveGame = true;
 
     public void Start()
     {
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Base");
 
         if (loadSceneImg != null)
         {
             loadSceneImg.SetActive(false);
         }
 
-        time = 10;
+        time = 5;
         loadScene = false;
     }
 
@@ -49,7 +49,6 @@ public class Button_GoToScene : YmirComponent
 
     public void OnClickButton()
     {
-        Debug.Log("Go to scene " + sceneName + ".yscene");
         Audio.PauseAllAudios();
 
         if (loadSceneImg != null)
