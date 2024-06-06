@@ -2115,9 +2115,6 @@ public class Player : YmirComponent
         // Items
         SaveItems();
 
-        // Others
-        SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Iscariot dialogue", hasTalkedIscariot);
-
         Debug.Log("Player saved");
     }
 
