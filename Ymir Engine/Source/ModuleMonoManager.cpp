@@ -89,6 +89,10 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.InternalCalls::SetColor", SetColorMaterial);
 	mono_add_internal_call("YmirEngine.InternalCalls::SetPlayerHitBoolean", SetPlayerHitBoolean);
 
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetBothFOV", CS_SetBothFOV);
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetHorizontalFOV", CS_SetHorizontalFOV);
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetVerticalFOV", CS_SetVerticalFOV);
+
 #pragma region GameObject
 
 	mono_add_internal_call("YmirEngine.GameObject::SetActive", SetActive);

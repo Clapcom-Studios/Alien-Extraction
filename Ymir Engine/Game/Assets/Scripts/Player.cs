@@ -487,6 +487,8 @@ public class Player : YmirComponent
             UpdateAlienCore();
         }
 
+        UpdateFOVInterpolation();
+
     }
 
     #region FSM
@@ -1864,6 +1866,7 @@ public class Player : YmirComponent
     #endregion
 
     #region PREDATORY RUSH
+
     private void StartPredRush()
     {
         //trigger del sonido
@@ -1884,6 +1887,8 @@ public class Player : YmirComponent
         //Reduce dash CD * 0,5
 
         predatoryTimer = predatoryDuration;
+
+        StartFOVInterpolation(60,80,0.25f);
     }
 
     private void EndPredRush()
@@ -1899,6 +1904,50 @@ public class Player : YmirComponent
         //Increase dash CD / 0,5
 
         predatoryCDTimer = predatoryCD;
+
+        StartFOVInterpolation(80, 60, 0.5f);
+    }
+
+    public float startFOV = 60f; // Starting FOV
+    public float endFOV = 70f; // Ending FOV
+    public float duration = 2f; // Duration of the interpolation
+
+    private float elapsed = 0f; // Elapsed time
+    private bool isInterpolating = false; // Flag to start/stop interpolation
+
+    public void StartFOVInterpolation(float start, float end, float time)
+    {
+        startFOV = start;
+        endFOV = end;
+        duration = time;
+        elapsed = 0f;
+        isInterpolating = true;
+        SetFOV(startFOV);
+    }
+
+    public void UpdateFOVInterpolation()
+    {
+        if (isInterpolating)
+        {
+            // Increase the elapsed time
+            elapsed += Time.deltaTime;
+            // Calculate the new FOV
+            float newFOV = Mathf.Lerp(startFOV, endFOV, elapsed / duration);
+            // Set the new FOV to the camera
+            SetFOV(newFOV);
+
+            // Stop interpolating when the duration is reached
+            if (elapsed >= duration)
+            {
+                isInterpolating = false;
+                SetFOV(endFOV); // Ensure the final FOV is set
+            }
+        }
+    }
+
+    private void SetFOV(float value)
+    {
+        InternalCalls.CS_SetBothFOV(value);
     }
 
     #endregion

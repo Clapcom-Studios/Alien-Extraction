@@ -1690,6 +1690,24 @@ void SetPlayerHitBoolean(MonoObject* go, bool value)
 	}
 }
 
+void CS_SetBothFOV(float value)
+{
+	External->scene->gameCameraComponent->SetBothFOV(value);
+	External->scene->gameCameraComponent->SetAspectRatio(1.8F);
+}
+
+void CS_SetHorizontalFOV(float value)
+{
+	External->scene->gameCameraComponent->SetHorizontalFOV(value);
+	External->scene->gameCameraComponent->SetAspectRatio(1.8F);
+}
+
+void CS_SetVerticalFOV(float value)
+{
+	External->scene->gameCameraComponent->SetVerticalFOV(value);
+	External->scene->gameCameraComponent->SetAspectRatio(1.8F);
+}
+
 int GetCurrentMapCS()
 {
 	return External->scene->currentMap;

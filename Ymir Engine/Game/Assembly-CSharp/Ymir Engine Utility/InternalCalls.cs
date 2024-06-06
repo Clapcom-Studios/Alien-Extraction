@@ -130,6 +130,17 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern void SetPlayerHitBoolean(object go, bool value);
 
+        // -----------------------
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void CS_SetBothFOV(float value);
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void CS_SetHorizontalFOV(float value);
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void CS_SetVerticalFOV(float value);
+
         /// <summary>
         /// Retrieves a game object by its name.
         /// </summary>
