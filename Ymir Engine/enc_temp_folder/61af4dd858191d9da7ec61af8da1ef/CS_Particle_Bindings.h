@@ -90,8 +90,8 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 					if (base->currentShape == SpawnAreaShape::PAR_CONE)
 					{
 						float anguloFowardPlayer = math::Atan2(-directionShoot.z, directionShoot.x);
-						pos->direction1 = { math::Cos(anguloFowardPlayer + angle),0.2, -math::Sin(anguloFowardPlayer + angle) };
-						pos->direction2 = { math::Cos(anguloFowardPlayer - angle),-0.2,-math::Sin(anguloFowardPlayer - angle) };
+						pos->direction1 = { math::Cos(anguloFowardPlayer + angle),0.5, -math::Sin(anguloFowardPlayer + angle) };
+						pos->direction2 = { math::Cos(anguloFowardPlayer - angle),-0.5,-math::Sin(anguloFowardPlayer - angle) };
 					}
 					else
 					{
