@@ -112,7 +112,7 @@ public class Caius : YmirComponent
         LoadDialogues(InternalCalls.CSVToString(dialogueQueue.Peek()));
         dialogue_ = Dialogue_id.ID_1;
     }
-    void Update()
+    public void Update()
     {
         popup.SetAsBillboard();
 
@@ -365,7 +365,7 @@ public class Caius : YmirComponent
             //ID 1
             if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
             {
-                //TODO: Open crafting menu
+                //Open crafting menu
                 player.currentMenu = "Crafting Canvas";
                 player.ToggleMenu(true);
                 ExitDialogue();

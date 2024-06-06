@@ -31,6 +31,8 @@ public class Iscariot : YmirComponent
     //Popup
     private GameObject popup;
 
+    bool talked;
+
     public enum Dialogue_id
     {
         ID_0,
@@ -141,6 +143,8 @@ public class Iscariot : YmirComponent
 
         LoadDialogues(dialoguescsv);
         dialogue_ = Dialogue_id.ID_1;
+
+        talked = false;
     }
     public void Update()
     {
@@ -158,7 +162,7 @@ public class Iscariot : YmirComponent
             //Interacciones - Respuestas
             //player.PlayerStopState(true);
             //IFs de todas las interacciones:
-            {
+            if (!talked){
                 
                 //ID 1
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
@@ -183,6 +187,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
 
                     return;
                 }
@@ -204,6 +209,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 10
@@ -224,6 +230,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 14
@@ -278,6 +285,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 29
@@ -311,6 +319,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 44
@@ -342,6 +351,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 35
@@ -430,6 +440,7 @@ public class Iscariot : YmirComponent
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 68
