@@ -178,8 +178,6 @@ public class Narrative_Item : YmirComponent
                 //ID 5
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
                     ExitDialogue();
                     return;
                 }
@@ -202,8 +200,8 @@ public class Narrative_Item : YmirComponent
                 //ID 5
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
+                    //Guardar el bool de interacción con la Android Head
+                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Android Head", true);
                     ExitDialogue();
                     return;
                 }
@@ -226,8 +224,6 @@ public class Narrative_Item : YmirComponent
                 //ID 5
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
                     ExitDialogue();
                     return;
                 }
@@ -250,8 +246,8 @@ public class Narrative_Item : YmirComponent
                 //ID 5
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
+                    //Guardar el bool de interacción con el cadaver
+                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Corpse", true);
                     ExitDialogue();
                     return;
                 }
@@ -268,8 +264,6 @@ public class Narrative_Item : YmirComponent
                 //ID 3
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
                     ExitDialogue();
                     return;
                 }
@@ -286,8 +280,6 @@ public class Narrative_Item : YmirComponent
                 //ID 3
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
                     ExitDialogue();
                     return;
                 }
@@ -304,8 +296,6 @@ public class Narrative_Item : YmirComponent
                 //ID 3
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
                 {
-                    //Guardar el bool de interacción con la holo screen
-                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
                     ExitDialogue();
                     return;
                 }
