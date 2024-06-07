@@ -50,6 +50,14 @@ public class Caius : YmirComponent
     //Save and Load
     string saveName;
     bool introDialogueDone;
+    bool holoScreen;
+    bool androidHead;
+    bool corpse;
+    bool lvl_1;
+    bool lvl_2;
+    bool hasDead;
+    bool firstIncursion;
+    bool boss;
 
     public enum Dialogue_id
     {
@@ -115,6 +123,8 @@ public class Caius : YmirComponent
     public void Update()
     {
         popup.SetAsBillboard();
+
+        CheckHiddenDialogues();
 
         if (active_Dialogue)
         {
@@ -271,6 +281,15 @@ public class Caius : YmirComponent
             UI.TextEdit(Abutton, " ");
             UI.TextEdit(Xbutton, " ");
         }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID006.csv")
+        {
+            UI.TextEdit(name_Npc, dialogue[1].Name);
+            UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+            UI.TextEdit(Ybutton, dialogue[2].Text);
+            UI.TextEdit(Bbutton, dialogue[3].Text);
+            UI.TextEdit(Abutton, " ");
+            UI.TextEdit(Xbutton, " ");
+        }
         
     }
 
@@ -363,7 +382,7 @@ public class Caius : YmirComponent
         else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv")
         {
             //ID 1
-            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1 && player.currentMenu == "")
             {
                 //Open crafting menu
                 ExitDialogue();
@@ -377,21 +396,48 @@ public class Caius : YmirComponent
                 return;
             }
         }
-        //else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv")
-        //{
-        //    //ID 1
-        //    if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
-        //    {
-        //        //TODO: Open crafting menu
-                
-        //        return;
-        //    }
-        //    if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
-        //    {
-        //        ExitDialogue();
-        //        return;
-        //    }
-        //}
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID006.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_8;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_11;
+                return;
+            }
+            //ID 8
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_8)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_8)
+            {
+                ExitDialogue();
+                return;
+            }
+            //ID 11
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_11)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_8)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
     }
     public void OnCollisionStay(GameObject other)
     {
@@ -504,8 +550,128 @@ public class Caius : YmirComponent
         LoadNextDialogeInQueue();
     }
 
-    //private void AddDialogueOverDefault(string toAdd)
-    //{
+    private void AddDialogueOverDefault(string toAdd)
+    {
+        bool foundDefault = false;
+        int queueSize = dialogueQueue.Count;
 
-    //}
+        // Crear una lista temporal para almacenar los elementos de la cola.
+        List<string> tempQueue = new List<string>();
+
+        // Dequeue todos los elementos y comprobar si contienen el valor predeterminado.
+        for (int i = 0; i < queueSize; i++)
+        {
+            string current = dialogueQueue.Dequeue();
+            if (current == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv" && !foundDefault)
+            {
+                // Reemplazar la primera ocurrencia del valor predeterminado por toAdd.
+                tempQueue.Add(toAdd);
+                foundDefault = true;
+            }
+            else
+            {
+                tempQueue.Add(current);
+            }
+        }
+
+        // Añadir "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv" al final si se encontró y reemplazó
+        if (foundDefault)
+        {
+            tempQueue.Add("Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv");
+        }
+        else
+        {
+            // Si no se encontró el valor predeterminado, simplemente añadir toAdd al final.
+            tempQueue.Add(toAdd);
+        }
+
+        // Re-enqueue todos los elementos desde la lista temporal.
+        foreach (var item in tempQueue)
+        {
+            dialogueQueue.Enqueue(item);
+        }
+    }
+
+    private void AddDialogueOverAll(string toAdd)
+    {
+        // Vaciar la cola actual.
+        dialogueQueue.Clear();
+
+        // Añadir el string toAdd a la cola.
+        dialogueQueue.Enqueue(toAdd);
+
+        // Añadir "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv" a la cola.
+        dialogueQueue.Enqueue("Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv");
+    }
+
+    private void RemoveDialogue(string toRemove)
+    {
+        int queueSize = dialogueQueue.Count;
+
+        // Crear una lista temporal para almacenar los elementos de la cola.
+        List<string> tempQueue = new List<string>();
+
+        // Dequeue todos los elementos y añadir a la lista temporal los que no coincidan con toRemove.
+        for (int i = 0; i < queueSize; i++)
+        {
+            string current = dialogueQueue.Dequeue();
+            if (current != toRemove)
+            {
+                tempQueue.Add(current);
+            }
+        }
+
+        // Re-enqueue todos los elementos desde la lista temporal.
+        foreach (var item in tempQueue)
+        {
+            dialogueQueue.Enqueue(item);
+        }
+    }
+
+    private void CheckHiddenDialogues()
+    {
+        if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Holo Screen") && !holoScreen)
+        {
+            holoScreen = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID006.csv");
+
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Android Head") && !androidHead)
+        {
+            androidHead = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID008.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Corpse") && !corpse)
+        {
+            corpse = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID012.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 1 Completed") && !lvl_1)
+        {
+            lvl_1 = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID010.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 2 Completed") && !lvl_2)
+        {
+            lvl_2 = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID011.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Has dead") && !hasDead)
+        {
+            hasDead = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID007.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Boss Fight") && !boss)
+        {
+            boss = true;
+            RemoveDialogue("Assets/Dialogue/CAIUS_RAISEN_ID012.csv");
+            AddDialogueOverAll("Assets/Dialogue/CAIUS_RAISEN_FINAL.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Caius intro dialogue") && !firstIncursion)
+        {
+            firstIncursion = true;
+            AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID009.csv");
+        }
+    }
+
 }
