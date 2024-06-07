@@ -1,13 +1,13 @@
 {
     "Prefab": [
         {
-            "Name": "ParticlesPlasmaDefault",
+            "Name": "ParticlesPlasmaLVL3B",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 2100823470,
+            "UID": 544539789,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1845772668,
+            "Parent UID": 1319339575,
             "Components": [
                 {
                     "Type": "Transform",
@@ -134,8 +134,8 @@
                                     "Loop": false,
                                     "Color1": [
                                         1,
-                                        0.10176992416381836,
-                                        0.10176992416381836,
+                                        0,
+                                        0.98230075836181641,
                                         1
                                     ],
                                     "Color2": [
@@ -162,14 +162,14 @@
                                     "Type": 0,
                                     "Lifetime": 0.5,
                                     "Lifetime2": 2,
-                                    "RandomLT": false,
+                                    "RandomLT": true,
                                     "Position": [
                                         0,
                                         0,
                                         0
                                     ],
-                                    "DistanceLimit": 0,
-                                    "HasDistanceLimit": false,
+                                    "DistanceLimit": 0.69999998807907104,
+                                    "HasDistanceLimit": true,
                                     "BaseRotation": 0,
                                     "BaseShape": 3,
                                     "PositiveBoxPoints": [
@@ -183,7 +183,7 @@
                                         -1
                                     ],
                                     "RadiusHollow": 0,
-                                    "RadiusBase": 5.4000000953674316,
+                                    "RadiusBase": 7.1999998092651367,
                                     "RadiusTop": 4,
                                     "Heigth": 3
                                 },
@@ -204,9 +204,9 @@
                                     "Random": false,
                                     "UseShapeBase": true,
                                     "Direction1": [
-                                        0,
-                                        0,
-                                        0
+                                        -0.7071068286895752,
+                                        -7.1054273576010019e-15,
+                                        0.70710670948028564
                                     ],
                                     "Direction2": [
                                         0,
@@ -215,7 +215,7 @@
                                     ],
                                     "NormalizedBaseDirection": true,
                                     "Accelerates": false,
-                                    "Speed1": -7.5999999046325684,
+                                    "Speed1": -9,
                                     "Speed2": 0,
                                     "ChangeSpeedMode": 0,
                                     "NewDirection": [
@@ -242,7 +242,7 @@
                                     "Type": 4,
                                     "Progressive": true,
                                     "Loop": false,
-                                    "Size1": 15.5,
+                                    "Size1": 33,
                                     "Size2": 0,
                                     "TimeStart": 0,
                                     "TimeStop": 0.5339999794960022
@@ -252,9 +252,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        1,
+                                        0.59519129991531372,
                                         0,
-                                        0,
+                                        0.67256641387939453,
                                         1
                                     ],
                                     "Color2": [
