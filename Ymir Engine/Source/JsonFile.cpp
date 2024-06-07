@@ -3661,7 +3661,8 @@ void JsonFile::GetComponent(const JSON_Object* componentObject, G_UI* gameObject
 					EmitterRotation* eRot = (EmitterRotation*)instancia;
 
 					//Enums of settings
-					eRot->currentAlignmentMode = (BillboardType)json_object_get_number(modulo, "AligmentMode");;
+					eRot->updateRotation = json_object_get_boolean(modulo, "UpdateRotation");
+					eRot->currentAlignmentMode = (BillboardType)json_object_get_number(modulo, "AligmentMode");
 					eRot->orientationFromWorld = (OrientationDirection)json_object_get_number(modulo, "WorldOrientation");
 					eRot->orientationOfAxis = (OrientationDirection)json_object_get_number(modulo, "AxisOrientation");
 

@@ -30,6 +30,8 @@ public class SceneManager : YmirComponent
     {
         if (loadScene)
         {
+            Globals.GetPlayerScript().SavePlayer();
+
             InternalCalls.LoadScene(sceneName);
             loadScene = false;
 
