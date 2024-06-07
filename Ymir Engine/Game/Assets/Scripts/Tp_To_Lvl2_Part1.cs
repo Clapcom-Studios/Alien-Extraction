@@ -30,7 +30,6 @@ public class Tp_To_Lvl2_Part1 : YmirComponent
         {
             if (finishTimer >= 0)
             {
-                Debug.Log("asdfjasdf");
                 finishTimer -= Time.deltaTime;
             }
 

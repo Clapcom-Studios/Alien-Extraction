@@ -14,7 +14,8 @@ public class Go_Base : YmirComponent
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
-    public float time = 5;
+
+    private float finishTimer = 2f;
     public bool saveGame = true;
 
     public void Start()
@@ -26,19 +27,19 @@ public class Go_Base : YmirComponent
             loadSceneImg.SetActive(false);
         }
 
-        time = 5;
+        finishTimer = 2;
         loadScene = false;
     }
 
     public void Update()
     {
-        time -= Time.deltaTime;
+        finishTimer -= Time.deltaTime;
 
         if (loadScene)
         {
             loadSceneImg.SetActive(true);
 
-            if (time <= 0)
+            if (finishTimer <= 0)
             {
                 InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
                 loadScene = false;
@@ -53,6 +54,7 @@ public class Go_Base : YmirComponent
 
         if (loadSceneImg != null)
         {
+            finishTimer = 2;
             loadSceneImg.SetActive(true);
             loadScene = true;
         }
