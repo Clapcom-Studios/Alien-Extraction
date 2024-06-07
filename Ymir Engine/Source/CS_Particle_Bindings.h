@@ -116,9 +116,9 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 						rot->WorldAlign();
 						
 						//rot->SetRotation(Quat::FromEulerXYZ(DegToRad(rot->freeWorldRotation.x), DegToRad(rot->freeWorldRotation.y), anguloFowardPlayer + DegToRad(-135.0f)));
-						Quat identidad = Quat::identity;
-						Quat rotacion = Quat::RotateAxisAngle({ 0.0f, 1.0f, 0.0f }, anguloFowardPlayer);
-						rot->SetRotation(identidad.Mul( rotacion));
+						//Quat identidad = Quat::identity;
+						//Quat rotacion = Quat::RotateAxisAngle({ 0.0f, 1.0f, 0.0f }, anguloFowardPlayer);
+						//rot->SetRotation(identidad.Mul( rotacion));
 
 						LOG("Rotation was %f", rot->freeWorldRotation.z);
 					}
