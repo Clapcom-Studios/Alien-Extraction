@@ -292,6 +292,372 @@ public class Caius : YmirComponent
         }
         else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID006.csv")
         {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, dialogue[7].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_8:
+                    UI.TextEdit(name_Npc, dialogue[8].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[8].Text);
+                    UI.TextEdit(Ybutton, dialogue[9].Text);
+                    UI.TextEdit(Bbutton, dialogue[10].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_11:
+                    UI.TextEdit(name_Npc, dialogue[11].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[11].Text);
+                    UI.TextEdit(Ybutton, dialogue[9].Text);
+                    UI.TextEdit(Bbutton, dialogue[10].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID007.csv")
+        {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, dialogue[5].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_6:
+                    UI.TextEdit(name_Npc, dialogue[6].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[6].Text);
+                    UI.TextEdit(Ybutton, dialogue[7].Text);
+                    UI.TextEdit(Bbutton, dialogue[8].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_9:
+                    UI.TextEdit(name_Npc, dialogue[9].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[9].Text);
+                    UI.TextEdit(Ybutton, dialogue[10].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_11:
+                    UI.TextEdit(name_Npc, dialogue[11].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[11].Text);
+                    UI.TextEdit(Ybutton, dialogue[10].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID008.csv")
+        {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, dialogue[5].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_6:
+                    UI.TextEdit(name_Npc, dialogue[6].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[6].Text);
+                    UI.TextEdit(Ybutton, dialogue[7].Text);
+                    UI.TextEdit(Bbutton, dialogue[8].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_9:
+                    UI.TextEdit(name_Npc, dialogue[9].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[9].Text);
+                    UI.TextEdit(Ybutton, dialogue[10].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_11:
+                    UI.TextEdit(name_Npc, dialogue[11].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[11].Text);
+                    UI.TextEdit(Ybutton, dialogue[7].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_12:
+                    UI.TextEdit(name_Npc, dialogue[12].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[12].Text);
+                    UI.TextEdit(Ybutton, dialogue[10].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID009.csv")
+        {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_7:
+                    UI.TextEdit(name_Npc, dialogue[7].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[7].Text);
+                    UI.TextEdit(Ybutton, dialogue[8].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_9:
+                    UI.TextEdit(name_Npc, dialogue[9].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[9].Text);
+                    UI.TextEdit(Ybutton, dialogue[10].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_11:
+                    UI.TextEdit(name_Npc, dialogue[11].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[11].Text);
+                    UI.TextEdit(Ybutton, dialogue[12].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID010.csv")
+        {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_7:
+                    UI.TextEdit(name_Npc, dialogue[7].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[7].Text);
+                    UI.TextEdit(Ybutton, dialogue[8].Text);
+                    UI.TextEdit(Bbutton, dialogue[9].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_10:
+                    UI.TextEdit(name_Npc, dialogue[10].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[10].Text);
+                    UI.TextEdit(Ybutton, dialogue[12].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_11:
+                    UI.TextEdit(name_Npc, dialogue[11].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[11].Text);
+                    UI.TextEdit(Ybutton, dialogue[12].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID011.csv")
+        {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_7:
+                    UI.TextEdit(name_Npc, dialogue[7].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[7].Text);
+                    UI.TextEdit(Ybutton, dialogue[8].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID012.csv")
+        {
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_7:
+                    UI.TextEdit(name_Npc, dialogue[7].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[7].Text);
+                    UI.TextEdit(Ybutton, dialogue[8].Text);
+                    UI.TextEdit(Bbutton, dialogue[9].Text);
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_10:
+                    UI.TextEdit(name_Npc, dialogue[10].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[10].Text);
+                    UI.TextEdit(Ybutton, dialogue[11].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_FINAL.csv")
+        {
             UI.TextEdit(name_Npc, dialogue[1].Name);
             UI.TextEdit(dialogue_Npc, dialogue[1].Text);
             UI.TextEdit(Ybutton, dialogue[2].Text);
@@ -299,7 +665,6 @@ public class Caius : YmirComponent
             UI.TextEdit(Abutton, " ");
             UI.TextEdit(Xbutton, " ");
         }
-        
     }
 
     private void HandleDialogue()
@@ -416,10 +781,16 @@ public class Caius : YmirComponent
             //ID 3
             if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
             {
+                dialogue_ = Dialogue_id.ID_5;
+                return;
+            }
+            //ID 5
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+            {
                 dialogue_ = Dialogue_id.ID_8;
                 return;
             }
-            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
             {
                 dialogue_ = Dialogue_id.ID_11;
                 return;
@@ -442,6 +813,261 @@ public class Caius : YmirComponent
                 return;
             }
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_8)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID007.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_6;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_6;
+                return;
+            }
+            //ID 6
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_6)
+            {
+                dialogue_ = Dialogue_id.ID_9;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_6)
+            {
+                dialogue_ = Dialogue_id.ID_11;
+                return;
+            }
+            //ID 9
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_9)
+            {
+                ExitDialogue();
+                return;
+            }
+            //ID 11
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_11)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID008.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_6;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_6;
+                return;
+            }
+            //ID 6
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_6)
+            {
+                dialogue_ = Dialogue_id.ID_9;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_6)
+            {
+                dialogue_ = Dialogue_id.ID_11;
+                return;
+            }
+            //ID 9
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_9)
+            {
+                dialogue_ = Dialogue_id.ID_12;
+                return;
+            }
+            //ID 11
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_11)
+            {
+                dialogue_ = Dialogue_id.ID_9;
+                return;
+            }
+            //ID 12
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_12)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID009.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_5;
+                return;
+            }
+            //ID 5
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+            {
+                dialogue_ = Dialogue_id.ID_7;
+                return;
+            }
+            //ID 7
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_7)
+            {
+                dialogue_ = Dialogue_id.ID_9;
+                return;
+            }
+            //ID 9
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_9)
+            {
+                dialogue_ = Dialogue_id.ID_11;
+                return;
+            }
+            //ID 11
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_11)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID010.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_5;
+                return;
+            }
+            //ID 5
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+            {
+                dialogue_ = Dialogue_id.ID_7;
+                return;
+            }
+            //ID 7
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_7)
+            {
+                dialogue_ = Dialogue_id.ID_10;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_7)
+            {
+                dialogue_ = Dialogue_id.ID_11;
+                return;
+            }
+            //ID 10
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_10)
+            {
+                ExitDialogue();
+                return;
+            }
+            //ID 11
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_11)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID011.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_5;
+                return;
+            }
+            //ID 5
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+            {
+                dialogue_ = Dialogue_id.ID_7;
+                return;
+            }
+            //ID 7
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_7)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_ID012.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                dialogue_ = Dialogue_id.ID_3;
+                return;
+            }
+            //ID 3
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+            {
+                dialogue_ = Dialogue_id.ID_5;
+                return;
+            }
+            //ID 5
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+            {
+                dialogue_ = Dialogue_id.ID_7;
+                return;
+            }
+            //ID 7
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_7)
+            {
+                dialogue_ = Dialogue_id.ID_10;
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_7)
+            {
+                dialogue_ = Dialogue_id.ID_10;
+                return;
+            }
+            //ID 10
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_10)
+            {
+                ExitDialogue();
+                return;
+            }
+        }
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv")
+        {
+            //ID 1
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            {
+                //Hacer cambio a la cinemática del final
+                InternalCalls.LoadScene("CutScenes_Final");
+                return;
+            }
+            if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
             {
                 ExitDialogue();
                 return;
