@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 588977135,
+            "UID": 920606591,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -8641,7 +8641,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8723,7 +8724,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8805,7 +8807,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8887,7 +8890,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8969,7 +8973,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -9051,7 +9056,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -9831,7 +9837,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12602,7 +12608,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12639,7 +12645,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13011,9 +13017,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -82.532630920410156,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13096,9 +13102,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -27.589302062988281,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13170,7 +13176,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13181,9 +13187,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -89.980216979980469,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13365,7 +13371,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13517,7 +13523,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13669,7 +13675,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13696,8 +13702,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 597,
+                    "Width": 1914,
+                    "Height": 1048,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -14637,15 +14643,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 837,
-                    "Position Y": 933,
+                    "Position X": 1043,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        837,
-                        933,
+                        1043,
+                        898,
                         75,
                         75
                     ],
@@ -14720,15 +14726,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 846,
-                    "Position Y": 944,
+                    "Position X": 1052,
+                    "Position Y": 909,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        846,
-                        944,
+                        1052,
+                        909,
                         55,
                         55
                     ],
@@ -14783,15 +14789,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 860,
-                    "Position Y": 989,
+                    "Position X": 1066,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        860,
-                        989,
+                        1066,
+                        954,
                         29,
                         29
                     ],
@@ -14846,15 +14852,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 870,
-                    "Position Y": 1007,
+                    "Position X": 1076,
+                    "Position Y": 972,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        870,
-                        1007,
+                        1076,
+                        972,
                         200,
                         50
                     ],
@@ -14909,14 +14915,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 941,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         941,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -14992,14 +14998,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 948,
-                    "Position Y": 942,
+                    "Position Y": 907,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         948,
-                        942,
+                        907,
                         55,
                         55
                     ],
@@ -15055,14 +15061,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 964,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         964,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15118,14 +15124,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 975,
-                    "Position Y": 1007,
+                    "Position Y": 972,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
                         975,
-                        1007,
+                        972,
                         200,
                         50
                     ],
@@ -15179,15 +15185,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 1043,
-                    "Position Y": 933,
+                    "Position X": 837,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1043,
-                        933,
+                        837,
+                        898,
                         75,
                         75
                     ],
@@ -15262,15 +15268,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 1051,
-                    "Position Y": 942,
+                    "Position X": 845,
+                    "Position Y": 907,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1051,
-                        942,
+                        845,
+                        907,
                         55,
                         55
                     ],
@@ -15325,15 +15331,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 1066,
-                    "Position Y": 989,
+                    "Position X": 860,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1066,
-                        989,
+                        860,
+                        954,
                         29,
                         29
                     ],
@@ -15388,15 +15394,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 1076,
-                    "Position Y": 1007,
+                    "Position X": 870,
+                    "Position Y": 972,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        1076,
-                        1007,
+                        870,
+                        972,
                         200,
                         50
                     ],
@@ -15451,14 +15457,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1181,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1181,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -15534,14 +15540,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1190,
-                    "Position Y": 944,
+                    "Position Y": 909,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1190,
-                        944,
+                        909,
                         55,
                         55
                     ],
@@ -15597,14 +15603,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1204,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1204,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15660,14 +15666,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1213,
-                    "Position Y": 1006,
+                    "Position Y": 971,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
                         1213,
-                        1006,
+                        971,
                         200,
                         50
                     ],
@@ -15696,7 +15702,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22558,7 +22564,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24420,7 +24426,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53213,7 +53219,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57228,7 +57234,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67433,7 +67439,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68178,7 +68184,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68719,7 +68725,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69074,7 +69080,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69315,7 +69321,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70125,7 +70131,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 920606591,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70310,7 +70316,10 @@
                     "w_Plasma_1": 1853496771,
                     "w_Plasma_2": 1854497212,
                     "w_Plasma_3a": 19022395,
-                    "w_Plasma_3b": 1319339575
+                    "w_Plasma_3b": 1319339575,
+                    "startFOV": 0,
+                    "endFOV": 0,
+                    "duration": 0
                 }
             ],
             "Children UID": [
@@ -70406,7 +70415,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 59,
@@ -70476,7 +70486,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 44,
@@ -70546,7 +70557,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 46,
@@ -70616,7 +70628,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 42,
@@ -70686,7 +70699,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 100,
@@ -71343,7 +71357,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 123,
@@ -72113,7 +72128,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 138,
@@ -72701,7 +72717,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 157,
@@ -73358,7 +73375,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 177,
@@ -74132,7 +74150,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 197,
@@ -76843,7 +76862,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 217,
@@ -77431,7 +77451,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 341,
@@ -78019,7 +78040,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 317,
@@ -78610,7 +78632,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 237,
@@ -79384,7 +79407,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 361,
@@ -80158,7 +80182,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 297,
@@ -80932,7 +80957,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 257,
@@ -81589,7 +81615,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 381,
@@ -82246,7 +82273,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 277,
