@@ -81,9 +81,9 @@ public class FaceHuggerBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 93.0f;
+                commonProb = 95.0f;
                 rareProb = 5.0f;
-                epicProb = 2.0f;
+                epicProb = 0.0f;
                 break;
             case int i when (i == 2 || i == 3):
                 commonProb = 93.0f;
@@ -91,9 +91,9 @@ public class FaceHuggerBaseScript : Enemy
                 epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 93.0f;
-                rareProb = 5.0f;
-                epicProb = 2.0f;
+                commonProb = 85.0f;
+                rareProb = 10.0f;
+                epicProb = 5.0f;
                 break;
             default:
                 commonProb = 93.0f;
@@ -118,11 +118,11 @@ public class FaceHuggerBaseScript : Enemy
 
         Debug.Log("[ERROR]: " + rarity);
 
-        if (rarity >= 90)
+        if (rarity >= (101.0f - epicProb))
         {
             rarity = 2;
         }
-        else if (rarity >= 70)
+        else if (rarity >= (101.0f - rareProb))
         {
             rarity = 1;
         }
