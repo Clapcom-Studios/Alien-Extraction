@@ -17,63 +17,68 @@ public class Shotgun : Weapon
         playerObject = InternalCalls.GetGameObjectByName("Player");
         player = playerObject.GetComponent<Player>();
 
-        reloadTime = 0.918f;
+        reloadTime = 1.918f;
 
         switch (_upgrade)
         {
             case UPGRADE.LVL_0:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunDefault");
-                ammo = 4; //16
+                ammo = 6; //16
                 ammoInChamber = 2;
                 fireRate = 1.3f;
                 damage = 110; //55
-                range = 21f; //10.5
+                range = 32f; //10.5
                 dispersion = range * 0.5f; //100º
+                reloadTime = 1.918f;
 
                 break;
             case UPGRADE.LVL_1:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL1");
-                ammo = 8; //26
+                ammo = 12; //26
                 ammoInChamber = 2;
                 fireRate = 1.2f;
                 damage = 140; //70
-                range = 21f; //10.5
+                range = 32f; //10.5
                 dispersion = range * 0.5f; //100º;
+                reloadTime = 1.818f;
 
                 break;
             case UPGRADE.LVL_2:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL2");
-                ammo = 8; //26
+                ammo = 12; //26
                 ammoInChamber = 2;
                 fireRate = 1.2f;
                 damage = 150; //75
                 range = 42f; //21f
                 dispersion = range * 0.35f; //80º
+                reloadTime = 1.618f;
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL3A");
-                ammo = 12; //28
+                ammo = 16; //28
                 ammoInChamber = 2;
                 fireRate = 0.7f;
                 damage = 160; //80
                 range = 42f;
                 dispersion = range * 0.35f; //80º
+                reloadTime = 0.918f;
 
                 break;
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL3B");
-                ammo = 8; //28
+                ammo = 12; //28
                 ammoInChamber = 4;
                 fireRate = 1.3f;
                 damage = 320; //80
                 range = 42f;
                 dispersion = range * 0.35f; //80º
+                reloadTime = 1.118f;
 
                 break;
             default:
