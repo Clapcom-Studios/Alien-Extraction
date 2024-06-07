@@ -1,9 +1,9 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -85.058738708496094,
-        89.817131042480469,
-        36.498245239257812
+        -85.021659851074219,
+        89.777626037597656,
+        36.472476959228516
     ],
     "Editor Camera Right (X)": [
         0.57063066959381104,
@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 588977135,
+            "UID": 1791488119,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -8641,7 +8641,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8723,7 +8724,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8805,7 +8807,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8887,7 +8890,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8969,7 +8973,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -9051,7 +9056,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -9831,7 +9837,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12602,7 +12608,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12639,7 +12645,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13170,7 +13176,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13365,7 +13371,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13517,7 +13523,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13669,7 +13675,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13696,8 +13702,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 597,
+                    "Width": 1910,
+                    "Height": 1060,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -14066,9 +14072,9 @@
             ],
             "Children UID": [
                 664762359,
-                794843613,
-                1118421309,
                 397458731,
+                1118421309,
+                794843613,
                 404505283
             ]
         },
@@ -14194,15 +14200,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 661,
-                    "Position Y": 913,
+                    "Position X": 696,
+                    "Position Y": 907,
                     "Width": 107,
                     "Height": 112,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        661,
-                        913,
+                        696,
+                        907,
                         107,
                         112
                     ],
@@ -14215,8 +14221,8 @@
                     "Color": [
                         0,
                         0,
-                        1.7999999523162842,
-                        0
+                        0,
+                        -1
                     ]
                 },
                 {
@@ -14257,14 +14263,14 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 670,
+                    "Position X": 696,
                     "Position Y": 913,
                     "Width": 103,
                     "Height": 107,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        670,
+                        696,
                         913,
                         103,
                         107
@@ -14320,17 +14326,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 626,
-                    "Position Y": 841,
+                    "Position X": 660,
+                    "Position Y": 874,
                     "Width": 692,
-                    "Height": 215,
+                    "Height": 199,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        626,
-                        841,
+                        660,
+                        874,
                         692,
-                        215
+                        199
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/MainHud.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14383,15 +14389,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 706,
-                    "Position Y": 874,
+                    "Position X": 740,
+                    "Position Y": 1007,
                     "Width": 16,
                     "Height": 32,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        706,
-                        874,
+                        740,
+                        1007,
                         16,
                         32
                     ],
@@ -14446,17 +14452,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 685,
-                    "Position Y": 885,
-                    "Width": 58,
-                    "Height": 52,
+                    "Position X": 735,
+                    "Position Y": 1040,
+                    "Width": 28,
+                    "Height": 18,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        685,
-                        885,
-                        58,
-                        52
+                        735,
+                        1040,
+                        28,
+                        18
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Bumper_unpressed.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14513,15 +14519,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 746,
-                    "Position Y": 896,
+                    "Position X": 780,
+                    "Position Y": 1030,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        746,
-                        896,
+                        780,
+                        1030,
                         200,
                         50
                     ],
@@ -14575,15 +14581,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 707,
-                    "Position Y": 914,
+                    "Position X": 742,
+                    "Position Y": 1053,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        707,
-                        914,
+                        742,
+                        1053,
                         200,
                         50
                     ],
@@ -14606,10 +14612,10 @@
             ]
         },
         {
-            "Name": "Frame (1)",
+            "Name": "Frame (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 794843613,
+            "UID": 397458731,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 175461015,
@@ -14638,14 +14644,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 837,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         837,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -14683,19 +14689,19 @@
                 }
             ],
             "Children UID": [
-                1520941648,
-                1278031458,
-                627738032
+                450047155,
+                1039560090,
+                156246151
             ]
         },
         {
-            "Name": "Skill (1)",
+            "Name": "Skill (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1520941648,
+            "UID": 450047155,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 794843613,
+            "Parent UID": 397458731,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14720,19 +14726,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 846,
-                    "Position Y": 944,
+                    "Position X": 845,
+                    "Position Y": 907,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        846,
-                        944,
+                        845,
+                        907,
                         55,
                         55
                     ],
-                    "Path": "Assets\/UI\/Skills Icons\/Tail.png",
+                    "Path": "Assets\/UI\/Skills Icons\/Acid.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -14752,13 +14758,13 @@
             ]
         },
         {
-            "Name": "Skill Button (1)",
+            "Name": "Skill Button (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1278031458,
+            "UID": 1039560090,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 794843613,
+            "Parent UID": 397458731,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14784,14 +14790,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 860,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         860,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -14815,13 +14821,13 @@
             ]
         },
         {
-            "Name": "Gp Text (1)",
+            "Name": "Gp Text (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 627738032,
+            "UID": 156246151,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 794843613,
+            "Parent UID": 397458731,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14846,22 +14852,22 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 870,
-                    "Position Y": 1007,
+                    "Position X": 868,
+                    "Position Y": 972,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        870,
-                        1007,
+                        868,
+                        972,
                         200,
                         50
                     ],
-                    "Text": "Y",
+                    "Text": "RB",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
-                    "Font size": 10,
+                    "Font size": 7,
                     "Line Spacing": 1,
                     "Color": [
                         0,
@@ -14909,14 +14915,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 941,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         941,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -14992,14 +14998,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 948,
-                    "Position Y": 942,
+                    "Position Y": 907,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         948,
-                        942,
+                        907,
                         55,
                         55
                     ],
@@ -15055,14 +15061,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 964,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         964,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15117,19 +15123,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 975,
-                    "Position Y": 1007,
+                    "Position X": 973,
+                    "Position Y": 973,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        975,
-                        1007,
+                        973,
+                        973,
                         200,
                         50
                     ],
-                    "Text": "B",
+                    "Text": "Y",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 10,
@@ -15148,10 +15154,10 @@
             ]
         },
         {
-            "Name": "Frame (3)",
+            "Name": "Frame (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 397458731,
+            "UID": 794843613,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 175461015,
@@ -15180,14 +15186,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1043,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1043,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -15225,19 +15231,19 @@
                 }
             ],
             "Children UID": [
-                450047155,
-                1039560090,
-                156246151
+                1520941648,
+                1278031458,
+                627738032
             ]
         },
         {
-            "Name": "Skill (3)",
+            "Name": "Skill (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 450047155,
+            "UID": 1520941648,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 397458731,
+            "Parent UID": 794843613,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15262,19 +15268,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 1051,
-                    "Position Y": 942,
+                    "Position X": 1052,
+                    "Position Y": 909,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1051,
-                        942,
+                        1052,
+                        909,
                         55,
                         55
                     ],
-                    "Path": "Assets\/UI\/Skills Icons\/Acid.png",
+                    "Path": "Assets\/UI\/Skills Icons\/Tail.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -15294,13 +15300,13 @@
             ]
         },
         {
-            "Name": "Skill Button (3)",
+            "Name": "Skill Button (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1039560090,
+            "UID": 1278031458,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 397458731,
+            "Parent UID": 794843613,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15326,14 +15332,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1066,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1066,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15357,13 +15363,13 @@
             ]
         },
         {
-            "Name": "Gp Text (3)",
+            "Name": "Gp Text (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 156246151,
+            "UID": 627738032,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 397458731,
+            "Parent UID": 794843613,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15389,18 +15395,18 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1076,
-                    "Position Y": 1007,
+                    "Position Y": 973,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
                         1076,
-                        1007,
+                        973,
                         200,
                         50
                     ],
-                    "Text": "X",
+                    "Text": "B",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 10,
@@ -15451,14 +15457,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1181,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1181,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -15534,14 +15540,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1190,
-                    "Position Y": 944,
+                    "Position Y": 909,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1190,
-                        944,
+                        909,
                         55,
                         55
                     ],
@@ -15597,14 +15603,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1204,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1204,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15660,14 +15666,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1213,
-                    "Position Y": 1006,
+                    "Position Y": 971,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
                         1213,
-                        1006,
+                        971,
                         200,
                         50
                     ],
@@ -15696,7 +15702,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22558,7 +22564,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24420,7 +24426,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53213,7 +53219,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57228,7 +57234,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67433,7 +67439,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68178,7 +68184,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68719,7 +68725,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69074,7 +69080,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69315,7 +69321,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70125,7 +70131,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1791488119,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70310,7 +70316,10 @@
                     "w_Plasma_1": 1853496771,
                     "w_Plasma_2": 1854497212,
                     "w_Plasma_3a": 19022395,
-                    "w_Plasma_3b": 1319339575
+                    "w_Plasma_3b": 1319339575,
+                    "startFOV": 0,
+                    "endFOV": 0,
+                    "duration": 0
                 }
             ],
             "Children UID": [
@@ -70406,7 +70415,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 59,
@@ -70476,7 +70486,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 44,
@@ -70546,7 +70557,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 46,
@@ -70616,7 +70628,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 42,
@@ -70686,7 +70699,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 100,
@@ -70824,6 +70838,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -70910,6 +70925,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71057,6 +71073,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71125,6 +71142,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71244,6 +71262,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71343,7 +71362,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 123,
@@ -71483,6 +71503,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71569,6 +71590,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71716,6 +71738,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71784,6 +71807,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71866,6 +71890,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71981,6 +72006,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72113,7 +72139,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 138,
@@ -72272,6 +72299,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -72359,6 +72387,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72459,6 +72488,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72593,6 +72623,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72701,7 +72732,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 157,
@@ -72839,6 +72871,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72925,6 +72958,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73072,6 +73106,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73140,6 +73175,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73259,6 +73295,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73358,7 +73395,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 177,
@@ -73498,6 +73536,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73584,6 +73623,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73731,6 +73771,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73799,6 +73840,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73881,6 +73923,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73996,6 +74039,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74132,7 +74176,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 197,
@@ -74291,6 +74336,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -74378,6 +74424,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74478,6 +74525,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74612,6 +74660,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74769,6 +74818,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74860,6 +74910,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75007,6 +75058,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75160,6 +75212,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75288,6 +75341,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75464,6 +75518,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75551,6 +75606,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75676,6 +75732,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75776,6 +75833,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75924,6 +75982,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76015,6 +76074,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76200,6 +76260,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76325,6 +76386,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76463,6 +76525,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76573,6 +76636,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76692,6 +76756,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76843,7 +76908,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 217,
@@ -77002,6 +77068,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -77089,6 +77156,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77189,6 +77257,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77323,6 +77392,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77431,7 +77501,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 341,
@@ -77590,6 +77661,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -77677,6 +77749,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77777,6 +77850,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77911,6 +77985,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78019,7 +78094,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 317,
@@ -78181,6 +78257,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -78268,6 +78345,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78368,6 +78446,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78502,6 +78581,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78610,7 +78690,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 237,
@@ -78750,6 +78831,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78836,6 +78918,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78983,6 +79066,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79051,6 +79135,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79133,6 +79218,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79248,6 +79334,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79384,7 +79471,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 361,
@@ -79524,6 +79612,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79610,6 +79699,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79757,6 +79847,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79825,6 +79916,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79907,6 +79999,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80022,6 +80115,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80158,7 +80252,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 297,
@@ -80298,6 +80393,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80384,6 +80480,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80531,6 +80628,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80599,6 +80697,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80681,6 +80780,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80796,6 +80896,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80932,7 +81033,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 257,
@@ -81070,6 +81172,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81156,6 +81259,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81303,6 +81407,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81371,6 +81476,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81481,6 +81587,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81589,7 +81696,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 381,
@@ -81727,6 +81835,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81813,6 +81922,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81960,6 +82070,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82028,6 +82139,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82138,6 +82250,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82246,7 +82359,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 277,
@@ -82384,6 +82498,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82470,6 +82585,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82617,6 +82733,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82685,6 +82802,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82795,6 +82913,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82952,6 +83071,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -83099,6 +83219,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,

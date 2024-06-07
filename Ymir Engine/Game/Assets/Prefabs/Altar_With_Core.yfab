@@ -4,17 +4,17 @@
             "Name": "Altar_Core",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1360544050,
+            "UID": 325532538,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 715927192,
+            "Parent UID": 1849323336,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
                         0,
-                        11,
+                        12.404140472412109,
                         0
                     ],
                     "Rotation": [
@@ -41,15 +41,15 @@
             "UID": 982585116,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1360544050,
+            "Parent UID": 325532538,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -0.47528076171875,
-                        0.49457550048828125,
-                        0.8358612060546875
+                        0.173431396484375,
+                        -0.08182525634765625,
+                        -0.0630645751953125
                     ],
                     "Rotation": [
                         -0,
@@ -121,7 +121,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 6129524,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 982585116,
             "Components": [
@@ -147,11 +147,13 @@
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
+                    "ShowEmitters": true,
                     "NumEmitters": 1,
                     "Emitters": [
                         {
                             "ModulesSize": 4,
                             "EmitterUID": 2069915912,
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -258,9 +260,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                6.5,
-                                15.465556144714355,
-                                -0.51650440692901611
+                                -224.43099975585938,
+                                112.50956726074219,
+                                326.9771728515625
                             ],
                             "color": [
                                 0.80000001192092896,
@@ -277,22 +279,22 @@
             ]
         },
         {
-            "Name": "Altar_Low3",
+            "Name": "Altar",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1679679128,
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 1360544050,
+            "Parent UID": 325532538,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        329,
-                        -107,
-                        -205
+                        329.5206298828125,
+                        -107.57640075683594,
+                        -205.88333129882812
                     ],
                     "Rotation": [
                         -0,
@@ -319,9 +321,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                6.5,
-                                15.465556144714355,
-                                -0.51650440692901611
+                                -224.43099975585938,
+                                112.50956726074219,
+                                326.9771728515625
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -334,9 +336,15 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 667,
-                    "Diffuse_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_PART1_Texturas\/Props\/Altar\/TEX_PROP_Altar_D.png",
-                    "Diffuse_UID": 1053309711
+                    "Diffuse_ID": 3018,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_D.png",
+                    "Diffuse_UID": 949716858,
+                    "Normal_ID": 3021,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_N.png",
+                    "Normal_UID": 382894451,
+                    "Ambient_ID": 3014,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_A.png",
+                    "Ambient_UID": 323506032
                 },
                 {
                     "World gravity": [
