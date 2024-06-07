@@ -459,7 +459,10 @@ public class UI_Stash : YmirComponent
     {
         for (int i = 0; i < player.itemsList.Count; i++)
         {
-            stashItemsList.Add(player.itemsList[i]);   
+            if (!player.itemsList[i].isEquipped)
+            {
+                stashItemsList.Add(player.itemsList[i]);
+            }
         }
 
         for (int i = 0; i < stashItemsList.Count; i++)
