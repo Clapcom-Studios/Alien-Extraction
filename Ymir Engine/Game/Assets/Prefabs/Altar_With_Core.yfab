@@ -7,7 +7,7 @@
             "UID": 325532538,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1849323336,
+            "Parent UID": 55898053,
             "Components": [
                 {
                     "Type": "Transform",
@@ -112,16 +112,78 @@
                 }
             ],
             "Children UID": [
-                6129524,
-                1048779234
+                301485197,
+                544153105,
+                2096008159
             ]
         },
         {
-            "Name": "Paticle System (11)",
+            "Name": "Sphere",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 6129524,
-            "Active": false,
+            "UID": 301485197,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "",
+            "Parent UID": 982585116,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -0.058597326278686523,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.81230753660202026,
+                        0.81230753660202026,
+                        0.81230753660202026
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1597070736,
+                    "Vertex Count": 485,
+                    "Index Count": 2280
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 468,
+                    "Diffuse_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_D.png",
+                    "Diffuse_UID": 809929119,
+                    "Specular_ID": 480,
+                    "Specular_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_S.png",
+                    "Specular_UID": 2100423475,
+                    "Normal_ID": 476,
+                    "Normal_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_N.png",
+                    "Normal_UID": 804793108,
+                    "Height_ID": 472,
+                    "Height_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_H.png",
+                    "Height_UID": 1030219163,
+                    "Ambient_ID": 464,
+                    "Ambient_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_A.png",
+                    "Ambient_UID": 1107840432
+                }
+            ]
+        },
+        {
+            "Name": "Particle System",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 544153105,
+            "Active": true,
             "Element_Type": "None",
             "Parent UID": 982585116,
             "Components": [
@@ -139,20 +201,178 @@
                         -0
                     ],
                     "Scale": [
-                        7,
-                        7,
-                        0
+                        0.99999994039535522,
+                        0.99999994039535522,
+                        0.99999994039535522
                     ]
                 },
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
-                    "ShowEmitters": true,
+                    "ShowEmitters": false,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 424404708,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 3,
+                                    "RadiusTop": 6.639702320098877,
+                                    "Heigth": 10
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.40400001406669617,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/Flash.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 1.75,
+                                    "Size2": 0,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.47787612676620483,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 2,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Core_Name",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2096008159,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 982585116,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        5,
+                        5,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
                     "NumEmitters": 1,
                     "Emitters": [
                         {
                             "ModulesSize": 4,
-                            "EmitterUID": 2069915912,
+                            "EmitterUID": 1370529351,
                             "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
@@ -192,16 +412,17 @@
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
                                     "PointingUID": 0,
-                                    "ConditionForSpawn": 2,
-                                    "SubemitterMaxLifetime": 1,
-                                    "SubemitterMinLifetime": 0
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/particleExample.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/CoreItemName.png"
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -214,67 +435,6 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "Name": "Sphere (12)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1048779234,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/Primitives\/Sphere.fbx",
-            "Parent UID": 982585116,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 621813214,
-                    "Vertex Count": 439,
-                    "Index Count": 2280
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/ColorShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                -224.43099975585938,
-                                112.50956726074219,
-                                326.9771728515625
-                            ],
-                            "color": [
-                                0.80000001192092896,
-                                0.10000000149011612,
-                                0
-                            ],
-                            "light": false
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
                 }
             ]
         },
@@ -321,9 +481,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -224.43099975585938,
-                                112.50956726074219,
-                                326.9771728515625
+                                48.307811737060547,
+                                16.874290466308594,
+                                14.562473297119141
                             ],
                             "lightInt": 1,
                             "lightColor": [
