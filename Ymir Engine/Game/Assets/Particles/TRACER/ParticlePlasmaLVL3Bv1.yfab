@@ -1,21 +1,21 @@
 {
     "Prefab": [
         {
-            "Name": "ParticlesPlasmaDefault",
+            "Name": "ParticlesPlasmaLVL3B",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1115462659,
-            "Active": false,
+            "UID": 544539789,
+            "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1845772668,
+            "Parent UID": 1319339575,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -40.116001129150391,
-                        133.0260009765625,
-                        129.58500671386719
+                        -55,
+                        133,
+                        130
                     ],
                     "Rotation": [
                         -0,
@@ -32,7 +32,7 @@
                     "Type": "ParticleSystem",
                     "Active": 1,
                     "ShowEmitters": false,
-                    "NumEmitters": 1,
+                    "NumEmitters": 2,
                     "Emitters": [
                         {
                             "ModulesSize": 7,
@@ -134,8 +134,8 @@
                                     "Loop": false,
                                     "Color1": [
                                         1,
-                                        0.0039215688593685627,
-                                        0.0039215688593685627,
+                                        0,
+                                        0.98230075836181641,
                                         1
                                     ],
                                     "Color2": [
@@ -150,6 +150,125 @@
                                 {
                                     "Type": 6,
                                     "Path": "Assets\/Particles\/IMAGES\/plasma.png"
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1885224285,
+                            "Name": "Charging",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.5,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 3,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 5.4000000953674316,
+                                    "RadiusTop": 4,
+                                    "Heigth": 3
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 2,
+                                    "StartMode": 2,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.019999999552965164,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": -7.5999999046325684,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 3,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 15.5,
+                                    "Size2": 0,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.5339999794960022
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.59519129991531372,
+                                        0,
+                                        0.67256641387939453,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/magic_05.png"
                                 }
                             ]
                         }
