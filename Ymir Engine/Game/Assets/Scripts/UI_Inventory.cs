@@ -46,22 +46,126 @@ public class UI_Inventory : YmirComponent
                 break;
             case WEAPON_TYPE.SMG:
                 {
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+                    switch (player.upgradeType)
+                    {
+                        case UPGRADE.LVL_0:
+
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_1:
+
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_2:
+
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl2.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_3_ALPHA:
+
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3A.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_3_BETA:
+
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3B.png", (int)UI_STATE.NORMAL);
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 break;
 
             case WEAPON_TYPE.SHOTGUN:
                 {
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
+                    switch (player.upgradeType)
+                    {
+                        case UPGRADE.LVL_0:
+
+                            player.currentWeapon = player.w_Shotgun_0.GetComponent<Shotgun>();
+                            player.w_Shotgun_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_1:
+
+                            player.currentWeapon = player.w_Shotgun_1.GetComponent<Shotgun>();
+                            player.w_Shotgun_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_2:
+
+                            player.currentWeapon = player.w_Shotgun_2.GetComponent<Shotgun>();
+                            player.w_Shotgun_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\Shotgunlvl2.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_3_ALPHA:
+
+                            player.currentWeapon = player.w_Shotgun_3a.GetComponent<Shotgun>();
+                            player.w_Shotgun_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3A.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_3_BETA:
+
+                            player.currentWeapon = player.w_Shotgun_3b.GetComponent<Shotgun>();
+                            player.w_Shotgun_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3B.png", (int)UI_STATE.NORMAL);
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 break;
 
             case WEAPON_TYPE.PLASMA:
                 {
-                    UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
-                        "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
+                    switch (player.upgradeType)
+                    {
+                        case UPGRADE.LVL_0:
+
+                            player.currentWeapon = player.w_Plasma_0.GetComponent<Plasma>();
+                            player.w_Plasma_0.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_1:
+
+                            player.currentWeapon = player.w_Plasma_1.GetComponent<Plasma>();
+                            player.w_Plasma_1.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_2:
+
+                            player.currentWeapon = player.w_Plasma_2.GetComponent<Plasma>();
+                            player.w_Plasma_2.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\LaserHUD.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_3_ALPHA:
+
+                            player.currentWeapon = player.w_Plasma_3a.GetComponent<Plasma>();
+                            player.w_Plasma_3a.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3A.png", (int)UI_STATE.NORMAL);
+                            break;
+                        case UPGRADE.LVL_3_BETA:
+
+                            player.currentWeapon = player.w_Plasma_3b.GetComponent<Plasma>();
+                            player.w_Plasma_3b.SetActive(true);
+                            UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
+                                "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3B.png", (int)UI_STATE.NORMAL);
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 break;
         }
