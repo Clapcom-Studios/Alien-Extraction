@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        134.60957336425781,
-        72.981521606445312,
-        47.900680541992188
+        -26.977785110473633,
+        121.85960388183594,
+        89.9017333984375
     ],
     "Editor Camera Right (X)": [
-        0.89012092351913452,
-        -1.5497207641601562e-06,
-        -0.45575955510139465
+        0.95781803131103516,
+        -1.7285346984863281e-06,
+        0.28742516040802002
     ],
     "Editor Camera Up (Y)": [
-        -0.11652832478284836,
-        0.96676474809646606,
-        -0.22758887708187103
+        0.22770757973194122,
+        0.61021506786346436,
+        -0.75881099700927734
     ],
     "Editor Camera Front (Z)": [
-        -0.4406091570854187,
-        -0.2556816041469574,
-        -0.86053061485290527
+        0.17538990080356598,
+        -0.79224234819412231,
+        -0.58447557687759399
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 281944071,
+            "UID": 21258442,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6393,21 +6393,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1325,
-                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_D.png",
-                    "Diffuse_UID": 1263252680,
+                    "Diffuse_ID": 384,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_D.png",
+                    "Diffuse_UID": 874116053,
                     "Specular_ID": 1337,
                     "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_S.png",
                     "Specular_UID": 1682613414,
-                    "Normal_ID": 1333,
-                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_N.png",
-                    "Normal_UID": 1262956276,
-                    "Height_ID": 1329,
-                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_H.png",
-                    "Height_UID": 1679178438,
-                    "Ambient_ID": 1321,
-                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_A.png",
-                    "Ambient_UID": 206248705
+                    "Normal_ID": 2788,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_N.png",
+                    "Normal_UID": 1045223274,
+                    "Height_ID": 392,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_H.png",
+                    "Height_UID": 846340382,
+                    "Ambient_ID": 2792,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_A.png",
+                    "Ambient_UID": 665107503,
+                    "Emissive_ID": 2790,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_E.png",
+                    "Emissive_UID": 1225942883
                 }
             ]
         },
@@ -6469,21 +6472,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1345,
-                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_D.png",
-                    "Diffuse_UID": 257923906,
+                    "Diffuse_ID": 1778,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_D.png",
+                    "Diffuse_UID": 1408752495,
                     "Specular_ID": 1357,
                     "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_S.png",
                     "Specular_UID": 258922290,
-                    "Normal_ID": 1353,
-                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_N.png",
-                    "Normal_UID": 288739023,
-                    "Height_ID": 1349,
-                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_H.png",
-                    "Height_UID": 502150592,
-                    "Ambient_ID": 1341,
-                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_A.png",
-                    "Ambient_UID": 1551045021
+                    "Normal_ID": 1782,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_N.png",
+                    "Normal_UID": 1647812766,
+                    "Height_ID": 1780,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_H.png",
+                    "Height_UID": 1940099393,
+                    "Ambient_ID": 1786,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_A.png",
+                    "Ambient_UID": 1182168975,
+                    "Emissive_ID": 1784,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_E.png",
+                    "Emissive_UID": 1927387175
                 }
             ]
         },
@@ -9903,7 +9909,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12674,7 +12680,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12711,7 +12717,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13242,7 +13248,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13437,7 +13443,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13589,7 +13595,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13741,7 +13747,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13768,8 +13774,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1910,
-                    "Height": 1165,
+                    "Width": 927,
+                    "Height": 482,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -15867,7 +15873,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22729,7 +22735,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24591,7 +24597,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53384,7 +53390,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57399,7 +57405,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67604,7 +67610,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68349,7 +68355,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68890,7 +68896,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69245,7 +69251,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69486,7 +69492,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70296,7 +70302,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 281944071,
+            "Parent UID": 21258442,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70481,10 +70487,7 @@
                     "w_Plasma_1": 1853496771,
                     "w_Plasma_2": 1854497212,
                     "w_Plasma_3a": 19022395,
-                    "w_Plasma_3b": 1319339575,
-                    "startFOV": 0,
-                    "endFOV": 0,
-                    "duration": 0
+                    "w_Plasma_3b": 1319339575
                 }
             ],
             "Children UID": [
