@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        7.8815851211547852,
-        59.766101837158203,
-        27.240419387817383
+        -55.387180328369141,
+        211.39962768554688,
+        652.013671875
     ],
     "Editor Camera Right (X)": [
-        0.37510061264038086,
-        1.9371509552001953e-07,
-        0.92698562145233154
+        0.35373416543006897,
+        -1.6391277313232422e-07,
+        0.93535113334655762
     ],
     "Editor Camera Up (Y)": [
-        0.4939008355140686,
-        0.84623950719833374,
-        -0.19985496997833252
+        0.5956580638885498,
+        0.77100563049316406,
+        -0.22526778280735016
     ],
     "Editor Camera Front (Z)": [
-        0.7844507098197937,
-        -0.53280419111251831,
-        -0.31742438673973083
+        0.72115868330001831,
+        -0.63683134317398071,
+        -0.2727302610874176
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 390735583,
+            "UID": 1863708228,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -70,7 +70,7 @@
             "UID": 215325978,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4425,7 +4425,7 @@
             "UID": 148987747,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4497,7 +4497,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4528,9 +4528,9 @@
                     "Active": true,
                     "Collider Type": 0,
                     "Size": [
-                        300,
-                        100,
-                        250
+                        409.29998779296875,
+                        111.5,
+                        387
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -4827,7 +4827,7 @@
             "UID": 12745639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4839,7 +4839,7 @@
                     ],
                     "Rotation": [
                         -180,
-                        -1.3964760303497314,
+                        -1.3964773416519165,
                         -180
                     ],
                     "Scale": [
@@ -4858,9 +4858,9 @@
                     "Active": true,
                     "Collider Type": 0,
                     "Size": [
-                        300,
+                        352.79998779296875,
                         100,
-                        250
+                        277
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -5157,7 +5157,7 @@
             "UID": 259210497,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5168,14 +5168,14 @@
                         751.5816650390625
                     ],
                     "Rotation": [
-                        180,
-                        -89.296127319335938,
-                        180
+                        179.99961853027344,
+                        -89.429389953613281,
+                        179.99961853027344
                     ],
                     "Scale": [
-                        0.050000861287117004,
+                        0.050001837313175201,
                         0.05000000074505806,
-                        0.050000861287117004
+                        0.050001837313175201
                     ]
                 },
                 {
@@ -5188,9 +5188,9 @@
                     "Active": true,
                     "Collider Type": 0,
                     "Size": [
-                        300,
+                        386.5,
                         100,
-                        250
+                        310.5
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -5243,18 +5243,18 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        -1.52587890625e-05,
                         0
                     ],
                     "Rotation": [
-                        -0,
-                        0,
-                        -0
+                        4.8095739657583181e-06,
+                        -63.852699279785156,
+                        7.6814421845483594e-06
                     ],
                     "Scale": [
+                        0.99999862909317017,
                         1,
-                        1,
-                        1
+                        0.99999862909317017
                     ]
                 },
                 {
@@ -5328,18 +5328,18 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        -1.52587890625e-05,
                         0
                     ],
                     "Rotation": [
-                        -0,
-                        0,
-                        -0
+                        4.6702703002665658e-06,
+                        -63.387428283691406,
+                        7.5261145866534207e-06
                     ],
                     "Scale": [
+                        0.99999970197677612,
                         1,
-                        1,
-                        1
+                        0.99999970197677612
                     ]
                 },
                 {
@@ -5487,7 +5487,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5866,7 +5866,7 @@
             "UID": 466712987,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6249,7 +6249,7 @@
             "UID": 2063663470,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6543,7 +6543,7 @@
             "UID": 1372245636,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6837,7 +6837,7 @@
             "UID": 1630598529,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6874,7 +6874,7 @@
             "UID": 811451292,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6971,7 +6971,7 @@
             "UID": 560363617,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15352,7 +15352,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278440713882446,
+                        0.90278530120849609,
                         -0
                     ],
                     "Scale": [
@@ -15687,7 +15687,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278452634811401,
+                        0.90278536081314087,
                         -0
                     ],
                     "Scale": [
@@ -16329,8 +16329,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 415,
-                    "Height": 381,
+                    "Width": 1234,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -25909,7 +25909,7 @@
             "UID": 1288139189,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26465,7 +26465,7 @@
             "UID": 419286066,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33375,7 +33375,7 @@
             "UID": 1747926452,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33800,9 +33800,9 @@
                         229.56985473632812
                     ],
                     "Rotation": [
-                        -1.6464997005643514e-16,
+                        -1.6465587281728632e-16,
                         89.332359313964844,
-                        1.5620303986906003e-16
+                        1.5620862499255599e-16
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -35170,7 +35170,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35915,7 +35915,7 @@
             "UID": 1086457827,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36124,8 +36124,8 @@
                     ],
                     "Rotation": [
                         -2.2451992034912109,
-                        0.18273289501667023,
-                        0.43568417429924011
+                        0.182732954621315,
+                        0.43568441271781921
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -36157,7 +36157,7 @@
                         3.0423920154571533
                     ],
                     "Rotation": [
-                        2.0803442001342773,
+                        2.0803492069244385,
                         0,
                         -0
                     ],
@@ -36332,7 +36332,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 196,
@@ -36414,7 +36415,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 196,
@@ -36496,7 +36498,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 196,
@@ -36578,7 +36581,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 196,
@@ -36660,7 +36664,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 196,
@@ -36742,7 +36747,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 196,
@@ -36852,7 +36858,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -38449,7 +38455,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -38630,7 +38636,7 @@
                     ],
                     "Rotation": [
                         0,
-                        -4.1199653603127729e-18,
+                        -3.5474191946021829e-32,
                         0
                     ],
                     "Scale": [
@@ -38671,7 +38677,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1139,
@@ -39590,7 +39597,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39778,9 +39785,9 @@
                         0
                     ],
                     "Rotation": [
-                        -8.2399307206255458e-18,
+                        -7.0948383892043658e-32,
                         0,
-                        -8.2399307206255458e-18
+                        -7.0948383892043658e-32
                     ],
                     "Scale": [
                         1,
@@ -39820,7 +39827,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 25,
@@ -39850,9 +39858,9 @@
                         0
                     ],
                     "Rotation": [
-                        1.4089855855252017e-32,
-                        -2.8441033891629352e-40,
-                        -1.4089855855252017e-32
+                        -0,
+                        0,
+                        -0
                     ],
                     "Scale": [
                         0.66134387254714966,
@@ -40465,7 +40473,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -40651,9 +40659,9 @@
                         0
                     ],
                     "Rotation": [
-                        8.2399307206255458e-18,
+                        7.0948383892043658e-32,
                         0,
-                        -8.2399307206255458e-18
+                        -7.0948383892043658e-32
                     ],
                     "Scale": [
                         1,
@@ -40693,7 +40701,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 23,
@@ -42506,7 +42515,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42533,8 +42542,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 415,
-                    "Height": 381,
+                    "Width": 1234,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -42697,7 +42706,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42724,8 +42733,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 415,
-                    "Height": 381,
+                    "Width": 1234,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -44724,7 +44733,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52284,7 +52293,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52825,7 +52834,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53178,7 +53187,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53190,7 +53199,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        1.1210387714598537e-44,
+                        0,
                         -0
                     ],
                     "Scale": [
@@ -53244,9 +53253,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1696.806640625,
-                        -104.56812286376953,
-                        -19850.34375
+                        -2569.04931640625,
+                        -133.41450500488281,
+                        -25765.701171875
                     ],
                     "Rotation": [
                         180,
@@ -53307,9 +53316,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1717.58984375,
-                        -108.17391204833984,
-                        -19831.609375
+                        -2589.83251953125,
+                        -137.02030944824219,
+                        -25746.966796875
                     ],
                     "Rotation": [
                         180,
@@ -53423,9 +53432,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1696.806640625,
-                        -104.56812286376953,
-                        -19850.34375
+                        -2569.04931640625,
+                        -133.41450500488281,
+                        -25765.701171875
                     ],
                     "Rotation": [
                         180,
@@ -53548,9 +53557,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1696.806640625,
-                        -104.56812286376953,
-                        -19850.34375
+                        -2569.04931640625,
+                        -133.41450500488281,
+                        -25765.701171875
                     ],
                     "Rotation": [
                         180,
@@ -53610,9 +53619,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1696.806640625,
-                        -104.56812286376953,
-                        -19850.34375
+                        -2569.04931640625,
+                        -133.41450500488281,
+                        -25765.701171875
                     ],
                     "Rotation": [
                         180,
@@ -53734,9 +53743,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1717.58984375,
-                        -192.57403564453125,
-                        -19831.609375
+                        -2589.83251953125,
+                        -221.42047119140625,
+                        -25746.966796875
                     ],
                     "Rotation": [
                         180,
@@ -53796,9 +53805,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -1696.806640625,
-                        -20.168134689331055,
-                        -19850.34375
+                        -2569.04931640625,
+                        -49.014518737792969,
+                        -25765.701171875
                     ],
                     "Rotation": [
                         180,
@@ -53852,7 +53861,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53965,7 +53974,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54775,7 +54784,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54960,7 +54969,10 @@
                     "w_Plasma_1": 1853496771,
                     "w_Plasma_2": 1854497212,
                     "w_Plasma_3a": 19022395,
-                    "w_Plasma_3b": 1319339575
+                    "w_Plasma_3b": 1319339575,
+                    "startFOV": 0,
+                    "endFOV": 0,
+                    "duration": 0
                 }
             ],
             "Children UID": [
@@ -55056,7 +55068,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 59,
@@ -55126,7 +55139,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 44,
@@ -55196,7 +55210,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 46,
@@ -55266,7 +55281,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 42,
@@ -55336,7 +55352,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 100,
@@ -55993,7 +56010,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 123,
@@ -56763,7 +56781,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 138,
@@ -57351,7 +57370,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 157,
@@ -58008,7 +58028,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 177,
@@ -58782,7 +58803,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 197,
@@ -61493,7 +61515,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 217,
@@ -62081,7 +62104,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 341,
@@ -62669,7 +62693,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 317,
@@ -63260,7 +63285,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 237,
@@ -64034,7 +64060,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 361,
@@ -64808,7 +64835,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 297,
@@ -65582,7 +65610,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 257,
@@ -66239,7 +66268,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 381,
@@ -66896,7 +66926,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 277,
@@ -67856,7 +67887,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 390735583,
+            "Parent UID": 1863708228,
             "Components": [
                 {
                     "Type": "Transform",
