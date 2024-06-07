@@ -108,7 +108,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 					{
 
 					}
-					if (rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT && particleSystem->allEmitters.at(i)->listParticles.at(j)->lifetime<0.1f)
+					if (rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT /*&& particleSystem->allEmitters.at(i)->listParticles.at(j)->lifetime<0.1f*/)
 					{
 						LOG("Angle was %f", RadToDeg(anguloFowardPlayer));
 
