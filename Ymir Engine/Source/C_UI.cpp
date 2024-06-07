@@ -367,7 +367,7 @@ bool C_UI::MouseCheck(float2 mouse)
 void C_UI::UpdateUITransform()
 {
 	dragLimits.x = posX + mOwner->mTransform->GetGlobalPosition().x;
-	dragLimits.y = posY + mOwner->mTransform->GetGlobalPosition().y;
+	dragLimits.y = posY/* + mOwner->mTransform->GetGlobalPosition().y*/;
 	dragLimits.z = (width * scaleBounds.x);
 	dragLimits.w = (height * scaleBounds.y);
 

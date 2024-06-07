@@ -11,7 +11,7 @@ public class DroneXenomorphTailAttack : YmirComponent
 
     private float movementSpeed;
 
-    private float damage = 200f;
+    private float damage = 250f;
 
     private GameObject player;
 

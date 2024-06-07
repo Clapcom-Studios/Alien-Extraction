@@ -111,7 +111,7 @@ public class FaceHuggerBaseScript : Enemy
         agent.speed = 1500f;
         agent.angularSpeed = 10f;
 
-        life = 100f;
+        life = 120f;
         armor = 0f;
 
         rarity = random.Next(101);
@@ -134,13 +134,13 @@ public class FaceHuggerBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 330; //450
+            life = 230; //255,55
             armor = 0.1f; //0.1f
             agent.speed = 1650f;
         }
         else if (rarity == 2)
         {
-            life = 440; //600
+            life = 340; //425
             armor = 0.2f; //0.2f
             agent.speed = 1800f;
         }

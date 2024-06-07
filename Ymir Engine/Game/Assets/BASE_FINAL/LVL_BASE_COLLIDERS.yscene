@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 389380721,
+            "UID": 281944071,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9903,7 +9903,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12674,7 +12674,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12711,7 +12711,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13083,9 +13083,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -82.532630920410156,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13168,9 +13168,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -27.589302062988281,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13242,7 +13242,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13253,9 +13253,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13437,7 +13437,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13589,7 +13589,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13741,7 +13741,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13768,8 +13768,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1912,
-                    "Height": 1059,
+                    "Width": 1910,
+                    "Height": 1165,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -14085,7 +14085,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         164,
-                        1018.3974609375,
+                        961,
                         200,
                         50
                     ],
@@ -14138,10 +14138,7 @@
             ],
             "Children UID": [
                 664762359,
-                397458731,
-                1118421309,
-                794843613,
-                404505283
+                1887788900
             ]
         },
         {
@@ -14178,15 +14175,15 @@
                     "Draggeable": false,
                     "Position X": 661,
                     "Position Y": 913,
-                    "Width": 103,
-                    "Height": 107,
+                    "Width": 74,
+                    "Height": 73,
                     "UI Type": 6,
                     "UI State": 1,
                     "Drag Limits": [
                         661,
                         913,
-                        103,
-                        107
+                        74,
+                        73
                     ],
                     "Is interactable": true,
                     "Fill image": 1746115142,
@@ -14230,7 +14227,6 @@
                 995673855,
                 1746115142,
                 346795120,
-                833603155,
                 1843557112
             ]
         },
@@ -14266,17 +14262,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 696,
-                    "Position Y": 907,
-                    "Width": 107,
-                    "Height": 112,
+                    "Position X": 711,
+                    "Position Y": 926,
+                    "Width": 74,
+                    "Height": 73,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        696,
-                        907,
-                        107,
-                        112
+                        711,
+                        926,
+                        74,
+                        73
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Slider\/Slider_Background.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14288,7 +14284,7 @@
                         0,
                         0,
                         0,
-                        -1
+                        0
                     ]
                 },
                 {
@@ -14329,17 +14325,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 696,
-                    "Position Y": 913,
-                    "Width": 103,
-                    "Height": 107,
+                    "Position X": 711,
+                    "Position Y": 926,
+                    "Width": 74,
+                    "Height": 73,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        696,
-                        913,
-                        103,
-                        107
+                        711,
+                        926,
+                        74,
+                        73
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Slider\/Slider_Fill.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14424,69 +14420,6 @@
             ]
         },
         {
-            "Name": "Heal Icon",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 833603155,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 664762359,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 740,
-                    "Position Y": 1007,
-                    "Width": 16,
-                    "Height": 32,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        740,
-                        1007,
-                        16,
-                        32
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Icons\/VesselLlena.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
             "Name": "Heal",
             "Static": false,
             "Tag": "Untagged",
@@ -14549,15 +14482,16 @@
                 }
             ],
             "Children UID": [
-                456066568,
+                1968257339,
+                833603155,
                 426264512
             ]
         },
         {
-            "Name": "Number Heals",
+            "Name": "Image Bg (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 456066568,
+            "UID": 1968257339,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1843557112,
@@ -14585,19 +14519,85 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 780,
+                    "Position X": 772,
+                    "Position Y": 1004,
+                    "Width": 71,
+                    "Height": 39,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        772,
+                        1004,
+                        71,
+                        39
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/potcount.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ],
+            "Children UID": [
+                456066568
+            ]
+        },
+        {
+            "Name": "Number Heals",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 456066568,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1968257339,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 784,
                     "Position Y": 1030,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        780,
+                        784,
                         1030,
                         200,
                         50
                     ],
-                    "Text": "x2",
+                    "Text": "2\/2",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 15,
@@ -14612,6 +14612,69 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Heal Icon",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 833603155,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1843557112,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 738,
+                    "Position Y": 1009,
+                    "Width": 22,
+                    "Height": 32,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        738,
+                        1009,
+                        22,
+                        32
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Icons\/VesselLlena.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
                 }
             ]
         },
@@ -14678,13 +14741,49 @@
             ]
         },
         {
+            "Name": "Empty (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1887788900,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 175461015,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        21.399999618530273,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                397458731,
+                1118421309,
+                794843613,
+                404505283
+            ]
+        },
+        {
             "Name": "Frame (3)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 397458731,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14955,7 +15054,7 @@
             "UID": 1118421309,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15226,7 +15325,7 @@
             "UID": 794843613,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15497,7 +15596,7 @@
             "UID": 404505283,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15768,7 +15867,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22630,7 +22729,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24492,7 +24591,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53285,7 +53384,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57300,7 +57399,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57327,8 +57426,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1934,
-                    "Height": 1112,
+                    "Width": 1910,
+                    "Height": 1165,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -67468,8 +67567,8 @@
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
-                    "Rows": 3,
-                    "Columns": 4,
+                    "Rows": 2,
+                    "Columns": 5,
                     "Color": [
                         0,
                         0,
@@ -67505,7 +67604,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68250,7 +68349,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68791,7 +68890,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69146,7 +69245,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69387,7 +69486,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69414,8 +69513,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1910,
+                    "Height": 1165,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -70197,7 +70296,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 389380721,
+            "Parent UID": 281944071,
             "Components": [
                 {
                     "Type": "Transform",

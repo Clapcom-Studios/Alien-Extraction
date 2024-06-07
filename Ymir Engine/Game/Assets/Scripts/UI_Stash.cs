@@ -79,7 +79,7 @@ public class UI_Stash : YmirComponent
                 SwitchItems();
             }
 
-            if (Input.GetGamepadButton(GamePadButton.LEFTSHOULDER) == KeyState.KEY_DOWN)
+            if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN)
             {
                 //UI.SetFirstFocused(gameObject);
                 StashInventory();

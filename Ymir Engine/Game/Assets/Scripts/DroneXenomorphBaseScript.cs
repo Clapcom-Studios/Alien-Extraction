@@ -72,7 +72,7 @@ public class DroneXenomorphBaseScript : Enemy
         //AGENT
         aggro = false;
         agent.stoppingDistance = 3f;
-        agent.speed = 800f;
+        agent.speed = 1100f;
         agent.angularSpeed = 10f;
         Debug.Log("AngularSpeed" + agent.angularSpeed);
 
@@ -157,15 +157,15 @@ public class DroneXenomorphBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 600; //750
-            armor = 0.1f; // 0.4f
-            agent.speed = 880f;
+            life = 500; //555,55
+            armor = 0.1f; // 0.1f
+            agent.speed = 1210f;
         }
         else if (rarity == 2)
         {
-            life = 800; //1200
-            armor = 0.2f; // 0.5f
-            agent.speed = 960f;
+            life = 700; //875
+            armor = 0.2f; // 0.2f
+            agent.speed = 1320f;
         }
 
         Debug.Log("[WARNING] Probs: " + commonProb + "rare: " + rareProb + "Epic: " + epicProb);
