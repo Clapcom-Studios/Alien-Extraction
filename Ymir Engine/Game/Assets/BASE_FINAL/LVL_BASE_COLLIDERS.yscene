@@ -1,9 +1,9 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -85.058738708496094,
-        89.817131042480469,
-        36.498245239257812
+        -85.021659851074219,
+        89.777626037597656,
+        36.472476959228516
     ],
     "Editor Camera Right (X)": [
         0.57063066959381104,
@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 920606591,
+            "UID": 703055415,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -59,7 +59,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1741,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9837,7 +9837,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12608,7 +12608,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12645,7 +12645,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13017,9 +13017,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -82.532630920410156,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13102,9 +13102,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -27.589302062988281,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13176,7 +13176,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13187,9 +13187,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13371,7 +13371,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13523,7 +13523,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13675,7 +13675,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13702,8 +13702,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1914,
-                    "Height": 1048,
+                    "Width": 1910,
+                    "Height": 1060,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -14200,15 +14200,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 661,
-                    "Position Y": 913,
+                    "Position X": 696,
+                    "Position Y": 907,
                     "Width": 107,
                     "Height": 112,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        661,
-                        913,
+                        696,
+                        907,
                         107,
                         112
                     ],
@@ -14263,15 +14263,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 670,
-                    "Position Y": 913,
+                    "Position X": 696,
+                    "Position Y": 907,
                     "Width": 103,
                     "Height": 107,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        670,
-                        913,
+                        696,
+                        907,
                         103,
                         107
                     ],
@@ -14326,17 +14326,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 626,
-                    "Position Y": 841,
+                    "Position X": 660,
+                    "Position Y": 874,
                     "Width": 692,
-                    "Height": 215,
+                    "Height": 199,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        626,
-                        841,
+                        660,
+                        874,
                         692,
-                        215
+                        199
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/MainHud.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14389,15 +14389,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 706,
-                    "Position Y": 874,
+                    "Position X": 740,
+                    "Position Y": 1007,
                     "Width": 16,
                     "Height": 32,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        706,
-                        874,
+                        740,
+                        1007,
                         16,
                         32
                     ],
@@ -14452,17 +14452,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 685,
-                    "Position Y": 885,
-                    "Width": 58,
-                    "Height": 52,
+                    "Position X": 735,
+                    "Position Y": 1040,
+                    "Width": 28,
+                    "Height": 18,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        685,
-                        885,
-                        58,
-                        52
+                        735,
+                        1040,
+                        28,
+                        18
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Bumper_unpressed.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14519,15 +14519,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 746,
-                    "Position Y": 896,
+                    "Position X": 780,
+                    "Position Y": 1030,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        746,
-                        896,
+                        780,
+                        1030,
                         200,
                         50
                     ],
@@ -14581,15 +14581,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 707,
-                    "Position Y": 914,
+                    "Position X": 742,
+                    "Position Y": 1053,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        707,
-                        914,
+                        742,
+                        1053,
                         200,
                         50
                     ],
@@ -15702,7 +15702,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22564,7 +22564,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24426,7 +24426,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53219,7 +53219,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57234,7 +57234,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67439,7 +67439,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68184,7 +68184,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68725,7 +68725,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69080,7 +69080,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69321,7 +69321,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70131,7 +70131,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 920606591,
+            "Parent UID": 703055415,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70838,6 +70838,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -70924,6 +70925,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71071,6 +71073,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71139,6 +71142,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71258,6 +71262,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71498,6 +71503,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71584,6 +71590,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71731,6 +71738,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71799,6 +71807,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71881,6 +71890,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71996,6 +72006,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72288,6 +72299,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -72375,6 +72387,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72475,6 +72488,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72609,6 +72623,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72856,6 +72871,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72942,6 +72958,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73089,6 +73106,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73157,6 +73175,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73276,6 +73295,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73516,6 +73536,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73602,6 +73623,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73749,6 +73771,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73817,6 +73840,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73899,6 +73923,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74014,6 +74039,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74310,6 +74336,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -74397,6 +74424,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74497,6 +74525,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74631,6 +74660,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74788,6 +74818,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74879,6 +74910,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75026,6 +75058,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75179,6 +75212,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75307,6 +75341,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75483,6 +75518,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75570,6 +75606,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75695,6 +75732,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75795,6 +75833,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75943,6 +75982,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76034,6 +76074,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76219,6 +76260,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76344,6 +76386,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76482,6 +76525,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76592,6 +76636,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76711,6 +76756,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77022,6 +77068,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -77109,6 +77156,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77209,6 +77257,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77343,6 +77392,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77611,6 +77661,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -77698,6 +77749,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77798,6 +77850,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77932,6 +77985,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78203,6 +78257,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -78290,6 +78345,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78390,6 +78446,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78524,6 +78581,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78773,6 +78831,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78859,6 +78918,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79006,6 +79066,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79074,6 +79135,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79156,6 +79218,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79271,6 +79334,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79548,6 +79612,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79634,6 +79699,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79781,6 +79847,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79849,6 +79916,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79931,6 +79999,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80046,6 +80115,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80323,6 +80393,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80409,6 +80480,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80556,6 +80628,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80624,6 +80697,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80706,6 +80780,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80821,6 +80896,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81096,6 +81172,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81182,6 +81259,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81329,6 +81407,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81397,6 +81476,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81507,6 +81587,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81754,6 +81835,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81840,6 +81922,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81987,6 +82070,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82055,6 +82139,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82165,6 +82250,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82412,6 +82498,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82498,6 +82585,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82645,6 +82733,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82713,6 +82802,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82823,6 +82913,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82980,6 +83071,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -83127,6 +83219,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
