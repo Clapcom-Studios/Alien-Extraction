@@ -119,7 +119,7 @@ public class Player : YmirComponent
     public List<Item> itemsList;
 
     public int currentResinVessels = 2;
-    public int maxResinVessels = 3;
+    public int maxResinVessels = 2;
     public float resinHealing = 400;
     public GameObject resinText = null;
 
@@ -2225,7 +2225,6 @@ public class Player : YmirComponent
         LoadItems();
 
         // Others
-        hasTalkedIscariot = SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Iscariot dialogue");
 
         Debug.Log("Player loaded");
     }
