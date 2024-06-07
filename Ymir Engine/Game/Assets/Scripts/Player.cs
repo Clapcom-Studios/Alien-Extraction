@@ -335,6 +335,12 @@ public class Player : YmirComponent
         {
             LoadPlayer();
             currentLvl = InternalCalls.GetCurrentMap();
+
+            if (lastUnlockedLvl < currentLvl)
+            {
+                lastUnlockedLvl = currentLvl;
+            }
+
             SavePlayer();
         }
         else
