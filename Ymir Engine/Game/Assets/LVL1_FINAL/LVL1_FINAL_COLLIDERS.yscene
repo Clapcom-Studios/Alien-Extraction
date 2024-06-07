@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL1_FINAL\/LVL1_FINAL_COLLIDERS.nav",
     "Editor Camera Position": [
-        285.92355346679688,
-        322.8837890625,
-        268.92721557617188
+        867.999755859375,
+        103.34260559082031,
+        -171.75100708007812
     ],
     "Editor Camera Right (X)": [
-        0.66118407249450684,
-        -1.1920928955078125e-07,
-        0.75022590160369873
+        -0.85535997152328491,
+        0,
+        0.51115745306015015
     ],
     "Editor Camera Up (Y)": [
-        0.57389366626739502,
-        0.6440768837928772,
-        -0.50578004121780396
+        0.51115745306015015,
+        0,
+        0.85535997152328491
     ],
     "Editor Camera Front (Z)": [
-        0.48320341110229492,
-        -0.76496011018753052,
-        -0.42585372924804688
+        0,
+        -1,
+        0
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 640091270,
+            "UID": 1102245014,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -33,7 +33,6 @@
                 265396639,
                 493464378,
                 1161519485,
-                1495121981,
                 484997781,
                 1545695842,
                 142531611,
@@ -60,7 +59,8 @@
                 766979426,
                 2093663094,
                 778225420,
-                2079024613
+                2079024613,
+                1495121981
             ]
         },
         {
@@ -70,7 +70,7 @@
             "UID": 265396639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -8529,7 +8529,7 @@
             ]
         },
         {
-            "Name": "Altar (1)",
+            "Name": "Altars",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1055615353,
@@ -8559,15 +8559,15 @@
                 }
             ],
             "Children UID": [
-                1360544050,
-                477116564
+                325532538,
+                127750070
             ]
         },
         {
             "Name": "Altar_Core",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1360544050,
+            "UID": 325532538,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1055615353,
@@ -8576,9 +8576,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        833.7322998046875,
-                        12.369160652160645,
-                        -169.693115234375
+                        726.54217529296875,
+                        12.404182434082031,
+                        338.88937377929688
                     ],
                     "Rotation": [
                         -0,
@@ -8604,15 +8604,15 @@
             "UID": 982585116,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1360544050,
+            "Parent UID": 325532538,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -0.47528076171875,
-                        0.49457550048828125,
-                        0.8358612060546875
+                        0.173431396484375,
+                        -0.08182525634765625,
+                        -0.0630645751953125
                     ],
                     "Rotation": [
                         -0,
@@ -8675,15 +8675,77 @@
                 }
             ],
             "Children UID": [
-                6129524,
-                1048779234
+                301485197,
+                544153105,
+                2096008159
             ]
         },
         {
-            "Name": "Paticle System (11)",
+            "Name": "Sphere",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 6129524,
+            "UID": 301485197,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "",
+            "Parent UID": 982585116,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -0.058597326278686523,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.81230753660202026,
+                        0.81230753660202026,
+                        0.81230753660202026
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1597070736,
+                    "Vertex Count": 485,
+                    "Index Count": 2280
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 468,
+                    "Diffuse_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_D.png",
+                    "Diffuse_UID": 809929119,
+                    "Specular_ID": 480,
+                    "Specular_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_S.png",
+                    "Specular_UID": 2100423475,
+                    "Normal_ID": 476,
+                    "Normal_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_N.png",
+                    "Normal_UID": 804793108,
+                    "Height_ID": 472,
+                    "Height_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_H.png",
+                    "Height_UID": 1030219163,
+                    "Ambient_ID": 464,
+                    "Ambient_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_A.png",
+                    "Ambient_UID": 1107840432
+                }
+            ]
+        },
+        {
+            "Name": "Particle System (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 544153105,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 982585116,
@@ -8702,21 +8764,179 @@
                         -0
                     ],
                     "Scale": [
-                        7,
-                        7,
-                        0
+                        0.99999994039535522,
+                        0.99999994039535522,
+                        0.99999994039535522
                     ]
                 },
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
-                    "ShowEmitters": true,
+                    "ShowEmitters": false,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 424404708,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 3,
+                                    "RadiusTop": 6.639702320098877,
+                                    "Heigth": 10
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.40400001406669617,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/Flash.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 1.75,
+                                    "Size2": 0,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.47787612676620483,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 2,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Core_Name",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2096008159,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 982585116,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        5,
+                        5,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
                     "NumEmitters": 1,
                     "Emitters": [
                         {
                             "ModulesSize": 4,
-                            "EmitterUID": 2069915912,
-                            "Name": "",
+                            "EmitterUID": 1370529351,
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -8755,13 +8975,13 @@
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
                                     "PointingUID": 0,
-                                    "ConditionForSpawn": 2,
-                                    "SubemitterMaxLifetime": 1,
-                                    "SubemitterMinLifetime": 0
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/particleExample.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/CoreItemName.png"
                                 },
                                 {
                                     "Type": 3,
@@ -8782,83 +9002,22 @@
             ]
         },
         {
-            "Name": "Sphere (12)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1048779234,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/Primitives\/Sphere.fbx",
-            "Parent UID": 982585116,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 621813214,
-                    "Vertex Count": 439,
-                    "Index Count": 2280
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/ColorShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "color": [
-                                0.80000001192092896,
-                                0.10000000149011612,
-                                0
-                            ],
-                            "light": false
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
-            ]
-        },
-        {
-            "Name": "Altar_Low3",
+            "Name": "Altar",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1679679128,
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 1360544050,
+            "Parent UID": 325532538,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        329,
-                        -107,
-                        -205
+                        329.5206298828125,
+                        -107.57640075683594,
+                        -205.88333129882812
                     ],
                     "Rotation": [
                         -0,
@@ -8885,9 +9044,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
+                                48.307811737060547,
+                                16.874290466308594,
+                                14.562473297119141
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -8900,9 +9059,15 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 667,
-                    "Diffuse_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_PART1_Texturas\/Props\/Altar\/TEX_PROP_Altar_D.png",
-                    "Diffuse_UID": 1053309711
+                    "Diffuse_ID": 3018,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_D.png",
+                    "Diffuse_UID": 949716858,
+                    "Normal_ID": 3021,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_N.png",
+                    "Normal_UID": 382894451,
+                    "Ambient_ID": 3014,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_A.png",
+                    "Ambient_UID": 323506032
                 },
                 {
                     "World gravity": [
@@ -8912,11 +9077,11 @@
                     ],
                     "Type": "Physics",
                     "Active": true,
-                    "Collider Type": 4,
+                    "Collider Type": 0,
                     "Size": [
-                        2.0096969604492188,
-                        6.2015800476074219,
-                        2.0096969604492188
+                        8.038787841796875,
+                        12.403160095214844,
+                        8.0237274169921875
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -8945,7 +9110,7 @@
             "Name": "Altar_Core (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 477116564,
+            "UID": 127750070,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1055615353,
@@ -8954,9 +9119,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        727.66632080078125,
-                        12.450048446655273,
-                        339.11004638671875
+                        835.35137939453125,
+                        12.404138565063477,
+                        -169.30889892578125
                     ],
                     "Rotation": [
                         -0,
@@ -8971,26 +9136,26 @@
                 }
             ],
             "Children UID": [
-                1052431035,
-                1597034902
+                2094069927,
+                1473952514
             ]
         },
         {
             "Name": "core_mythic (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1052431035,
+            "UID": 2094069927,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 477116564,
+            "Parent UID": 127750070,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -0.47528076171875,
-                        0.49457550048828125,
-                        0.8358612060546875
+                        0.173431396484375,
+                        -0.08182525634765625,
+                        -0.0630645751953125
                     ],
                     "Rotation": [
                         -0,
@@ -9053,18 +9218,80 @@
                 }
             ],
             "Children UID": [
-                1575622126,
-                429128142
+                291269297,
+                18537329,
+                1990269672
             ]
         },
         {
-            "Name": "Paticle System (1)",
+            "Name": "Sphere (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1575622126,
+            "UID": 291269297,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "",
+            "Parent UID": 2094069927,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -0.058597326278686523,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.81230753660202026,
+                        0.81230753660202026,
+                        0.81230753660202026
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1597070736,
+                    "Vertex Count": 485,
+                    "Index Count": 2280
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 468,
+                    "Diffuse_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_D.png",
+                    "Diffuse_UID": 809929119,
+                    "Specular_ID": 480,
+                    "Specular_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_S.png",
+                    "Specular_UID": 2100423475,
+                    "Normal_ID": 476,
+                    "Normal_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_N.png",
+                    "Normal_UID": 804793108,
+                    "Height_ID": 472,
+                    "Height_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_H.png",
+                    "Height_UID": 1030219163,
+                    "Ambient_ID": 464,
+                    "Ambient_Path": "Assets\/Textures\/General_Props\/Items\/Mythic_Core\/Tex_Alien_Core_A.png",
+                    "Ambient_UID": 1107840432
+                }
+            ]
+        },
+        {
+            "Name": "Particle System (5)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 18537329,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1052431035,
+            "Parent UID": 2094069927,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9080,21 +9307,179 @@
                         -0
                     ],
                     "Scale": [
-                        7,
-                        7,
-                        0
+                        0.99999994039535522,
+                        0.99999994039535522,
+                        0.99999994039535522
                     ]
                 },
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
-                    "ShowEmitters": true,
+                    "ShowEmitters": false,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 424404708,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 3,
+                                    "RadiusTop": 6.639702320098877,
+                                    "Heigth": 10
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.40400001406669617,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/Flash.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 1.75,
+                                    "Size2": 0,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.47787612676620483,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 2,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Core_Name (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1990269672,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 2094069927,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        5,
+                        5,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
                     "NumEmitters": 1,
                     "Emitters": [
                         {
                             "ModulesSize": 4,
-                            "EmitterUID": 2069915912,
-                            "Name": "",
+                            "EmitterUID": 1370529351,
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -9133,13 +9518,13 @@
                                     "SpawnRatio": 0.20000000298023224,
                                     "NumParticlesToStop": 100,
                                     "PointingUID": 0,
-                                    "ConditionForSpawn": 2,
-                                    "SubemitterMaxLifetime": 1,
-                                    "SubemitterMinLifetime": 0
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
                                 },
                                 {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/particleExample.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/CoreItemName.png"
                                 },
                                 {
                                     "Type": 3,
@@ -9160,83 +9545,22 @@
             ]
         },
         {
-            "Name": "Sphere (1)",
+            "Name": "Altar (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 429128142,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/Primitives\/Sphere.fbx",
-            "Parent UID": 1052431035,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 621813214,
-                    "Vertex Count": 439,
-                    "Index Count": 2280
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/ColorShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "color": [
-                                0.80000001192092896,
-                                0.10000000149011612,
-                                0
-                            ],
-                            "light": false
-                        }
-                    ],
-                    "Diffuse_ID": 0,
-                    "Diffuse_Path": "Checker Image",
-                    "Diffuse_UID": 0
-                }
-            ]
-        },
-        {
-            "Name": "Altar_Low3 (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1597034902,
+            "UID": 1473952514,
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 477116564,
+            "Parent UID": 127750070,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        329,
-                        -107,
-                        -205
+                        329.5206298828125,
+                        -107.57640075683594,
+                        -205.88333129882812
                     ],
                     "Rotation": [
                         -0,
@@ -9263,9 +9587,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
+                                48.307811737060547,
+                                16.874290466308594,
+                                14.562473297119141
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -9278,9 +9602,15 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 667,
-                    "Diffuse_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_PART1_Texturas\/Props\/Altar\/TEX_PROP_Altar_D.png",
-                    "Diffuse_UID": 1053309711
+                    "Diffuse_ID": 3018,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_D.png",
+                    "Diffuse_UID": 949716858,
+                    "Normal_ID": 3021,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_N.png",
+                    "Normal_UID": 382894451,
+                    "Ambient_ID": 3014,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Altar\/TEX_PROP_Altar_A.png",
+                    "Ambient_UID": 323506032
                 },
                 {
                     "World gravity": [
@@ -9290,11 +9620,11 @@
                     ],
                     "Type": "Physics",
                     "Active": true,
-                    "Collider Type": 4,
+                    "Collider Type": 0,
                     "Size": [
-                        2.0096969604492188,
-                        6.2015800476074219,
-                        2.0096969604492188
+                        8.038787841796875,
+                        12.403160095214844,
+                        8.0237274169921875
                     ],
                     "Physics Type": 2,
                     "Mass": 0,
@@ -52913,9 +53243,9 @@
                         -235.35862731933594
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         80.725616455078125,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000009536743164,
@@ -57105,9 +57435,9 @@
                         27.983339309692383
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -41.699909210205078,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000087022781372,
@@ -64258,7 +64588,7 @@
             "UID": 493464378,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -64323,7 +64653,7 @@
             "UID": 1161519485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -65113,7 +65443,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        31.327005386352539,
+                        31.327001571655273,
                         -0
                     ],
                     "Scale": [
@@ -65178,7 +65508,7 @@
                     ],
                     "Rotation": [
                         0,
-                        -31.649328231811523,
+                        -31.649332046508789,
                         0
                     ],
                     "Scale": [
@@ -65308,7 +65638,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        29.194103240966797,
+                        29.194099426269531,
                         -0
                     ],
                     "Scale": [
@@ -65438,7 +65768,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        27.591020584106445,
+                        27.591018676757812,
                         -0
                     ],
                     "Scale": [
@@ -66283,7 +66613,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        32.775016784667969,
+                        32.775012969970703,
                         -0
                     ],
                     "Scale": [
@@ -67453,7 +67783,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        33.035987854003906,
+                        33.035991668701172,
                         -0
                     ],
                     "Scale": [
@@ -68635,175 +68965,13 @@
             ]
         },
         {
-            "Name": "PROP_AccesKey",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1495121981,
-            "Active": true,
-            "Element_Type": "Model",
-            "Parent UID": 640091270,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        287.12789916992188,
-                        2.2506072521209717,
-                        -258.54129028320312
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Key.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "door1": 1220275149,
-                    "door2": 894488893,
-                    "door3": 1729747030
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        5,
-                        5,
-                        5
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": true,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Key.cs",
-                    "Active": 1,
-                    "UID": 0
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Key.cs",
-                    "Active": 1,
-                    "UID": 0
-                }
-            ],
-            "Children UID": [
-                884547342
-            ]
-        },
-        {
-            "Name": "PROP_Key_Lab (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 884547342,
-            "Active": true,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/Prefabs\/Meshes\/Key\/PROP_AccesKey.fbx",
-            "Parent UID": 1495121981,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        -5.0584821701049805,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 2062845143,
-                    "Vertex Count": 290,
-                    "Index Count": 534
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                16.196561813354492,
-                                -3.8318030834197998
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                1,
-                                1,
-                                1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 407,
-                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_D.png",
-                    "Diffuse_UID": 326375671,
-                    "Specular_ID": 415,
-                    "Specular_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_S.png",
-                    "Specular_UID": 1895387872,
-                    "Height_ID": 411,
-                    "Height_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_H.png",
-                    "Height_UID": 1777429424,
-                    "Ambient_ID": 403,
-                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_A.png",
-                    "Ambient_UID": 738910781
-                }
-            ]
-        },
-        {
             "Name": "PROP_Base_Chest",
             "Static": false,
             "Tag": "Untagged",
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68893,9 +69061,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -42.930118560791016,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1.0000078678131104,
@@ -68972,9 +69140,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -42.000011444091797,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000017881393433,
@@ -69121,7 +69289,7 @@
             "UID": 1545695842,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69211,9 +69379,9 @@
                         -3.46044921875
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -44.883697509765625,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000022649765015,
@@ -69290,9 +69458,9 @@
                         -2.1044921875
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -44.999748229980469,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000005960464478,
@@ -69439,7 +69607,7 @@
             "UID": 142531611,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69757,7 +69925,7 @@
             "UID": 1768177679,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69847,9 +70015,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -42.336067199707031,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1.0000015497207642,
@@ -69926,9 +70094,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -41.702194213867188,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1.0000033378601074,
@@ -70075,7 +70243,7 @@
             "UID": 227903904,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71651,7 +71819,7 @@
             "UID": 900338210,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71807,7 +71975,7 @@
                         -144.62565612792969
                     ],
                     "Rotation": [
-                        5.2373807193362154e-06,
+                        5.2373811740835663e-06,
                         -47.000064849853516,
                         2.3910420168249402e-06
                     ],
@@ -72188,9 +72356,9 @@
                         -96.881149291992188
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.91000956296920776,
@@ -72222,9 +72390,9 @@
                         16.260398864746094
                     ],
                     "Rotation": [
-                        -1.2392070857458748e-05,
+                        -1.239207176695345e-05,
                         43.000034332275391,
-                        3.9892503991723061e-05
+                        3.9892507629701868e-05
                     ],
                     "Scale": [
                         7.4380626678466797,
@@ -72297,9 +72465,9 @@
                         -95.504554748535156
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -44.999961853027344,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.91000056266784668,
@@ -72667,7 +72835,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72694,8 +72862,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1015,
-                    "Height": 771,
+                    "Width": 282,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -73242,7 +73410,7 @@
             "UID": 1932512867,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76231,7 +76399,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76559,7 +76727,7 @@
             "UID": 981719170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76887,7 +77055,7 @@
             "UID": 523345040,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -77215,7 +77383,7 @@
             "UID": 1085187284,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -77543,7 +77711,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -77570,8 +77738,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1015,
-                    "Height": 771,
+                    "Width": 282,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -79570,7 +79738,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -87130,7 +87298,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -87671,7 +87839,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88024,7 +88192,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88698,7 +88866,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -89003,7 +89171,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -89813,7 +89981,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -103008,7 +103176,7 @@
             "UID": 1795821685,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -104379,9 +104547,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -105257,9 +105425,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -107126,7 +107294,7 @@
             "UID": 39169129,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -107223,7 +107391,7 @@
             "UID": 1570706478,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -107260,7 +107428,7 @@
             "UID": 766979426,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -107527,7 +107695,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -107612,7 +107780,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -107722,7 +107890,7 @@
             "UID": 2079024613,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 640091270,
+            "Parent UID": 1102245014,
             "Components": [
                 {
                     "Type": "Transform",
@@ -107954,9 +108122,9 @@
                         -116.03627777099609
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -77.631980895996094,
-                        -180
+                        180
                     ],
                     "Scale": [
                         3.1198811531066895,
@@ -108318,9 +108486,9 @@
                         0.1449127197265625
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         41.098541259765625,
-                        -180
+                        180
                     ],
                     "Scale": [
                         3.1199181079864502,
@@ -108682,9 +108850,9 @@
                         -120.59697723388672
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -81.674705505371094,
-                        -180
+                        180
                     ],
                     "Scale": [
                         3.119882345199585,
@@ -108864,9 +109032,9 @@
                         201.75079345703125
                     ],
                     "Rotation": [
-                        -1.0728896313594305e-06,
+                        -1.0728898587331059e-06,
                         -0.155265212059021,
-                        1.1334363136938919e-07
+                        1.133436455802439e-07
                     ],
                     "Scale": [
                         3.1199030876159668,
@@ -109025,6 +109193,380 @@
                     "Height_ID": 1828,
                     "Height_Path": "Assets\/LVL1_FINAL\/LVL1_Textures\/Decals\/TEX_PROP_ArnauDecals_H.png",
                     "Height_UID": 392365446
+                }
+            ]
+        },
+        {
+            "Name": "PROP_AccesKey",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1495121981,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1102245014,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        289.05484008789062,
+                        1.6461367607116699,
+                        -254.47894287109375
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Key.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "door1": 1220275149,
+                    "door2": 894488893,
+                    "door3": 1729747030
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        5,
+                        5,
+                        5
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Audio source",
+                    "Active": 1,
+                    "Bank Name": "MapInteractionLV2",
+                    "Event Name": "LV2_GrabKey",
+                    "Event ID": 936921561
+                }
+            ],
+            "Children UID": [
+                884547342,
+                1015976471
+            ]
+        },
+        {
+            "Name": "PROP_Key_Lab",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 884547342,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Prefabs\/Meshes\/Key\/PROP_AccesKey.fbx",
+            "Parent UID": 1495121981,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -5.0584821701049805,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2062845143,
+                    "Vertex Count": 290,
+                    "Index Count": 534
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -44.233127593994141,
+                                111.35520172119141,
+                                139.04959106445312
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 407,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_D.png",
+                    "Diffuse_UID": 326375671,
+                    "Specular_ID": 415,
+                    "Specular_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_S.png",
+                    "Specular_UID": 1895387872,
+                    "Height_ID": 411,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_H.png",
+                    "Height_UID": 1777429424,
+                    "Ambient_ID": 403,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Key\/TEX_PROP_Access_Key_A.png",
+                    "Ambient_UID": 738910781
+                }
+            ]
+        },
+        {
+            "Name": "Key Paticle System",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1015976471,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1495121981,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0.56653976440429688,
+                        1.6565300226211548,
+                        0.54311561584472656
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        3.3216001987457275,
+                        3.3216001987457275,
+                        3.3216001987457275
+                    ]
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 0,
+                    "Diffuse_Path": "Assets\/Particles\/particleExample.png",
+                    "Diffuse_UID": 0
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 0,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 3,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        1.6000000238418579,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0.10000000149011612,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 3.5999999046325684,
+                                    "RadiusTop": 7.5999999046325684,
+                                    "Heigth": 2.7999999523162842
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.21799999475479126,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 0,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 0
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.66371679306030273,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0.96460187435150146,
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": true,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        5,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 4.1999998092651367,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 1,
+                                    "Size2": 0,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/Flash.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 0,
+                    "Diffuse_Path": "Assets\/Particles\/particleExample.png",
+                    "Diffuse_UID": 0
                 }
             ]
         }
