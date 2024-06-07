@@ -54,7 +54,6 @@ public class Go_Base : YmirComponent
 
         if (loadSceneImg != null)
         {
-            finishTimer = 2;
             loadSceneImg.SetActive(true);
             loadScene = true;
         }
