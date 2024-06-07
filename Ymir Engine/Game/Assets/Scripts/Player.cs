@@ -2107,13 +2107,15 @@ public class Player : YmirComponent
                 ++numCores;
             }
         }
+
+        //Debug.Log("core_mythic: " + numCores);
     }
 
     public void UseAlienCore(int cost)
     {
         numCores -= cost;
 
-        Debug.Log(cost.ToString());
+        //Debug.Log(cost.ToString());
 
         for (int i = 0; i < cost; i++)
         {
@@ -2143,6 +2145,8 @@ public class Player : YmirComponent
         {
             itemsList.Add(Globals.SearchItemInDictionary("core_mythic"));
         }
+
+        Debug.Log("core_mythic: " + numCores);
     }
 
     #endregion
@@ -2276,6 +2280,8 @@ public class Player : YmirComponent
                 item.UpdateStats();
             }
         }
+
+        ReCountAlienCore();
 
         Debug.Log("Items loaded");
     }
