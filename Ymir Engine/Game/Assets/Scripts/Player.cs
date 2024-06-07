@@ -119,7 +119,7 @@ public class Player : YmirComponent
     public List<Item> itemsList;
 
     public int currentResinVessels = 2;
-    public int maxResinVessels = 2;
+    public int maxResinVessels = 3;
     public float resinHealing = 400;
     public GameObject resinText = null;
 
@@ -284,15 +284,6 @@ public class Player : YmirComponent
             //movementSpeed = 3000.0f;
         }
 
-        // Resin
-        maxResinVessels = 2;
-        resinHealing = 400; // TODO: Cambiar cuando este el save/load
-        currentResinVessels = maxResinVessels;
-
-        resinText = InternalCalls.GetGameObjectByName("Number Heals");
-
-        UpdateResin();
-
         hasTalkedIscariot = false;
 
         //--------------------- Get Skills Scripts ---------------------\\
@@ -337,6 +328,9 @@ public class Player : YmirComponent
 
         itemsList = new List<Item>();
 
+        // Resin
+        resinText = InternalCalls.GetGameObjectByName("Number Heals");
+
         if (InternalCalls.GetCurrentMap() != (int)LEVEL.BASE)
         {
             LoadPlayer();
@@ -348,9 +342,12 @@ public class Player : YmirComponent
             weaponType = WEAPON_TYPE.NONE;
             SetWeapon();
 
+            LoadResin();
             currentResinVessels = maxResinVessels;
+            UpdateResin();
 
             LoadLvlInfo();
+
             LoadItems();
         }
     }
@@ -2222,11 +2219,7 @@ public class Player : YmirComponent
 
         // Stats
         csHealth.currentHealth = (float)SaveLoad.LoadFloat(Globals.saveGameDir, saveName, "Health");
-
-        // Resin vessels
-        currentResinVessels = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Current potties");
-        maxResinVessels = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Max potties");
-        resinHealing = (float)SaveLoad.LoadFloat(Globals.saveGameDir, saveName, "Potties healing");
+        LoadResin();       
 
         // Items
         LoadItems();
@@ -2235,6 +2228,18 @@ public class Player : YmirComponent
         hasTalkedIscariot = SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Iscariot dialogue");
 
         Debug.Log("Player loaded");
+    }
+
+    private void LoadResin()
+    {
+        saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
+
+        // Resin vessels
+        currentResinVessels = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Current potties");
+        maxResinVessels = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Max potties");
+        resinHealing = (float)SaveLoad.LoadFloat(Globals.saveGameDir, saveName, "Potties healing");
+
+        UpdateResin();
     }
 
     private void LoadLvlInfo()
