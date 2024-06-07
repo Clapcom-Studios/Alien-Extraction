@@ -114,6 +114,15 @@ public class Caius : YmirComponent
 
         saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
         introDialogueDone = false;
+        holoScreen = false;
+        androidHead = false;
+        corpse = false;
+        lvl_1 = false;
+        lvl_2 = false;
+        hasDead = false;
+        firstIncursion = false;
+        boss = false;
+
 
         dialogueQueue = new Queue<string>(); // Inicializar la cola
         dialogueQueue.Enqueue("Assets/Dialogue/Caius_Intro_Dialogue.csv");
@@ -382,7 +391,7 @@ public class Caius : YmirComponent
         else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv")
         {
             //ID 1
-            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1 && player.currentMenu == "")
+            if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
             {
                 //Open crafting menu
                 ExitDialogue();
@@ -446,7 +455,7 @@ public class Caius : YmirComponent
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue)
+        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue && player.currentMenu != "Crafting Canvas")
         {
             canvas_Caius.SetActive(true);
             active_Dialogue = true;
@@ -667,7 +676,7 @@ public class Caius : YmirComponent
             RemoveDialogue("Assets/Dialogue/CAIUS_RAISEN_ID012.csv");
             AddDialogueOverAll("Assets/Dialogue/CAIUS_RAISEN_FINAL.csv");
         }
-        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Caius intro dialogue") && !firstIncursion)
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "First Incursion") && !firstIncursion)
         {
             firstIncursion = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID009.csv");
