@@ -7,15 +7,15 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1192284687,
+            "Parent UID": 2138625582,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -31.767723083496094,
                         0,
-                        30.215410232543945
+                        0,
+                        0
                     ],
                     "Rotation": [
                         -0,
@@ -32,8 +32,7 @@
                     "Type": "Script",
                     "ScriptName": "Key.cs",
                     "Active": 1,
-                    "UID": 0,
-                    "door": 1495121981
+                    "UID": 0
                 },
                 {
                     "World gravity": [
@@ -128,9 +127,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -117.71933746337891,
-                                139,
-                                72
+                                -9.6360788345336914,
+                                111.67792510986328,
+                                81.377143859863281
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -219,31 +218,38 @@
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
+                    "ShowEmitters": true,
                     "NumEmitters": 1,
                     "Emitters": [
                         {
-                            "ModulesSize": 6,
+                            "ModulesSize": 7,
+                            "EmitterUID": 0,
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
-                                    "Lifetime": 8,
+                                    "Lifetime": 3,
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
                                         0,
                                         1.6000000238418579,
-                                        0,
-                                        0,
-                                        0,
-                                        0,
-                                        0,
-                                        0,
                                         0
                                     ],
                                     "DistanceLimit": 0.10000000149011612,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
                                     "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
                                     "RadiusHollow": 0,
                                     "RadiusBase": 3.5999999046325684,
                                     "RadiusTop": 7.5999999046325684,
@@ -255,11 +261,16 @@
                                     "StartMode": 0,
                                     "NumParticles": 5,
                                     "SpawnRatio": 0.21799999475479126,
-                                    "NumParticlesToStop": 100
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 0,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 0
                                 },
                                 {
                                     "Type": 5,
                                     "Progressive": true,
+                                    "Loop": false,
                                     "Color1": [
                                         1,
                                         0.66371679306030273,
@@ -278,6 +289,7 @@
                                 {
                                     "Type": 2,
                                     "Random": true,
+                                    "UseShapeBase": true,
                                     "Direction1": [
                                         0,
                                         0,
@@ -304,14 +316,16 @@
                                 },
                                 {
                                     "Type": 4,
-                                    "Progressive": false,
-                                    "Size1": 0.37999999523162842,
-                                    "Size2": 0.10000000149011612,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 1,
+                                    "Size2": 0,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -320,6 +334,10 @@
                                         0,
                                         0
                                     ]
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/Flash.png"
                                 }
                             ]
                         }
