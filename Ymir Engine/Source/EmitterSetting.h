@@ -225,7 +225,7 @@ struct EmitterRotation : EmitterSetting
 	float4x4 LookAt(float3& Spot, float3& position);
 	void SetRotation(Quat rot);
 
-	bool horAlign;
+	bool updateRotation;
 	bool verAlign;
 
 	Quat rotation;
