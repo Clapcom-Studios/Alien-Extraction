@@ -51,7 +51,7 @@ public class Shotgun : Weapon
                 ammo = 12; //26
                 ammoInChamber = 2;
                 fireRate = 1.2f;
-                damage = 150; //75
+                damage = 160; //75
                 range = 42f; //21f
                 dispersion = range * 0.35f; //80º
                 reloadTime = 1.618f;
@@ -60,10 +60,10 @@ public class Shotgun : Weapon
             case UPGRADE.LVL_3_ALPHA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL3A");
-                ammo = 16; //28
+                ammo = 24; //28
                 ammoInChamber = 2;
                 fireRate = 0.7f;
-                damage = 160; //80
+                damage = 180; //80
                 range = 42f;
                 dispersion = range * 0.35f; //80º
                 reloadTime = 0.918f;
@@ -74,8 +74,8 @@ public class Shotgun : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesShotgunLVL3B");
                 ammo = 12; //28
                 ammoInChamber = 4;
-                fireRate = 1.3f;
-                damage = 320; //80
+                fireRate = 1.0f;
+                damage = 420; //80
                 range = 42f;
                 dispersion = range * 0.35f; //80º
                 reloadTime = 1.118f;
