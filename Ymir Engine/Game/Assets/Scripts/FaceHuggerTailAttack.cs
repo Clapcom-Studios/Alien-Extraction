@@ -11,7 +11,7 @@ public class FaceHuggerTailAttack : YmirComponent
 
     private float movementSpeed;
 
-    private float damage = 80f;
+    private float damage = 120f;
 
     private GameObject player;
 
