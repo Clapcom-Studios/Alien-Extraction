@@ -13,7 +13,7 @@ public class SceneManager : YmirComponent
     private bool loadScene = false;
 
     private string sceneName = "Assets/BASE_FINAL/LVL_BASE_COLLIDERS.yscene";
-
+    private float finishTimer = 2f;
     public void Start()
     {
         loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
@@ -28,18 +28,26 @@ public class SceneManager : YmirComponent
 
     public void Update()
     {
+        if (finishTimer >= 0)
+        {
+            finishTimer -= Time.deltaTime;
+        }
         if (loadScene)
         {
-            Globals.GetPlayerScript().SavePlayer();
+            if (finishTimer <= 0)
+            {
+                Globals.GetPlayerScript().SavePlayer();
 
-            InternalCalls.LoadScene(sceneName);
-            loadScene = false;
+                InternalCalls.LoadScene(sceneName);
+                loadScene = false;
+            }
 
             return;
         }
 
         if (Input.GetKey(YmirKeyCode.KP_1) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
@@ -54,6 +62,7 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_2) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
@@ -68,6 +77,7 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_3) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
@@ -82,6 +92,7 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_4) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
@@ -96,6 +107,7 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_5) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
