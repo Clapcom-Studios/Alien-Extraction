@@ -11,7 +11,11 @@ public class Button_GoToScene : YmirComponent
     public string sceneName = "BASE_FINAL/LVL_BASE_COLLIDERS";
 
     // Loading scene
-    private GameObject loadSceneImg;
+    private GameObject loadScene_images;
+    private GameObject loadScenelvl1;
+    private GameObject loadScenelvl2;
+    private GameObject loadScenelvl3;
+
     private bool loadScene = false;
 
     public float time = 10;
@@ -19,11 +23,24 @@ public class Button_GoToScene : YmirComponent
 
     public void Start()
     {
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+        loadScene_images = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+        loadScenelvl1 = InternalCalls.CS_GetChild(loadScene_images, 0);
+        loadScenelvl2 = InternalCalls.CS_GetChild(loadScene_images, 1);
+        loadScenelvl3= InternalCalls.CS_GetChild(loadScene_images, 2);
 
-        if (loadSceneImg != null)
+
+        if (loadScenelvl1 != null)
         {
-            loadSceneImg.SetActive(false);
+            loadScenelvl1.SetActive(false);
+        }
+
+        if (loadScenelvl2 != null)
+        {
+            loadScenelvl2.SetActive(false);
+        }
+        if (loadScenelvl3 != null)
+        {
+            loadScenelvl2.SetActive(false);
         }
 
         time = 10;
@@ -35,9 +52,7 @@ public class Button_GoToScene : YmirComponent
         time -= Time.deltaTime;
 
         if (loadScene)
-        {
-            loadSceneImg.SetActive(true);
-
+        { 
             if (time <= 0)
             {
                 InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
@@ -52,11 +67,40 @@ public class Button_GoToScene : YmirComponent
         Debug.Log("Go to scene " + sceneName + ".yscene");
         Audio.PauseAllAudios();
 
-        if (loadSceneImg != null)
+        //if (loadScenelvl1 != null)
+        //{
+        //    loadScenelvl1.SetActive(true);
+        //    loadScene = true;
+        //}
+        if (sceneName == "LVL1_FINAL/LVL1_FINAL_COLLIDERS")
         {
-            loadSceneImg.SetActive(true);
-            loadScene = true;
+            if (loadScenelvl1 != null)
+            {
+                time = 2;
+                loadScenelvl1.SetActive(true);
+                loadScene = true;
+            }
         }
+        if (sceneName == "LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS") 
+        { 
+            if (loadScenelvl2 != null)
+            {
+                time = 2;
+                loadScenelvl2.SetActive(true);
+                loadScene = true;
+            }
+        }
+        if (sceneName == "LVL3_BlockOut/LVL3_PART1_COLLIDERS")
+        {
+            if (loadScenelvl3 != null)
+            {
+                time = 2;
+                loadScenelvl3.SetActive(true);
+                loadScene = true;
+            }
+        }
+
+
 
         if (saveGame)
         {

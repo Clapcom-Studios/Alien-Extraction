@@ -11,10 +11,11 @@ public class Tp_To_Lvl3_Part1 : YmirComponent
     // Loading scene
     private GameObject loadSceneImg;
     private bool loadScene = false;
+    private float finishTimer = 2f;
 
     public void Start()
     {
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Lvl3_1");
 
         if (loadSceneImg != null)
         {
@@ -24,12 +25,21 @@ public class Tp_To_Lvl3_Part1 : YmirComponent
         loadScene = false;
     }
 
+
+
     public void Update()
     {
         if (loadScene)
         {
-            InternalCalls.LoadScene("Assets/LVL3_BlockOut/LVL3_PART1_COLLIDERS.yscene");
-            loadScene = false;
+            if (finishTimer >= 0)
+            {
+                finishTimer -= Time.deltaTime;
+            }
+            if (finishTimer <= 0)
+            {
+                InternalCalls.LoadScene("Assets/LVL3_BlockOut/LVL3_PART1_COLLIDERS.yscene");
+                loadScene = false;
+            }
 
             return;
         }
@@ -45,6 +55,7 @@ public class Tp_To_Lvl3_Part1 : YmirComponent
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
+                finishTimer = 2f;
                 loadSceneImg.SetActive(true);
             }
 

@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL1_FINAL\/LVL1_FINAL_COLLIDERS.nav",
     "Editor Camera Position": [
-        137.81494140625,
-        381.58566284179688,
-        114.66319274902344
+        135.25946044921875,
+        217.035888671875,
+        -176.38053894042969
     ],
     "Editor Camera Right (X)": [
-        0.93460369110107422,
-        5.9604644775390625e-08,
-        0.35568928718566895
+        -0.09632042795419693,
+        3.7252902984619141e-09,
+        0.99033379554748535
     ],
     "Editor Camera Up (Y)": [
-        0.26382160186767578,
-        0.67071032524108887,
-        -0.69321364164352417
+        0.83372175693511963,
+        0.53700453042984009,
+        0.081088252365589142
     ],
     "Editor Camera Front (Z)": [
-        0.23856467008590698,
-        -0.74171900749206543,
-        -0.62684869766235352
+        0.53716325759887695,
+        -0.84185725450515747,
+        0.052244808524847031
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1853507375,
+            "UID": 609399467,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -70,7 +70,7 @@
             "UID": 265396639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -64588,7 +64588,7 @@
             "UID": 493464378,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -64653,7 +64653,7 @@
             "UID": 1161519485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -65443,7 +65443,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        31.327007293701172,
+                        31.327005386352539,
                         -0
                     ],
                     "Scale": [
@@ -68971,7 +68971,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69289,7 +69289,7 @@
             "UID": 1545695842,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69607,7 +69607,7 @@
             "UID": 142531611,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69925,7 +69925,7 @@
             "UID": 1768177679,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70243,7 +70243,7 @@
             "UID": 227903904,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71819,7 +71819,7 @@
             "UID": 900338210,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72835,7 +72835,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72862,7 +72862,7 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 483,
+                    "Width": 1234,
                     "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
@@ -73410,7 +73410,7 @@
             "UID": 1932512867,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76399,7 +76399,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76599,7 +76599,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1213467325,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76632,10 +76632,10 @@
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 0,
-                                    "StartMode": 0,
-                                    "NumParticles": 55,
-                                    "SpawnRatio": 0.5,
+                                    "SpawnMode": 1,
+                                    "StartMode": 2,
+                                    "NumParticles": 50,
+                                    "SpawnRatio": 0.068000003695487976,
                                     "NumParticlesToStop": 200,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 2,
@@ -76693,11 +76693,11 @@
                                 },
                                 {
                                     "Type": 5,
-                                    "Progressive": true,
+                                    "Progressive": false,
                                     "Loop": true,
                                     "Color1": [
-                                        0.66493082046508789,
-                                        0.1194690465927124,
+                                        0,
+                                        0.30973458290100098,
                                         1,
                                         1
                                     ],
@@ -76727,7 +76727,7 @@
             "UID": 981719170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -76927,7 +76927,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1213467325,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -76960,10 +76960,10 @@
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 0,
-                                    "StartMode": 0,
+                                    "SpawnMode": 1,
+                                    "StartMode": 2,
                                     "NumParticles": 55,
-                                    "SpawnRatio": 0.5,
+                                    "SpawnRatio": 0.096000000834465027,
                                     "NumParticlesToStop": 200,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 2,
@@ -77021,11 +77021,11 @@
                                 },
                                 {
                                     "Type": 5,
-                                    "Progressive": true,
+                                    "Progressive": false,
                                     "Loop": true,
                                     "Color1": [
-                                        0.66493082046508789,
-                                        0.1194690465927124,
+                                        0,
+                                        0.31372550129890442,
                                         1,
                                         1
                                     ],
@@ -77055,7 +77055,7 @@
             "UID": 523345040,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -77255,7 +77255,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1213467325,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77288,10 +77288,10 @@
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 0,
-                                    "StartMode": 0,
+                                    "SpawnMode": 1,
+                                    "StartMode": 2,
                                     "NumParticles": 55,
-                                    "SpawnRatio": 0.5,
+                                    "SpawnRatio": 0.076999999582767487,
                                     "NumParticlesToStop": 200,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 2,
@@ -77349,11 +77349,11 @@
                                 },
                                 {
                                     "Type": 5,
-                                    "Progressive": true,
+                                    "Progressive": false,
                                     "Loop": true,
                                     "Color1": [
-                                        0.66493082046508789,
-                                        0.1194690465927124,
+                                        0,
+                                        0.31372550129890442,
                                         1,
                                         1
                                     ],
@@ -77383,7 +77383,7 @@
             "UID": 1085187284,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -77583,7 +77583,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1213467325,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -77616,10 +77616,10 @@
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 0,
-                                    "StartMode": 0,
+                                    "SpawnMode": 1,
+                                    "StartMode": 2,
                                     "NumParticles": 55,
-                                    "SpawnRatio": 0.5,
+                                    "SpawnRatio": 0.076999999582767487,
                                     "NumParticlesToStop": 200,
                                     "PointingUID": 0,
                                     "ConditionForSpawn": 2,
@@ -77677,11 +77677,11 @@
                                 },
                                 {
                                     "Type": 5,
-                                    "Progressive": true,
+                                    "Progressive": false,
                                     "Loop": true,
                                     "Color1": [
-                                        0.66493082046508789,
-                                        0.1194690465927124,
+                                        0,
+                                        0.31372550129890442,
                                         1,
                                         1
                                     ],
@@ -77711,7 +77711,7 @@
             "UID": 1795821685,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -81829,7 +81829,7 @@
             "UID": 39169129,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -81926,7 +81926,7 @@
             "UID": 1570706478,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -81963,7 +81963,7 @@
             "UID": 766979426,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -82230,7 +82230,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -82315,7 +82315,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -82425,7 +82425,7 @@
             "UID": 2079024613,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -83567,7 +83567,7 @@
                         201.75079345703125
                     ],
                     "Rotation": [
-                        -1.0728913366619963e-06,
+                        -1.0728922461566981e-06,
                         -0.155265212059021,
                         1.1334372373994483e-07
                     ],
@@ -83738,7 +83738,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -83765,7 +83765,7 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 483,
+                    "Width": 1234,
                     "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
@@ -84082,7 +84082,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         164,
-                        1018.3974609375,
+                        961,
                         200,
                         50
                     ],
@@ -84323,14 +84323,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 696,
-                    "Position Y": 913,
+                    "Position Y": 926,
                     "Width": 103,
                     "Height": 107,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         696,
-                        913,
+                        926,
                         103,
                         107
                     ],
@@ -84813,7 +84813,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         837,
-                        919.4000244140625,
+                        898,
                         75,
                         75
                     ],
@@ -84896,7 +84896,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         845,
-                        928.4000244140625,
+                        907,
                         55,
                         55
                     ],
@@ -84959,7 +84959,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         860,
-                        975.4000244140625,
+                        954,
                         29,
                         29
                     ],
@@ -85022,7 +85022,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         868,
-                        993.4000244140625,
+                        972,
                         200,
                         50
                     ],
@@ -85084,7 +85084,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         941,
-                        919.4000244140625,
+                        898,
                         75,
                         75
                     ],
@@ -85167,7 +85167,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         948,
-                        928.4000244140625,
+                        907,
                         55,
                         55
                     ],
@@ -85230,7 +85230,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         964,
-                        975.4000244140625,
+                        954,
                         29,
                         29
                     ],
@@ -85293,7 +85293,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         973,
-                        994.4000244140625,
+                        973,
                         200,
                         50
                     ],
@@ -85355,7 +85355,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1043,
-                        919.4000244140625,
+                        898,
                         75,
                         75
                     ],
@@ -85438,7 +85438,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1052,
-                        930.4000244140625,
+                        909,
                         55,
                         55
                     ],
@@ -85501,7 +85501,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1066,
-                        975.4000244140625,
+                        954,
                         29,
                         29
                     ],
@@ -85564,7 +85564,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1076,
-                        994.4000244140625,
+                        973,
                         200,
                         50
                     ],
@@ -85626,7 +85626,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1181,
-                        919.4000244140625,
+                        898,
                         75,
                         75
                     ],
@@ -85709,7 +85709,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1190,
-                        930.4000244140625,
+                        909,
                         55,
                         55
                     ],
@@ -85772,7 +85772,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1204,
-                        975.4000244140625,
+                        954,
                         29,
                         29
                     ],
@@ -85835,7 +85835,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1213,
-                        992.4000244140625,
+                        971,
                         200,
                         50
                     ],
@@ -85864,7 +85864,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -93424,7 +93424,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -93965,7 +93965,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -94318,7 +94318,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -94345,8 +94345,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1908,
-                    "Height": 1054,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -94546,15 +94546,15 @@
                 }
             ],
             "Children UID": [
-                1656679832,
+                1241871069,
                 683157146
             ]
         },
         {
-            "Name": "Go_Base",
+            "Name": "Go_Base (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1656679832,
+            "UID": 1241871069,
             "Active": false,
             "Element_Type": "None",
             "Parent UID": 1621892092,
@@ -94590,7 +94590,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         644,
-                        530.4000244140625,
+                        446,
                         300,
                         50
                     ],
@@ -94623,13 +94623,13 @@
                     "UI State": 1,
                     "Drag Limits": [
                         0,
-                        84.400001525878906,
+                        0,
                         300,
                         50
                     ],
                     "Is interactable": true,
-                    "Text": 1333584116,
-                    "Image": 1656679832,
+                    "Text": 2055170411,
+                    "Image": 1241871069,
                     "Normal": "Assets\/UI\/Teleport Buttons\/New Buttons\/GoToRaidUnselected.png",
                     "Focused": "Assets\/UI\/Teleport Buttons\/BotonHover.png",
                     "Pressed": "Assets\/UI\/Teleport Buttons\/New Buttons\/GoToRaidPressed.png",
@@ -94663,26 +94663,24 @@
                 },
                 {
                     "Type": "Script",
-                    "ScriptName": "Button_GoToScene.cs",
+                    "ScriptName": "Go_Base.cs",
                     "Active": 1,
                     "UID": 0,
-                    "sceneName": "BASE_FINAL\/LVL_BASE_COLLIDERS",
-                    "time": 5,
                     "saveGame": true
                 }
             ],
             "Children UID": [
-                1333584116
+                2055170411
             ]
         },
         {
             "Name": "Text (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1333584116,
+            "UID": 2055170411,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1656679832,
+            "Parent UID": 1241871069,
             "Components": [
                 {
                     "Type": "Transform",
@@ -94715,7 +94713,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         757,
-                        564.4000244140625,
+                        480,
                         300,
                         50
                     ],
@@ -94992,7 +94990,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -95297,7 +95295,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -96107,7 +96105,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",
@@ -109302,7 +109300,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1853507375,
+            "Parent UID": 609399467,
             "Components": [
                 {
                     "Type": "Transform",

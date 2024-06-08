@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System;
-using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -22,9 +19,9 @@ public class Boss_Health_Bar : YmirComponent
     public GameObject boss = null;
     public GameObject plane = null;
 
-    private FaceHuggerBaseScript aux = null;
-    private DroneXenomorphBaseScript aux2 = null;
-    private SpitterBaseScript aux3 = null;
+    //private FaceHuggerBaseScript aux = null;
+    //private DroneXenomorphBaseScript aux2 = null;
+    //private SpitterBaseScript aux3 = null;
     private QueenXenomorphBaseScript bossScript = null;
 
     public void Start()

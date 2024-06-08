@@ -71,7 +71,7 @@ public class SelectLvl : YmirComponent
     {
         if (!hasChanged && isLocked)
         {
-            //UI.SetUIState(gameObject, (int)UI_STATE.DISABLED);
+            UI.SetUIState(gameObject, (int)UI_STATE.DISABLED);
             hasChanged = false;
         }
 
