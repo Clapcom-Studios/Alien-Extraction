@@ -33,12 +33,11 @@ public class UI_Cutscenes : YmirComponent
     {
         button = InternalCalls.GetGameObjectByName("Button_A");
         img = InternalCalls.GetGameObjectByName("CutsceneImg");
-        loadScene_togo = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
-        currentFrame = 0; 
-        
+        currentFrame = 0;
+
         hasFinished = false;
-        
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+
+        loadSceneImg = InternalCalls.GetGameObjectByName("Load Scene Img");
 
         if (loadSceneImg != null)
         {
@@ -81,7 +80,7 @@ public class UI_Cutscenes : YmirComponent
             {
                 finishTimer -= Time.deltaTime;
                 button.SetActive(false);
-               
+
             }
             if (finishTimer <= 0)
             {
@@ -114,18 +113,22 @@ public class UI_Cutscenes : YmirComponent
                             }
 
                             loadScene = true;
+
+                            if (winScene2)
+                            {
+                                if (loadSceneImg != null)
+                                {
+                                    loadSceneImg.SetActive(true);
+                                }
+
+                                loadScene = true;
+                            }
                         }
                     }
                 }
             }
+
+            return;
         }
-
-        return;
-    }
-
-    public void Reset()
-    {
-        hasFinished = false;
-        currentFrame = 0;
     }
 }
