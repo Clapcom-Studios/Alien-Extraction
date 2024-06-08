@@ -19,6 +19,8 @@ public class Narrative_Item : YmirComponent
     bool active_Dialogue;
 
     public Player player;
+    public GameObject gameCanvas = null;
+
     public GameObject canvas_Items = null;
     public GameObject name_Npc = null;
     public GameObject dialogue_Npc = null;
@@ -60,6 +62,7 @@ public class Narrative_Item : YmirComponent
     public void Start()
     {
         player = InternalCalls.GetGameObjectByName("Player").GetComponent<Player>();
+        gameCanvas = InternalCalls.GetGameObjectByName("Game Canvas");
 
         active_Dialogue = false;
         canvas_Items = InternalCalls.GetGameObjectByName("Npc_Dialogue");
@@ -594,6 +597,8 @@ public class Narrative_Item : YmirComponent
 
         if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue)
         {
+            gameCanvas.SetActive(false);
+
             canvas_Items.SetActive(true);
             active_Dialogue = true;
             player.PlayerStopState(true);
@@ -647,5 +652,7 @@ public class Narrative_Item : YmirComponent
 
         retryDialogue = true;
         retryTimer = retryDuration;
+
+        gameCanvas.SetActive(true);
     }
 }
