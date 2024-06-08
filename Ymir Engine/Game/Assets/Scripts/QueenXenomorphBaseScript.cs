@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-
 using YmirEngine;
 
 public enum QueenState
@@ -211,7 +210,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Debug.Log("[ERROR] DEATH");
                     timePassed = 0;
                     InternalCalls.Destroy(gameObject); 
-                    InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
+                    //InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
                 }
                 return;
             case QueenState.IDLE_PHASE_1:
@@ -672,6 +671,8 @@ public class QueenXenomorphBaseScript : YmirComponent
     {
         if (life <= 0)
         {
+            SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "Boss Fight", false);
+
             //Animation.PlayAnimation(gameObject, "Boss_Die.002");
             Debug.Log("[ERROR] DEATH");
             gameObject.SetVelocity(new Vector3(0, 0, 0));

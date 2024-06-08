@@ -1721,6 +1721,8 @@ public class Player : YmirComponent
 
     private void StartDeath()
     {
+        SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "Has dead", true);
+
         Animation.SetSpeed(gameObject, "Raisen_Death", 1.0f);
         Animation.SetPingPong(gameObject, "Raisen_Death");
 
@@ -2207,6 +2209,21 @@ public class Player : YmirComponent
     {
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Current Lvl", (int)currentLvl);
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Last unlocked Lvl", (int)lastUnlockedLvl);
+
+        if (SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Current Lvl") != 0 && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "First Incursion"))
+        {
+            SaveLoad.SaveBool(Globals.saveGameDir, saveName, "First Incursion", true);
+        }
+
+        if (SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Last unlocked Lvl") == 1 && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 1 Completed"))
+        {
+            SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Lvl 1 Completed", true);
+        }
+
+        if (SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Last unlocked Lvl") == 2 && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 2 Completed"))
+        {
+            SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Lvl 2 Completed", true);
+        }
     }
 
     public void LoadPlayer()
