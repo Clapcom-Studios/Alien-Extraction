@@ -72,7 +72,7 @@ public class SpitterBaseScript : Enemy
 
         //Agent
         agent.stoppingDistance = 2f;
-        agent.speed = 1050f; //Debería ser más lento que el facehugger (Antes estaba en 1600f)
+        agent.speed = 900f; //Debería ser más lento que el facehugger (Antes estaba en 1600f)
         agent.angularSpeed = 10f;
 
         //ATTACKS
@@ -155,13 +155,13 @@ public class SpitterBaseScript : Enemy
         {
             life = 687.5f; //763,88
             armor = 0.1f; //0.1f
-            agent.speed = 1155f; //Antes estaba en 1700f
+            agent.speed = 990f; //Antes estaba en 1700f
         }
         else if (rarity == 2)
         {
             life = 950; //1187,5
             armor = 0.2f; // 0.2f
-            agent.speed = 1260f; //Antes estaba en 1800f
+            agent.speed = 1080f; //Antes estaba en 1800f
         }
 
         SetColor();

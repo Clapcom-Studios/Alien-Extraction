@@ -30,8 +30,8 @@ public class OpenMenu_OnCollision : YmirComponent
     {
         if (other.Tag == "Player" || other.Name == "Player")
         {
-            player.currentMenu = goName;
-            player.ToggleMenu(true);
+            //player.currentMenu = goName;
+            player.ToggleMenu(true, goName);
         }
     }
 }

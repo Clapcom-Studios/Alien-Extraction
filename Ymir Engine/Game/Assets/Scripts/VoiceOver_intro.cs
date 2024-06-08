@@ -11,8 +11,8 @@ public class VoiceOver_intro : YmirComponent
 	private GameObject audio_source;
     public int actual_frame = 2;
 	public int max_frame;
-    private float timer = 3f;
-    private float finishTimer = 2f;
+    private float timer = 5.5f;
+    private float finishTimer = 5.5f;
     public bool audio_played;
     public void Start()
 	{
