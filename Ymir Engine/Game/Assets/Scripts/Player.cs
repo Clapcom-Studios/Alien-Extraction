@@ -110,7 +110,12 @@ public class Player : YmirComponent
 
     public bool vulnerable = true;
 
+    //--------------------- Aim ---------------------\\
     public GameObject aimSensor = null;
+    public float aimAngle;
+    public bool isAiming = false;
+    public GameObject target = null;
+
 
     #endregion
 
@@ -751,7 +756,7 @@ public class Player : YmirComponent
                     csUI_AnimationDash.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Acidic Spit (Skill 1) -----------------\\
@@ -766,7 +771,7 @@ public class Player : YmirComponent
                     csUI_AnimationAcid.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Predatory Rush (Skill 2) -----------------\\
@@ -781,7 +786,7 @@ public class Player : YmirComponent
                     csUI_AnimationPredatory.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Swipe (Skill 3) -----------------\\
@@ -796,7 +801,7 @@ public class Player : YmirComponent
                     csUI_AnimationSwipe.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Reload -----------------\\
@@ -1364,6 +1369,8 @@ public class Player : YmirComponent
     }
     private void UpdateShooting()
     {
+        StopPlayer();
+
         if (currentWeapon.ShootAvailable()) inputsList.Add(INPUT.I_SHOOT);
 
         if (JoystickMoving() == true)
@@ -1376,6 +1383,9 @@ public class Player : YmirComponent
         {
             Animation.PlayAnimation(gameObject, idleAnim);
             Particles.RestartParticles(currentWeapon.particlesGO);
+
+            if (currentWeapon.currentAmmo <= 0)
+                StartReload();
 
             StopPlayer();
 
@@ -1661,7 +1671,14 @@ public class Player : YmirComponent
         //Debug.Log("Fuersa:" + gameObject.transform.GetForward());
         //Vector3 forward = gameObject.transform.GetForward();
         //forward.y = 0f;
-
+        //if (!isAiming)
+        //{
+           
+        //}
+        //else
+        //{
+        //    gameObject.transform.LookAt(target.transform.globalPosition);
+        //}
         HandleRotation();
 
         Particles.ParticlesForward(walkParticles, gameObject.transform.GetForward(), 0, -5.0f);
