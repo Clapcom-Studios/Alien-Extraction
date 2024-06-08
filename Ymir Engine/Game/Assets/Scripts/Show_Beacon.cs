@@ -14,7 +14,7 @@ public class Show_Beacon : YmirComponent
 
     bool show_menu = true;
 
-	public void Start()
+    public void Start()
     {
         GameObject go = InternalCalls.GetGameObjectByName("Player");
 
@@ -25,19 +25,19 @@ public class Show_Beacon : YmirComponent
         popup = InternalCalls.CS_GetChild(gameObject, 1);
     }
 
-	public void Update()
-	{
+    public void Update()
+    {
         popup.SetAsBillboard();
         return;
-	}
-	public void OnCollisionEnter(GameObject other)
-	{
-        if(other.Tag == "Player")
+    }
+    public void OnCollisionEnter(GameObject other)
+    {
+        if (other.Tag == "Player")
         {
             popup.SetActive(true);
             show_menu = true;
         }
-       
+
     }
     public void OnCollisionStay(GameObject other)
     {
@@ -45,9 +45,9 @@ public class Show_Beacon : YmirComponent
         {
             if (other.Tag == "Player" && Input.IsGamepadButtonAPressedCS() || other.Name == "Player" && Input.IsGamepadButtonAPressedCS())
             {
-                    popup.SetActive(false);
-                    player.currentMenu = goName;
-                    player.ToggleMenu(true);
+                popup.SetActive(false);
+                //player.currentMenu = goName;
+                player.ToggleMenu(true, goName);
                 show_menu = false;
             }
         }

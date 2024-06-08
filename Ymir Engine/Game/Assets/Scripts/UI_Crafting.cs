@@ -160,9 +160,9 @@ public class UI_Crafting : YmirComponent
             GameObject inventory = InternalCalls.CS_GetChild(gameObject, 2);
             GameObject save = InternalCalls.CS_GetChild(gameObject, 3);
 
-            for (int inv = 0; inv < InternalCalls.CS_GetChildrenSize(inventory); inv++)
+            for (int s = 0; s < InternalCalls.CS_GetChildrenSize(save); s++)
             {
-                GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(inventory, inv), 2);  // (Slot (Button)))
+                GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(save, s), 2);  // (Slot (Button)))
                 isInventory = true;
 
                 if (gameObject != null)
@@ -177,9 +177,9 @@ public class UI_Crafting : YmirComponent
 
             if (isInventory)
             {
-                for (int s = 0; s < InternalCalls.CS_GetChildrenSize(save); s++)
+                for (int inv = 0; inv < InternalCalls.CS_GetChildrenSize(inventory); inv++)
                 {
-                    GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(save, s), 2);  // (Slot (Button)))
+                    GameObject button = InternalCalls.CS_GetChild(InternalCalls.CS_GetChild(inventory, inv), 2);  // (Slot (Button)))
 
                     if (gameObject != null)
                     {
