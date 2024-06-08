@@ -13,6 +13,9 @@ public class Key : YmirComponent
     public GameObject door3;
     private GameObject _pickupPopUp = new GameObject();
 
+    public GameObject KeyUIInventory;
+    bool isPicked;
+
     private List<GameObject> doorList = new List<GameObject>();
 
 	public void Start()
@@ -22,12 +25,23 @@ public class Key : YmirComponent
         doorList.Add(door3);
 
         _pickupPopUp = InternalCalls.GetGameObjectByName("ItemPicked");
+
+        isPicked = false;
 	}
 
 	public void Update()
 	{
-		
-	}
+        if (!isPicked)
+        {
+            if (KeyUIInventory != null)
+                KeyUIInventory?.SetActive(false);
+        }
+        else
+        {
+            if (KeyUIInventory != null)
+                KeyUIInventory?.SetActive(true);
+        }
+    }
 
     public void OnCollisionStay(GameObject other)
     {
@@ -43,6 +57,8 @@ public class Key : YmirComponent
                     InternalCalls.Destroy(go);
                 }
             }
+
+            isPicked = true;
 
             InternalCalls.Destroy(gameObject);
         }
