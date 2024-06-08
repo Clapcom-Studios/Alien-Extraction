@@ -21,7 +21,7 @@ public class UI_Cutscenes : YmirComponent
     public bool winScene1 = false;
     public bool winScene2 = false;
 
-    private float timer = 2f;
+    private float timer = 3f;
     private float finishTimer = 2f;
 
     // Loading scene

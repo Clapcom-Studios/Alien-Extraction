@@ -5,11 +5,11 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "135",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\victo\\Documents\\GitHub\\Wwise-Project\\Ymir-Project\\",
-   "SourceFilesRoot": "C:\\Users\\victo\\Documents\\GitHub\\Wwise-Project\\Ymir-Project\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\victo\\Documents\\GitHub\\Project-Clapcom\\Ymir Engine\\Game\\Assets\\SoundBanks\\",
+   "ProjectRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Wwise-Project\\Ymir-Project\\",
+   "SourceFilesRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Wwise-Project\\Ymir-Project\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Project-Clapcom\\Project-Clapcom\\Ymir Engine\\Game\\Assets\\SoundBanks\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\victo\\Documents\\GitHub\\Wwise-Project\\Ymir-Project\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Wwise-Project\\Ymir-Project\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
   "StreamedFiles": [],
@@ -729,7 +729,6 @@
    {
     "Id": "978134277",
     "Language": "SFX",
-    "Hash": "498239050",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\DroneXenomorph",
     "ShortName": "DroneXenomorph",
     "Path": "DroneXenomorph.bnk",
@@ -2072,6 +2071,32 @@
     ]
    },
    {
+    "Id": "2364323432",
+    "Language": "SFX",
+    "Hash": "1510928180",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\AlienHead_Shoot",
+    "ShortName": "AlienHead_Shoot",
+    "Path": "AlienHead_Shoot.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "2364323432",
+      "Name": "AlienHead_Shoot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemies\\AlienHead\\AlienHead_Shoot",
+      "DurationType": "OneShot",
+      "DurationMin": "2.494406",
+      "DurationMax": "2.494406",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "251956885",
+        "Language": "SFX",
+        "ShortName": "AlienHead_Shoot.wav",
+        "Path": "SFX\\AlienHead_Shoot_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2405688451",
     "Language": "SFX",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV3Music",
@@ -2199,7 +2224,6 @@
    {
     "Id": "2692855564",
     "Language": "SFX",
-    "Hash": "19932484",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\XenoSpitter",
     "ShortName": "XenoSpitter",
     "Path": "XenoSpitter.bnk",
@@ -2289,7 +2313,6 @@
    {
     "Id": "2982135181",
     "Language": "SFX",
-    "Hash": "700496941",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\QueenXenomorph",
     "ShortName": "QueenXenomorph",
     "Path": "QueenXenomorph.bnk",
@@ -3011,6 +3034,112 @@
     ]
    },
    {
+    "Id": "3930136735",
+    "Language": "SFX",
+    "Hash": "3644777679",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Dialogue\\Dialogue",
+    "ShortName": "Dialogue",
+    "Path": "Dialogue.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3196045927",
+      "Name": "Dialogue_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Intro\\Dialogue_1",
+      "DurationType": "OneShot",
+      "DurationMin": "3.761625",
+      "DurationMax": "3.761625",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "1038732334",
+        "Language": "SFX",
+        "ShortName": "intro 1.wav",
+        "Path": "SFX\\intro 1_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3196045924",
+      "Name": "Dialogue_2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Intro\\Dialogue_2",
+      "DurationType": "OneShot",
+      "DurationMin": "2.925708",
+      "DurationMax": "2.925708",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "173914146",
+        "Language": "SFX",
+        "ShortName": "intro 2.wav",
+        "Path": "SFX\\intro 2_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3196045925",
+      "Name": "Dialogue_3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Intro\\Dialogue_3",
+      "DurationType": "OneShot",
+      "DurationMin": "3.761625",
+      "DurationMax": "3.761625",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "831563417",
+        "Language": "SFX",
+        "ShortName": "intro 3.wav",
+        "Path": "SFX\\intro 3_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3196045922",
+      "Name": "Dialogue_4",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Intro\\Dialogue_4",
+      "DurationType": "OneShot",
+      "DurationMin": "3.526521",
+      "DurationMax": "3.526521",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "450735329",
+        "Language": "SFX",
+        "ShortName": "intro 4.wav",
+        "Path": "SFX\\intro 4_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3196045923",
+      "Name": "Dialogue_5",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Intro\\Dialogue_5",
+      "DurationType": "OneShot",
+      "DurationMin": "1.933063",
+      "DurationMax": "1.933063",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "1045007321",
+        "Language": "SFX",
+        "ShortName": "intro 5.wav",
+        "Path": "SFX\\intro 5_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3196045920",
+      "Name": "Dialogue_6",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Intro\\Dialogue_6",
+      "DurationType": "OneShot",
+      "DurationMin": "1.488979",
+      "DurationMax": "1.488979",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "1016285536",
+        "Language": "SFX",
+        "ShortName": "intro 6.wav",
+        "Path": "SFX\\intro 6_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "4050929301",
     "Language": "SFX",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Materials\\Materials",
@@ -3119,7 +3248,6 @@
    {
     "Id": "4095621880",
     "Language": "SFX",
-    "Hash": "1615030436",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\Facehugger",
     "ShortName": "Facehugger",
     "Path": "Facehugger.bnk",
