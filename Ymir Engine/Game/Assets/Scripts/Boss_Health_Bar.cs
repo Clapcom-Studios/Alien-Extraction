@@ -16,8 +16,9 @@ public class Boss_Health_Bar : YmirComponent
     public float initialHP = 500;
     public Vector3 initialScale;
 
+    public GameObject healthBar = null;
     public GameObject boss = null;
-    public GameObject plane = null;
+    
 
     //private FaceHuggerBaseScript aux = null;
     //private DroneXenomorphBaseScript aux2 = null;
@@ -26,15 +27,22 @@ public class Boss_Health_Bar : YmirComponent
 
     public void Start()
     {
-        
-        plane = InternalCalls.CS_GetChild(gameObject, 0);
-        initialScale = plane.transform.localScale;
+
+        healthBar = InternalCalls.GetGameObjectByName("Boss_HealtBar");
+       
 
 
         bossScript = boss.GetComponent<QueenXenomorphBaseScript>();
 
         SetInitialHP();
-        initialHP = HP;
+
+        if (healthBar != null)
+        {
+            UI.SliderSetMax(healthBar, initialHP);
+            UI.SliderEdit(healthBar, initialHP);
+        }
+        
+        HP = initialHP;
     }
 
     public void Update()
@@ -46,7 +54,7 @@ public class Boss_Health_Bar : YmirComponent
 
         float scaleX = Mathf.Max(0, initialScale.x * (HP / initialHP));
         Vector3 newScale = new Vector3(scaleX, initialScale.y, initialScale.z);
-        plane.SetScale(newScale);
+       
 
         //---------------Xiao: Gurrada Pendiente de Cambiar----------------------------
         if (bossScript != null)
@@ -65,7 +73,7 @@ public class Boss_Health_Bar : YmirComponent
     {
         if (bossScript != null)
         {
-            HP = bossScript.life;
+            initialHP = bossScript.life;
 
         }
     }

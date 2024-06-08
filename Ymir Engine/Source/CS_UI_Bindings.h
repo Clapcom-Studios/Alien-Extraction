@@ -187,6 +187,13 @@ void SliderEdit(MonoObject* object, double value)
 	static_cast<UI_Slider*>(go->GetComponentUI(UI_TYPE::SLIDER))->SetValue(value);
 }
 
+void SetSliderFill(MonoObject* object, MonoObject* fillObject)
+{
+	G_UI* go = (G_UI*)External->moduleMono->GameObject_From_CSGO(object);
+	G_UI* fillGo = (G_UI*)External->moduleMono->GameObject_From_CSGO(fillObject);
+	static_cast<UI_Slider*>(go->GetComponentUI(UI_TYPE::SLIDER))->fillImage = fillGo;
+}
+
 void SliderSetRange(MonoObject* object, double min, double max)
 {
 	G_UI* go = (G_UI*)External->moduleMono->GameObject_From_CSGO(object);

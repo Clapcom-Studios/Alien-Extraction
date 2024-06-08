@@ -12,6 +12,7 @@ public enum QueenState
     WALKING_TO_PLAYER,
     WALK_BACKWARDS,
     WALKING_SIDEWAYS,
+    CRY,
     DEAD,
     PAUSED,
 
@@ -71,6 +72,7 @@ public class QueenXenomorphBaseScript : YmirComponent
     private float acidSpitRadius = 80f;
 
     private float clawAttackCooldown = 4f;
+    public float clawDMG = 600f;
     private float clawTimer;
     private bool clawReady;
     private bool clawDone = false;
@@ -78,6 +80,9 @@ public class QueenXenomorphBaseScript : YmirComponent
     private float clawAniDuration = 1.75f;
 
     private float acidSpitAttackCooldown = 20f;
+    public float acidDMG = 600f;
+    public float acidPudleDMG = 20f;
+    public float acidShrapnelDMG = 150f;
     private float acidSpitTimer;
     private bool acidSpitReady;
     private bool acidSpitDone = false;
@@ -85,6 +90,7 @@ public class QueenXenomorphBaseScript : YmirComponent
     private float acidSpitAniDuration = 1f;
 
     private float axeAttackCooldown = 18f;
+    public float axeDMG = 1200;
     private float axeTimer;
     private bool axeReady;
     private bool axeDone = false;
@@ -110,9 +116,21 @@ public class QueenXenomorphBaseScript : YmirComponent
 
     private bool tailColdown = false;
 
+    public float dmgMultiplier;
+
     public bool paused = false;
 
     public GameObject particlesGO = null;
+    public GameObject healthBar = null;
+    public GameObject fill1 = null;
+    public GameObject fill2 = null;
+
+
+    private bool isSecondPhase = false;
+    private float speedMultiplier = 1.0f;
+    private float secondPhaseHealthThreshold;
+    private float cryAniDuration = 3f;
+    private float cryAniTimer = 0f;
 
     public void Start()
     {
@@ -120,8 +138,10 @@ public class QueenXenomorphBaseScript : YmirComponent
         queenState = QueenState.IDLE_PHASE_1;
 
         life = 3000f;
+        secondPhaseHealthThreshold = life * 0.5f;
         queenRotationSpeed = 5f;
         player = InternalCalls.GetGameObjectByName("Player");
+        healthBar = InternalCalls.GetGameObjectByName("BossHealthBar");
         healthScript = player.GetComponent<Health>();
         axeTimer = axeAttackCooldown;
         dashTimer = dashAttackCooldown;
@@ -161,10 +181,19 @@ public class QueenXenomorphBaseScript : YmirComponent
         Animation.AddBlendOption(gameObject, "", "Boss_Die.002", 10f);
 
         Animation.PlayAnimation(gameObject, "Boss_IdleV2");
+
+
+        if (healthBar != null)
+        {
+            Debug.Log("[ERROR] VIDAAABooss!!!!");
+            UI.SliderSetMax(healthBar, life);
+            UI.SliderEdit(healthBar, life);
+        }
     }
 
     public void Update()
     {
+        Debug.Log("[ERROR} QUEENSTATE: " + queenState);
         if (CheckPause())
         {
             SetPause(true);
@@ -175,6 +204,12 @@ public class QueenXenomorphBaseScript : YmirComponent
         {
             SetPause(false);
             paused = false;
+        }
+
+        // Check for second phase activation
+        if (!isSecondPhase && life <= secondPhaseHealthThreshold)
+        {
+            ActivateSecondPhase();
         }
 
         if (queenState != QueenState.DEAD) { isDeath(); }
@@ -225,14 +260,14 @@ public class QueenXenomorphBaseScript : YmirComponent
                 {
                     if (selectedMovement < 2)
                     {
-                        Debug.Log("[ERROR] BOSS STATE WALKING TO PLAYER");
+                        //Debug.Log("[ERROR] BOSS STATE WALKING TO PLAYER");
                         randomMovSelected = false;
                         Animation.PlayAnimation(gameObject, "Boss_Walk");
                         queenState = QueenState.WALKING_TO_PLAYER;
                     }
                     else
                     {
-                        Debug.Log("[ERROR] BOSS STATE WALKING SIDEWAYS");
+                        //Debug.Log("[ERROR] BOSS STATE WALKING SIDEWAYS");
                         randomMovSelected = false;
                         sidewaysDuration = random.Next(1, 4);
                         sidewaysTimer = 0f;
@@ -288,7 +323,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                     if (sidewaysTimer >= sidewaysDuration + 2)
                     {
-                        Debug.Log("[ERROR] BOSS STATE WALKING TO PLAYER");
+                        //Debug.Log("[ERROR] BOSS STATE WALKING TO PLAYER");
                         Animation.PlayAnimation(gameObject, "Boss_Walk");
                         queenState = QueenState.WALKING_TO_PLAYER;
                     }
@@ -303,7 +338,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                 if (backwardsTimer >= backwardsDuration)
                 {
-                    Debug.Log("[ERROR] BOSS STATE ACID SPIT");
+                    //Debug.Log("[ERROR] BOSS STATE ACID SPIT");
                     backwardsTimer = 0f;
                     acidSpitReady = false;
                     acidSpitTimer = acidSpitAttackCooldown;
@@ -323,7 +358,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                 if (clawAniCounter >= clawAniDuration)
                 {
-                    Debug.Log("[ERROR] BOSS STATE IDLE");
+                    //Debug.Log("[ERROR] BOSS STATE IDLE");
                     clawAniCounter = 0f;
                     Animation.PlayAnimation(gameObject, "Boss_IdleV2");
                     queenState = QueenState.IDLE_PHASE_1;
@@ -346,7 +381,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                 if (acidSpitAniCounter >= acidSpitAniDuration)
                 {
-                    Debug.Log("[ERROR] BOSS STATE IDLE");
+                    //Debug.Log("[ERROR] BOSS STATE IDLE");
                     acidSpitAniCounter = 0f;
                     baseAttacks++;
                     Animation.PlayAnimation(gameObject, "Boss_IdleV2");
@@ -370,7 +405,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                 if (axeAniCounter >= axeAniDuration)
                 {
-                    Debug.Log("[ERROR] BOSS STATE IDLE");
+                    //Debug.Log("[ERROR] BOSS STATE IDLE");
                     axeAniCounter = 0f;
                     Animation.PlayAnimation(gameObject, "Boss_IdleV2");
                     Audio.PlayAudio(gameObject, "QX_TailHit");
@@ -394,7 +429,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
                 if (dashAniCounter1 >= dashAniDuration1)
                 {
-                    Debug.Log("[ERROR] BOSS STATE DASH");
+                    //Debug.Log("[ERROR] BOSS STATE DASH");
                     dashAniCounter1 = 0f;
                     dashDamageDone = false;
                     queenState = QueenState.DASH;
@@ -417,7 +452,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                 {
                     if (dashNum == 2)
                     {
-                        Debug.Log("[ERROR] BOSS STATE IDLE");
+                        //Debug.Log("[ERROR] BOSS STATE IDLE");
                         dashAniCounter2 = 0f;
                         dashDone = false;
                         dashNum = 0;
@@ -427,12 +462,25 @@ public class QueenXenomorphBaseScript : YmirComponent
                     }
                     else
                     {
-                        Debug.Log("[ERROR] BOSS STATE PREPARE SECOND DASH");
+                        //Debug.Log("[ERROR] BOSS STATE PREPARE SECOND DASH");
                         dashAniCounter2 = 0f;
                         dashDone = false;
                         Animation.PlayAnimation(gameObject, "Boss_Dash");
                         queenState = QueenState.PREPARE_DASH;
                     }
+                }
+                break;
+
+            case QueenState.CRY:
+                // During screech, do nothing but play the animation and count down
+                Debug.Log("[ERROR] aaaaaaaaaaa ");
+                cryAniTimer += Time.deltaTime;
+                if (cryAniTimer >= 2)
+                {
+                    Debug.Log("[ERROR] xxxxxxxxxxxx ");
+                    //Debug.Log("Screech animation finished. Transitioning to second phase.");
+                    cryAniTimer = 0f;
+                    queenState = QueenState.IDLE_PHASE_1; // Assuming there's an idle state for phase 2
                 }
                 break;
         }
@@ -475,7 +523,7 @@ public class QueenXenomorphBaseScript : YmirComponent
             case float i when (i <= 60):
                 if ((CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, clawRadius)) && clawReady == true)
                 {
-                    Debug.Log("[ERROR] BOSS STATE CLAW");
+                    //Debug.Log("[ERROR] BOSS STATE CLAW");
                     clawReady = false;
                     clawTimer = clawAttackCooldown;
                     baseAttacks++;
@@ -495,7 +543,7 @@ public class QueenXenomorphBaseScript : YmirComponent
             case float i when (i > 60 && i <= 80):
                 if ((CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, axeRadius)) && axeReady == true)
                 {
-                    Debug.Log("[ERROR] BOSS STATE AXE");
+                    //Debug.Log("[ERROR] BOSS STATE AXE");
                     axeReady = false;
                     axeTimer = axeAttackCooldown;
                     //TAIL ANIMATION HERE!!!!!!!!-----------------------------------------------------------------------------------------------------------------
@@ -515,7 +563,7 @@ public class QueenXenomorphBaseScript : YmirComponent
             case float i when (i > 80 && i <= 100):
                 if ((CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, dashRadius)) && dashReady == true)
                 {
-                    Debug.Log("[ERROR] BOSS STATE PREPARE DASH");
+                    //Debug.Log("[ERROR] BOSS STATE PREPARE DASH");
                     dashReady = false;
                     dashTimer = dashAttackCooldown;
                     Animation.PlayAnimation(gameObject, "Boss_Dash");
@@ -534,7 +582,7 @@ public class QueenXenomorphBaseScript : YmirComponent
         //Acid spit
         if ((CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, acidSpitRadius)) && (!CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, clawRadius)) && randomCounter == 0 && acidSpitReady == true)
         {
-            Debug.Log("[ERROR] BOSS STATE ACID SPIT");
+            //Debug.Log("[ERROR] BOSS STATE ACID SPIT");
             acidSpitReady = false;
             acidSpitTimer = acidSpitAttackCooldown;
             Animation.PlayAnimation(gameObject, "Boss_Spit");
@@ -545,7 +593,7 @@ public class QueenXenomorphBaseScript : YmirComponent
         }
         else if ((CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, clawRadius)) && acidSpitReady == true)
         {
-            Debug.Log("[ERROR] BOSS STATE WALK BACKWARDS");
+            //Debug.Log("[ERROR] BOSS STATE WALK BACKWARDS");
             Animation.PlayAnimation(gameObject, "Boss_Walk");
             Animation.SetBackward(gameObject, "Boss_Walk", true);
             queenState = QueenState.WALK_BACKWARDS;
@@ -701,6 +749,35 @@ public class QueenXenomorphBaseScript : YmirComponent
     public void TakeDmg(float dmg)
     {
         life -= (1 - armor) * dmg;
+
+        if (healthBar != null)
+        {
+            UI.SliderEdit(healthBar, life);
+        }
     }
 
+
+    private void ActivateSecondPhase()
+    {
+        isSecondPhase = true;
+        speedMultiplier = 1.5f;
+        speed = speed * speedMultiplier;
+        Debug.Log("Second phase activated!");
+        if(fill2 != null) { UI.SetSliderFill(healthBar, fill2); fill1.SetActive(false); fill2.SetActive(true) ; }
+        UI.SliderEdit(healthBar, life);
+        queenState = QueenState.CRY;
+        MultiplieDMG(dmgMultiplier);
+        Animation.PlayAnimation(gameObject, "Boss_Cry");
+        Audio.PlayAudio(gameObject, "QX_Cry");
+    }
+
+    private void MultiplieDMG(float multiplier)
+    {
+        clawDMG *= multiplier;
+        axeDMG *= multiplier;
+        acidDMG *= multiplier;
+        acidPudleDMG *= multiplier;
+        acidShrapnelDMG *= multiplier;
+        
+    }
 }

@@ -186,6 +186,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 
 	// Slider
 	mono_add_internal_call("YmirEngine.UI::SliderEdit", SliderEdit);
+	mono_add_internal_call("YmirEngine.UI::SetSliderFill", SetSliderFill);
 	mono_add_internal_call("YmirEngine.UI::SliderSetRange", SliderSetRange);
 	mono_add_internal_call("YmirEngine.UI::SliderSetMin", SliderSetMin);
 	mono_add_internal_call("YmirEngine.UI::SliderSetMax", SliderSetMax);

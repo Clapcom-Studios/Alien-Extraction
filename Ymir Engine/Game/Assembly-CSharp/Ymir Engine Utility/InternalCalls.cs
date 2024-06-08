@@ -334,6 +334,12 @@ namespace YmirEngine
         public static extern GameObject SliderEdit(object go, double value);
 
         /// <summary>
+        /// Set a fillOject to the slider.
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern GameObject SetSliderFill(object go, object fillObject);
+
+        /// <summary>
         /// Sets the range of a slider UI element.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
