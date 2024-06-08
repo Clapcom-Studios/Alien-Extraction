@@ -115,7 +115,7 @@ public class Caius : YmirComponent
         Animation.PlayAnimation(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle");
 
         saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
-        introDialogueDone = false;
+        introDialogueDone = SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Caius intro dialogue");
         holoScreen = false;
         androidHead = false;
         corpse = false;
@@ -127,7 +127,7 @@ public class Caius : YmirComponent
 
 
         dialogueQueue = new Queue<string>(); // Inicializar la cola
-        dialogueQueue.Enqueue("Assets/Dialogue/Caius_Intro_Dialogue.csv");
+        dialogueQueue.Enqueue("Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv");
         LoadDialogues(InternalCalls.CSVToString(dialogueQueue.Peek()));
         dialogue_ = Dialogue_id.ID_1;
     }
@@ -167,7 +167,7 @@ public class Caius : YmirComponent
         if (dialogueQueue.Peek() == "Assets/Dialogue/Caius_Intro_Dialogue.csv")
         {
             //Intro Dialogue ID 001
-            if (!introDialogueDone)
+            if (!SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Caius intro dialogue"))
             {
                 switch (dialogue_)
                 {
@@ -671,7 +671,7 @@ public class Caius : YmirComponent
 
     private void HandleDialogue()
     {
-        Debug.Log("Cuerrent Dialogue Name: " + dialogueQueue.Peek());
+        //Debug.Log("Cuerrent Dialogue Name: " + dialogueQueue.Peek());
         if (dialogueQueue.Peek() == "Assets/Dialogue/Caius_Intro_Dialogue.csv")
         {
             //player.PlayerStopState(true);
@@ -1126,18 +1126,18 @@ public class Caius : YmirComponent
             if (dialogueParts.Length >= 4)
             {
                 Dialogue _dialogue = new Dialogue();
-                Debug.Log("[WARNING] 1");
+                //Debug.Log("[WARNING] 1");
                 _dialogue.ID = int.Parse(dialogueParts[0]);
-                Debug.Log("[WARNING] 1");
+                //Debug.Log("[WARNING] 1");
                 _dialogue.Name = dialogueParts[1];
-                Debug.Log("[WARNING] 4");
+                //Debug.Log("[WARNING] 4");
                 _dialogue.Text = dialogueParts[2];
-                Debug.Log("[WARNING] 5");
+                //Debug.Log("[WARNING] 5");
                 _dialogue.Code = dialogueParts[3];
-                Debug.Log("[WARNING] 6");
+                //Debug.Log("[WARNING] 6");
 
                 dialogue.Add(_dialogue.ID, _dialogue);
-                Debug.Log("[WARNING] Ended");
+                //Debug.Log("[WARNING] Ended");
             }
         }
 
@@ -1146,17 +1146,18 @@ public class Caius : YmirComponent
 
     private void LoadNextDialogeInQueue()
     {
-        Debug.Log("LoadNextDialogeInQueue");
+        Debug.Log("[WARNING] LoadNextDialogeInQueue");
 
         // Verifica si hay al menos dos diálogos en la cola
         if (dialogueQueue.Count >= 2)
         {
             Debug.Log("Hay al menos dos diálogos en la cola, por tanto no añadimos ninguno: " + dialogueQueue.Count);
-            // Muestra el diálogo actual
-            LoadDialogues(InternalCalls.CSVToString(dialogueQueue.Peek()));
-
             // Quita el diálogo que se está mostrando de la lista de pendientes
             dialogueQueue.Dequeue();
+
+            // Muestra el diálogo actual
+            Debug.Log("[WARNING] Dialogue '" + dialogueQueue.Peek() + "' send to LoadDialogues()");
+            LoadDialogues(InternalCalls.CSVToString(dialogueQueue.Peek()));
         }
         else
         {
@@ -1164,20 +1165,23 @@ public class Caius : YmirComponent
             // Agrega un diálogo base a la cola
             dialogueQueue.Enqueue("Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv");
 
-            Debug.Log("1. Count: " +  dialogueQueue.Count);
+            //Debug.Log("1. Count: " +  dialogueQueue.Count);
             // Quita el dialogo que se esta mostrando de la lista de pendientes
             dialogueQueue.Dequeue();
 
-            Debug.Log("2. Count: " + dialogueQueue.Count);
+            //Debug.Log("2. Count: " + dialogueQueue.Count);
             // Muestra el nuevo diálogo
+            Debug.Log("[WARNING] Dialogue '" + dialogueQueue.Peek() + "' send to LoadDialogues()");
             LoadDialogues(InternalCalls.CSVToString(dialogueQueue.Peek()));
 
-            Debug.Log("3. Count: " + dialogueQueue.Count);
+            //Debug.Log("3. Count: " + dialogueQueue.Count);
         }
     }
 
     private void ExitDialogue()
     {
+        Debug.Log("[WARNING] ExitDialogue");
+
         dialogue_ = Dialogue_id.ID_1;
         //EXIT
         player.PlayerStopState(false);
@@ -1201,53 +1205,51 @@ public class Caius : YmirComponent
 
     private void AddDialogueOverDefault(string toAdd)
     {
-        bool foundDefault = false;
-        int queueSize = dialogueQueue.Count;
+        Debug.Log("[WARNING] AddDialogueOverDefault");
+
+        //bool foundDefault = false;
+        string defaultItem = "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv";
 
         // Crear una lista temporal para almacenar los elementos de la cola.
         List<string> tempQueue = new List<string>();
 
-        // Dequeue todos los elementos y comprobar si contienen el valor predeterminado.
-        for (int i = 0; i < queueSize; i++)
+        // Mover todos los elementos de la cola a la lista temporal.
+        while (dialogueQueue.Count > 0)
         {
-            string current = dialogueQueue.Dequeue();
-            if (current == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv" && !foundDefault)
-            {
-                // Reemplazar la primera ocurrencia del valor predeterminado por toAdd.
-                tempQueue.Add(toAdd);
-                foundDefault = true;
-            }
-            else
-            {
-                tempQueue.Add(current);
-            }
+            tempQueue.Add(dialogueQueue.Dequeue());
         }
 
-        // Añadir "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv" al final si se encontró y reemplazó
-        if (foundDefault)
+        // Añadir el nuevo elemento a la lista temporal.
+        tempQueue.Add(toAdd);
+
+        // Si existe el elemento predeterminado, moverlo al final.
+        if (tempQueue.Contains(defaultItem))
         {
-            tempQueue.Add("Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv");
-        }
-        else
-        {
-            // Si no se encontró el valor predeterminado, simplemente añadir toAdd al final.
-            tempQueue.Add(toAdd);
+            tempQueue.Remove(defaultItem);
+            tempQueue.Add(defaultItem);
         }
 
-        // Re-enqueue todos los elementos desde la lista temporal.
-        foreach (var item in tempQueue)
+        // Volver a encolar todos los elementos desde la lista temporal.
+        foreach (string item in tempQueue)
         {
             dialogueQueue.Enqueue(item);
         }
+
+        Debug.Log("[WARNING] Dialogue '" + dialogueQueue.Peek() + "' send to LoadDialogues()");
+        LoadDialogues(InternalCalls.CSVToString(dialogueQueue.Peek()));
     }
+
 
     private void AddDialogueOverAll(string toAdd)
     {
+        Debug.Log("[WARNING] AddDialogueOverAll");
+
         // Vaciar la cola actual.
         dialogueQueue.Clear();
 
         // Añadir el string toAdd a la cola.
         dialogueQueue.Enqueue(toAdd);
+        LoadDialogues(InternalCalls.CSVToString(toAdd));
 
         // Añadir "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv" a la cola.
         dialogueQueue.Enqueue("Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv");
@@ -1279,48 +1281,63 @@ public class Caius : YmirComponent
 
     private void CheckHiddenDialogues()
     {
-        if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Holo Screen") && !holoScreen)
+        if (!introDialogueDone && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Caius intro dialogue"))
         {
+            Debug.Log("[WARNING] Caius Intro Dialogue added");
+            introDialogueDone = true;
+            AddDialogueOverDefault("Assets/Dialogue/Caius_Intro_Dialogue.csv");
+        }
+        else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Holo Screen") && !holoScreen)
+        {
+            Debug.Log("[WARNING] Interacted Holo Screen Dialogue added");
             holoScreen = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID006.csv");
 
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Android Head") && !androidHead)
         {
+            Debug.Log("[WARNING] Interacted Android Head Dialogue added");
             androidHead = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID008.csv");
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Interacted Corpse") && !corpse)
         {
+            Debug.Log("[WARNING] Interacted Corpse Dialogue added");
             corpse = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID012.csv");
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 1 Completed") && !lvl_1)
         {
+            Debug.Log("[WARNING] Lvl 1 Completed Dialogue added");
             lvl_1 = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID010.csv");
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 2 Completed") && !lvl_2)
         {
+            Debug.Log("[WARNING] Lvl 2 Completed Dialogue added");
             lvl_2 = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID011.csv");
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Has dead") && !hasDead)
         {
+            Debug.Log("[WARNING] Has dead Dialogue added");
             hasDead = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID007.csv");
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Boss Fight") && !boss)
         {
+            Debug.Log("[WARNING] Boss Fight dialogue added");
             boss = true;
             RemoveDialogue("Assets/Dialogue/CAIUS_RAISEN_ID012.csv");
             AddDialogueOverAll("Assets/Dialogue/CAIUS_RAISEN_FINAL.csv");
         }
         else if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "First Incursion") && !firstIncursion)
         {
+            Debug.Log("[WARNING] First Incursion dialogue added");
             firstIncursion = true;
             AddDialogueOverDefault("Assets/Dialogue/CAIUS_RAISEN_ID009.csv");
         }
+        
     }
 
 }
