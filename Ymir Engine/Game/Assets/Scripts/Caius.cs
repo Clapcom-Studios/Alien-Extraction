@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.Remoting.Messaging;
+using System.Text;
 using YmirEngine;
 
 public class Caius : YmirComponent
@@ -1065,7 +1066,17 @@ public class Caius : YmirComponent
             if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
             {
                 //Hacer cambio a la cinemática del final
-                InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
+                if (SaveLoad.LoadBool(Globals.saveGameDir, saveName, "True Ending"))
+                {
+                    //True ending
+                    InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
+                }
+                else
+                {
+                    //Normal ending
+                    InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final_Normal");
+                }
+                
                 return;
             }
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)

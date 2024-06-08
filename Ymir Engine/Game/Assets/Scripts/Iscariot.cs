@@ -280,6 +280,8 @@ public class Iscariot : YmirComponent
                     Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
                     Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_27)
                 {
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
