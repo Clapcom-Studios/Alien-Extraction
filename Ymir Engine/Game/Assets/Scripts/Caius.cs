@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.Remoting.Messaging;
 using YmirEngine;
 
@@ -1058,13 +1059,13 @@ public class Caius : YmirComponent
                 return;
             }
         }
-        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_DEFAULT.csv")
+        else if (dialogueQueue.Peek() == "Assets/Dialogue/CAIUS_RAISEN_FINAL.csv")
         {
             //ID 1
             if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
             {
                 //Hacer cambio a la cinemática del final
-                InternalCalls.LoadScene("CutScenes_Final");
+                InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
                 return;
             }
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
@@ -1182,7 +1183,9 @@ public class Caius : YmirComponent
             Debug.Log("Caius intro dialogue: true");
         }
 
-        LoadNextDialogeInQueue();
+        //Si es el diálogo final deja stucked al player en el diálogo final
+        if (dialogueQueue.Peek() != "Assets/Dialogue/CAIUS_RAISEN_FINAL.csv")
+            LoadNextDialogeInQueue();
     }
 
     private void AddDialogueOverDefault(string toAdd)
