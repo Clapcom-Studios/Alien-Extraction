@@ -556,6 +556,32 @@ bool RaycastTest(MonoObject* obj, MonoObject* origin, MonoObject* direction, flo
 	return External->physics->RaycastTest(fOrigin, fdirection, rayLenght);
 }
 
+float RaycastLenght(MonoObject* obj, MonoObject* origin, MonoObject* direction, float rayLenght) {
+
+	if (External == nullptr)
+		return NULL;
+
+	GameObject* cpp_gameObject = External->moduleMono->GameObject_From_CSGO(obj);
+
+	float3 pOrigin = External->moduleMono->UnboxVector(origin);
+
+	btVector3 fOrigin;
+
+	fOrigin.setX(pOrigin.x);
+	fOrigin.setY(pOrigin.y);
+	fOrigin.setZ(pOrigin.z);
+
+	float3 pdirection = External->moduleMono->UnboxVector(direction);
+
+	btVector3 fdirection;
+
+	fdirection.setX(pdirection.x);
+	fdirection.setY(pdirection.y);
+	fdirection.setZ(pdirection.z);
+
+	return External->physics->RaycastLenght(fOrigin, fdirection, rayLenght);
+}
+
 void SetColliderActive(MonoObject* obj, bool isActive)
 {
 	if (External == nullptr)
