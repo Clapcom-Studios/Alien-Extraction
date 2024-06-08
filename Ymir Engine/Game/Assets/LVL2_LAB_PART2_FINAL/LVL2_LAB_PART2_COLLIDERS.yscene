@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART2_FINAL\/LVL2_LAB_PART2_COLLIDERS.nav",
     "Editor Camera Position": [
-        0.17609086632728577,
-        76.058387756347656,
-        110.18376159667969
+        121.82619476318359,
+        135.52508544921875,
+        619.3114013671875
     ],
     "Editor Camera Right (X)": [
-        0.72018349170684814,
-        -3.8743019104003906e-07,
-        -0.69378674030303955
+        0.6745908260345459,
+        1.9371509552001953e-06,
+        -0.73822498321533203
     ],
     "Editor Camera Up (Y)": [
-        -0.38750046491622925,
-        0.82948487997055054,
-        -0.40224424004554749
+        -0.48995715379714966,
+        0.74800705909729004,
+        -0.4477214515209198
     ],
     "Editor Camera Front (Z)": [
-        -0.5754845142364502,
-        -0.55853116512298584,
-        -0.59737980365753174
+        -0.55217975378036499,
+        -0.66371232271194458,
+        -0.50458425283432007
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 959542752,
+            "UID": 2053807299,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -41,6 +41,7 @@
                 764467289,
                 484997781,
                 1423819104,
+                1565719817,
                 1484304711,
                 1459372103,
                 1393792402,
@@ -71,7 +72,7 @@
             "UID": 456674892,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9669,7 +9670,7 @@
             "UID": 1462968092,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9757,9 +9758,9 @@
                         619.72198486328125
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -9871,9 +9872,9 @@
                         618.6265869140625
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -9985,9 +9986,9 @@
                         618.6087646484375
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -10850,7 +10851,7 @@
             "UID": 1406784881,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11123,7 +11124,7 @@
             "UID": 505858485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12836,7 +12837,7 @@
             "UID": 2107836948,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13477,7 +13478,7 @@
             "UID": 511732336,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13515,7 +13516,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13961,7 +13962,7 @@
             "UID": 165934810,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14479,7 +14480,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14570,7 +14571,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303364924274774e-09,
+                        3.8303422655872055e-09,
                         90,
                         0
                     ],
@@ -14649,7 +14650,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7866974530988955e-06,
+                        1.7866988173409482e-06,
                         90,
                         0
                     ],
@@ -14728,7 +14729,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303391569627365e-09,
+                        3.8303449301224646e-09,
                         90,
                         0
                     ],
@@ -14855,7 +14856,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15173,7 +15174,7 @@
             "UID": 1423819104,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15387,13 +15388,1947 @@
             ]
         },
         {
+            "Name": "Assets_LAB_PART2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1565719817,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 2053807299,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1693315185,
+                1161908985,
+                1013147844
+            ]
+        },
+        {
+            "Name": "Tubes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1693315185,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1565719817,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1870169360,
+                484920720,
+                2138552380,
+                257090698,
+                1768014003
+            ]
+        },
+        {
+            "Name": "tube1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1870169360,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1693315185,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 299642222,
+                    "Vertex Count": 608,
+                    "Index Count": 1488
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "tube2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 484920720,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1693315185,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1711844079,
+                    "Vertex Count": 608,
+                    "Index Count": 1488
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "tube3",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2138552380,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1693315185,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1969604203,
+                    "Vertex Count": 608,
+                    "Index Count": 1488
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "tube4",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 257090698,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1693315185,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1792047280,
+                    "Vertex Count": 608,
+                    "Index Count": 1488
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "tube5",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1768014003,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1693315185,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1201419637,
+                    "Vertex Count": 1440,
+                    "Index Count": 3360
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "Cables",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1161908985,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1565719817,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                277788273,
+                875240352,
+                1575611065,
+                1331247358,
+                1219772046,
+                1976176608,
+                1508001504,
+                571236957,
+                1971217395,
+                1988519019,
+                632540393,
+                138162948,
+                1490185952,
+                1495093253,
+                702659523
+            ]
+        },
+        {
+            "Name": "cable1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 277788273,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1755478249,
+                    "Vertex Count": 144,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 875240352,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 582993701,
+                    "Vertex Count": 254,
+                    "Index Count": 792
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable3",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1575611065,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1360462662,
+                    "Vertex Count": 150,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable4",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1331247358,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1998315463,
+                    "Vertex Count": 150,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable5",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1219772046,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 43361130,
+                    "Vertex Count": 151,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1976176608,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2048854942,
+                    "Vertex Count": 150,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable7",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1508001504,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1174095162,
+                    "Vertex Count": 150,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable8",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 571236957,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 906357818,
+                    "Vertex Count": 156,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable9",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1971217395,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1845852191,
+                    "Vertex Count": 146,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable10",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1988519019,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 744320782,
+                    "Vertex Count": 146,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable11",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 632540393,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 230419634,
+                    "Vertex Count": 146,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable12",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 138162948,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1784961631,
+                    "Vertex Count": 243,
+                    "Index Count": 756
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable13",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1490185952,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 502259200,
+                    "Vertex Count": 90,
+                    "Index Count": 252
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable14",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1495093253,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1503922052,
+                    "Vertex Count": 143,
+                    "Index Count": 432
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "cable15",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 702659523,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1161908985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 454611953,
+                    "Vertex Count": 157,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1026,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_D.png",
+                    "Diffuse_UID": 2058361177,
+                    "Specular_ID": 1028,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_S.png",
+                    "Specular_UID": 609183351,
+                    "Normal_ID": 1030,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_N.png",
+                    "Normal_UID": 1763106758,
+                    "Height_ID": 1032,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_H.png",
+                    "Height_UID": 1239556220,
+                    "Ambient_ID": 1034,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 2\/Cables\/TEX_PROP_Cables_LAB2_A.png",
+                    "Ambient_UID": 2026329593
+                }
+            ]
+        },
+        {
+            "Name": "Metal_Boxes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1013147844,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1565719817,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1709638681,
+                292076400,
+                1245537678,
+                1047534294,
+                1046968384
+            ]
+        },
+        {
+            "Name": "MetalBox4 (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1709638681,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1013147844,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 31876708,
+                    "Vertex Count": 970,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 275,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 1062,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 279,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 1058,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 283,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 1054,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        17,
+                        17,
+                        17
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        -302.5,
+                        8,
+                        603.4000244140625
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        -0.40000000596046448,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox3 (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 292076400,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1013147844,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1392756155,
+                    "Vertex Count": 972,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 275,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 1062,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 279,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 1058,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 283,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 1054,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        12,
+                        12,
+                        12
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        -290.70001220703125,
+                        6,
+                        592.5999755859375
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox2 (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1245537678,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1013147844,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 577345595,
+                    "Vertex Count": 970,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 275,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 1062,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 279,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 1058,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 283,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 1054,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        13,
+                        13,
+                        13
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        -277,
+                        6.4000000953674316,
+                        597.20001220703125
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        -0.10000000149011612,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox1 (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1047534294,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1013147844,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 778177514,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 275,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 1062,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 279,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 1058,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 283,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 1054,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        16,
+                        16,
+                        16
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        -304.79998779296875,
+                        8.5,
+                        482.79998779296875
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1046968384,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART2_FINAL\/Assets_LAB_PART2.fbx",
+            "Parent UID": 1013147844,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 655570191,
+                    "Vertex Count": 970,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 275,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 1062,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 279,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 1058,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 283,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 1054,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        12,
+                        12,
+                        12
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        -288.60000610351562,
+                        5,
+                        484.5
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0.20000000298023224,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "Spawner",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15470,7 +17405,7 @@
             "UID": 1459372103,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15547,7 +17482,7 @@
             "UID": 1393792402,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15624,7 +17559,7 @@
             "UID": 1799577663,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15701,7 +17636,7 @@
             "UID": 1224520343,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15778,7 +17713,7 @@
             "UID": 778851339,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15855,7 +17790,7 @@
             "UID": 208637195,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15932,7 +17867,7 @@
             "UID": 346797426,
             "Active": false,
             "Element_Type": "Model",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16033,7 +17968,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17181,7 +19116,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18061,7 +19996,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20116,7 +22051,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20307,7 +22242,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22334,7 +24269,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -29894,7 +31829,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30435,7 +32370,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30788,7 +32723,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30965,7 +32900,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31775,7 +33710,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32447,7 +34382,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
@@ -45642,7 +47577,7 @@
             "UID": 1278660870,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 959542752,
+            "Parent UID": 2053807299,
             "Components": [
                 {
                     "Type": "Transform",
