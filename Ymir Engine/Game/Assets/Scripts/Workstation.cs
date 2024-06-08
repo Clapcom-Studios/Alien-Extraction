@@ -50,8 +50,8 @@ public class Workstation : YmirComponent
             if (other.Tag == "Player" && Input.IsGamepadButtonAPressedCS() || other.Name == "Player" && Input.IsGamepadButtonAPressedCS())
             {
                 popup.SetActive(false);
-                player.currentMenu = goName;
-                player.ToggleMenu(true);
+                //player.currentMenu = goName;
+                player.ToggleMenu(true, goName);
                 show_menu = false;
             }
         }
