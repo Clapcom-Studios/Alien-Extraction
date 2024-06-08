@@ -1,0 +1,110 @@
+{
+    "Prefab": [
+        {
+            "Name": "DEC_Tutorial_Trigger_Image",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1241085497,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 555287267,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                928585864
+            ]
+        },
+        {
+            "Name": "DEC_Tutorial_Trigger_Image (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 928585864,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/DEC_Tutorial_Trigger_Image.fbx",
+            "Parent UID": 1241085497,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0.20000000298023224,
+                        0
+                    ],
+                    "Rotation": [
+                        -180,
+                        -43.624820709228516,
+                        -180
+                    ],
+                    "Scale": [
+                        10.338991165161133,
+                        0.27207687497138977,
+                        10.338991165161133
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1109056982,
+                    "Vertex Count": 4,
+                    "Index Count": 6
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1378,
+                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Tutorial\/TEX_PROP_ArnauDecals_D.png",
+                    "Diffuse_UID": 493449477,
+                    "Specular_ID": 1390,
+                    "Specular_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Tutorial\/TEX_Tutorial_Trigger_S.png",
+                    "Specular_UID": 176636940,
+                    "Normal_ID": 1386,
+                    "Normal_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Tutorial\/TEX_Tutorial_Trigger_N.png",
+                    "Normal_UID": 1303671489,
+                    "Height_ID": 1382,
+                    "Height_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Tutorial\/TEX_Tutorial_Trigger_H.png",
+                    "Height_UID": 233577109
+                }
+            ]
+        }
+    ]
+}
