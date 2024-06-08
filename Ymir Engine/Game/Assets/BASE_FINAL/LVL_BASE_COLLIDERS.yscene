@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -79.800590515136719,
-        54.791233062744141,
-        33.272117614746094
+        -57.335418701171875,
+        58.248928070068359,
+        57.244674682617188
     ],
     "Editor Camera Right (X)": [
-        0.99314969778060913,
-        -1.8887221813201904e-06,
-        0.11696682870388031
+        0.94820481538772583,
+        -5.5134296417236328e-07,
+        0.31386783719062805
     ],
     "Editor Camera Up (Y)": [
-        0.093336008489131927,
-        0.60270112752914429,
-        -0.79249387979507446
+        0.19359931349754333,
+        0.78615832328796387,
+        -0.58486831188201904
     ],
     "Editor Camera Front (Z)": [
-        0.070494554936885834,
-        -0.7979736328125,
-        -0.59857273101806641
+        0.2473437488079071,
+        -0.61682295799255371,
+        -0.74723446369171143
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 749097492,
+            "UID": 1994709748,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -49,7 +49,9 @@
                 1676754095,
                 1781007999,
                 728169813,
-                1806365249
+                1806365249,
+                1614273345,
+                1829172732
             ]
         },
         {
@@ -59,7 +61,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1743,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1908,24 +1910,24 @@
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1907,
+                    "Diffuse_ID": 4769,
                     "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_D.png",
-                    "Diffuse_UID": 650517951,
-                    "Specular_ID": 1711,
-                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
-                    "Specular_UID": 77663990,
-                    "Normal_ID": 1913,
+                    "Diffuse_UID": 642519894,
+                    "Specular_ID": 4784,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
+                    "Specular_UID": 293916259,
+                    "Normal_ID": 4780,
                     "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_N.png",
-                    "Normal_UID": 2098994329,
-                    "Height_ID": 1705,
-                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
-                    "Height_UID": 315706084,
-                    "Ambient_ID": 1903,
+                    "Normal_UID": 1314918048,
+                    "Height_ID": 4777,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
+                    "Height_UID": 1040059758,
+                    "Ambient_ID": 4787,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_A.png",
-                    "Ambient_UID": 882649465,
-                    "Emissive_ID": 1910,
+                    "Ambient_UID": 1103766639,
+                    "Emissive_ID": 4773,
                     "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_E.png",
-                    "Emissive_UID": 227594324
+                    "Emissive_UID": 1547837161
                 },
                 {
                     "World gravity": [
@@ -6428,7 +6430,7 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
+                        2.2809925079345703,
                         0,
                         0
                     ],
@@ -9909,7 +9911,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12680,7 +12682,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12717,7 +12719,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13089,9 +13091,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -82.532630920410156,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13174,9 +13176,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -27.589302062988281,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13248,7 +13250,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13259,9 +13261,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13443,7 +13445,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13595,7 +13597,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13747,7 +13749,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13774,7 +13776,7 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 850,
+                    "Width": 852,
                     "Height": 381,
                     "UI Type": 0,
                     "UI State": 1,
@@ -15873,7 +15875,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22735,7 +22737,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24597,7 +24599,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53390,7 +53392,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57405,7 +57407,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67610,7 +67612,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68355,7 +68357,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68896,7 +68898,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69251,7 +69253,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69492,7 +69494,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70302,7 +70304,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 749097492,
+            "Parent UID": 1994709748,
             "Components": [
                 {
                     "Type": "Transform",
@@ -83484,6 +83486,1544 @@
                     "Bank Name": "BaseMusic",
                     "Event Name": "B_Music",
                     "Event ID": 2462702937
+                }
+            ]
+        },
+        {
+            "Name": "PROP_TP_Room_Decoration",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1614273345,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1994709748,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -67.0596923828125,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1660772236,
+                921518905,
+                466012895,
+                477063084,
+                364624686,
+                93810502,
+                877320236,
+                2017160147,
+                888089313,
+                783036421,
+                487400163,
+                1294885182,
+                2002662181
+            ]
+        },
+        {
+            "Name": "Chair_LowPoly",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1660772236,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 554314843,
+                    "Vertex Count": 1042,
+                    "Index Count": 1890
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5800,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_D.png",
+                    "Diffuse_UID": 1579717236,
+                    "Specular_ID": 5806,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_S.png",
+                    "Specular_UID": 1572798811,
+                    "Normal_ID": 5804,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_N.png",
+                    "Normal_UID": 1800031847,
+                    "Height_ID": 5802,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_H.png",
+                    "Height_UID": 827727014,
+                    "Ambient_ID": 5798,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_A.png",
+                    "Ambient_UID": 542038411
+                }
+            ]
+        },
+        {
+            "Name": "HoloScreen2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 921518905,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -11.644088745117188,
+                        0,
+                        8.9606075286865234
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1.3950941562652588,
+                        1.1499999761581421,
+                        1.1499999761581421
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 163222255,
+                    "Vertex Count": 196,
+                    "Index Count": 438
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5810,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_D.png",
+                    "Diffuse_UID": 1103461378,
+                    "Specular_ID": 5822,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_S.png",
+                    "Specular_UID": 978025318,
+                    "Normal_ID": 5818,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_N.png",
+                    "Normal_UID": 936266328,
+                    "Height_ID": 5814,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_H.png",
+                    "Height_UID": 1956964097,
+                    "Ambient_ID": 5808,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_A.png",
+                    "Ambient_UID": 429214952,
+                    "Emissive_ID": 5812,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_E.png",
+                    "Emissive_UID": 1836336194
+                }
+            ]
+        },
+        {
+            "Name": "Server_LOW1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 466012895,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 432369659,
+                    "Vertex Count": 1198,
+                    "Index Count": 2490
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5844,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_D.png",
+                    "Diffuse_UID": 1148866265,
+                    "Specular_ID": 5854,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_S.png",
+                    "Specular_UID": 262350116,
+                    "Normal_ID": 5850,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_N.png",
+                    "Normal_UID": 1729175332,
+                    "Height_ID": 5848,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_H.png",
+                    "Height_UID": 1463839174,
+                    "Ambient_ID": 5858,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_A.png",
+                    "Ambient_UID": 2090582516,
+                    "Emissive_ID": 5856,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_E.png",
+                    "Emissive_UID": 1397337919
+                }
+            ]
+        },
+        {
+            "Name": "Server_LOW2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 477063084,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2092139313,
+                    "Vertex Count": 1198,
+                    "Index Count": 2490
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5844,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_D.png",
+                    "Diffuse_UID": 1148866265,
+                    "Specular_ID": 5854,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_S.png",
+                    "Specular_UID": 262350116,
+                    "Normal_ID": 5850,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_N.png",
+                    "Normal_UID": 1729175332,
+                    "Height_ID": 5848,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_H.png",
+                    "Height_UID": 1463839174,
+                    "Ambient_ID": 5858,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_A.png",
+                    "Ambient_UID": 2090582516,
+                    "Emissive_ID": 5856,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_E.png",
+                    "Emissive_UID": 1397337919
+                }
+            ]
+        },
+        {
+            "Name": "Chair_LowPoly_2_",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 364624686,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        43.209224700927734,
+                        -6.103515625e-05,
+                        29.170873641967773
+                    ],
+                    "Rotation": [
+                        0,
+                        -77.526473999023438,
+                        0
+                    ],
+                    "Scale": [
+                        1.0000020265579224,
+                        1,
+                        1.0000020265579224
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1032044004,
+                    "Vertex Count": 1042,
+                    "Index Count": 1890
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5800,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_D.png",
+                    "Diffuse_UID": 1579717236,
+                    "Specular_ID": 5806,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_S.png",
+                    "Specular_UID": 1572798811,
+                    "Normal_ID": 5804,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_N.png",
+                    "Normal_UID": 1800031847,
+                    "Height_ID": 5802,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_H.png",
+                    "Height_UID": 827727014,
+                    "Ambient_ID": 5798,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_A.png",
+                    "Ambient_UID": 542038411
+                }
+            ]
+        },
+        {
+            "Name": "Console_LOW_2_",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 93810502,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        57.046840667724609,
+                        0,
+                        45.430973052978516
+                    ],
+                    "Rotation": [
+                        180,
+                        53.832241058349609,
+                        180
+                    ],
+                    "Scale": [
+                        1.0000060796737671,
+                        1,
+                        1.0000060796737671
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1707680526,
+                    "Vertex Count": 1228,
+                    "Index Count": 2424
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 4769,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_D.png",
+                    "Diffuse_UID": 642519894,
+                    "Specular_ID": 4784,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
+                    "Specular_UID": 293916259,
+                    "Normal_ID": 4780,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_N.png",
+                    "Normal_UID": 1314918048,
+                    "Height_ID": 4777,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
+                    "Height_UID": 1040059758,
+                    "Ambient_ID": 4787,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_A.png",
+                    "Ambient_UID": 1103766639,
+                    "Emissive_ID": 4773,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_E.png",
+                    "Emissive_UID": 1547837161
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        12,
+                        9.8000001907348633,
+                        26.299999237060547
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        2.4000000953674316,
+                        4.5,
+                        4.4000000953674316
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Carrito (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 877320236,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -14.527908325195312,
+                        2.5634029133300013e-14,
+                        39.063911437988281
+                    ],
+                    "Rotation": [
+                        1.5184642734311637e-06,
+                        57.402263641357422,
+                        -1.1229945812374353e-05
+                    ],
+                    "Scale": [
+                        1.0000005960464478,
+                        1,
+                        1.0000005960464478
+                    ]
+                }
+            ],
+            "Children UID": [
+                593374710,
+                1257492990
+            ]
+        },
+        {
+            "Name": "PROPS (3)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 593374710,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 877320236,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 175213382,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Carrito_LowPoly (3)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1257492990,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 877320236,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 734026332,
+                    "Vertex Count": 606,
+                    "Index Count": 1356
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 4294,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
+                    "Specular_ID": 5826,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_S.png",
+                    "Specular_UID": 1432592573,
+                    "Normal_ID": 4307,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
+                    "Height_ID": 5830,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_H.png",
+                    "Height_UID": 1255616623,
+                    "Ambient_ID": 4318,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
+                }
+            ]
+        },
+        {
+            "Name": "Cable_1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2017160147,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1993445897,
+                    "Vertex Count": 98,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 888089313,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 995573020,
+                    "Vertex Count": 51,
+                    "Index Count": 216
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_3",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 783036421,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1130031028,
+                    "Vertex Count": 105,
+                    "Index Count": 504
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_4",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 487400163,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1272883382,
+                    "Vertex Count": 222,
+                    "Index Count": 1044
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_5",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1294885182,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 16281985,
+                    "Vertex Count": 154,
+                    "Index Count": 756
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2002662181,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2100594325,
+                    "Vertex Count": 182,
+                    "Index Count": 900
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "PROP_LVL2_Part1_MetalBoxes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1829172732,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1994709748,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        7.4905204772949219,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                904490451
+            ]
+        },
+        {
+            "Name": "LVL2_MAP_Part1:Metal_Boxes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 904490451,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 1829172732,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -12.000672340393066,
+                        -102.12843322753906,
+                        -51.548412322998047
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                753096947,
+                92599348,
+                1184618374,
+                1213427185
+            ]
+        },
+        {
+            "Name": "MetalBox6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 753096947,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -121.30645751953125,
+                        36.664260864257812,
+                        266.25518798828125
+                    ],
+                    "Rotation": [
+                        -180,
+                        -34.306888580322266,
+                        -180
+                    ],
+                    "Scale": [
+                        0.62633877992630005,
+                        0.62633603811264038,
+                        0.62633877992630005
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 795428665,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox7",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 92599348,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        117.85598754882812,
+                        5.340576171875e-05,
+                        -78.63262939453125
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 914188862,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox9",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1184618374,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -21.799507141113281,
+                        -0.0001220703125,
+                        0.40394973754882812
+                    ],
+                    "Rotation": [
+                        0,
+                        -40.182037353515625,
+                        0
+                    ],
+                    "Scale": [
+                        1.0000125169754028,
+                        1,
+                        1.0000125169754028
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 29939002,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox10",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1213427185,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -63.881874084472656,
+                        -5.340576171875e-05,
+                        94.577178955078125
+                    ],
+                    "Rotation": [
+                        -0,
+                        21.252191543579102,
+                        -0
+                    ],
+                    "Scale": [
+                        0.9999995231628418,
+                        1,
+                        0.9999995231628418
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 582006079,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
                 }
             ]
         }

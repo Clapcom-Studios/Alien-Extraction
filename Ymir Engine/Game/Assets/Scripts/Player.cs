@@ -828,8 +828,8 @@ public class Player : YmirComponent
             if (Input.GetGamepadButton(GamePadButton.START) == KeyState.KEY_DOWN)
             {
                 Debug.Log("Paused");
-                currentMenu = "Pause Canvas";
-                ToggleMenu(true);
+                //currentMenu = "Pause Canvas";
+                ToggleMenu(true, "Pause Canvas");
             }
         }
 
@@ -838,15 +838,15 @@ public class Player : YmirComponent
             // If player is on menu and presses B, quit menu
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && currentMenu != "")
             {
-                ToggleMenu(false);
+                ToggleMenu(false, "");
             }
         }
 
         //----------------- Inventory -----------------\\
-        if (Input.GetGamepadButton(GamePadButton.DPAD_RIGHT) == KeyState.KEY_DOWN && currentMenu == "")
+        if (Input.GetGamepadButton(GamePadButton.DPAD_RIGHT) == KeyState.KEY_DOWN/* && currentMenu == ""*/)
         {
-            currentMenu = "Inventory Menu";
-            ToggleMenu(true);
+            //currentMenu = "Inventory Menu";
+            ToggleMenu(true, "Inventory Menu");
         }
 
         ////----------------- Upgrade -----------------\\
@@ -1673,7 +1673,7 @@ public class Player : YmirComponent
         //forward.y = 0f;
         //if (!isAiming)
         //{
-           
+
         //}
         //else
         //{
@@ -1800,26 +1800,40 @@ public class Player : YmirComponent
         }
     }
 
-    public void ToggleMenu(bool open)
+    public void ToggleMenu(bool open, string menu)
     {
-        GameObject canvas = InternalCalls.GetGameObjectByName(currentMenu);
-
-        if (canvas != null)
+        Debug.Log("CurrentMenu: " + currentMenu + " menu " + menu);
+        if (currentMenu == menu || currentMenu == "" || menu == "")
         {
-            Debug.Log("CurrentMenu: " + canvas.Name + " " + open.ToString());
-
-            canvas.SetActive(open);
-            PlayerStopState(open);
-
-            if (!open)
+            if (open)
             {
-                currentMenu = "";
+                currentMenu = menu;
             }
-            else
+
+            GameObject canvas = InternalCalls.GetGameObjectByName(currentMenu);
+
+            if (canvas != null)
             {
-                UI.SetFirstFocused(canvas);
+                Debug.Log("CurrentMenu: " + canvas.Name + " " + open.ToString());
+
+                if (open)
+                {
+                    if (currentState != STATE.STOP)
+                    {
+                        canvas.SetActive(open);
+                        PlayerStopState(open);
+                        UI.SetFirstFocused(canvas);
+                    }
+                }
+                else
+                {
+                    canvas.SetActive(open);
+                    PlayerStopState(open);
+
+                    currentMenu = "";
+                }
             }
-        }
+        }        
     }
 
     // External scripts
@@ -1910,7 +1924,7 @@ public class Player : YmirComponent
 
         predatoryTimer = predatoryDuration;
 
-        StartFOVInterpolation(60,80,0.25f);
+        StartFOVInterpolation(60, 80, 0.25f);
     }
 
     private void EndPredRush()
@@ -2117,7 +2131,7 @@ public class Player : YmirComponent
             UI.TextEdit(resinText, currentResinVessels.ToString() + "/" + maxResinVessels.ToString());
         }
     }
-    
+
     public void ReCountAlienCore()
     {
         numCores = 0;
@@ -2259,7 +2273,7 @@ public class Player : YmirComponent
 
         // Stats
         csHealth.currentHealth = (float)SaveLoad.LoadFloat(Globals.saveGameDir, saveName, "Health");
-        LoadResin();       
+        LoadResin();
 
         // Items
         LoadItems();

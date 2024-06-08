@@ -16,10 +16,12 @@ public class UI_Upgrade_Station : YmirComponent
     {
         _focusedGO = UI.GetFocused();
         description = InternalCalls.GetChildrenByName(gameObject, "Description");
-        cost = InternalCalls.GetChildrenByName(gameObject, "Cost");        
+        cost = InternalCalls.GetChildrenByName(gameObject, "Cost");
         coins = InternalCalls.GetChildrenByName(gameObject, "Coins");
 
         _player = Globals.GetPlayerScript();
+        _player.ReCountAlienCore();
+
         UI.TextEdit(coins, _player.numCores.ToString());
     }
 

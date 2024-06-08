@@ -30,8 +30,8 @@ public class UI_ToggleMenu : YmirComponent
 
         if (player != null)
         {
-            player.currentMenu = menu;
-            player.ToggleMenu(active); 
+            //player.currentMenu = menu;
+            player.ToggleMenu(active, menu);
         }
     }
 }
