@@ -1373,6 +1373,9 @@ public class Player : YmirComponent
 
         if (currentWeapon.ShootAvailable()) inputsList.Add(INPUT.I_SHOOT);
 
+        if (isAiming)
+            LookAt(aimAngle, 15);
+
         if (JoystickMoving() == true)
             HandleRotation();
     }
@@ -1671,15 +1674,9 @@ public class Player : YmirComponent
         //Debug.Log("Fuersa:" + gameObject.transform.GetForward());
         //Vector3 forward = gameObject.transform.GetForward();
         //forward.y = 0f;
-        //if (!isAiming)
-        //{
-           
-        //}
-        //else
-        //{
-        //    gameObject.transform.LookAt(target.transform.globalPosition);
-        //}
+        
         HandleRotation();
+
 
         Particles.ParticlesForward(walkParticles, gameObject.transform.GetForward(), 0, -5.0f);
         Particles.PlayParticlesTrigger(walkParticles);
@@ -2035,17 +2032,14 @@ public class Player : YmirComponent
 
     }
 
-    public void LookAt(float angle)
+    public void LookAt(float angle, float speed)
     {
         if (Math.Abs(angle * Mathf.Rad2Deg) < 1.0f)
             return;
 
         Quaternion dir = Quaternion.RotateAroundAxis(Vector3.up, angle);
 
-        float rotationSpeed = Time.deltaTime * 1;
-
-
-        Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, rotationSpeed);
+        Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, speed * Time.deltaTime);
 
         gameObject.SetRotation(desiredRotation);
 

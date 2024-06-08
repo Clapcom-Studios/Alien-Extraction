@@ -40,20 +40,11 @@ public class Auto_Aim : YmirComponent
 
         if (target != null)
 		{
-            Vector3 vec1 = Vector3.Normalize(gameObject.transform.globalPosition);
-            Vector3 vec2 = Vector3.Normalize(target.transform.globalPosition);
+            Vector3 direction = target.transform.globalPosition - playerObject.transform.globalPosition;
+            direction = direction.normalized;
+            angle = (float)Math.Atan2(direction.x, direction.z);
 
-            vec1.y = 0f;
-            vec2.y = 0f;
-
-            angle = (float)Math.Acos(Vector3.Dot(vec1, vec2));
-
-            //Debug.Log("Target Pos: " + target.transform.globalPosition);
-            //Debug.Log("Angle: " + angle);
-
-            //playerObject.transform.LookAt(new Vector3(target.transform.globalPosition.x, playerObject.transform.globalPosition.y, target.transform.globalPosition.z));
-            //player.target = target;
-
+            player.aimAngle = angle;
             player.isAiming = true;
 
 
