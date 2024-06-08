@@ -671,7 +671,7 @@ public class QueenXenomorphBaseScript : YmirComponent
     {
         if (life <= 0)
         {
-            SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "Boss Fight", false);
+            SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "Boss Fight", true);
 
             //Animation.PlayAnimation(gameObject, "Boss_Die.002");
             Debug.Log("[ERROR] DEATH");
