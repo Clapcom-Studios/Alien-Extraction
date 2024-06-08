@@ -2046,6 +2046,112 @@
     ]
    },
    {
+    "Id": "1634322527",
+    "Language": "SFX",
+    "Hash": "3187984961",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Dialogue\\Normalend",
+    "ShortName": "Normalend",
+    "Path": "Normalend.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1302258087",
+      "Name": "Normalend_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Normal_End\\Normalend_1",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3845",
+      "DurationMax": "1.3845",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "493686532",
+        "Language": "SFX",
+        "ShortName": "1.wav",
+        "Path": "SFX\\1_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1302258084",
+      "Name": "Normalend_2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Normal_End\\Normalend_2",
+      "DurationType": "OneShot",
+      "DurationMin": "2.638375",
+      "DurationMax": "2.638375",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "345380661",
+        "Language": "SFX",
+        "ShortName": "2.wav",
+        "Path": "SFX\\2_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1302258085",
+      "Name": "Normalend_3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Normal_End\\Normalend_3",
+      "DurationType": "OneShot",
+      "DurationMin": "1.567354",
+      "DurationMax": "1.567354",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "797849851",
+        "Language": "SFX",
+        "ShortName": "3.wav",
+        "Path": "SFX\\3_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1302258082",
+      "Name": "Normalend_4",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Normal_End\\Normalend_4",
+      "DurationType": "OneShot",
+      "DurationMin": "1.671833",
+      "DurationMax": "1.671833",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "628151895",
+        "Language": "SFX",
+        "ShortName": "4.wav",
+        "Path": "SFX\\4_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1302258083",
+      "Name": "Normalend_5",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Normal_End\\Normalend_5",
+      "DurationType": "OneShot",
+      "DurationMin": "1.697958",
+      "DurationMax": "1.697958",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "126430504",
+        "Language": "SFX",
+        "ShortName": "5.wav",
+        "Path": "SFX\\5_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1302258080",
+      "Name": "Normalend_6",
+      "ObjectPath": "\\Events\\Default Work Unit\\Dialogue\\Normal_End\\Normalend_6",
+      "DurationType": "OneShot",
+      "DurationMin": "2.037542",
+      "DurationMax": "2.037542",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "448054232",
+        "Language": "SFX",
+        "ShortName": "6.wav",
+        "Path": "SFX\\6_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "Id": "2315910343",
     "Language": "SFX",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Characters\\Iscariot",
@@ -3036,7 +3142,6 @@
    {
     "Id": "3930136735",
     "Language": "SFX",
-    "Hash": "3644777679",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Dialogue\\Dialogue",
     "ShortName": "Dialogue",
     "Path": "Dialogue.bnk",

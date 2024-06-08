@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1618097372,
+            "UID": 380894387,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -43,7 +43,7 @@
             "UID": 1624412438,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1618097372,
+            "Parent UID": 380894387,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54,9 +54,9 @@
                         54
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         40.000007629394531,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -81,17 +81,17 @@
                     "Active": 1,
                     "Right": [
                         0.76604437828063965,
-                        1.4361705780174816e-07,
+                        -1.4361705780174816e-07,
                         0.64278769493103027
                     ],
                     "Up": [
-                        -6.696972576492044e-08,
+                        6.696972576492044e-08,
                         1,
-                        -1.4361705780174816e-07
+                        1.4361705780174816e-07
                     ],
                     "Front": [
                         0.64278769493103027,
-                        -6.696972576492044e-08,
+                        6.696972576492044e-08,
                         -0.76604437828063965
                     ],
                     "FOV": 60.000003814697266,
@@ -110,7 +110,7 @@
             "UID": 818596370,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1618097372,
+            "Parent UID": 380894387,
             "Components": [
                 {
                     "Type": "Transform",
@@ -227,8 +227,8 @@
                     "maxFrames": 7,
                     "hasFinished": false,
                     "introScene": false,
-                    "winScene1": true,
-                    "winScene2": false
+                    "winScene1": false,
+                    "winScene2": true
                 }
             ]
         },
@@ -348,7 +348,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1618097372,
+            "Parent UID": 380894387,
             "Components": [
                 {
                     "Type": "Transform",
@@ -396,7 +396,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1138588084,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1781007999,
             "Components": [
@@ -435,7 +435,7 @@
                         1920,
                         1080
                     ],
-                    "Path": "Assets\/CutScenes\/Final_Normal\/Image (6).png",
+                    "Path": "Assets\/UI\/LoadingScenes\/Base.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -461,7 +461,7 @@
             "UID": 823932371,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1618097372,
+            "Parent UID": 380894387,
             "Components": [
                 {
                     "Type": "Transform",
