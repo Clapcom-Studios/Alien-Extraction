@@ -953,8 +953,8 @@ void ModuleScene::GetUINavigate(GameObject* go, std::vector<C_UI*>& listgo)
 	{
 		for (auto i = 0; i < static_cast<G_UI*>(go)->mComponents.size(); i++)
 		{
-			if (static_cast<G_UI*>(go)->mComponents[i]->ctype == ComponentType::UI && static_cast<C_UI*>(static_cast<G_UI*>(go)->mComponents[i])->tabNav_ &&
-				static_cast<C_UI*>(static_cast<G_UI*>(go)->mComponents[i])->state != UI_STATE::DISABLED)
+			if (static_cast<G_UI*>(go)->mComponents[i]->ctype == ComponentType::UI && static_cast<C_UI*>(static_cast<G_UI*>(go)->mComponents[i])->tabNav_ /* &&
+				static_cast<C_UI*>(static_cast<G_UI*>(go)->mComponents[i])->state != UI_STATE::DISABLED*/)
 			{
 				listgo.push_back((C_UI*)static_cast<G_UI*>(go)->mComponents[i]);
 			}
