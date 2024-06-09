@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 911554203,
+            "UID": 1063079088,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -47,7 +47,7 @@
             "UID": 1285509392,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -244,7 +244,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -789,7 +789,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1144,7 +1144,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1171,8 +1171,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 607,
-                    "Height": 544,
+                    "Width": 986,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -1623,7 +1623,7 @@
                         200,
                         50
                     ],
-                    "Text": "35\/35",
+                    "Text": "27\/35",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 15,
@@ -3622,7 +3622,7 @@
             "UID": 1768350044,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -3687,7 +3687,7 @@
             "UID": 332055288,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -3727,14 +3727,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
-                        -1.434666633605957,
-                        0
+                        -0.9560699462890625,
+                        -1.0895748138427734,
+                        2.603590726852417
                     ],
                     "Rotation": [
-                        -0,
-                        0,
-                        -0
+                        -173.67015075683594,
+                        40.847187042236328,
+                        176.20988464355469
                     ],
                     "Scale": [
                         0.02500000037252903,
@@ -3772,7 +3772,7 @@
                     "knockBackSpeed": 200,
                     "wanderState": 0,
                     "timePassed": 0,
-                    "life": 240,
+                    "life": 90,
                     "armor": 0,
                     "rarity": 0,
                     "wanderRange": 100,
@@ -3789,7 +3789,7 @@
                     "rareProb": 5,
                     "epicProb": 2,
                     "droneState": 0,
-                    "timeCounter": 3.2309994697570801
+                    "timeCounter": 0.45100000500679016
                 },
                 {
                     "Type": "Audio source",
@@ -4739,14 +4739,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
+                        -0.9560699462890625,
                         30,
-                        0
+                        2.603590726852417
                     ],
                     "Rotation": [
-                        -32.113742828369141,
-                        -14.02357292175293,
-                        -8.6477689743041992
+                        -35.914215087890625,
+                        -4.5043206214904785,
+                        -3.2554211616516113
                     ],
                     "Scale": [
                         1,
@@ -4759,7 +4759,7 @@
                     "ScriptName": "Health_Bar_Test.cs",
                     "Active": 1,
                     "UID": 0,
-                    "HP": 240,
+                    "HP": 90,
                     "initialHP": 300
                 }
             ],
@@ -4791,7 +4791,7 @@
                         -0
                     ],
                     "Scale": [
-                        12,
+                        3.5999999046325684,
                         1,
                         1
                     ]
@@ -4835,7 +4835,7 @@
             "UID": 1655101801,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4876,7 +4876,7 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        2.3886861801147461,
+                        -0.10351848602294922,
                         0
                     ],
                     "Rotation": [
@@ -4924,7 +4924,7 @@
                     "knockBackSpeed": 200,
                     "wanderState": 0,
                     "timePassed": 0,
-                    "life": 110,
+                    "life": 99,
                     "armor": 0,
                     "rarity": 0,
                     "wanderRange": 100,
@@ -5624,9 +5624,9 @@
                         0
                     ],
                     "Rotation": [
-                        -38.3338623046875,
-                        -4.776092529296875,
-                        -3.7667055130004883
+                        -42.029335021972656,
+                        5.0251460075378418,
+                        4.5141539573669434
                     ],
                     "Scale": [
                         0.66134387254714966,
@@ -5639,7 +5639,7 @@
                     "ScriptName": "Health_Bar_Test.cs",
                     "Active": 1,
                     "UID": 0,
-                    "HP": 110,
+                    "HP": 99,
                     "initialHP": 120
                 }
             ],
@@ -5671,7 +5671,7 @@
                         -0
                     ],
                     "Scale": [
-                        13.75,
+                        11.34375,
                         1,
                         1
                     ]
@@ -5715,7 +5715,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1063079088,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5755,14 +5755,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
-                        0,
-                        0
+                        -16.213153839111328,
+                        0.10699653625488281,
+                        52.597873687744141
                     ],
                     "Rotation": [
-                        -0,
-                        0,
-                        -0
+                        -180,
+                        -43.0009765625,
+                        -180
                     ],
                     "Scale": [
                         0.10000000149011612,
@@ -5848,7 +5848,7 @@
                     "UID": 0,
                     "currentHealth": 1200,
                     "maxHealth": 1200,
-                    "armor": 0,
+                    "armor": 10,
                     "isAlive": true,
                     "debugDmg": 100
                 },
@@ -5863,19 +5863,19 @@
                     "ScriptName": "Player.cs",
                     "Active": 1,
                     "UID": 0,
-                    "saveName": "Player_2",
+                    "saveName": "Player",
                     "currentState": -1,
                     "reloading": true,
-                    "movementSpeed": 5000,
+                    "movementSpeed": 3000,
                     "deathAnimFinish": false,
-                    "godMode": true,
+                    "godMode": false,
                     "weaponType": 0,
                     "upgradeType": 0,
                     "damageMultiplier": 0,
                     "vulnerable": true,
                     "aimSensor": 722618905,
-                    "aimAngle": -2.7035396099090576,
-                    "isAiming": false,
+                    "aimAngle": -2.3877010345458984,
+                    "isAiming": true,
                     "itemsList": 0,
                     "currentResinVessels": 2,
                     "maxResinVessels": 2,
@@ -7463,9 +7463,9 @@
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
-                                        3.9655411243438721,
+                                        3.535534143447876,
                                         0,
-                                        -3.0454039573669434
+                                        3.5355334281921387
                                     ],
                                     "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
@@ -8573,11 +8573,11 @@
                     "_upgrade": -1,
                     "ammo": 35,
                     "fireRate": 0.070000000298023224,
-                    "damage": 5,
+                    "damage": 7,
                     "reloadTime": 1.5559999942779541,
                     "range": 150,
-                    "currentAmmo": 22,
-                    "fireRateTimer": -0.0069999992847442627,
+                    "currentAmmo": 27,
+                    "fireRateTimer": -0.032000001519918442,
                     "reloadTimer": 0,
                     "reloading": false
                 },
@@ -8691,7 +8691,7 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        205.09898376464844
+                                        223.13996887207031
                                     ]
                                 },
                                 {
@@ -8779,9 +8779,9 @@
                                     "Random": false,
                                     "UseShapeBase": false,
                                     "Direction1": [
-                                        -0.4241834282875061,
+                                        -0.68378299474716187,
                                         -7.1054273576010019e-15,
-                                        -0.90557628870010376
+                                        -0.72968542575836182
                                     ],
                                     "Direction2": [
                                         0,
@@ -8811,7 +8811,7 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        205.09898376464844
+                                        223.13996887207031
                                     ]
                                 },
                                 {
@@ -14047,12 +14047,12 @@
                     "Translation": [
                         0,
                         0,
-                        0
+                        -75
                     ],
                     "Rotation": [
-                        -89.999992370605469,
-                        -5.122642050991999e-06,
-                        -0
+                        -90,
+                        0,
+                        -136.9990234375
                     ],
                     "Scale": [
                         10,
@@ -14175,9 +14175,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -101.92661285400391,
-                        116.21450042724609,
-                        138.21018981933594
+                        -73.262298583984375,
+                        111.10701751708984,
+                        115.42220306396484
                     ],
                     "Rotation": [
                         120.00009918212891,
@@ -14236,7 +14236,7 @@
                 {
                     "Type": "Audio source",
                     "Active": 1,
-                    "Bank Name": "",
+                    "Bank Name": "BaseMusic",
                     "Event Name": "",
                     "Event ID": 0
                 }
