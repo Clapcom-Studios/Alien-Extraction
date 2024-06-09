@@ -403,8 +403,8 @@ public class Player : YmirComponent
         movementVector = new Vector3(movementVector.x, gravity, movementVector.z);
 
         // Aim sensor Position
-        //if (aimSensor != null)
-        //    aimSensor.SetPosition(gameObject.transform.globalPosition);
+        if (aimSensor != null)
+            aimSensor.SetPosition(gameObject.transform.globalPosition);
 
         UpdateControllerInputs();
 
