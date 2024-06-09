@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using YmirEngine;
+using static Player;
 
 public class Caius : YmirComponent
 {
@@ -762,6 +763,8 @@ public class Caius : YmirComponent
             {
                 //Open crafting menu
                 ExitDialogue();
+
+                player.currentState = STATE.IDLE;
                 //player.currentMenu = "Crafting Canvas";
                 player.ToggleMenu(true, "Crafting Canvas");
                 return;

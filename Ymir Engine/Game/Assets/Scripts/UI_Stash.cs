@@ -310,7 +310,6 @@ public class UI_Stash : YmirComponent
                     }
                 }
             }
-            
 
             if (isSave)
             {
