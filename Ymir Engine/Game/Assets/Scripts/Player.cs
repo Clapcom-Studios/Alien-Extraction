@@ -187,6 +187,7 @@ public class Player : YmirComponent
 
     //--------------------- External GameObjects ---------------------\\
     private GameObject cameraObject;
+    private GameObject gameCanvas;
 
     //--------------------- External Scripts ---------------------\\
     public UI_Bullets csBullets;
@@ -328,6 +329,8 @@ public class Player : YmirComponent
         currentState = STATE.IDLE;
 
         //--------------------- Menus ---------------------\\
+        gameCanvas = InternalCalls.GetGameObjectByName("Game Canvas");
+
         Globals.itemsDictionary = new Dictionary<string, Item>();
         Globals.CreateItemDictionary();
 
@@ -845,8 +848,6 @@ public class Player : YmirComponent
             // If player is on menu and presses B, quit menu
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && currentMenu != "")
             {
-                Debug.Log("aaaaaaaaaa: " + currentMenu);
-
                 ToggleMenu(false, "");
             }
         }
@@ -1819,6 +1820,8 @@ public class Player : YmirComponent
                 {
                     if (currentState != STATE.STOP)
                     {
+                        gameCanvas.SetActive(false);
+
                         canvas.SetActive(open);
                         PlayerStopState(open);
                         UI.SetFirstFocused(canvas);
@@ -1826,6 +1829,8 @@ public class Player : YmirComponent
                 }
                 else
                 {
+                    gameCanvas.SetActive(true);
+
                     canvas.SetActive(open);
                     PlayerStopState(open);
 
