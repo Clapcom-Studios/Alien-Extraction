@@ -1,13 +1,13 @@
 {
     "Prefab": [
         {
-            "Name": "Enemy-FaceHugger (1)",
+            "Name": "Enemy-FaceHugger",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1169910849,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1041828521,
+            "Parent UID": 721332001,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "Name": "FaceHugger (1)",
+            "Name": "FaceHugger",
             "Static": false,
             "Tag": "Enemy",
             "UID": 1180774475,
@@ -177,7 +177,7 @@
             ]
         },
         {
-            "Name": "Facehugger_Mesh (1)",
+            "Name": "Facehugger_Mesh",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1327079824,
@@ -195,9 +195,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -251,7 +251,7 @@
             ]
         },
         {
-            "Name": "ParticlesDamageFaceHugger (1)",
+            "Name": "ParticlesDamageFaceHugger",
             "Static": false,
             "Tag": "Untagged",
             "UID": 756952507,
@@ -409,7 +409,7 @@
             ]
         },
         {
-            "Name": "ParticlesTailAttack (1)",
+            "Name": "ParticlesTailAttack",
             "Static": false,
             "Tag": "Untagged",
             "UID": 443997644,
@@ -431,9 +431,9 @@
                         -0
                     ],
                     "Scale": [
-                        1.5128592252731323,
-                        1.5128592252731323,
-                        1.5128592252731323
+                        1,
+                        1,
+                        1
                     ]
                 },
                 {
@@ -533,7 +533,7 @@
                                     "Progressive": true,
                                     "Loop": false,
                                     "Size1": 1,
-                                    "Size2": 41,
+                                    "Size2": 23.5,
                                     "TimeStart": 0,
                                     "TimeStop": 0.68999999761581421
                                 },
