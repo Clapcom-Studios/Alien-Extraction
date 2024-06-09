@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 911554203,
+            "UID": 739631236,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -47,7 +47,7 @@
             "UID": 1285509392,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -244,7 +244,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -789,7 +789,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1144,7 +1144,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1172,7 +1172,7 @@
                     "Position X": 0,
                     "Position Y": 0,
                     "Width": 607,
-                    "Height": 544,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -3622,7 +3622,7 @@
             "UID": 1768350044,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -3687,7 +3687,7 @@
             "UID": 332055288,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4835,7 +4835,7 @@
             "UID": 1655101801,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5625,7 +5625,7 @@
                     ],
                     "Rotation": [
                         -38.3338623046875,
-                        -4.776092529296875,
+                        -4.7760953903198242,
                         -3.7667055130004883
                     ],
                     "Scale": [
@@ -5715,7 +5715,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 739631236,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5873,7 +5873,6 @@
                     "upgradeType": 0,
                     "damageMultiplier": 0,
                     "vulnerable": true,
-                    "aimSensor": 722618905,
                     "aimAngle": -2.7035396099090576,
                     "isAiming": false,
                     "itemsList": 0,
@@ -14193,7 +14192,7 @@
                 {
                     "Type": "Audio listener",
                     "Active": 1,
-                    "Default Listener": 0
+                    "Default Listener": 1
                 },
                 {
                     "Type": "Camera",
@@ -14236,9 +14235,9 @@
                 {
                     "Type": "Audio source",
                     "Active": 1,
-                    "Bank Name": "",
-                    "Event Name": "",
-                    "Event ID": 0
+                    "Bank Name": "BaseMusic",
+                    "Event Name": "B_Music",
+                    "Event ID": 2462702937
                 }
             ]
         }
