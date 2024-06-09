@@ -824,6 +824,13 @@ public class Player : YmirComponent
                 }
             }
 
+            //----------------- Inventory -----------------\\
+            if (Input.GetGamepadButton(GamePadButton.DPAD_RIGHT) == KeyState.KEY_DOWN/* && currentMenu == ""*/)
+            {
+                //currentMenu = "Inventory Menu";
+                ToggleMenu(true, "Inventory Menu");
+            }
+
             //----------------- Pause -----------------\\
             if (Input.GetGamepadButton(GamePadButton.START) == KeyState.KEY_DOWN)
             {
@@ -838,15 +845,10 @@ public class Player : YmirComponent
             // If player is on menu and presses B, quit menu
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && currentMenu != "")
             {
+                Debug.Log("aaaaaaaaaa: " + currentMenu);
+
                 ToggleMenu(false, "");
             }
-        }
-
-        //----------------- Inventory -----------------\\
-        if (Input.GetGamepadButton(GamePadButton.DPAD_RIGHT) == KeyState.KEY_DOWN/* && currentMenu == ""*/)
-        {
-            //currentMenu = "Inventory Menu";
-            ToggleMenu(true, "Inventory Menu");
         }
 
         ////----------------- Upgrade -----------------\\
