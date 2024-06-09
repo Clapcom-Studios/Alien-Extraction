@@ -75,9 +75,4 @@ public class Auto_Aim : YmirComponent
             }
         }
 	}
-
-	public void AddEnemy(GameObject enemy)
-	{
-        if (!enemies.Contains(enemy)) { enemies.Add(enemy); }
-    }
 }
