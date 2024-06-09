@@ -79,7 +79,6 @@ public class DroneXenomorphBaseScript : Enemy
         Debug.Log("AngularSpeed" + agent.angularSpeed);
 
 		//ATTACKS
-
 		detectionRadius = 60f;
         wanderRange = 100f;
 
@@ -162,16 +161,16 @@ public class DroneXenomorphBaseScript : Enemy
             life = 500; //555,55
             armor = 0.1f; // 0.1f
             agent.speed = 1210f;
-            clawDamage = 180f;
-            tailDamage = 230f;
+            clawDamage = 260f;
+            tailDamage = 317f;
         }
         else if (rarity == 2)
         {
             life = 700; //875
             armor = 0.2f; // 0.2f
             agent.speed = 1320f;
-            clawDamage = 200f;
-            tailDamage = 250f;
+            clawDamage = 310f;
+            tailDamage = 375f;
         }
 
         Debug.Log("[WARNING] Probs: " + commonProb + "rare: " + rareProb + "Epic: " + epicProb);
