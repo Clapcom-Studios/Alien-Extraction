@@ -136,14 +136,14 @@ public class FaceHuggerBaseScript : Enemy
             life = 230; //255,55
             armor = 0.1f; //0.1f
             agent.speed = 1650f;
-            tailDamage = 100f;
+            tailDamage = 168f;
         }
         else if (rarity == 2)
         {
             life = 340; //425
             armor = 0.2f; //0.2f
             agent.speed = 1800f;
-            tailDamage = 120f;
+            tailDamage = 206f;
         }
 
         SetColor();
