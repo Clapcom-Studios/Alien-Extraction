@@ -1,13 +1,13 @@
 {
     "Prefab": [
         {
-            "Name": "Enemy-FaceHugger",
+            "Name": "Enemy-FaceHugger (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1655101801,
+            "UID": 1169910849,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1533710790,
+            "Parent UID": 1041828521,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15,7 +15,7 @@
                     "Translation": [
                         0,
                         0,
-                        0
+                        0.60096359252929688
                     ],
                     "Rotation": [
                         -0,
@@ -30,18 +30,18 @@
                 }
             ],
             "Children UID": [
-                625374565,
+                1180774475,
                 1660215784
             ]
         },
         {
-            "Name": "FaceHugger",
+            "Name": "FaceHugger (1)",
             "Static": false,
             "Tag": "Enemy",
-            "UID": 625374565,
+            "UID": 1180774475,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1655101801,
+            "Parent UID": 1169910849,
             "Components": [
                 {
                     "Type": "Transform",
@@ -145,7 +145,7 @@
                     "Collider Type": 0,
                     "Size": [
                         12.800000190734863,
-                        24.299999237060547,
+                        28,
                         10.800000190734863
                     ],
                     "Physics Type": 0,
@@ -159,7 +159,7 @@
                     "LockZ": true,
                     "Offset": [
                         0,
-                        8.1999998092651367,
+                        9.1000003814697266,
                         0
                     ],
                     "Offset Rotation": [
@@ -171,20 +171,20 @@
                 }
             ],
             "Children UID": [
-                1120193553,
+                1327079824,
                 756952507,
                 443997644
             ]
         },
         {
-            "Name": "Facehugger_Mesh",
+            "Name": "Facehugger_Mesh (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1120193553,
+            "UID": 1327079824,
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/FBX\/FACEHUGGERBETA1.fbx",
-            "Parent UID": 625374565,
+            "Parent UID": 1180774475,
             "Components": [
                 {
                     "Type": "Transform",
@@ -195,9 +195,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -251,13 +251,13 @@
             ]
         },
         {
-            "Name": "ParticlesDamageFaceHugger",
+            "Name": "ParticlesDamageFaceHugger (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 756952507,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 625374565,
+            "Parent UID": 1180774475,
             "Components": [
                 {
                     "Type": "Transform",
@@ -409,13 +409,13 @@
             ]
         },
         {
-            "Name": "ParticlesTailAttack",
+            "Name": "ParticlesTailAttack (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 443997644,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 625374565,
+            "Parent UID": 1180774475,
             "Components": [
                 {
                     "Type": "Transform",
@@ -659,13 +659,13 @@
             ]
         },
         {
-            "Name": "Health_Bar_Plane",
+            "Name": "Health_Bar_Plane (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1660215784,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1655101801,
+            "Parent UID": 1169910849,
             "Components": [
                 {
                     "Type": "Transform",
@@ -700,7 +700,7 @@
             ]
         },
         {
-            "Name": "pPlane1",
+            "Name": "pPlane1 (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1180012158,
