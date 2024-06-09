@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_BOSS_COLLDIERS.nav",
     "Editor Camera Position": [
-        152.90716552734375,
-        96.7174072265625,
-        4.8382778167724609
+        -63.176895141601562,
+        170.32786560058594,
+        -70.044639587402344
     ],
     "Editor Camera Right (X)": [
-        0.7495276927947998,
-        2.9802322387695312e-08,
-        -0.66197311878204346
+        -0.33598971366882324,
+        2.0861625671386719e-07,
+        0.94186651706695557
     ],
     "Editor Camera Up (Y)": [
-        -0.34364843368530273,
-        0.85469692945480347,
-        -0.38910037279129028
+        0.51571613550186157,
+        0.83677548170089722,
+        0.18396997451782227
     ],
     "Editor Camera Front (Z)": [
-        -0.56578624248504639,
-        -0.51912742853164673,
-        -0.64061886072158813
+        0.78812980651855469,
+        -0.5475468635559082,
+        0.28114774823188782
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 879631045,
+            "UID": 184174254,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -51,7 +51,7 @@
             "UID": 660882132,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -88,7 +88,7 @@
             "UID": 1185979896,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -184,7 +184,7 @@
                         350
                     ],
                     "Physics Type": 0,
-                    "Mass": 1,
+                    "Mass": 32,
                     "Friction": 0,
                     "Angular Friction": 0,
                     "UseGravity": true,
@@ -2310,7 +2310,7 @@
             "UID": 34498900,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2383,7 +2383,7 @@
             "UID": 2061456311,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9275,7 +9275,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9302,8 +9302,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1905,
-                    "Height": 1083,
+                    "Width": 2005,
+                    "Height": 1138,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -11302,7 +11302,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18862,7 +18862,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19403,7 +19403,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19756,7 +19756,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19869,7 +19869,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20679,7 +20679,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33795,7 +33795,7 @@
             "UID": 1227978483,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 879631045,
+            "Parent UID": 184174254,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33822,8 +33822,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1905,
-                    "Height": 1083,
+                    "Width": 2005,
+                    "Height": 1138,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -33900,11 +33900,11 @@
                         -1.5816255460782938e+38,
                         4.2038953929744512e-42,
                         -1.5816255460782938e+38,
-                        1.4012984643248171e-44
+                        4.2038953929744512e-42
                     ],
                     "Selected color": [
                         -1.5816255460782938e+38,
-                        1.4012984643248171e-44,
+                        4.2038953929744512e-42,
                         -1.5816255460782938e+38,
                         1.4012984643248171e-44
                     ],
