@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART2_FINAL\/LVL2_LAB_PART2_COLLIDERS.nav",
     "Editor Camera Position": [
-        49.269485473632812,
-        30.692466735839844,
-        555.404541015625
+        -219.23504638671875,
+        406.95941162109375,
+        345.83493041992188
     ],
     "Editor Camera Right (X)": [
-        0.0045448499731719494,
-        -1.417938619852066e-07,
-        0.99998950958251953
+        -0.87521123886108398,
+        -1.4901161193847656e-07,
+        0.48374152183532715
     ],
     "Editor Camera Up (Y)": [
-        0.58247613906860352,
-        0.81284308433532715,
-        -0.0026471791788935661
+        0.44954082369804382,
+        0.36932587623596191,
+        0.81333363056182861
     ],
     "Editor Camera Front (Z)": [
-        0.8128349781036377,
-        -0.58248263597488403,
-        -0.0036943340674042702
+        0.17865809798240662,
+        -0.92930036783218384,
+        0.32323759794235229
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 938791270,
+            "UID": 746406476,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -74,7 +74,7 @@
             "UID": 456674892,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9690,7 +9690,7 @@
             "UID": 1462968092,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9778,9 +9778,9 @@
                         619.72198486328125
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -9898,9 +9898,9 @@
                         618.6265869140625
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -10018,9 +10018,9 @@
                         618.6087646484375
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -5.0089561227650847e-06,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -10925,7 +10925,7 @@
             "UID": 1406784881,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11198,7 +11198,7 @@
             "UID": 505858485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11412,12 +11412,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11483,12 +11477,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11554,12 +11542,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11625,12 +11607,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11696,12 +11672,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11767,12 +11737,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11838,12 +11802,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11909,12 +11867,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -11980,12 +11932,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12193,12 +12139,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12264,12 +12204,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12406,12 +12340,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12548,12 +12476,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12619,12 +12541,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12690,12 +12606,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12903,12 +12813,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -12974,12 +12878,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -13045,12 +12943,6 @@
                         0,
                         1
                     ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Collider.cs",
-                    "Active": 1,
-                    "UID": 0
                 }
             ]
         },
@@ -13061,7 +12953,7 @@
             "UID": 2107836948,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13702,7 +13594,7 @@
             "UID": 511732336,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13740,7 +13632,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14186,7 +14078,7 @@
             "UID": 165934810,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14704,7 +14596,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14795,7 +14687,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303484828361434e-09,
+                        3.8303493710145631e-09,
                         90,
                         0
                     ],
@@ -14874,7 +14766,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7867002952698385e-06,
+                        1.786700522643514e-06,
                         90,
                         0
                     ],
@@ -14953,7 +14845,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303507032821926e-09,
+                        3.8303515914606123e-09,
                         90,
                         0
                     ],
@@ -15080,7 +14972,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15677,7 +15569,7 @@
             "UID": 1423819104,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15897,7 +15789,7 @@
             "UID": 1565719817,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17831,7 +17723,7 @@
             "UID": 1484304711,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17908,7 +17800,7 @@
             "UID": 1459372103,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17985,7 +17877,7 @@
             "UID": 1393792402,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18062,7 +17954,7 @@
             "UID": 1799577663,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18139,7 +18031,7 @@
             "UID": 1224520343,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18216,7 +18108,7 @@
             "UID": 778851339,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18293,7 +18185,7 @@
             "UID": 208637195,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18370,7 +18262,7 @@
             "UID": 346797426,
             "Active": false,
             "Element_Type": "Model",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18471,7 +18363,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19619,7 +19511,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20499,7 +20391,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22554,7 +22446,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22581,8 +22473,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 835,
-                    "Height": 910,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -22745,7 +22637,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22772,8 +22664,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 835,
-                    "Height": 910,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -24772,7 +24664,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32332,7 +32224,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32873,7 +32765,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33226,7 +33118,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33403,7 +33295,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34213,7 +34105,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34885,7 +34777,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48082,7 +47974,7 @@
             "UID": 1278660870,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48625,7 +48517,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
@@ -49058,7 +48950,7 @@
             "UID": 2096828571,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 938791270,
+            "Parent UID": 746406476,
             "Components": [
                 {
                     "Type": "Transform",
