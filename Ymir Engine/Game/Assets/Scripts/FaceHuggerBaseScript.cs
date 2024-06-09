@@ -27,8 +27,7 @@ public class FaceHuggerBaseScript : Enemy
 
     private float AttackDistance = 15f;
 
-    //private EnemyState state = EnemyState.Idle;
-
+    private float tailDamage = 80f;
 
     private float wanderTimer;
     public float wanderDuration = 5f;
@@ -137,12 +136,14 @@ public class FaceHuggerBaseScript : Enemy
             life = 330; //450
             armor = 0.1f; //0.1f
             agent.speed = 1650f;
+            tailDamage = 100f;
         }
         else if (rarity == 2)
         {
             life = 440; //600
             armor = 0.2f; //0.2f
             agent.speed = 1800f;
+            tailDamage = 120f;
         }
 
         SetColor();
@@ -376,7 +377,7 @@ public class FaceHuggerBaseScript : Enemy
                 Vector3 pos = gameObject.transform.globalPosition;
                 pos.y += 10;
                 pos.z -= 5;
-                InternalCalls.CreateFaceHuggerTailAttack(pos, gameObject.transform.globalRotation);
+                InternalCalls.CreateFaceHuggerTailAttack(pos, gameObject.transform.globalRotation, tailDamage);
                 attackDone = true;
             }
         }

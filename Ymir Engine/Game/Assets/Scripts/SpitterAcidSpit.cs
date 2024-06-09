@@ -23,6 +23,8 @@ public class SpitterAcidSpit : YmirComponent
 
     private bool impulseDone = false;
 
+    private float mass;
+
     Vector3 direction;
 
     public void Start()
@@ -35,13 +37,16 @@ public class SpitterAcidSpit : YmirComponent
         direction = gameObject.transform.globalPosition - player.transform.globalPosition;
         Quaternion rotation = Quaternion.LookRotation(direction);
         gameObject.SetRotation(rotation);
+        damage = gameObject.GetMass();
+        mass = gameObject.GetMass();
+        gameObject.SetMass(1.0f);
     }
 
     public void Update()
 	{
         if (impulseDone == false)
         {
-            gameObject.SetImpulse(direction.normalized * -movementSpeed * Time.deltaTime + new Vector3(0,0.1f,0));
+            gameObject.SetImpulse(direction.normalized * -movementSpeed * mass * Time.deltaTime + new Vector3(0,0.1f,0));
             impulseDone = true; ;
         }
 

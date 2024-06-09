@@ -217,6 +217,18 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public extern void SetColliderActive(bool isActive);
 
+        /// <summary>
+        /// Get collider mass
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern float GetMass();
+        /// <summary>
+        /// Set collider mass
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern void SetMass(float mass);
+
+
         /// Make the GO look at the camera
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]

@@ -8,8 +8,6 @@ using YmirEngine;
 
 public class Collider : YmirComponent
 {
-    public GameObject thisReference = null;
-
 
     public void Start()
     {

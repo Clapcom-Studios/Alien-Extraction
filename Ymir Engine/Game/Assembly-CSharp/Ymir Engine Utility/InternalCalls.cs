@@ -55,38 +55,38 @@ namespace YmirEngine
         /// Creates spitter acid spit attack.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern void CreateSpitterAcidSpit(object position, object rotation);
+        public static extern void CreateSpitterAcidSpit(object position, object rotation, float damage);
 
         /// <summary>
         /// Creates spitter acid explosive attack.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern void CreateSpitterAcidExplosive(object position, object rotation);
+        public static extern void CreateSpitterAcidExplosive(object position, object rotation, float damage);
 
         /// <summary>
         /// Creates spitter acid shrapnel attack.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern void CreateSpitterAcidShrapnel(object position, object rotation);
+        public static extern void CreateSpitterAcidShrapnel(object position, object rotation, float damage);
 
 
         /// <summary>
         /// Creates facehugger tail attack.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern void CreateFaceHuggerTailAttack(object position, object rotation);
+        public static extern void CreateFaceHuggerTailAttack(object position, object rotation, float damage);
 
         /// <summary>
         /// Creates drone claw attack.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern void CreateDroneClawAttack(object position, object rotation);
+        public static extern void CreateDroneClawAttack(object position, object rotation, float damage);
 
         /// <summary>
         /// Creates drone tail attack.
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        public static extern void CreateDroneTailAttack(object position, object rotation);
+        public static extern void CreateDroneTailAttack(object position, object rotation, float damage);
 
         /// <summary>
         /// Creates queen claw attack.

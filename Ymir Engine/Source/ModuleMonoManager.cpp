@@ -138,6 +138,8 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.GameObject::SetPosition", SetPosition);
 	mono_add_internal_call("YmirEngine.GameObject::SetColliderSize", SetColliderSize);
 	mono_add_internal_call("YmirEngine.GameObject::GetColliderSize", GetColliderSize);
+	mono_add_internal_call("YmirEngine.GameObject::GetMass", GetMass);
+	mono_add_internal_call("YmirEngine.GameObject::SetMass", SetMass);
 	mono_add_internal_call("YmirEngine.GameObject::ClearForces", ClearForces);
 	mono_add_internal_call("YmirEngine.GameObject::RaycastHit", RaycastHit);
 	mono_add_internal_call("YmirEngine.GameObject::RaycastTest", RaycastTest);

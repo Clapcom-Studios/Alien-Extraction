@@ -453,6 +453,34 @@ void SetColliderSize(MonoObject* obj, MonoObject* scale) {
 		rigidbody->GetShape()->setLocalScaling(btVector3(hopeItWorks.x, hopeItWorks.y, hopeItWorks.z));
 	}
 }
+float GetMass(MonoObject* obj) {
+	if (External == nullptr)
+		return 0.0f;
+
+	GameObject* cpp_gameObject = External->moduleMono->GameObject_From_CSGO(obj);
+	CCollider* rigidbody = dynamic_cast<CCollider*>(cpp_gameObject->GetComponent(ComponentType::PHYSICS));
+
+	if (rigidbody)
+	{
+		return rigidbody->mass;
+	}
+	else {
+		return 0.0f;
+	}
+
+}
+void SetMass(MonoObject* obj, float mass) {
+	if (External == nullptr)
+		return;
+
+	GameObject* cpp_gameObject = External->moduleMono->GameObject_From_CSGO(obj);
+	CCollider* rigidbody = dynamic_cast<CCollider*>(cpp_gameObject->GetComponent(ComponentType::PHYSICS));
+
+	if (rigidbody)
+	{
+		rigidbody->mass = mass;
+	}
+}
 
 float3 GetColliderSize(MonoObject* obj) {
 
@@ -1002,7 +1030,7 @@ void CreateAcidPuddle(MonoObject* name, MonoObject* position)
 
 }
 
-void CreateSpitterAcidSpit(MonoObject* position, MonoObject* rotation)
+void CreateSpitterAcidSpit(MonoObject* position, MonoObject* rotation, float damage)
 {
 	if (External == nullptr) return;
 	GameObject* go = External->scene->PostUpdateCreateGameObject("SpitterAcidSpit", External->scene->mRootNode);
@@ -1024,6 +1052,7 @@ void CreateSpitterAcidSpit(MonoObject* position, MonoObject* rotation)
 	physBody->physBody->SetPosition(posVector);
 	physBody->physBody->SetRotation(rotVector);
 	physBody->SetAsSensor(true);
+	physBody->mass = damage;
 
 	go->AddComponent(physBody);
 	physBody->physBody->body->activate(true);
@@ -1036,7 +1065,7 @@ void CreateSpitterAcidSpit(MonoObject* position, MonoObject* rotation)
 	go->AddComponent(c);
 }
 
-void CreateSpitterAcidExplosive(MonoObject* position, MonoObject* rotation)
+void CreateSpitterAcidExplosive(MonoObject* position, MonoObject* rotation, float damage)
 {
 	if (External == nullptr) return;
 	GameObject* go = External->scene->PostUpdateCreateGameObject("SpitterAcidExplosion", External->scene->mRootNode);
@@ -1058,6 +1087,7 @@ void CreateSpitterAcidExplosive(MonoObject* position, MonoObject* rotation)
 	physBody->physBody->SetPosition(posVector);
 	physBody->physBody->SetRotation(rotVector);
 	physBody->SetAsSensor(true);
+	physBody->mass = damage;
 
 	go->AddComponent(physBody);
 	physBody->physBody->body->activate(true);
@@ -1070,7 +1100,7 @@ void CreateSpitterAcidExplosive(MonoObject* position, MonoObject* rotation)
 	go->AddComponent(c);
 }
 
-void CreateSpitterAcidShrapnel(MonoObject* position, MonoObject* rotation)
+void CreateSpitterAcidShrapnel(MonoObject* position, MonoObject* rotation, float damage)
 {
 	if (External == nullptr) return;
 	GameObject* go = External->scene->PostUpdateCreateGameObject("SpitterAcidShrapnel", External->scene->mRootNode);
@@ -1092,6 +1122,7 @@ void CreateSpitterAcidShrapnel(MonoObject* position, MonoObject* rotation)
 	physBody->physBody->SetPosition(posVector);
 	physBody->physBody->SetRotation(rotVector);
 	physBody->SetAsSensor(true);
+	physBody->mass = damage;
 
 	go->AddComponent(physBody);
 	physBody->physBody->body->activate(true);
@@ -1104,7 +1135,7 @@ void CreateSpitterAcidShrapnel(MonoObject* position, MonoObject* rotation)
 	go->AddComponent(c);
 }
 
-void CreateFaceHuggerTailAttack(MonoObject* position, MonoObject* rotation)
+void CreateFaceHuggerTailAttack(MonoObject* position, MonoObject* rotation, float damage)
 {
 	if (External == nullptr) return;
 	GameObject* go = External->scene->PostUpdateCreateGameObject("FaceHuggerTailAttack", External->scene->mRootNode);
@@ -1124,6 +1155,7 @@ void CreateFaceHuggerTailAttack(MonoObject* position, MonoObject* rotation)
 	physBody->useGravity = false;
 
 	physBody->SetAsSensor(true);
+	physBody->mass = damage;
 
 	go->AddComponent(physBody);
 
@@ -1135,7 +1167,7 @@ void CreateFaceHuggerTailAttack(MonoObject* position, MonoObject* rotation)
 	go->AddComponent(c);
 }
 
-void CreateDroneClawAttack(MonoObject* position, MonoObject* rotation)
+void CreateDroneClawAttack(MonoObject* position, MonoObject* rotation, float damage)
 {
 	if (External == nullptr) return;
 	GameObject* go = External->scene->PostUpdateCreateGameObject("DroneClawAttack", External->scene->mRootNode);
@@ -1157,6 +1189,8 @@ void CreateDroneClawAttack(MonoObject* position, MonoObject* rotation)
 	physBody->SetAsSensor(true);
 
 	physBody->size = scaleVector * 3;
+	physBody->mass = damage;
+
 	go->AddComponent(physBody);
 
 	const char* t = "DroneXenomorphClawAttack";
@@ -1165,7 +1199,7 @@ void CreateDroneClawAttack(MonoObject* position, MonoObject* rotation)
 	go->AddComponent(c);
 }
 
-void CreateDroneTailAttack(MonoObject* position, MonoObject* rotation)
+void CreateDroneTailAttack(MonoObject* position, MonoObject* rotation, float damage)
 {
 	if (External == nullptr) return;
 	GameObject* go = External->scene->PostUpdateCreateGameObject("DroneTailAttack", External->scene->mRootNode);
@@ -1186,6 +1220,8 @@ void CreateDroneTailAttack(MonoObject* position, MonoObject* rotation)
 	physBody->SetAsSensor(true);
 
 	physBody->size = scaleVector*3;
+	physBody->mass = damage;
+
 	go->AddComponent(physBody);
 
 	const char* t = "DroneXenomorphTailAttack";

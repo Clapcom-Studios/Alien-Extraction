@@ -21,12 +21,17 @@ public class DroneXenomorphTailAttack : YmirComponent
 
     private float destroyTimer;
 
+    private float mass;
+
     public void Start()
     {
         movementSpeed = 5000f;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
-        gameObject.SetImpulse(gameObject.transform.GetForward() * movementSpeed * Time.deltaTime);
+        damage = gameObject.GetMass();
+        mass = gameObject.GetMass();
+        gameObject.SetMass(1.0f);
+        gameObject.SetImpulse(gameObject.transform.GetForward() * movementSpeed * mass * Time.deltaTime);
         destroyed = false;
         destroyTimer = 0f;
     }
