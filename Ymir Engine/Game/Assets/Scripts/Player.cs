@@ -775,7 +775,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Predatory Rush (Skill 2) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && hasPred == false && predatoryCDTimer <= 0 && hasDashed == false)
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && hasPred == false && predatoryCDTimer <= 0 && hasDashed == false)
                 {
                     hasPred = true;
                     inputsList.Add(INPUT.I_PRED);
@@ -790,7 +790,7 @@ public class Player : YmirComponent
                 }
 
                 //----------------- Swipe (Skill 3) -----------------\\
-                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && hasSwipe == false && swipeCDTimer <= 0 && hasDashed == false)
+                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && hasSwipe == false && swipeCDTimer <= 0 && hasDashed == false)
                 {
                     hasSwipe = true;
                     inputsList.Add(INPUT.I_SWIPE);
