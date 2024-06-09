@@ -10,10 +10,7 @@ public class TriggerTutorialUI : YmirComponent
 {
     
     public GameObject tutorialUI;
-    public bool isHealingTuto = false;
     bool show;
-
-    private bool _healingTutorialDone = false;
 
     public void Start()
     {
@@ -26,13 +23,6 @@ public class TriggerTutorialUI : YmirComponent
         {
             show = true;
             tutorialUI.SetActive(true);
-
-            //Para fines del healing tutorial
-            if (isHealingTuto && !_healingTutorialDone)
-            {
-                _healingTutorialDone = true;
-                other.GetComponent<Health>().TakeDmg(400);
-            }
         }
     }
 

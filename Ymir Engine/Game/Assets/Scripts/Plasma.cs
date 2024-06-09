@@ -63,7 +63,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3B");
-                ammo = 300;
+                ammo = 500;
                 fireRate = 0.02f;
                 damage = 4f;
                 damageEscalation = 0.01f;
@@ -84,7 +84,11 @@ public class Plasma : Weapon
 
         Audio.PlayAudio(gameObject, "W_PlasmaShot");
         Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
-        Particles.SetMaxDistance(particlesGO, range);
+        float distanceParticles = gameObject.RaycastLenght(gameObject.transform.globalPosition + offset, gameObject.transform.GetForward(), range);
+        if (distanceParticles == 0) { distanceParticles = range; } //Si no impacta con nada rango maximo
+        else if (distanceParticles < range) { distanceParticles *= 0.8f; }
+        Particles.SetMaxDistance(particlesGO, distanceParticles);
+        Debug.Log("Distancia particles es:" + distanceParticles);
         Particles.PlayParticlesTrigger(particlesGO);
 
         GameObject target = null;
