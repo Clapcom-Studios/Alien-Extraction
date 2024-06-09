@@ -44,6 +44,9 @@ public class SpitterBaseScript : Enemy
 
     private float tooCloseRange;
 
+    private float acidDamage = 350f;
+    private float explosionDamage = 350f;
+
     //Acid rebound
     //private float tailDamage;
     private float acidExplosiveCooldown;
@@ -156,12 +159,16 @@ public class SpitterBaseScript : Enemy
             life = 687.5f; //763,88
             armor = 0.1f; //0.1f
             agent.speed = 990f; //Antes estaba en 1700f
+            acidDamage = 380f;
+            explosionDamage = 380f;
         }
         else if (rarity == 2)
         {
             life = 950; //1187,5
             armor = 0.2f; // 0.2f
             agent.speed = 1080f; //Antes estaba en 1800f
+            acidDamage = 400f;
+            explosionDamage = 400f;
         }
 
         SetColor();
@@ -409,7 +416,7 @@ public class SpitterBaseScript : Enemy
                 {
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 15;
-                    InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation);
+                    InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation, acidDamage);
                     //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterAcidSpit", pos);
 
                     //PARTICLES
@@ -445,7 +452,7 @@ public class SpitterBaseScript : Enemy
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 15;
                     pos.z -= 10;
-                    InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation);
+                    InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation, explosionDamage);
                     //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterExplosive", pos);
 
                     //PARTICLES

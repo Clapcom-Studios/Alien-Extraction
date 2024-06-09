@@ -40,6 +40,7 @@ public class DroneXenomorphBaseScript : Enemy
     private float clawCooldownTime;
     private float clawRange;
     private bool clawDone;
+    private float clawDamage = 150f;
 
 	//Tail
 	//private float tailDamage;
@@ -47,6 +48,7 @@ public class DroneXenomorphBaseScript : Enemy
     private float tailCooldownTime;
     private float tailRange;
     private bool tailDone;
+    private float tailDamage = 200f;
 
 	//FOR GENERAL TIME MANAGEMENT
 	public float timeCounter;
@@ -160,12 +162,16 @@ public class DroneXenomorphBaseScript : Enemy
             life = 500; //555,55
             armor = 0.1f; // 0.1f
             agent.speed = 1210f;
+            clawDamage = 180f;
+            tailDamage = 230f;
         }
         else if (rarity == 2)
         {
             life = 700; //875
             armor = 0.2f; // 0.2f
             agent.speed = 1320f;
+            clawDamage = 200f;
+            tailDamage = 250f;
         }
 
         Debug.Log("[WARNING] Probs: " + commonProb + "rare: " + rareProb + "Epic: " + epicProb);
@@ -354,7 +360,7 @@ public class DroneXenomorphBaseScript : Enemy
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 10;
                     pos.z -= 6;
-                    InternalCalls.CreateDroneClawAttack(pos, gameObject.transform.globalRotation);
+                    InternalCalls.CreateDroneClawAttack(pos, gameObject.transform.globalRotation, clawDamage);
                     Audio.PlayAudio(gameObject, "DX_Claw");
                     clawDone = true;
                 }
@@ -384,7 +390,7 @@ public class DroneXenomorphBaseScript : Enemy
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 10;
                     pos.z -= 6;
-                    InternalCalls.CreateDroneTailAttack(pos, gameObject.transform.globalRotation);
+                    InternalCalls.CreateDroneTailAttack(pos, gameObject.transform.globalRotation, tailDamage);
                     Audio.PlayAudio(gameObject, "DX_Tail");
                     tailDone = true;
                 }
