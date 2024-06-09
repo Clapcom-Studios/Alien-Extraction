@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        -39.289905548095703,
-        290.033935546875,
-        297.98416137695312
+        159.48890686035156,
+        56.815597534179688,
+        758.54571533203125
     ],
     "Editor Camera Right (X)": [
-        0.01095938216894865,
-        3.4458935260772705e-07,
-        0.99993765354156494
+        0.36080503463745117,
+        -5.9604644775390625e-08,
+        -0.8966972827911377
     ],
     "Editor Camera Up (Y)": [
-        0.67148882150650024,
-        0.74097687005996704,
-        -0.0073598166927695274
+        -0.59568923711776733,
+        0.72358298301696777,
+        -0.23968814313411713
     ],
     "Editor Camera Front (Z)": [
-        0.74093270301818848,
-        -0.67152822017669678,
-        -0.0081204390153288841
+        -0.69329750537872314,
+        -0.66316300630569458,
+        -0.27896279096603394
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 740698065,
+            "UID": 938791270,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -60,7 +60,8 @@
                 700466739,
                 1225145048,
                 1781007999,
-                1401646486
+                1401646486,
+                2096828571
             ]
         },
         {
@@ -70,7 +71,7 @@
             "UID": 215325978,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4731,7 +4732,7 @@
             "UID": 148987747,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4802,7 +4803,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4870,7 +4871,8 @@
             "Children UID": [
                 1871714168,
                 342242430,
-                1522841663
+                1522841663,
+                2113115938
             ]
         },
         {
@@ -5126,13 +5128,279 @@
             ]
         },
         {
+            "Name": "ParticlesLootChest",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2113115938,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 484997781,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 2,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1752552248,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        18.299999237060547,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 0.0099999997764825821,
+                                    "RadiusTop": -0.013806678354740143,
+                                    "Heigth": 3.4100000858306885
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 3,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.078000001609325409,
+                                    "NumParticlesToStop": 1,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_flash_8.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 6,
+                                    "Size2": 309,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.19799999892711639
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": false,
+                                    "Accelerates": false,
+                                    "Speed1": 0.20000000298023224,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.95301121473312378,
+                                        0.89380532503128052,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        0.70686817169189453,
+                                        0.12831860780715942,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 3,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 1,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 6,
+                            "EmitterUID": 362897918,
+                            "Name": "Particle Emitter 2",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        19.600000381469727,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 4.6100001335144043,
+                                    "RadiusTop": 4.8374738693237305,
+                                    "Heigth": 5.2100000381469727
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 3,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.20000000298023224,
+                                    "NumParticlesToStop": 10,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/magic_05.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 45,
+                                    "Size2": 0.5,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.60000002384185791
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 3.4000000953674316,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.84838277101516724,
+                                        0.61061942577362061,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        1,
+                                        1,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "PROP_Base_Chest (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 12745639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5200,7 +5468,8 @@
             "Children UID": [
                 47621099,
                 473325267,
-                613955813
+                613955813,
+                1154647410
             ]
         },
         {
@@ -5456,13 +5725,279 @@
             ]
         },
         {
+            "Name": "ParticlesLootChest (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1154647410,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 12745639,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 2,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1752552248,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        18.299999237060547,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 0.0099999997764825821,
+                                    "RadiusTop": -0.013806678354740143,
+                                    "Heigth": 3.4100000858306885
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 3,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.078000001609325409,
+                                    "NumParticlesToStop": 1,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_flash_8.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 6,
+                                    "Size2": 309,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.19799999892711639
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": false,
+                                    "Accelerates": false,
+                                    "Speed1": 0.20000000298023224,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.95301121473312378,
+                                        0.89380532503128052,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        0.70686817169189453,
+                                        0.12831860780715942,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 3,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 1,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 6,
+                            "EmitterUID": 362897918,
+                            "Name": "Particle Emitter 2",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        19.600000381469727,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 4.6100001335144043,
+                                    "RadiusTop": 4.8374738693237305,
+                                    "Heigth": 5.2100000381469727
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 3,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.20000000298023224,
+                                    "NumParticlesToStop": 10,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/magic_05.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 45,
+                                    "Size2": 0.5,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.60000002384185791
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 3.4000000953674316,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.84838277101516724,
+                                        0.61061942577362061,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        1,
+                                        1,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "PROP_Base_Chest (2)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 259210497,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5470,7 +6005,7 @@
                     "Translation": [
                         221.70700073242188,
                         1.3687396049499512,
-                        751.5816650390625
+                        752.1820068359375
                     ],
                     "Rotation": [
                         179.99961853027344,
@@ -5530,7 +6065,8 @@
             "Children UID": [
                 586673111,
                 1293144836,
-                891041594
+                891041594,
+                1028796650
             ]
         },
         {
@@ -5786,13 +6322,279 @@
             ]
         },
         {
+            "Name": "ParticlesLootChest (2)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1028796650,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 259210497,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 2,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1752552248,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        18.299999237060547,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 0.0099999997764825821,
+                                    "RadiusTop": -0.013806678354740143,
+                                    "Heigth": 3.4100000858306885
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 1,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.078000001609325409,
+                                    "NumParticlesToStop": 1,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/muzzle_flash_8_180.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 6,
+                                    "Size2": 309,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.19799999892711639
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": false,
+                                    "Accelerates": false,
+                                    "Speed1": 0.20000000298023224,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.95301121473312378,
+                                        0.89380532503128052,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        0.70686817169189453,
+                                        0.12831860780715942,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 2,
+                                    "WorldOrientation": 2,
+                                    "AxisOrientation": 1,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 6,
+                            "EmitterUID": 362897918,
+                            "Name": "Particle Emitter 2",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        19.600000381469727,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 4.6100001335144043,
+                                    "RadiusTop": 4.8374738693237305,
+                                    "Heigth": 5.2100000381469727
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 3,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.20000000298023224,
+                                    "NumParticlesToStop": 10,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/magic_05.png"
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Size1": 45,
+                                    "Size2": 0.5,
+                                    "TimeStart": 0,
+                                    "TimeStop": 0.60000002384185791
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 3.4000000953674316,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        1,
+                                        0.84838277101516724,
+                                        0.61061942577362061,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        1,
+                                        1,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "Electric_Trap (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 2063663470,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6087,7 +6889,7 @@
             "UID": 1372245636,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6382,7 +7184,7 @@
             "UID": 1630598529,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6419,7 +7221,7 @@
             "UID": 811451292,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6516,7 +7318,7 @@
             "UID": 560363617,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15843,7 +16645,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278816223144531,
+                        0.90278857946395874,
                         -0
                     ],
                     "Scale": [
@@ -16178,7 +16980,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278828144073486,
+                        0.90278869867324829,
                         -0
                     ],
                     "Scale": [
@@ -16820,8 +17622,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 549,
+                    "Height": 996,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -26400,7 +27202,7 @@
             "UID": 1288139189,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26956,7 +27758,7 @@
             "UID": 419286066,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33880,7 +34682,7 @@
             "UID": 1747926452,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34305,9 +35107,9 @@
                         229.56985473632812
                     ],
                     "Rotation": [
-                        -1.6468006619584227e-16,
+                        -1.646837057905375e-16,
                         89.332359313964844,
-                        1.5623191839860549e-16
+                        1.5623549181885171e-16
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -35675,7 +36477,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36420,7 +37222,7 @@
             "UID": 1086457827,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36630,7 +37432,7 @@
                     "Rotation": [
                         -2.2451992034912109,
                         0.18273302912712097,
-                        0.43568521738052368
+                        0.43568533658981323
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -36662,7 +37464,7 @@
                         3.0423920154571533
                     ],
                     "Rotation": [
-                        2.0803632736206055,
+                        2.0803651809692383,
                         0,
                         -0
                     ],
@@ -37363,7 +38165,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -38511,7 +39313,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39391,7 +40193,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41446,7 +42248,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41473,8 +42275,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 549,
+                    "Height": 996,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -41637,7 +42439,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -41664,8 +42466,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 549,
+                    "Height": 996,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -43664,7 +44466,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -51352,7 +52154,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -51893,7 +52695,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -52246,7 +53048,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53056,7 +53858,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -66220,7 +67022,7 @@
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
                     "Far Plane": 1000,
-                    "Frustum Culling": 1,
+                    "Frustum Culling": 0,
                     "Draw Bounding Boxes": 0,
                     "Game Camera": true
                 },
@@ -66253,7 +67055,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -66626,7 +67428,7 @@
             "UID": 236676809,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -66999,7 +67801,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -67186,14 +67988,14 @@
                 }
             ],
             "Children UID": [
-                1862344415
+                1121091613
             ]
         },
         {
-            "Name": "Particle System",
+            "Name": "ParticlesBeaconV2",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1862344415,
+            "UID": 1121091613,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1106680737,
@@ -67203,45 +68005,45 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        2.4000000953674316,
+                        0,
                         0
                     ],
                     "Rotation": [
-                        -0,
                         0,
-                        -0
+                        -6.293519732025743e-07,
+                        0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        1.5134810209274292,
+                        0.62464320659637451,
+                        1.1579999923706055
                     ]
                 },
                 {
                     "Type": "ParticleSystem",
                     "Active": 1,
                     "ShowEmitters": true,
-                    "NumEmitters": 1,
+                    "NumEmitters": 2,
                     "Emitters": [
                         {
                             "ModulesSize": 6,
-                            "EmitterUID": 579029639,
-                            "Name": "",
+                            "EmitterUID": 1461573130,
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
-                                    "Lifetime": 1,
-                                    "Lifetime2": 5,
-                                    "RandomLT": true,
+                                    "Lifetime": 3,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
                                     "Position": [
                                         0,
-                                        0,
+                                        -2.7999999523162842,
                                         0
                                     ],
                                     "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
-                                    "BaseShape": 1,
+                                    "BaseShape": 0,
                                     "PositiveBoxPoints": [
                                         1,
                                         1,
@@ -67253,45 +68055,26 @@
                                         -1
                                     ],
                                     "RadiusHollow": 0,
-                                    "RadiusBase": 2.809999942779541,
-                                    "RadiusTop": 5.9900608062744141,
-                                    "Heigth": 10.010000228881836
+                                    "RadiusBase": 2,
+                                    "RadiusTop": 4,
+                                    "Heigth": 3
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 1,
+                                    "SpawnMode": 2,
                                     "StartMode": 0,
-                                    "NumParticles": 5,
-                                    "SpawnRatio": 0.10300000011920929,
-                                    "NumParticlesToStop": 100,
+                                    "NumParticles": 1,
+                                    "SpawnRatio": 0.96799999475479126,
+                                    "NumParticlesToStop": 1,
                                     "PointingUID": 0,
-                                    "ConditionForSpawn": 1,
-                                    "SubemitterMaxLifetime": 0,
-                                    "SubemitterMinLifetime": 1
-                                },
-                                {
-                                    "Type": 5,
-                                    "Progressive": false,
-                                    "Loop": false,
-                                    "Color1": [
-                                        0.87610620260238647,
-                                        0.74430263042449951,
-                                        0,
-                                        1
-                                    ],
-                                    "Color2": [
-                                        0,
-                                        0,
-                                        0,
-                                        0
-                                    ],
-                                    "TimeStart": 0,
-                                    "TimeStop": 1
+                                    "ConditionForSpawn": 2,
+                                    "SubemitterMaxLifetime": 1,
+                                    "SubemitterMinLifetime": 0
                                 },
                                 {
                                     "Type": 3,
                                     "UpdateRotation": true,
-                                    "AligmentMode": 1,
+                                    "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
                                     "FreeRotation": [
@@ -67304,14 +68087,153 @@
                                     "Type": 4,
                                     "Progressive": false,
                                     "Loop": false,
-                                    "Size1": 2.5,
+                                    "Size1": 12.5,
                                     "Size2": 1,
                                     "TimeStart": 0,
                                     "TimeStop": 1
                                 },
                                 {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0,
+                                        0.78761053085327148,
+                                        1,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0.71282011270523071,
+                                        0.98230087757110596,
+                                        0.974903404712677,
+                                        1
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
                                     "Type": 6,
-                                    "Path": "Assets\/Particles\/IMAGES\/particleExample.png"
+                                    "Path": "Assets\/Particles\/IMAGES\/light_03.png"
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 1382472225,
+                            "Name": "Particle Emitter 2",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 2.5,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        -1.2999999523162842,
+                                        0.40000000596046448
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 0,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 2,
+                                    "RadiusTop": 4,
+                                    "Heigth": 3
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 2,
+                                    "StartMode": 0,
+                                    "NumParticles": 2,
+                                    "SpawnRatio": 1,
+                                    "NumParticlesToStop": 5,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 2,
+                                    "SubemitterMaxLifetime": 1,
+                                    "SubemitterMinLifetime": 0
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": false,
+                                    "Direction1": [
+                                        0,
+                                        2,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 12.199999809265137,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0,
+                                        0.86725687980651855,
+                                        1,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0.89380526542663574,
+                                        1,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 2,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 14.5,
+                                    "Size2": 6.5,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/circle_02.png"
                                 }
                             ]
                         }
@@ -67924,7 +68846,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68596,7 +69518,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68773,7 +69695,7 @@
             "UID": 1401646486,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 740698065,
+            "Parent UID": 938791270,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69034,6 +69956,284 @@
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
                     "Diffuse_UID": 962411016
+                }
+            ]
+        },
+        {
+            "Name": "BackgroundMist",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2096828571,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 938791270,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        175.6380615234375,
+                        -64.308578491210938,
+                        368.931884765625
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": false,
+                    "NumEmitters": 2,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 249747705,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 20.5,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 2,
+                                    "PositiveBoxPoints": [
+                                        500,
+                                        2.2000000476837158,
+                                        500
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -500,
+                                        -2.0999999046325684,
+                                        -500
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 2,
+                                    "RadiusTop": 4,
+                                    "Heigth": 3
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.1120000034570694,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": true,
+                                    "UseShapeBase": false,
+                                    "Direction1": [
+                                        -78.400001525878906,
+                                        0,
+                                        -67
+                                    ],
+                                    "Direction2": [
+                                        45.900001525878906,
+                                        0,
+                                        41.400001525878906
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 2,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 2,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 142.5,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/smoke_08.png"
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.54117649793624878,
+                                        0.54117649793624878,
+                                        0.54117649793624878,
+                                        0
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "TimeStart": 0.74400001764297485,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        },
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 998608597,
+                            "Name": "Particle Emitter 2",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 20.5,
+                                    "Lifetime2": 2,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 2,
+                                    "PositiveBoxPoints": [
+                                        500,
+                                        1,
+                                        500
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -500,
+                                        -1,
+                                        -500
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 2,
+                                    "RadiusTop": 4,
+                                    "Heigth": 3
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.20000000298023224,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": true,
+                                    "UseShapeBase": false,
+                                    "Direction1": [
+                                        3.7999999523162842,
+                                        0,
+                                        4.3000001907348633
+                                    ],
+                                    "Direction2": [
+                                        -8.8999996185302734,
+                                        0,
+                                        -11
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 5,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 2,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 287.5,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/smoke_07.png"
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": true,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.56194686889648438,
+                                        0.56194686889648438,
+                                        0.56194686889648438,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        1,
+                                        1,
+                                        1,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
