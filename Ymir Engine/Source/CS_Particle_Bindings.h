@@ -110,7 +110,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 					}
 					if (rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT /*&& particleSystem->allEmitters.at(i)->listParticles.at(j)->lifetime<0.1f*/)
 					{
-						LOG("Angle was %f", RadToDeg(anguloFowardPlayer));
+						//LOG("Angle was %f", RadToDeg(anguloFowardPlayer));
 
 						rot->freeWorldRotation = { rot->freeWorldRotation.x,rot->freeWorldRotation.y,RadToDeg(anguloFowardPlayer ) +90.0f };
 						rot->WorldAlign();
@@ -120,7 +120,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 						//Quat rotacion = Quat::RotateAxisAngle({ 0.0f, 1.0f, 0.0f }, anguloFowardPlayer);
 						//rot->SetRotation(identidad.Mul( rotacion));
 
-						LOG("Rotation was %f", rot->freeWorldRotation.z);
+						//LOG("Rotation was %f", rot->freeWorldRotation.z);
 					}
 				}
 			}
@@ -302,7 +302,7 @@ void SetMaxDistance(MonoObject* go, float range)
 		{
 			EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(j)->modules.at(0);
 
-			if (base->hasDistanceLimit)
+			if (base->hasDistanceLimit && range != 0)
 			{
 				base->distanceLimit = range;
 			}
