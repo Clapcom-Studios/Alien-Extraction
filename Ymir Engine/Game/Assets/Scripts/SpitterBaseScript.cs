@@ -210,21 +210,6 @@ public class SpitterBaseScript : Enemy
                 Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 3, 10.0f);
                 Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 3);
                 Particles.PlayParticlesTrigger(particlesGO);
-
-                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit1");
-                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 4, 10.0f);
-                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 4);
-                Particles.PlayParticlesTrigger(particlesGO);
-
-                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit2");
-                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 5, 10.0f);
-                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 5);
-                Particles.PlayParticlesTrigger(particlesGO);
-
-                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit3");
-                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 6, 10.0f);
-                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 6);
-                Particles.PlayParticlesTrigger(particlesGO);
             }
         }
 
@@ -285,7 +270,10 @@ public class SpitterBaseScript : Enemy
                 break;
             case XenoState.MOVE:
 
-                LookAt(agent.GetDestination());
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 MoveToCalculatedPos(agent.speed);
 
@@ -328,7 +316,10 @@ public class SpitterBaseScript : Enemy
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
                 //Rather look at player? May cause to do weird rotations
                 //LookAt(agent.GetDestination());
-                LookAt(player.transform.globalPosition);
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 if (!CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, acidSpitRange))
                 {
@@ -348,7 +339,10 @@ public class SpitterBaseScript : Enemy
                 {
                     xenoState = XenoState.IDLE;
                 }
-                LookAt(agent.GetDestination());
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 MoveToCalculatedPos(agent.speed);
 
@@ -358,7 +352,10 @@ public class SpitterBaseScript : Enemy
                 timeCounter += Time.deltaTime;
 
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
-                LookAt(agent.GetDestination());
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 MoveToCalculatedPos(-agent.speed);
 
@@ -389,7 +386,10 @@ public class SpitterBaseScript : Enemy
                     acidDone = false;
                     xenoState = XenoState.ACID_SPIT;
                     acidExplosiveCooldownTime -= 1.5f;
-                    LookAt(player.transform.globalPosition);
+                    if (explosionEnabled == false)
+                    {
+                        LookAt(player.transform.globalPosition);
+                    }
                 }
                 else if (acidExplosiveCooldownTime >= acidExplosiveCooldown && xenoState != XenoState.DEAD)
                 {
@@ -408,7 +408,10 @@ public class SpitterBaseScript : Enemy
                     explosionDone = false;
                     xenoState = XenoState.ACID_REBOUND;
                     acidSpitCooldownTime -= 1.5f;
-                    LookAt(player.transform.globalPosition);
+                    if (explosionEnabled == false)
+                    {
+                        LookAt(player.transform.globalPosition);
+                    }
                 }
 
                 break;
@@ -432,7 +435,10 @@ public class SpitterBaseScript : Enemy
                 timeCounter += Time.deltaTime;
 
                 gameObject.SetVelocity(gameObject.transform.GetForward() * 0);
-                LookAt(player.transform.globalPosition);
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 //If done with animation, go to idle aggro
                 if (timeCounter >= timeLimit)
@@ -467,7 +473,10 @@ public class SpitterBaseScript : Enemy
                 timeCounter += Time.deltaTime;
 
                 gameObject.SetVelocity(gameObject.transform.GetForward() * 0);
-                LookAt(player.transform.globalPosition);
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 //If done with animation, go to idle aggro
                 if (timeCounter >= timeLimit)
