@@ -143,7 +143,7 @@
                                 {
                                     "Type": 3,
                                     "UpdateRotation": true,
-                                    "AligmentMode": 3,
+                                    "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 1,
                                     "FreeRotation": [
@@ -155,7 +155,7 @@
                             ]
                         },
                         {
-                            "ModulesSize": 6,
+                            "ModulesSize": 7,
                             "EmitterUID": 362897918,
                             "Name": "Particle Emitter 2",
                             "Settings": [
@@ -259,6 +259,18 @@
                                     ],
                                     "TimeStart": 0,
                                     "TimeStop": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
                                 }
                             ]
                         }
