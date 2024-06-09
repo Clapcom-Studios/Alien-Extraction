@@ -595,9 +595,11 @@ public class Narrative_Item : YmirComponent
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue)
+        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue && player.currentMenu == "")
         {
             gameCanvas.SetActive(false);
+
+            player.currentMenu = "Item Dialogue";
 
             canvas_Items.SetActive(true);
             active_Dialogue = true;
@@ -646,6 +648,8 @@ public class Narrative_Item : YmirComponent
     {
         dialogue_ = Dialogue_id.ID_1;
         //EXIT
+        player.currentMenu = "";
+
         player.PlayerStopState(false);
         active_Dialogue = false;
         canvas_Items.SetActive(false);

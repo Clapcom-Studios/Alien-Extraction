@@ -1096,8 +1096,10 @@ public class Caius : YmirComponent
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue && player.currentMenu != "Crafting Canvas")
+        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue && player.currentMenu == "")
         {
+            player.currentMenu = "Caius Dialogue";
+
             canvas_Caius.SetActive(true);
             active_Dialogue = true;
             player.PlayerStopState(true);
@@ -1187,6 +1189,8 @@ public class Caius : YmirComponent
 
         dialogue_ = Dialogue_id.ID_1;
         //EXIT
+        player.currentMenu = "";
+
         player.PlayerStopState(false);
         active_Dialogue = false;
         canvas_Caius.SetActive(false);

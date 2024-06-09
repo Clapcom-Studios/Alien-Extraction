@@ -190,7 +190,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -216,7 +216,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -241,7 +241,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -301,7 +301,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -339,7 +339,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -376,7 +376,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -469,7 +469,7 @@ public class Iscariot : YmirComponent
                     SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
 
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
@@ -757,9 +757,11 @@ public class Iscariot : YmirComponent
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue)
+        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && player.currentMenu == "")
         {
             gameCanvas.SetActive(false);
+
+            player.currentMenu = "Iscariot Dialogue";
 
             canvas_Iscariot.SetActive(true);
             active_Dialogue = true;
