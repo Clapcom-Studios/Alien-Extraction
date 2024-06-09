@@ -43,14 +43,14 @@ public class SpitterAcidExplosion : YmirComponent
         //SET DAMAGE HERE
         switch (damage)
         {
-            case 350f:
-                damage = 100f;
+            case 300f:
+                damage = 125f;
                 break;
-            case 380f:
-                damage = 120f;
+            case 375f:
+                damage = 174f;
                 break;
-            case 400f:
-                damage = 130f;
+            case 440f:
+                damage = 212f;
                 break;
         }
         gameObject.SetMass(1.0f);
