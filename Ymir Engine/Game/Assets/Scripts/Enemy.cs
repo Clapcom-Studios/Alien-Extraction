@@ -271,18 +271,31 @@ public class Enemy : YmirComponent
 
             if(!name.Contains("resinheal") && !name.Contains("core_mythic"))
             {
-                if (randNum2 < commonProb)
+                
+                if (rarity == 0)    //Case common
                 {
-                    name += "_common";
+                    if (randNum2 < commonProb)
+                    {
+                        name += "_common";
+                    }
+                    else if (randNum2 < (commonProb + rareProb))
+                    {
+                        name += "_rare";
+                    }
+                    else
+                    {
+                        name += "_epic";
+                    }
                 }
-                else if (randNum2 < (commonProb + rareProb))
+                else if(rarity == 1)    //Case rare
                 {
                     name += "_rare";
                 }
-                else
+                else if(rarity == 2)    //Case elite
                 {
                     name += "_epic";
                 }
+                
             }
            
             Debug.Log("[WARNING] Name ---------- " + name);
