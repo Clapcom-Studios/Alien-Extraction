@@ -66,7 +66,7 @@ public class UI_Inventory : YmirComponent
                         case UPGRADE.LVL_3_ALPHA:
 
                             UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon"),
-                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl3A.png", (int)UI_STATE.NORMAL);
+                                "Assets\\UI\\HUD Buttons\\Icons\\SmgLvl31.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
@@ -109,7 +109,7 @@ public class UI_Inventory : YmirComponent
                             player.currentWeapon = player.w_Shotgun_3a.GetComponent<Shotgun>();
                             player.w_Shotgun_3a.SetActive(true);
                             UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl3A.png", (int)UI_STATE.NORMAL);
+                                "Assets\\UI\\HUD Buttons\\Icons\\ShotgunLvl31.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
@@ -154,7 +154,7 @@ public class UI_Inventory : YmirComponent
                             player.currentWeapon = player.w_Plasma_3a.GetComponent<Plasma>();
                             player.w_Plasma_3a.SetActive(true);
                             UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Weapon Image"),
-                                "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl3A.png", (int)UI_STATE.NORMAL);
+                                "Assets\\UI\\HUD Buttons\\Icons\\LaserLvl31.png", (int)UI_STATE.NORMAL);
                             break;
                         case UPGRADE.LVL_3_BETA:
 
