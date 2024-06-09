@@ -1063,11 +1063,11 @@
                                     "Speed2": 0,
                                     "ChangeSpeedMode": 0,
                                     "NewDirection": [
+                                        -1,
                                         0,
-                                        0,
-                                        0
+                                        -1
                                     ],
-                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed1": 15,
                                     "ChangeSpeed2": 1,
                                     "NormalizedChange": true
                                 },
@@ -1181,13 +1181,13 @@
                                     "Accelerates": false,
                                     "Speed1": 15,
                                     "Speed2": 0,
-                                    "ChangeSpeedMode": 0,
+                                    "ChangeSpeedMode": 3,
                                     "NewDirection": [
+                                        -1,
                                         0,
-                                        0,
-                                        0
+                                        1
                                     ],
-                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed1": 15,
                                     "ChangeSpeed2": 1,
                                     "NormalizedChange": true
                                 },
@@ -1301,13 +1301,13 @@
                                     "Accelerates": false,
                                     "Speed1": 15,
                                     "Speed2": 0,
-                                    "ChangeSpeedMode": 0,
+                                    "ChangeSpeedMode": 3,
                                     "NewDirection": [
+                                        1,
                                         0,
-                                        0,
-                                        0
+                                        -1
                                     ],
-                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed1": 15,
                                     "ChangeSpeed2": 1,
                                     "NormalizedChange": true
                                 },
@@ -1421,13 +1421,13 @@
                                     "Accelerates": false,
                                     "Speed1": 15,
                                     "Speed2": 0,
-                                    "ChangeSpeedMode": 0,
+                                    "ChangeSpeedMode": 3,
                                     "NewDirection": [
+                                        1,
                                         0,
-                                        0,
-                                        0
+                                        1
                                     ],
-                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed1": 1,
                                     "ChangeSpeed2": 1,
                                     "NormalizedChange": true
                                 },
