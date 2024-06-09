@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        -116.71982574462891,
-        259.73724365234375,
-        176.82345581054688
+        -407.31890869140625,
+        354.23977661132812,
+        216.19004821777344
     ],
     "Editor Camera Right (X)": [
-        0.55789583921432495,
-        -6.7055225372314453e-08,
-        -0.82991123199462891
+        -0.99377143383026123,
+        -5.1781535148620605e-07,
+        -0.11141243577003479
     ],
     "Editor Camera Up (Y)": [
-        -0.18307837843894958,
-        0.9753645658493042,
-        -0.12307185679674149
+        -0.067592427134513855,
+        0.79494392871856689,
+        0.60290408134460449
     ],
     "Editor Camera Front (Z)": [
-        -0.80946570634841919,
-        -0.22059997916221619,
-        -0.54415154457092285
+        -0.088566452264785767,
+        -0.6066814661026001,
+        0.78999370336532593
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1009144271,
+            "UID": 176392911,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -78,7 +78,7 @@
             "UID": 1281640994,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26147,7 +26147,7 @@
             "UID": 128304438,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26227,7 +26227,7 @@
         {
             "Name": "Floor",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1570473728,
             "Active": true,
             "Element_Type": "None",
@@ -26286,13 +26286,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_1 (1)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 169059886,
             "Active": true,
             "Element_Type": "None",
@@ -26351,13 +26357,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_2",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 248164050,
             "Active": true,
             "Element_Type": "None",
@@ -26416,13 +26428,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_3",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1855156839,
             "Active": true,
             "Element_Type": "None",
@@ -26481,13 +26499,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_4",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 628611767,
             "Active": true,
             "Element_Type": "None",
@@ -26546,13 +26570,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_5",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 742581727,
             "Active": true,
             "Element_Type": "None",
@@ -26611,13 +26641,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_6",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1550218841,
             "Active": true,
             "Element_Type": "None",
@@ -26676,13 +26712,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_7",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 495414082,
             "Active": true,
             "Element_Type": "None",
@@ -26741,13 +26783,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_8",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1698559113,
             "Active": true,
             "Element_Type": "None",
@@ -26806,13 +26854,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_9",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 908527740,
             "Active": true,
             "Element_Type": "None",
@@ -26871,13 +26925,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Collider_10",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1088869738,
             "Active": true,
             "Element_Type": "None",
@@ -26936,13 +26996,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (8)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1323333040,
             "Active": true,
             "Element_Type": "None",
@@ -27001,13 +27067,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (9)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 385258378,
             "Active": true,
             "Element_Type": "None",
@@ -27066,13 +27138,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (10)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 853975144,
             "Active": true,
             "Element_Type": "None",
@@ -27131,13 +27209,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (11)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 130692485,
             "Active": true,
             "Element_Type": "None",
@@ -27196,13 +27280,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (12)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 549429168,
             "Active": true,
             "Element_Type": "None",
@@ -27261,13 +27351,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (13)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1522211856,
             "Active": true,
             "Element_Type": "None",
@@ -27326,13 +27422,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (14)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 62202917,
             "Active": true,
             "Element_Type": "None",
@@ -27391,13 +27493,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (15)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1263323654,
             "Active": true,
             "Element_Type": "None",
@@ -27456,13 +27564,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (16)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 2024484041,
             "Active": true,
             "Element_Type": "None",
@@ -27521,13 +27635,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (17)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1815065648,
             "Active": true,
             "Element_Type": "None",
@@ -27586,13 +27706,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (18)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1143419296,
             "Active": true,
             "Element_Type": "None",
@@ -27651,13 +27777,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (19)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1785507470,
             "Active": true,
             "Element_Type": "None",
@@ -27716,13 +27848,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (20)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1620446388,
             "Active": true,
             "Element_Type": "None",
@@ -27781,13 +27919,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (21)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 567651613,
             "Active": true,
             "Element_Type": "None",
@@ -27846,13 +27990,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (22)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 390767498,
             "Active": true,
             "Element_Type": "None",
@@ -27911,13 +28061,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (23)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 812919964,
             "Active": true,
             "Element_Type": "None",
@@ -27976,13 +28132,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (24)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 608126740,
             "Active": true,
             "Element_Type": "None",
@@ -28041,13 +28203,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (25)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1994099772,
             "Active": true,
             "Element_Type": "None",
@@ -28106,13 +28274,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (26)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 793946516,
             "Active": true,
             "Element_Type": "None",
@@ -28171,13 +28345,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (27)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 214695472,
             "Active": true,
             "Element_Type": "None",
@@ -28236,13 +28416,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (28)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 792651016,
             "Active": true,
             "Element_Type": "None",
@@ -28258,7 +28444,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        9.442296028137207,
+                        9.4422950744628906,
                         -0
                     ],
                     "Scale": [
@@ -28301,13 +28487,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (29)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 768638794,
             "Active": true,
             "Element_Type": "None",
@@ -28366,13 +28558,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (30)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1079029317,
             "Active": true,
             "Element_Type": "None",
@@ -28431,13 +28629,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (31)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1216234443,
             "Active": true,
             "Element_Type": "None",
@@ -28496,13 +28700,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (32)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 430464357,
             "Active": true,
             "Element_Type": "None",
@@ -28561,13 +28771,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (33)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1052460873,
             "Active": true,
             "Element_Type": "None",
@@ -28626,13 +28842,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (34)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 539486471,
             "Active": true,
             "Element_Type": "None",
@@ -28691,13 +28913,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (35)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 377279107,
             "Active": true,
             "Element_Type": "None",
@@ -28756,13 +28984,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (36)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1759833527,
             "Active": true,
             "Element_Type": "None",
@@ -28821,13 +29055,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (37)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 2889530,
             "Active": true,
             "Element_Type": "None",
@@ -28886,13 +29126,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (41)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1673104850,
             "Active": true,
             "Element_Type": "None",
@@ -28951,13 +29197,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (1)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 624265911,
             "Active": true,
             "Element_Type": "None",
@@ -29016,13 +29268,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (2)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 198757067,
             "Active": true,
             "Element_Type": "None",
@@ -29081,13 +29339,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (3)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 232101194,
             "Active": true,
             "Element_Type": "None",
@@ -29146,13 +29410,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (4)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1461742361,
             "Active": true,
             "Element_Type": "None",
@@ -29211,13 +29481,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (5)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 649357804,
             "Active": true,
             "Element_Type": "None",
@@ -29276,13 +29552,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (6)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 2066488912,
             "Active": true,
             "Element_Type": "None",
@@ -29341,13 +29623,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (7)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1213664140,
             "Active": true,
             "Element_Type": "None",
@@ -29406,13 +29694,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (38)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1523770339,
             "Active": true,
             "Element_Type": "None",
@@ -29471,13 +29765,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (39)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 876988130,
             "Active": true,
             "Element_Type": "None",
@@ -29536,13 +29836,19 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
         {
             "Name": "Empty (40)",
             "Static": false,
-            "Tag": "Untagged",
+            "Tag": "World",
             "UID": 1603082207,
             "Active": true,
             "Element_Type": "None",
@@ -29601,6 +29907,12 @@
                         0,
                         1
                     ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Collider.cs",
+                    "Active": 1,
+                    "UID": 0
                 }
             ]
         },
@@ -29611,7 +29923,7 @@
             "UID": 1654859733,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30793,7 +31105,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30804,7 +31116,7 @@
                         -52.581008911132812
                     ],
                     "Rotation": [
-                        1.3512629237766305e-08,
+                        1.3512631014123144e-08,
                         90,
                         0
                     ],
@@ -31139,7 +31451,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31516,7 +31828,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31893,7 +32205,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31904,9 +32216,9 @@
                         376.10519409179688
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.09000030905008316,
@@ -32228,7 +32540,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32605,7 +32917,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32696,7 +33008,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303826777053018e-09,
+                        3.8303835658837215e-09,
                         90,
                         0
                     ],
@@ -32775,7 +33087,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7867085944089922e-06,
+                        1.7867088217826677e-06,
                         90,
                         0
                     ],
@@ -32854,7 +33166,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303848981513511e-09,
+                        3.8303857863297708e-09,
                         90,
                         0
                     ],
@@ -32982,7 +33294,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33073,7 +33385,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8303817895268821e-09,
+                        3.8303826777053018e-09,
                         90,
                         0
                     ],
@@ -33152,7 +33464,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7867083670353168e-06,
+                        1.7867085944089922e-06,
                         90,
                         0
                     ],
@@ -33231,7 +33543,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8303840099729314e-09,
+                        3.8303848981513511e-09,
                         90,
                         0
                     ],
@@ -33358,7 +33670,7 @@
             "UID": 270068987,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33505,7 +33817,7 @@
             "UID": 1459164758,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33652,7 +33964,7 @@
             "UID": 1922542640,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33742,9 +34054,9 @@
                         0.2705078125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -46.212207794189453,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.000002384185791,
@@ -33821,9 +34133,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -45.824016571044922,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000112056732178,
@@ -33970,7 +34282,7 @@
             "UID": 82626634,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34288,7 +34600,7 @@
             "UID": 2007148406,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34315,8 +34627,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1800,
-                    "Height": 1048,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -34543,7 +34855,7 @@
             "UID": 1714005665,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35259,7 +35571,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35779,7 +36091,7 @@
             "UID": 1570294117,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36299,7 +36611,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36389,9 +36701,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         89.532699584960938,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000097751617432,
@@ -36474,9 +36786,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         89.40521240234375,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000066757202148,
@@ -36629,7 +36941,7 @@
             "UID": 1965195139,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -38303,7 +38615,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39228,7 +39540,7 @@
             "UID": 977801764,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39313,9 +39625,9 @@
                         327.16177368164062
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         32.520938873291016,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.4884411096572876,
@@ -41730,9 +42042,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -42608,9 +42920,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -44477,7 +44789,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -45149,7 +45461,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -45176,8 +45488,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1800,
-                    "Height": 1048,
+                    "Width": 1234,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -47176,7 +47488,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54800,7 +55112,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -55341,7 +55653,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -55694,7 +56006,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -55871,7 +56183,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -56681,7 +56993,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -56726,9 +57038,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.10000000149011612,
@@ -69878,7 +70190,7 @@
             "UID": 1260795295,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69972,7 +70284,7 @@
             "UID": 595217980,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71120,7 +71432,7 @@
             "UID": 1606186791,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72000,7 +72312,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74055,7 +74367,7 @@
             "UID": 1014194499,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74428,7 +74740,7 @@
             "UID": 1278660870,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74971,7 +75283,7 @@
             "UID": 1401646486,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75242,7 +75554,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
@@ -75987,7 +76299,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1009144271,
+            "Parent UID": 176392911,
             "Components": [
                 {
                     "Type": "Transform",
