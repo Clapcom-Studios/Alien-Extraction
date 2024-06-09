@@ -5,11 +5,11 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "135",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Wwise-Project\\Ymir-Project\\",
-   "SourceFilesRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Wwise-Project\\Ymir-Project\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Project-Clapcom\\Project-Clapcom\\Ymir Engine\\Game\\Assets\\SoundBanks\\",
+   "ProjectRoot": "C:\\Users\\victo\\Documents\\GitHub\\Wwise-Project\\Ymir-Project\\",
+   "SourceFilesRoot": "C:\\Users\\victo\\Documents\\GitHub\\Wwise-Project\\Ymir-Project\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\victo\\Documents\\GitHub\\Project-Clapcom\\Ymir Engine\\Game\\Assets\\SoundBanks\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\Marcel\\Documents\\GitHub\\Game_Engine\\Wwise-Project\\Ymir-Project\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\victo\\Documents\\GitHub\\Wwise-Project\\Ymir-Project\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
   "StreamedFiles": [],
@@ -923,6 +923,7 @@
    {
     "Id": "1069431850",
     "Language": "SFX",
+    "Hash": "21843063",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Characters\\Player",
     "ShortName": "Player",
     "Path": "Player.bnk",
@@ -1036,6 +1037,22 @@
         "Language": "SFX",
         "ShortName": "HitTaken.wav",
         "Path": "SFX\\HitTaken_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3988877765",
+      "Name": "P_NoAmmo",
+      "ObjectPath": "\\Events\\Default Work Unit\\Characters\\Player\\P_NoAmmo",
+      "DurationType": "OneShot",
+      "DurationMin": "0.075062",
+      "DurationMax": "0.075062",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "943356187",
+        "Language": "SFX",
+        "ShortName": "CHAR_SFX_NoAmmo.wav",
+        "Path": "SFX\\CHAR_SFX_NoAmmo_10C4C929.wem"
        }
       ]
      },
@@ -2048,7 +2065,6 @@
    {
     "Id": "1597175165",
     "Language": "SFX",
-    "Hash": "2293449130",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Dialogue\\True_ending",
     "ShortName": "True_ending",
     "Path": "True_ending.bnk",
@@ -2234,7 +2250,6 @@
    {
     "Id": "1634322527",
     "Language": "SFX",
-    "Hash": "1543860644",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Dialogue\\Normalend",
     "ShortName": "Normalend",
     "Path": "Normalend.bnk",
@@ -2381,7 +2396,6 @@
    {
     "Id": "2364323432",
     "Language": "SFX",
-    "Hash": "1510928180",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\AlienHead_Shoot",
     "ShortName": "AlienHead_Shoot",
     "Path": "AlienHead_Shoot.bnk",
@@ -3344,7 +3358,6 @@
    {
     "Id": "3930136735",
     "Language": "SFX",
-    "Hash": "2313414661",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Dialogue\\Dialogue",
     "ShortName": "Dialogue",
     "Path": "Dialogue.bnk",

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALIENHEAD_SHOOT = 2364323432U;
         static const AkUniqueID ASHES = 3157117959U;
         static const AkUniqueID B_AIRCOND = 3898569340U;
         static const AkUniqueID B_CABLESSPURT = 3589440314U;
@@ -24,6 +25,13 @@ namespace AK
         static const AkUniqueID BONE = 1744723399U;
         static const AkUniqueID C_CONFIRM = 4124650545U;
         static const AkUniqueID C_TALK = 1343835049U;
+        static const AkUniqueID DIALOGUE_1 = 3196045927U;
+        static const AkUniqueID DIALOGUE_2 = 3196045924U;
+        static const AkUniqueID DIALOGUE_3 = 3196045925U;
+        static const AkUniqueID DIALOGUE_4 = 3196045922U;
+        static const AkUniqueID DIALOGUE_5 = 3196045923U;
+        static const AkUniqueID DIALOGUE_6 = 3196045920U;
+        static const AkUniqueID DIALOGUE_7 = 3196045921U;
         static const AkUniqueID DX_CLAW = 3945193905U;
         static const AkUniqueID DX_CRY = 1160464164U;
         static const AkUniqueID DX_DEATH = 41230362U;
@@ -75,6 +83,13 @@ namespace AK
         static const AkUniqueID LVL2_MUSIC = 886520485U;
         static const AkUniqueID LVL3_MUSIC = 761846308U;
         static const AkUniqueID METAL = 2473969246U;
+        static const AkUniqueID NORMALEND_1 = 1302258087U;
+        static const AkUniqueID NORMALEND_2 = 1302258084U;
+        static const AkUniqueID NORMALEND_3 = 1302258085U;
+        static const AkUniqueID NORMALEND_4 = 1302258082U;
+        static const AkUniqueID NORMALEND_5 = 1302258083U;
+        static const AkUniqueID NORMALEND_6 = 1302258080U;
+        static const AkUniqueID NORMALEND_7 = 1302258081U;
         static const AkUniqueID P_ACIDSPIT = 4041423483U;
         static const AkUniqueID P_ACIDSPITHIT = 1348116050U;
         static const AkUniqueID P_ACIDSPITPUDDLE = 2936341071U;
@@ -82,6 +97,7 @@ namespace AK
         static const AkUniqueID P_DEATH = 947529532U;
         static const AkUniqueID P_HEAL = 547444056U;
         static const AkUniqueID P_HIT = 1073763149U;
+        static const AkUniqueID P_NOAMMO = 3988877765U;
         static const AkUniqueID P_PREDRUSH = 19031741U;
         static const AkUniqueID P_RELIEF = 2290830213U;
         static const AkUniqueID P_SHOOT = 1216763735U;
@@ -97,6 +113,17 @@ namespace AK
         static const AkUniqueID QX_PUDDLE = 2449904509U;
         static const AkUniqueID QX_TAILHIT = 1976728978U;
         static const AkUniqueID QX_TAILMOVE = 1375369856U;
+        static const AkUniqueID TRUE_ENDING_1 = 2665347193U;
+        static const AkUniqueID TRUE_ENDING_2 = 2665347194U;
+        static const AkUniqueID TRUE_ENDING_3 = 2665347195U;
+        static const AkUniqueID TRUE_ENDING_4 = 2665347196U;
+        static const AkUniqueID TRUE_ENDING_5 = 2665347197U;
+        static const AkUniqueID TRUE_ENDING_6 = 2665347198U;
+        static const AkUniqueID TRUE_ENDING_7 = 2665347199U;
+        static const AkUniqueID TRUE_ENDING_8 = 2665347184U;
+        static const AkUniqueID TRUE_ENDING_9 = 2665347185U;
+        static const AkUniqueID TRUE_ENDING_10 = 2423137867U;
+        static const AkUniqueID TRUE_ENDING_11 = 2423137866U;
         static const AkUniqueID UI_BACK = 2024222415U;
         static const AkUniqueID UI_CLOSEMAP = 3152746076U;
         static const AkUniqueID UI_CRAFT = 3368728976U;
@@ -205,6 +232,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID ALIENHEAD_SHOOT = 2364323432U;
         static const AkUniqueID AMBIENTB = 4095160059U;
         static const AkUniqueID AMBIENTLV1 = 265111210U;
         static const AkUniqueID AMBIENTLV2 = 265111209U;
@@ -212,6 +240,7 @@ namespace AK
         static const AkUniqueID BASEMUSIC = 643931339U;
         static const AkUniqueID CAIUS = 209385238U;
         static const AkUniqueID CONSUMABLES = 3213291899U;
+        static const AkUniqueID DIALOGUE = 3930136735U;
         static const AkUniqueID DRONEXENOMORPH = 978134277U;
         static const AkUniqueID FACEHUGGER = 4095621880U;
         static const AkUniqueID FIREARM = 542436681U;
@@ -225,9 +254,11 @@ namespace AK
         static const AkUniqueID MAPINTERACTIONLV2 = 1430525661U;
         static const AkUniqueID MAPINTERACTIONLV3 = 1430525660U;
         static const AkUniqueID MATERIALS = 4050929301U;
+        static const AkUniqueID NORMALEND = 1634322527U;
         static const AkUniqueID PLASMA = 1000644167U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID QUEENXENOMORPH = 2982135181U;
+        static const AkUniqueID TRUE_ENDING = 1597175165U;
         static const AkUniqueID UI_SFX = 3563481019U;
         static const AkUniqueID UIMUSIC = 3402873772U;
         static const AkUniqueID XENOSPITTER = 2692855564U;
