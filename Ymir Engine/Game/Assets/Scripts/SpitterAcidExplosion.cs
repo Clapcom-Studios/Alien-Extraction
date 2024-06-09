@@ -35,6 +35,7 @@ public class SpitterAcidExplosion : YmirComponent
         destroyed = false;
         destroyTimer = 0f;
         direction = gameObject.transform.globalPosition - player.transform.globalPosition;
+        direction.y = 0f;
         Quaternion rotation = Quaternion.LookRotation(direction);
         gameObject.SetRotation(rotation);
         damage = gameObject.GetMass();

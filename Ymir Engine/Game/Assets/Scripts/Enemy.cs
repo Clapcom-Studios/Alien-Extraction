@@ -149,6 +149,9 @@ public class Enemy : YmirComponent
         Vector3 destination = agent.GetDestination();
         Vector3 direction = destination - pos;
 
+        //So that enemies dont start going up
+        direction.y = 0f;
+
         gameObject.SetVelocity(direction.normalized * speed * Time.deltaTime);
     }
 

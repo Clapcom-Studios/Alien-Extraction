@@ -1065,7 +1065,7 @@ void CreateSpitterAcidSpit(MonoObject* position, MonoObject* rotation, float dam
 
 	float3 posVector = External->moduleMono->UnboxVector(position);
 	Quat rotVector = External->moduleMono->UnboxQuat(rotation);
-	float3 scaleVector = float3(2.5f, 2.5f, 2.5f);
+	float3 scaleVector = float3(2.0f, 2.0f, 2.0f);
 
 	go->mTransform->SetPosition(posVector);
 	go->mTransform->SetScale(scaleVector);
@@ -1100,7 +1100,7 @@ void CreateSpitterAcidExplosive(MonoObject* position, MonoObject* rotation, floa
 
 	float3 posVector = External->moduleMono->UnboxVector(position);
 	Quat rotVector = External->moduleMono->UnboxQuat(rotation);
-	float3 scaleVector = float3(2.5f, 2.5f, 2.5f);
+	float3 scaleVector = float3(2.0f, 2.0f, 2.0f);
 
 	go->mTransform->SetPosition(posVector);
 	go->mTransform->SetScale(scaleVector);

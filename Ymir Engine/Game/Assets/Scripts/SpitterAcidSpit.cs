@@ -35,6 +35,7 @@ public class SpitterAcidSpit : YmirComponent
         destroyed = false;
         destroyTimer = 0f;
         direction = gameObject.transform.globalPosition - player.transform.globalPosition;
+        direction.y = 0f;
         Quaternion rotation = Quaternion.LookRotation(direction);
         gameObject.SetRotation(rotation);
         damage = gameObject.GetMass();
@@ -52,7 +53,7 @@ public class SpitterAcidSpit : YmirComponent
 
         destroyTimer += Time.deltaTime;
 
-        if (destroyed || destroyTimer >= 2f) 
+        if (destroyed || destroyTimer >= 0.8f) 
         {
             InternalCalls.Destroy(gameObject);
         }

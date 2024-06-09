@@ -47,6 +47,9 @@ public class SpitterBaseScript : Enemy
     private float acidDamage = 350f;
     private float explosionDamage = 350f;
 
+    private bool explosionEnabled = false;
+    private float explosionCounter = 0f;
+
     //Acid rebound
     //private float tailDamage;
     private float acidExplosiveCooldown;
@@ -195,6 +198,36 @@ public class SpitterBaseScript : Enemy
 
     public void Update()
     {
+
+        if (explosionEnabled)
+        {
+            explosionCounter += Time.deltaTime;
+            if (explosionCounter >= 1.3f)
+            {
+                explosionCounter = 0f;
+                explosionEnabled = false;
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit");
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 3, 10.0f);
+                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 3);
+                Particles.PlayParticlesTrigger(particlesGO);
+
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit1");
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 4, 10.0f);
+                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 4);
+                Particles.PlayParticlesTrigger(particlesGO);
+
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit2");
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 5, 10.0f);
+                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 5);
+                Particles.PlayParticlesTrigger(particlesGO);
+
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit3");
+                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 6, 10.0f);
+                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 6);
+                Particles.PlayParticlesTrigger(particlesGO);
+            }
+        }
+
         if (CheckPause())
         {
             SetPause(true);
@@ -415,7 +448,7 @@ public class SpitterBaseScript : Enemy
                 else if (timeCounter >= 0.6f && acidDone == false)
                 {
                     Vector3 pos = gameObject.transform.globalPosition;
-                    pos.y += 15;
+                    pos.y += 10;
                     InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation, acidDamage);
                     //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterAcidSpit", pos);
 
@@ -450,7 +483,7 @@ public class SpitterBaseScript : Enemy
                 else if (timeCounter >= 0.6f && explosionDone == false)
                 {
                     Vector3 pos = gameObject.transform.globalPosition;
-                    pos.y += 15;
+                    pos.y += 10;
                     pos.z -= 10;
                     InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation, explosionDamage);
                     //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterExplosive", pos);
@@ -465,6 +498,7 @@ public class SpitterBaseScript : Enemy
                     explosionDone = true;
                     //GameObject particles = GetParticles(gameObject, "ParticlesAcidicEnemy");
                     //Particles.PlayParticlesTrigger(particles);
+                    explosionEnabled = true;
                 }
 
                 break;
