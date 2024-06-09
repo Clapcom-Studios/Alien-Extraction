@@ -164,7 +164,8 @@ public class Button_Navigation : YmirComponent
         SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Lvl 2 Completed", false);
         SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Has dead", false);
         SaveLoad.SaveBool(Globals.saveGameDir, fileName, "First Incursion", false);
-        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Boss Figth", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "Boss Fight", false);
+        SaveLoad.SaveBool(Globals.saveGameDir, fileName, "True Ending", false);
 
         // Stats
         SaveLoad.SaveFloat(Globals.saveGameDir, fileName, "Health", 1200);

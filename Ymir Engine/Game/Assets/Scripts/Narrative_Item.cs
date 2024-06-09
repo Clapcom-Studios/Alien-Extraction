@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-
 using YmirEngine;
 
 public class Narrative_Item : YmirComponent
@@ -20,6 +19,8 @@ public class Narrative_Item : YmirComponent
     bool active_Dialogue;
 
     public Player player;
+    public GameObject gameCanvas = null;
+
     public GameObject canvas_Items = null;
     public GameObject name_Npc = null;
     public GameObject dialogue_Npc = null;
@@ -36,6 +37,9 @@ public class Narrative_Item : YmirComponent
     private const float retryDuration = 0.5f;
 
     public int itemID;
+
+    //Save & Load
+    string saveName;
 
     public enum Dialogue_id
     {
@@ -58,12 +62,12 @@ public class Narrative_Item : YmirComponent
     public void Start()
     {
         player = InternalCalls.GetGameObjectByName("Player").GetComponent<Player>();
+        gameCanvas = InternalCalls.GetGameObjectByName("Game Canvas");
 
         active_Dialogue = false;
         canvas_Items = InternalCalls.GetGameObjectByName("Npc_Dialogue");
         name_Npc = InternalCalls.GetGameObjectByName("Name_Npc");
         dialogue_Npc = InternalCalls.GetGameObjectByName("dialogue_Npc");
-        dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/Iscariot_Dialogue.csv");
         Ybutton = InternalCalls.GetGameObjectByName("buttonY");
         Bbutton = InternalCalls.GetGameObjectByName("buttonB");
         Abutton = InternalCalls.GetGameObjectByName("buttonA");
@@ -71,8 +75,60 @@ public class Narrative_Item : YmirComponent
 
         popup = InternalCalls.CS_GetChild(gameObject, 1);
 
+        //En relación al ID cargar un csv o otro
+        if (itemID == 0)
+        {
+            //Holo Screen
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/HOLO_SCREEN_ID100.csv");
+        }
+        else if (itemID == 1)
+        {
+            //Corpse Lv 1
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/CORPSE_ID101.csv");
+
+        }
+        else if (itemID == 2)
+        {
+            //Android head
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/ANDROID_HEAD_ID102.csv");
+
+        }
+        else if (itemID == 3)
+        {
+            //Corpse Lv 2
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/CORPSE_ID103.csv");
+
+        }
+        else if (itemID == 6)
+        {
+            //Corpse Lv 3
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/CORPSE_ID106.csv");
+
+        }
+        else if (itemID == 7)
+        {
+            //C4
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/C4_ID107.csv");
+
+        }
+        else if (itemID == 8)
+        {
+            //Clothes
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/CLOTHES_ID108.csv");
+
+        }
+        else if (itemID == 9)
+        {
+            //Android body
+            dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/ANDROID_BODY_ID109.csv");
+
+        }
+
         LoadDialogues(dialoguescsv);
         dialogue_ = Dialogue_id.ID_1;
+
+
+        saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
     }
 
     public void Update()
@@ -89,28 +145,161 @@ public class Narrative_Item : YmirComponent
             //Interacciones - Respuestas TODO: En relación al ID del item(, cambiar la ruta del "dialoguescsv", vaciar el diccionario y volver a cargar los diálogos) (Tal vez no haga falta). Y hacer los inputs en relación a la ID
             //player.PlayerStopState(true);
             //IFs de todas las interacciones:
+            if (itemID == 0)
             {
-
+                //Holo Screen
                 //ID 1
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
                 {
-                    dialogue_ = Dialogue_id.ID_6;
+                    dialogue_ = Dialogue_id.ID_3;
                     return;
                 }
-                if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
                 {
-                    dialogue_ = Dialogue_id.ID_6;
+                    //Guardar el bool de interacción con la holo screen
+                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Holo Screen", true);
+                    ExitDialogue();
                     return;
                 }
-                if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+            }
+            else if (itemID == 1)
+            {
+                //Corpse Lv 1
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
                 {
-                    dialogue_ = Dialogue_id.ID_6;
+                    dialogue_ = Dialogue_id.ID_3;
                     return;
                 }
-                if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    dialogue_ = Dialogue_id.ID_5;
+                    return;
+                }
+                //ID 5
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
                 {
                     ExitDialogue();
-
+                    return;
+                }
+            }
+            else if (itemID == 2)
+            {
+                //Android head
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                {
+                    dialogue_ = Dialogue_id.ID_3;
+                    return;
+                }
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    dialogue_ = Dialogue_id.ID_5;
+                    return;
+                }
+                //ID 5
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+                {
+                    //Guardar el bool de interacción con la Android Head
+                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Android Head", true);
+                    ExitDialogue();
+                    return;
+                }
+            }
+            else if (itemID == 3)
+            {
+                //Corpse Lv 2
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                {
+                    dialogue_ = Dialogue_id.ID_3;
+                    return;
+                }
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    dialogue_ = Dialogue_id.ID_5;
+                    return;
+                }
+                //ID 5
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+                {
+                    ExitDialogue();
+                    return;
+                }
+            }
+            else if (itemID == 6)
+            {
+                //Corpse Lv 3
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                {
+                    dialogue_ = Dialogue_id.ID_3;
+                    return;
+                }
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    dialogue_ = Dialogue_id.ID_5;
+                    return;
+                }
+                //ID 5
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_5)
+                {
+                    //Guardar el bool de interacción con el cadaver
+                    SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Interacted Corpse", true);
+                    ExitDialogue();
+                    return;
+                }
+            }
+            else if (itemID == 7)
+            {
+                //C4
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                {
+                    dialogue_ = Dialogue_id.ID_3;
+                    return;
+                }
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    ExitDialogue();
+                    return;
+                }
+            }
+            else if (itemID == 8)
+            {
+                //Clothes
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                {
+                    dialogue_ = Dialogue_id.ID_3;
+                    return;
+                }
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    ExitDialogue();
+                    return;
+                }
+            }
+            else if (itemID == 9)
+            {
+                //Android body
+                //ID 1
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
+                {
+                    dialogue_ = Dialogue_id.ID_3;
+                    return;
+                }
+                //ID 3
+                if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_3)
+                {
+                    ExitDialogue();
                     return;
                 }
             }
@@ -135,40 +324,268 @@ public class Narrative_Item : YmirComponent
 
     public void DialogueManager()
     {
-
         //Visual - Diálogos + Respuestas
-        switch (dialogue_)
+        if (itemID == 0)
         {
+            //Holo Screen
+            
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
 
-            case Dialogue_id.ID_0:
-                dialogue_ = Dialogue_id.ID_1;
-                break;
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
 
-            case Dialogue_id.ID_1:
-                UI.TextEdit(name_Npc, dialogue[1].Name);
-                UI.TextEdit(dialogue_Npc, dialogue[1].Text);
-                UI.TextEdit(Ybutton, dialogue[2].Text);
-                UI.TextEdit(Bbutton, dialogue[3].Text);
-                UI.TextEdit(Abutton, dialogue[4].Text);
-                UI.TextEdit(Xbutton, dialogue[5].Text);
-                break;
-            case Dialogue_id.ID_6:
-                UI.TextEdit(name_Npc, dialogue[6].Name);
-                UI.TextEdit(dialogue_Npc, dialogue[6].Text);
-                UI.TextEdit(Ybutton, dialogue[7].Text);
-                UI.TextEdit(Bbutton, dialogue[8].Text);
-                UI.TextEdit(Abutton, dialogue[9].Text);
-                UI.TextEdit(Xbutton, " ");
-                break;
-            case Dialogue_id.ID_10:
-                UI.TextEdit(name_Npc, dialogue[10].Name);
-                UI.TextEdit(dialogue_Npc, dialogue[10].Text);
-                UI.TextEdit(Ybutton, dialogue[11].Text);
-                UI.TextEdit(Bbutton, dialogue[12].Text);
-                UI.TextEdit(Abutton, dialogue[13].Text);
-                UI.TextEdit(Xbutton, " ");
-                break;
+            }
+        }
+        else if (itemID == 1)
+        {
+            //Corpse Lv 1
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
 
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
+
+        }
+        else if (itemID == 2)
+        {
+            //Android head
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
+
+        }
+        else if (itemID == 3)
+        {
+            //Corpse Lv 2
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
+
+        }
+        else if (itemID == 6)
+        {
+            //Corpse Lv 3
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_5:
+                    UI.TextEdit(name_Npc, dialogue[5].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[5].Text);
+                    UI.TextEdit(Ybutton, dialogue[6].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
+
+        }
+        else if (itemID == 7)
+        {
+            //C4
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
+        }
+        else if (itemID == 8)
+        {
+            //Clothes
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
+
+        }
+        else if (itemID == 9)
+        {
+            //Android body
+            switch (dialogue_)
+            {
+                case Dialogue_id.ID_0:
+                    dialogue_ = Dialogue_id.ID_1;
+                    break;
+
+                case Dialogue_id.ID_1:
+                    UI.TextEdit(name_Npc, dialogue[1].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[1].Text);
+                    UI.TextEdit(Ybutton, dialogue[2].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+                case Dialogue_id.ID_3:
+                    UI.TextEdit(name_Npc, dialogue[3].Name);
+                    UI.TextEdit(dialogue_Npc, dialogue[3].Text);
+                    UI.TextEdit(Ybutton, dialogue[4].Text);
+                    UI.TextEdit(Bbutton, " ");
+                    UI.TextEdit(Abutton, " ");
+                    UI.TextEdit(Xbutton, " ");
+                    break;
+
+            }
         }
     }
     public void OnCollisionStay(GameObject other)
@@ -180,6 +597,8 @@ public class Narrative_Item : YmirComponent
 
         if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue)
         {
+            gameCanvas.SetActive(false);
+
             canvas_Items.SetActive(true);
             active_Dialogue = true;
             player.PlayerStopState(true);
@@ -233,5 +652,7 @@ public class Narrative_Item : YmirComponent
 
         retryDialogue = true;
         retryTimer = retryDuration;
+
+        gameCanvas.SetActive(true);
     }
 }

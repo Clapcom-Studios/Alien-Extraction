@@ -584,6 +584,32 @@ bool RaycastTest(MonoObject* obj, MonoObject* origin, MonoObject* direction, flo
 	return External->physics->RaycastTest(fOrigin, fdirection, rayLenght);
 }
 
+float RaycastLenght(MonoObject* obj, MonoObject* origin, MonoObject* direction, float rayLenght) {
+
+	if (External == nullptr)
+		return NULL;
+
+	GameObject* cpp_gameObject = External->moduleMono->GameObject_From_CSGO(obj);
+
+	float3 pOrigin = External->moduleMono->UnboxVector(origin);
+
+	btVector3 fOrigin;
+
+	fOrigin.setX(pOrigin.x);
+	fOrigin.setY(pOrigin.y);
+	fOrigin.setZ(pOrigin.z);
+
+	float3 pdirection = External->moduleMono->UnboxVector(direction);
+
+	btVector3 fdirection;
+
+	fdirection.setX(pdirection.x);
+	fdirection.setY(pdirection.y);
+	fdirection.setZ(pdirection.z);
+
+	return External->physics->RaycastLenght(fOrigin, fdirection, rayLenght);
+}
+
 void SetColliderActive(MonoObject* obj, bool isActive)
 {
 	if (External == nullptr)
@@ -1724,6 +1750,24 @@ void SetPlayerHitBoolean(MonoObject* go, bool value)
 	{
 		mat->shader.SetUniformValue("playerHit", &value);
 	}
+}
+
+void CS_SetBothFOV(float value)
+{
+	External->scene->gameCameraComponent->SetBothFOV(value);
+	External->scene->gameCameraComponent->SetAspectRatio(1.8F);
+}
+
+void CS_SetHorizontalFOV(float value)
+{
+	External->scene->gameCameraComponent->SetHorizontalFOV(value);
+	External->scene->gameCameraComponent->SetAspectRatio(1.8F);
+}
+
+void CS_SetVerticalFOV(float value)
+{
+	External->scene->gameCameraComponent->SetVerticalFOV(value);
+	External->scene->gameCameraComponent->SetAspectRatio(1.8F);
 }
 
 int GetCurrentMapCS()

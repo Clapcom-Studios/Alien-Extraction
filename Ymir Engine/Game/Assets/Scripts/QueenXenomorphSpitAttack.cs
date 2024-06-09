@@ -15,6 +15,9 @@ public class QueenXenomorphSpitAttack : YmirComponent
 
     private GameObject player;
 
+    private GameObject boss;
+    private QueenXenomorphBaseScript bossScript;
+
     private Health healthScript;
 
     private bool destroyed;
@@ -26,6 +29,8 @@ public class QueenXenomorphSpitAttack : YmirComponent
         movementSpeed = 7000f;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        bossScript = boss.GetComponent<QueenXenomorphBaseScript>();
         Vector3 impulse = gameObject.transform.GetForward();
         impulse += new Vector3(0, -0.02f, 0);
         gameObject.SetImpulse(impulse * movementSpeed * Time.deltaTime);
@@ -96,7 +101,7 @@ public class QueenXenomorphSpitAttack : YmirComponent
     {
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
-            healthScript.TakeDmg(damage);
+            healthScript.TakeDmg(bossScript.acidDMG);
             destroyed = true;
         }
     }

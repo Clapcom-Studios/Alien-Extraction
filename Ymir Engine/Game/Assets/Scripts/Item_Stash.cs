@@ -50,10 +50,18 @@ public class Item_Stash : YmirComponent
             if (other.Tag == "Player" && Input.IsGamepadButtonAPressedCS() || other.Name == "Player" && Input.IsGamepadButtonAPressedCS())
             {
                 popup.SetActive(false);
-                player.currentMenu = goName;
-                player.ToggleMenu(true);
+                //player.currentMenu = goName;
+                player.ToggleMenu(true, goName);
                 show_menu = false;
             }
+
+        }
+
+        if (other.Tag == "Player" && Input.IsGamepadButtonBPressedCS() || other.Name == "Player" && Input.IsGamepadButtonBPressedCS())
+        {
+            //TODO: Añadir timer al darle a la B
+            popup.SetActive(true);
+            show_menu = true;
         }
     }
     public void OnCollisionExit(GameObject other)

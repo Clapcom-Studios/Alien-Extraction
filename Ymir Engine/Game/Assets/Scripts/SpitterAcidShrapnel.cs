@@ -12,7 +12,7 @@ public class SpitterAcidShrapnel : YmirComponent
 
     private float movementSpeed;
 
-    private float damage = 150f;
+    private float damage = 125f;
 
     private GameObject player;
 

@@ -9,18 +9,58 @@ using YmirEngine;
 public class SceneManager : YmirComponent
 {
     // Loading scene
-    private GameObject loadSceneImg;
+    private GameObject loadScenebase;
+    private GameObject loadScenelvl1;
+    private GameObject loadScenelvl2_1;
+    private GameObject loadScenelvl2_2;
+    private GameObject loadScenelvl3_1;
+    private GameObject loadScenelvlBoss;
     private bool loadScene = false;
 
     private string sceneName = "Assets/BASE_FINAL/LVL_BASE_COLLIDERS.yscene";
-
+    private float finishTimer = 2f;
     public void Start()
     {
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
-
-        if (loadSceneImg != null)
+        //----------Base-----------//
+        loadScenebase = InternalCalls.GetGameObjectByName("Loading Scene base");
+        if (loadScenebase != null)
         {
-            loadSceneImg.SetActive(false);
+            loadScenebase.SetActive(false);
+        }
+
+        //----------LVL1-----------//
+        loadScenelvl1 = InternalCalls.GetGameObjectByName("Loading Scene 1");
+        if (loadScenelvl1 != null)
+        {
+            loadScenelvl1.SetActive(false);
+        }
+
+        //----------lvl2_1-----------//
+        loadScenelvl2_1 = InternalCalls.GetGameObjectByName("Loading Scene 2_1");
+        if (loadScenelvl2_1 != null)
+        {
+            loadScenelvl2_1.SetActive(false);
+        }
+
+        //----------lvl2_1-----------//
+        loadScenelvl2_2 = InternalCalls.GetGameObjectByName("Loading Scene 2_2");
+        if (loadScenelvl2_2 != null)
+        {
+            loadScenelvl2_2.SetActive(false);
+        }
+
+        //----------lvl3_1-----------//
+        loadScenelvl3_1 = InternalCalls.GetGameObjectByName("Loading Scene 3_1");
+        if (loadScenelvl3_1 != null)
+        {
+            loadScenelvl3_1.SetActive(false);
+        } 
+        
+        //----------lvlBoss-----------//
+        loadScenelvlBoss = InternalCalls.GetGameObjectByName("Loading Scene Boss");
+        if (loadScenelvlBoss != null)
+        {
+            loadScenelvlBoss.SetActive(false);
         }
 
         loadScene = false;
@@ -28,20 +68,30 @@ public class SceneManager : YmirComponent
 
     public void Update()
     {
+        if (finishTimer >= 0)
+        {
+            finishTimer -= Time.deltaTime;
+        }
         if (loadScene)
         {
-            InternalCalls.LoadScene(sceneName);
-            loadScene = false;
+            if (finishTimer <= 0)
+            {
+                Globals.GetPlayerScript().SavePlayer();
+
+                InternalCalls.LoadScene(sceneName);
+                loadScene = false;
+            }
 
             return;
         }
 
         if (Input.GetKey(YmirKeyCode.KP_1) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadScenebase != null)
             {
-                loadSceneImg.SetActive(true);
+                loadScenebase.SetActive(true);
             }
 
             loadScene = true;
@@ -52,10 +102,11 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_2) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadScenelvl1 != null)
             {
-                loadSceneImg.SetActive(true);
+                loadScenelvl1.SetActive(true);
             }
 
             loadScene = true;
@@ -66,10 +117,11 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_3) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadScenelvl2_1 != null)
             {
-                loadSceneImg.SetActive(true);
+                loadScenelvl2_1.SetActive(true);
             }
 
             loadScene = true;
@@ -80,10 +132,11 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_4) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadScenelvl2_2 != null)
             {
-                loadSceneImg.SetActive(true);
+                loadScenelvl2_2.SetActive(true);
             }
 
             loadScene = true;
@@ -94,10 +147,11 @@ public class SceneManager : YmirComponent
 
         if (Input.GetKey(YmirKeyCode.KP_5) == KeyState.KEY_DOWN)
         {
+            finishTimer = 2;
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadScenelvl3_1 != null)
             {
-                loadSceneImg.SetActive(true);
+                loadScenelvl3_1.SetActive(true);
             }
 
             loadScene = true;
@@ -109,9 +163,9 @@ public class SceneManager : YmirComponent
         if (Input.GetKey(YmirKeyCode.KP_6) == KeyState.KEY_DOWN)
         {
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadScenelvlBoss != null)
             {
-                loadSceneImg.SetActive(true);
+                loadScenelvlBoss.SetActive(true);
             }
 
             loadScene = true;

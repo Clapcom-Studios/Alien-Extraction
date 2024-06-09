@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System;
-using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -19,25 +16,33 @@ public class Boss_Health_Bar : YmirComponent
     public float initialHP = 500;
     public Vector3 initialScale;
 
+    public GameObject healthBar = null;
     public GameObject boss = null;
-    public GameObject plane = null;
+    
 
-    private FaceHuggerBaseScript aux = null;
-    private DroneXenomorphBaseScript aux2 = null;
-    private SpitterBaseScript aux3 = null;
+    //private FaceHuggerBaseScript aux = null;
+    //private DroneXenomorphBaseScript aux2 = null;
+    //private SpitterBaseScript aux3 = null;
     private QueenXenomorphBaseScript bossScript = null;
 
     public void Start()
     {
-        
-        plane = InternalCalls.CS_GetChild(gameObject, 0);
-        initialScale = plane.transform.localScale;
+
+        healthBar = InternalCalls.GetGameObjectByName("Boss_HealtBar");
+       
 
 
         bossScript = boss.GetComponent<QueenXenomorphBaseScript>();
 
         SetInitialHP();
-        initialHP = HP;
+
+        if (healthBar != null)
+        {
+            UI.SliderSetMax(healthBar, initialHP);
+            UI.SliderEdit(healthBar, initialHP);
+        }
+        
+        HP = initialHP;
     }
 
     public void Update()
@@ -49,7 +54,7 @@ public class Boss_Health_Bar : YmirComponent
 
         float scaleX = Mathf.Max(0, initialScale.x * (HP / initialHP));
         Vector3 newScale = new Vector3(scaleX, initialScale.y, initialScale.z);
-        plane.SetScale(newScale);
+       
 
         //---------------Xiao: Gurrada Pendiente de Cambiar----------------------------
         if (bossScript != null)
@@ -68,7 +73,7 @@ public class Boss_Health_Bar : YmirComponent
     {
         if (bossScript != null)
         {
-            HP = bossScript.life;
+            initialHP = bossScript.life;
 
         }
     }

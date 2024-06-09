@@ -1,0 +1,275 @@
+{
+    "Prefab": [
+        {
+            "Name": "Corpse Lv 2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1401646486,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 813747985,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        334.2003173828125,
+                        0,
+                        -210.56895446777344
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Narrative_Item.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "retryDuration": 0,
+                    "itemID": 1,
+                    "dialogue_": 0
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        25.5,
+                        16.600000381469727,
+                        27.200000762939453
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                778225420,
+                2037668442
+            ]
+        },
+        {
+            "Name": "Cadaver_Fixpose",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 778225420,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
+            "Parent UID": 1401646486,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        239.189697265625,
+                        -95.153900146484375,
+                        175.15370178222656
+                    ],
+                    "Rotation": [
+                        0,
+                        -62.781166076660156,
+                        0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1024197061,
+                    "Vertex Count": 2195,
+                    "Index Count": 6489
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                -224.43099975585938,
+                                112.50956726074219,
+                                326.9771728515625
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 3028,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/WAREHOUSE\/Cadaver Sit\/TEX_RPOP_CadaverSit_D.png",
+                    "Diffuse_UID": 589176179,
+                    "Specular_ID": 1676,
+                    "Specular_Path": "Assets\/Textures\/General_Props\/Dead_Body_Sit\/TEX_RPOP_CadaverSit_S.png",
+                    "Specular_UID": 365463522,
+                    "Normal_ID": 3031,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/WAREHOUSE\/Cadaver Sit\/TEX_RPOP_CadaverSit_N.png",
+                    "Normal_UID": 928419154,
+                    "Height_ID": 1668,
+                    "Height_Path": "Assets\/Textures\/General_Props\/Dead_Body_Sit\/TEX_RPOP_CadaverSit_H.png",
+                    "Height_UID": 609140720,
+                    "Ambient_ID": 3025,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/WAREHOUSE\/Cadaver Sit\/TEX_RPOP_CadaverSit_A.png",
+                    "Ambient_UID": 13605657
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        8.673095703125,
+                        10.352485656738281,
+                        11.84375
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        -237.69999694824219,
+                        100.80000305175781,
+                        -173.89999389648438
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Pop-Up (8)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2037668442,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1401646486,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        28.132255554199219,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        10,
+                        10,
+                        10
+                    ]
+                }
+            ],
+            "Children UID": [
+                696709153
+            ]
+        },
+        {
+            "Name": "Cube (7)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 696709153,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Primitives\/Cube.fbx",
+            "Parent UID": 2037668442,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1728623793,
+                    "Vertex Count": 24,
+                    "Index Count": 36
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/DefaultShader.glsl",
+                    "Uniforms": [
+                        {}
+                    ],
+                    "Diffuse_ID": 656,
+                    "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
+                    "Diffuse_UID": 962411016
+                }
+            ]
+        }
+    ]
+}

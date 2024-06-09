@@ -15,7 +15,7 @@ public class SMG : Weapon
         playerObject = InternalCalls.GetGameObjectByName("Player");
         player = playerObject.GetComponent<Player>();
 
-        range = 100;
+        range = 150;
         reloadTime = 1.056f;
 
         switch (_upgrade)
@@ -26,6 +26,7 @@ public class SMG : Weapon
                 ammo = 35;
                 fireRate = 0.07f;
                 damage = 5;
+                reloadTime = 1.556f;
 
                 break;
             case UPGRADE.LVL_1:
@@ -34,6 +35,7 @@ public class SMG : Weapon
                 ammo = 35;
                 fireRate = 0.06f;
                 damage = 9;
+                reloadTime = 1.456f;
 
                 break;
             case UPGRADE.LVL_2:

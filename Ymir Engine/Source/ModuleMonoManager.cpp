@@ -89,6 +89,10 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.InternalCalls::SetColor", SetColorMaterial);
 	mono_add_internal_call("YmirEngine.InternalCalls::SetPlayerHitBoolean", SetPlayerHitBoolean);
 
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetBothFOV", CS_SetBothFOV);
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetHorizontalFOV", CS_SetHorizontalFOV);
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetVerticalFOV", CS_SetVerticalFOV);
+
 #pragma region GameObject
 
 	mono_add_internal_call("YmirEngine.GameObject::SetActive", SetActive);
@@ -143,6 +147,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.GameObject::ClearForces", ClearForces);
 	mono_add_internal_call("YmirEngine.GameObject::RaycastHit", RaycastHit);
 	mono_add_internal_call("YmirEngine.GameObject::RaycastTest", RaycastTest);
+	mono_add_internal_call("YmirEngine.GameObject::RaycastLenght", RaycastLenght);
 	mono_add_internal_call("YmirEngine.GameObject::SetColliderActive", SetColliderActive);
 
 #pragma endregion
@@ -183,6 +188,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 
 	// Slider
 	mono_add_internal_call("YmirEngine.UI::SliderEdit", SliderEdit);
+	mono_add_internal_call("YmirEngine.UI::SetSliderFill", SetSliderFill);
 	mono_add_internal_call("YmirEngine.UI::SliderSetRange", SliderSetRange);
 	mono_add_internal_call("YmirEngine.UI::SliderSetMin", SliderSetMin);
 	mono_add_internal_call("YmirEngine.UI::SliderSetMax", SliderSetMax);

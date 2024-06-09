@@ -74,6 +74,7 @@ public:
 	bool Raycast(btVector3 origin, btVector3 direction, float rayLength, std::vector<btVector3>& hitPoints, std::vector<GameObject*>& hits);
 	GameObject* RaycastHit(btVector3 origin, btVector3 direction, float rayLength);
 	bool RaycastTest(btVector3 origin, btVector3 direction, float rayLength);
+	float RaycastLenght(btVector3 origin, btVector3 direction, float rayLength);
 
 	btScalar* getOpenGLMatrix(float4x4 matrix);
 

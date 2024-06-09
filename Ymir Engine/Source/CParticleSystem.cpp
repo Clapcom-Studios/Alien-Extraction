@@ -578,6 +578,7 @@ JSON_Value* CParticleSystem::SaveEmmiterJSON2(ParticleEmitter* emitter)
 				EmitterRotation* eRotation = (EmitterRotation*)emitter->modules.at(i);
 
 				//Enums de options
+				json_object_set_boolean(child_object, "UpdateRotation", eRotation->updateRotation);
 				json_object_set_number(child_object, "AligmentMode", eRotation->currentAlignmentMode);
 				json_object_set_number(child_object, "WorldOrientation", eRotation->orientationFromWorld);
 				json_object_set_number(child_object, "AxisOrientation", eRotation->orientationOfAxis);

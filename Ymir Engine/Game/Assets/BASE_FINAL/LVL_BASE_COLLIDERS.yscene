@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -85.058738708496094,
-        89.817131042480469,
-        36.498245239257812
+        -57.335418701171875,
+        58.248928070068359,
+        57.244674682617188
     ],
     "Editor Camera Right (X)": [
-        0.57063066959381104,
-        -1.6540288925170898e-06,
-        0.82122325897216797
+        0.94820481538772583,
+        -5.5134296417236328e-07,
+        0.31386783719062805
     ],
     "Editor Camera Up (Y)": [
-        0.5407642126083374,
-        0.7525908350944519,
-        -0.37575092911720276
+        0.19359931349754333,
+        0.78615832328796387,
+        -0.58486831188201904
     ],
     "Editor Camera Front (Z)": [
-        0.61804306507110596,
-        -0.6584935188293457,
-        -0.4294513463973999
+        0.2473437488079071,
+        -0.61682295799255371,
+        -0.74723446369171143
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 588977135,
+            "UID": 1242846569,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -49,7 +49,10 @@
                 1676754095,
                 1781007999,
                 728169813,
-                1806365249
+                1806365249,
+                1614273345,
+                1829172732,
+                1781007999
             ]
         },
         {
@@ -59,7 +62,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1741,7 +1744,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1858,7 +1861,7 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
+                        -44.220001220703125,
                         0,
                         0
                     ],
@@ -1908,24 +1911,24 @@
                             "emissive": 1
                         }
                     ],
-                    "Diffuse_ID": 1907,
+                    "Diffuse_ID": 4769,
                     "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_D.png",
-                    "Diffuse_UID": 650517951,
-                    "Specular_ID": 1711,
-                    "Specular_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
-                    "Specular_UID": 77663990,
-                    "Normal_ID": 1913,
+                    "Diffuse_UID": 642519894,
+                    "Specular_ID": 4784,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
+                    "Specular_UID": 293916259,
+                    "Normal_ID": 4780,
                     "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_N.png",
-                    "Normal_UID": 2098994329,
-                    "Height_ID": 1705,
-                    "Height_Path": "Assets\/ARTE_BETA\/ResizedTextures\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
-                    "Height_UID": 315706084,
-                    "Ambient_ID": 1903,
+                    "Normal_UID": 1314918048,
+                    "Height_ID": 4777,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
+                    "Height_UID": 1040059758,
+                    "Ambient_ID": 4787,
                     "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_A.png",
-                    "Ambient_UID": 882649465,
-                    "Emissive_ID": 1910,
+                    "Ambient_UID": 1103766639,
+                    "Emissive_ID": 4773,
                     "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_E.png",
-                    "Emissive_UID": 227594324
+                    "Emissive_UID": 1547837161
                 },
                 {
                     "World gravity": [
@@ -6393,21 +6396,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1325,
-                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_D.png",
-                    "Diffuse_UID": 1263252680,
+                    "Diffuse_ID": 384,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_D.png",
+                    "Diffuse_UID": 874116053,
                     "Specular_ID": 1337,
                     "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_S.png",
                     "Specular_UID": 1682613414,
-                    "Normal_ID": 1333,
-                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_N.png",
-                    "Normal_UID": 1262956276,
-                    "Height_ID": 1329,
-                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_H.png",
-                    "Height_UID": 1679178438,
-                    "Ambient_ID": 1321,
-                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/Starting Floor Textures\/TEX_PROP_Starting_Floor_A.png",
-                    "Ambient_UID": 206248705
+                    "Normal_ID": 2788,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_N.png",
+                    "Normal_UID": 1045223274,
+                    "Height_ID": 392,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_H.png",
+                    "Height_UID": 846340382,
+                    "Ambient_ID": 2792,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_A.png",
+                    "Ambient_UID": 665107503,
+                    "Emissive_ID": 2790,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/Starting Floor Textures\/TEX_PROP_Starting_Floor_E.png",
+                    "Emissive_UID": 1225942883
                 }
             ]
         },
@@ -6425,7 +6431,7 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        0,
+                        2.2809925079345703,
                         0,
                         0
                     ],
@@ -6469,21 +6475,24 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1345,
-                    "Diffuse_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_D.png",
-                    "Diffuse_UID": 257923906,
+                    "Diffuse_ID": 1778,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_D.png",
+                    "Diffuse_UID": 1408752495,
                     "Specular_ID": 1357,
                     "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_S.png",
                     "Specular_UID": 258922290,
-                    "Normal_ID": 1353,
-                    "Normal_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_N.png",
-                    "Normal_UID": 288739023,
-                    "Height_ID": 1349,
-                    "Height_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_H.png",
-                    "Height_UID": 502150592,
-                    "Ambient_ID": 1341,
-                    "Ambient_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_A.png",
-                    "Ambient_UID": 1551045021
+                    "Normal_ID": 1782,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_N.png",
+                    "Normal_UID": 1647812766,
+                    "Height_ID": 1780,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_H.png",
+                    "Height_UID": 1940099393,
+                    "Ambient_ID": 1786,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_A.png",
+                    "Ambient_UID": 1182168975,
+                    "Emissive_ID": 1784,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_E.png",
+                    "Emissive_UID": 1927387175
                 }
             ]
         },
@@ -8526,7 +8535,8 @@
             ],
             "Children UID": [
                 1691427243,
-                1522841663
+                1522841663,
+                120870665
             ]
         },
         {
@@ -8641,7 +8651,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8723,7 +8734,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8805,7 +8817,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8887,7 +8900,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -8969,7 +8983,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -9051,7 +9066,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 1393,
@@ -9151,6 +9167,71 @@
                     "Diffuse_ID": 656,
                     "Diffuse_Path": "Assets\/Prefabs\/x_ps4_PROVISIONAL.png",
                     "Diffuse_UID": 962411016
+                }
+            ]
+        },
+        {
+            "Name": "Collider Caius",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 120870665,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1086457827,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.85470122098922729,
+                        0.85470086336135864,
+                        0.85470122098922729
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        7,
+                        33.400001525878906,
+                        7
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
                 }
             ]
         },
@@ -9831,7 +9912,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12602,7 +12683,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12639,7 +12720,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13011,9 +13092,9 @@
                         -91.655326843261719
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -82.532630920410156,
-                        -180
+                        180
                     ],
                     "Scale": [
                         37.865478515625,
@@ -13096,9 +13177,9 @@
                         -65.55548095703125
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -27.589302062988281,
-                        180
+                        -180
                     ],
                     "Scale": [
                         37.865474700927734,
@@ -13170,7 +13251,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13181,9 +13262,9 @@
                         -123.50099945068359
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -89.980216979980469,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.99997800588607788,
@@ -13365,7 +13446,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13517,7 +13598,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13669,7 +13750,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13696,8 +13777,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 597,
+                    "Width": 1800,
+                    "Height": 1048,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -14013,7 +14094,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         164,
-                        1018.3974609375,
+                        961,
                         200,
                         50
                     ],
@@ -14066,10 +14147,7 @@
             ],
             "Children UID": [
                 664762359,
-                794843613,
-                1118421309,
-                397458731,
-                404505283
+                1887788900
             ]
         },
         {
@@ -14106,15 +14184,15 @@
                     "Draggeable": false,
                     "Position X": 661,
                     "Position Y": 913,
-                    "Width": 103,
-                    "Height": 107,
+                    "Width": 74,
+                    "Height": 73,
                     "UI Type": 6,
                     "UI State": 1,
                     "Drag Limits": [
                         661,
                         913,
-                        103,
-                        107
+                        74,
+                        73
                     ],
                     "Is interactable": true,
                     "Fill image": 1746115142,
@@ -14158,7 +14236,6 @@
                 995673855,
                 1746115142,
                 346795120,
-                833603155,
                 1843557112
             ]
         },
@@ -14194,17 +14271,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 661,
-                    "Position Y": 913,
-                    "Width": 107,
-                    "Height": 112,
+                    "Position X": 711,
+                    "Position Y": 926,
+                    "Width": 74,
+                    "Height": 73,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        661,
-                        913,
-                        107,
-                        112
+                        711,
+                        926,
+                        74,
+                        73
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Slider\/Slider_Background.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14215,7 +14292,7 @@
                     "Color": [
                         0,
                         0,
-                        1.7999999523162842,
+                        0,
                         0
                     ]
                 },
@@ -14257,17 +14334,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 670,
-                    "Position Y": 913,
-                    "Width": 103,
-                    "Height": 107,
+                    "Position X": 711,
+                    "Position Y": 926,
+                    "Width": 74,
+                    "Height": 73,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        670,
-                        913,
-                        103,
-                        107
+                        711,
+                        926,
+                        74,
+                        73
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Slider\/Slider_Fill.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14320,82 +14397,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 626,
-                    "Position Y": 841,
+                    "Position X": 660,
+                    "Position Y": 874,
                     "Width": 692,
-                    "Height": 215,
+                    "Height": 199,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        626,
-                        841,
+                        660,
+                        874,
                         692,
-                        215
+                        199
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/MainHud.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
-            "Name": "Heal Icon",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 833603155,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 664762359,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 706,
-                    "Position Y": 874,
-                    "Width": 16,
-                    "Height": 32,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        706,
-                        874,
-                        16,
-                        32
-                    ],
-                    "Path": "Assets\/UI\/HUD Buttons\/Icons\/VesselLlena.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -14446,17 +14460,17 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 685,
-                    "Position Y": 885,
-                    "Width": 58,
-                    "Height": 52,
+                    "Position X": 735,
+                    "Position Y": 1040,
+                    "Width": 28,
+                    "Height": 18,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        685,
-                        885,
-                        58,
-                        52
+                        735,
+                        1040,
+                        28,
+                        18
                     ],
                     "Path": "Assets\/UI\/HUD Buttons\/Bumper_unpressed.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
@@ -14477,15 +14491,16 @@
                 }
             ],
             "Children UID": [
-                456066568,
+                1968257339,
+                833603155,
                 426264512
             ]
         },
         {
-            "Name": "Number Heals",
+            "Name": "Image Bg (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 456066568,
+            "UID": 1968257339,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1843557112,
@@ -14513,19 +14528,85 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 746,
-                    "Position Y": 896,
+                    "Position X": 772,
+                    "Position Y": 1004,
+                    "Width": 71,
+                    "Height": 39,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        772,
+                        1004,
+                        71,
+                        39
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/potcount.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ],
+            "Children UID": [
+                456066568
+            ]
+        },
+        {
+            "Name": "Number Heals",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 456066568,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1968257339,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 784,
+                    "Position Y": 1030,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        746,
-                        896,
+                        784,
+                        1030,
                         200,
                         50
                     ],
-                    "Text": "x2",
+                    "Text": "2\/2",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 15,
@@ -14540,6 +14621,69 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Heal Icon",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 833603155,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1843557112,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 738,
+                    "Position Y": 1009,
+                    "Width": 22,
+                    "Height": 32,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        738,
+                        1009,
+                        22,
+                        32
+                    ],
+                    "Path": "Assets\/UI\/HUD Buttons\/Icons\/VesselLlena.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
                 }
             ]
         },
@@ -14575,15 +14719,15 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 707,
-                    "Position Y": 914,
+                    "Position X": 742,
+                    "Position Y": 1053,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        707,
-                        914,
+                        742,
+                        1053,
                         200,
                         50
                     ],
@@ -14606,13 +14750,49 @@
             ]
         },
         {
-            "Name": "Frame (1)",
+            "Name": "Empty (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 794843613,
+            "UID": 1887788900,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 175461015,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        21.399999618530273,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                397458731,
+                1118421309,
+                794843613,
+                404505283
+            ]
+        },
+        {
+            "Name": "Frame (3)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 397458731,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14638,14 +14818,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 837,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         837,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -14683,19 +14863,19 @@
                 }
             ],
             "Children UID": [
-                1520941648,
-                1278031458,
-                627738032
+                450047155,
+                1039560090,
+                156246151
             ]
         },
         {
-            "Name": "Skill (1)",
+            "Name": "Skill (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1520941648,
+            "UID": 450047155,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 794843613,
+            "Parent UID": 397458731,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14720,19 +14900,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 846,
-                    "Position Y": 944,
+                    "Position X": 845,
+                    "Position Y": 907,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        846,
-                        944,
+                        845,
+                        907,
                         55,
                         55
                     ],
-                    "Path": "Assets\/UI\/Skills Icons\/Tail.png",
+                    "Path": "Assets\/UI\/Skills Icons\/Acid.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -14752,13 +14932,13 @@
             ]
         },
         {
-            "Name": "Skill Button (1)",
+            "Name": "Skill Button (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1278031458,
+            "UID": 1039560090,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 794843613,
+            "Parent UID": 397458731,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14784,14 +14964,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 860,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         860,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -14815,13 +14995,13 @@
             ]
         },
         {
-            "Name": "Gp Text (1)",
+            "Name": "Gp Text (3)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 627738032,
+            "UID": 156246151,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 794843613,
+            "Parent UID": 397458731,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14846,22 +15026,22 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 870,
-                    "Position Y": 1007,
+                    "Position X": 868,
+                    "Position Y": 972,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        870,
-                        1007,
+                        868,
+                        972,
                         200,
                         50
                     ],
-                    "Text": "Y",
+                    "Text": "RB",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
-                    "Font size": 10,
+                    "Font size": 7,
                     "Line Spacing": 1,
                     "Color": [
                         0,
@@ -14883,7 +15063,7 @@
             "UID": 1118421309,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14909,14 +15089,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 941,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         941,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -14992,14 +15172,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 948,
-                    "Position Y": 942,
+                    "Position Y": 907,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         948,
-                        942,
+                        907,
                         55,
                         55
                     ],
@@ -15055,14 +15235,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 964,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         964,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15117,19 +15297,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 975,
-                    "Position Y": 1007,
+                    "Position X": 973,
+                    "Position Y": 973,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
-                        975,
-                        1007,
+                        973,
+                        973,
                         200,
                         50
                     ],
-                    "Text": "B",
+                    "Text": "Y",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 10,
@@ -15148,13 +15328,13 @@
             ]
         },
         {
-            "Name": "Frame (3)",
+            "Name": "Frame (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 397458731,
+            "UID": 794843613,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15180,14 +15360,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1043,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1043,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -15225,19 +15405,19 @@
                 }
             ],
             "Children UID": [
-                450047155,
-                1039560090,
-                156246151
+                1520941648,
+                1278031458,
+                627738032
             ]
         },
         {
-            "Name": "Skill (3)",
+            "Name": "Skill (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 450047155,
+            "UID": 1520941648,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 397458731,
+            "Parent UID": 794843613,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15262,19 +15442,19 @@
                     "Type": "UI",
                     "Active": 1,
                     "Draggeable": false,
-                    "Position X": 1051,
-                    "Position Y": 942,
+                    "Position X": 1052,
+                    "Position Y": 909,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
-                        1051,
-                        942,
+                        1052,
+                        909,
                         55,
                         55
                     ],
-                    "Path": "Assets\/UI\/Skills Icons\/Acid.png",
+                    "Path": "Assets\/UI\/Skills Icons\/Tail.png",
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
@@ -15294,13 +15474,13 @@
             ]
         },
         {
-            "Name": "Skill Button (3)",
+            "Name": "Skill Button (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1039560090,
+            "UID": 1278031458,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 397458731,
+            "Parent UID": 794843613,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15326,14 +15506,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1066,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1066,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15357,13 +15537,13 @@
             ]
         },
         {
-            "Name": "Gp Text (3)",
+            "Name": "Gp Text (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 156246151,
+            "UID": 627738032,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 397458731,
+            "Parent UID": 794843613,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15389,18 +15569,18 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1076,
-                    "Position Y": 1007,
+                    "Position Y": 973,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
                         1076,
-                        1007,
+                        973,
                         200,
                         50
                     ],
-                    "Text": "X",
+                    "Text": "B",
                     "Font name": "NK57 Monospace Se Bd.otf",
                     "Font path": "Assets\\Fonts",
                     "Font size": 10,
@@ -15425,7 +15605,7 @@
             "UID": 404505283,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 175461015,
+            "Parent UID": 1887788900,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15451,14 +15631,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1181,
-                    "Position Y": 933,
+                    "Position Y": 898,
                     "Width": 75,
                     "Height": 75,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1181,
-                        933,
+                        898,
                         75,
                         75
                     ],
@@ -15534,14 +15714,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1190,
-                    "Position Y": 944,
+                    "Position Y": 909,
                     "Width": 55,
                     "Height": 55,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1190,
-                        944,
+                        909,
                         55,
                         55
                     ],
@@ -15597,14 +15777,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1204,
-                    "Position Y": 989,
+                    "Position Y": 954,
                     "Width": 29,
                     "Height": 29,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         1204,
-                        989,
+                        954,
                         29,
                         29
                     ],
@@ -15660,14 +15840,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 1213,
-                    "Position Y": 1006,
+                    "Position Y": 971,
                     "Width": 200,
                     "Height": 50,
                     "UI Type": 2,
                     "UI State": 1,
                     "Drag Limits": [
                         1213,
-                        1006,
+                        971,
                         200,
                         50
                     ],
@@ -15696,7 +15876,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -22558,7 +22738,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24420,7 +24600,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53213,7 +53393,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57228,7 +57408,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57255,8 +57435,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1934,
-                    "Height": 1112,
+                    "Width": 1910,
+                    "Height": 1165,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -67396,8 +67576,8 @@
                     "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
                     "Current Frame X": 0,
                     "Current Frame Y": 0,
-                    "Rows": 3,
-                    "Columns": 4,
+                    "Rows": 2,
+                    "Columns": 5,
                     "Color": [
                         0,
                         0,
@@ -67433,7 +67613,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68178,7 +68358,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -68719,7 +68899,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69074,7 +69254,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69315,7 +69495,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69342,8 +69522,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1910,
+                    "Height": 1165,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -70125,7 +70305,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 588977135,
+            "Parent UID": 1242846569,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70283,6 +70463,8 @@
                     "upgradeType": 0,
                     "damageMultiplier": 0,
                     "vulnerable": true,
+                    "aimAngle": 0,
+                    "isAiming": true,
                     "itemsList": 0,
                     "currentResinVessels": 0,
                     "maxResinVessels": 2,
@@ -70310,7 +70492,10 @@
                     "w_Plasma_1": 1853496771,
                     "w_Plasma_2": 1854497212,
                     "w_Plasma_3a": 19022395,
-                    "w_Plasma_3b": 1319339575
+                    "w_Plasma_3b": 1319339575,
+                    "startFOV": 0,
+                    "endFOV": 0,
+                    "duration": 0
                 }
             ],
             "Children UID": [
@@ -70406,7 +70591,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 59,
@@ -70476,7 +70662,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 44,
@@ -70546,7 +70733,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 46,
@@ -70616,7 +70804,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 42,
@@ -70686,7 +70875,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 100,
@@ -70824,6 +71014,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -70910,6 +71101,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71057,6 +71249,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71125,6 +71318,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71244,6 +71438,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71343,7 +71538,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 123,
@@ -71483,6 +71679,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71569,6 +71766,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71716,6 +71914,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71784,6 +71983,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71866,6 +72066,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -71981,6 +72182,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72113,7 +72315,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 138,
@@ -72272,6 +72475,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -72359,6 +72563,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72459,6 +72664,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72593,6 +72799,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72701,7 +72908,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 157,
@@ -72839,6 +73047,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -72925,6 +73134,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73072,6 +73282,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73140,6 +73351,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73259,6 +73471,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73358,7 +73571,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 177,
@@ -73498,6 +73712,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73584,6 +73799,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73731,6 +73947,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73799,6 +74016,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73881,6 +74099,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -73996,6 +74215,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74132,7 +74352,8 @@
                                 0,
                                 1,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 197,
@@ -74291,6 +74512,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -74378,6 +74600,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74478,6 +74701,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74612,6 +74836,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74769,6 +74994,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -74860,6 +75086,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75007,6 +75234,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75160,6 +75388,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75288,6 +75517,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75464,6 +75694,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75551,6 +75782,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75676,6 +75908,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75776,6 +76009,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -75924,6 +76158,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76015,6 +76250,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76200,6 +76436,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76325,6 +76562,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76463,6 +76701,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76573,6 +76812,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76692,6 +76932,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -76843,7 +77084,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 217,
@@ -77002,6 +77244,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -77089,6 +77332,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77189,6 +77433,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77323,6 +77568,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77431,7 +77677,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 341,
@@ -77590,6 +77837,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -77677,6 +77925,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77777,6 +78026,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -77911,6 +78161,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78019,7 +78270,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 317,
@@ -78181,6 +78433,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 0,
                                     "AxisOrientation": 3,
@@ -78268,6 +78521,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78368,6 +78622,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78502,6 +78757,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78610,7 +78866,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 237,
@@ -78750,6 +79007,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78836,6 +79094,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -78983,6 +79242,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79051,6 +79311,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79133,6 +79394,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79248,6 +79510,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79384,7 +79647,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 361,
@@ -79524,6 +79788,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79610,6 +79875,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79757,6 +80023,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79825,6 +80092,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -79907,6 +80175,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80022,6 +80291,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80158,7 +80428,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 297,
@@ -80298,6 +80569,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80384,6 +80656,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80531,6 +80804,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80599,6 +80873,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80681,6 +80956,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80796,6 +81072,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -80932,7 +81209,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 257,
@@ -81070,6 +81348,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81156,6 +81435,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81303,6 +81583,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81371,6 +81652,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81481,6 +81763,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81589,7 +81872,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 381,
@@ -81727,6 +82011,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81813,6 +82098,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -81960,6 +82246,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82028,6 +82315,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82138,6 +82426,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82246,7 +82535,8 @@
                                 0,
                                 0,
                                 0
-                            ]
+                            ],
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 277,
@@ -82384,6 +82674,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82470,6 +82761,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82617,6 +82909,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82685,6 +82978,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82795,6 +83089,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -82952,6 +83247,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 1,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -83099,6 +83395,7 @@
                                 },
                                 {
                                     "Type": 3,
+                                    "UpdateRotation": true,
                                     "AligmentMode": 2,
                                     "WorldOrientation": 3,
                                     "AxisOrientation": 3,
@@ -83195,6 +83492,1977 @@
                     "Bank Name": "BaseMusic",
                     "Event Name": "B_Music",
                     "Event ID": 2462702937
+                }
+            ]
+        },
+        {
+            "Name": "PROP_TP_Room_Decoration",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1614273345,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1242846569,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -67.0596923828125,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                1660772236,
+                921518905,
+                466012895,
+                477063084,
+                364624686,
+                93810502,
+                877320236,
+                2017160147,
+                888089313,
+                783036421,
+                487400163,
+                1294885182,
+                2002662181
+            ]
+        },
+        {
+            "Name": "Chair_LowPoly",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1660772236,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 554314843,
+                    "Vertex Count": 1042,
+                    "Index Count": 1890
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5800,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_D.png",
+                    "Diffuse_UID": 1579717236,
+                    "Specular_ID": 5806,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_S.png",
+                    "Specular_UID": 1572798811,
+                    "Normal_ID": 5804,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_N.png",
+                    "Normal_UID": 1800031847,
+                    "Height_ID": 5802,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_H.png",
+                    "Height_UID": 827727014,
+                    "Ambient_ID": 5798,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_A.png",
+                    "Ambient_UID": 542038411
+                }
+            ]
+        },
+        {
+            "Name": "HoloScreen2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 921518905,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -11.644088745117188,
+                        0,
+                        8.9606075286865234
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1.3950941562652588,
+                        1.1499999761581421,
+                        1.1499999761581421
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 163222255,
+                    "Vertex Count": 196,
+                    "Index Count": 438
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5810,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_D.png",
+                    "Diffuse_UID": 1103461378,
+                    "Specular_ID": 5822,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_S.png",
+                    "Specular_UID": 978025318,
+                    "Normal_ID": 5818,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_N.png",
+                    "Normal_UID": 936266328,
+                    "Height_ID": 5814,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_H.png",
+                    "Height_UID": 1956964097,
+                    "Ambient_ID": 5808,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_A.png",
+                    "Ambient_UID": 429214952,
+                    "Emissive_ID": 5812,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen2\/TEX_PROP_HolographicScreen2_E.png",
+                    "Emissive_UID": 1836336194
+                }
+            ]
+        },
+        {
+            "Name": "Server_LOW1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 466012895,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 432369659,
+                    "Vertex Count": 1198,
+                    "Index Count": 2490
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5844,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_D.png",
+                    "Diffuse_UID": 1148866265,
+                    "Specular_ID": 5854,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_S.png",
+                    "Specular_UID": 262350116,
+                    "Normal_ID": 5850,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_N.png",
+                    "Normal_UID": 1729175332,
+                    "Height_ID": 5848,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_H.png",
+                    "Height_UID": 1463839174,
+                    "Ambient_ID": 5858,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_A.png",
+                    "Ambient_UID": 2090582516,
+                    "Emissive_ID": 5856,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_E.png",
+                    "Emissive_UID": 1397337919
+                }
+            ]
+        },
+        {
+            "Name": "Server_LOW2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 477063084,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2092139313,
+                    "Vertex Count": 1198,
+                    "Index Count": 2490
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5844,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_D.png",
+                    "Diffuse_UID": 1148866265,
+                    "Specular_ID": 5854,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_S.png",
+                    "Specular_UID": 262350116,
+                    "Normal_ID": 5850,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_N.png",
+                    "Normal_UID": 1729175332,
+                    "Height_ID": 5848,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_H.png",
+                    "Height_UID": 1463839174,
+                    "Ambient_ID": 5858,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_A.png",
+                    "Ambient_UID": 2090582516,
+                    "Emissive_ID": 5856,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Server\/TEX_PROP_Server_E.png",
+                    "Emissive_UID": 1397337919
+                }
+            ]
+        },
+        {
+            "Name": "Chair_LowPoly_2_",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 364624686,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        43.209224700927734,
+                        -6.103515625e-05,
+                        29.170873641967773
+                    ],
+                    "Rotation": [
+                        0,
+                        -77.526473999023438,
+                        0
+                    ],
+                    "Scale": [
+                        1.0000020265579224,
+                        1,
+                        1.0000020265579224
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1032044004,
+                    "Vertex Count": 1042,
+                    "Index Count": 1890
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 5800,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_D.png",
+                    "Diffuse_UID": 1579717236,
+                    "Specular_ID": 5806,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_S.png",
+                    "Specular_UID": 1572798811,
+                    "Normal_ID": 5804,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_N.png",
+                    "Normal_UID": 1800031847,
+                    "Height_ID": 5802,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_H.png",
+                    "Height_UID": 827727014,
+                    "Ambient_ID": 5798,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Chair\/TEX_PROP_Chair_Lab1_A.png",
+                    "Ambient_UID": 542038411
+                }
+            ]
+        },
+        {
+            "Name": "Console_LOW_2_",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 93810502,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        57.046840667724609,
+                        0,
+                        45.430973052978516
+                    ],
+                    "Rotation": [
+                        -180,
+                        53.832241058349609,
+                        -180
+                    ],
+                    "Scale": [
+                        1.0000060796737671,
+                        1,
+                        1.0000060796737671
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1707680526,
+                    "Vertex Count": 1228,
+                    "Index Count": 2424
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 4769,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_D.png",
+                    "Diffuse_UID": 642519894,
+                    "Specular_ID": 4784,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_S.png",
+                    "Specular_UID": 293916259,
+                    "Normal_ID": 4780,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_N.png",
+                    "Normal_UID": 1314918048,
+                    "Height_ID": 4777,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_H.png",
+                    "Height_UID": 1040059758,
+                    "Ambient_ID": 4787,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_A.png",
+                    "Ambient_UID": 1103766639,
+                    "Emissive_ID": 4773,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Monitoring Console\/TEX_PROP_MonitoringConsole_E.png",
+                    "Emissive_UID": 1547837161
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        12,
+                        9.8000001907348633,
+                        26.299999237060547
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        2.4000000953674316,
+                        4.5,
+                        4.4000000953674316
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Carrito (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 877320236,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -14.527908325195312,
+                        2.5634029133300013e-14,
+                        39.063911437988281
+                    ],
+                    "Rotation": [
+                        1.5184642734311637e-06,
+                        57.402263641357422,
+                        -1.1229945812374353e-05
+                    ],
+                    "Scale": [
+                        1.0000005960464478,
+                        1,
+                        1.0000005960464478
+                    ]
+                }
+            ],
+            "Children UID": [
+                593374710,
+                1257492990
+            ]
+        },
+        {
+            "Name": "PROPS (3)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 593374710,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 877320236,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 175213382,
+                    "Vertex Count": 104,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Carrito_LowPoly (3)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1257492990,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 877320236,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 734026332,
+                    "Vertex Count": 606,
+                    "Index Count": 1356
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 4294,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731,
+                    "Specular_ID": 5826,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_S.png",
+                    "Specular_UID": 1432592573,
+                    "Normal_ID": 4307,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_N.png",
+                    "Normal_UID": 260792693,
+                    "Height_ID": 5830,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_H.png",
+                    "Height_UID": 1255616623,
+                    "Ambient_ID": 4318,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_A.png",
+                    "Ambient_UID": 1693555891
+                }
+            ]
+        },
+        {
+            "Name": "Cable_1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2017160147,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1993445897,
+                    "Vertex Count": 98,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 888089313,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 995573020,
+                    "Vertex Count": 51,
+                    "Index Count": 216
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_3",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 783036421,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1130031028,
+                    "Vertex Count": 105,
+                    "Index Count": 504
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_4",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 487400163,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1272883382,
+                    "Vertex Count": 222,
+                    "Index Count": 1044
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_5",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1294885182,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 16281985,
+                    "Vertex Count": 154,
+                    "Index Count": 756
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Cable_6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2002662181,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Base TP Decoration\/PROP_TP_Room_Decoration.fbx",
+            "Parent UID": 1614273345,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 2100594325,
+                    "Vertex Count": 182,
+                    "Index Count": 900
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "PROP_LVL2_Part1_MetalBoxes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1829172732,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1242846569,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        7.4905204772949219,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                904490451
+            ]
+        },
+        {
+            "Name": "LVL2_MAP_Part1:Metal_Boxes",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 904490451,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 1829172732,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -12.000672340393066,
+                        -102.12843322753906,
+                        -51.548412322998047
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                753096947,
+                92599348,
+                1184618374,
+                1213427185
+            ]
+        },
+        {
+            "Name": "MetalBox6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 753096947,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -121.30645751953125,
+                        36.664260864257812,
+                        266.25518798828125
+                    ],
+                    "Rotation": [
+                        180,
+                        -34.306884765625,
+                        180
+                    ],
+                    "Scale": [
+                        0.62633877992630005,
+                        0.62633603811264038,
+                        0.62633877992630005
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 795428665,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox7",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 92599348,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        117.85598754882812,
+                        5.340576171875e-05,
+                        -78.63262939453125
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 914188862,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox9",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1184618374,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -21.799507141113281,
+                        -0.0001220703125,
+                        0.40394973754882812
+                    ],
+                    "Rotation": [
+                        0,
+                        -40.182037353515625,
+                        0
+                    ],
+                    "Scale": [
+                        1.0000125169754028,
+                        1,
+                        1.0000125169754028
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 29939002,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "MetalBox10",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1213427185,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/PROP_LVL2_Part1_MetalBoxes.fbx",
+            "Parent UID": 904490451,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -63.881874084472656,
+                        -5.340576171875e-05,
+                        94.577178955078125
+                    ],
+                    "Rotation": [
+                        -0,
+                        21.252191543579102,
+                        -0
+                    ],
+                    "Scale": [
+                        0.9999995231628418,
+                        1,
+                        0.9999995231628418
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 582006079,
+                    "Vertex Count": 968,
+                    "Index Count": 1872
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -45.064582824707031,
+                                111.06525421142578,
+                                52.164047241210938
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 6726,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_D.png",
+                    "Diffuse_UID": 2076790752,
+                    "Specular_ID": 6728,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_S.png",
+                    "Specular_UID": 361921643,
+                    "Normal_ID": 6730,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_N.png",
+                    "Normal_UID": 886030221,
+                    "Height_ID": 6732,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_H.png",
+                    "Height_UID": 1484239574,
+                    "Ambient_ID": 6734,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_A.png",
+                    "Ambient_UID": 1685713740,
+                    "Emissive_ID": 6736,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/Metal Box\/TEX_PROP_MetalBox_E.png",
+                    "Emissive_UID": 699724194
+                }
+            ]
+        },
+        {
+            "Name": "Loading Scene SceneManager",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1781007999,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1242846569,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1800,
+                    "Height": 1048,
+                    "UI Type": 0,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        524,
+                        250
+                    ]
+                }
+            ],
+            "Children UID": [
+                920348089,
+                2027237514,
+                554747778,
+                1938690064,
+                2005032691,
+                1058007677
+            ]
+        },
+        {
+            "Name": "Loading Scene base",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 920348089,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1781007999,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/LoadingScenes\/Base.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Loading Scene 1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2027237514,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1781007999,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/LoadingScenes\/WareHouse.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Loading Scene 2_1",
+            "Static": true,
+            "Tag": "Untagged",
+            "UID": 554747778,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1781007999,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/LoadingScenes\/LabPt1.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Loading Scene 2_2",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1938690064,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1781007999,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/LoadingScenes\/LabPt2.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Loading Scene 3_1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2005032691,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1781007999,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/LoadingScenes\/Hatchery.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        },
+        {
+            "Name": "Loading Scene Boss",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1058007677,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1781007999,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1920,
+                    "Height": 1080,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1920,
+                        1080
+                    ],
+                    "Path": "Assets\/UI\/LoadingScenes\/Boss.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
                 }
             ]
         }

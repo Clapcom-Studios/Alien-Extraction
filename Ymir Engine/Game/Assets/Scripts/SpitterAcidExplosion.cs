@@ -11,7 +11,7 @@ public class SpitterAcidExplosion : YmirComponent
 
     private float movementSpeed;
 
-    private float damage = 250f; //350f
+    private float damage = 300f; //350f
 
     private GameObject player;
 

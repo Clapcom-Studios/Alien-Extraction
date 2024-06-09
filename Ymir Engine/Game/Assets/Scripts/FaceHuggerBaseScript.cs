@@ -80,9 +80,9 @@ public class FaceHuggerBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 93.0f;
+                commonProb = 95.0f;
                 rareProb = 5.0f;
-                epicProb = 2.0f;
+                epicProb = 0.0f;
                 break;
             case int i when (i == 2 || i == 3):
                 commonProb = 93.0f;
@@ -90,9 +90,9 @@ public class FaceHuggerBaseScript : Enemy
                 epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 93.0f;
-                rareProb = 5.0f;
-                epicProb = 2.0f;
+                commonProb = 85.0f;
+                rareProb = 10.0f;
+                epicProb = 5.0f;
                 break;
             default:
                 commonProb = 93.0f;
@@ -110,18 +110,18 @@ public class FaceHuggerBaseScript : Enemy
         agent.speed = 1500f;
         agent.angularSpeed = 10f;
 
-        life = 100f;
+        life = 120f;
         armor = 0f;
 
         rarity = random.Next(101);
 
         Debug.Log("[ERROR]: " + rarity);
 
-        if (rarity >= 90)
+        if (rarity >= (101.0f - epicProb))
         {
             rarity = 2;
         }
-        else if (rarity >= 70)
+        else if (rarity >= (101.0f - rareProb))
         {
             rarity = 1;
         }
@@ -133,14 +133,14 @@ public class FaceHuggerBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 330; //450
+            life = 230; //255,55
             armor = 0.1f; //0.1f
             agent.speed = 1650f;
             tailDamage = 100f;
         }
         else if (rarity == 2)
         {
-            life = 440; //600
+            life = 340; //425
             armor = 0.2f; //0.2f
             agent.speed = 1800f;
             tailDamage = 120f;

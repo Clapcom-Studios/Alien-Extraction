@@ -212,6 +212,12 @@ namespace YmirEngine
         public extern bool RaycastTest(object origin, object direction, float rayLenght);
 
         /// <summary>
+        /// Returns the distance from a gameObject that the raycast has collided with
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern float RaycastLenght(object origin, object direction, float rayLenght);
+
+        /// <summary>
         /// Set collider active/inactive
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]

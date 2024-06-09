@@ -21,11 +21,10 @@ public class UI_Cutscenes : YmirComponent
     public bool winScene1 = false;
     public bool winScene2 = false;
 
-    private float timer = 2f;
-    private float finishTimer = 2f;
+    private float timer = 5.5f;
+    private float finishTimer = 5.5f;
 
     // Loading scene
-    private GameObject loadScene_togo;
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
@@ -33,20 +32,15 @@ public class UI_Cutscenes : YmirComponent
     {
         button = InternalCalls.GetGameObjectByName("Button_A");
         img = InternalCalls.GetGameObjectByName("CutsceneImg");
-        loadScene_togo = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
-        currentFrame = 0; 
-        
+        currentFrame = 0;
+
         hasFinished = false;
-        
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+
+        loadSceneImg = InternalCalls.GetGameObjectByName("Load Scene Img");
 
         if (loadSceneImg != null)
         {
             loadSceneImg.SetActive(false);
-        }
-        if (loadScene_togo != null)
-        {
-            loadScene_togo.SetActive(false);
         }
 
         loadScene = false;
@@ -59,11 +53,7 @@ public class UI_Cutscenes : YmirComponent
             if (introScene)
             {
                 button.SetActive(false);
-                if (loadScene_togo != null)
-                {
-                    loadScene_togo.SetActive(true);
-                }
-
+           
                 InternalCalls.LoadScene("Assets/BASE_FINAL/LVL_BASE_COLLIDERS");
             }
             if (winScene1)
@@ -81,7 +71,7 @@ public class UI_Cutscenes : YmirComponent
             {
                 finishTimer -= Time.deltaTime;
                 button.SetActive(false);
-               
+
             }
             if (finishTimer <= 0)
             {
@@ -114,18 +104,22 @@ public class UI_Cutscenes : YmirComponent
                             }
 
                             loadScene = true;
+
+                            if (winScene2)
+                            {
+                                if (loadSceneImg != null)
+                                {
+                                    loadSceneImg.SetActive(true);
+                                }
+
+                                loadScene = true;
+                            }
                         }
                     }
                 }
             }
+
+            return;
         }
-
-        return;
-    }
-
-    public void Reset()
-    {
-        hasFinished = false;
-        currentFrame = 0;
     }
 }

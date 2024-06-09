@@ -130,6 +130,17 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern void SetPlayerHitBoolean(object go, bool value);
 
+        // -----------------------
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void CS_SetBothFOV(float value);
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void CS_SetHorizontalFOV(float value);
+
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void CS_SetVerticalFOV(float value);
+
         /// <summary>
         /// Retrieves a game object by its name.
         /// </summary>
@@ -321,6 +332,12 @@ namespace YmirEngine
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern GameObject SliderEdit(object go, double value);
+
+        /// <summary>
+        /// Set a fillOject to the slider.
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern GameObject SetSliderFill(object go, object fillObject);
 
         /// <summary>
         /// Sets the range of a slider UI element.

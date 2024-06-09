@@ -72,7 +72,7 @@ public class DroneXenomorphBaseScript : Enemy
         //AGENT
         aggro = false;
         agent.stoppingDistance = 3f;
-        agent.speed = 800f;
+        agent.speed = 1100f;
         agent.angularSpeed = 10f;
         Debug.Log("AngularSpeed" + agent.angularSpeed);
 
@@ -113,9 +113,9 @@ public class DroneXenomorphBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 93.0f;
+                commonProb = 95.0f;
                 rareProb = 5.0f;
-                epicProb = 2.0f;
+                epicProb = 0.0f;
                 break;
             case int i when (i == 2 || i == 3):
                 commonProb = 93.0f;
@@ -123,9 +123,9 @@ public class DroneXenomorphBaseScript : Enemy
                 epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 93.0f;
-                rareProb = 5.0f;
-                epicProb = 2.0f;
+                commonProb = 85.0f;
+                rareProb = 10.0f;
+                epicProb = 5.0f;
                 break;
             default:
                 commonProb = 93.0f;
@@ -141,11 +141,11 @@ public class DroneXenomorphBaseScript : Enemy
 
         Debug.Log("[ERROR]: " + rarity);
 
-        if (rarity >= 90)
+        if (rarity >= (101.0f - epicProb))
         {
             rarity = 2;
         }
-        else if (rarity >= 70)
+        else if (rarity >= (101.0f - rareProb))
         {
             rarity = 1;
         }
@@ -157,15 +157,15 @@ public class DroneXenomorphBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 600; //750
-            armor = 0.1f; // 0.4f
-            agent.speed = 880f;
+            life = 500; //555,55
+            armor = 0.1f; // 0.1f
+            agent.speed = 1210f;
         }
         else if (rarity == 2)
         {
-            life = 800; //1200
-            armor = 0.2f; // 0.5f
-            agent.speed = 960f;
+            life = 700; //875
+            armor = 0.2f; // 0.2f
+            agent.speed = 1320f;
         }
 
         Debug.Log("[WARNING] Probs: " + commonProb + "rare: " + rareProb + "Epic: " + epicProb);

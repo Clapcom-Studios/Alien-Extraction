@@ -72,7 +72,7 @@ public class SpitterBaseScript : Enemy
 
         //Agent
         agent.stoppingDistance = 2f;
-        agent.speed = 1600f;
+        agent.speed = 900f; //Debería ser más lento que el facehugger (Antes estaba en 1600f)
         agent.angularSpeed = 10f;
 
         //ATTACKS
@@ -109,9 +109,9 @@ public class SpitterBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 93.0f;
+                commonProb = 95.0f;
                 rareProb = 5.0f;
-                epicProb = 2.0f;
+                epicProb = 0.0f;
                 break;
             case int i when (i == 2 || i == 3):
                 commonProb = 93.0f;
@@ -119,9 +119,9 @@ public class SpitterBaseScript : Enemy
                 epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 93.0f;
-                rareProb = 5.0f;
-                epicProb = 2.0f;
+                commonProb = 85.0f;
+                rareProb = 10.0f;
+                epicProb = 5.0f;
                 break;
             default:
                 commonProb = 93.0f;
@@ -137,11 +137,11 @@ public class SpitterBaseScript : Enemy
 
         Debug.Log("[ERROR]: " + rarity);
 
-        if (rarity >= 90)
+        if (rarity >= (101.0f - epicProb))
         {
             rarity = 2;
         }
-        else if (rarity >= 70)
+        else if (rarity >= (101.0f - rareProb))
         {
             rarity = 1;
         }
@@ -153,15 +153,15 @@ public class SpitterBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 787.5f; //1050
-            armor = 0.1f; //0.325f
-            agent.speed = 1700f;
+            life = 687.5f; //763,88
+            armor = 0.1f; //0.1f
+            agent.speed = 990f; //Antes estaba en 1700f
         }
         else if (rarity == 2)
         {
-            life = 1050; //1650
-            armor = 0.2f; // 0.45f
-            agent.speed = 1800f;
+            life = 950; //1187,5
+            armor = 0.2f; // 0.2f
+            agent.speed = 1080f; //Antes estaba en 1800f
         }
 
         SetColor();

@@ -110,7 +110,12 @@ public class Player : YmirComponent
 
     public bool vulnerable = true;
 
+    //--------------------- Aim ---------------------\\
     public GameObject aimSensor = null;
+    public float aimAngle;
+    public bool isAiming = false;
+    public GameObject target = null;
+
 
     #endregion
 
@@ -284,15 +289,6 @@ public class Player : YmirComponent
             //movementSpeed = 3000.0f;
         }
 
-        // Resin
-        maxResinVessels = 2;
-        resinHealing = 400; // TODO: Cambiar cuando este el save/load
-        currentResinVessels = maxResinVessels;
-
-        resinText = InternalCalls.GetGameObjectByName("Number Heals");
-
-        UpdateResin();
-
         hasTalkedIscariot = false;
 
         //--------------------- Get Skills Scripts ---------------------\\
@@ -337,10 +333,19 @@ public class Player : YmirComponent
 
         itemsList = new List<Item>();
 
+        // Resin
+        resinText = InternalCalls.GetGameObjectByName("Number Heals");
+
         if (InternalCalls.GetCurrentMap() != (int)LEVEL.BASE)
         {
             LoadPlayer();
             currentLvl = InternalCalls.GetCurrentMap();
+
+            if (lastUnlockedLvl < currentLvl)
+            {
+                lastUnlockedLvl = currentLvl;
+            }
+
             SavePlayer();
         }
         else
@@ -348,9 +353,12 @@ public class Player : YmirComponent
             weaponType = WEAPON_TYPE.NONE;
             SetWeapon();
 
+            LoadResin();
             currentResinVessels = maxResinVessels;
+            UpdateResin();
 
             LoadLvlInfo();
+
             LoadItems();
         }
     }
@@ -486,6 +494,8 @@ public class Player : YmirComponent
 
             UpdateAlienCore();
         }
+
+        UpdateFOVInterpolation();
 
     }
 
@@ -746,7 +756,7 @@ public class Player : YmirComponent
                     csUI_AnimationDash.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Acidic Spit (Skill 1) -----------------\\
@@ -761,7 +771,7 @@ public class Player : YmirComponent
                     csUI_AnimationAcid.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Predatory Rush (Skill 2) -----------------\\
@@ -776,7 +786,7 @@ public class Player : YmirComponent
                     csUI_AnimationPredatory.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Swipe (Skill 3) -----------------\\
@@ -791,7 +801,7 @@ public class Player : YmirComponent
                     csUI_AnimationSwipe.SetAnimationState(true);
 
                     // Interrump Reaload
-                    currentWeapon.InterruptReload();
+                    //currentWeapon.InterruptReload();
                 }
 
                 //----------------- Reload -----------------\\
@@ -818,8 +828,8 @@ public class Player : YmirComponent
             if (Input.GetGamepadButton(GamePadButton.START) == KeyState.KEY_DOWN)
             {
                 Debug.Log("Paused");
-                currentMenu = "Pause Canvas";
-                ToggleMenu(true);
+                //currentMenu = "Pause Canvas";
+                ToggleMenu(true, "Pause Canvas");
             }
         }
 
@@ -828,15 +838,15 @@ public class Player : YmirComponent
             // If player is on menu and presses B, quit menu
             if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && currentMenu != "")
             {
-                ToggleMenu(false);
+                ToggleMenu(false, "");
             }
         }
 
         //----------------- Inventory -----------------\\
-        if (Input.GetGamepadButton(GamePadButton.DPAD_RIGHT) == KeyState.KEY_DOWN && currentMenu == "")
+        if (Input.GetGamepadButton(GamePadButton.DPAD_RIGHT) == KeyState.KEY_DOWN/* && currentMenu == ""*/)
         {
-            currentMenu = "Inventory Menu";
-            ToggleMenu(true);
+            //currentMenu = "Inventory Menu";
+            ToggleMenu(true, "Inventory Menu");
         }
 
         ////----------------- Upgrade -----------------\\
@@ -1359,7 +1369,12 @@ public class Player : YmirComponent
     }
     private void UpdateShooting()
     {
+        StopPlayer();
+
         if (currentWeapon.ShootAvailable()) inputsList.Add(INPUT.I_SHOOT);
+
+        if (isAiming)
+            LookAt(aimAngle, 15);
 
         if (JoystickMoving() == true)
             HandleRotation();
@@ -1371,6 +1386,9 @@ public class Player : YmirComponent
         {
             Animation.PlayAnimation(gameObject, idleAnim);
             Particles.RestartParticles(currentWeapon.particlesGO);
+
+            if (currentWeapon.currentAmmo <= 0)
+                StartReload();
 
             StopPlayer();
 
@@ -1656,8 +1674,9 @@ public class Player : YmirComponent
         //Debug.Log("Fuersa:" + gameObject.transform.GetForward());
         //Vector3 forward = gameObject.transform.GetForward();
         //forward.y = 0f;
-
+        
         HandleRotation();
+
 
         Particles.ParticlesForward(walkParticles, gameObject.transform.GetForward(), 0, -5.0f);
         Particles.PlayParticlesTrigger(walkParticles);
@@ -1716,6 +1735,8 @@ public class Player : YmirComponent
 
     private void StartDeath()
     {
+        SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "Has dead", true);
+
         Animation.SetSpeed(gameObject, "Raisen_Death", 1.0f);
         Animation.SetPingPong(gameObject, "Raisen_Death");
 
@@ -1776,26 +1797,40 @@ public class Player : YmirComponent
         }
     }
 
-    public void ToggleMenu(bool open)
+    public void ToggleMenu(bool open, string menu)
     {
-        GameObject canvas = InternalCalls.GetGameObjectByName(currentMenu);
-
-        if (canvas != null)
+        Debug.Log("CurrentMenu: " + currentMenu + " menu " + menu);
+        if (currentMenu == menu || currentMenu == "" || menu == "")
         {
-            Debug.Log("CurrentMenu: " + canvas.Name + " " + open.ToString());
-
-            canvas.SetActive(open);
-            PlayerStopState(open);
-
-            if (!open)
+            if (open)
             {
-                currentMenu = "";
+                currentMenu = menu;
             }
-            else
+
+            GameObject canvas = InternalCalls.GetGameObjectByName(currentMenu);
+
+            if (canvas != null)
             {
-                UI.SetFirstFocused(canvas);
+                Debug.Log("CurrentMenu: " + canvas.Name + " " + open.ToString());
+
+                if (open)
+                {
+                    if (currentState != STATE.STOP)
+                    {
+                        canvas.SetActive(open);
+                        PlayerStopState(open);
+                        UI.SetFirstFocused(canvas);
+                    }
+                }
+                else
+                {
+                    canvas.SetActive(open);
+                    PlayerStopState(open);
+
+                    currentMenu = "";
+                }
             }
-        }
+        }        
     }
 
     // External scripts
@@ -1864,6 +1899,7 @@ public class Player : YmirComponent
     #endregion
 
     #region PREDATORY RUSH
+
     private void StartPredRush()
     {
         //trigger del sonido
@@ -1884,6 +1920,8 @@ public class Player : YmirComponent
         //Reduce dash CD * 0,5
 
         predatoryTimer = predatoryDuration;
+
+        StartFOVInterpolation(60, 80, 0.25f);
     }
 
     private void EndPredRush()
@@ -1899,6 +1937,50 @@ public class Player : YmirComponent
         //Increase dash CD / 0,5
 
         predatoryCDTimer = predatoryCD;
+
+        StartFOVInterpolation(80, 60, 0.5f);
+    }
+
+    public float startFOV = 60f; // Starting FOV
+    public float endFOV = 70f; // Ending FOV
+    public float duration = 2f; // Duration of the interpolation
+
+    private float elapsed = 0f; // Elapsed time
+    private bool isInterpolating = false; // Flag to start/stop interpolation
+
+    public void StartFOVInterpolation(float start, float end, float time)
+    {
+        startFOV = start;
+        endFOV = end;
+        duration = time;
+        elapsed = 0f;
+        isInterpolating = true;
+        SetFOV(startFOV);
+    }
+
+    public void UpdateFOVInterpolation()
+    {
+        if (isInterpolating)
+        {
+            // Increase the elapsed time
+            elapsed += Time.deltaTime;
+            // Calculate the new FOV
+            float newFOV = Mathf.Lerp(startFOV, endFOV, elapsed / duration);
+            // Set the new FOV to the camera
+            SetFOV(newFOV);
+
+            // Stop interpolating when the duration is reached
+            if (elapsed >= duration)
+            {
+                isInterpolating = false;
+                SetFOV(endFOV); // Ensure the final FOV is set
+            }
+        }
+    }
+
+    private void SetFOV(float value)
+    {
+        InternalCalls.CS_SetBothFOV(value);
     }
 
     #endregion
@@ -1964,17 +2046,14 @@ public class Player : YmirComponent
 
     }
 
-    public void LookAt(float angle)
+    public void LookAt(float angle, float speed)
     {
         if (Math.Abs(angle * Mathf.Rad2Deg) < 1.0f)
             return;
 
         Quaternion dir = Quaternion.RotateAroundAxis(Vector3.up, angle);
 
-        float rotationSpeed = Time.deltaTime * 1;
-
-
-        Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, rotationSpeed);
+        Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, speed * Time.deltaTime);
 
         gameObject.SetRotation(desiredRotation);
 
@@ -2046,7 +2125,7 @@ public class Player : YmirComponent
             UI.TextEdit(resinText, currentResinVessels.ToString() + "/" + maxResinVessels.ToString());
         }
     }
-    
+
     public void ReCountAlienCore()
     {
         numCores = 0;
@@ -2058,13 +2137,15 @@ public class Player : YmirComponent
                 ++numCores;
             }
         }
+
+        //Debug.Log("core_mythic: " + numCores);
     }
 
     public void UseAlienCore(int cost)
     {
         numCores -= cost;
 
-        Debug.Log(cost.ToString());
+        //Debug.Log(cost.ToString());
 
         for (int i = 0; i < cost; i++)
         {
@@ -2094,6 +2175,8 @@ public class Player : YmirComponent
         {
             itemsList.Add(Globals.SearchItemInDictionary("core_mythic"));
         }
+
+        Debug.Log("core_mythic: " + numCores);
     }
 
     #endregion
@@ -2151,6 +2234,21 @@ public class Player : YmirComponent
     {
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Current Lvl", (int)currentLvl);
         SaveLoad.SaveInt(Globals.saveGameDir, saveName, "Last unlocked Lvl", (int)lastUnlockedLvl);
+
+        if (SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Current Lvl") != 0 && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "First Incursion"))
+        {
+            SaveLoad.SaveBool(Globals.saveGameDir, saveName, "First Incursion", true);
+        }
+
+        if (SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Last unlocked Lvl") == 1 && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 1 Completed"))
+        {
+            SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Lvl 1 Completed", true);
+        }
+
+        if (SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Last unlocked Lvl") == 2 && !SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Lvl 2 Completed"))
+        {
+            SaveLoad.SaveBool(Globals.saveGameDir, saveName, "Lvl 2 Completed", true);
+        }
     }
 
     public void LoadPlayer()
@@ -2169,19 +2267,26 @@ public class Player : YmirComponent
 
         // Stats
         csHealth.currentHealth = (float)SaveLoad.LoadFloat(Globals.saveGameDir, saveName, "Health");
+        LoadResin();
+
+        // Items
+        LoadItems();
+
+        // Others
+
+        Debug.Log("Player loaded");
+    }
+
+    private void LoadResin()
+    {
+        saveName = SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame);
 
         // Resin vessels
         currentResinVessels = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Current potties");
         maxResinVessels = SaveLoad.LoadInt(Globals.saveGameDir, saveName, "Max potties");
         resinHealing = (float)SaveLoad.LoadFloat(Globals.saveGameDir, saveName, "Potties healing");
 
-        // Items
-        LoadItems();
-
-        // Others
-        hasTalkedIscariot = SaveLoad.LoadBool(Globals.saveGameDir, saveName, "Iscariot dialogue");
-
-        Debug.Log("Player loaded");
+        UpdateResin();
     }
 
     private void LoadLvlInfo()
@@ -2227,6 +2332,8 @@ public class Player : YmirComponent
                 item.UpdateStats();
             }
         }
+
+        ReCountAlienCore();
 
         Debug.Log("Items loaded");
     }

@@ -20,6 +20,8 @@ public class Iscariot : YmirComponent
     bool active_Dialogue;
 
     public Player player;
+    public GameObject gameCanvas = null;
+
     public GameObject canvas_Iscariot = null;
     public GameObject name_Npc = null;
     public GameObject dialogue_Npc = null;
@@ -123,6 +125,7 @@ public class Iscariot : YmirComponent
     public void Start()
     {
         player = InternalCalls.GetGameObjectByName("Player").GetComponent<Player>();
+        gameCanvas = InternalCalls.GetGameObjectByName("Game Canvas");
 
         active_Dialogue = false;
         canvas_Iscariot = InternalCalls.GetGameObjectByName("Npc_Dialogue");
@@ -182,6 +185,10 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -204,6 +211,10 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_6)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -225,6 +236,10 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_10)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -280,6 +295,11 @@ public class Iscariot : YmirComponent
                     Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
                     Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_27)
                 {
+
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -314,6 +334,10 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_73)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -346,6 +370,11 @@ public class Iscariot : YmirComponent
                     Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
                     Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_50)
                 {
+
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -435,6 +464,10 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_64)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
                     //EXIT
                     player.PlayerStopState(false);
@@ -726,6 +759,8 @@ public class Iscariot : YmirComponent
 
         if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue)
         {
+            gameCanvas.SetActive(false);
+
             canvas_Iscariot.SetActive(true);
             active_Dialogue = true;
             player.PlayerStopState(true);
