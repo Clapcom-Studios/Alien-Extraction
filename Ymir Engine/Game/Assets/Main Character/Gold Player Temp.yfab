@@ -7,7 +7,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1267575205,
+            "Parent UID": 1126752461,
             "Components": [
                 {
                     "Type": "Transform",
@@ -47,14 +47,14 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -21.154325485229492,
+                        -44.460525512695312,
                         5.2145204544067383,
-                        32.408935546875
+                        76.116249084472656
                     ],
                     "Rotation": [
-                        180,
-                        -78.373931884765625,
-                        180
+                        0,
+                        -45.000003814697266,
+                        0
                     ],
                     "Scale": [
                         0.10000000149011612,
@@ -166,8 +166,8 @@
                     "damageMultiplier": 0,
                     "vulnerable": true,
                     "aimSensor": 722618905,
-                    "aimAngle": -2.042543888092041,
-                    "isAiming": true,
+                    "aimAngle": -2.7035396099090576,
+                    "isAiming": false,
                     "itemsList": 0,
                     "currentResinVessels": 2,
                     "maxResinVessels": 2,
@@ -178,7 +178,7 @@
                     "swipeTimer": 0,
                     "acidicTimer": 0,
                     "currentLvl": -1,
-                    "lastUnlockedLvl": 1,
+                    "lastUnlockedLvl": 0,
                     "currentMenu": "",
                     "hasTalkedIscariot": false,
                     "w_SMG_0": 1248383492,
@@ -231,7 +231,8 @@
                 1854497212,
                 19022395,
                 1319339575,
-                722618905
+                722618905,
+                1213322994
             ]
         },
         {
@@ -277,9 +278,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -348,9 +349,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -419,9 +420,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -490,9 +491,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -1755,9 +1756,9 @@
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
-                                        4.9833874702453613,
+                                        3.9655411243438721,
                                         0,
-                                        0.40724575519561768
+                                        -3.0454039573669434
                                     ],
                                     "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
@@ -2824,7 +2825,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1248383492,
-            "Active": false,
+            "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Main Character\/FBX_Raisen_Weapon.fbx",
             "Parent UID": 2086505483,
@@ -2862,9 +2863,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -2911,8 +2912,8 @@
                     "damage": 5,
                     "reloadTime": 1.5559999942779541,
                     "range": 150,
-                    "currentAmmo": 35,
-                    "fireRateTimer": -0.02199999988079071,
+                    "currentAmmo": 22,
+                    "fireRateTimer": -0.0069999992847442627,
                     "reloadTimer": 0,
                     "reloading": false
                 },
@@ -2977,7 +2978,7 @@
                                         0,
                                         1.6000000238418579
                                     ],
-                                    "DistanceLimit": 51.028999328613281,
+                                    "DistanceLimit": 0,
                                     "HasDistanceLimit": false,
                                     "BaseRotation": 0,
                                     "BaseShape": 0,
@@ -3026,7 +3027,7 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        -45
+                                        205.09898376464844
                                     ]
                                 },
                                 {
@@ -3114,9 +3115,9 @@
                                     "Random": false,
                                     "UseShapeBase": false,
                                     "Direction1": [
-                                        -0.7071068286895752,
+                                        -0.4241834282875061,
                                         -7.1054273576010019e-15,
-                                        0.70710670948028564
+                                        -0.90557628870010376
                                     ],
                                     "Direction2": [
                                         0,
@@ -3146,7 +3147,7 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        -45
+                                        205.09898376464844
                                     ]
                                 },
                                 {
@@ -3221,9 +3222,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -3292,7 +3293,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1563832371,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 795223045,
             "Components": [
@@ -3580,9 +3581,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -3651,7 +3652,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1835062889,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1287259528,
             "Components": [
@@ -3939,9 +3940,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -4010,7 +4011,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 780486592,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 189224086,
             "Components": [
@@ -4298,9 +4299,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -4369,7 +4370,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 54639467,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1284165787,
             "Components": [
@@ -4657,9 +4658,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -5018,9 +5019,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -5379,9 +5380,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -5740,9 +5741,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -6101,9 +6102,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -6424,7 +6425,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1845772668,
-            "Active": true,
+            "Active": false,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Main Character\/FBX_Raisen_Weapon.fbx",
             "Parent UID": 2086505483,
@@ -6462,9 +6463,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -6512,8 +6513,8 @@
                     "reloadTime": 3.1619999408721924,
                     "range": 200,
                     "currentAmmo": 200,
-                    "fireRateTimer": -0.0279999990016222,
-                    "reloadTimer": -0.0089995097368955612,
+                    "fireRateTimer": -0.016000000759959221,
+                    "reloadTimer": -0.0040003061294555664,
                     "reloading": false,
                     "damageEscalation": 0.0060000000521540642,
                     "currentDamage": 2.4000000953674316
@@ -6535,7 +6536,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 2100823470,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
             "Parent UID": 1845772668,
             "Components": [
@@ -6579,7 +6580,7 @@
                                         0,
                                         0
                                     ],
-                                    "DistanceLimit": 74.361457824707031,
+                                    "DistanceLimit": 200,
                                     "HasDistanceLimit": true,
                                     "BaseRotation": 0,
                                     "BaseShape": 0,
@@ -6615,9 +6616,9 @@
                                     "Random": false,
                                     "UseShapeBase": false,
                                     "Direction1": [
-                                        -0.97647792100906372,
+                                        -0.64418435096740723,
                                         -7.1054273576010019e-15,
-                                        -0.21561726927757263
+                                        0.764870285987854
                                     ],
                                     "Direction2": [
                                         0,
@@ -6647,7 +6648,7 @@
                                     "FreeRotation": [
                                         -90,
                                         0,
-                                        257.54824829101562
+                                        -40.104537963867188
                                     ]
                                 },
                                 {
@@ -6699,7 +6700,7 @@
                                         0,
                                         0
                                     ],
-                                    "DistanceLimit": 74.361457824707031,
+                                    "DistanceLimit": 200,
                                     "HasDistanceLimit": true,
                                     "BaseRotation": 0,
                                     "BaseShape": 3,
@@ -6735,9 +6736,9 @@
                                     "Random": false,
                                     "UseShapeBase": true,
                                     "Direction1": [
-                                        -0.97647792100906372,
+                                        -0.64418435096740723,
                                         -7.1054273576010019e-15,
-                                        -0.21561726927757263
+                                        0.764870285987854
                                     ],
                                     "Direction2": [
                                         0,
@@ -6851,9 +6852,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -7240,9 +7241,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -7629,9 +7630,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -8021,9 +8022,9 @@
                     "Uniforms": [
                         {
                             "lightDir": [
-                                -17.401140213012695,
+                                -41.751033782958984,
                                 21.411087036132812,
-                                33.181133270263672
+                                73.406753540039062
                             ],
                             "lightInt": 1,
                             "lightColor": [
@@ -8385,9 +8386,9 @@
                         -75
                     ],
                     "Rotation": [
-                        -90.000007629394531,
-                        0,
-                        -101.62606048583984
+                        -89.999992370605469,
+                        -5.122642050991999e-06,
+                        -45.000003814697266
                     ],
                     "Scale": [
                         10,
@@ -8440,6 +8441,64 @@
             ]
         },
         {
+            "Name": "AimMesh",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1213322994,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Main Character\/Apuntado.fbx",
+            "Parent UID": 2086505483,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        60,
+                        100
+                    ],
+                    "Rotation": [
+                        -90.000015258789062,
+                        0,
+                        -0.59572625160217285
+                    ],
+                    "Scale": [
+                        1000,
+                        999.99993896484375,
+                        999.99993896484375
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1214045182,
+                    "Vertex Count": 95,
+                    "Index Count": 195
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/ColorShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                -41.751033782958984,
+                                21.411087036132812,
+                                73.406753540039062
+                            ],
+                            "color": [
+                                0.60000002384185791,
+                                0.72000002861022949,
+                                0.5
+                            ],
+                            "light": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "Main Camera",
             "Static": false,
             "Tag": "Untagged",
@@ -8452,9 +8511,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -79.045608520507812,
-                        116.214599609375,
-                        95.421943664550781
+                        -101.92661285400391,
+                        116.21450042724609,
+                        138.21018981933594
                     ],
                     "Rotation": [
                         120.00009918212891,
