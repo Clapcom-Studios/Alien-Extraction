@@ -1354,6 +1354,9 @@ public class Player : YmirComponent
     {
         // Interrump Reaload
         currentWeapon.InterruptReload();
+
+        if (currentWeapon.currentAmmo <= 0)
+            Audio.PlayAudio(gameObject, "P_NoAmmo");
     }
     private void StartShoot()
     {
