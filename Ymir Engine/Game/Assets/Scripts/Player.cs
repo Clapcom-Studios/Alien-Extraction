@@ -111,11 +111,8 @@ public class Player : YmirComponent
     public bool vulnerable = true;
 
     //--------------------- Aim ---------------------\\
-    public GameObject aimSensor = null;
     public float aimAngle;
     public bool isAiming = false;
-    public GameObject target = null;
-
 
     #endregion
 
@@ -403,8 +400,8 @@ public class Player : YmirComponent
         movementVector = new Vector3(movementVector.x, gravity, movementVector.z);
 
         // Aim sensor Position
-        if (aimSensor != null)
-            aimSensor.SetPosition(gameObject.transform.globalPosition);
+        //if (aimSensor != null)
+        //    aimSensor.SetPosition(gameObject.transform.globalPosition);
 
         UpdateControllerInputs();
 
@@ -1380,7 +1377,7 @@ public class Player : YmirComponent
         if (currentWeapon.ShootAvailable()) inputsList.Add(INPUT.I_SHOOT);
 
         if (isAiming)
-            LookAt(aimAngle, 15);
+            LookAt(aimAngle, 25);
 
         if (JoystickMoving() == true)
             HandleRotation();

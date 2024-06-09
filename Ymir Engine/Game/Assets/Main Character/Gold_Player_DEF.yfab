@@ -7,7 +7,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 911554203,
+            "Parent UID": 1838128766,
             "Components": [
                 {
                     "Type": "Transform",
@@ -160,12 +160,11 @@
                     "reloading": true,
                     "movementSpeed": 5000,
                     "deathAnimFinish": false,
-                    "godMode": true,
+                    "godMode": false,
                     "weaponType": 0,
                     "upgradeType": 0,
                     "damageMultiplier": 0,
                     "vulnerable": true,
-                    "aimSensor": 722618905,
                     "aimAngle": -2.7035396099090576,
                     "isAiming": false,
                     "itemsList": 0,
@@ -3197,7 +3196,7 @@
                                 1,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 157,
@@ -3556,7 +3555,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 257,
@@ -3915,7 +3914,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 277,
@@ -4274,7 +4273,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 381,
@@ -4633,7 +4632,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 123,
@@ -4994,7 +4993,7 @@
                                 1,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 177,
@@ -5355,7 +5354,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 237,
@@ -5716,7 +5715,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 297,
@@ -6077,7 +6076,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 361,
@@ -6438,7 +6437,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 138,
@@ -6827,7 +6826,7 @@
                                 1,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 197,
@@ -7216,7 +7215,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 217,
@@ -7605,7 +7604,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 317,
@@ -7997,7 +7996,7 @@
                                 0,
                                 0
                             ],
-                            "playerHit": true
+                            "playerHit": false
                         }
                     ],
                     "Diffuse_ID": 341,
@@ -8485,7 +8484,7 @@
                 {
                     "Type": "Audio listener",
                     "Active": 1,
-                    "Default Listener": 0
+                    "Default Listener": 1
                 },
                 {
                     "Type": "Camera",
@@ -8528,9 +8527,9 @@
                 {
                     "Type": "Audio source",
                     "Active": 1,
-                    "Bank Name": "",
-                    "Event Name": "",
-                    "Event ID": 0
+                    "Bank Name": "LV3Music",
+                    "Event Name": "LvL3_Music",
+                    "Event ID": 761846308
                 }
             ]
         }
