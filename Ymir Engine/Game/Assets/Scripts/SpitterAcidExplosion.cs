@@ -29,7 +29,7 @@ public class SpitterAcidExplosion : YmirComponent
 
     public void Start()
     {
-        movementSpeed = 4000f;
+        movementSpeed = 4500f;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         destroyed = false;
@@ -70,7 +70,7 @@ public class SpitterAcidExplosion : YmirComponent
         {
             InternalCalls.Destroy(gameObject);
         }
-        else if (destroyTimer >= 1.3f)
+        else if (destroyTimer >= 1.05f)
         {
             //DO EXPLOSION
             Quaternion rotation;
