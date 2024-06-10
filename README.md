@@ -1,12 +1,27 @@
 # Alien Extraction
 
+Alien Extraction is a DIABLO-LIKE game themed in the ALIEN universe.
+
+Players will take on the role of an elite soldier sent to an alien-infested planet to clear it of all hostile forms. The action focuses on multi-level raids, where players will have to explore, fight against saga enemies, manage their resources carefully to survive and not die in their attempt to complete the mission and discover the truth.
+
 ## System Requirements
+
+| Hardware | Components |
+| --- | --- |
+| Central Processing Unit (CPU) | Intel Core i7-2720QM @ 2.2GHz (8 CPUs) |
+| Graphics Processing Unit (GPU) | NVIDIA 4200M |
+| Random Access Memory (RAM) | 8192 MB |
+| Free Disk Space | 200 MB |
+| Operating System (OS) | Windows 10 Enterprise |
+
 ## Dependencies
 ## Installation
 ## Controls
 
 ### GAME
 
+<p align="center">
+    
 | Key/Button      | Action           |
 |:---------------:|:----------------:|
 | Left Joystick   | Move             |
@@ -20,6 +35,8 @@
 | B               | Tail Swipe       |
 | DPAD Right      | Open Inventory   |
 | Start           | Pause/Menu       |
+
+</p>
 
 ### DEBUG KEYS
 
@@ -36,6 +53,15 @@ Activate Debug Keys with **[F1]**:
 | **4**                            | Insta Kill                         |
 
 ## Website & Social Media
+
+**Website:** https://clapcom-studios.github.io/Website/index.html
+
+**Twitter/X:** https://x.com/AlienExtraction
+
+**Linkedin:** https://www.linkedin.com/in/alien-extraction-citm-videogame-792bba307/
+
+**Youtube:** https://www.youtube.com/@Clapcom_Studios
+
 ## Team
 
 ![Clapcom Studios](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/a5e6e568-38fa-4440-ae85-1f9363bb4397)
