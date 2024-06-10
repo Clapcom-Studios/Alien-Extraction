@@ -314,7 +314,7 @@ void SetMaxDistance(MonoObject* go, float range)
 	}
 }
 
-void SetEmittersPosition(MonoObject* go, MonoObject* vector, float emitter = -1)
+void SetEmittersPosition(MonoObject* go, MonoObject* vector)
 {
 	if (External == nullptr) return;
 
@@ -334,21 +334,12 @@ void SetEmittersPosition(MonoObject* go, MonoObject* vector, float emitter = -1)
 
 	if (particleSystem != nullptr)
 	{
-		if(emitter == -1) 
+		for (int i = 0; i < particleSystem->allEmitters.size(); i++)
 		{
-			for (int i = 0; i < particleSystem->allEmitters.size(); i++)
-			{
-				EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(i)->modules.at(0);//Es el base
-				base->emitterOrigin = position;
-
-			}
-		}
-		else
-		{
-			EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(emitter)->modules.at(0);//Es el base
+			EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(i)->modules.at(0);//Es el base
 			base->emitterOrigin = position;
+
 		}
-		
 	}
 	else
 	{

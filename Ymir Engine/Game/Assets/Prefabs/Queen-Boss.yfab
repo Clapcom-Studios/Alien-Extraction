@@ -7,7 +7,7 @@
             "UID": 1185979896,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 596426368,
+            "Parent UID": 529163852,
             "Components": [
                 {
                     "Type": "Transform",
@@ -141,10 +141,22 @@
                     "xSpeed": 0,
                     "ySpeed": 0,
                     "DetectionRadius": 200,
+                    "clawDMG": 0,
                     "clawAniCounter": 0,
+                    "acidDMG": 0,
+                    "acidPudleDMG": 0,
+                    "acidShrapnelDMG": 0,
                     "acidSpitAniCounter": 0,
+                    "axeDMG": 0,
                     "axeAniCounter": 0,
-                    "paused": false
+                    "dmgMultiplier": 0,
+                    "paused": false,
+                    "fill1": 302083866,
+                    "fill2": 603368173,
+                    "spawner1": 2134702107,
+                    "spawner2": 536738319,
+                    "spawner3": 610943101,
+                    "spawner4": 719839176
                 }
             ],
             "Children UID": [
@@ -513,9 +525,9 @@
                         -0
                     ],
                     "Scale": [
-                        1,
-                        1,
-                        1
+                        3,
+                        3,
+                        3
                     ]
                 },
                 {
@@ -527,7 +539,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 534007599,
-                            "Name": "",
+                            "Name": "Bola",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -539,8 +551,8 @@
                                         14.699999809265137,
                                         0
                                     ],
-                                    "DistanceLimit": 0,
-                                    "HasDistanceLimit": false,
+                                    "DistanceLimit": 100,
+                                    "HasDistanceLimit": true,
                                     "BaseRotation": 0,
                                     "BaseShape": 0,
                                     "PositiveBoxPoints": [
@@ -586,7 +598,7 @@
                                     ],
                                     "NormalizedBaseDirection": true,
                                     "Accelerates": false,
-                                    "Speed1": 76,
+                                    "Speed1": 190,
                                     "Speed2": 0,
                                     "ChangeSpeedMode": 3,
                                     "NewDirection": [
@@ -594,7 +606,7 @@
                                         -2.4000000953674316,
                                         4.3000001907348633
                                     ],
-                                    "ChangeSpeed1": 0.081000000238418579,
+                                    "ChangeSpeed1": 0.86599999666213989,
                                     "ChangeSpeed2": 1,
                                     "NormalizedChange": true
                                 },
@@ -624,9 +636,9 @@
                                     "Progressive": false,
                                     "Loop": false,
                                     "Color1": [
-                                        0.24293209612369537,
-                                        0.29203540086746216,
-                                        0,
+                                        0.49917739629745483,
+                                        0.58849561214447021,
+                                        0.057287171483039856,
                                         1
                                     ],
                                     "Color2": [
@@ -647,7 +659,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 775603339,
-                            "Name": "",
+                            "Name": "NubeAcido",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -657,10 +669,10 @@
                                     "Position": [
                                         0,
                                         0,
-                                        39.5
+                                        97.699996948242188
                                     ],
-                                    "DistanceLimit": 0,
-                                    "HasDistanceLimit": false,
+                                    "DistanceLimit": 100,
+                                    "HasDistanceLimit": true,
                                     "BaseRotation": 0,
                                     "BaseShape": 1,
                                     "PositiveBoxPoints": [
@@ -767,7 +779,7 @@
                         {
                             "ModulesSize": 6,
                             "EmitterUID": 158881136,
-                            "Name": "",
+                            "Name": "IDK",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -779,8 +791,8 @@
                                         14.800000190734863,
                                         7.3000001907348633
                                     ],
-                                    "DistanceLimit": 0,
-                                    "HasDistanceLimit": false,
+                                    "DistanceLimit": 100,
+                                    "HasDistanceLimit": true,
                                     "BaseRotation": 0,
                                     "BaseShape": 1,
                                     "PositiveBoxPoints": [
@@ -1403,7 +1415,7 @@
                             "Settings": [
                                 {
                                     "Type": 0,
-                                    "Lifetime": 4,
+                                    "Lifetime": 1.5,
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
@@ -1432,9 +1444,9 @@
                                 },
                                 {
                                     "Type": 1,
-                                    "SpawnMode": 1,
+                                    "SpawnMode": 0,
                                     "StartMode": 3,
-                                    "NumParticles": 5,
+                                    "NumParticles": 1,
                                     "SpawnRatio": 0.019999999552965164,
                                     "NumParticlesToStop": 1,
                                     "PointingUID": 0,
@@ -1464,8 +1476,8 @@
                                     "Loop": false,
                                     "Size1": 0,
                                     "Size2": 194,
-                                    "TimeStart": 0.90299999713897705,
-                                    "TimeStop": 1
+                                    "TimeStart": 0.18400000035762787,
+                                    "TimeStop": 0.66600000858306885
                                 },
                                 {
                                     "Type": 5,
@@ -1495,7 +1507,7 @@
                             "Settings": [
                                 {
                                     "Type": 0,
-                                    "Lifetime": 4,
+                                    "Lifetime": 1.5,
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
@@ -1575,8 +1587,8 @@
                                     "Loop": false,
                                     "Size1": 0,
                                     "Size2": 78.5,
-                                    "TimeStart": 0.91299998760223389,
-                                    "TimeStop": 1
+                                    "TimeStart": 0.18700000643730164,
+                                    "TimeStop": 0.67100000381469727
                                 }
                             ]
                         },
@@ -1587,7 +1599,7 @@
                             "Settings": [
                                 {
                                     "Type": 0,
-                                    "Lifetime": 4,
+                                    "Lifetime": 1.5,
                                     "Lifetime2": 2,
                                     "RandomLT": false,
                                     "Position": [
@@ -1667,8 +1679,8 @@
                                     "Loop": false,
                                     "Size1": 0,
                                     "Size2": 73,
-                                    "TimeStart": 0.90299999713897705,
-                                    "TimeStop": 1
+                                    "TimeStart": 0.18600000441074371,
+                                    "TimeStop": 0.67000001668930054
                                 }
                             ]
                         }
