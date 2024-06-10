@@ -45,19 +45,19 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 ### GAME
     
-| Key/Button          | Action           |
+| Button (XBOX / PS4) | Action           |
 |:-------------------:|:----------------:|
 | **Left Joystick**   | Move             |
-| **LT**              | Dash             |
-| **RT**              | Shoot            |
-| **LB**              | Heal             |
-| **X**               | Reload           |
-| **A**               | Interact         |
-| **RB**              | Acid Spit        |
-| **Y**               | Predatory Rush   |
-| **B**               | Tail Swipe       |
+| **LT / L2**         | Dash             |
+| **RT / R2**         | Shoot            |
+| **LB / L1**         | Heal             |
+| **X / Square**      | Reload           |
+| **A / X**           | Interact         |
+| **RB / R1**         | Acid Spit        |
+| **Y / Triangle**    | Predatory Rush   |
+| **B / O**           | Tail Swipe       |
 | **DPAD Right**      | Open Inventory   |
-| **Start**           | Pause/Menu       |
+| **Start / Options** | Pause/Menu       |
 
 ### DEBUG KEYS
 
