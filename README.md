@@ -36,7 +36,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 > It is recommended that you extract the zip on the parent folder of the disk, so that the path doesn't get too long. <br>
 > (e.g. ```D:\ClapcomStudios-AlienExtraction_Gold```)
 >
-> In this case, the **executable path** will be as follows:
+> In this case, the **executable path** will be as follows: <br>
 > ```D:\ClapcomStudios-AlienExtraction_Gold\AlienExtraction\AlienExtraction.exe```
 >
 > It is recommended to make a **shortcut** of the game on your desktop.
