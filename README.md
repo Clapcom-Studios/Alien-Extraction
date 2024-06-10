@@ -1,5 +1,13 @@
-# Alien: Extraction
-## (In Progress)
+# Alien Extraction
+
+## System Requirements
+## Dependencies
+## Installation
+## Controls
+## Website & Social Media
+## Team
+
+![Clapcom Studios](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/a5e6e568-38fa-4440-ae85-1f9363bb4397)
 
 # About the engine: Ymir Engine
 
