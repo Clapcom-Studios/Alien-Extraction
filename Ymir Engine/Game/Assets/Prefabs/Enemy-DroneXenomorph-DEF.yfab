@@ -1,21 +1,21 @@
 {
     "Prefab": [
         {
-            "Name": "Drone",
+            "Name": "Drone (1)",
             "Static": false,
             "Tag": "Enemy",
             "UID": 729890239,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1533710790,
+            "Parent UID": 882263779,
             "Components": [
                 {
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -22.988241195678711,
-                        0,
-                        -77.9202880859375
+                        -1.4957637786865234,
+                        -1.5688424110412598,
+                        375.37005615234375
                     ],
                     "Rotation": [
                         -0,
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "Name": "DroneXenomorph",
+            "Name": "DroneXenomorph (1)",
             "Static": false,
             "Tag": "Enemy",
             "UID": 1671388099,
@@ -48,7 +48,7 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        7.4913468360900879,
                         0
                     ],
                     "Rotation": [
@@ -150,7 +150,7 @@
                     "LockZ": true,
                     "Offset": [
                         0,
-                        14,
+                        6.5,
                         0
                     ],
                     "Offset Rotation": [
@@ -163,9 +163,9 @@
             ],
             "Children UID": [
                 147725048,
-                744143457,
-                1682752981,
-                941880818
+                277032129,
+                1020037397,
+                803129638
             ]
         },
         {
@@ -183,7 +183,7 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        -320,
                         0
                     ],
                     "Rotation": [
@@ -249,10 +249,10 @@
             ]
         },
         {
-            "Name": "ParticlesDamageDrone",
+            "Name": "ParticlesDamageDrone (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 744143457,
+            "UID": 277032129,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1671388099,
@@ -407,10 +407,10 @@
             ]
         },
         {
-            "Name": "ParticlesTailAttack_Drone",
+            "Name": "ParticlesTailAttack_Drone (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1682752981,
+            "UID": 1020037397,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1671388099,
@@ -677,10 +677,10 @@
             ]
         },
         {
-            "Name": "ParticlesClawSwipe_Drone",
+            "Name": "ParticlesClawSwipe_Drone (1)",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 941880818,
+            "UID": 803129638,
             "Active": true,
             "Element_Type": "None",
             "Parent UID": 1671388099,
@@ -835,7 +835,7 @@
             ]
         },
         {
-            "Name": "Health_Bar_Plane",
+            "Name": "Health_Bar_Plane (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1024963966,
@@ -876,7 +876,7 @@
             ]
         },
         {
-            "Name": "pPlane1",
+            "Name": "pPlane1 (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 2025252989,

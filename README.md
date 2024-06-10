@@ -1,5 +1,44 @@
-# Alien: Extraction
-## (In Progress)
+# Alien Extraction
+
+## System Requirements
+## Dependencies
+## Installation
+## Controls
+
+### GAME
+
+| Key/Button      | Action           |
+|:---------------:|:----------------:|
+| Left Joystick   | Move             |
+| LT              | Dash             |
+| RT              | Shoot            |
+| LB              | Heal             |
+| X               | Reload           |
+| A               | Interact         |
+| RB              | Acid Spit        |
+| Y               | Predatory Rush   |
+| B               | Tail Swipe       |
+| DPAD Right      | Open Inventory   |
+| Start           | Pause/Menu       |
+
+### DEBUG KEYS
+
+Activate Debug Keys with **[F1]**:
+
+|            Key/Button           |               Action                |
+|:-------------------------------:|:-----------------------------------:|
+| **F1**                           | Activate Debug Keys                |
+| **1, 2, 3**                      | Change Weapon (SMG, Shotgun, Plasma)|
+| **Show Colliders**               | Show Colliders                     |
+| **NumPad 1, 2, 3, 4, 5, 6**      | Travel Between Levels              |
+| **K & L**                        | Toggle Exploration/Combat Music    |
+| **, & .**                        | Downgrade/Upgrade Weapon           |
+| **4**                            | Insta Kill                         |
+
+## Website & Social Media
+## Team
+
+![Clapcom Studios](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/a5e6e568-38fa-4440-ae85-1f9363bb4397)
 
 # About the engine: Ymir Engine
 

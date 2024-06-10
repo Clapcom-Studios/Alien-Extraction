@@ -346,6 +346,12 @@ public class Player : YmirComponent
                 lastUnlockedLvl = currentLvl;
             }
 
+            if (weaponType == WEAPON_TYPE.NONE)
+            {
+                weaponType = WEAPON_TYPE.SHOTGUN;
+                SetWeapon();
+            }
+
             SavePlayer();
         }
         else
