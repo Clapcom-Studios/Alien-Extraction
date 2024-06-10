@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_BOSS_COLLDIERS.nav",
     "Editor Camera Position": [
-        -12.463064193725586,
-        171.05667114257812,
-        -104.90141296386719
+        57.744728088378906,
+        303.94570922851562,
+        -109.34575653076172
     ],
     "Editor Camera Right (X)": [
-        0.12318330258131027,
-        1.4901161193847656e-08,
-        0.88080692291259766
+        -0.98521989583969116,
+        -5.5879354476928711e-08,
+        0.16745232045650482
     ],
     "Editor Camera Up (Y)": [
-        0.79154121875762939,
-        0.43118050694465637,
-        -0.11069925129413605
+        0.16484352946281433,
+        0.17571863532066345,
+        0.96987086534500122
     ],
     "Editor Camera Front (Z)": [
-        0.46051046252250671,
-        -0.86191821098327637,
-        -0.064403660595417023
+        0.029462952166795731,
+        -0.98441922664642334,
+        0.17334742844104767
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 2012893222,
+            "UID": 894198970,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -53,7 +53,7 @@
             "UID": 660882132,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -90,7 +90,7 @@
             "UID": 1185979896,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2316,7 +2316,7 @@
             "UID": 2061456311,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -2327,9 +2327,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -82.041938781738281,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000001192092896,
@@ -8407,10 +8407,6 @@
                 }
             ],
             "Children UID": [
-                1214856151,
-                1245570633,
-                1502129064,
-                546804241,
                 734004389,
                 1074511134,
                 1856299005,
@@ -8418,267 +8414,8 @@
                 1989560417,
                 831742887,
                 1267186983,
-                2016797692
-            ]
-        },
-        {
-            "Name": "Col_1 (1)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1214856151,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1349128443,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        -1.2673740386962891,
-                        0,
-                        -1.0115137100219727
-                    ],
-                    "Rotation": [
-                        -0,
-                        45.000003814697266,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        204.39999389648438,
-                        8.1999998092651367,
-                        51.599998474121094
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Col_2",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1245570633,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1349128443,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        -27.598461151123047,
-                        0,
-                        -28.689037322998047
-                    ],
-                    "Rotation": [
-                        -0,
-                        45.000003814697266,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        158.69999694824219,
-                        8.1999998092651367,
-                        22.299999237060547
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Col_3",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1502129064,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1349128443,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        -83.045059204101562,
-                        0,
-                        36.39703369140625
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        17,
-                        8.1999998092651367,
-                        33.299999237060547
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Col_4",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 546804241,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 1349128443,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        36.825233459472656,
-                        0,
-                        -84.521263122558594
-                    ],
-                    "Rotation": [
-                        0,
-                        -2.1908576488494873,
-                        0
-                    ],
-                    "Scale": [
-                        0.99998116493225098,
-                        1,
-                        0.99998116493225098
-                    ]
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        32.099998474121094,
-                        8.1999998092651367,
-                        15.199999809265137
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                }
+                2016797692,
+                1017249664
             ]
         },
         {
@@ -8699,9 +8436,9 @@
                         114.01887512207031
                     ],
                     "Rotation": [
-                        -1.2077863882631323e-11,
-                        45.000003814697266,
-                        3.8551297570910137e-12
+                        -2.0389733304537749e-11,
+                        44.999996185302734,
+                        6.143469847424976e-12
                     ],
                     "Scale": [
                         1,
@@ -8954,19 +8691,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -244.756591796875,
+                        -214.90283203125,
                         36.262992858886719,
-                        -243.46833801269531
+                        -203.412109375
                     ],
                     "Rotation": [
-                        -5.9879943885288167e-12,
+                        -5.815314549351136e-11,
                         45.000003814697266,
-                        1.8934237858148073e-12
+                        1.5358669197551578e-11
                     ],
                     "Scale": [
+                        1.0866267681121826,
                         1,
-                        1,
-                        0.99999964237213135
+                        0.92998069524765015
                     ]
                 },
                 {
@@ -8999,7 +8736,7 @@
                     ],
                     "Offset Rotation": [
                         0,
-                        0,
+                        -134.89999389648438,
                         0,
                         1
                     ]
@@ -9024,9 +8761,9 @@
                         -104.42263793945312
                     ],
                     "Rotation": [
-                        -6.4545634462231938e-13,
-                        14.605808258056641,
-                        8.756726219789554e-14
+                        -6.4545694093351424e-13,
+                        14.605810165405273,
+                        8.7567370618112789e-14
                     ],
                     "Scale": [
                         0.99999904632568359,
@@ -9091,7 +8828,7 @@
                     "Rotation": [
                         -7.6818204575168636e-12,
                         45.000003814697266,
-                        2.4180334384088509e-12
+                        2.4180332215684164e-12
                     ],
                     "Scale": [
                         1,
@@ -9149,19 +8886,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        -37.735336303710938,
-                        0,
-                        -39.402072906494141
+                        -35.806102752685547,
+                        1.6207710729077007e-09,
+                        -39.671619415283203
                     ],
                     "Rotation": [
-                        -0,
+                        -2.8633621515505858e-11,
                         45.000003814697266,
-                        -0
+                        8.6446813249430043e-12
                     ],
                     "Scale": [
                         1,
                         1,
-                        1
+                        0.94982618093490601
                     ]
                 },
                 {
@@ -9202,13 +8939,78 @@
             ]
         },
         {
+            "Name": "Collider ",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1017249664,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1349128443,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        18.614934921264648,
+                        35.729000091552734,
+                        18.130826950073242
+                    ],
+                    "Rotation": [
+                        4.4138206978239225e-10,
+                        0.61698454618453979,
+                        7.4688815132617492e-09
+                    ],
+                    "Scale": [
+                        0.99999922513961792,
+                        1,
+                        0.9999929666519165
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        220,
+                        90,
+                        22
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0.40000000596046448,
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
             "Name": "Loading Scene SceneManager",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9641,7 +9443,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9668,8 +9470,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1912,
+                    "Height": 1008,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -11767,7 +11569,7 @@
             "UID": 1227978483,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -11794,8 +11596,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1912,
+                    "Height": 1008,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -11843,14 +11645,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 432,
-                    "Position Y": 43,
+                    "Position Y": 0,
                     "Width": 749,
                     "Height": 20,
                     "UI Type": 6,
                     "UI State": 1,
                     "Drag Limits": [
                         432,
-                        43,
+                        0,
                         749,
                         20
                     ],
@@ -11933,14 +11735,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 432,
-                    "Position Y": 43,
+                    "Position Y": 0,
                     "Width": 1049,
                     "Height": 119,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         432,
-                        43,
+                        0,
                         1049,
                         119
                     ],
@@ -11996,14 +11798,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 586,
-                    "Position Y": 111,
+                    "Position Y": 68,
                     "Width": 749,
                     "Height": 20,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         586,
-                        111,
+                        68,
                         749,
                         20
                     ],
@@ -12059,14 +11861,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 432,
-                    "Position Y": 43,
+                    "Position Y": 0,
                     "Width": 1049,
                     "Height": 119,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         432,
-                        43,
+                        0,
                         1049,
                         119
                     ],
@@ -12122,7 +11924,7 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 586,
-                    "Position Y": 111,
+                    "Position Y": 68,
                     "Width": 743,
                     "Height": 20,
                     "UI Type": 1,
@@ -12185,14 +11987,14 @@
                     "Active": 1,
                     "Draggeable": false,
                     "Position X": 432,
-                    "Position Y": 43,
+                    "Position Y": 0,
                     "Width": 1049,
                     "Height": 119,
                     "UI Type": 1,
                     "UI State": 1,
                     "Drag Limits": [
                         432,
-                        43,
+                        0,
                         1049,
                         119
                     ],
@@ -12222,7 +12024,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19084,7 +18886,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19621,7 +19423,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19972,7 +19774,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20780,7 +20582,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -20893,7 +20695,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -29427,7 +29229,7 @@
             "UID": 552499595,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
@@ -29583,7 +29385,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 2012893222,
+            "Parent UID": 894198970,
             "Components": [
                 {
                     "Type": "Transform",
