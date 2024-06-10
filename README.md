@@ -8,11 +8,11 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 | Hardware | Components |
 | --- | --- |
-| Central Processing Unit (CPU) | Intel Core i7-2720QM @ 2.2GHz (8 CPUs) |
-| Graphics Processing Unit (GPU) | NVIDIA 4200M |
-| Random Access Memory (RAM) | 8192 MB |
-| Free Disk Space | 200 MB |
-| Operating System (OS) | Windows 10 Enterprise |
+| Central Processing Unit (CPU) | Intel Core i7-12700K 3.60 GHz |
+| Graphics Processing Unit (GPU) | NVIDIA GeForce GTX 3060 |
+| Random Access Memory (RAM) | 16 GB |
+| Free Disk Space | 3 GB |
+| Operating System (OS) | Windows 10 |
 
 ## Dependencies
 
