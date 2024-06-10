@@ -2,9 +2,9 @@
 
 ## System Requirements
 ## Dependencies
-## Instalación
-## Controles
-## Link de la web y RRSS
+## Installation
+## Controls
+## Website & Social Media
 ## Changelog
 ## Team
 
