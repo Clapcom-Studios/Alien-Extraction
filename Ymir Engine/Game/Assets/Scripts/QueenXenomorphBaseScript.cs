@@ -258,6 +258,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Debug.Log("[ERROR] DEATH");
                     timePassed = 0;
                     InternalCalls.Destroy(gameObject); 
+                    Audio.StopAllAudios();
                     InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
                 }
                 return;
