@@ -1,6 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
 	761846308	LvL3_Music			\Default Work Unit\Music\LV3Music\LvL3_Music	
-	3961795458	LV3_Boss			\Default Work Unit\Music\LV3Music\LV3_Boss	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1071758680	CombatState			\Default Work Unit\CombatState	
@@ -8,6 +7,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	514064485	Fight	CombatState			
+	580146960	BossFight	CombatState			
 	748895195	None	CombatState			
 	2582085496	Exploration	CombatState			
 	655265632	Alive	PlayerState			
@@ -15,7 +15,7 @@ State	ID	Name	State Group			Notes
 	2044049779	Dead	PlayerState			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	452460163	SOT_Environment_LV3	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\LV3_Basic_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\LV3Music\Lvl3 Music Switch\Environment\SOT_Environment_LV3\SOT_Environment_LV3		2692607
-	852082368	SOT_Bossfight_LV3	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\LV3_Boss_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\LV3Music\Bossfight_01\SOT_Bossfight_LV3\SOT_Bossfight_LV3		4345608
-	1035668829	SOT_Combat_LV3	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\LV1_Combat_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\LV3Music\Lvl3 Music Switch\Combat\SOT_Combat_LV3\SOT_Combat_LV3		6002592
+	452460163	SOT_Environment_LV3	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\LV3_Basic_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\LV3Music\Lvl3 Music Switch\SOT_Environment_LV3\SOT_Environment_LV3		2692607
+	852082368	SOT_Bossfight_LV3	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\LV3_Boss_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\LV3Music\Lvl3 Music Switch\SOT_Bossfight_LV3\SOT_Bossfight_LV3		4345608
+	1035668829	SOT_Combat_LV3	C:\Users\victo\Documents\GitHub\Wwise-Project\Ymir-Project\.cache\Windows\SFX\LV1_Combat_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\LV3Music\Lvl3 Music Switch\SOT_Combat_LV3\SOT_Combat_LV3		6002592
 

@@ -294,7 +294,6 @@
    {
     "Id": "357189188",
     "Language": "SFX",
-    "Hash": "1417898481",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV2Music",
     "ShortName": "LV2Music",
     "Path": "LV2Music.bnk",
@@ -372,6 +371,12 @@
         "Name": "Fight",
         "ObjectPath": "\\States\\Default Work Unit\\CombatState\\Fight",
         "GUID": "{B4CB94E4-B136-4469-A75B-D53ADD4F7977}"
+       },
+       {
+        "Id": "580146960",
+        "Name": "BossFight",
+        "ObjectPath": "\\States\\Default Work Unit\\CombatState\\BossFight",
+        "GUID": "{D8129D1E-5CC0-4E42-AA56-2AA2CD5787DE}"
        }
       ]
      },
@@ -527,7 +532,6 @@
    {
     "Id": "643931339",
     "Language": "SFX",
-    "Hash": "1291434562",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\BaseMusic",
     "ShortName": "BaseMusic",
     "Path": "BaseMusic.bnk",
@@ -605,6 +609,12 @@
         "Name": "Fight",
         "ObjectPath": "\\States\\Default Work Unit\\CombatState\\Fight",
         "GUID": "{B4CB94E4-B136-4469-A75B-D53ADD4F7977}"
+       },
+       {
+        "Id": "580146960",
+        "Name": "BossFight",
+        "ObjectPath": "\\States\\Default Work Unit\\CombatState\\BossFight",
+        "GUID": "{D8129D1E-5CC0-4E42-AA56-2AA2CD5787DE}"
        }
       ]
      },
@@ -639,7 +649,6 @@
    {
     "Id": "766715893",
     "Language": "SFX",
-    "Hash": "3746209107",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV1Music",
     "ShortName": "LV1Music",
     "Path": "LV1Music.bnk",
@@ -698,6 +707,12 @@
         "Name": "Fight",
         "ObjectPath": "\\States\\Default Work Unit\\CombatState\\Fight",
         "GUID": "{B4CB94E4-B136-4469-A75B-D53ADD4F7977}"
+       },
+       {
+        "Id": "580146960",
+        "Name": "BossFight",
+        "ObjectPath": "\\States\\Default Work Unit\\CombatState\\BossFight",
+        "GUID": "{D8129D1E-5CC0-4E42-AA56-2AA2CD5787DE}"
        }
       ]
      },
@@ -2423,25 +2438,11 @@
    {
     "Id": "2405688451",
     "Language": "SFX",
-    "Hash": "936328067",
+    "Hash": "57517433",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV3Music",
     "ShortName": "LV3Music",
     "Path": "LV3Music.bnk",
     "IncludedEvents": [
-     {
-      "Id": "3961795458",
-      "Name": "LV3_Boss",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LV3Music\\LV3_Boss",
-      "DurationType": "Infinite",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "852082368",
-        "Language": "SFX",
-        "ShortName": "LV3_Boss.wav",
-        "Path": "SFX\\LV3_Boss_9EDFC787.wem"
-       }
-      ]
-     },
      {
       "Id": "761846308",
       "Name": "LvL3_Music",
@@ -2453,6 +2454,12 @@
         "Language": "SFX",
         "ShortName": "LV3_Basic.wav",
         "Path": "SFX\\LV3_Basic_9EDFC787.wem"
+       },
+       {
+        "Id": "852082368",
+        "Language": "SFX",
+        "ShortName": "LV3_Boss.wav",
+        "Path": "SFX\\LV3_Boss_9EDFC787.wem"
        },
        {
         "Id": "1035668829",
@@ -2487,6 +2494,19 @@
           ]
          }
         ]
+       },
+       {
+        "SwitchValue": "{3FA67D12-0264-4C71-BC58-ED0182200A9D}",
+        "Children": [
+         {
+          "SwitchValue": "{D8129D1E-5CC0-4E42-AA56-2AA2CD5787DE}",
+          "Media": [
+           {
+            "Id": "852082368"
+           }
+          ]
+         }
+        ]
        }
       ]
      }
@@ -2515,6 +2535,12 @@
         "Name": "Fight",
         "ObjectPath": "\\States\\Default Work Unit\\CombatState\\Fight",
         "GUID": "{B4CB94E4-B136-4469-A75B-D53ADD4F7977}"
+       },
+       {
+        "Id": "580146960",
+        "Name": "BossFight",
+        "ObjectPath": "\\States\\Default Work Unit\\CombatState\\BossFight",
+        "GUID": "{D8129D1E-5CC0-4E42-AA56-2AA2CD5787DE}"
        }
       ]
      },
@@ -3049,7 +3075,6 @@
    {
     "Id": "3402873772",
     "Language": "SFX",
-    "Hash": "3950948503",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\UIMusic",
     "ShortName": "UIMusic",
     "Path": "UIMusic.bnk",
