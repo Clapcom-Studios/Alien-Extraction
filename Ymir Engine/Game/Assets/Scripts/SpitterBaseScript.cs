@@ -207,8 +207,6 @@ public class SpitterBaseScript : Enemy
                 explosionCounter = 0f;
                 explosionEnabled = false;
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit");
-                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 3, 10.0f);
-                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 3);
                 Particles.PlayParticlesTrigger(particlesGO);
             }
         }
