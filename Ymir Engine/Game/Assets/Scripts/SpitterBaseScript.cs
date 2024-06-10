@@ -442,8 +442,7 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Idle_Spiter");
                     walkAni = false;
                     xenoState = XenoState.IDLE_AGGRO;
-                    //To fix tail to claw attack bug
-                    //acidSpitReboundCooldownTime = 1f;
+                    acidExplosiveCooldownTime -= 1f;
 
                 }
                 else if (timeCounter >= 0.6f && acidDone == false)
@@ -480,9 +479,7 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Idle_Spiter");
                     walkAni = false;
                     xenoState = XenoState.IDLE_AGGRO;
-                    //To fix tail to claw attack bug
-                    //acidSpitReboundCooldownTime = 1f;
-
+                    acidSpitCooldownTime -= 2f;
                 }
                 else if (timeCounter >= 0.6f && explosionDone == false)
                 {
