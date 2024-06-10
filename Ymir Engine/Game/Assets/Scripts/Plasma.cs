@@ -27,7 +27,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_0:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaDefault");
-                ammo = 200;
+                ammo = 100;
                 fireRate = 0.03f;
                 damage = 2.4f;
                 damageEscalation = 0.006f;
@@ -36,7 +36,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_1:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL1");
-                ammo = 200;
+                ammo = 100;
                 fireRate = 0.03f;
                 damage = 3;
                 damageEscalation = 0.01f;
@@ -45,7 +45,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_2:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL2");
-                ammo = 300;
+                ammo = 200;
                 fireRate = 0.02f;
                 damage = 3.6f;
                 damageEscalation = 0.01f;
@@ -54,7 +54,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_3_ALPHA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3A");
-                ammo = 300;
+                ammo = 200;
                 fireRate = 0.015f;
                 damage = 5f;
                 damageEscalation = 0.015f;
@@ -63,7 +63,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3B");
-                ammo = 500;
+                ammo = 300;
                 fireRate = 0.02f;
                 damage = 4f;
                 damageEscalation = 0.01f;

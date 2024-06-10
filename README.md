@@ -15,42 +15,54 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | Operating System (OS) | Windows 10 Enterprise |
 
 ## Dependencies
+
+> [!IMPORTANT]
+> #### It is _required_ to download [Visual Studio Community 2022](https://visualstudio.microsoft.com/es/free-developer-offers/) to execute the game.
+> ![image](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/b78c4439-313c-4728-bbac-2cf07eb71a1f)
+> ![image](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/ded6aef0-c9ff-4666-95cb-3123b605b5cf)
+> ![image](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/f4189760-dc3b-4a91-890b-5e1bb4180416)
+
+
 ## Installation
 ## Controls
 
 ### GAME
-
-<p align="center">
     
-| Key/Button      | Action           |
-|:---------------:|:----------------:|
-| Left Joystick   | Move             |
-| LT              | Dash             |
-| RT              | Shoot            |
-| LB              | Heal             |
-| X               | Reload           |
-| A               | Interact         |
-| RB              | Acid Spit        |
-| Y               | Predatory Rush   |
-| B               | Tail Swipe       |
-| DPAD Right      | Open Inventory   |
-| Start           | Pause/Menu       |
-
-</p>
+| Key/Button          | Action           |
+|:-------------------:|:----------------:|
+| **Left Joystick**   | Move             |
+| **LT**              | Dash             |
+| **RT**              | Shoot            |
+| **LB**              | Heal             |
+| **X**               | Reload           |
+| **A**               | Interact         |
+| **RB**              | Acid Spit        |
+| **Y**               | Predatory Rush   |
+| **B**               | Tail Swipe       |
+| **DPAD Right**      | Open Inventory   |
+| **Start**           | Pause/Menu       |
 
 ### DEBUG KEYS
 
-Activate Debug Keys with **[F1]**:
-
-|            Key/Button           |               Action                |
-|:-------------------------------:|:-----------------------------------:|
-| **F1**                           | Activate Debug Keys                |
-| **1, 2, 3**                      | Change Weapon (SMG, Shotgun, Plasma)|
-| **Show Colliders**               | Show Colliders                     |
-| **NumPad 1, 2, 3, 4, 5, 6**      | Travel Between Levels              |
-| **K & L**                        | Toggle Exploration/Combat Music    |
-| **, & .**                        | Downgrade/Upgrade Weapon           |
-| **4**                            | Insta Kill                         |
+|            Key/Button            |               Action                 |
+|:--------------------------------:|:------------------------------------:|
+| **F1**                           | Activate Debug Keys & Show Colliders |
+| **F5**                           | Take Damage                          |
+| **F6**                           | Heal                                 |
+| **1**                            | Change to Weapon Submachine          |
+| **2**                            | Change to Weapon Shotgun             |
+| **3**                            | Change to Weapon Plasma Cannon       |
+| **4**                            | Instant Death                        |
+| **,**                            | Downgrade Weapon                     |
+| **.**                            | Upgrade Weapon                       |
+| **K**                            | Change to Exploration Music          |
+| **L**                            | Change to Combat Music               |
+| **NumPad 1**                     | Travel to Level 0 Base               |
+| **NumPad 2**                     | Travel to Level 1 Warehouse          |
+| **NumPad 3**                     | Travel to Level 2 Laboratory Part 1  |
+| **NumPad 4**                     | Travel to Level 2 Laboratory Part 2  |
+| **NumPad 5**                     | Travel to Level 3 Hatchery Part 1    |
+| **NumPad 6**                     | Travel to Level 3 Hatchery Boss      |
 
 ## Website & Social Media
 
