@@ -465,7 +465,6 @@ public class Player : YmirComponent
                     SetWeapon();
                 }
 
-
                 if (Input.GetKey(YmirKeyCode.Alpha4) == KeyState.KEY_DOWN)
                 {
                     TakeDMG();
