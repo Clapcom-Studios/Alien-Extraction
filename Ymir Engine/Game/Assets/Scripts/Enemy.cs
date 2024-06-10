@@ -255,25 +255,24 @@ public class Enemy : YmirComponent
 
     protected void SpawnPrefab(string name, int probability)
     {
-        int randNum = random.Next(0, 101);  //Generate a random number between 0 and 100
-        Debug.Log("[WARNING] Rand Number: " + randNum);
-        if (randNum <= probability)
+        if (rarity == 0)    //Case common
         {
-            //Spawn items in a range random position offset
-            float randPosX = random.Next(-spawnRange, spawnRange + 1);
-            float randPosZ = random.Next(-spawnRange, spawnRange + 1);
-            Debug.Log("[WARNING] PickUp offset: " + randPosX + ", " + randPosZ);
-
-            itemPos.x += randPosX;
-            itemPos.z += randPosZ;
-
-            int randNum2 = random.Next(0, 101);
-            Debug.Log("[WARNING] Rand Number: " + randNum2);
-
-            if(!name.Contains("resinheal") && !name.Contains("core_mythic"))
+            int randNum = random.Next(0, 101);  //Generate a random number between 0 and 100
+            //Debug.Log("[WARNING] Rand Number: " + randNum);
+            if (randNum <= probability)
             {
-                
-                if (rarity == 0)    //Case common
+                //Spawn items in a range random position offset
+                float randPosX = random.Next(-spawnRange, spawnRange + 1);
+                float randPosZ = random.Next(-spawnRange, spawnRange + 1);
+                Debug.Log("[WARNING] PickUp offset: " + randPosX + ", " + randPosZ);
+
+                itemPos.x += randPosX;
+                itemPos.z += randPosZ;
+
+                int randNum2 = random.Next(0, 101);
+                Debug.Log("[WARNING] Rand Number: " + randNum2);
+
+                if (!name.Contains("resinheal") && !name.Contains("core_mythic"))
                 {
                     if (randNum2 < commonProb)
                     {
@@ -288,40 +287,74 @@ public class Enemy : YmirComponent
                         name += "_epic";
                     }
                 }
-                else if(rarity == 1)    //Case rare
+
+                Debug.Log("[WARNING] Name ---------- " + name);
+
+
+                if (name.Contains("common"))
                 {
-                    name += "_rare";
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Common Items", name, itemPos);
                 }
-                else if(rarity == 2)    //Case elite
+                else if (name.Contains("epic"))
                 {
-                    name += "_epic";
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Epic Items", name, itemPos);
                 }
+                else if (name.Contains("rare"))
+                {
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Rare Items", name, itemPos);
+                }
+                else
+                {
+                    // Case resin/core mythic
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items", name, itemPos);
+                }
+
+                //Clear the pos value
+                itemPos = gameObject.transform.localPosition;
+            }
+        }
+        else   //Case rare OR elite
+        {
+            int randNum = random.Next(0, 10);
+            if (randNum <= probability)
+            {
+                //Spawn items in a range random position offset
+                float randPosX = random.Next(-spawnRange, spawnRange + 1);
+                float randPosZ = random.Next(-spawnRange, spawnRange + 1);
+                Debug.Log("[WARNING] PickUp offset: " + randPosX + ", " + randPosZ);
+
+                itemPos.x += randPosX;
+                itemPos.z += randPosZ;
                 
-            }
-           
-            Debug.Log("[WARNING] Name ---------- " + name);
+                if (!name.Contains("resinheal") && !name.Contains("core_mythic"))
+                {
+                    if (rarity == 1)
+                    {
+                        name += "_rare";
+                    }
+                    else if(rarity == 2)
+                    {
+                        name += "_epic";
+                    }
+                }
 
+                if (name.Contains("rare"))
+                {
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Rare Items", name, itemPos);
+                }
+                else if (name.Contains("epic"))
+                {
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Epic Items", name, itemPos);
+                }
+                else
+                {
+                    // Case resin/core mythic
+                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items", name, itemPos);
+                }
 
-            if (name.Contains("common"))
-            {
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Common Items", name, itemPos);
+                //Clear the pos value
+                itemPos = gameObject.transform.localPosition;
             }
-            else if (name.Contains("epic"))
-            {
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Epic Items", name, itemPos);
-            }
-            else if (name.Contains("rare"))
-            {
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items/Rare Items", name, itemPos);
-            }
-            else
-            {
-                // Case resin/core mythic
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs/Items", name, itemPos);
-            }
-
-            //Clear the pos value
-            itemPos = gameObject.transform.localPosition;
         }
     }
 
