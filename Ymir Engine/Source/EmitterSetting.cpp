@@ -2254,6 +2254,14 @@ EmitterImage::EmitterImage()
 	//SetImage(imgPath);
 }
 
+EmitterImage::~EmitterImage()
+{
+	if (rTexTemp != nullptr) {
+		delete rTexTemp;
+		rTexTemp = nullptr;
+	}
+}
+
 void EmitterImage::SetImage(std::string imagePath)
 {
 	firstInit = false;

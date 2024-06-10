@@ -791,7 +791,7 @@ public class QueenXenomorphBaseScript : YmirComponent
             SpawnEnemyWave(40);
             wave40Spawned = true;
         }
-        if (!wave20Spawned && life <= life * 6000f)
+        if (!wave20Spawned && life <= 6000f)
         {
             Debug.Log("Spawn4");
             SpawnEnemyWave(20);

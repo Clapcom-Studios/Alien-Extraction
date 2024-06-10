@@ -388,6 +388,10 @@ public class UI_Upgrade_Button : YmirComponent
                                 break;
                         }
                     }
+                    else if ((int)upgrade.upgradeType == 1)
+                    {
+                        UI.SetUIState(gameObject, (int)UI_STATE.NORMAL);
+                    }
                     else
                     {
                         upgrade.isUnlocked = false;
