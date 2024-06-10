@@ -26,7 +26,7 @@ struct EmitterSetting //En Thor Engine esto seria el particle Module
 {
 public:
 	EmitterSetting();
-	~EmitterSetting();
+	virtual ~EmitterSetting();
 
 	EmitterType type;
 
@@ -278,6 +278,7 @@ struct EmitterColor : EmitterSetting
 struct EmitterImage : EmitterSetting
 {
 	EmitterImage();
+	~EmitterImage();
 	void Spawn(ParticleEmitter* emitter, Particle* particle);
 	void Update(float dt, ParticleEmitter* emitter);
 	void OnInspector();
