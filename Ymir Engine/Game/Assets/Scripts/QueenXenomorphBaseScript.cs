@@ -258,7 +258,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Debug.Log("[ERROR] DEATH");
                     timePassed = 0;
                     InternalCalls.Destroy(gameObject); 
-                    //InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
+                    InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
                 }
                 return;
             case QueenState.IDLE_PHASE_1:

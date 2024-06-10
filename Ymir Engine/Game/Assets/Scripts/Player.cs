@@ -422,83 +422,85 @@ public class Player : YmirComponent
             currentWeapon.Update();
         }
 
-        if (Input.GetKey(YmirKeyCode.K) == KeyState.KEY_DOWN)
-        {
-            Audio.SetState("CombatState", "Exploration");
-        }
-
-        if (Input.GetKey(YmirKeyCode.L) == KeyState.KEY_DOWN)
-        {
-            Audio.SetState("CombatState", "Fight");
-        }
-
         if (Input.GetKey(YmirKeyCode.F1) == KeyState.KEY_DOWN)
         {
             godMode = !godMode;
         }
 
-        if (!isInBase)
+        if (godMode)
         {
-            if (Input.GetKey(YmirKeyCode.Alpha1) == KeyState.KEY_DOWN)
+            if (Input.GetKey(YmirKeyCode.K) == KeyState.KEY_DOWN)
             {
-                weaponType = WEAPON_TYPE.SMG;
-                LoadWeaponUpgrade();
-
-                SetWeapon();
+                Audio.SetState("CombatState", "Exploration");
             }
 
-            if (Input.GetKey(YmirKeyCode.Alpha2) == KeyState.KEY_DOWN)
+            if (Input.GetKey(YmirKeyCode.L) == KeyState.KEY_DOWN)
             {
-                weaponType = WEAPON_TYPE.SHOTGUN;
-                LoadWeaponUpgrade();
-
-                SetWeapon();
+                Audio.SetState("CombatState", "Fight");
             }
 
-            if (Input.GetKey(YmirKeyCode.Alpha3) == KeyState.KEY_DOWN)
+            if (!isInBase)
             {
-                weaponType = WEAPON_TYPE.PLASMA;
-                LoadWeaponUpgrade();
-
-                SetWeapon();
-            }
-
-
-            if (Input.GetKey(YmirKeyCode.Alpha4) == KeyState.KEY_DOWN)
-            {
-                TakeDMG();
-            }
-
-            if (Input.GetKey(YmirKeyCode.PERIOD) == KeyState.KEY_DOWN)
-            {
-                if ((int)upgradeType < 4)
+                if (Input.GetKey(YmirKeyCode.Alpha1) == KeyState.KEY_DOWN)
                 {
-                    upgradeType += 1;
+                    weaponType = WEAPON_TYPE.SMG;
+                    LoadWeaponUpgrade();
+
                     SetWeapon();
+                }
+
+                if (Input.GetKey(YmirKeyCode.Alpha2) == KeyState.KEY_DOWN)
+                {
+                    weaponType = WEAPON_TYPE.SHOTGUN;
+                    LoadWeaponUpgrade();
+
+                    SetWeapon();
+                }
+
+                if (Input.GetKey(YmirKeyCode.Alpha3) == KeyState.KEY_DOWN)
+                {
+                    weaponType = WEAPON_TYPE.PLASMA;
+                    LoadWeaponUpgrade();
+
+                    SetWeapon();
+                }
+
+                if (Input.GetKey(YmirKeyCode.Alpha4) == KeyState.KEY_DOWN)
+                {
+                    TakeDMG();
+                }
+
+                if (Input.GetKey(YmirKeyCode.PERIOD) == KeyState.KEY_DOWN)
+                {
+                    if ((int)upgradeType < 4)
+                    {
+                        upgradeType += 1;
+                        SetWeapon();
+                    }
+                }
+
+                if (Input.GetKey(YmirKeyCode.COMMA) == KeyState.KEY_DOWN)
+                {
+                    if ((int)upgradeType > 0)
+                    {
+                        upgradeType -= 1;
+                        SetWeapon();
+                    }
                 }
             }
 
-            if (Input.GetKey(YmirKeyCode.COMMA) == KeyState.KEY_DOWN)
+            if (Input.GetKey(YmirKeyCode.F8) == KeyState.KEY_DOWN)
             {
-                if ((int)upgradeType > 0)
-                {
-                    upgradeType -= 1;
-                    SetWeapon();
-                }
+                SavePlayer();
             }
-        }
 
-        if (Input.GetKey(YmirKeyCode.F8) == KeyState.KEY_DOWN)
-        {
-            SavePlayer();
-        }
+            if (Input.GetKey(YmirKeyCode.F9) == KeyState.KEY_DOWN)
+            {
+                numCores++;
+                Debug.Log("Debug Add cores. Current: " + numCores.ToString());
 
-        if (Input.GetKey(YmirKeyCode.F9) == KeyState.KEY_DOWN)
-        {
-            numCores++;
-            Debug.Log("Debug Add cores. Current: " + numCores.ToString());
-
-            UpdateAlienCore();
+                UpdateAlienCore();
+            }
         }
 
         UpdateFOVInterpolation();
@@ -1683,7 +1685,7 @@ public class Player : YmirComponent
         //Debug.Log("Fuersa:" + gameObject.transform.GetForward());
         //Vector3 forward = gameObject.transform.GetForward();
         //forward.y = 0f;
-        
+
         HandleRotation();
 
 
@@ -1843,7 +1845,7 @@ public class Player : YmirComponent
                     currentMenu = "";
                 }
             }
-        }        
+        }
     }
 
     // External scripts
