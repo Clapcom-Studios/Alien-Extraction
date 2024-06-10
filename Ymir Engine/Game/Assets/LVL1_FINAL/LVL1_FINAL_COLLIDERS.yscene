@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 186446499,
+            "UID": 101534884,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -72,7 +72,7 @@
             "UID": 265396639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -19604,10 +19604,6 @@
                 1791668873,
                 1228183653,
                 1778558475,
-                1419637026,
-                1133028742,
-                1853369977,
-                1215753745,
                 1942660084,
                 1938723133,
                 192558648,
@@ -39582,1094 +39578,6 @@
                                 1,
                                 1,
                                 1
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "BackzoneWall_100",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1419637026,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1735366699,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                166809755,
-                1370552141,
-                715668022
-            ]
-        },
-        {
-            "Name": "Column_R (76)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 166809755,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1419637026,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 985141685,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "Wall (93)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1370552141,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1419637026,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 706943683,
-                    "Vertex Count": 32,
-                    "Index Count": 48
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        8.3979997634887695,
-                        39.609298706054688,
-                        40.053001403808594
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        5.6960000991821289,
-                        -3.5475893020629883,
-                        -21.549999237060547
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0.40000000596046448,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Column_L (76)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 715668022,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1419637026,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 674710954,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "BackzoneWall_101",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1133028742,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1735366699,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                597480030,
-                1280391299,
-                122980558
-            ]
-        },
-        {
-            "Name": "Column_R (77)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 597480030,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1133028742,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1049214729,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "Wall (94)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1280391299,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1133028742,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 2026952564,
-                    "Vertex Count": 32,
-                    "Index Count": 48
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        8.7980003356933594,
-                        39.609298706054688,
-                        40.252998352050781
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        38.263515472412109,
-                        -3.5475893020629883,
-                        -12.54893684387207
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0.40000000596046448,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Column_L (77)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 122980558,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1133028742,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 435242236,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "BackzoneWall_102",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1853369977,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1735366699,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1433794933,
-                1026981543,
-                413555916
-            ]
-        },
-        {
-            "Name": "Column_R (78)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1433794933,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1853369977,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1440778445,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "Wall (95)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1026981543,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1853369977,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1359126527,
-                    "Vertex Count": 32,
-                    "Index Count": 48
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        8.4420003890991211,
-                        39.609294891357422,
-                        27.969999313354492
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        68.78814697265625,
-                        -5.5802779197692871,
-                        -31.721763610839844
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0.40000000596046448,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Column_L (78)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 413555916,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1853369977,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 569342223,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "BackzoneWall_103",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1215753745,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1735366699,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                }
-            ],
-            "Children UID": [
-                1018424885,
-                456398290,
-                866100893
-            ]
-        },
-        {
-            "Name": "Column_R (79)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 1018424885,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1215753745,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 2062499480,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                }
-            ]
-        },
-        {
-            "Name": "Wall (96)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 456398290,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1215753745,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 1884299991,
-                    "Vertex Count": 32,
-                    "Index Count": 48
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "numLights": 1,
-                            "displayNormalMap": true,
-                            "transparency": 1
-                        }
-                    ],
-                    "Diffuse_ID": 702,
-                    "Diffuse_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_D.png",
-                    "Diffuse_UID": 1886808435,
-                    "Ambient_ID": 646,
-                    "Ambient_Path": "Assets\/LVL1_FINAL\/Lvl-1 Warehouse\/Back Zone Walls\/Texturas\/TEX_PROP_BackZoneWalls_A.png",
-                    "Ambient_UID": 718909066
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        8.241999626159668,
-                        39.609294891357422,
-                        27.969999313354492
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": false,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        39.457939147949219,
-                        -5.5802779197692871,
-                        -62.03643798828125
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0.40000000596046448,
-                        0,
-                        1
-                    ]
-                }
-            ]
-        },
-        {
-            "Name": "Column_L (79)",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 866100893,
-            "Active": false,
-            "Element_Type": "Mesh",
-            "Origin_Path": "Assets\/LVL1_FINAL\/LVL1_MAP.fbx",
-            "Parent UID": 1215753745,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Mesh",
-                    "Active": 1,
-                    "UID": 266611384,
-                    "Vertex Count": 20,
-                    "Index Count": 30
-                },
-                {
-                    "Type": "Material",
-                    "Active": 1,
-                    "Shader": "Assets\/Shaders\/MyShader.glsl",
-                    "Uniforms": [
-                        {
-                            "lightDir": [
-                                0,
-                                0,
-                                0
-                            ],
-                            "lightInt": 1,
-                            "lightColor": [
-                                0,
-                                0,
-                                0
                             ],
                             "numLights": 1,
                             "displayNormalMap": true,
@@ -65109,7 +64017,7 @@
             "UID": 493464378,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -65174,7 +64082,7 @@
             "UID": 1161519485,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -65982,7 +64890,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        31.327001571655273,
+                        31.327005386352539,
                         -0
                     ],
                     "Scale": [
@@ -66313,7 +65221,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        27.591018676757812,
+                        27.591022491455078,
                         -0
                     ],
                     "Scale": [
@@ -69624,7 +68532,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70221,7 +69129,7 @@
             "UID": 1545695842,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70818,7 +69726,7 @@
             "UID": 142531611,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71415,7 +70323,7 @@
             "UID": 1768177679,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72012,7 +70920,7 @@
             "UID": 227903904,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -73588,7 +72496,7 @@
             "UID": 900338210,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74604,7 +73512,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -74631,8 +73539,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1874,
-                    "Height": 965,
+                    "Width": 342,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -75179,7 +74087,7 @@
             "UID": 1932512867,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -78168,7 +77076,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -78575,7 +77483,7 @@
             "UID": 981719170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -78982,7 +77890,7 @@
             "UID": 523345040,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -79310,7 +78218,7 @@
             "UID": 1085187284,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -79715,9 +78623,9 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 1795821685,
-            "Active": true,
+            "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -79869,41 +78777,6 @@
                     "Speed": 0,
                     "Angular Speed": 0,
                     "Stopping Distance": 0
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        300,
-                        1000,
-                        350
-                    ],
-                    "Physics Type": 0,
-                    "Mass": 100,
-                    "Friction": 10,
-                    "Angular Friction": 0,
-                    "UseGravity": true,
-                    "IsSensor": false,
-                    "LockX": true,
-                    "LockY": false,
-                    "LockZ": true,
-                    "Offset": [
-                        0,
-                        14,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
                 }
             ],
             "Children UID": [
@@ -81026,41 +79899,6 @@
                     "Bank Name": "Facehugger",
                     "Event Name": "",
                     "Event ID": 0
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        12.800000190734863,
-                        24.299999237060547,
-                        10.800000190734863
-                    ],
-                    "Physics Type": 0,
-                    "Mass": 1,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": true,
-                    "IsSensor": false,
-                    "LockX": true,
-                    "LockY": false,
-                    "LockZ": true,
-                    "Offset": [
-                        0,
-                        8.1999998092651367,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
                 }
             ],
             "Children UID": [
@@ -81902,41 +80740,6 @@
                     "rareProb": 0,
                     "epicProb": 0,
                     "timeCounter": 0
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 0,
-                    "Size": [
-                        75,
-                        210,
-                        75
-                    ],
-                    "Physics Type": 0,
-                    "Mass": 1,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": true,
-                    "IsSensor": false,
-                    "LockX": true,
-                    "LockY": false,
-                    "LockZ": true,
-                    "Offset": [
-                        0,
-                        11,
-                        0
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
                 }
             ],
             "Children UID": [
@@ -83835,7 +82638,7 @@
             "UID": 39169129,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -83932,7 +82735,7 @@
             "UID": 1570706478,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -83969,7 +82772,7 @@
             "UID": 2079024613,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -85105,9 +83908,9 @@
                         201.75079345703125
                     ],
                     "Rotation": [
-                        -1.0729000905485009e-06,
+                        -1.0729005452958518e-06,
                         -0.155265212059021,
-                        1.1334412164387686e-07
+                        1.1334414296015893e-07
                     ],
                     "Scale": [
                         3.1199030876159668,
@@ -85180,9 +83983,9 @@
                         -0.11962890625
                     ],
                     "Rotation": [
-                        1.0732082955655642e-06,
+                        1.0732085229392396e-06,
                         0.15527060627937317,
-                        -1.1625724027908291e-07
+                        -1.1625726159536498e-07
                     ],
                     "Scale": [
                         0.32052269577980042,
@@ -85275,7 +84078,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -85650,7 +84453,7 @@
             "UID": 1071770193,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -85740,9 +84543,9 @@
                         68.155654907226562
                     ],
                     "Rotation": [
-                        -15.877792358398438,
-                        -84.709014892578125,
-                        74.357711791992188
+                        -15.877824783325195,
+                        -84.709236145019531,
+                        74.357841491699219
                     ],
                     "Scale": [
                         0.65004831552505493,
@@ -85895,7 +84698,7 @@
             "UID": 1401646486,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86166,7 +84969,7 @@
             "UID": 766979426,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86563,7 +85366,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -86590,8 +85393,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1874,
-                    "Height": 965,
+                    "Width": 342,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -88689,7 +87492,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -95615,7 +94418,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -96161,7 +94964,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -96188,8 +94991,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1874,
-                    "Height": 965,
+                    "Width": 342,
+                    "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -96512,7 +95315,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -97184,7 +95987,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -97489,7 +96292,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -98297,7 +97100,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -99042,7 +97845,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
@@ -99539,7 +98342,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 186446499,
+            "Parent UID": 101534884,
             "Components": [
                 {
                     "Type": "Transform",
