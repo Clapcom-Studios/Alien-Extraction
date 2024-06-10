@@ -19,38 +19,33 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 ## Controls
 
 ### GAME
-
-<p align="center">
     
-| Key/Button      | Action           |
-|:---------------:|:----------------:|
-| Left Joystick   | Move             |
-| LT              | Dash             |
-| RT              | Shoot            |
-| LB              | Heal             |
-| X               | Reload           |
-| A               | Interact         |
-| RB              | Acid Spit        |
-| Y               | Predatory Rush   |
-| B               | Tail Swipe       |
-| DPAD Right      | Open Inventory   |
-| Start           | Pause/Menu       |
-
-</p>
+| Key/Button          | Action           |
+|:-------------------:|:----------------:|
+| **Left Joystick**   | Move             |
+| **LT**              | Dash             |
+| **RT**              | Shoot            |
+| **LB**              | Heal             |
+| **X**               | Reload           |
+| **A**               | Interact         |
+| **RB**              | Acid Spit        |
+| **Y**               | Predatory Rush   |
+| **B**               | Tail Swipe       |
+| **DPAD Right**      | Open Inventory   |
+| **Start**           | Pause/Menu       |
 
 ### DEBUG KEYS
 
-Activate Debug Keys with **[F1]**:
-
-|            Key/Button           |               Action                |
-|:-------------------------------:|:-----------------------------------:|
-| **F1**                           | Activate Debug Keys                |
-| **1, 2, 3**                      | Change Weapon (SMG, Shotgun, Plasma)|
-| **Show Colliders**               | Show Colliders                     |
-| **NumPad 1, 2, 3, 4, 5, 6**      | Travel Between Levels              |
-| **K & L**                        | Toggle Exploration/Combat Music    |
-| **, & .**                        | Downgrade/Upgrade Weapon           |
-| **4**                            | Insta Kill                         |
+|            Key/Button            |               Action                 |
+|:--------------------------------:|:------------------------------------:|
+| **F1**                           | Activate Debug Keys & Show Colliders |
+| **1, 2, 3**                      | Change Weapon (SMG, Shotgun, Plasma) |
+| **NumPad 1, 2, 3, 4, 5, 6**      | Travel Between Levels                |
+| **K & L**                        | Toggle Exploration/Combat Music      |
+| **, & .**                        | Downgrade/Upgrade Weapon             |
+| **4**                            | Instant Death                        |
+| **F5**                           | Take Damage                          |
+| **F6**                           | Heal                                 |
 
 ## Website & Social Media
 
