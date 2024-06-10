@@ -1416,6 +1416,8 @@ void CreateQueenPuddle(MonoObject* position, MonoObject* rotation)
 	go->AddComponent(c);
 }
 
+
+
 //---------- GLOBAL GETTERS ----------//
 MonoObject* SendGlobalPosition(MonoObject* obj) //Allows to send float3 as "objects" in C#, should find a way to move Vector3 as class
 {

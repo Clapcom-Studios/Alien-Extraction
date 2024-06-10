@@ -407,9 +407,12 @@ public class QueenXenomorphBaseScript : YmirComponent
                     pos.y += 10;
                     pos.z -= 6;
                     particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidicBoss");
-                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 0);
-                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 0);
-                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 2, 0);
+                    //Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 0f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 120f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 1);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 2, 120f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 2);
                     Particles.PlayParticlesTrigger(particlesGO);
                     
                     InternalCalls.CreateQueenSpitAttack(pos, gameObject.transform.globalRotation);
