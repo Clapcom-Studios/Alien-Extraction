@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_PART1_COLLIDERS.nav",
     "Editor Camera Position": [
-        -52.606990814208984,
-        124.8287353515625,
-        33.262226104736328
+        519.08062744140625,
+        78.557159423828125,
+        636.73760986328125
     ],
     "Editor Camera Right (X)": [
-        0.51820105314254761,
-        -1.3113021850585938e-06,
-        0.81958317756652832
+        0.74136286973953247,
+        -5.9604644775390625e-08,
+        -0.67110514640808105
     ],
     "Editor Camera Up (Y)": [
-        0.73431944847106934,
-        0.43318530917167664,
-        -0.4642903208732605
+        -0.40020442008972168,
+        0.8027346134185791,
+        -0.44210174679756165
     ],
     "Editor Camera Front (Z)": [
-        0.37671270966529846,
-        -0.89388447999954224,
-        -0.2381870299577713
+        -0.5387190580368042,
+        -0.59633690118789673,
+        -0.59511733055114746
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 527318784,
+            "UID": 1317175997,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -61,7 +61,9 @@
                 1225145048,
                 728169813,
                 1781007999,
-                1806365249
+                1806365249,
+                165934810,
+                862043548
             ]
         },
         {
@@ -71,7 +73,7 @@
             "UID": 215325978,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1019,9 +1021,9 @@
                         97.790382385253906
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99999469518661499,
@@ -1285,9 +1287,9 @@
                         149.70846557617188
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         83.883010864257812,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.99999475479125977,
@@ -4552,7 +4554,7 @@
             "UID": 148987747,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4623,7 +4625,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -4634,9 +4636,9 @@
                         108.52375793457031
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         6.1106042861938477,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.050000697374343872,
@@ -5220,7 +5222,7 @@
             "UID": 12745639,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5231,9 +5233,9 @@
                         292.640625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -1.3964773416519165,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.050005152821540833,
@@ -5337,9 +5339,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -5422,9 +5424,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -5817,7 +5819,7 @@
             "UID": 259210497,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -5909,7 +5911,7 @@
                     ],
                     "Rotation": [
                         4.8095753300003707e-06,
-                        -63.852699279785156,
+                        -63.852706909179688,
                         7.6814449130324647e-06
                     ],
                     "Scale": [
@@ -5934,9 +5936,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -6019,9 +6021,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -6414,7 +6416,7 @@
             "UID": 2063663470,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6520,7 +6522,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1467228564,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -6709,7 +6711,7 @@
             "UID": 1372245636,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6815,7 +6817,7 @@
                         {
                             "ModulesSize": 7,
                             "EmitterUID": 1467228564,
-                            "Name": "",
+                            "Name": "Particle Emitter 1",
                             "Settings": [
                                 {
                                     "Type": 0,
@@ -7004,7 +7006,7 @@
             "UID": 1630598529,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -7041,7 +7043,7 @@
             "UID": 811451292,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -7138,7 +7140,7 @@
             "UID": 560363617,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9842,7 +9844,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -9906,7 +9908,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -9970,7 +9972,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -10162,7 +10164,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         76.759788513183594,
@@ -10866,7 +10868,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -10930,7 +10932,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -10994,7 +10996,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -11058,7 +11060,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -11762,7 +11764,7 @@
                     "Rotation": [
                         -90.000007629394531,
                         -0.0097267581149935722,
-                        -180
+                        180
                     ],
                     "Scale": [
                         100,
@@ -16465,7 +16467,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.90278953313827515,
+                        0.90279006958007812,
                         -0
                     ],
                     "Scale": [
@@ -16800,7 +16802,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        0.9027896523475647,
+                        0.90279018878936768,
                         -0
                     ],
                     "Scale": [
@@ -17442,8 +17444,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1251,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -26164,9 +26166,9 @@
                         405.129150390625
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -5.0089561227650847e-06,
-                        -180
+                        180
                     ],
                     "Scale": [
                         0.034247130155563354,
@@ -27022,7 +27024,7 @@
             "UID": 1288139189,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27578,7 +27580,7 @@
             "UID": 419286066,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34502,7 +34504,7 @@
             "UID": 1747926452,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34655,7 +34657,7 @@
                     "Active": 1,
                     "Translation": [
                         298.6268310546875,
-                        31.964311599731445,
+                        7.7103900909423828,
                         204.69174194335938
                     ],
                     "Rotation": [
@@ -34732,7 +34734,7 @@
                     "Active": 1,
                     "Translation": [
                         224.44218444824219,
-                        21.453542709350586,
+                        7.3788871765136719,
                         299.835205078125
                     ],
                     "Rotation": [
@@ -34809,7 +34811,7 @@
                     "Active": 1,
                     "Translation": [
                         213.82310485839844,
-                        24.701976776123047,
+                        8.6469955444335938,
                         417.61349487304688
                     ],
                     "Rotation": [
@@ -34922,19 +34924,19 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        355.80615234375,
+                        328.42459106445312,
                         4.1144561767578125,
-                        229.56985473632812
+                        208.54573059082031
                     ],
                     "Rotation": [
-                        -1.6469091880547896e-16,
-                        89.332359313964844,
-                        1.5624263865934417e-16
+                        -6.8477737555799182e-18,
+                        73.724594116210938,
+                        -1.8638502987042443e-18
                     ],
                     "Scale": [
-                        0.99999994039535522,
+                        1.8488506078720093,
                         1,
-                        0.99999994039535522
+                        1.0000007152557373
                     ]
                 },
                 {
@@ -34998,7 +35000,7 @@
                     "Active": 1,
                     "Translation": [
                         379.2747802734375,
-                        27.232242584228516,
+                        5.9028048515319824,
                         160.65614318847656
                     ],
                     "Rotation": [
@@ -35075,7 +35077,7 @@
                     "Active": 1,
                     "Translation": [
                         422.94366455078125,
-                        19.806594848632812,
+                        5.8850727081298828,
                         155.7266845703125
                     ],
                     "Rotation": [
@@ -35229,7 +35231,7 @@
                     "Active": 1,
                     "Translation": [
                         266.82693481445312,
-                        24.234275817871094,
+                        6.9530754089355469,
                         101.45389556884766
                     ],
                     "Rotation": [
@@ -35493,7 +35495,7 @@
                     "Active": 1,
                     "Translation": [
                         39.599533081054688,
-                        23.106235504150391,
+                        7,
                         364.90213012695312
                     ],
                     "Rotation": [
@@ -35570,7 +35572,7 @@
                     "Active": 1,
                     "Translation": [
                         32.592414855957031,
-                        21.12872314453125,
+                        7,
                         441.93392944335938
                     ],
                     "Rotation": [
@@ -35764,9 +35766,9 @@
                     "Type": "Transform",
                     "Active": 1,
                     "Translation": [
-                        328.22637939453125,
-                        20.094995498657227,
-                        483.73178100585938
+                        324.1016845703125,
+                        7,
+                        484.39175415039062
                     ],
                     "Rotation": [
                         -0,
@@ -35842,7 +35844,7 @@
                     "Active": 1,
                     "Translation": [
                         394.65744018554688,
-                        27.261215209960938,
+                        7,
                         423.74856567382812
                     ],
                     "Rotation": [
@@ -35919,7 +35921,7 @@
                     "Active": 1,
                     "Translation": [
                         304.70272827148438,
-                        22.99528694152832,
+                        7,
                         406.73965454101562
                     ],
                     "Rotation": [
@@ -35996,7 +35998,7 @@
                     "Active": 1,
                     "Translation": [
                         469.14956665039062,
-                        20.987981796264648,
+                        7,
                         332.52764892578125
                     ],
                     "Rotation": [
@@ -36073,7 +36075,7 @@
                     "Active": 1,
                     "Translation": [
                         318.41287231445312,
-                        30.454818725585938,
+                        7,
                         652.1556396484375
                     ],
                     "Rotation": [
@@ -36150,7 +36152,7 @@
                     "Active": 1,
                     "Translation": [
                         482.743408203125,
-                        22.863845825195312,
+                        7,
                         657.60821533203125
                     ],
                     "Rotation": [
@@ -36227,7 +36229,7 @@
                     "Active": 1,
                     "Translation": [
                         384.37338256835938,
-                        21.41114616394043,
+                        7,
                         534.3199462890625
                     ],
                     "Rotation": [
@@ -36297,7 +36299,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -37042,7 +37044,7 @@
             "UID": 1086457827,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -37251,8 +37253,8 @@
                     ],
                     "Rotation": [
                         -2.2451992034912109,
-                        0.18273302912712097,
-                        0.43568560481071472
+                        0.18273310363292694,
+                        0.43568575382232666
                     ],
                     "Scale": [
                         0.99999994039535522,
@@ -37284,7 +37286,7 @@
                         3.0423920154571533
                     ],
                     "Rotation": [
-                        2.080369234085083,
+                        2.0803713798522949,
                         0,
                         -0
                     ],
@@ -37985,7 +37987,7 @@
             "UID": 332055288,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39133,7 +39135,7 @@
             "UID": 1655101801,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -40013,7 +40015,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42068,7 +42070,7 @@
             "UID": 728359170,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42095,8 +42097,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1251,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -42259,7 +42261,7 @@
             "UID": 1495121981,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -42380,9 +42382,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -42631,7 +42633,7 @@
             "UID": 236676809,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -43003,7 +43005,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -43156,9 +43158,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -43488,9 +43490,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -43567,9 +43569,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -43646,9 +43648,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -43725,9 +43727,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -43804,9 +43806,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -43925,9 +43927,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -48.306838989257812,
-                                111.0653076171875,
-                                129.53561401367188
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -44048,7 +44050,7 @@
             "UID": 1401646486,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -44315,7 +44317,7 @@
             "UID": 2096828571,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -44593,7 +44595,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -44620,8 +44622,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
-                    "Height": 605,
+                    "Width": 1251,
+                    "Height": 597,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -46719,7 +46721,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -53709,7 +53711,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54250,7 +54252,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -54603,7 +54605,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -55275,7 +55277,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -56085,7 +56087,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -56262,7 +56264,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 527318784,
+            "Parent UID": 1317175997,
             "Components": [
                 {
                     "Type": "Transform",
@@ -64762,7 +64764,7 @@
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
                     "Far Plane": 1000,
-                    "Frustum Culling": 1,
+                    "Frustum Culling": 0,
                     "Draw Bounding Boxes": 0,
                     "Game Camera": true
                 },
@@ -64785,6 +64787,1040 @@
                     "Bank Name": "LV3Music",
                     "Event Name": "LvL3_Music",
                     "Event ID": 761846308
+                }
+            ]
+        },
+        {
+            "Name": "PROP_LOW_AlienTrap",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 165934810,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1317175997,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        435.1673583984375,
+                        16.809528350830078,
+                        606.80780029296875
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.040000021457672119,
+                        0.040000021457672119,
+                        0.040000021457672119
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Alien_Head_Trap.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "fraction": 0,
+                    "damage": 0
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        100,
+                        5,
+                        1000
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Audio source",
+                    "Active": 1,
+                    "Bank Name": "AlienHead_Shoot",
+                    "Event Name": "AlienHead_Shoot",
+                    "Event ID": 2364323432
+                }
+            ],
+            "Children UID": [
+                1235571974,
+                947326569,
+                1744201128,
+                768559559,
+                607313755
+            ]
+        },
+        {
+            "Name": "Head",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1235571974,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/PROP_LOW_AlienTrap.fbx",
+            "Parent UID": 165934810,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        57.80035400390625,
+                        8.5439453125
+                    ],
+                    "Rotation": [
+                        -90.000007629394531,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        99.999992370605469,
+                        99.999984741210938,
+                        99.999984741210938
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1762183897,
+                    "Vertex Count": 1721,
+                    "Index Count": 5640
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                16.196561813354492,
+                                -3.8318030834197998
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1238,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_D.png",
+                    "Diffuse_UID": 1416381545,
+                    "Specular_ID": 1249,
+                    "Specular_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_S.png",
+                    "Specular_UID": 1546459188,
+                    "Normal_ID": 1245,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_N.png",
+                    "Normal_UID": 1927410773,
+                    "Height_ID": 1241,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_H.png",
+                    "Height_UID": 1666073495,
+                    "Ambient_ID": 1234,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_A.png",
+                    "Ambient_UID": 1598381237
+                }
+            ]
+        },
+        {
+            "Name": "Tounge",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 947326569,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/PROP_LOW_AlienTrap.fbx",
+            "Parent UID": 165934810,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -78.197463989257812,
+                        79.1025390625
+                    ],
+                    "Rotation": [
+                        -90.000007629394531,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        99.999992370605469,
+                        99.999984741210938,
+                        99.999984741210938
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1240057372,
+                    "Vertex Count": 237,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                16.196561813354492,
+                                -3.8318030834197998
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1238,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_D.png",
+                    "Diffuse_UID": 1416381545,
+                    "Specular_ID": 1249,
+                    "Specular_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_S.png",
+                    "Specular_UID": 1546459188,
+                    "Normal_ID": 1245,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_N.png",
+                    "Normal_UID": 1927410773,
+                    "Height_ID": 1241,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_H.png",
+                    "Height_UID": 1666073495,
+                    "Ambient_ID": 1234,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_A.png",
+                    "Ambient_UID": 1598381237
+                }
+            ]
+        },
+        {
+            "Name": "End Position",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1744201128,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 165934810,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -78,
+                        291.405517578125
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Particle System (5)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 768559559,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 165934810,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -13.703857421875,
+                        -51.389068603515625,
+                        230.056640625
+                    ],
+                    "Rotation": [
+                        -77.096794128417969,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        45.207752227783203,
+                        73.472030639648438,
+                        52.681797027587891
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 5,
+                            "EmitterUID": 579029639,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.5,
+                                    "Lifetime2": 5,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 2,
+                                    "PositiveBoxPoints": [
+                                        2.3010001182556152,
+                                        2.2000000476837158,
+                                        9.5
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1.3999999761581421,
+                                        -1.2000000476837158,
+                                        -5.0999999046325684
+                                    ],
+                                    "RadiusHollow": 0.20000000298023224,
+                                    "RadiusBase": 8.0100002288818359,
+                                    "RadiusTop": 7.6059885025024414,
+                                    "Heigth": 0.0099999997764825821
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 1,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.054999999701976776,
+                                    "NumParticlesToStop": 24,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0,
+                                        1,
+                                        0.07079625129699707,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 4.5,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/dirt_02.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Particle System (6)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 607313755,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 165934810,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -129.6058349609375,
+                        0
+                    ],
+                    "Rotation": [
+                        -77.096794128417969,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        1130.1932373046875,
+                        1836.8001708984375,
+                        1317.04443359375
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 6,
+                            "EmitterUID": 579029639,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.10000000149011612,
+                                    "Lifetime2": 5,
+                                    "RandomLT": true,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        3.500999927520752,
+                                        3.4000000953674316,
+                                        11
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1.8999999761581421,
+                                        -3.5,
+                                        -5.0999999046325684
+                                    ],
+                                    "RadiusHollow": 0.20000000298023224,
+                                    "RadiusBase": 4.6100001335144043,
+                                    "RadiusTop": 5.1575136184692383,
+                                    "Heigth": 11.609999656677246
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.054999999701976776,
+                                    "NumParticlesToStop": 83,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.22123897075653076,
+                                        1,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 0.12999999523162842,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/smoke_01.png"
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "PROP_LOW_AlienTrap (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 862043548,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 1317175997,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        349,
+                        15.445117950439453,
+                        247.16532897949219
+                    ],
+                    "Rotation": [
+                        -180,
+                        0,
+                        180
+                    ],
+                    "Scale": [
+                        0.040002267807722092,
+                        0.040000021457672119,
+                        0.040002267807722092
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Alien_Head_Trap.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "fraction": 0,
+                    "damage": 0
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        100,
+                        5,
+                        1000
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Audio source",
+                    "Active": 1,
+                    "Bank Name": "AlienHead_Shoot",
+                    "Event Name": "AlienHead_Shoot",
+                    "Event ID": 2364323432
+                }
+            ],
+            "Children UID": [
+                604701143,
+                2108902667,
+                470676274,
+                196449051,
+                76129472
+            ]
+        },
+        {
+            "Name": "Head (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 604701143,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/PROP_LOW_AlienTrap.fbx",
+            "Parent UID": 862043548,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -9.0584575218599639e-07,
+                        -27.84956169128418,
+                        35.404155731201172
+                    ],
+                    "Rotation": [
+                        -90.000007629394531,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        100,
+                        100,
+                        100
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1762183897,
+                    "Vertex Count": 1721,
+                    "Index Count": 5640
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                16.196561813354492,
+                                -3.8318030834197998
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1238,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_D.png",
+                    "Diffuse_UID": 1416381545,
+                    "Specular_ID": 1249,
+                    "Specular_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_S.png",
+                    "Specular_UID": 1546459188,
+                    "Normal_ID": 1245,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_N.png",
+                    "Normal_UID": 1927410773,
+                    "Height_ID": 1241,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_H.png",
+                    "Height_UID": 1666073495,
+                    "Ambient_ID": 1234,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_A.png",
+                    "Ambient_UID": 1598381237
+                }
+            ]
+        },
+        {
+            "Name": "Tounge (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2108902667,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/PROP_LOW_AlienTrap.fbx",
+            "Parent UID": 862043548,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -78.197463989257812,
+                        79.1025390625
+                    ],
+                    "Rotation": [
+                        -90.000007629394531,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        99.999992370605469,
+                        99.999984741210938,
+                        99.999984741210938
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1240057372,
+                    "Vertex Count": 237,
+                    "Index Count": 468
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                16.196561813354492,
+                                -3.8318030834197998
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1238,
+                    "Diffuse_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_D.png",
+                    "Diffuse_UID": 1416381545,
+                    "Specular_ID": 1249,
+                    "Specular_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_S.png",
+                    "Specular_UID": 1546459188,
+                    "Normal_ID": 1245,
+                    "Normal_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_N.png",
+                    "Normal_UID": 1927410773,
+                    "Height_ID": 1241,
+                    "Height_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_H.png",
+                    "Height_UID": 1666073495,
+                    "Ambient_ID": 1234,
+                    "Ambient_Path": "Assets\/Prefabs\/Meshes\/Alien Head Trap\/TEX_PROP_AlienHeadTrap_A.png",
+                    "Ambient_UID": 1598381237
+                }
+            ]
+        },
+        {
+            "Name": "End Position (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 470676274,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 862043548,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -78,
+                        291.405517578125
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Particle System (7)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 196449051,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 862043548,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -13.703857421875,
+                        -51.389068603515625,
+                        230.056640625
+                    ],
+                    "Rotation": [
+                        -77.096794128417969,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        45.207752227783203,
+                        73.472030639648438,
+                        52.681797027587891
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 5,
+                            "EmitterUID": 579029639,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.5,
+                                    "Lifetime2": 5,
+                                    "RandomLT": false,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 2,
+                                    "PositiveBoxPoints": [
+                                        2.3010001182556152,
+                                        2.2000000476837158,
+                                        9.5
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1.3999999761581421,
+                                        -1.2000000476837158,
+                                        -5.0999999046325684
+                                    ],
+                                    "RadiusHollow": 0.20000000298023224,
+                                    "RadiusBase": 8.0100002288818359,
+                                    "RadiusTop": 7.6059885025024414,
+                                    "Heigth": 0.0099999997764825821
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 1,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.054999999701976776,
+                                    "NumParticlesToStop": 24,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0,
+                                        1,
+                                        0.07079625129699707,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 4.5,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/dirt_02.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Particle System (8)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 76129472,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 862043548,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        -129.6058349609375,
+                        0
+                    ],
+                    "Rotation": [
+                        -77.096794128417969,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        1130.1932373046875,
+                        1836.8001708984375,
+                        1317.04443359375
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 6,
+                            "EmitterUID": 579029639,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 0.10000000149011612,
+                                    "Lifetime2": 5,
+                                    "RandomLT": true,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        3.500999927520752,
+                                        3.4000000953674316,
+                                        11
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1.8999999761581421,
+                                        -3.5,
+                                        -5.0999999046325684
+                                    ],
+                                    "RadiusHollow": 0.20000000298023224,
+                                    "RadiusBase": 4.6100001335144043,
+                                    "RadiusTop": 5.1575136184692383,
+                                    "Heigth": 11.609999656677246
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.054999999701976776,
+                                    "NumParticlesToStop": 83,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.22123897075653076,
+                                        1,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 0.12999999523162842,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/smoke_01.png"
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
