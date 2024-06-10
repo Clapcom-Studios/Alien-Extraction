@@ -6,13 +6,13 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 ## System Requirements
 
-| Hardware | Components |
-| --- | --- |
-| Central Processing Unit (CPU) | Intel Core i7-12700K 3.60 GHz |
-| Graphics Processing Unit (GPU) | NVIDIA GeForce GTX 3060 |
-| Random Access Memory (RAM) | 16 GB |
-| Free Disk Space | 3 GB |
-| Operating System (OS) | Windows 10 |
+| Hardware | Minimum | Recommended |
+| --- | --- | --- |
+| Central Processing Unit (CPU) | Intel Core i3 8100 3.5GHz | Intel Core i7-12700K 3.60 GHz |
+| Graphics Processing Unit (GPU) | NVIDIA GeForce GTX 1050ti | NVIDIA GeForce RTX 3060 |
+| Random Access Memory (RAM) | 16 GB | 32 GB |
+| Free Disk Space | 2 GB | 3 GB |
+| Operating System (OS) | Windows 10 | Windows 10 |
 
 ## Dependencies
 
