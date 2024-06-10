@@ -4,6 +4,43 @@
 ## Dependencies
 ## Installation
 ## Controls
+
+| Key/Button      | Action           |
+|:---------------:|:----------------:|
+| Left Joystick   | Move             |
+| LT              | Dash             |
+| RT              | Shoot            |
+| LB              | Heal             |
+| X               | Reload           |
+| A               | Interact         |
+| RB              | Acid Spit        |
+| Y               | Predatory Rush   |
+| B               | Tail Swipe       |
+| DPAD Right      | Open Inventory   |
+| Start           | Pause/Menu       |
+
+Game
+Move --> Left Joystick
+Dash --> LT
+Shoot --> RT
+Heal--> LB
+Reload --> X
+Interact--> A
+Acid Spit --> RB
+Predatory Rush --> Y
+Tail Swipe --> B
+Open Inventory--> D-pad right
+
+God Mode
+Activate Debug Keys with [F1]:
+
+God Mode ON:
+Change Weapon --> [1,2,3] (SMG, Shotgun, Plasma)
+Show Colliders
+NumPad [1,2,3,4,5,6] --> Travel Between Levels
+Toggle Exploration/Combat Music [K & L]
+Downgrade/Upgrade Weapon [, & .]
+
 ## Website & Social Media
 ## Team
 
