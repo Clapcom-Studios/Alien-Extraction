@@ -102,14 +102,21 @@ public class QueenXenomorphSpitAttack : YmirComponent
     {
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
+            Vector3 distance = gameObject.transform.globalPosition - boss.transform.globalPosition;
+            distance.y = boss.transform.globalPosition.y;
+
             healthScript.TakeDmg(bossScript.acidDMG);
             particleGo = InternalCalls.GetGameObjectByName("ParticlesAcidicBoss");
-            if(particleGo != null) { Particles.SetMaxDistance(particleGo,0.5f); }
+            if(particleGo != null) 
+            {
+                Particles.SetMaxDistance(particleGo,0.5f);
+                
+                Particles.SetEmittersPosition(particleGo, distance,1);
+            }
 
             particleGo = InternalCalls.GetGameObjectByName("ParticlesPuddleBoss");
 
-            Vector3 distance = gameObject.transform.globalPosition - boss.transform.globalPosition;
-            distance.y = boss.transform.globalPosition.y;
+
 
             if (particleGo != null) { Particles.SetEmittersPosition(particleGo, distance); }
 

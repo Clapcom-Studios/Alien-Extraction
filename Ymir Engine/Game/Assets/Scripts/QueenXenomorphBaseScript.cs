@@ -413,6 +413,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 1);
                     Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 2, 120f);
                     Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 2);
+                    Particles.SetMaxDistance(particlesGO, 100f);
                     Particles.PlayParticlesTrigger(particlesGO);
                     
                     InternalCalls.CreateQueenSpitAttack(pos, gameObject.transform.globalRotation);

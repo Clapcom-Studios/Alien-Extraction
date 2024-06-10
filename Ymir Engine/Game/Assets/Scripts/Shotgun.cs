@@ -63,9 +63,9 @@ public class Shotgun : Weapon
                 ammo = 16; //28
                 ammoInChamber = 2;
                 fireRate = 0.7f;
-                damage = 180; //80
-                range = 42f;
-                dispersion = range * 0.35f; //80º
+                damage = 200; //80
+                range = 63f;
+                dispersion = range * 0.4f; //80º
                 reloadTime = 0.918f;
 
                 break;
@@ -75,7 +75,7 @@ public class Shotgun : Weapon
                 ammo = 12; //28
                 ammoInChamber = 4;
                 fireRate = 1.0f;
-                damage = 400; //80
+                damage = 420; //80
                 range = 42f;
                 dispersion = range * 0.35f; //80º
                 reloadTime = 1.118f;
