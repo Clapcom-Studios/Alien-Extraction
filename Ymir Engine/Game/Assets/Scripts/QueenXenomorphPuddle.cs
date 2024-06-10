@@ -26,6 +26,8 @@ public class QueenXenomorphPuddle : YmirComponent
 
     //private float puddleDamageTimer;
 
+    public GameObject particlesGO = null;
+
     public void Start()
     {
         player = InternalCalls.GetGameObjectByName("Player");
@@ -34,6 +36,8 @@ public class QueenXenomorphPuddle : YmirComponent
         bossScript = boss.GetComponent<QueenXenomorphBaseScript>();
         destroyTimer = 0f;
         puddleTimer = 0f;
+        particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidPuddle");
+        Particles.PlayParticlesTrigger(particlesGO);
     }
 
     public void Update()
