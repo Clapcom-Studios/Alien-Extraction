@@ -5,39 +5,61 @@ Alien Extraction is a DIABLO-LIKE game themed in the ALIEN universe.
 Players will take on the role of an elite soldier sent to an alien-infested planet to clear it of all hostile forms. The action focuses on multi-level raids, where players will have to explore, fight against saga enemies, manage their resources carefully to survive and not die in their attempt to complete the mission and discover the truth.
 
 ## System Requirements
+
+| Hardware | Components |
+| --- | --- |
+| Central Processing Unit (CPU) | Intel Core i7-2720QM @ 2.2GHz (8 CPUs) |
+| Graphics Processing Unit (GPU) | NVIDIA 4200M |
+| Random Access Memory (RAM) | 8192 MB |
+| Free Disk Space | 200 MB |
+| Operating System (OS) | Windows 10 Enterprise |
+
 ## Dependencies
+
+> [!IMPORTANT]
+> #### [Vulkan Tutorial](https://vulkan-tutorial.com/) by Alexander Overvoorde (April 2023).
+> #### It is _required_ to download the [Vulkan SDK](https://vulkan.lunarg.com/) to compile the solution.
+
 ## Installation
 ## Controls
 
 ### GAME
-
-| Key/Button      | Action           |
-|:---------------:|:----------------:|
-| Left Joystick   | Move             |
-| LT              | Dash             |
-| RT              | Shoot            |
-| LB              | Heal             |
-| X               | Reload           |
-| A               | Interact         |
-| RB              | Acid Spit        |
-| Y               | Predatory Rush   |
-| B               | Tail Swipe       |
-| DPAD Right      | Open Inventory   |
-| Start           | Pause/Menu       |
+    
+| Key/Button          | Action           |
+|:-------------------:|:----------------:|
+| **Left Joystick**   | Move             |
+| **LT**              | Dash             |
+| **RT**              | Shoot            |
+| **LB**              | Heal             |
+| **X**               | Reload           |
+| **A**               | Interact         |
+| **RB**              | Acid Spit        |
+| **Y**               | Predatory Rush   |
+| **B**               | Tail Swipe       |
+| **DPAD Right**      | Open Inventory   |
+| **Start**           | Pause/Menu       |
 
 ### DEBUG KEYS
 
-Activate Debug Keys with **[F1]**:
-
-|            Key/Button           |               Action                |
-|:-------------------------------:|:-----------------------------------:|
-| **F1**                           | Activate Debug Keys                |
-| **1, 2, 3**                      | Change Weapon (SMG, Shotgun, Plasma)|
-| **Show Colliders**               | Show Colliders                     |
-| **NumPad 1, 2, 3, 4, 5, 6**      | Travel Between Levels              |
-| **K & L**                        | Toggle Exploration/Combat Music    |
-| **, & .**                        | Downgrade/Upgrade Weapon           |
-| **4**                            | Insta Kill                         |
+|            Key/Button            |               Action                 |
+|:--------------------------------:|:------------------------------------:|
+| **F1**                           | Activate Debug Keys & Show Colliders |
+| **F5**                           | Take Damage                          |
+| **F6**                           | Heal                                 |
+| **1**                            | Change to Weapon Submachine          |
+| **2**                            | Change to Weapon Shotgun             |
+| **3**                            | Change to Weapon Plasma Cannon       |
+| **4**                            | Instant Death                        |
+| **,**                            | Downgrade Weapon                     |
+| **.**                            | Upgrade Weapon                       |
+| **K**                            | Change to Exploration Music          |
+| **L**                            | Change to Combat Music               |
+| **NumPad 1**                     | Travel to Level 0 Base               |
+| **NumPad 2**                     | Travel to Level 1 Warehouse          |
+| **NumPad 3**                     | Travel to Level 2 Laboratory Part 1  |
+| **NumPad 4**                     | Travel to Level 2 Laboratory Part 2  |
+| **NumPad 5**                     | Travel to Level 3 Hatchery Part 1    |
+| **NumPad 6**                     | Travel to Level 3 Hatchery Boss      |
 
 ## Website & Social Media
 

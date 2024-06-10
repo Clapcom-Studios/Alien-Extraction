@@ -18,7 +18,7 @@ public class Button_GoToScene : YmirComponent
 
     private bool loadScene = false;
 
-    public float time = 10;
+    public float time = 2;
     public bool saveGame = true;
 
     public void Start()
@@ -26,8 +26,7 @@ public class Button_GoToScene : YmirComponent
         loadScene_images = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
         loadScenelvl1 = InternalCalls.CS_GetChild(loadScene_images, 0);
         loadScenelvl2 = InternalCalls.CS_GetChild(loadScene_images, 1);
-        loadScenelvl3= InternalCalls.CS_GetChild(loadScene_images, 2);
-
+        loadScenelvl3 = InternalCalls.CS_GetChild(loadScene_images, 2);
 
         if (loadScenelvl1 != null)
         {
@@ -43,16 +42,16 @@ public class Button_GoToScene : YmirComponent
             loadScenelvl2.SetActive(false);
         }
 
-        time = 10;
+        time = 2;
         loadScene = false;
     }
 
     public void Update()
     {
-        time -= Time.deltaTime;
-
         if (loadScene)
-        { 
+        {
+            time -= Time.deltaTime;
+
             if (time <= 0)
             {
                 InternalCalls.LoadScene("Assets/" + sceneName + ".yscene");
@@ -81,8 +80,8 @@ public class Button_GoToScene : YmirComponent
                 loadScene = true;
             }
         }
-        if (sceneName == "LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS") 
-        { 
+        else if (sceneName == "LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS")
+        {
             if (loadScenelvl2 != null)
             {
                 time = 2;
@@ -90,7 +89,7 @@ public class Button_GoToScene : YmirComponent
                 loadScene = true;
             }
         }
-        if (sceneName == "LVL3_BlockOut/LVL3_PART1_COLLIDERS")
+        else if (sceneName == "LVL3_BlockOut/LVL3_PART1_COLLIDERS")
         {
             if (loadScenelvl3 != null)
             {
@@ -99,8 +98,16 @@ public class Button_GoToScene : YmirComponent
                 loadScene = true;
             }
         }
+        else
+        {
+            if (loadScenelvl1 != null)
+            {
+                time = 2;
+                loadScenelvl1.SetActive(true);
+            }
 
-
+            loadScene = true;
+        }
 
         if (saveGame)
         {
