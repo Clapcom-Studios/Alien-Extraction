@@ -15,6 +15,11 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | Operating System (OS) | Windows 10 Enterprise |
 
 ## Dependencies
+
+> [!IMPORTANT]
+> #### [Vulkan Tutorial](https://vulkan-tutorial.com/) by Alexander Overvoorde (April 2023).
+> #### It is _required_ to download the [Vulkan SDK](https://vulkan.lunarg.com/) to compile the solution.
+
 ## Installation
 ## Controls
 
