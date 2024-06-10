@@ -2,7 +2,7 @@
 
 ### Alien Extraction is a DIABLO-LIKE game themed in the ALIEN universe.
 
-### Players will take on the role of an elite soldier sent to an alien-infested planet to clear it of all hostile forms. The action focuses on multi-level raids, where players will have to explore, fight against saga enemies, manage their resources carefully to survive ### and not die in their attempt to complete the mission and discover the truth.
+Players will take on the role of an elite soldier sent to an alien-infested planet to clear it of all hostile forms. The action focuses on multi-level raids, where players will have to explore, fight against saga enemies, manage their resources carefully to survive and not die in their attempt to complete the mission and discover the truth.
 
 ## System Requirements
 
