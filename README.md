@@ -5,7 +5,6 @@
 ## Installation
 ## Controls
 ## Website & Social Media
-## Changelog
 ## Team
 
 # About the engine: Ymir Engine
