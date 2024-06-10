@@ -80,7 +80,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 **Youtube:** https://www.youtube.com/@Clapcom_Studios
 
-## Team
+# About us: Clapcom Studios
 
 ![Clapcom Studios](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/a5e6e568-38fa-4440-ae85-1f9363bb4397)
 
