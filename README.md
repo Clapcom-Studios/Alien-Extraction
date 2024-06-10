@@ -17,8 +17,11 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 ## Dependencies
 
 > [!IMPORTANT]
-> #### [Vulkan Tutorial](https://vulkan-tutorial.com/) by Alexander Overvoorde (April 2023).
-> #### It is _required_ to download the [Vulkan SDK](https://vulkan.lunarg.com/) to compile the solution.
+> #### It is _required_ to download [Visual Studio Community 2022](https://visualstudio.microsoft.com/es/free-developer-offers/) to execute the game.
+> ![image](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/b78c4439-313c-4728-bbac-2cf07eb71a1f)
+> ![image](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/ded6aef0-c9ff-4666-95cb-3123b605b5cf)
+> ![image](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/f4189760-dc3b-4a91-890b-5e1bb4180416)
+
 
 ## Installation
 ## Controls
