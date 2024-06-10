@@ -39,13 +39,22 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 |            Key/Button            |               Action                 |
 |:--------------------------------:|:------------------------------------:|
 | **F1**                           | Activate Debug Keys & Show Colliders |
-| **1, 2, 3**                      | Change Weapon (SMG, Shotgun, Plasma) |
-| **NumPad 1, 2, 3, 4, 5, 6**      | Travel Between Levels                |
-| **K & L**                        | Toggle Exploration/Combat Music      |
-| **, & .**                        | Downgrade/Upgrade Weapon             |
-| **4**                            | Instant Death                        |
 | **F5**                           | Take Damage                          |
 | **F6**                           | Heal                                 |
+| **1**                            | Change to Weapon Submachine          |
+| **2**                            | Change to Weapon Shotgun             |
+| **3**                            | Change to Weapon Plasma Cannon       |
+| **4**                            | Instant Death                        |
+| **,**                            | Downgrade Weapon                     |
+| **.**                            | Upgrade Weapon                       |
+| **K**                            | Change to Exploration Music          |
+| **L**                            | Change to Combat Music               |
+| **NumPad 1**                     | Travel to Level 0 Base               |
+| **NumPad 2**                     | Travel to Level 1 Warehouse          |
+| **NumPad 3**                     | Travel to Level 2 Laboratory Part 1  |
+| **NumPad 4**                     | Travel to Level 2 Laboratory Part 2  |
+| **NumPad 5**                     | Travel to Level 3 Hatchery Part 1    |
+| **NumPad 6**                     | Travel to Level 3 Hatchery Boss      |
 
 ## Website & Social Media
 
