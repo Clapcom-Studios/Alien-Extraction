@@ -1,31 +1,31 @@
 {
     "NavMesh": "",
     "Editor Camera Position": [
-        -52.516403198242188,
-        86.623825073242188,
-        69.882987976074219
+        -71.972518920898438,
+        55.010547637939453,
+        50.821266174316406
     ],
     "Editor Camera Right (X)": [
-        0.98123830556869507,
-        -8.9406967163085938e-08,
-        0.18381801247596741
+        0.8271070122718811,
+        6.2584877014160156e-07,
+        0.55902183055877686
     ],
     "Editor Camera Up (Y)": [
-        0.15873588621616364,
-        0.50341862440109253,
-        -0.84734731912612915
+        0.28110405802726746,
+        0.86291062831878662,
+        -0.41591161489486694
     ],
     "Editor Camera Front (Z)": [
-        0.092851273715496063,
-        -0.86354100704193115,
-        -0.49564948678016663
+        0.48402619361877441,
+        -0.50284045934677124,
+        -0.71614575386047363
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1401223816,
+            "UID": 2018822973,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -62,7 +62,7 @@
             "UID": 1211565987,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -1744,7 +1744,7 @@
             "UID": 1950834715,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6134,7 +6134,7 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 0.30000001192092896,
+                            "ambient": 1,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
@@ -6475,9 +6475,9 @@
                             "transparency": 1
                         }
                     ],
-                    "Diffuse_ID": 1778,
+                    "Diffuse_ID": 1779,
                     "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Floors\/TP Floor Textures\/TEX_PROP_TP_Floor_D.png",
-                    "Diffuse_UID": 1408752495,
+                    "Diffuse_UID": 1569101833,
                     "Specular_ID": 1357,
                     "Specular_Path": "Assets\/BASE_FINAL\/Lvl-0 Base\/Floor\/Texturas\/TP Floor Textures\/TEX_PROP_TP_Floor_S.png",
                     "Specular_UID": 258922290,
@@ -9912,7 +9912,7 @@
             "UID": 1023082808,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9981,7 +9981,7 @@
             "Static": false,
             "Tag": "Untagged",
             "UID": 711406511,
-            "Active": true,
+            "Active": false,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/New_Props_Base.fbx",
             "Parent UID": 785072021,
@@ -11989,9 +11989,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -45.064582824707031,
-                                111.06525421142578,
-                                52.164047241210938
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -12071,9 +12071,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -45.064582824707031,
-                                111.06525421142578,
-                                52.164047241210938
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -12683,7 +12683,7 @@
             "UID": 812841453,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -12720,7 +12720,7 @@
             "UID": 476878880,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13251,7 +13251,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/BASE_FINAL\/BASE_MAP.fbx",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13323,9 +13323,9 @@
                             "numLights": 1,
                             "transparency": 1,
                             "camPos": [
-                                -45.064582824707031,
-                                111.06525421142578,
-                                52.164047241210938
+                                -101.92661285400391,
+                                116.21450042724609,
+                                138.21018981933594
                             ],
                             "numPointLights": 1,
                             "map": 1,
@@ -13336,7 +13336,7 @@
                             "enableHeight": true,
                             "enableEmissive": true,
                             "enableLighting": true,
-                            "ambient": 0.30000001192092896,
+                            "ambient": 1,
                             "specularLight": 1,
                             "normalIntensity": 1,
                             "emissive": 1
@@ -13446,7 +13446,7 @@
             "UID": 1252582930,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13564,7 +13564,7 @@
                             "enableHeight": true,
                             "enableEmissive": false,
                             "enableLighting": true,
-                            "ambient": 0.20000000298023224,
+                            "ambient": 1,
                             "specularLight": 0.69999998807907104,
                             "normalIntensity": 0.40000000596046448,
                             "emissive": 1
@@ -13598,7 +13598,7 @@
             "UID": 1042309213,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -13716,7 +13716,7 @@
                             "enableHeight": true,
                             "enableEmissive": false,
                             "enableLighting": false,
-                            "ambient": 0.10000000149011612,
+                            "ambient": 1,
                             "specularLight": 0.69999998807907104,
                             "normalIntensity": 0.40000000596046448,
                             "emissive": 1
@@ -13750,7 +13750,7 @@
             "UID": 1614273345,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -14594,7 +14594,10 @@
                             "displayNormalMap": true,
                             "transparency": 1
                         }
-                    ]
+                    ],
+                    "Diffuse_ID": 354,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/BASE\/Carrito\/TEX_PROP_LoadingCart_Base_D.png",
+                    "Diffuse_UID": 1596984731
                 }
             ]
         },
@@ -15053,7 +15056,7 @@
             "UID": 1829172732,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15371,7 +15374,7 @@
                     "Active": 1,
                     "Translation": [
                         -21.799507141113281,
-                        -7.9000000953674316,
+                        -0.30000001192092896,
                         0.40394973754882812
                     ],
                     "Rotation": [
@@ -15464,7 +15467,7 @@
                     "LockZ": false,
                     "Offset": [
                         -18,
-                        111.09999847412109,
+                        104.19999694824219,
                         -5.9000000953674316
                     ],
                     "Offset Rotation": [
@@ -15603,7 +15606,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15631,7 +15634,7 @@
                     "Position X": 0,
                     "Position Y": 0,
                     "Width": 1234,
-                    "Height": 605,
+                    "Height": 645,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -17729,7 +17732,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -24591,7 +24594,7 @@
             "UID": 365492027,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -26453,7 +26456,7 @@
             "UID": 2098616738,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -55246,7 +55249,7 @@
             "UID": 869362369,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -59261,7 +59264,7 @@
             "UID": 369438965,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69466,7 +69469,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70007,7 +70010,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70362,7 +70365,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71172,7 +71175,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71605,7 +71608,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71846,7 +71849,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -72591,7 +72594,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1401223816,
+            "Parent UID": 2018822973,
             "Components": [
                 {
                     "Type": "Transform",
@@ -81018,7 +81021,7 @@
                     "FOV": 60.000003814697266,
                     "Near Plane": 1,
                     "Far Plane": 1000,
-                    "Frustum Culling": 1,
+                    "Frustum Culling": 0,
                     "Draw Bounding Boxes": 0,
                     "Game Camera": true
                 },

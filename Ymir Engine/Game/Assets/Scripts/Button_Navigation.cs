@@ -110,10 +110,6 @@ public class Button_Navigation : YmirComponent
         {
             SaveNewEmptyGame();
         }
-        else
-        {
-
-        }
 
         if (showLoadScene)
         {

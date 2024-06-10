@@ -139,6 +139,8 @@ public class Narrative_Item : YmirComponent
         {
             if (popup.IsActive())
             {
+                UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Dialogue"), "Assets\\Dialogue\\Dialogo_NoImage.png", (int)UI_STATE.NORMAL);
+
                 popup.SetActive(false);
             }
 
@@ -590,12 +592,12 @@ public class Narrative_Item : YmirComponent
     }
     public void OnCollisionStay(GameObject other)
     {
-        if (other.Tag == "Player" && !active_Dialogue)
+        if ((other.Tag == "Player" || other.Name == "Player") && !active_Dialogue)
         {
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue && player.currentMenu == "")
+        if ((other.Tag == "Player" || other.Name == "Player") && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && !retryDialogue && player.currentMenu == "")
         {
             gameCanvas.SetActive(false);
 
