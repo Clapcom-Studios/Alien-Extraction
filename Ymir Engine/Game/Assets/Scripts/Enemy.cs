@@ -178,9 +178,13 @@ public class Enemy : YmirComponent
         Vector3 roundedDestination = new Vector3(Mathf.Round(destintion.x),
                                                                             0,
                                                     Mathf.Round(destintion.z));
-
-
-        if ((roundedPosition.x == roundedDestination.x) && (roundedPosition.y == roundedDestination.y) && (roundedPosition.z == roundedDestination.z))
+        Debug.Log("Position: " + position);
+        Debug.Log("Rounded Position: " + roundedPosition);
+        Debug.Log("Destination: " + destintion);
+        Debug.Log("Rounded Destination: " + roundedDestination);
+        float distanceX = roundedPosition.x - roundedDestination.x;
+        float distanceZ = roundedPosition.z - roundedDestination.z;
+        if (distanceX < 4 && distanceZ < 4)
         {
             wanderState = WanderState.REACHED;
             Debug.Log("Reached!!!!");
