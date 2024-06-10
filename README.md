@@ -1,5 +1,14 @@
-# Alien: Extraction
+# Alien Extraction
 ## (In Progress)
+
+System Requirements
+Instalación
+Controles
+Link de la web y RRSS
+Changelog
+Team
+Info del engine más en detalle (features y demás)
+Licencia
 
 # About the engine: Ymir Engine
 
