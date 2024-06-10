@@ -2,6 +2,7 @@
 ## (In Progress)
 
 System Requirements
+Dependencies
 Instalación
 Controles
 Link de la web y RRSS
