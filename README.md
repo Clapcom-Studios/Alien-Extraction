@@ -66,6 +66,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | **F1**                           | Activate Debug Keys & Show Colliders |
 | **F5**                           | Take Damage                          |
 | **F6**                           | Heal                                 |
+| **F9**                           | Add Alien Core to Inventory (XP)     |
 | **1**                            | Change to Weapon Submachine          |
 | **2**                            | Change to Weapon Shotgun             |
 | **3**                            | Change to Weapon Plasma Cannon       |
