@@ -2068,9 +2068,11 @@ public class Player : YmirComponent
 
         Quaternion dir = Quaternion.RotateAroundAxis(Vector3.up, angle);
 
+        // Slerp
         Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, speed * Time.deltaTime);
-
         gameObject.SetRotation(desiredRotation);
+
+        //gameObject.SetRotation(dir);
 
     }
 

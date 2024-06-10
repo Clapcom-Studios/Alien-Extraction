@@ -1,31 +1,31 @@
 {
     "NavMesh": "Assets\/LVL3_BlockOut\/LVL3_BOSS_COLLDIERS.nav",
     "Editor Camera Position": [
-        30.491199493408203,
-        77.921173095703125,
-        -74.546897888183594
+        -83.080276489257812,
+        155.50447082519531,
+        -19.146614074707031
     ],
     "Editor Camera Right (X)": [
-        0.24195289611816406,
-        3.2782554626464844e-07,
-        0.96961510181427002
+        -0.13886716961860657,
+        2.384185791015625e-07,
+        0.9896509051322937
     ],
     "Editor Camera Up (Y)": [
-        0.74152624607086182,
-        0.64389115571975708,
-        -0.18503695726394653
+        0.72919261455535889,
+        0.67565006017684937,
+        0.10231966525316238
     ],
     "Editor Camera Front (Z)": [
-        0.62514269351959229,
-        -0.76476222276687622,
-        -0.155994713306427
+        0.66953223943710327,
+        -0.73681682348251343,
+        0.093948498368263245
     ],
     "Hierarchy": [
         {
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 887635857,
+            "UID": 485866280,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -53,7 +53,7 @@
             "UID": 660882132,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -90,7 +90,7 @@
             "UID": 2061456311,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -101,9 +101,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         -82.041938781738281,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1.0000001192092896,
@@ -6470,9 +6470,9 @@
                         -203.412109375
                     ],
                     "Rotation": [
-                        -5.815314549351136e-11,
+                        -5.8153138554617456e-11,
                         45.000003814697266,
-                        1.5358669197551578e-11
+                        1.5358665728104626e-11
                     ],
                     "Scale": [
                         1.0866267681121826,
@@ -6536,7 +6536,7 @@
                     ],
                     "Rotation": [
                         -6.4545786250536086e-13,
-                        14.605810165405273,
+                        14.605808258056641,
                         8.7567472262066459e-14
                     ],
                     "Scale": [
@@ -6602,7 +6602,7 @@
                     "Rotation": [
                         -7.6818204575168636e-12,
                         45.000003814697266,
-                        2.4180332215684164e-12
+                        2.4180334384088509e-12
                     ],
                     "Scale": [
                         1,
@@ -6732,7 +6732,7 @@
                     "Rotation": [
                         4.4138212529354348e-10,
                         0.61698454618453979,
-                        7.4688921714027856e-09
+                        7.4688930595812053e-09
                     ],
                     "Scale": [
                         0.99999922513961792,
@@ -6784,7 +6784,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -7217,7 +7217,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -7244,7 +7244,7 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
+                    "Width": 607,
                     "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
@@ -9343,7 +9343,7 @@
             "UID": 1227978483,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -9370,7 +9370,7 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1234,
+                    "Width": 607,
                     "Height": 605,
                     "UI Type": 0,
                     "UI State": 1,
@@ -9798,7 +9798,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -16660,7 +16660,7 @@
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17197,7 +17197,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -17548,7 +17548,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18356,7 +18356,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18469,7 +18469,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -18691,8 +18691,8 @@
                 1854497212,
                 19022395,
                 1319339575,
-                722618905,
-                1213322994
+                1213322994,
+                722618905
             ]
         },
         {
@@ -26786,78 +26786,6 @@
             ]
         },
         {
-            "Name": "AimSensor",
-            "Static": false,
-            "Tag": "Aim",
-            "UID": 722618905,
-            "Active": true,
-            "Element_Type": "None",
-            "Parent UID": 2086505483,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -89.999992370605469,
-                        -5.122642050991999e-06,
-                        -0
-                    ],
-                    "Scale": [
-                        10,
-                        10,
-                        10
-                    ]
-                },
-                {
-                    "World gravity": [
-                        0,
-                        -10,
-                        0
-                    ],
-                    "Type": "Physics",
-                    "Active": true,
-                    "Collider Type": 3,
-                    "Size": [
-                        100,
-                        150,
-                        1.25
-                    ],
-                    "Physics Type": 2,
-                    "Mass": 0,
-                    "Friction": 0,
-                    "Angular Friction": 0,
-                    "UseGravity": false,
-                    "IsSensor": true,
-                    "LockX": false,
-                    "LockY": false,
-                    "LockZ": false,
-                    "Offset": [
-                        0,
-                        0,
-                        75
-                    ],
-                    "Offset Rotation": [
-                        0,
-                        0,
-                        0,
-                        1
-                    ]
-                },
-                {
-                    "Type": "Script",
-                    "ScriptName": "Auto_Aim.cs",
-                    "Active": 1,
-                    "UID": 0,
-                    "enemies": 0
-                }
-            ]
-        },
-        {
             "Name": "AimMesh",
             "Static": false,
             "Tag": "Untagged",
@@ -26912,6 +26840,78 @@
                             "light": false
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "Name": "AimSensor",
+            "Static": false,
+            "Tag": "Aim",
+            "UID": 722618905,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 2086505483,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        0,
+                        -5.088899747017657e-14,
+                        0
+                    ],
+                    "Scale": [
+                        10,
+                        10,
+                        10
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 4,
+                    "Size": [
+                        20,
+                        50,
+                        1.25
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        48
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        90,
+                        90,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Auto_Aim.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "enemies": 0
                 }
             ]
         },
@@ -27003,7 +27003,7 @@
             "UID": 552499595,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27159,7 +27159,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
@@ -27656,7 +27656,7 @@
             "UID": 1185979896,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 887635857,
+            "Parent UID": 485866280,
             "Components": [
                 {
                     "Type": "Transform",
