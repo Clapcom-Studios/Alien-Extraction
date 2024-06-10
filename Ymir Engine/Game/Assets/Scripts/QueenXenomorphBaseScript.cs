@@ -148,7 +148,7 @@ public class QueenXenomorphBaseScript : YmirComponent
         //Temporary until we know for sure
         queenState = QueenState.IDLE_PHASE_1;
 
-        life = 3000f;
+        life = 30000f;
         secondPhaseHealthThreshold = life * 0.5f;
         queenRotationSpeed = 5f;
         player = InternalCalls.GetGameObjectByName("Player");
@@ -773,25 +773,25 @@ public class QueenXenomorphBaseScript : YmirComponent
     {
         Debug.Log("[ERROR] wave" + wave80Spawned);
         // Check for enemy waves spawning
-        if (!wave80Spawned && life <= (life * 0.8f))
+        if (!wave80Spawned && life <= 24000)
         {
             Debug.Log("[ERROR] Spawn1");
             SpawnEnemyWave(80);
             wave80Spawned = true;
         }
-        if (!wave60Spawned && life <= life * 0.6f)
+        if (!wave60Spawned && life <= 18000)
         {
             Debug.Log("Spawn2");
             SpawnEnemyWave(60);
             wave60Spawned = true;
         }
-        if (!wave40Spawned && life <= life * 0.4f)
+        if (!wave40Spawned && life <= 12000)
         {
             Debug.Log("Spawn3");
             SpawnEnemyWave(40);
             wave40Spawned = true;
         }
-        if (!wave20Spawned && life <= life * 0.2f)
+        if (!wave20Spawned && life <= life * 6000f)
         {
             Debug.Log("Spawn4");
             SpawnEnemyWave(20);
@@ -799,7 +799,7 @@ public class QueenXenomorphBaseScript : YmirComponent
         }
     }
     private void SpawnEnemyWave(int wave)
-    {
+    {   
 
         Debug.Log("Spawning enemy wave at " + wave + "health");
 
