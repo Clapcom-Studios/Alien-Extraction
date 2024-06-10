@@ -2438,11 +2438,27 @@
    {
     "Id": "2405688451",
     "Language": "SFX",
-    "Hash": "57517433",
+    "Hash": "1689369815",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV3Music",
     "ShortName": "LV3Music",
     "Path": "LV3Music.bnk",
     "IncludedEvents": [
+     {
+      "Id": "18288902",
+      "Name": "LvL3_Bossfight",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LV3Music\\LvL3_Bossfight",
+      "DurationType": "OneShot",
+      "DurationMin": "293.386658",
+      "DurationMax": "293.386658",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "852082368",
+        "Language": "SFX",
+        "ShortName": "LV3_Boss.wav",
+        "Path": "SFX\\LV3_Boss_9EDFC787.wem"
+       }
+      ]
+     },
      {
       "Id": "761846308",
       "Name": "LvL3_Music",
@@ -2454,12 +2470,6 @@
         "Language": "SFX",
         "ShortName": "LV3_Basic.wav",
         "Path": "SFX\\LV3_Basic_9EDFC787.wem"
-       },
-       {
-        "Id": "852082368",
-        "Language": "SFX",
-        "ShortName": "LV3_Boss.wav",
-        "Path": "SFX\\LV3_Boss_9EDFC787.wem"
        },
        {
         "Id": "1035668829",
@@ -2490,19 +2500,6 @@
           "Media": [
            {
             "Id": "1035668829"
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{3FA67D12-0264-4C71-BC58-ED0182200A9D}",
-        "Children": [
-         {
-          "SwitchValue": "{D8129D1E-5CC0-4E42-AA56-2AA2CD5787DE}",
-          "Media": [
-           {
-            "Id": "852082368"
            }
           ]
          }

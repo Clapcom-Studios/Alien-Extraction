@@ -80,6 +80,7 @@ namespace AK
         static const AkUniqueID LV3_VEINS = 2858739430U;
         static const AkUniqueID LVL1_MUSIC = 266958530U;
         static const AkUniqueID LVL2_MUSIC = 886520485U;
+        static const AkUniqueID LVL3_BOSSFIGHT = 18288902U;
         static const AkUniqueID LVL3_MUSIC = 761846308U;
         static const AkUniqueID METAL = 2473969246U;
         static const AkUniqueID NORMALEND_1 = 1302258087U;
