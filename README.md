@@ -30,6 +30,17 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 > </table>
 
 ## Installation
+
+> [!IMPORTANT]
+> #### In order to download and play the game you have to [Download the Latest Release](https://github.com/Clapcom-Studios/Alien-Extraction/releases) and extract the zip.
+> It is recommended that you extract the zip on the parent folder of the disk, so that the path doesn't get too long. <br>
+> (e.g. ```D:\ClapcomStudios-AlienExtraction_Gold```)
+>
+> In this case, the **executable path** will be as follows: <br>
+> ```D:\ClapcomStudios-AlienExtraction_Gold\AlienExtraction\AlienExtraction.exe```
+>
+> It is recommended to make a **shortcut** of the game on your desktop.
+
 ## Controls
 
 ### GAME
