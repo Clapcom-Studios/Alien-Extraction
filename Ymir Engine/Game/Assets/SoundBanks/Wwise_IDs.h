@@ -69,7 +69,7 @@ namespace AK
         static const AkUniqueID LV2_SIREN = 890091745U;
         static const AkUniqueID LV2_USEKEY = 1928507640U;
         static const AkUniqueID LV3_BEACON = 1880536425U;
-        static const AkUniqueID LV3_BOSSFIGHT = 1549769712U;
+        static const AkUniqueID LV3_BOSS = 3961795458U;
         static const AkUniqueID LV3_CLOSEDOOR = 1633402355U;
         static const AkUniqueID LV3_COLLECTITEM = 269349380U;
         static const AkUniqueID LV3_DISTALIENCRY = 3203011774U;
