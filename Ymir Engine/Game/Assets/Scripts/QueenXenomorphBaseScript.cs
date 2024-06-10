@@ -258,6 +258,7 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Debug.Log("[ERROR] DEATH");
                     timePassed = 0;
                     InternalCalls.Destroy(gameObject); 
+                    Audio.StopAllAudios();
                     InternalCalls.LoadScene("Assets/CutScenes/Final/CutScenes_Final");
                 }
                 return;
@@ -405,6 +406,12 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 10;
                     pos.z -= 6;
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidicBoss");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 2, 0);
+                    Particles.PlayParticlesTrigger(particlesGO);
+                    
                     InternalCalls.CreateQueenSpitAttack(pos, gameObject.transform.globalRotation);
                     acidSpitDone = true;
                 }
@@ -429,6 +436,13 @@ public class QueenXenomorphBaseScript : YmirComponent
                     Vector3 pos = gameObject.transform.globalPosition;
                     pos.y += 10;
                     pos.z -= 6;
+
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticleTailAttackBoss");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 2, 0);
+                    Particles.PlayParticlesTrigger(particlesGO);
+                
                     InternalCalls.CreateQueenTailAttack(pos, gameObject.transform.globalRotation);
                     axeDone = true;
                 }
@@ -445,6 +459,14 @@ public class QueenXenomorphBaseScript : YmirComponent
                     //Debug.Log("[ERROR] BOSS STATE DASH");
                     dashAniCounter1 = 0f;
                     dashDamageDone = false;
+
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesDashBoss");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 0, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 1, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 2, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 3, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward(), 4, 0);
+                    Particles.PlayParticlesTrigger(particlesGO);
                     queenState = QueenState.DASH;
                 }
 
@@ -791,7 +813,7 @@ public class QueenXenomorphBaseScript : YmirComponent
             SpawnEnemyWave(40);
             wave40Spawned = true;
         }
-        if (!wave20Spawned && life <= life * 6000f)
+        if (!wave20Spawned && life <= 6000f)
         {
             Debug.Log("Spawn4");
             SpawnEnemyWave(20);

@@ -71,7 +71,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | **1**                            | Change to Weapon Submachine          |
 | **2**                            | Change to Weapon Shotgun             |
 | **3**                            | Change to Weapon Plasma Cannon       |
-| **4**                            | Instant Death                        |
+| **V**                            | Instant Death                        |
 | **,**                            | Downgrade Weapon                     |
 | **.**                            | Upgrade Weapon                       |
 | **K**                            | Change to Exploration Music          |
@@ -95,6 +95,10 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 # About us: Clapcom Studios
 
+Clapcom originated as a third-year project in the Video Game Design and Development bachelor's degree program at [CITM | UPC](https://www.citm.upc.edu/). It is comprised of members with diverse skills and talents across three departments.
+
+If you want to know more in detail about the work of each member you can see it [here](https://clapcom-studios.github.io/Website/aboutus.html).
+
 ![Clapcom Studios](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/a5e6e568-38fa-4440-ae85-1f9363bb4397)
 
 # About the engine: Ymir Engine
@@ -113,11 +117,10 @@ _Ymir Engine Logo_
 
 ## Description
 
-Ymir Engine is part of the Game Engines subject, on the third year of the Videogame Design and Development degree, 
-taught at CITM UPC (Terrassa) and supervised by [Miquel Suau](https://github.com/MayKoder).
+Ymir Engine is part of the Game Engines subject, on the third year of the Videogame Design and Development degree, taught at CITM UPC (Terrassa) and supervised by [Miquel Suau](https://github.com/MayKoder).
 
-The engine has been made from scratch in C++ using SDL and OpenGL to manage graphics. The main target of the project is to
-be able to integrate complex systems such as graphics management and game engine architecture in a simple and understandable way
-for educational purposes.
+The engine has been made from scratch in C++ using SDL and OpenGL to manage graphics. The main target of the project is to be able to integrate complex systems such as graphics management and game engine architecture in a simple and understandable way for educational purposes.
+
+During the development of Alien Extraction, the engine was also being improved adding more high level systems, in order to be able to develop all the features required by the game.
 
 ![Ymir Engine](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/e7bc2375-1484-473a-9125-35d1ea381f2d)

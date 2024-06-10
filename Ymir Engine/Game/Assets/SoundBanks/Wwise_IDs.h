@@ -109,6 +109,7 @@ namespace AK
         static const AkUniqueID QX_CLAW = 3729983792U;
         static const AkUniqueID QX_CRY = 4211173799U;
         static const AkUniqueID QX_DEATH = 3895141477U;
+        static const AkUniqueID QX_EGGHATCH = 368736514U;
         static const AkUniqueID QX_MOVE = 3788417510U;
         static const AkUniqueID QX_PUDDLE = 2449904509U;
         static const AkUniqueID QX_TAILHIT = 1976728978U;

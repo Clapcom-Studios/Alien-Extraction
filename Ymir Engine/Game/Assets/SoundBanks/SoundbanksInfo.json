@@ -2438,7 +2438,6 @@
    {
     "Id": "2405688451",
     "Language": "SFX",
-    "Hash": "1689369815",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV3Music",
     "ShortName": "LV3Music",
     "Path": "LV3Music.bnk",
@@ -2661,6 +2660,7 @@
    {
     "Id": "2982135181",
     "Language": "SFX",
+    "Hash": "3108675781",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\QueenXenomorph",
     "ShortName": "QueenXenomorph",
     "Path": "QueenXenomorph.bnk",
@@ -2726,6 +2726,22 @@
         "Language": "SFX",
         "ShortName": "QX_Death.wav",
         "Path": "SFX\\QX_Death_10C4C929.wem"
+       }
+      ]
+     },
+     {
+      "Id": "368736514",
+      "Name": "QX_Egghatch",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemies\\QueenXenomorph\\QX_Egghatch",
+      "DurationType": "OneShot",
+      "DurationMin": "1.433719",
+      "DurationMax": "1.433719",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "67516328",
+        "Language": "SFX",
+        "ShortName": "SFX_ENEMY_Egghatch.wav",
+        "Path": "SFX\\SFX_ENEMY_Egghatch_10C4C929.wem"
        }
       ]
      },

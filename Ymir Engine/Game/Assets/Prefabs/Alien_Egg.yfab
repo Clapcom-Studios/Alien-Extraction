@@ -1,0 +1,674 @@
+{
+    "Prefab": [
+        {
+            "Name": "PROP_Alien_egg_",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1996196226,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 845273036,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        0.079999998211860657,
+                        0.079999998211860657,
+                        0.079999998211860657
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 4,
+                    "Size": [
+                        60,
+                        204.80000305175781,
+                        29.25
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": false,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        16.799999237060547,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                }
+            ],
+            "Children UID": [
+                36631404,
+                249688692,
+                1562095142,
+                299082371,
+                1280305251,
+                1662461728,
+                614817273
+            ]
+        },
+        {
+            "Name": "dins_lowpo",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 36631404,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/FBX\/PROP_Alien_egg_.fbx",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        89.295578002929688,
+                        179.30807495117188,
+                        0
+                    ],
+                    "Rotation": [
+                        -90,
+                        90,
+                        0
+                    ],
+                    "Scale": [
+                        17.872982025146484,
+                        17.872982025146484,
+                        17.872982025146484
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1614324012,
+                    "Vertex Count": 300,
+                    "Index Count": 300
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 33,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_D.png",
+                    "Diffuse_UID": 276163686,
+                    "Specular_ID": 39,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_S.png",
+                    "Specular_UID": 1325042334,
+                    "Normal_ID": 37,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_N.png",
+                    "Normal_UID": 2033536096,
+                    "Height_ID": 35,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_H.png",
+                    "Height_UID": 1592348189
+                }
+            ]
+        },
+        {
+            "Name": "fora_lowpo",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 249688692,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/FBX\/PROP_Alien_egg_.fbx",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        1.8191337585449219,
+                        106.30232238769531,
+                        -94.711128234863281
+                    ],
+                    "Rotation": [
+                        163.18145751953125,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        26.125961303710938,
+                        26.12596321105957,
+                        26.12596321105957
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1956892385,
+                    "Vertex Count": 1920,
+                    "Index Count": 1920
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 33,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_D.png",
+                    "Diffuse_UID": 276163686,
+                    "Specular_ID": 39,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_S.png",
+                    "Specular_UID": 1325042334,
+                    "Normal_ID": 37,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_N.png",
+                    "Normal_UID": 2033536096,
+                    "Height_ID": 35,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_H.png",
+                    "Height_UID": 1592348189
+                }
+            ]
+        },
+        {
+            "Name": "root1_lowpo",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1562095142,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/FBX\/PROP_Alien_egg_.fbx",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -22.630517959594727,
+                        28.734964370727539,
+                        -1.3916804790496826
+                    ],
+                    "Rotation": [
+                        -90.000228881835938,
+                        86.606849670410156,
+                        0.0002596501144580543
+                    ],
+                    "Scale": [
+                        26.262941360473633,
+                        26.262939453125,
+                        26.262941360473633
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1012796998,
+                    "Vertex Count": 156,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 33,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_D.png",
+                    "Diffuse_UID": 276163686,
+                    "Specular_ID": 39,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_S.png",
+                    "Specular_UID": 1325042334,
+                    "Normal_ID": 37,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_N.png",
+                    "Normal_UID": 2033536096,
+                    "Height_ID": 35,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_H.png",
+                    "Height_UID": 1592348189
+                }
+            ]
+        },
+        {
+            "Name": "root2.001",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 299082371,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/FBX\/PROP_Alien_egg_.fbx",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0.5208127498626709,
+                        3.6436498165130615,
+                        6.8245468139648438
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        15.980291366577148,
+                        15.980291366577148,
+                        15.980291366577148
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1273552018,
+                    "Vertex Count": 180,
+                    "Index Count": 180
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 33,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_D.png",
+                    "Diffuse_UID": 276163686,
+                    "Specular_ID": 39,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_S.png",
+                    "Specular_UID": 1325042334,
+                    "Normal_ID": 37,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_N.png",
+                    "Normal_UID": 2033536096,
+                    "Height_ID": 35,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_H.png",
+                    "Height_UID": 1592348189
+                }
+            ]
+        },
+        {
+            "Name": "root3.001",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1280305251,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/FBX\/PROP_Alien_egg_.fbx",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -90,
+                        -90,
+                        0
+                    ],
+                    "Scale": [
+                        27.125513076782227,
+                        27.125513076782227,
+                        27.125513076782227
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1449350484,
+                    "Vertex Count": 156,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 33,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_D.png",
+                    "Diffuse_UID": 276163686,
+                    "Specular_ID": 39,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_S.png",
+                    "Specular_UID": 1325042334,
+                    "Normal_ID": 37,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_N.png",
+                    "Normal_UID": 2033536096,
+                    "Height_ID": 35,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_H.png",
+                    "Height_UID": 1592348189
+                }
+            ]
+        },
+        {
+            "Name": "root4.001",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1662461728,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/FBX\/PROP_Alien_egg_.fbx",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        -4.9703178405761719,
+                        11.868268966674805,
+                        -6.5788359642028809
+                    ],
+                    "Rotation": [
+                        177.88883972167969,
+                        -8.6087512969970703,
+                        -90.316139221191406
+                    ],
+                    "Scale": [
+                        43.104133605957031,
+                        43.104137420654297,
+                        43.104137420654297
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1603093548,
+                    "Vertex Count": 156,
+                    "Index Count": 156
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 33,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_D.png",
+                    "Diffuse_UID": 276163686,
+                    "Specular_ID": 39,
+                    "Specular_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_S.png",
+                    "Specular_UID": 1325042334,
+                    "Normal_ID": 37,
+                    "Normal_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_N.png",
+                    "Normal_UID": 2033536096,
+                    "Height_ID": 35,
+                    "Height_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/HATCHERY\/Alien Egg\/TEX_PROP_Alien_egg_H.png",
+                    "Height_UID": 1592348189
+                }
+            ]
+        },
+        {
+            "Name": "Particle System",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 614817273,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1996196226,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        304.46563720703125,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "ParticleSystem",
+                    "Active": 1,
+                    "ShowEmitters": true,
+                    "NumEmitters": 1,
+                    "Emitters": [
+                        {
+                            "ModulesSize": 7,
+                            "EmitterUID": 557790518,
+                            "Name": "Particle Emitter 1",
+                            "Settings": [
+                                {
+                                    "Type": 0,
+                                    "Lifetime": 1,
+                                    "Lifetime2": 3,
+                                    "RandomLT": true,
+                                    "Position": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "DistanceLimit": 0,
+                                    "HasDistanceLimit": false,
+                                    "BaseRotation": 0,
+                                    "BaseShape": 1,
+                                    "PositiveBoxPoints": [
+                                        1,
+                                        1,
+                                        1
+                                    ],
+                                    "NegativeBoxPoints": [
+                                        -1,
+                                        -1,
+                                        -1
+                                    ],
+                                    "RadiusHollow": 0,
+                                    "RadiusBase": 5,
+                                    "RadiusTop": 11.700967788696289,
+                                    "Heigth": 10
+                                },
+                                {
+                                    "Type": 1,
+                                    "SpawnMode": 1,
+                                    "StartMode": 0,
+                                    "NumParticles": 5,
+                                    "SpawnRatio": 0.019999999552965164,
+                                    "NumParticlesToStop": 100,
+                                    "PointingUID": 0,
+                                    "ConditionForSpawn": 1,
+                                    "SubemitterMaxLifetime": 0,
+                                    "SubemitterMinLifetime": 1
+                                },
+                                {
+                                    "Type": 3,
+                                    "UpdateRotation": true,
+                                    "AligmentMode": 1,
+                                    "WorldOrientation": 3,
+                                    "AxisOrientation": 3,
+                                    "FreeRotation": [
+                                        0,
+                                        0,
+                                        0
+                                    ]
+                                },
+                                {
+                                    "Type": 5,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Color1": [
+                                        0.6194690465927124,
+                                        1,
+                                        0,
+                                        1
+                                    ],
+                                    "Color2": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                },
+                                {
+                                    "Type": 6,
+                                    "Path": "Assets\/Particles\/IMAGES\/Flash.png"
+                                },
+                                {
+                                    "Type": 2,
+                                    "Random": false,
+                                    "UseShapeBase": true,
+                                    "Direction1": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "Direction2": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "NormalizedBaseDirection": true,
+                                    "Accelerates": false,
+                                    "Speed1": 1,
+                                    "Speed2": 0,
+                                    "ChangeSpeedMode": 0,
+                                    "NewDirection": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "ChangeSpeed1": 0,
+                                    "ChangeSpeed2": 1,
+                                    "NormalizedChange": true
+                                },
+                                {
+                                    "Type": 4,
+                                    "Progressive": false,
+                                    "Loop": false,
+                                    "Size1": 5,
+                                    "Size2": 1,
+                                    "TimeStart": 0,
+                                    "TimeStop": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
