@@ -11,7 +11,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 ### GAME
 
-<div style="text-align:center;">
+<p align="center">
     
 | Key/Button      | Action           |
 |:---------------:|:----------------:|
@@ -27,7 +27,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | DPAD Right      | Open Inventory   |
 | Start           | Pause/Menu       |
 
-</div>
+</p>
 
 ### DEBUG KEYS
 
