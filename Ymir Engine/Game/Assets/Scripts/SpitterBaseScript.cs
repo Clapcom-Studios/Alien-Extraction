@@ -207,8 +207,6 @@ public class SpitterBaseScript : Enemy
                 explosionCounter = 0f;
                 explosionEnabled = false;
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit");
-                Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 3, 10.0f);
-                Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 3);
                 Particles.PlayParticlesTrigger(particlesGO);
             }
         }
@@ -444,8 +442,7 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Idle_Spiter");
                     walkAni = false;
                     xenoState = XenoState.IDLE_AGGRO;
-                    //To fix tail to claw attack bug
-                    //acidSpitReboundCooldownTime = 1f;
+                    acidExplosiveCooldownTime -= 1f;
 
                 }
                 else if (timeCounter >= 0.6f && acidDone == false)
@@ -482,9 +479,7 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Idle_Spiter");
                     walkAni = false;
                     xenoState = XenoState.IDLE_AGGRO;
-                    //To fix tail to claw attack bug
-                    //acidSpitReboundCooldownTime = 1f;
-
+                    acidSpitCooldownTime -= 2f;
                 }
                 else if (timeCounter >= 0.6f && explosionDone == false)
                 {
