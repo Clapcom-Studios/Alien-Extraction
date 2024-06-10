@@ -18,13 +18,15 @@ public class Auto_Aim : YmirComponent
     private Player player;
 
     private float angle;
-	public void Start()
+    private float shortestDistance;
+    public void Start()
 	{
         enemies = new List<GameObject>();
 		target = null;
 
         playerObject = InternalCalls.GetGameObjectByName("Player");
         player = playerObject.GetComponent<Player>();
+        shortestDistance = 0f;
 
     }
 
@@ -63,7 +65,7 @@ public class Auto_Aim : YmirComponent
 
     private void SetTarget()
 	{
-		float shortestDistance = 0f;
+		//float shortestDistance = 0f;
 
 		for (int i = 0; i < enemies.Count; i++)
 		{

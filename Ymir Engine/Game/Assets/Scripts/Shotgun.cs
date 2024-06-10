@@ -99,8 +99,8 @@ public class Shotgun : Weapon
 
         //Estos numeros estan hardcpded, canviarlos cuando cuadre
         InternalCalls.CreateShotgunSensor(gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f), rot, range, dispersion, gameObject.transform.GetRight());
-        Debug.Log("Position cone origin is:" + (gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f)));
-        Debug.Log("Foward offset would have been:" +  (gameObject.transform.GetForward() * range * 0.5f));
+        //Debug.Log("Position cone origin is:" + (gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * range * 0.5f)));
+        //Debug.Log("Foward offset would have been:" +  (gameObject.transform.GetForward() * range * 0.5f));
 
         float angleOfShootgun = 0;
         switch (_upgrade)
