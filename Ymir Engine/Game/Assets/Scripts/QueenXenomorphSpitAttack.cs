@@ -17,7 +17,7 @@ public class QueenXenomorphSpitAttack : YmirComponent
 
     private GameObject boss;
     private QueenXenomorphBaseScript bossScript;
-
+    private GameObject particleGo = null;
     private Health healthScript;
 
     private bool destroyed;
@@ -103,6 +103,20 @@ public class QueenXenomorphSpitAttack : YmirComponent
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
             healthScript.TakeDmg(bossScript.acidDMG);
+            particleGo = InternalCalls.GetGameObjectByName("ParticlesAcidicBoss");
+            if(particleGo != null) { Particles.SetMaxDistance(particleGo,0.5f); }
+
+            particleGo = InternalCalls.GetGameObjectByName("ParticlesPuddleBoss");
+
+            Vector3 distance = gameObject.transform.globalPosition - boss.transform.globalPosition;
+            distance.y = boss.transform.globalPosition.y;
+
+            if (particleGo != null) { Particles.SetEmittersPosition(particleGo, distance); }
+
+            Particles.ParticlesForward(particleGo, gameObject.transform.GetForward(), 0, 0);
+            Particles.ParticlesForward(particleGo, gameObject.transform.GetForward(), 1, 0);
+            Particles.PlayParticlesTrigger(particleGo);
+
             destroyed = true;
         }
     }
