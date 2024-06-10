@@ -49,6 +49,12 @@ public class QueenXenomorphBaseScript : YmirComponent
 
     private GameObject player;
 
+
+    private bool wave80Spawned = false;
+    private bool wave60Spawned = false;
+    private bool wave40Spawned = false;
+    private bool wave20Spawned = false;
+
     //For attacks
     //Random attack
     private Random random = new Random();
@@ -126,6 +132,11 @@ public class QueenXenomorphBaseScript : YmirComponent
     public GameObject fill2 = null;
 
 
+    public GameObject spawner1 = null;
+    public GameObject spawner2 = null;
+    public GameObject spawner3 = null;
+    public GameObject spawner4 = null;
+
     private bool isSecondPhase = false;
     private float speedMultiplier = 1.0f;
     private float secondPhaseHealthThreshold;
@@ -193,7 +204,7 @@ public class QueenXenomorphBaseScript : YmirComponent
 
     public void Update()
     {
-        Debug.Log("[ERROR} QUEENSTATE: " + queenState);
+        //Debug.Log("[ERROR} QUEENSTATE: " + queenState);
         if (CheckPause())
         {
             SetPause(true);
@@ -211,6 +222,8 @@ public class QueenXenomorphBaseScript : YmirComponent
         {
             ActivateSecondPhase();
         }
+
+        CheckSpawnEnemies();
 
         if (queenState != QueenState.DEAD) { isDeath(); }
         //Dont rotate while doing dash
@@ -756,7 +769,76 @@ public class QueenXenomorphBaseScript : YmirComponent
         }
     }
 
+    private void CheckSpawnEnemies()
+    {
+        Debug.Log("[ERROR] wave" + wave80Spawned);
+        // Check for enemy waves spawning
+        if (!wave80Spawned && life <= (life * 0.8f))
+        {
+            Debug.Log("[ERROR] Spawn1");
+            SpawnEnemyWave(80);
+            wave80Spawned = true;
+        }
+        if (!wave60Spawned && life <= life * 0.6f)
+        {
+            Debug.Log("Spawn2");
+            SpawnEnemyWave(60);
+            wave60Spawned = true;
+        }
+        if (!wave40Spawned && life <= life * 0.4f)
+        {
+            Debug.Log("Spawn3");
+            SpawnEnemyWave(40);
+            wave40Spawned = true;
+        }
+        if (!wave20Spawned && life <= life * 0.2f)
+        {
+            Debug.Log("Spawn4");
+            SpawnEnemyWave(20);
+            wave20Spawned = true;
+        }
+    }
+    private void SpawnEnemyWave(int wave)
+    {
 
+        Debug.Log("Spawning enemy wave at " + wave + "health");
+
+        switch (wave)
+        {
+            case 80:
+
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner1.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+
+                break;
+            case 60:
+
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner1.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+
+                break;
+            case 40:
+
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner1.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner3.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner4.transform.globalPosition);
+
+                break;
+            case 20:
+
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner1.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+
+                break;
+
+        }
+
+       
+    }
     private void ActivateSecondPhase()
     {
         isSecondPhase = true;
