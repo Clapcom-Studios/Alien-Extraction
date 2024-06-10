@@ -97,7 +97,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 Clapcom originated as a third-year project in the Video Game Design and Development bachelor's degree program at [CITM | UPC](https://www.citm.upc.edu/). It is comprised of members with diverse skills and talents across three departments.
 
-If you want to know more in detail about the work of each member you can see it [here](https://clapcom-studios.github.io/Website/aboutus.html)
+If you want to know more in detail about the work of each member you can see it [here](https://clapcom-studios.github.io/Website/aboutus.html).
 
 ![Clapcom Studios](https://github.com/Clapcom-Studios/Alien-Extraction/assets/99948892/a5e6e568-38fa-4440-ae85-1f9363bb4397)
 
