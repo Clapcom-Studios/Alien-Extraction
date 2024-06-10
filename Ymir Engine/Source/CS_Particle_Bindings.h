@@ -313,3 +313,36 @@ void SetMaxDistance(MonoObject* go, float range)
 		LOG("[WARNING] Couldn't play the particle effect %s. Component was null pointer");
 	}
 }
+
+void SetEmittersPosition(MonoObject* go, MonoObject* vector)
+{
+	if (External == nullptr) return;
+
+	//Vector hacia el que mira el player
+	float3 position = External->moduleMono->UnboxVector(vector);
+
+	//Game object del player
+	//Se necesita para sacar el componente particula y por ende su EmitterPosition
+	GameObject* GO = External->moduleMono->GameObject_From_CSGO(go);
+	if (GO == nullptr)
+	{
+		LOG("[ERROR] No Particle Game Object found (be sure the name is correct!)");
+		return;
+	}
+
+	CParticleSystem* particleSystem = dynamic_cast<CParticleSystem*>(GO->GetComponent(ComponentType::PARTICLE));
+
+	if (particleSystem != nullptr)
+	{
+		for (int i = 0; i < particleSystem->allEmitters.size(); i++)
+		{
+			EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(i)->modules.at(0);//Es el base
+			base->emitterOrigin = position;
+
+		}
+	}
+	else
+	{
+		LOG("[WARNING] Couldn't play the particle effect %s. Component was null pointer");
+	}
+}

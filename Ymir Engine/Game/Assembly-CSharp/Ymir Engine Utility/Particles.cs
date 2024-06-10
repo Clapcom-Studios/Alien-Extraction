@@ -30,5 +30,8 @@ namespace YmirEngine
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public static extern void SetMaxDistance(object go, float range);
 
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public static extern void SetEmittersPosition(object go, object vec);
+
     }
 }
