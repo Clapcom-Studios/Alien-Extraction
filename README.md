@@ -71,7 +71,7 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | **1**                            | Change to Weapon Submachine          |
 | **2**                            | Change to Weapon Shotgun             |
 | **3**                            | Change to Weapon Plasma Cannon       |
-| **4**                            | Instant Death                        |
+| **V**                            | Instant Death                        |
 | **,**                            | Downgrade Weapon                     |
 | **.**                            | Upgrade Weapon                       |
 | **K**                            | Change to Exploration Music          |
