@@ -11,6 +11,8 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 
 ### GAME
 
+<div style="text-align:center;">
+    
 | Key/Button      | Action           |
 |:---------------:|:----------------:|
 | Left Joystick   | Move             |
@@ -24,6 +26,8 @@ Players will take on the role of an elite soldier sent to an alien-infested plan
 | B               | Tail Swipe       |
 | DPAD Right      | Open Inventory   |
 | Start           | Pause/Menu       |
+
+</div>
 
 ### DEBUG KEYS
 
