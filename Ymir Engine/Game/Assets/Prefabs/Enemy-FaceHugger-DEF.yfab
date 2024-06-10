@@ -1,13 +1,13 @@
 {
     "Prefab": [
         {
-            "Name": "Enemy-FaceHugger",
+            "Name": "Enemy-FaceHugger (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1169910849,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 721332001,
+            "Parent UID": 156199114,
             "Components": [
                 {
                     "Type": "Transform",
@@ -15,7 +15,7 @@
                     "Translation": [
                         0,
                         0,
-                        0.60096359252929688
+                        401.81753540039062
                     ],
                     "Rotation": [
                         -0,
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "Name": "FaceHugger",
+            "Name": "FaceHugger (1)",
             "Static": false,
             "Tag": "Enemy",
             "UID": 1180774475,
@@ -48,7 +48,7 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        6.7628669738769531,
                         0
                     ],
                     "Rotation": [
@@ -159,7 +159,7 @@
                     "LockZ": true,
                     "Offset": [
                         0,
-                        9.1000003814697266,
+                        2.0999999046325684,
                         0
                     ],
                     "Offset Rotation": [
@@ -177,7 +177,7 @@
             ]
         },
         {
-            "Name": "Facehugger_Mesh",
+            "Name": "Facehugger_Mesh (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1327079824,
@@ -191,13 +191,13 @@
                     "Active": 1,
                     "Translation": [
                         0,
-                        0,
+                        -10.800000190734863,
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        180
+                        -180
                     ],
                     "Scale": [
                         1,
@@ -251,7 +251,7 @@
             ]
         },
         {
-            "Name": "ParticlesDamageFaceHugger",
+            "Name": "ParticlesDamageFaceHugger (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 756952507,
@@ -409,7 +409,7 @@
             ]
         },
         {
-            "Name": "ParticlesTailAttack",
+            "Name": "ParticlesTailAttack (1)",
             "Static": false,
             "Tag": "Untagged",
             "UID": 443997644,

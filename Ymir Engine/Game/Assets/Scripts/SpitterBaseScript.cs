@@ -183,7 +183,7 @@ public class SpitterBaseScript : Enemy
 
         Animation.SetResetToZero(gameObject, "Death_Spiter", false);
 
-        Animation.SetSpeed(gameObject, "Move_Spitter", 0.4f);
+        Animation.SetSpeed(gameObject, "Move_Spitter", 0.1f);
 
         Animation.AddBlendOption(gameObject, "", "Idle_Spiter", 10f);
         Animation.AddBlendOption(gameObject, "", "Combat Idle_Spiter", 10f);
@@ -270,10 +270,7 @@ public class SpitterBaseScript : Enemy
                 break;
             case XenoState.MOVE:
 
-                if (explosionEnabled == false)
-                {
-                    LookAt(player.transform.globalPosition);
-                }
+                LookAt(agent.GetDestination());
 
                 MoveToCalculatedPos(agent.speed);
 
