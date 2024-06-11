@@ -756,7 +756,7 @@ public class Iscariot : YmirComponent
             popup.SetActive(true);
         }
 
-        if ((other.Tag == "Player" || other.Name == "Player") && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && player.currentMenu == "")
+        if ((other.Tag == "Player" || other.Name == "Player") && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && player.currentMenu == "" && !talked)
         {
             gameCanvas.SetActive(false);
 
