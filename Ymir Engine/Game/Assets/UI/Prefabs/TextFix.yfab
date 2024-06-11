@@ -1,0 +1,117 @@
+{
+    "Prefab": [
+        {
+            "Name": "Canvas",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1987757209,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 816171610,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 0,
+                    "Position Y": 0,
+                    "Width": 1660,
+                    "Height": 1181,
+                    "UI Type": 0,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        0,
+                        0,
+                        1660,
+                        1181
+                    ]
+                }
+            ],
+            "Children UID": [
+                1311224917
+            ]
+        },
+        {
+            "Name": "Image (4)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1311224917,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 1987757209,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": -1354,
+                    "Position Y": -1359,
+                    "Width": 100,
+                    "Height": 100,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        -1354,
+                        -1359,
+                        100,
+                        100
+                    ],
+                    "Path": "Assets\/ImgDefault.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
+                }
+            ]
+        }
+    ]
+}
