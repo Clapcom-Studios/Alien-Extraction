@@ -751,7 +751,7 @@ public class Iscariot : YmirComponent
     }
     public void OnCollisionStay(GameObject other)
     {
-        if ((other.Tag == "Player" || other.Name == "Player") && !active_Dialogue)
+        if ((other.Tag == "Player" || other.Name == "Player") && !active_Dialogue && !talked)
         {
             popup.SetActive(true);
         }
