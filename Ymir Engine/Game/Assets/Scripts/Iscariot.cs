@@ -493,10 +493,9 @@ public class Iscariot : YmirComponent
                     dialogue_ = Dialogue_id.ID_64;
                     return;
                 }
+
+                DialogueManager();
             }
-
-            DialogueManager();
-
         }
         else
         {
