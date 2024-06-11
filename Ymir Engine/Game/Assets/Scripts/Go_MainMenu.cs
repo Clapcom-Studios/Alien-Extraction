@@ -8,15 +8,13 @@ using YmirEngine;
 
 public class Go_MainMenu : YmirComponent
 {
-
     private string sceneName = "UI/Scenes/StartScene";
 
     // Loading scene
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
-
-    private float finishTimer = 2f;
+    public float finishTimer = 2f;
     public bool saveGame = true;
 
     public void Start()
@@ -34,11 +32,9 @@ public class Go_MainMenu : YmirComponent
 
     public void Update()
     {
-        finishTimer -= Time.deltaTime;
-
         if (loadScene)
         {
-            loadSceneImg.SetActive(true);
+            finishTimer -= Time.deltaTime;
 
             if (finishTimer <= 0)
             {
@@ -56,8 +52,9 @@ public class Go_MainMenu : YmirComponent
         if (loadSceneImg != null)
         {
             loadSceneImg.SetActive(true);
-            loadScene = true;
         }
+
+        loadScene = true;
 
         if (saveGame)
         {
