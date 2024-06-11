@@ -834,30 +834,29 @@ public class QueenXenomorphBaseScript : YmirComponent
             case 80:
 
                 InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner1.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner3.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner4.transform.globalPosition);
 
                 break;
             case 60:
 
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner1.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner1.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner4.transform.globalPosition);
 
                 break;
             case 40:
 
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner1.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner2.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner3.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner4.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner1.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner4.transform.globalPosition);
 
                 break;
             case 20:
 
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-FaceHugger-DEF", spawner1.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner2.transform.globalPosition);
-                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-DroneXenomorph-DEF", spawner3.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner2.transform.globalPosition);
+                InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Enemy-Spitter-DEF", spawner3.transform.globalPosition);
 
                 break;
 
