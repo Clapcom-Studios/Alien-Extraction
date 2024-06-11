@@ -26,7 +26,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgDefault");
                 ammo = 35;
                 fireRate = 0.07f;
-                damage = 7;
+                damage = 9;
                 //reloadTime = 1.556f;
 
                 break;
@@ -35,7 +35,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL1");
                 ammo = 35;
                 fireRate = 0.06f;
-                damage = 13;
+                damage = 18;
                 //reloadTime = 1.456f;
 
                 break;
@@ -44,7 +44,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL2");
                 ammo = 40;
                 fireRate = 0.05f;
-                damage = 15;
+                damage = 20;
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
@@ -52,7 +52,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3A");
                 ammo = 110;
                 fireRate = 0.04f;
-                damage = 16;
+                damage = 27;
                 //reloadTime = 1.556f;
 
                 break;
@@ -60,8 +60,8 @@ public class SMG : Weapon
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3B");
                 ammo = 40;
-                fireRate = 0.02f;
-                damage = 16;
+                fireRate = 0.015f;
+                damage = 22;
 
                 break;
             default:

@@ -2102,7 +2102,7 @@ public class Player : YmirComponent
         Vector3 offset = new Vector3(0, 15, 0);
 
         //Posicion desde la que se crea la bala (la misma que el game object que le dispara)
-        Vector3 pos = gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * 2);
+        Vector3 pos = gameObject.transform.globalPosition + offset + (gameObject.transform.GetForward() * 10);
 
         //Crea la bola de acido
         InternalCalls.CreateAcidicSpit("AcidSpit", pos);
