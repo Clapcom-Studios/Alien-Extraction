@@ -65,6 +65,8 @@ public class DroneXenomorphBaseScript : Enemy
 		//MAIN STUFF
 		droneState = DroneState.IDLE_NO_AGGRO;
         player = InternalCalls.GetGameObjectByName("Player");
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        if(boss != null ) { bossScrit = boss.GetComponent<QueenXenomorphBaseScript>(); }
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
         healthBar = InternalCalls.GetHealtBarObject(gameObject,7);
@@ -459,14 +461,25 @@ public class DroneXenomorphBaseScript : Enemy
     }
 
     private void isDeath()
-    {
-        if (life <= 0)
+    {   
+        if (life <= 0 && droneState != DroneState.DEAD)
         {
             Audio.PlayAudio(gameObject, "DX_Death");
             Animation.PlayAnimation(gameObject, "Death");
             gameObject.SetVelocity(new Vector3(0, 0, 0));
             droneState = DroneState.DEAD;
             timePassed = 0;
+        }
+        if (bossScrit != null)
+        {
+            if (bossScrit.GetState() == QueenState.DEAD)
+            {
+                Audio.PlayAudio(gameObject, "DX_Death");
+                Animation.PlayAnimation(gameObject, "Death");
+                gameObject.SetVelocity(new Vector3(0, 0, 0));
+                droneState = DroneState.DEAD;
+                timePassed = 0;
+            }
         }
     }
 

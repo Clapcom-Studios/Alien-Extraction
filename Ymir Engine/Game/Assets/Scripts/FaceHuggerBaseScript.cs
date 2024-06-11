@@ -61,6 +61,8 @@ public class FaceHuggerBaseScript : Enemy
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         agent = gameObject.GetComponent<PathFinding>();
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        if (boss != null) { bossScrit = boss.GetComponent<QueenXenomorphBaseScript>(); }
         healthBar = InternalCalls.GetHealtBarObject(gameObject,6);
         knockBackSpeed = 200;
         knockBackTimer = 0.2f;
@@ -200,7 +202,7 @@ public class FaceHuggerBaseScript : Enemy
 
                     if (timePassed >= 1.2f)
                     {
-                        Debug.Log("[ERROR] DEATH");
+                    
                         itemPos = gameObject.transform.globalPosition;
                         DropItem();
                         InternalCalls.Destroy(gameObject);
@@ -393,6 +395,18 @@ public class FaceHuggerBaseScript : Enemy
             Animation.PlayAnimation(gameObject, "Death_Facehugger");
             wanderState = WanderState.DEATH;
             timePassed = 0;
+        }
+        if (bossScrit != null)
+        {
+            if (bossScrit.GetState() == QueenState.DEAD)
+            {
+                Debug.Log("[ERROR] DEATH");
+                gameObject.SetVelocity(new Vector3(0, 0, 0));
+                Audio.PlayAudio(gameObject, "FH_Death");
+                Animation.PlayAnimation(gameObject, "Death_Facehugger");
+                wanderState = WanderState.DEATH;
+                timePassed = 0;
+            }
         }
     }
 

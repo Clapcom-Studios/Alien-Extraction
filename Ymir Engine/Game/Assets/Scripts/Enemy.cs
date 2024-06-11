@@ -73,6 +73,11 @@ public class Enemy : YmirComponent
     public Random random = new Random();
     protected GameObject healthBar = null;
 
+    protected GameObject knockBackBar = null;
+
+    protected GameObject boss = null;
+    protected QueenXenomorphBaseScript bossScrit = null;
+
 
     public void TakeDmg(float dmg)
     {

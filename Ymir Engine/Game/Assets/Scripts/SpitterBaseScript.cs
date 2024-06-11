@@ -73,6 +73,8 @@ public class SpitterBaseScript : Enemy
         xenoState = XenoState.IDLE;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        if (boss != null) { bossScrit = boss.GetComponent<QueenXenomorphBaseScript>(); }
         agent = gameObject.GetComponent<PathFinding>();
         healthBar = InternalCalls.GetHealtBarObject(gameObject,8);
 
@@ -607,6 +609,18 @@ public class SpitterBaseScript : Enemy
             xenoState = XenoState.DEAD;
             timePassed = 0;
         }
+        if (bossScrit != null)
+        {
+            if (bossScrit.GetState() == QueenState.DEAD)
+            {
+                gameObject.SetVelocity(new Vector3(0, 0, 0));
+                itemPos = gameObject.transform.globalPosition;
+                Animation.PlayAnimation(gameObject, "Death_Spiter");
+                Audio.PlayAudio(gameObject, "XS_Death");
+                xenoState = XenoState.DEAD;
+                timePassed = 0;
+            }
+        }
     }
 
     private void CheckAttacks()
@@ -672,75 +686,7 @@ public class SpitterBaseScript : Enemy
         }
     }
 
-    //DELETE WHEN FIXED
-    //public void TakeDmg(float dmg)
-    //{
-    //    life -= dmg * armor;
-    //}
-
-    //public void LookAt(Vector3 pointToLook)
-    //{
-
-    //    Vector3 direction = pointToLook - gameObject.transform.globalPosition;
-    //    direction = direction.normalized;
-    //    float angle = (float)Math.Atan2(direction.x, direction.z);
-
-    //    //Debug.Log("Desired angle: " + (angle * Mathf.Rad2Deg).ToString());
-
-    //    if (Math.Abs(angle * Mathf.Rad2Deg) < 1.0f)
-    //        return;
-
-    //    Quaternion dir = Quaternion.RotateAroundAxis(Vector3.up, angle);
-
-    //    float rotationSpeed = Time.deltaTime * agent.angularSpeed;
-
-
-    //    Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, rotationSpeed);
-
-    //    gameObject.SetRotation(desiredRotation);
-    //}
-
-    //public void KnockBack(float speed)
-    //{
-
-    //    Vector3 knockbackDirection = player.transform.globalPosition - gameObject.transform.globalPosition;
-    //    knockbackDirection = knockbackDirection.normalized;
-    //    knockbackDirection.y = 0f;
-    //    gameObject.SetVelocity(knockbackDirection * -speed);
-
-    //}
-
-    //public bool CheckPause()
-    //{
-    //    if (player.GetComponent<Player>().currentState == Player.STATE.STOP || player.GetComponent<Player>().currentState == Player.STATE.DEAD)
-    //    {
-    //        return true;
-    //    }
-    //    return false;
-    //}
-
-    //public void MoveToCalculatedPos(float speed)
-    //{
-    //    Vector3 pos = gameObject.transform.globalPosition;
-    //    Vector3 destination = agent.GetDestination();
-    //    Vector3 direction = destination - pos;
-
-    //    gameObject.SetVelocity(direction.normalized * speed * Time.deltaTime);
-    //}
-
-    //public bool CheckDistance(Vector3 first, Vector3 second, float checkRadius)
-    //{
-    //    float deltaX = Math.Abs(first.x - second.x);
-    //    float deltaY = Math.Abs(first.y - second.y);
-    //    float deltaZ = Math.Abs(first.z - second.z);
-
-    //    return deltaX <= checkRadius && deltaY <= checkRadius && deltaZ <= checkRadius;
-    //}
-    //public void DestroyEnemy()
-    //{
-    //    Audio.PlayAudio(gameObject, "XS_Death");
-    //    InternalCalls.Destroy(gameObject);
-    //}
+   
 
     private GameObject GetParticles(GameObject go, string pName)
     {

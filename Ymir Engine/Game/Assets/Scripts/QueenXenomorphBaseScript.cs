@@ -112,7 +112,7 @@ public class QueenXenomorphBaseScript : YmirComponent
     private float dashAniDuration2 = 2f;
     private bool dashDone = false;
     private float dashNum = 0f;
-    private float dashDamage = 800f;
+    private float dashDamage = 650f;
     private bool dashDamageDone = false;
 
     private float backwardsTimer;
