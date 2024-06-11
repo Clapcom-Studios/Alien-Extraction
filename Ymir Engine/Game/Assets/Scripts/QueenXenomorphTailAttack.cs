@@ -17,6 +17,9 @@ public class QueenXenomorphTailAttack : YmirComponent
 
     private Health healthScript;
 
+    private GameObject boss;
+    private QueenXenomorphBaseScript bossScript;
+
     private bool destroyed;
 
     private float destroyTimer;
@@ -26,6 +29,8 @@ public class QueenXenomorphTailAttack : YmirComponent
         movementSpeed = 5000f;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        bossScript = boss.GetComponent<QueenXenomorphBaseScript>();
         gameObject.SetImpulse(gameObject.transform.GetForward() * movementSpeed * Time.deltaTime);
         destroyed = false;
         destroyTimer = 0f;
@@ -46,7 +51,7 @@ public class QueenXenomorphTailAttack : YmirComponent
     {
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
-            healthScript.TakeDmg(damage);
+            healthScript.TakeDmg(bossScript.axeDMG);
             destroyed = true;
         }
     }

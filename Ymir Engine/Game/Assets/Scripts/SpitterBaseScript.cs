@@ -44,6 +44,12 @@ public class SpitterBaseScript : Enemy
 
     private float tooCloseRange;
 
+    private float acidDamage = 350f;
+    private float explosionDamage = 350f;
+
+    private bool explosionEnabled = false;
+    private float explosionCounter = 0f;
+
     //Acid rebound
     //private float tailDamage;
     private float acidExplosiveCooldown;
@@ -67,12 +73,14 @@ public class SpitterBaseScript : Enemy
         xenoState = XenoState.IDLE;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        if (boss != null) { bossScrit = boss.GetComponent<QueenXenomorphBaseScript>(); }
         agent = gameObject.GetComponent<PathFinding>();
         healthBar = InternalCalls.GetHealtBarObject(gameObject,8);
 
         //Agent
         agent.stoppingDistance = 2f;
-        agent.speed = 1600f;
+        agent.speed = 900f; //Debería ser más lento que el facehugger (Antes estaba en 1600f)
         agent.angularSpeed = 10f;
 
         //ATTACKS
@@ -109,9 +117,9 @@ public class SpitterBaseScript : Enemy
         switch (level)
         {
             case 1:
-                commonProb = 93.0f;
+                commonProb = 95.0f;
                 rareProb = 5.0f;
-                epicProb = 2.0f;
+                epicProb = 0.0f;
                 break;
             case int i when (i == 2 || i == 3):
                 commonProb = 93.0f;
@@ -119,9 +127,9 @@ public class SpitterBaseScript : Enemy
                 epicProb = 2.0f;
                 break;
             case int i when (i == 4 || i == 5):
-                commonProb = 93.0f;
-                rareProb = 5.0f;
-                epicProb = 2.0f;
+                commonProb = 85.0f;
+                rareProb = 10.0f;
+                epicProb = 5.0f;
                 break;
             default:
                 commonProb = 93.0f;
@@ -137,11 +145,11 @@ public class SpitterBaseScript : Enemy
 
         Debug.Log("[ERROR]: " + rarity);
 
-        if (rarity >= 90)
+        if (rarity >= (101.0f - epicProb))
         {
             rarity = 2;
         }
-        else if (rarity >= 70)
+        else if (rarity >= (101.0f - rareProb))
         {
             rarity = 1;
         }
@@ -153,15 +161,19 @@ public class SpitterBaseScript : Enemy
         //Enemy rarity stats
         if (rarity == 1)
         {
-            life = 787.5f; //1050
-            armor = 0.1f; //0.325f
-            agent.speed = 1700f;
+            life = 687.5f; //763,88
+            armor = 0.1f; //0.1f
+            agent.speed = 990f; //Antes estaba en 1700f
+            acidDamage = 317f;
+            explosionDamage = 375f;
         }
         else if (rarity == 2)
         {
-            life = 1050; //1650
-            armor = 0.2f; // 0.45f
-            agent.speed = 1800f;
+            life = 950; //1187,5
+            armor = 0.2f; // 0.2f
+            agent.speed = 1080f; //Antes estaba en 1800f
+            acidDamage = 375f;
+            explosionDamage = 440f;
         }
 
         SetColor();
@@ -173,7 +185,7 @@ public class SpitterBaseScript : Enemy
 
         Animation.SetResetToZero(gameObject, "Death_Spiter", false);
 
-        Animation.SetSpeed(gameObject, "Move_Spitter", 0.4f);
+        Animation.SetSpeed(gameObject, "Move_Spitter", 0.1f);
 
         Animation.AddBlendOption(gameObject, "", "Idle_Spiter", 10f);
         Animation.AddBlendOption(gameObject, "", "Combat Idle_Spiter", 10f);
@@ -188,6 +200,19 @@ public class SpitterBaseScript : Enemy
 
     public void Update()
     {
+
+        if (explosionEnabled)
+        {
+            explosionCounter += Time.deltaTime;
+            if (explosionCounter >= 1.3f)
+            {
+                explosionCounter = 0f;
+                explosionEnabled = false;
+                particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidSplit");
+                Particles.PlayParticlesTrigger(particlesGO);
+            }
+        }
+
         if (CheckPause())
         {
             SetPause(true);
@@ -288,7 +313,10 @@ public class SpitterBaseScript : Enemy
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
                 //Rather look at player? May cause to do weird rotations
                 //LookAt(agent.GetDestination());
-                LookAt(player.transform.globalPosition);
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 if (!CheckDistance(player.transform.globalPosition, gameObject.transform.globalPosition, acidSpitRange))
                 {
@@ -308,7 +336,10 @@ public class SpitterBaseScript : Enemy
                 {
                     xenoState = XenoState.IDLE;
                 }
-                LookAt(agent.GetDestination());
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 MoveToCalculatedPos(agent.speed);
 
@@ -318,7 +349,10 @@ public class SpitterBaseScript : Enemy
                 timeCounter += Time.deltaTime;
 
                 agent.CalculatePath(gameObject.transform.globalPosition, player.transform.globalPosition);
-                LookAt(agent.GetDestination());
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 MoveToCalculatedPos(-agent.speed);
 
@@ -340,16 +374,19 @@ public class SpitterBaseScript : Enemy
                     timeLimit = 0.8f;
                     Animation.PlayAnimation(gameObject, "Atack_1_Spiter");
 
-                    //PARTICLES
-                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
-                    Particles.PlayParticlesTrigger(particlesGO);
+                    ////PARTICLES
+                    //particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    //Particles.PlayParticlesTrigger(particlesGO);
 
                     walkAni = false;
                     Audio.PlayAudio(gameObject, "XS_Spit");
                     acidDone = false;
                     xenoState = XenoState.ACID_SPIT;
                     acidExplosiveCooldownTime -= 1.5f;
-                    LookAt(player.transform.globalPosition);
+                    if (explosionEnabled == false)
+                    {
+                        LookAt(player.transform.globalPosition);
+                    }
                 }
                 else if (acidExplosiveCooldownTime >= acidExplosiveCooldown && xenoState != XenoState.DEAD)
                 {
@@ -360,15 +397,18 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Atack_2_Spiter");
                     walkAni = false;
 
-                    //PARTICLES
-                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack2_Spitter");
-                    Particles.PlayParticlesTrigger(particlesGO);
+                    ////PARTICLES
+                    //particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack2_Spitter");
+                    //Particles.PlayParticlesTrigger(particlesGO);
 
                     Audio.PlayAudio(gameObject, "XS_Rebound");
                     explosionDone = false;
                     xenoState = XenoState.ACID_REBOUND;
                     acidSpitCooldownTime -= 1.5f;
-                    LookAt(player.transform.globalPosition);
+                    if (explosionEnabled == false)
+                    {
+                        LookAt(player.transform.globalPosition);
+                    }
                 }
 
                 break;
@@ -392,7 +432,10 @@ public class SpitterBaseScript : Enemy
                 timeCounter += Time.deltaTime;
 
                 gameObject.SetVelocity(gameObject.transform.GetForward() * 0);
-                LookAt(player.transform.globalPosition);
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 //If done with animation, go to idle aggro
                 if (timeCounter >= timeLimit)
@@ -401,16 +444,22 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Idle_Spiter");
                     walkAni = false;
                     xenoState = XenoState.IDLE_AGGRO;
-                    //To fix tail to claw attack bug
-                    //acidSpitReboundCooldownTime = 1f;
+                    acidExplosiveCooldownTime -= 1f;
 
                 }
                 else if (timeCounter >= 0.6f && acidDone == false)
                 {
                     Vector3 pos = gameObject.transform.globalPosition;
-                    pos.y += 15;
-                    //InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation);
-                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterAcidSpit", pos);
+                    pos.y += 10;
+                    InternalCalls.CreateSpitterAcidSpit(pos, gameObject.transform.globalRotation, acidDamage);
+                    //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterAcidSpit", pos);
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 1, 80.0f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 2, 10.0f);
+                    Particles.PlayParticlesTrigger(particlesGO);
                     acidDone = true;
                 }
 
@@ -420,7 +469,10 @@ public class SpitterBaseScript : Enemy
                 timeCounter += Time.deltaTime;
 
                 gameObject.SetVelocity(gameObject.transform.GetForward() * 0);
-                LookAt(player.transform.globalPosition);
+                if (explosionEnabled == false)
+                {
+                    LookAt(player.transform.globalPosition);
+                }
 
                 //If done with animation, go to idle aggro
                 if (timeCounter >= timeLimit)
@@ -429,20 +481,27 @@ public class SpitterBaseScript : Enemy
                     Animation.PlayAnimation(gameObject, "Idle_Spiter");
                     walkAni = false;
                     xenoState = XenoState.IDLE_AGGRO;
-                    //To fix tail to claw attack bug
-                    //acidSpitReboundCooldownTime = 1f;
-
+                    acidSpitCooldownTime -= 2f;
                 }
                 else if (timeCounter >= 0.6f && explosionDone == false)
                 {
                     Vector3 pos = gameObject.transform.globalPosition;
-                    pos.y += 15;
+                    pos.y += 10;
                     pos.z -= 10;
-                    //InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation);
-                    InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterExplosive", pos);
+                    InternalCalls.CreateSpitterAcidExplosive(pos, gameObject.transform.globalRotation, explosionDamage);
+                    //InternalCalls.CreateGOFromPrefab("Assets/Prefabs", "Projectile-SpitterExplosive", pos);
+
+                    //PARTICLES
+                    particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAttack1_Spitter");
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 1, 80.0f);
+                    Particles.ParticlesSetDirection(particlesGO, gameObject.transform.GetForward().normalized, 0);
+                    Particles.ParticlesForward(particlesGO, gameObject.transform.GetForward().normalized, 2, 10.0f);
+                    Particles.PlayParticlesTrigger(particlesGO);
+
                     explosionDone = true;
                     //GameObject particles = GetParticles(gameObject, "ParticlesAcidicEnemy");
                     //Particles.PlayParticlesTrigger(particles);
+                    explosionEnabled = true;
                 }
 
                 break;
@@ -550,6 +609,18 @@ public class SpitterBaseScript : Enemy
             xenoState = XenoState.DEAD;
             timePassed = 0;
         }
+        if (bossScrit != null)
+        {
+            if (bossScrit.GetState() == QueenState.DEAD)
+            {
+                gameObject.SetVelocity(new Vector3(0, 0, 0));
+                itemPos = gameObject.transform.globalPosition;
+                Animation.PlayAnimation(gameObject, "Death_Spiter");
+                Audio.PlayAudio(gameObject, "XS_Death");
+                xenoState = XenoState.DEAD;
+                timePassed = 0;
+            }
+        }
     }
 
     private void CheckAttacks()
@@ -615,75 +686,7 @@ public class SpitterBaseScript : Enemy
         }
     }
 
-    //DELETE WHEN FIXED
-    //public void TakeDmg(float dmg)
-    //{
-    //    life -= dmg * armor;
-    //}
-
-    //public void LookAt(Vector3 pointToLook)
-    //{
-
-    //    Vector3 direction = pointToLook - gameObject.transform.globalPosition;
-    //    direction = direction.normalized;
-    //    float angle = (float)Math.Atan2(direction.x, direction.z);
-
-    //    //Debug.Log("Desired angle: " + (angle * Mathf.Rad2Deg).ToString());
-
-    //    if (Math.Abs(angle * Mathf.Rad2Deg) < 1.0f)
-    //        return;
-
-    //    Quaternion dir = Quaternion.RotateAroundAxis(Vector3.up, angle);
-
-    //    float rotationSpeed = Time.deltaTime * agent.angularSpeed;
-
-
-    //    Quaternion desiredRotation = Quaternion.Slerp(gameObject.transform.localRotation, dir, rotationSpeed);
-
-    //    gameObject.SetRotation(desiredRotation);
-    //}
-
-    //public void KnockBack(float speed)
-    //{
-
-    //    Vector3 knockbackDirection = player.transform.globalPosition - gameObject.transform.globalPosition;
-    //    knockbackDirection = knockbackDirection.normalized;
-    //    knockbackDirection.y = 0f;
-    //    gameObject.SetVelocity(knockbackDirection * -speed);
-
-    //}
-
-    //public bool CheckPause()
-    //{
-    //    if (player.GetComponent<Player>().currentState == Player.STATE.STOP || player.GetComponent<Player>().currentState == Player.STATE.DEAD)
-    //    {
-    //        return true;
-    //    }
-    //    return false;
-    //}
-
-    //public void MoveToCalculatedPos(float speed)
-    //{
-    //    Vector3 pos = gameObject.transform.globalPosition;
-    //    Vector3 destination = agent.GetDestination();
-    //    Vector3 direction = destination - pos;
-
-    //    gameObject.SetVelocity(direction.normalized * speed * Time.deltaTime);
-    //}
-
-    //public bool CheckDistance(Vector3 first, Vector3 second, float checkRadius)
-    //{
-    //    float deltaX = Math.Abs(first.x - second.x);
-    //    float deltaY = Math.Abs(first.y - second.y);
-    //    float deltaZ = Math.Abs(first.z - second.z);
-
-    //    return deltaX <= checkRadius && deltaY <= checkRadius && deltaZ <= checkRadius;
-    //}
-    //public void DestroyEnemy()
-    //{
-    //    Audio.PlayAudio(gameObject, "XS_Death");
-    //    InternalCalls.Destroy(gameObject);
-    //}
+   
 
     private GameObject GetParticles(GameObject go, string pName)
     {

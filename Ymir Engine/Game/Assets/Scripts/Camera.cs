@@ -7,43 +7,43 @@ using System.Text;
 using System.Threading.Tasks;
 using YmirEngine;
 
-public struct Cinematic
-{
-    public string _name;
-    public List<TravelKey> _keys;
-    public bool _isPlaying;
+//public struct Cinematic
+//{
+//    public string _name;
+//    public List<TravelKey> _keys;
+//    public bool _isPlaying;
 
-    public  Cinematic(string name)
-    {
-        _name = name;
-        _keys = new List<TravelKey>();
-        _isPlaying = false;
-    }
+//    public  Cinematic(string name)
+//    {
+//        _name = name;
+//        _keys = new List<TravelKey>();
+//        _isPlaying = false;
+//    }
 
-    public void PlayCinematic()
-    {
-        _isPlaying = true;
+//    public void PlayCinematic()
+//    {
+//        _isPlaying = true;
 
-        for (int i = 0; i < _keys.Count(); i++)
-        {
+//        for (int i = 0; i < _keys.Count(); i++)
+//        {
 
-        }
-    }
-}
-public struct TravelKey
-{
-    public Vector3 _position;
-    public Vector3 _rotation;
+//        }
+//    }
+//}
+//public struct TravelKey
+//{
+//    public Vector3 _position;
+//    public Vector3 _rotation;
 
-    public float _travelTime;
+//    public float _travelTime;
 
-    public TravelKey(Vector3 position, Vector3 rotation, float time)
-    {
-        _position = position;
-        _rotation = rotation;
-        _travelTime = time;
-    }
-}
+//    public TravelKey(Vector3 position, Vector3 rotation, float time)
+//    {
+//        _position = position;
+//        _rotation = rotation;
+//        _travelTime = time;
+//    }
+//}
 public class Camera : YmirComponent
 {
     public enum FOLLOW : int
@@ -76,35 +76,35 @@ public class Camera : YmirComponent
 
     public FOLLOW followState = FOLLOW.PLAYER;
 
-    public List<Cinematic> cinematics;
+    //public List<Cinematic> cinematics;
 
     public void Start()
     {
         // Cinematics
 
-        Cinematic testCinematic = new Cinematic("TestCinematic");
-        testCinematic._keys.Add(new TravelKey(new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0f), 3f));
+        //Cinematic testCinematic = new Cinematic("TestCinematic");
+        //testCinematic._keys.Add(new TravelKey(new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0f), 3f));
 
-        cinematics.Add(testCinematic);
+        //cinematics.Add(testCinematic);
 
-        // ----------
+        //// ----------
 
-        //gameObject.transform.localRotation = Quaternion.Euler(rotationOffset.x, rotationOffset.y, rotationOffset.z);
-        gameObject.SetRotation(Quaternion.Euler(rotationOffset.x, rotationOffset.y, rotationOffset.z));
+        ////gameObject.transform.localRotation = Quaternion.Euler(rotationOffset.x, rotationOffset.y, rotationOffset.z);
+        //gameObject.SetRotation(Quaternion.Euler(rotationOffset.x, rotationOffset.y, rotationOffset.z));
 
-        Debug.Log("Local Rotation: " + gameObject.transform.localRotation.ToString());
-        Debug.Log("Rotation Offset: " + Quaternion.Euler(rotationOffset.x, rotationOffset.y, rotationOffset.z).ToString());
+        //Debug.Log("Local Rotation: " + gameObject.transform.localRotation.ToString());
+        //Debug.Log("Rotation Offset: " + Quaternion.Euler(rotationOffset.x, rotationOffset.y, rotationOffset.z).ToString());
 
-        idleTimer = 0.0f;
-        delayTimer = 0.0f;
+        //idleTimer = 0.0f;
+        //delayTimer = 0.0f;
 
-        delay = false;
+        //delay = false;
 
-        playerObject = InternalCalls.GetGameObjectByName("Player");
-        if (playerObject != null)
-        {
-            player = playerObject.GetComponent<Player>();
-        }
+        //playerObject = InternalCalls.GetGameObjectByName("Player");
+        //if (playerObject != null)
+        //{
+        //    player = playerObject.GetComponent<Player>();
+        //}
 
         Audio.PlayEmbedAudio(gameObject);
     }
@@ -116,56 +116,56 @@ public class Camera : YmirComponent
 
         // Follow Player (If unrelated stuff gets added, write above this comment)
 
-        Vector3 newpos = playerObject.transform.localPosition + offset;
+        //Vector3 newpos = playerObject.transform.localPosition + offset;
 
-        float distance = Vector3.Distance(gameObject.transform.localPosition, newpos);
+        //float distance = Vector3.Distance(gameObject.transform.localPosition, newpos);
 
-        if (player.currentState == Player.STATE.IDLE)
-        {
-            idleTimer += Time.deltaTime;
+        //if (player.currentState == Player.STATE.IDLE)
+        //{
+        //    idleTimer += Time.deltaTime;
 
-            if (idleTimer > idleTimerMax)
-            {
+        //    if (idleTimer > idleTimerMax)
+        //    {
 
-                delay = true;
-                followState = FOLLOW.CINEMATIC;
-            }
-        }
-        else
-        {
-            idleTimer = 0.0f;
+        //        delay = true;
+        //        followState = FOLLOW.CINEMATIC;
+        //    }
+        //}
+        //else
+        //{
+        //    idleTimer = 0.0f;
 
-        }
+        //}
 
-        if (delay)
-        {
-            delayTimer += Time.deltaTime;
+        //if (delay)
+        //{
+        //    delayTimer += Time.deltaTime;
 
-            if (delayTimer < delayTimerMax)
-            {
-                return;
-            }
-            else
-            {
-                delay = false;
-                delayTimer = 0.0f;
-                followState = FOLLOW.PLAYER;
-            }
-        }
+        //    if (delayTimer < delayTimerMax)
+        //    {
+        //        return;
+        //    }
+        //    else
+        //    {
+        //        delay = false;
+        //        delayTimer = 0.0f;
+        //        followState = FOLLOW.PLAYER;
+        //    }
+        //}
 
-        switch (followState)
-        {
-            case FOLLOW.PLAYER:
+        //switch (followState)
+        //{
+        //    case FOLLOW.PLAYER:
 
-                //gameObject.transform.localPosition = (Vector3.Lerp(gameObject.transform.localPosition, newpos, Time.deltaTime * distance * constDelay));
+        //        //gameObject.transform.localPosition = (Vector3.Lerp(gameObject.transform.localPosition, newpos, Time.deltaTime * distance * constDelay));
 
-                break;
-            case FOLLOW.CINEMATIC:
+        //        break;
+        //    case FOLLOW.CINEMATIC:
 
-                //gameObject.transform.localPosition = (Vector3.Lerp(gameObject.transform.localPosition, new Vector3(0f, 0f, 0f), Time.deltaTime * delayTimerMax));
+        //        //gameObject.transform.localPosition = (Vector3.Lerp(gameObject.transform.localPosition, new Vector3(0f, 0f, 0f), Time.deltaTime * delayTimerMax));
 
-                break;
-        }
+        //        break;
+        //}
     }
 }
 

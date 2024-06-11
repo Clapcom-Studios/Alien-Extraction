@@ -1,0 +1,76 @@
+{
+    "Prefab": [
+        {
+            "Name": "AimSensor",
+            "Static": false,
+            "Tag": "Aim",
+            "UID": 722618905,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 2086505483,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -90.000007629394531,
+                        0,
+                        0
+                    ],
+                    "Scale": [
+                        9.9999990463256836,
+                        9.9999990463256836,
+                        9.9999990463256836
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 3,
+                    "Size": [
+                        50,
+                        150,
+                        1.25
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        75
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "Auto_Aim.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "enemies": 0
+                }
+            ]
+        }
+    ]
+}

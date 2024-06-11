@@ -59,33 +59,48 @@ public class UI_Item_Button : YmirComponent
 
     public void Update()
     {
-        if (updateStats && _menuReference.GetComponent<UI_Inventory>() != null && Equals(menuName, "Inventory Menu"))
+        if (updateStats)
         {
             if (item.currentSlot != ITEM_SLOT.NONE && item.currentSlot != ITEM_SLOT.SAVE)
             {
                 item.inSave = false;
 
-                if (!item.isEquipped)
+                if (_menuReference.GetComponent<UI_Inventory>() != null && Equals(menuName, "Inventory Menu"))
                 {
-                    item.isEquipped = true;
-                    item.inInventory = true;
+                    if (!item.isEquipped)
+                    {
+                        item.isEquipped = true;
+                        item.inInventory = true;
 
-                    item.UpdateStats();
-                    _menuReference.GetComponent<UI_Inventory>().UpdateTextStats();
+                        item.UpdateStats();
+                        _menuReference.GetComponent<UI_Inventory>().UpdateTextStats();
+                    }
                 }
             }
-            else
+            else /*if (item.currentSlot != ITEM_SLOT.SAVE)*/
             {
-                if (item.isEquipped)
+                if (item.currentSlot == ITEM_SLOT.SAVE)
                 {
-                    item.isEquipped = false;
+                    item.inSave = true;
+                }
+                else
+                {
+                    item.inSave = false;
                     item.inInventory = false;
+                }
 
-                    item.UpdateStats();
-                    _menuReference.GetComponent<UI_Inventory>().UpdateTextStats();
+                if (_menuReference.GetComponent<UI_Inventory>() != null && Equals(menuName, "Inventory Menu"))
+                {
+                    if (item.isEquipped)
+                    {
+                        item.isEquipped = false;
+                        item.inInventory = false;
+
+                        item.UpdateStats();
+                        _menuReference.GetComponent<UI_Inventory>().UpdateTextStats();
+                    }
                 }
             }
-
             updateStats = false;
         }
 
@@ -247,10 +262,23 @@ public class UI_Item_Button : YmirComponent
         //Debug.Log("isEquipped: " + _item.isEquipped.ToString());
         //Debug.Log("Rarity: " + _item.itemRarity.ToString());
 
-        // is empty && (is not equipped and not inventory || is equipped and in inventory && can be placed)
-        if (item.itemType == ITEM_SLOT.NONE && ((!_item.isEquipped && !Equals(menuName, "Inventory Menu")) ||
+        if (item.currentSlot == ITEM_SLOT.SAVE)
+        {
+            Debug.Log("_item.inSave " + _item.inSave.ToString());
+        }
+
+        // is empty && ((is not equipped and not inventory || is equipped and in inventory && can be placed) && not in save) || item in save slot
+        if (item.itemType == ITEM_SLOT.NONE &&
+
+            /*{*/(((!_item.isEquipped && !Equals(menuName, "Inventory Menu")) ||
+
             ((_item.isEquipped && _item.itemType == item.currentSlot ||
-            item.currentSlot == ITEM_SLOT.NONE || item.currentSlot == ITEM_SLOT.MATERIAL) && Equals(menuName, "Inventory Menu"))))
+            item.currentSlot == ITEM_SLOT.NONE ||
+            item.currentSlot == ITEM_SLOT.MATERIAL) &&
+            Equals(menuName, "Inventory Menu"))) &&
+            !_item.inSave) || /*}*/
+
+            item.currentSlot == ITEM_SLOT.SAVE && _item.inSave)
         {
             if (_item.isEquipped)
             {
@@ -343,5 +371,23 @@ public class UI_Item_Button : YmirComponent
         //item.inInventory = false;
         //item.inStash = false;
         //item.inCraft = false;
+    }
+
+    public void OnClickButton()
+    {
+        // GDD: The resin vessel works differently than the other crafts: When selected, it disappears and the max number of Resin Vessels is upgraded by 1.
+        if (item.name.Contains("Resin Vessel"))
+        {
+            // Increase vessels max capacity by one and reset current vessels
+            player.maxResinVessels++;
+            player.currentResinVessels = player.maxResinVessels;
+
+            player.UpdateResin();
+
+            // Delete vessel item
+            player.itemsList.Remove(item);
+            ResetSlot();
+            item = CreateItemBase();
+        }
     }
 }

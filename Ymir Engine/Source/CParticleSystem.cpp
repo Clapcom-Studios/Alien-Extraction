@@ -161,10 +161,11 @@ void CParticleSystem::OnInspector()
 				else
 				{
 					nameEmitter += allEmitters.at(i)->name;
-					nameEmitter.append(" ## ");
-					nameEmitter.append(std::to_string(i + 1));
+					/*nameEmitter.append(" ## ");
+					nameEmitter.append(std::to_string(i + 1));*/
 				}
 
+				ImGui::InputText(("Name ##" + std::to_string(i)).c_str(), &allEmitters.at(i)->name);
 				//Delete emmiter
 				
 				if (ImGui::Button(("Delete ##" + std::to_string(i)).c_str()))
@@ -408,6 +409,7 @@ JSON_Value* CParticleSystem::SaveEmmiterJSON2(ParticleEmitter* emitter)
 		json_object_set_number(root_object, "ModulesSize", emitter->modules.size());
 		//json_object_set_number(root_object, "OwnerID", UID);
 		json_object_set_number(root_object, "EmitterUID", emitter->UID);
+		json_object_set_string(root_object, "Name", emitter->name.c_str());
 
 		//Create array of all modules info
 		JSON_Array* arr;
@@ -576,6 +578,7 @@ JSON_Value* CParticleSystem::SaveEmmiterJSON2(ParticleEmitter* emitter)
 				EmitterRotation* eRotation = (EmitterRotation*)emitter->modules.at(i);
 
 				//Enums de options
+				json_object_set_boolean(child_object, "UpdateRotation", eRotation->updateRotation);
 				json_object_set_number(child_object, "AligmentMode", eRotation->currentAlignmentMode);
 				json_object_set_number(child_object, "WorldOrientation", eRotation->orientationFromWorld);
 				json_object_set_number(child_object, "AxisOrientation", eRotation->orientationOfAxis);

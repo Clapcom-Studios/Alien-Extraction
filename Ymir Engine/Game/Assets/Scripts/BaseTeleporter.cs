@@ -59,8 +59,6 @@ public class BaseTeleporter : YmirComponent
 
             _setNormal = true;
 
-            csPlayer.weaponType = selectedWeapon;
-
             Debug.Log("scene: " + button.GetComponent<Button_GoToScene>().sceneName);
         }
         else if ((UI_STATE)UI.GetUIState(button) != UI_STATE.DISABLED &&

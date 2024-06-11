@@ -27,7 +27,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_0:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaDefault");
-                ammo = 200;
+                ammo = 100;
                 fireRate = 0.03f;
                 damage = 2.4f;
                 damageEscalation = 0.006f;
@@ -36,7 +36,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_1:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL1");
-                ammo = 200;
+                ammo = 100;
                 fireRate = 0.03f;
                 damage = 3;
                 damageEscalation = 0.01f;
@@ -45,7 +45,7 @@ public class Plasma : Weapon
             case UPGRADE.LVL_2:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL2");
-                ammo = 300;
+                ammo = 200;
                 fireRate = 0.02f;
                 damage = 3.6f;
                 damageEscalation = 0.01f;
@@ -54,18 +54,18 @@ public class Plasma : Weapon
             case UPGRADE.LVL_3_ALPHA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3A");
-                ammo = 300;
+                ammo = 200;
                 fireRate = 0.015f;
-                damage = 5f;
-                damageEscalation = 0.015f;
+                damage = 6f;
+                damageEscalation = 0.018f;
 
                 break;
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesPlasmaLVL3B");
-                ammo = 300;
+                ammo = 350;
                 fireRate = 0.02f;
-                damage = 4f;
+                damage = 4.4f;
                 damageEscalation = 0.01f;
                 reloadTime = 2f;
 
@@ -84,7 +84,11 @@ public class Plasma : Weapon
 
         Audio.PlayAudio(gameObject, "W_PlasmaShot");
         Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
-        Particles.SetMaxDistance(particlesGO, range);
+        float distanceParticles = gameObject.RaycastLenght(gameObject.transform.globalPosition + offset, gameObject.transform.GetForward(), range);
+        if (distanceParticles == 0) { distanceParticles = range; } //Si no impacta con nada rango maximo
+        else if (distanceParticles < range) { distanceParticles *= 0.8f; }
+        Particles.SetMaxDistance(particlesGO, distanceParticles);
+        Debug.Log("Distancia particles es:" + distanceParticles);
         Particles.PlayParticlesTrigger(particlesGO);
 
         GameObject target = null;

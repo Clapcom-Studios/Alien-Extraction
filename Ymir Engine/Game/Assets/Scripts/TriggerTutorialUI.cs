@@ -8,7 +8,7 @@ using YmirEngine;
 
 public class TriggerTutorialUI : YmirComponent
 {
-
+    
     public GameObject tutorialUI;
     bool show;
 

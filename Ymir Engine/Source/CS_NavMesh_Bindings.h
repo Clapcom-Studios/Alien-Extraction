@@ -161,7 +161,7 @@ MonoObject* CS_GetDestination(MonoObject* go)
 	 distance.x = comp->path[0].x - trans->GetGlobalPosition().x;
 	 distance.y = comp->path[0].y - trans->GetGlobalPosition().y;
 	 distance.z = comp->path[0].z - trans->GetGlobalPosition().z;
-	if (Sqrt(distance.x * distance.x + distance.y * distance.y + distance.z * distance.z) < comp->properties.stoppingDistance)
+	if (Sqrt(distance.x * distance.x + distance.z * distance.z) < comp->properties.stoppingDistance)
 	{
 		if (comp->path.size() > 1)
 			comp->path.erase(comp->path.begin());

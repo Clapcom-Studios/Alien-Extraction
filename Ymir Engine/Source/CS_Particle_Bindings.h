@@ -90,12 +90,37 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 					if (base->currentShape == SpawnAreaShape::PAR_CONE)
 					{
 						float anguloFowardPlayer = math::Atan2(-directionShoot.z, directionShoot.x);
-						pos->direction1 = { math::Cos(anguloFowardPlayer + angle),0.5, -math::Sin(anguloFowardPlayer + angle) };
-						pos->direction2 = { math::Cos(anguloFowardPlayer - angle),-0.5,-math::Sin(anguloFowardPlayer - angle) };
+						pos->direction1 = { math::Cos(anguloFowardPlayer + angle),0.2, -math::Sin(anguloFowardPlayer + angle) };
+						pos->direction2 = { math::Cos(anguloFowardPlayer - angle),-0.2,-math::Sin(anguloFowardPlayer - angle) };
 					}
 					else
 					{
 						pos->direction1 = directionShoot;
+					}
+				}
+
+				//Rotar los emitters que estan en modo free rotation para mirar en Y a donde toca
+				if (particleSystem->allEmitters.at(i)->modules.at(j)->type == EmitterType::PAR_ROTATION)
+				{
+					float anguloFowardPlayer = math::Atan2(-directionShoot.z, directionShoot.x);
+					EmitterRotation* rot = (EmitterRotation*)particleSystem->allEmitters.at(i)->modules.at(j);
+					for (size_t j = 0; j < particleSystem->allEmitters.at(i)->listParticles.size(); j++)
+					{
+
+					}
+					if (rot->orientationFromWorld == OrientationDirection::PAR_FREE_ORIENT /*&& particleSystem->allEmitters.at(i)->listParticles.at(j)->lifetime<0.1f*/)
+					{
+						//LOG("Angle was %f", RadToDeg(anguloFowardPlayer));
+
+						rot->freeWorldRotation = { rot->freeWorldRotation.x,rot->freeWorldRotation.y,RadToDeg(anguloFowardPlayer ) +90.0f };
+						rot->WorldAlign();
+						
+						//rot->SetRotation(Quat::FromEulerXYZ(DegToRad(rot->freeWorldRotation.x), DegToRad(rot->freeWorldRotation.y), anguloFowardPlayer + DegToRad(-135.0f)));
+						//Quat identidad = Quat::identity;
+						//Quat rotacion = Quat::RotateAxisAngle({ 0.0f, 1.0f, 0.0f }, anguloFowardPlayer);
+						//rot->SetRotation(identidad.Mul( rotacion));
+
+						//LOG("Rotation was %f", rot->freeWorldRotation.z);
 					}
 				}
 			}
@@ -110,7 +135,7 @@ void ParticleShoot(MonoObject* go, MonoObject* vector, float angle = 0)
 //This function set the initial pos of a emitter in front of the player at X distance
 void ParticlesForward(MonoObject* go, MonoObject* vector, int emitter, float distance)
 {
-	if (External == nullptr) return;
+	if (External == nullptr) return;	
 
 	//Vector hacia el que mira el player
 	float3 newOrigin = External->moduleMono->UnboxVector(vector);
@@ -238,7 +263,7 @@ void RestartParticles(MonoObject* go) {
 	GameObject* GO = External->moduleMono->GameObject_From_CSGO(go);
 	if (GO == nullptr)
 	{
-		LOG("[ERROR] No Particle Game Object found (be sure the name is correct!)");
+		//LOG("[ERROR] No Particle Game Object found (be sure the name is correct!)");
 		return;
 	}
 
@@ -277,11 +302,53 @@ void SetMaxDistance(MonoObject* go, float range)
 		{
 			EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(j)->modules.at(0);
 
-			if (base->hasDistanceLimit)
+			if (base->hasDistanceLimit && range != 0)
 			{
 				base->distanceLimit = range;
 			}
 		}
+	}
+	else
+	{
+		LOG("[WARNING] Couldn't play the particle effect %s. Component was null pointer");
+	}
+}
+
+void SetEmittersPosition(MonoObject* go, MonoObject* vector, float emitter = -1)
+{
+	if (External == nullptr) return;
+
+	//Vector hacia el que mira el player
+	float3 position = External->moduleMono->UnboxVector(vector);
+
+	//Game object del player
+	//Se necesita para sacar el componente particula y por ende su EmitterPosition
+	GameObject* GO = External->moduleMono->GameObject_From_CSGO(go);
+	if (GO == nullptr)
+	{
+		LOG("[ERROR] No Particle Game Object found (be sure the name is correct!)");
+		return;
+	}
+
+	CParticleSystem* particleSystem = dynamic_cast<CParticleSystem*>(GO->GetComponent(ComponentType::PARTICLE));
+
+	if (particleSystem != nullptr)
+	{
+		if(emitter == -1) 
+		{
+			for (int i = 0; i < particleSystem->allEmitters.size(); i++)
+			{
+				EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(i)->modules.at(0);//Es el base
+				base->emitterOrigin = position;
+
+			}
+		}
+		else
+		{
+			EmitterBase* base = (EmitterBase*)particleSystem->allEmitters.at(emitter)->modules.at(0);//Es el base
+			base->emitterOrigin = position;
+		}
+		
 	}
 	else
 	{

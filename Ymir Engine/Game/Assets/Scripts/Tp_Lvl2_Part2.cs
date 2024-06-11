@@ -12,9 +12,10 @@ public class Tp_Lvl2_Part2 : YmirComponent
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
+    private float finishTimer = 2f;
     public void Start()
     {
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+        loadSceneImg = InternalCalls.GetGameObjectByName("Load Scene Lvl2_2");
 
         if (loadSceneImg != null)
         {
@@ -28,12 +29,19 @@ public class Tp_Lvl2_Part2 : YmirComponent
     {
         if (loadScene)
         {
-            InternalCalls.LoadScene("Assets/LVL2_LAB_PART2_FINAL/LVL2_LAB_PART2_COLLIDERS.yscene");
-            loadScene = false;
+            if (finishTimer >= 0)
+            {
+                finishTimer -= Time.deltaTime;
+            }
+            if (finishTimer <= 0)
+            {
+                InternalCalls.LoadScene("Assets/LVL2_LAB_PART2_FINAL/LVL2_LAB_PART2_COLLIDERS.yscene");
+                loadScene = false;
 
             return;
+            }
         }
-
+    
         return;
     }
 
@@ -45,6 +53,7 @@ public class Tp_Lvl2_Part2 : YmirComponent
             Audio.StopAllAudios();
             if (loadSceneImg != null)
             {
+                
                 loadSceneImg.SetActive(true);
             }
 

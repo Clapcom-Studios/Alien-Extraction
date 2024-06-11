@@ -3511,6 +3511,12 @@ void JsonFile::GetComponent(const JSON_Object* componentObject, G_UI* gameObject
 			//Get cuantos settings tiene el emitter
 			uint32_t UIDofEmitter = json_object_get_number(json_array_get_object(emittersArray, i), "EmitterUID");
 			pEmmiter->UID = UIDofEmitter;
+			const char* name = json_object_get_string(json_array_get_object(emittersArray, i), "Name");
+			if(name == nullptr)
+			{
+				name = "";
+			}
+			pEmmiter->name.assign(name);
 			for (int j = 0; j < numSettings; j++)
 			{
 				JSON_Object* modulo = json_array_get_object(settingsArray, j);
@@ -3655,7 +3661,8 @@ void JsonFile::GetComponent(const JSON_Object* componentObject, G_UI* gameObject
 					EmitterRotation* eRot = (EmitterRotation*)instancia;
 
 					//Enums of settings
-					eRot->currentAlignmentMode = (BillboardType)json_object_get_number(modulo, "AligmentMode");;
+					eRot->updateRotation = json_object_get_boolean(modulo, "UpdateRotation");
+					eRot->currentAlignmentMode = (BillboardType)json_object_get_number(modulo, "AligmentMode");
 					eRot->orientationFromWorld = (OrientationDirection)json_object_get_number(modulo, "WorldOrientation");
 					eRot->orientationOfAxis = (OrientationDirection)json_object_get_number(modulo, "AxisOrientation");
 

@@ -18,7 +18,7 @@ public class Auto_Aim : YmirComponent
     private Player player;
 
     private float angle;
-	public void Start()
+    public void Start()
 	{
         enemies = new List<GameObject>();
 		target = null;
@@ -30,34 +30,38 @@ public class Auto_Aim : YmirComponent
 
     public void Update()
 	{
-        gameObject.SetPosition(player.gameObject.transform.globalPosition + (player.currentWeapon.gameObject.transform.GetForward() * 75f));
+        gameObject.SetPosition(player.gameObject.transform.globalPosition + (player.currentWeapon.gameObject.transform.GetForward() * 90f));
         gameObject.SetRotation(playerObject.transform.globalRotation * new Quaternion(0.7071f, 0.0f, 0.0f, -0.7071f)); // <- -90 Degree Quat
 
         target = null;
+        SetTarget();
 
-		SetTarget();
+        player.isAiming = false;
 
         if (target != null)
 		{
-			float cross = gameObject.transform.globalPosition.magnitude * target.transform.globalPosition.magnitude;
+            Vector3 direction = target.transform.globalPosition - playerObject.transform.globalPosition;
+            direction = direction.normalized;
+            angle = (float)Math.Atan2(direction.x, direction.z);
 
-			angle = (float)Math.Atan2(cross, Vector3.Dot(gameObject.transform.globalPosition, target.transform.globalPosition));
-			//Debug.Log("Angle: " + angle);		
+            player.aimAngle = angle;
+            player.isAiming = true;
+
+
         }
-	}
 
-	public void OnCollisionEnter(GameObject other)
+        enemies.Clear();
+    }
+
+    public void OnCollisionStay(GameObject other)
 	{
-  //      Debug.Log("Object Detected - " + other.Name);
+        if (other.Tag == "Enemy")
+		{
+			if (!enemies.Contains(other)) { enemies.Add(other); }
+		}
+    }
 
-  //      if (other.Tag == "Enemy")
-		//{
-		//	Debug.Log("Enemy Detected - " + other.Name);
-		//	if (!enemies.Contains(other)) {  enemies.Add(other); }
-		//}
-	}
-
-	private void SetTarget()
+    private void SetTarget()
 	{
 		float shortestDistance = 0f;
 
@@ -70,8 +74,6 @@ public class Auto_Aim : YmirComponent
 				target = enemies[i];
             }
         }
-
-		Debug.Log("Selected Target name: " + target.Name);
 	}
 
 	public void AddEnemy(GameObject enemy)

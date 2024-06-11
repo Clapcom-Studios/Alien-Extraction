@@ -10,6 +10,7 @@ public class Alien_Head_Trap : YmirComponent
 {
 	private GameObject _head = null;
 	private GameObject _tongue = null;
+	private GameObject particles = null;
 
 	private float time = 0;
 	private float animationTime = 2;
@@ -28,6 +29,7 @@ public class Alien_Head_Trap : YmirComponent
 		_head = InternalCalls.CS_GetChild(gameObject, 0);
 		_tongue = InternalCalls.CS_GetChild(gameObject, 1);
 		endPosition = InternalCalls.CS_GetChild(gameObject, 2);
+		particles = InternalCalls.CS_GetChild(gameObject,3);
 
 		if (_tongue != null )
 		{
@@ -65,6 +67,8 @@ public class Alien_Head_Trap : YmirComponent
 	{
 		if (other.Tag == "Player" && time <= 0)
 		{
+			Audio.PlayAudio(gameObject, "AlienHead_Shoot");
+			Particles.PlayParticles(particles);
 			time = animationTime;
 			startTime = Time.time;
 		}

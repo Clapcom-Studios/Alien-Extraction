@@ -21,6 +21,7 @@ public class Loot_Chest : YmirComponent
     Random random = new Random();
 
     private GameObject popup;
+    public GameObject particlesGO;
 
     public string itemPath = "";
 
@@ -29,6 +30,7 @@ public class Loot_Chest : YmirComponent
         pos = gameObject.transform.localPosition;
         spawnRange = 15;
         popup = InternalCalls.GetChildrenByName(gameObject, "Pop-Up");
+        particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesLootChest");
 
         //Saefty Check - Si no hay ningun item predefinido poner un item generico: acidvesicle_common
         if (itemPath == "")
@@ -50,7 +52,7 @@ public class Loot_Chest : YmirComponent
 
             if (time > 0)
             {
-                InternalCalls.CS_GetChild(gameObject, 0).transform.localRotation = Quaternion.Euler(180f, velocity * (animationTime - time), 0f);// GetGameObjectByName("PROP_Base_Chest_Lid").transform.localRotation = Quaternion.Euler(180f, velocity * time, 0f);
+                InternalCalls.CS_GetChild(gameObject, 1).transform.localRotation = Quaternion.Euler(180f, velocity * (animationTime - time), 0f);// GetGameObjectByName("PROP_Base_Chest_Lid").transform.localRotation = Quaternion.Euler(180f, velocity * time, 0f);
                 time -= Time.deltaTime;
 
                 if (time <= 0 && !isOpened)
@@ -78,7 +80,10 @@ public class Loot_Chest : YmirComponent
             if (itemPath != null)
             {
                 time = animationTime;
+                Particles.PlayParticlesTrigger(particlesGO);
                 isOpening = true;
+
+                if (time == 4) Particles.StopParticles(particlesGO);
             }
         }
     }

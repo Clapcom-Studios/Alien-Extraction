@@ -9,16 +9,16 @@ using YmirEngine;
 public class Tp_To_Lvl1 : YmirComponent
 {
     // Loading scene
-    private GameObject loadSceneImg;
+    private GameObject loadSceneLvl1;
     private bool loadScene = false;
 
     public void Start()
     {
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+        loadSceneLvl1 = InternalCalls.GetGameObjectByName("Loading Scene Lvl1");
 
-        if (loadSceneImg != null)
+        if (loadSceneLvl1 != null)
         {
-            loadSceneImg.SetActive(false);
+            loadSceneLvl1.SetActive(false);
         }
 
         loadScene = false;
@@ -43,9 +43,9 @@ public class Tp_To_Lvl1 : YmirComponent
         if (other.Tag == "Player")
         {
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadSceneLvl1 != null)
             {
-                loadSceneImg.SetActive(true);
+                loadSceneLvl1.SetActive(true);
             }
 
             loadScene = true;

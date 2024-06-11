@@ -65,7 +65,7 @@ public class UI_Crafting_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateCraftingVertical(gameObject, rows, cols, true, navigateY, downGrid, upGrid, bounceY);
+            UI.NavigateCraftingHorizontal(gameObject, rows, cols, true, navigateX, leftGrid, rightGrid, bounceX);
         }
 
         else if ((Input.GetLeftAxisX() < 0 || Input.GetGamepadButton(GamePadButton.DPAD_LEFT) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.A) == KeyState.KEY_DOWN) && _canTab)
@@ -75,8 +75,8 @@ public class UI_Crafting_Grid : YmirComponent
                 Audio.PlayAudio(audioSource, "UI_MoveHover");
             }
 
-            UI.NavigateCraftingVertical(gameObject, rows, cols, false, navigateY, downGrid, upGrid, bounceY);
             _canTab = false;
+            UI.NavigateCraftingHorizontal(gameObject, rows, cols, false, navigateX, leftGrid, rightGrid, bounceX);
         }
 
         else if ((Input.GetLeftAxisY() > 0 || Input.GetGamepadButton(GamePadButton.DPAD_DOWN) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.S) == KeyState.KEY_DOWN) && _canTab)
@@ -87,7 +87,7 @@ public class UI_Crafting_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateCraftingHorizontal(gameObject, rows, cols, true, navigateX, leftGrid, rightGrid, bounceX);
+            UI.NavigateCraftingVertical(gameObject, rows, cols, true, navigateY, downGrid, upGrid, bounceY);
         }
 
         else if ((Input.GetLeftAxisY() < 0 || Input.GetGamepadButton(GamePadButton.DPAD_UP) == KeyState.KEY_DOWN || Input.GetKey(YmirKeyCode.W) == KeyState.KEY_DOWN) && _canTab)
@@ -98,7 +98,7 @@ public class UI_Crafting_Grid : YmirComponent
             }
 
             _canTab = false;
-            UI.NavigateCraftingHorizontal(gameObject, rows, cols, false, navigateX, leftGrid, rightGrid, bounceX);
+            UI.NavigateCraftingVertical(gameObject, rows, cols, false, navigateY, downGrid, upGrid, bounceY);
         }
 
         return;

@@ -769,7 +769,18 @@ void Shader::ExtractUniformsFromShaderCode(const std::string& shaderCode)
 				}
 				else if (type == "bool") {
 
-					std::unique_ptr<bool> value = std::make_unique<bool>(true);
+					bool isPlayerHit; 
+
+					if (name == "playerHit") // I'm really sorry for this, but it had to be done ;w;
+					{
+						isPlayerHit = false;
+					}
+					else 
+					{
+						isPlayerHit = true;
+					}
+
+					std::unique_ptr<bool> value = std::make_unique<bool>(isPlayerHit);
 					this->AddUniform(name, std::move(value), UniformType::boolean, 1);
 					
 				}

@@ -87,6 +87,11 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.InternalCalls::SpawnItem", SpawnItemCS);
 	mono_add_internal_call("YmirEngine.InternalCalls::GetCurrentMap", GetCurrentMapCS);
 	mono_add_internal_call("YmirEngine.InternalCalls::SetColor", SetColorMaterial);
+	mono_add_internal_call("YmirEngine.InternalCalls::SetPlayerHitBoolean", SetPlayerHitBoolean);
+
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetBothFOV", CS_SetBothFOV);
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetHorizontalFOV", CS_SetHorizontalFOV);
+	mono_add_internal_call("YmirEngine.InternalCalls::CS_SetVerticalFOV", CS_SetVerticalFOV);
 
 #pragma region GameObject
 
@@ -137,9 +142,12 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.GameObject::SetPosition", SetPosition);
 	mono_add_internal_call("YmirEngine.GameObject::SetColliderSize", SetColliderSize);
 	mono_add_internal_call("YmirEngine.GameObject::GetColliderSize", GetColliderSize);
+	mono_add_internal_call("YmirEngine.GameObject::GetMass", GetMass);
+	mono_add_internal_call("YmirEngine.GameObject::SetMass", SetMass);
 	mono_add_internal_call("YmirEngine.GameObject::ClearForces", ClearForces);
 	mono_add_internal_call("YmirEngine.GameObject::RaycastHit", RaycastHit);
 	mono_add_internal_call("YmirEngine.GameObject::RaycastTest", RaycastTest);
+	mono_add_internal_call("YmirEngine.GameObject::RaycastLenght", RaycastLenght);
 	mono_add_internal_call("YmirEngine.GameObject::SetColliderActive", SetColliderActive);
 
 #pragma endregion
@@ -180,6 +188,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 
 	// Slider
 	mono_add_internal_call("YmirEngine.UI::SliderEdit", SliderEdit);
+	mono_add_internal_call("YmirEngine.UI::SetSliderFill", SetSliderFill);
 	mono_add_internal_call("YmirEngine.UI::SliderSetRange", SliderSetRange);
 	mono_add_internal_call("YmirEngine.UI::SliderSetMin", SliderSetMin);
 	mono_add_internal_call("YmirEngine.UI::SliderSetMax", SliderSetMax);
@@ -190,8 +199,8 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.UI::SwitchPosition", SwitchPosition);
 	mono_add_internal_call("YmirEngine.UI::NavigateGridHorizontal", NavigateGridHorizontal);
 	mono_add_internal_call("YmirEngine.UI::NavigateGridVertical", NavigateGridVertical);
-	mono_add_internal_call("YmirEngine.UI::NavigateCraftingHorizontal", NavigateCraftingHorizontal);
 	mono_add_internal_call("YmirEngine.UI::NavigateCraftingVertical", NavigateCraftingVertical);
+	mono_add_internal_call("YmirEngine.UI::NavigateCraftingHorizontal", NavigateCraftingHorizontal);
 	mono_add_internal_call("YmirEngine.UI::CompareStringToName", CompareStringToName);
 	mono_add_internal_call("YmirEngine.UI::SetActiveAllUI", SetActiveAllUI);
 	mono_add_internal_call("YmirEngine.UI::SetFirstFocused", SetFirstFocused);
@@ -266,6 +275,7 @@ ModuleMonoManager::ModuleMonoManager(Application* app, bool start_enabled) : Mod
 	mono_add_internal_call("YmirEngine.Particles::ParticlesForward", ParticlesForward);
 	mono_add_internal_call("YmirEngine.Particles::ParticlesSetDirection", ParticlesSetDirection);
 	mono_add_internal_call("YmirEngine.Particles::SetMaxDistance", SetMaxDistance);
+	mono_add_internal_call("YmirEngine.Particles::SetEmittersPosition", SetEmittersPosition);
 
 #pragma endregion
 

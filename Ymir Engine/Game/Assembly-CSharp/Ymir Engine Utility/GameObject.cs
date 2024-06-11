@@ -212,10 +212,28 @@ namespace YmirEngine
         public extern bool RaycastTest(object origin, object direction, float rayLenght);
 
         /// <summary>
+        /// Returns the distance from a gameObject that the raycast has collided with
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern float RaycastLenght(object origin, object direction, float rayLenght);
+
+        /// <summary>
         /// Set collider active/inactive
         /// </summary>
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         public extern void SetColliderActive(bool isActive);
+
+        /// <summary>
+        /// Get collider mass
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern float GetMass();
+        /// <summary>
+        /// Set collider mass
+        /// </summary>
+        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+        public extern void SetMass(float mass);
+
 
         /// Make the GO look at the camera
         /// </summary>

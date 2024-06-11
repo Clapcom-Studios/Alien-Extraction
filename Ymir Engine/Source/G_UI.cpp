@@ -174,7 +174,7 @@ bool G_UI::AddUIComponent(UI_TYPE type, float x, float y, GameObject* parent)
 	break;
 	case UI_TYPE::IMAGE:
 	{
-		component = AddImage("Assets/InGameConeptPng.png", x, y);
+		component = AddImage("Assets/ImgDefault.png", x, y);
 	}
 	break;
 	case UI_TYPE::TEXT:

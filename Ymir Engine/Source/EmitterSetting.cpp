@@ -1708,7 +1708,7 @@ float EmitterPosition::GetModuleVec(float3 vec)
 
 EmitterRotation::EmitterRotation()
 {
-	horAlign = true;
+	updateRotation = true;
 	currentAlignmentMode = BillboardType::PAR_LOOK_GAME_CAMERA;
 	orientationFromWorld = OrientationDirection::PAR_Y_AXIS;
 	orientationOfAxis = OrientationDirection::PAR_Y_AXIS;
@@ -1716,10 +1716,6 @@ EmitterRotation::EmitterRotation()
 }
 
 void EmitterRotation::Spawn(ParticleEmitter* emitter, Particle* particle)
-{
-}
-
-void EmitterRotation::Update(float dt, ParticleEmitter* emitter)
 {
 	switch (currentAlignmentMode)
 	{
@@ -1741,20 +1737,51 @@ void EmitterRotation::Update(float dt, ParticleEmitter* emitter)
 		break;
 	}
 
-	if(currentAlignmentMode!= BillboardType::PAR_AXIS_ALIGNED)
+	particle->worldRotation = rotation;
+}
+
+void EmitterRotation::Update(float dt, ParticleEmitter* emitter)
+{
+	if(updateRotation)
 	{
-		for (int i = 0; i < emitter->listParticles.size(); i++)
+		switch (currentAlignmentMode)
 		{
-			//emitter->listParticles.at(i)->worldRotation = tempRot;
-			emitter->listParticles.at(i)->worldRotation = rotation;
+		case BillboardType::PAR_LOOK_EDITOR_CAMERA:
+			EditorCameraAlign();
+			break;
+		case BillboardType::PAR_LOOK_GAME_CAMERA:
+			GameCameraAlign();
+			break;
+		case BillboardType::PAR_WORLD_ALIGNED:
+			WorldAlign();
+			break;
+		case BillboardType::PAR_AXIS_ALIGNED:
+			AxisAlign(emitter); //Este calculo requiere de tantas cosas que necesita propio acceso a emitter y recorrer cada particula
+			break;
+		case BillboardType::PAR_BILLBOARDING_MODE_END:
+			break;
+		default:
+			break;
+		}
+
+		if(currentAlignmentMode!= BillboardType::PAR_AXIS_ALIGNED)
+		{
+			for (int i = 0; i < emitter->listParticles.size(); i++)
+			{
+				//emitter->listParticles.at(i)->worldRotation = tempRot;
+				emitter->listParticles.at(i)->worldRotation = rotation;
+			}
 		}
 	}
+	
 	
 }
 
 void EmitterRotation::OnInspector()
 {
 	std::string tempAlignment;
+
+	ImGui::Checkbox("Update Rotation ## ROT", &updateRotation);
 
 	switch (currentAlignmentMode) 
 	{
@@ -2225,6 +2252,14 @@ EmitterImage::EmitterImage()
 	imgPath = "Assets/Particles/IMAGES/particleExample.png";
 	firstInit = true;
 	//SetImage(imgPath);
+}
+
+EmitterImage::~EmitterImage()
+{
+	if (rTexTemp != nullptr) {
+		delete rTexTemp;
+		rTexTemp = nullptr;
+	}
 }
 
 void EmitterImage::SetImage(std::string imagePath)

@@ -15,8 +15,9 @@ public class SMG : Weapon
         playerObject = InternalCalls.GetGameObjectByName("Player");
         player = playerObject.GetComponent<Player>();
 
-        range = 100;
-        reloadTime = 1.056f;
+        range = 150;
+        //reloadTime = 1.056f;
+        reloadTime = 1.556f;
 
         switch (_upgrade)
         {
@@ -25,8 +26,8 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgDefault");
                 ammo = 35;
                 fireRate = 0.07f;
-                damage = 5;
-                reloadTime = 1.8f;
+                damage = 9;
+                //reloadTime = 1.556f;
 
                 break;
             case UPGRADE.LVL_1:
@@ -34,8 +35,8 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL1");
                 ammo = 35;
                 fireRate = 0.06f;
-                damage = 9;
-                reloadTime = 1.6f;
+                damage = 18;
+                //reloadTime = 1.456f;
 
                 break;
             case UPGRADE.LVL_2:
@@ -43,8 +44,7 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL2");
                 ammo = 40;
                 fireRate = 0.05f;
-                damage = 11;
-                reloadTime = 1.5f;
+                damage = 20;
 
                 break;
             case UPGRADE.LVL_3_ALPHA:
@@ -52,17 +52,16 @@ public class SMG : Weapon
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3A");
                 ammo = 110;
                 fireRate = 0.04f;
-                damage = 13;
-                reloadTime = 1.1f;
+                damage = 27;
+                //reloadTime = 1.556f;
 
                 break;
             case UPGRADE.LVL_3_BETA:
 
                 particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesSmgLVL3B");
                 ammo = 40;
-                fireRate = 0.02f;
-                damage = 10;
-                reloadTime = 1.5f;
+                fireRate = 0.015f;
+                damage = 22;
 
                 break;
             default:
@@ -78,7 +77,13 @@ public class SMG : Weapon
         fireRateTimer = fireRate;
 
         Audio.PlayAudio(gameObject, "W_FirearmShot");
+        float distanceParticles = gameObject.RaycastLenght(gameObject.transform.globalPosition + offset, gameObject.transform.GetForward(), range);
+        if (distanceParticles == 0) { distanceParticles = range; } //Si no impacta con nada rango maximo
+        else if(distanceParticles<range) { distanceParticles *= 0.75f; }
+        Particles.SetMaxDistance(particlesGO, distanceParticles);
+        Debug.Log("Distancia particles es:" + distanceParticles);
         Particles.ParticleShoot(particlesGO, gameObject.transform.GetForward());
+        
         Particles.PlayParticlesTrigger(particlesGO);
 
         GameObject target;

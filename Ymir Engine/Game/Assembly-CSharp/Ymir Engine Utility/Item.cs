@@ -58,8 +58,6 @@ namespace YmirEngine
 
         // Menus management
         public bool inInventory = false;
-        //public bool inStash = false;
-        public bool inCraft = false;
 
         public string dictionaryName = "";
 
@@ -97,8 +95,6 @@ namespace YmirEngine
             inSave = other.inSave;
 
             inInventory = other.inInventory;
-            //inStash = other.inStash;
-            inCraft = other.inCraft;
             dictionaryName = other.dictionaryName;
         }
 
@@ -115,8 +111,9 @@ namespace YmirEngine
              " isEquipped: " + isEquipped.ToString() +
              " name: " + name +
              " description: " + description +
-             " imagePath: " + imagePath +
-             " inInventory: " + inInventory.ToString());
+             //" imagePath: " + imagePath +
+             " inInventory: " + inInventory.ToString() +
+             " inSave: " + inSave.ToString());
         }
     }
 
@@ -190,7 +187,7 @@ namespace YmirEngine
                 Globals.GetPlayerScript().currentWeapon.reloadTime += (0/*reloadSpeed*/ * e); // TODO: create aux to increase with items
                 Globals.GetPlayerScript().currentWeapon.fireRate += (fireRate * e);
             }
-            
+
             Globals.GetPlayerScript().damageMultiplier += (damageMultiplier * e);
         }
 

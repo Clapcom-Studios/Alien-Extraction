@@ -29,8 +29,8 @@ public class DroneXenomorphAttack : YmirComponent
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
         damageTimer = 0f;
-        clawDamage = 150f;
-        tailDamage = 200f;
+        clawDamage = 200f;
+        tailDamage = 250f;
         attackRange = 100f;
         attackSpeed = 1f;
     }

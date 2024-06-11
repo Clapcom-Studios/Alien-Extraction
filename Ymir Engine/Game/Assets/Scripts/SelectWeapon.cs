@@ -38,6 +38,7 @@ public class SelectWeapon : YmirComponent
         if (levelSelector.selectedWeapon != (WEAPON_TYPE)weapon)
         {
             levelSelector.selectedWeapon = (WEAPON_TYPE)weapon;
+            Globals.GetPlayerScript().weaponType = (WEAPON_TYPE)weapon;
         }
         //else
         //{

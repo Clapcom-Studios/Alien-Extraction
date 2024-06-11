@@ -12,7 +12,7 @@ public class SpitterAcidShrapnel : YmirComponent
 
     private float movementSpeed;
 
-    private float damage = 150f;
+    private float damage = 125f;
 
     private GameObject player;
 
@@ -22,12 +22,17 @@ public class SpitterAcidShrapnel : YmirComponent
 
     private float destroyTimer;
 
+    private float mass;
+
     public void Start()
     {
         movementSpeed = 1000f;
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
-        gameObject.SetImpulse(gameObject.transform.GetForward() * movementSpeed * Time.deltaTime);
+        damage = gameObject.GetMass();
+        mass = gameObject.GetMass();
+        gameObject.SetMass(1.0f);
+        gameObject.SetImpulse(gameObject.transform.GetForward() * movementSpeed * mass * Time.deltaTime);
         destroyed = false;
         destroyTimer = 0f;
     }
@@ -48,6 +53,10 @@ public class SpitterAcidShrapnel : YmirComponent
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
             healthScript.TakeDmg(damage);
+            destroyed = true;
+        }
+        else if (other.Tag == "World")
+        {
             destroyed = true;
         }
     }

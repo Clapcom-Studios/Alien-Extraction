@@ -1,0 +1,89 @@
+{
+    "Prefab": [
+        {
+            "Name": "HoloScreen6",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 2093663094,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_LAB_PART1_FINAL.fbx",
+            "Parent UID": 1608520299,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 1285938222,
+                    "Vertex Count": 196,
+                    "Index Count": 438
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/SpecularLight.glsl",
+                    "Uniforms": [
+                        {
+                            "numLights": 1,
+                            "transparency": 1,
+                            "camPos": [
+                                -272.11309814453125,
+                                206.3271484375,
+                                469.47088623046875
+                            ],
+                            "numPointLights": 1,
+                            "map": 1,
+                            "enableDiffuse": true,
+                            "enableSpecular": true,
+                            "enableNormal": true,
+                            "enableAmbient": true,
+                            "enableHeight": true,
+                            "enableEmissive": true,
+                            "enableLighting": true,
+                            "ambient": 1,
+                            "specularLight": 1,
+                            "normalIntensity": 1,
+                            "emissive": 1
+                        }
+                    ],
+                    "Diffuse_ID": 1766,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen1_v1\/TEX_PROP_HolographicScreen1_v1_D.png",
+                    "Diffuse_UID": 1609183593,
+                    "Specular_ID": 1349,
+                    "Specular_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_PART1_Texturas\/Props\/HolographicScreen1_v2\/TEX_PROP_HolographicScreen1_v2_S.png",
+                    "Specular_UID": 806353950,
+                    "Normal_ID": 1345,
+                    "Normal_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_PART1_Texturas\/Props\/HolographicScreen1_v2\/TEX_PROP_HolographicScreen1_v2_N.png",
+                    "Normal_UID": 668721355,
+                    "Height_ID": 1341,
+                    "Height_Path": "Assets\/LVL2_LAB_PART1_FINAL\/LVL2_PART1_Texturas\/Props\/HolographicScreen1_v2\/TEX_PROP_HolographicScreen1_v2_H.png",
+                    "Height_UID": 1165792203,
+                    "Ambient_ID": 1796,
+                    "Ambient_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen1_v1\/TEX_PROP_HolographicScreen1_v1_A.png",
+                    "Ambient_UID": 250072573,
+                    "Emissive_ID": 1769,
+                    "Emissive_Path": "Assets\/ARTE_BETA\/ALL_TEXTURES\/LAB PART 1\/HolographicScreen1_v1\/TEX_PROP_HolographicScreen1_v1_E.png",
+                    "Emissive_UID": 1121636702
+                }
+            ]
+        }
+    ]
+}

@@ -26,7 +26,7 @@ struct EmitterSetting //En Thor Engine esto seria el particle Module
 {
 public:
 	EmitterSetting();
-	~EmitterSetting();
+	virtual ~EmitterSetting();
 
 	EmitterType type;
 
@@ -225,7 +225,7 @@ struct EmitterRotation : EmitterSetting
 	float4x4 LookAt(float3& Spot, float3& position);
 	void SetRotation(Quat rot);
 
-	bool horAlign;
+	bool updateRotation;
 	bool verAlign;
 
 	Quat rotation;
@@ -233,11 +233,12 @@ struct EmitterRotation : EmitterSetting
 	OrientationDirection orientationOfAxis;
 	OrientationDirection orientationFromWorld;
 	float3 freeWorldRotation;
+	void WorldAlign();
 	
 private:
 	void EditorCameraAlign();
 	void GameCameraAlign();
-	void WorldAlign();
+	
 	void AxisAlign(ParticleEmitter* emitter); //Necesitamos una fucking referencia porque esto reqquiere de hacer vectores y mierdas
 };
 
@@ -277,6 +278,7 @@ struct EmitterColor : EmitterSetting
 struct EmitterImage : EmitterSetting
 {
 	EmitterImage();
+	~EmitterImage();
 	void Spawn(ParticleEmitter* emitter, Particle* particle);
 	void Update(float dt, ParticleEmitter* emitter);
 	void OnInspector();

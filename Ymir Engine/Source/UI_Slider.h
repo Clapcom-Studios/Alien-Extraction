@@ -35,6 +35,8 @@ public:
 	update_status Update(float dt);
 
 	void OnInspector();
+	void Draw(bool game) override;
+
 	void SetReference() override;
 	void OnReferenceDestroyed(void* ptr = nullptr);
 

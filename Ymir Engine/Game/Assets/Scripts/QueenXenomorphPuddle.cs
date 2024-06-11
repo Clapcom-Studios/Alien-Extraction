@@ -14,6 +14,10 @@ public class QueenXenomorphPuddle : YmirComponent
 
     private GameObject player;
 
+    private GameObject boss;
+    private QueenXenomorphBaseScript bossScript;
+
+
     private Health healthScript;
 
     private float destroyTimer;
@@ -22,12 +26,18 @@ public class QueenXenomorphPuddle : YmirComponent
 
     //private float puddleDamageTimer;
 
+    public GameObject particlesGO = null;
+
     public void Start()
     {
         player = InternalCalls.GetGameObjectByName("Player");
         healthScript = player.GetComponent<Health>();
+        boss = InternalCalls.GetGameObjectByName("Boss");
+        bossScript = boss.GetComponent<QueenXenomorphBaseScript>();
         destroyTimer = 0f;
         puddleTimer = 0f;
+        particlesGO = InternalCalls.GetChildrenByName(gameObject, "ParticlesAcidPuddle");
+        Particles.PlayParticlesTrigger(particlesGO);
     }
 
     public void Update()
@@ -48,7 +58,7 @@ public class QueenXenomorphPuddle : YmirComponent
         if (other.Name == "Player" && puddleTimer >= 0.5f && player.GetComponent<Player>().vulnerable)
         {
             Debug.Log("[ERROR] ACID PUDDLE");
-            healthScript.TakeDmg(damage);
+            healthScript.TakeDmg(bossScript.acidPudleDMG);
             puddleTimer = 0f;
         }
     }

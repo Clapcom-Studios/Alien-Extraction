@@ -11,7 +11,7 @@ public class SpitterAcidSpit : YmirComponent
 
     private float movementSpeed;
 
-	private float damage = 350f;
+	private float damage = 250f;
 
     private GameObject player;
 
@@ -23,6 +23,8 @@ public class SpitterAcidSpit : YmirComponent
 
     private bool impulseDone = false;
 
+    private float mass;
+
     Vector3 direction;
 
     public void Start()
@@ -33,32 +35,43 @@ public class SpitterAcidSpit : YmirComponent
         destroyed = false;
         destroyTimer = 0f;
         direction = gameObject.transform.globalPosition - player.transform.globalPosition;
+        direction.y = 0f;
         Quaternion rotation = Quaternion.LookRotation(direction);
         gameObject.SetRotation(rotation);
+        damage = gameObject.GetMass();
+        mass = gameObject.GetMass();
+        gameObject.SetMass(1.0f);
     }
 
     public void Update()
 	{
         if (impulseDone == false)
         {
-            gameObject.SetImpulse(direction.normalized * -movementSpeed * Time.deltaTime + new Vector3(0,0.1f,0));
+            gameObject.SetImpulse(direction.normalized * -movementSpeed * mass * Time.deltaTime + new Vector3(0,0.1f,0));
             impulseDone = true; ;
         }
 
         destroyTimer += Time.deltaTime;
 
-        if (destroyed || destroyTimer >= 2f) 
+        if (destroyed || destroyTimer >= 0.8f) 
         {
             InternalCalls.Destroy(gameObject);
         }
 
     }
 
-    public void OnCollisionStay(GameObject other)
+    public void OnCollisionEnter(GameObject other)
     {
+        Debug.Log("[ERROR] :" + other.Name);
+        Debug.Log("[ERROR] :" + other.Tag);
+
         if (other.Name == "Player" && destroyed == false && player.GetComponent<Player>().vulnerable)
         {
             healthScript.TakeDmg(damage);
+            destroyed = true;
+        }
+        else if (other.Tag == "World")
+        {
             destroyed = true;
         }
     }

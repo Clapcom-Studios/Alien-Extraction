@@ -25,13 +25,14 @@ public class TextPopUp : YmirComponent
         }
     }
 
+    public void OnCollisionExit(GameObject other)
+    {
+        show = false;
+        textUI.SetActive(false);
+    }
+
     public void Update()
     {
-        if (!show)
-        {
-            textUI.SetActive(false);
-        }
 
-        show = false;
     }
 }

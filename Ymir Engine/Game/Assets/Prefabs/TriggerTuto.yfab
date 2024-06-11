@@ -1,0 +1,185 @@
+{
+    "Prefab": [
+        {
+            "Name": "TriggerAbilitiesTutorial",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 813229651,
+            "Active": true,
+            "Element_Type": "None",
+            "Parent UID": 231286973,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        319.29827880859375,
+                        0.00030577182769775391,
+                        -116.03627777099609
+                    ],
+                    "Rotation": [
+                        180,
+                        -77.631927490234375,
+                        180
+                    ],
+                    "Scale": [
+                        3.1198809146881104,
+                        3.1198749542236328,
+                        3.1198809146881104
+                    ]
+                },
+                {
+                    "World gravity": [
+                        0,
+                        -10,
+                        0
+                    ],
+                    "Type": "Physics",
+                    "Active": true,
+                    "Collider Type": 0,
+                    "Size": [
+                        5,
+                        5,
+                        5
+                    ],
+                    "Physics Type": 2,
+                    "Mass": 0,
+                    "Friction": 0,
+                    "Angular Friction": 0,
+                    "UseGravity": false,
+                    "IsSensor": true,
+                    "LockX": false,
+                    "LockY": false,
+                    "LockZ": false,
+                    "Offset": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Offset Rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Script",
+                    "ScriptName": "TriggerTutorialUI.cs",
+                    "Active": 1,
+                    "UID": 0,
+                    "tutorialUI": 1254634614
+                }
+            ],
+            "Children UID": [
+                978569001
+            ]
+        },
+        {
+            "Name": "DEC_Interrogant (1)",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 978569001,
+            "Active": true,
+            "Element_Type": "Model",
+            "Parent UID": 813229651,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0.64180606603622437,
+                        0
+                    ],
+                    "Rotation": [
+                        -90.000282287597656,
+                        -2.9028304197709076e-05,
+                        -3.2699997425079346
+                    ],
+                    "Scale": [
+                        12.104653358459473,
+                        12.104666709899902,
+                        12.104718208312988
+                    ]
+                }
+            ],
+            "Children UID": [
+                1455546102
+            ]
+        },
+        {
+            "Name": "1251176721",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 1455546102,
+            "Active": true,
+            "Element_Type": "Mesh",
+            "Origin_Path": "",
+            "Parent UID": 978569001,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "Mesh",
+                    "Active": 1,
+                    "UID": 569364506,
+                    "Vertex Count": 4,
+                    "Index Count": 6
+                },
+                {
+                    "Type": "Material",
+                    "Active": 1,
+                    "Shader": "Assets\/Shaders\/MyShader.glsl",
+                    "Uniforms": [
+                        {
+                            "lightDir": [
+                                0,
+                                16.196561813354492,
+                                -3.8318030834197998
+                            ],
+                            "lightInt": 1,
+                            "lightColor": [
+                                1,
+                                1,
+                                1
+                            ],
+                            "numLights": 1,
+                            "displayNormalMap": true,
+                            "transparency": 1
+                        }
+                    ],
+                    "Diffuse_ID": 2566,
+                    "Diffuse_Path": "Assets\/ARTE_BETA\/Decals\/Arnau\/TEX_PROP_ArnauDecals_D.png",
+                    "Diffuse_UID": 1115249050,
+                    "Specular_ID": 1832,
+                    "Specular_Path": "Assets\/LVL1_FINAL\/LVL1_Textures\/Decals\/TEX_PROP_ArnauDecals_S.png",
+                    "Specular_UID": 2062897711,
+                    "Normal_ID": 1830,
+                    "Normal_Path": "Assets\/LVL1_FINAL\/LVL1_Textures\/Decals\/TEX_PROP_ArnauDecals_N.png",
+                    "Normal_UID": 1762270355,
+                    "Height_ID": 1828,
+                    "Height_Path": "Assets\/LVL1_FINAL\/LVL1_Textures\/Decals\/TEX_PROP_ArnauDecals_H.png",
+                    "Height_UID": 392365446
+                }
+            ]
+        }
+    ]
+}

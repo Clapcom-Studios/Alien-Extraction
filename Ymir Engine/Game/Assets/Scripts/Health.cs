@@ -67,14 +67,32 @@ public class Health : YmirComponent
 
                 DeathScreen();
             }
-        }
-        else
-        {
+
             if (Input.GetKey(YmirKeyCode.F5) == KeyState.KEY_DOWN)
             {
                 Debug.Log("Take debug dmg");
 
-                TakeDmg(debugDmg);
+                if (debugDmg > 0)
+                {
+                    player.TakeDMG();
+
+                    currentHealth -= (debugDmg + armor); // reduce damage with amount of armor
+
+                    if (currentHealth > maxHealth)
+                    {
+                        currentHealth = maxHealth;
+                    }
+
+                    else if (currentHealth <= 0)
+                    {
+                        currentHealth = 0;
+                        //DeathScreen();
+                    }
+                    if (healthBar != null)
+                    {
+                        UI.SliderEdit(healthBar, currentHealth);
+                    }
+                }
             }
 
             if (Input.GetKey(YmirKeyCode.F6) == KeyState.KEY_DOWN)
@@ -120,7 +138,7 @@ public class Health : YmirComponent
 
     public void Heal(float dmg)
     {
-        if (player != null && !player.godMode && dmg < 0)
+        if (player != null /*&& !player.godMode*/ && dmg < 0)
         {
             Particles.PlayParticlesTrigger(particlesHealth);
 
@@ -153,8 +171,11 @@ public class Health : YmirComponent
         if (deathCanvas != null) { deathCanvas.SetActive(true); UI.SetFirstFocused(deathCanvas); }
         if (player != null)
         {
+            currentHealth = maxHealth;
+            player.currentResinVessels = player.maxResinVessels;
+            player.currentLvl = 0;
             player.itemsList.Clear();
-            player.SaveItems();
+            player.SavePlayer();
             player.gameObject.SetActive(false);
         }
 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -20,6 +21,8 @@ public class Iscariot : YmirComponent
     bool active_Dialogue;
 
     public Player player;
+    public GameObject gameCanvas = null;
+
     public GameObject canvas_Iscariot = null;
     public GameObject name_Npc = null;
     public GameObject dialogue_Npc = null;
@@ -30,6 +33,8 @@ public class Iscariot : YmirComponent
 
     //Popup
     private GameObject popup;
+
+    bool talked;
 
     public enum Dialogue_id
     {
@@ -121,12 +126,13 @@ public class Iscariot : YmirComponent
     public void Start()
     {
         player = InternalCalls.GetGameObjectByName("Player").GetComponent<Player>();
+        gameCanvas = InternalCalls.GetGameObjectByName("Game Canvas");
 
         active_Dialogue = false;
         canvas_Iscariot = InternalCalls.GetGameObjectByName("Npc_Dialogue");
         name_Npc = InternalCalls.GetGameObjectByName("Name_Npc");
         dialogue_Npc = InternalCalls.GetGameObjectByName("dialogue_Npc");
-        dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/Iscariot_Dialogue.csv");
+        dialoguescsv = null;// = InternalCalls.CSVToString("Assets/Dialogue/Iscariot_Dialogue.csv");
         Ybutton = InternalCalls.GetGameObjectByName("buttonY");
         Bbutton = InternalCalls.GetGameObjectByName("buttonB");
         Abutton = InternalCalls.GetGameObjectByName("buttonA");
@@ -135,12 +141,15 @@ public class Iscariot : YmirComponent
         popup = InternalCalls.CS_GetChild(gameObject, 1);
 
         //Animation - WIP
-        //Animation.SetLoop(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle", true);
-        //Animation.SetSpeed(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle", 0.2f);
-        //Animation.PlayAnimation(InternalCalls.CS_GetChild(gameObject, 0), "Caius_Idle");
+        Animation.SetLoop(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle", true);
+        Animation.SetSpeed(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle", 0.2f);
+        Animation.PlayAnimation(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle");
 
-        LoadDialogues(dialoguescsv);
+        LoadDialogueFromFile("Assets/Dialogue/Iscariot_Dialogue.csv");
+        //LoadDialogues(dialoguescsv);
         dialogue_ = Dialogue_id.ID_1;
+
+        talked = false;
     }
     public void Update()
     {
@@ -150,15 +159,15 @@ public class Iscariot : YmirComponent
         {
             if (popup.IsActive())
             {
+                UI.ChangeImageUI(InternalCalls.GetGameObjectByName("Dialogue"), "Assets\\Dialogue\\Dialogo_Iscariot.png", (int)UI_STATE.NORMAL);
+
                 popup.SetActive(false);
             }
-
-            
 
             //Interacciones - Respuestas
             //player.PlayerStopState(true);
             //IFs de todas las interacciones:
-            {
+            if (!talked){
                 
                 //ID 1
                 if (Input.GetGamepadButton(GamePadButton.Y) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
@@ -178,11 +187,16 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_1)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
 
                     return;
                 }
@@ -199,11 +213,16 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_6)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 10
@@ -219,11 +238,16 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_10)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 14
@@ -273,11 +297,17 @@ public class Iscariot : YmirComponent
                     Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
                     Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_27)
                 {
+
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 29
@@ -306,11 +336,16 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.B) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_73)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 44
@@ -337,11 +372,17 @@ public class Iscariot : YmirComponent
                     Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN ||
                     Input.GetGamepadButton(GamePadButton.X) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_50)
                 {
+
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 35
@@ -425,11 +466,16 @@ public class Iscariot : YmirComponent
                 }
                 if (Input.GetGamepadButton(GamePadButton.A) == KeyState.KEY_DOWN && dialogue_ == Dialogue_id.ID_64)
                 {
+                    gameCanvas.SetActive(true);
+
+                    SaveLoad.SaveBool(Globals.saveGameDir, SaveLoad.LoadString(Globals.saveGameDir, Globals.saveGamesInfoFile, Globals.saveCurrentGame), "True Ending", true);
+
                     dialogue_ = Dialogue_id.ID_1;
-                    //EXIT
+                    player.currentMenu = "";
                     player.PlayerStopState(false);
                     active_Dialogue = false;
                     canvas_Iscariot.SetActive(false);
+                    talked = true;
                     return;
                 }
                 //ID 68
@@ -449,10 +495,9 @@ public class Iscariot : YmirComponent
                     dialogue_ = Dialogue_id.ID_64;
                     return;
                 }
+
+                DialogueManager();
             }
-
-            DialogueManager();
-
         }
         else
         {
@@ -708,13 +753,17 @@ public class Iscariot : YmirComponent
     }
     public void OnCollisionStay(GameObject other)
     {
-        if (other.Tag == "Player" && !active_Dialogue)
+        if ((other.Tag == "Player" || other.Name == "Player") && !active_Dialogue && !talked)
         {
             popup.SetActive(true);
         }
 
-        if (other.Tag == "Player" && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue)
+        if ((other.Tag == "Player" || other.Name == "Player") && (Input.IsGamepadButtonAPressedCS() || Input.GetKey(YmirKeyCode.SPACE) == KeyState.KEY_DOWN) && !active_Dialogue && player.currentMenu == "" && !talked)
         {
+            gameCanvas.SetActive(false);
+
+            player.currentMenu = "Iscariot Dialogue";
+
             canvas_Iscariot.SetActive(true);
             active_Dialogue = true;
             player.PlayerStopState(true);
@@ -740,21 +789,34 @@ public class Iscariot : YmirComponent
             if (dialogueParts.Length >= 4)
             {
                 Dialogue _dialogue = new Dialogue();
-                Debug.Log("[WARNING] 1");
+                //Debug.Log("[WARNING] 1");
                 _dialogue.ID = int.Parse(dialogueParts[0]);
-                Debug.Log("[WARNING] 1");
+                Debug.Log("[WARNING] _dialogue.ID: " + _dialogue.ID);
                 _dialogue.Name = dialogueParts[1];
-                Debug.Log("[WARNING] 4");
+                //Debug.Log("[WARNING] 4");
                 _dialogue.Text = dialogueParts[2];
-                Debug.Log("[WARNING] 5" + _dialogue.Text);
+                //Debug.Log("[WARNING] 5" + _dialogue.Text);
                 _dialogue.Code = dialogueParts[3];
-                Debug.Log("[WARNING] 6");
+                //Debug.Log("[WARNING] 6");
 
                 dialogue.Add(_dialogue.ID, _dialogue);
-                Debug.Log("[WARNING] Ended");
+                //Debug.Log("[WARNING] Ended");
             }
         }
 
-        //Debug.Log("[WARNING] GG Loading dialogue data" + lines[0]);
+        Debug.Log("[WARNING] GG Loading dialogue data. ID: Iscariot_Dialogue, Length:" + dialogueData.Length);
+    }
+
+    public void LoadDialogueFromFile(string filePath)
+    {
+        try
+        {
+            string dialogueData = File.ReadAllText(filePath);
+            LoadDialogues(dialogueData);
+        }
+        catch (Exception ex)
+        {
+            Debug.Log("Failed to read file: " + filePath);
+        }
     }
 }

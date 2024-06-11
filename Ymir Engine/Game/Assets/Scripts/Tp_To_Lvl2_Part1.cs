@@ -8,44 +8,50 @@ using YmirEngine;
 
 public class Tp_To_Lvl2_Part1 : YmirComponent
 {
-    // Loading scene
-    private GameObject loadSceneImg;
+    private GameObject loadSceneLvL2_1;
     private bool loadScene = false;
 
-    public void Start()
-	{
-        loadSceneImg = InternalCalls.GetGameObjectByName("Loading Scene Canvas");
+    private float finishTimer = 2f;
 
-        if (loadSceneImg != null)
+    public void Start()
+    {
+        loadSceneLvL2_1 = InternalCalls.GetGameObjectByName("Loading Scene Lvl2");
+
+        if (loadSceneLvL2_1 != null)
         {
-            loadSceneImg.SetActive(false);
+            loadSceneLvL2_1.SetActive(false);
         }
 
         loadScene = false;
     }
-
-	public void Update()
-	{
+    public void Update()
+    {
         if (loadScene)
         {
-            InternalCalls.LoadScene("Assets/LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS.yscene");
-            loadScene = false;
+            if (finishTimer >= 0)
+            {
+                finishTimer -= Time.deltaTime;
+            }
 
-            return;
+            if (finishTimer <= 0)
+            {
+                InternalCalls.LoadScene("Assets/LVL2_LAB_PART1_FINAL/LVL2_LAB_PART1_COLLIDERS.yscene");
+                loadScene = false;
+            }
         }
 
         return;
-	}
-
+    }
     public void OnCollisionEnter(GameObject other)
     {
         //TODO: Mostrat UI de que puede interactuar si pulsa el boton asignado
         if (other.Tag == "Player")
         {
             Audio.StopAllAudios();
-            if (loadSceneImg != null)
+            if (loadSceneLvL2_1 != null)
             {
-                loadSceneImg.SetActive(true);
+                finishTimer = 2f;
+                loadSceneLvL2_1.SetActive(true);
             }
 
             loadScene = true;
