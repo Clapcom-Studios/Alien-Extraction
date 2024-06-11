@@ -294,6 +294,7 @@
    {
     "Id": "357189188",
     "Language": "SFX",
+    "Hash": "3126840592",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\LV2Music",
     "ShortName": "LV2Music",
     "Path": "LV2Music.bnk",
@@ -747,6 +748,7 @@
    {
     "Id": "978134277",
     "Language": "SFX",
+    "Hash": "579784604",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\DroneXenomorph",
     "ShortName": "DroneXenomorph",
     "Path": "DroneXenomorph.bnk",
@@ -2660,7 +2662,6 @@
    {
     "Id": "2982135181",
     "Language": "SFX",
-    "Hash": "275661281",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\QueenXenomorph",
     "ShortName": "QueenXenomorph",
     "Path": "QueenXenomorph.bnk",
@@ -3088,7 +3089,7 @@
    {
     "Id": "3402873772",
     "Language": "SFX",
-    "Hash": "3950948503",
+    "Hash": "2407175370",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music\\UIMusic",
     "ShortName": "UIMusic",
     "Path": "UIMusic.bnk",
@@ -3097,7 +3098,17 @@
       "Id": "743991111",
       "Name": "UI_Music",
       "ObjectPath": "\\Events\\Default Work Unit\\Music\\UIMusic\\UI_Music",
-      "DurationType": "Infinite"
+      "DurationType": "OneShot",
+      "DurationMin": "426.536377",
+      "DurationMax": "426.536377",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "840542772",
+        "Language": "SFX",
+        "ShortName": "Menu.wav",
+        "Path": "SFX\\Menu_9EDFC787.wem"
+       }
+      ]
      }
     ]
    },
@@ -3628,6 +3639,7 @@
    {
     "Id": "4095621880",
     "Language": "SFX",
+    "Hash": "1961297470",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Enemies\\Facehugger",
     "ShortName": "Facehugger",
     "Path": "Facehugger.bnk",
