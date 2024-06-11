@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -131,7 +132,7 @@ public class Iscariot : YmirComponent
         canvas_Iscariot = InternalCalls.GetGameObjectByName("Npc_Dialogue");
         name_Npc = InternalCalls.GetGameObjectByName("Name_Npc");
         dialogue_Npc = InternalCalls.GetGameObjectByName("dialogue_Npc");
-        dialoguescsv = InternalCalls.CSVToString("Assets/Dialogue/Iscariot_Dialogue.csv");
+        dialoguescsv = null;// = InternalCalls.CSVToString("Assets/Dialogue/Iscariot_Dialogue.csv");
         Ybutton = InternalCalls.GetGameObjectByName("buttonY");
         Bbutton = InternalCalls.GetGameObjectByName("buttonB");
         Abutton = InternalCalls.GetGameObjectByName("buttonA");
@@ -144,7 +145,8 @@ public class Iscariot : YmirComponent
         Animation.SetSpeed(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle", 0.2f);
         Animation.PlayAnimation(InternalCalls.CS_GetChild(gameObject, 0), "Iscariot_Idle");
 
-        LoadDialogues(dialoguescsv);
+        LoadDialogueFromFile("Assets/Dialogue/Iscariot_Dialogue.csv");
+        //LoadDialogues(dialoguescsv);
         dialogue_ = Dialogue_id.ID_1;
 
         talked = false;
@@ -787,21 +789,34 @@ public class Iscariot : YmirComponent
             if (dialogueParts.Length >= 4)
             {
                 Dialogue _dialogue = new Dialogue();
-                Debug.Log("[WARNING] 1");
+                //Debug.Log("[WARNING] 1");
                 _dialogue.ID = int.Parse(dialogueParts[0]);
-                Debug.Log("[WARNING] 1");
+                Debug.Log("[WARNING] _dialogue.ID: " + _dialogue.ID);
                 _dialogue.Name = dialogueParts[1];
-                Debug.Log("[WARNING] 4");
+                //Debug.Log("[WARNING] 4");
                 _dialogue.Text = dialogueParts[2];
-                Debug.Log("[WARNING] 5" + _dialogue.Text);
+                //Debug.Log("[WARNING] 5" + _dialogue.Text);
                 _dialogue.Code = dialogueParts[3];
-                Debug.Log("[WARNING] 6");
+                //Debug.Log("[WARNING] 6");
 
                 dialogue.Add(_dialogue.ID, _dialogue);
-                Debug.Log("[WARNING] Ended");
+                //Debug.Log("[WARNING] Ended");
             }
         }
 
-        //Debug.Log("[WARNING] GG Loading dialogue data" + lines[0]);
+        Debug.Log("[WARNING] GG Loading dialogue data. ID: Iscariot_Dialogue, Length:" + dialogueData.Length);
+    }
+
+    public void LoadDialogueFromFile(string filePath)
+    {
+        try
+        {
+            string dialogueData = File.ReadAllText(filePath);
+            LoadDialogues(dialogueData);
+        }
+        catch (Exception ex)
+        {
+            Debug.Log("Failed to read file: " + filePath);
+        }
     }
 }

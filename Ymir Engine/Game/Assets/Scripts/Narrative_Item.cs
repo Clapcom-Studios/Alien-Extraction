@@ -628,22 +628,22 @@ public class Narrative_Item : YmirComponent
             if (dialogueParts.Length >= 4)
             {
                 Dialogue _dialogue = new Dialogue();
-                Debug.Log("[WARNING] 1");
+                //Debug.Log("[WARNING] 1");
                 _dialogue.ID = int.Parse(dialogueParts[0]);
-                Debug.Log("[WARNING] 1");
+                //Debug.Log("[WARNING] 1");
                 _dialogue.Name = dialogueParts[1];
-                Debug.Log("[WARNING] 4");
+                //Debug.Log("[WARNING] 4");
                 _dialogue.Text = dialogueParts[2];
-                Debug.Log("[WARNING] 5" + _dialogue.Text);
+                //Debug.Log("[WARNING] 5" + _dialogue.Text);
                 _dialogue.Code = dialogueParts[3];
-                Debug.Log("[WARNING] 6");
+                //Debug.Log("[WARNING] 6");
 
                 dialogue.Add(_dialogue.ID, _dialogue);
-                Debug.Log("[WARNING] Ended");
+                //Debug.Log("[WARNING] Ended");
             }
         }
 
-        //Debug.Log("[WARNING] GG Loading dialogue data" + lines[0]);
+        Debug.Log("[WARNING] GG Loading dialogue data. Item ID: " + itemID + " Length:" + dialogueData.Length);
     }
 
     private void ExitDialogue()
