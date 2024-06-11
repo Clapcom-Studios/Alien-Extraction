@@ -14,8 +14,7 @@ public class Go_Base : YmirComponent
     private GameObject loadSceneImg;
     private bool loadScene = false;
 
-
-    private float finishTimer = 2f;
+    public float finishTimer = 2f;
     public bool saveGame = true;
 
     public void Start()
@@ -33,11 +32,9 @@ public class Go_Base : YmirComponent
 
     public void Update()
     {
-        finishTimer -= Time.deltaTime;
-
         if (loadScene)
         {
-            loadSceneImg.SetActive(true);
+            finishTimer -= Time.deltaTime;            
 
             if (finishTimer <= 0)
             {
@@ -55,8 +52,9 @@ public class Go_Base : YmirComponent
         if (loadSceneImg != null)
         {
             loadSceneImg.SetActive(true);
-            loadScene = true;
         }
+
+        loadScene = true;
 
         if (saveGame)
         {

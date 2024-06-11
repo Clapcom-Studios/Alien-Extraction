@@ -25,7 +25,7 @@
             "Name": "Scene",
             "Static": false,
             "Tag": "Untagged",
-            "UID": 1870482726,
+            "UID": 1390529225,
             "Active": true,
             "Element_Type": "None",
             "Components": [],
@@ -80,7 +80,7 @@
             "UID": 1281640994,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -6858,6 +6858,7 @@
                     "ScriptName": "Go_Base.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ]
@@ -26149,7 +26150,7 @@
             "UID": 128304438,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -28302,7 +28303,7 @@
                     ],
                     "Rotation": [
                         -0,
-                        9.442296028137207,
+                        9.4422950744628906,
                         -0
                     ],
                     "Scale": [
@@ -29685,7 +29686,7 @@
             "UID": 1654859733,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30867,7 +30868,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -30878,7 +30879,7 @@
                         -52.581008911132812
                     ],
                     "Rotation": [
-                        1.3512667429438352e-08,
+                        1.3512669205795191e-08,
                         90,
                         0
                     ],
@@ -31213,7 +31214,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31590,7 +31591,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31967,7 +31968,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -31978,9 +31979,9 @@
                         376.10519409179688
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         89.980216979980469,
-                        180
+                        -180
                     ],
                     "Scale": [
                         0.09000030905008316,
@@ -32302,7 +32303,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32679,7 +32680,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -32770,7 +32771,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8304026617197451e-09,
+                        3.8304031058089549e-09,
                         90,
                         0
                     ],
@@ -32849,7 +32850,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7867134829430142e-06,
+                        1.7867137103166897e-06,
                         90,
                         0
                     ],
@@ -32928,7 +32929,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8304048821657943e-09,
+                        3.830405770344214e-09,
                         90,
                         0
                     ],
@@ -33056,7 +33057,7 @@
             "Active": true,
             "Element_Type": "Mesh",
             "Origin_Path": "Assets\/Prefabs\/Meshes\/PROP_Door_Lab.fbx",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33147,7 +33148,7 @@
                         0
                     ],
                     "Rotation": [
-                        3.8304017735413254e-09,
+                        3.8304026617197451e-09,
                         90,
                         0
                     ],
@@ -33226,7 +33227,7 @@
                         0
                     ],
                     "Rotation": [
-                        1.7867132555693388e-06,
+                        1.7867134829430142e-06,
                         90,
                         0
                     ],
@@ -33305,7 +33306,7 @@
                         -1.2768347490421661e-10
                     ],
                     "Rotation": [
-                        3.8304039939873746e-09,
+                        3.8304048821657943e-09,
                         90,
                         0
                     ],
@@ -33432,7 +33433,7 @@
             "UID": 270068987,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33579,7 +33580,7 @@
             "UID": 1459164758,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33726,7 +33727,7 @@
             "UID": 1922542640,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -33817,9 +33818,9 @@
                         0.2705078125
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -46.212207794189453,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.000002384185791,
@@ -33896,9 +33897,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         -45.824016571044922,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000112056732178,
@@ -34323,7 +34324,7 @@
             "UID": 82626634,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34920,7 +34921,7 @@
             "UID": 2007148406,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -34947,8 +34948,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1660,
-                    "Height": 1181,
+                    "Width": 1908,
+                    "Height": 1029,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -35175,7 +35176,7 @@
             "UID": 1714005665,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -35897,7 +35898,7 @@
             "UID": 1259328255,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36417,7 +36418,7 @@
             "UID": 1570294117,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -36937,7 +36938,7 @@
             "UID": 484997781,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -37027,9 +37028,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         89.532699584960938,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000097751617432,
@@ -37112,9 +37113,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         89.40521240234375,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.0000066757202148,
@@ -37267,7 +37268,7 @@
             "UID": 1965195139,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -38941,7 +38942,7 @@
             "UID": 700466739,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -39986,7 +39987,7 @@
             "UID": 977801764,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -40070,9 +40071,9 @@
                         327.16177368164062
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         32.520938873291016,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1.4884411096572876,
@@ -42487,9 +42488,9 @@
                         0
                     ],
                     "Rotation": [
-                        -180,
+                        180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -43179,7 +43180,7 @@
             "UID": 1260795295,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -43269,6 +43270,7 @@
                     "ScriptName": "Go_Base.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ]
@@ -43280,7 +43282,7 @@
             "UID": 595217980,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -44428,7 +44430,7 @@
             "UID": 1606186791,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -45308,7 +45310,7 @@
             "UID": 1387339074,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -47363,7 +47365,7 @@
             "UID": 1014194499,
             "Active": true,
             "Element_Type": "Model",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -47736,7 +47738,7 @@
             "UID": 1278660870,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48279,7 +48281,7 @@
             "UID": 1401646486,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48550,7 +48552,7 @@
             "UID": 1398847280,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -48577,8 +48579,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1660,
-                    "Height": 1181,
+                    "Width": 1908,
+                    "Height": 1029,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -50676,7 +50678,7 @@
             "UID": 1904908806,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -50703,8 +50705,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1878,
-                    "Height": 1017,
+                    "Width": 1908,
+                    "Height": 1029,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
@@ -50726,8 +50728,8 @@
                 1927575898,
                 670316680,
                 413940744,
-                572532483,
-                195998777
+                195998777,
+                572532483
             ]
         },
         {
@@ -50956,7 +50958,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         775,
-                        312,
+                        0,
                         100,
                         100
                     ],
@@ -51019,7 +51021,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         775,
-                        312,
+                        0,
                         100,
                         100
                     ],
@@ -51082,7 +51084,7 @@
                     "UI State": 2,
                     "Drag Limits": [
                         775,
-                        312,
+                        0,
                         100,
                         100
                     ],
@@ -51115,7 +51117,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         775,
-                        312,
+                        0,
                         300,
                         50
                     ],
@@ -51304,7 +51306,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         663.29998779296875,
-                        457,
+                        0,
                         100,
                         100
                     ],
@@ -51367,7 +51369,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         663.29998779296875,
-                        457,
+                        0,
                         100,
                         100
                     ],
@@ -51430,7 +51432,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         663.29998779296875,
-                        457,
+                        0,
                         100,
                         100
                     ],
@@ -51463,7 +51465,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         663.29998779296875,
-                        457,
+                        0,
                         300,
                         50
                     ],
@@ -51652,7 +51654,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         885,
-                        457,
+                        0,
                         100,
                         100
                     ],
@@ -51715,7 +51717,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         885,
-                        457,
+                        0,
                         100,
                         100
                     ],
@@ -51778,7 +51780,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         885,
-                        457,
+                        0,
                         100,
                         100
                     ],
@@ -51811,7 +51813,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         885,
-                        457,
+                        0,
                         300,
                         50
                     ],
@@ -52000,7 +52002,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1144,
-                        191,
+                        0,
                         100,
                         100
                     ],
@@ -52063,7 +52065,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1144,
-                        191,
+                        0,
                         100,
                         100
                     ],
@@ -52126,7 +52128,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1144,
-                        191,
+                        0,
                         100,
                         100
                     ],
@@ -52159,7 +52161,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1144,
-                        191,
+                        0,
                         300,
                         50
                     ],
@@ -52362,7 +52364,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -52425,7 +52427,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -52488,7 +52490,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -52521,7 +52523,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        387,
+                        0,
                         300,
                         50
                     ],
@@ -52658,7 +52660,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -52721,7 +52723,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -52784,7 +52786,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -52817,7 +52819,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        500,
+                        0,
                         300,
                         50
                     ],
@@ -52954,7 +52956,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -53017,7 +53019,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -53080,7 +53082,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -53113,7 +53115,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        613,
+                        0,
                         300,
                         50
                     ],
@@ -53250,7 +53252,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -53313,7 +53315,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -53376,7 +53378,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -53409,7 +53411,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        726,
+                        0,
                         300,
                         50
                     ],
@@ -53546,7 +53548,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -53609,7 +53611,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -53672,7 +53674,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -53705,7 +53707,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1147,
-                        839,
+                        0,
                         300,
                         50
                     ],
@@ -53842,7 +53844,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -53905,7 +53907,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -53968,7 +53970,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -54001,7 +54003,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        387,
+                        0,
                         300,
                         50
                     ],
@@ -54138,7 +54140,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -54201,7 +54203,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -54264,7 +54266,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -54297,7 +54299,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        500,
+                        0,
                         300,
                         50
                     ],
@@ -54434,7 +54436,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -54497,7 +54499,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -54560,7 +54562,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -54593,7 +54595,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        613,
+                        0,
                         300,
                         50
                     ],
@@ -54730,7 +54732,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -54793,7 +54795,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -54856,7 +54858,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -54889,7 +54891,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        726,
+                        0,
                         300,
                         50
                     ],
@@ -55026,7 +55028,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -55089,7 +55091,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -55152,7 +55154,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -55185,7 +55187,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1258,
-                        839,
+                        0,
                         300,
                         50
                     ],
@@ -55322,7 +55324,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -55385,7 +55387,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -55448,7 +55450,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        387,
+                        0,
                         100,
                         100
                     ],
@@ -55481,7 +55483,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        387,
+                        0,
                         300,
                         50
                     ],
@@ -55618,7 +55620,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -55681,7 +55683,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -55744,7 +55746,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        500,
+                        0,
                         100,
                         100
                     ],
@@ -55777,7 +55779,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        500,
+                        0,
                         300,
                         50
                     ],
@@ -55914,7 +55916,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -55977,7 +55979,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -56040,7 +56042,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        613,
+                        0,
                         100,
                         100
                     ],
@@ -56073,7 +56075,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        613,
+                        0,
                         300,
                         50
                     ],
@@ -56210,7 +56212,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -56273,7 +56275,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -56336,7 +56338,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        726,
+                        0,
                         100,
                         100
                     ],
@@ -56369,7 +56371,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        726,
+                        0,
                         300,
                         50
                     ],
@@ -56506,7 +56508,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -56569,7 +56571,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -56632,7 +56634,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        839,
+                        0,
                         100,
                         100
                     ],
@@ -56665,7 +56667,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         1369,
-                        839,
+                        0,
                         300,
                         50
                     ],
@@ -56810,7 +56812,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         737.4000244140625,
-                        860.70001220703125,
+                        864,
                         197,
                         77
                     ],
@@ -56873,7 +56875,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         495.39999389648438,
-                        245.69999694824219,
+                        249,
                         200,
                         50
                     ],
@@ -56935,7 +56937,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         389.39999389648438,
-                        296.70001220703125,
+                        300,
                         200,
                         50
                     ],
@@ -56997,7 +56999,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         389.39999389648438,
-                        347.70001220703125,
+                        351,
                         200,
                         50
                     ],
@@ -57059,7 +57061,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         482.39999389648438,
-                        399.70001220703125,
+                        403,
                         200,
                         50
                     ],
@@ -57121,7 +57123,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         547.4000244140625,
-                        452.70001220703125,
+                        456,
                         200,
                         50
                     ],
@@ -57183,7 +57185,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         482.39999389648438,
-                        503.70001220703125,
+                        507,
                         200,
                         50
                     ],
@@ -57245,7 +57247,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         495.39999389648438,
-                        560.70001220703125,
+                        564,
                         200,
                         50
                     ],
@@ -57307,7 +57309,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         7.4000000953674316,
-                        -3.2999999523162842,
+                        0,
                         300,
                         300
                     ],
@@ -57370,7 +57372,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         19.399999618530273,
-                        76.699996948242188,
+                        80,
                         200,
                         50
                     ],
@@ -57432,7 +57434,7 @@
                     "UI State": 1,
                     "Drag Limits": [
                         18.399999618530273,
-                        36.700000762939453,
+                        40,
                         200,
                         50
                     ],
@@ -57451,6 +57453,69 @@
                 {
                     "Type": "UI Transform",
                     "Component reference": 2
+                }
+            ]
+        },
+        {
+            "Name": "Key1",
+            "Static": false,
+            "Tag": "Untagged",
+            "UID": 195998777,
+            "Active": false,
+            "Element_Type": "None",
+            "Parent UID": 1904908806,
+            "Components": [
+                {
+                    "Type": "Transform",
+                    "Active": 1,
+                    "Translation": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "Rotation": [
+                        -0,
+                        0,
+                        -0
+                    ],
+                    "Scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Type": "UI",
+                    "Active": 1,
+                    "Draggeable": false,
+                    "Position X": 520,
+                    "Position Y": 588,
+                    "Width": 113,
+                    "Height": 150,
+                    "UI Type": 1,
+                    "UI State": 1,
+                    "Drag Limits": [
+                        520,
+                        588,
+                        113,
+                        150
+                    ],
+                    "Path": "Assets\/UI\/Inventory Buttons\/AccesKeyGreen.png",
+                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
+                    "Current Frame X": 0,
+                    "Current Frame Y": 0,
+                    "Rows": 1,
+                    "Columns": 1,
+                    "Color": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "Type": "UI Transform",
+                    "Component reference": 1
                 }
             ]
         },
@@ -57533,76 +57598,13 @@
             ]
         },
         {
-            "Name": "Key1",
-            "Static": false,
-            "Tag": "Untagged",
-            "UID": 195998777,
-            "Active": false,
-            "Element_Type": "None",
-            "Parent UID": 1904908806,
-            "Components": [
-                {
-                    "Type": "Transform",
-                    "Active": 1,
-                    "Translation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "Rotation": [
-                        -0,
-                        0,
-                        -0
-                    ],
-                    "Scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "Type": "UI",
-                    "Active": 1,
-                    "Draggeable": false,
-                    "Position X": 520,
-                    "Position Y": 588,
-                    "Width": 113,
-                    "Height": 150,
-                    "UI Type": 1,
-                    "UI State": 1,
-                    "Drag Limits": [
-                        520,
-                        588,
-                        113,
-                        150
-                    ],
-                    "Path": "Assets\/UI\/Inventory Buttons\/AccesKeyGreen.png",
-                    "Shader Path": "Assets\/Shaders\/UI Shader.glsl",
-                    "Current Frame X": 0,
-                    "Current Frame Y": 0,
-                    "Rows": 1,
-                    "Columns": 1,
-                    "Color": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                {
-                    "Type": "UI Transform",
-                    "Component reference": 1
-                }
-            ]
-        },
-        {
             "Name": "Death Canvas",
             "Static": false,
             "Tag": "Untagged",
             "UID": 1827062016,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -57878,6 +57880,7 @@
                     "ScriptName": "Go_Base.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ],
@@ -58063,6 +58066,7 @@
                     "ScriptName": "Go_MainMenu.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ],
@@ -58139,7 +58143,7 @@
             "UID": 1676754095,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -58414,6 +58418,7 @@
                     "ScriptName": "Go_Base.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ],
@@ -58490,7 +58495,7 @@
             "UID": 1225145048,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -58838,6 +58843,7 @@
                     "ScriptName": "Go_Base.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ],
@@ -59162,7 +59168,7 @@
             "UID": 728169813,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -59626,6 +59632,7 @@
                     "ScriptName": "Go_MainMenu.cs",
                     "Active": 1,
                     "UID": 0,
+                    "finishTimer": 0,
                     "saveGame": true
                 }
             ],
@@ -59970,7 +59977,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -60147,7 +60154,7 @@
             "UID": 297696942,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -60892,7 +60899,7 @@
             "UID": 1781007999,
             "Active": false,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -61389,7 +61396,7 @@
             "UID": 1806365249,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -69966,7 +69973,7 @@
             "UID": 1730239073,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -70152,9 +70159,9 @@
                         0
                     ],
                     "Rotation": [
-                        180,
+                        -180,
                         0,
-                        -180
+                        180
                     ],
                     "Scale": [
                         1,
@@ -71549,7 +71556,7 @@
             "UID": 1987757209,
             "Active": true,
             "Element_Type": "None",
-            "Parent UID": 1870482726,
+            "Parent UID": 1390529225,
             "Components": [
                 {
                     "Type": "Transform",
@@ -71576,8 +71583,8 @@
                     "Draggeable": false,
                     "Position X": 0,
                     "Position Y": 0,
-                    "Width": 1660,
-                    "Height": 1181,
+                    "Width": 1908,
+                    "Height": 1029,
                     "UI Type": 0,
                     "UI State": 1,
                     "Drag Limits": [
